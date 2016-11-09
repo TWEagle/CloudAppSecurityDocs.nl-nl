@@ -14,8 +14,8 @@ ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: e74cd96f9bf8537f230dcb58715492bc6fccd2f0
+ms.sourcegitcommit: a413236b04726dddc69068e39967f6ad17218719
+ms.openlocfilehash: c7e6f441932135ca20d4c6747c5e4ab7eb58331f
 
 
 ---
@@ -24,11 +24,6 @@ ms.openlocfilehash: e74cd96f9bf8537f230dcb58715492bc6fccd2f0
 App-connectors maken gebruik van de API's van app-providers. Hierdoor zijn de apps waarmee u verbinding maakt, beter zichtbaar en controleerbaar voor Cloud App Security.  
   
 Cloud App Security maakt gebruik van de API's die door de cloudprovider worden verstrekt; elke service heeft een eigen framework en API-beperkingen. Cloud App Security heeft de services gebruikt om het gebruik van de API's te optimaliseren en om de beste prestaties te leveren. Rekening houdend met de andere beperkingen die de services opleggen aan de API's (zoals beperking, API-limieten, dynamisch verschuiven van API-tijdsvensters, enzovoort), maken de Cloud App Security-engines gebruik van de toegestane capaciteit. Bepaalde bewerkingen, zoals het scannen van alle bestanden in de tenant vereisen een grote hoeveelheid API's en worden daarom verdeeld over een langere periode. Ga ervan uit dat sommige beleidsregels gedurende enkele uren tot dagen worden uitgevoerd.  
-  
-**ExpressRoute**  
-  
-Cloud App Security is geïmplementeerd in Azure en volledig geïntegreerd met [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/). Alle interacties met de Cloud App Security-apps en het verkeer dat wordt verzonden naar Cloud App Security, met inbegrip van het uploaden van detectielogboeken, verlopen via **openbare peering** van ExpressRoute voor verbeterde latentie, prestaties en beveiliging. Er zijn geen configuratiestappen vereist door de klant.  
-Zie voor meer informatie over openbare peering [ExpressRoute-circuits en routeringsdomeinen](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/).  
   
 ## <a name="how-it-works"></a>Hoe het werkt  
 Cloud App Security wordt geïmplementeerd met systeembeheerdersbevoegdheden voor volledige toegang tot alle objecten in uw omgeving.  
@@ -71,10 +66,9 @@ Afhankelijk van de app waarmee u verbinding maakt (zie de onderstaande tabel), m
      Mogelijkheid om tokens te verwijderen.  
   
 De volgende tabel geeft per cloud-app aan welke vaardigheden met App-connectors worden ondersteund:  
-  
-||||||||||  
-|-|-|-|-|-|-|-|-|-|  
+
 ||**Office 365**|**Box**|**Okta**|**Google Apps**|**ServiceNow**|**Salesforce**|**Dropbox**|**AWS**|  
+|-|-|-|-|-|-|-|-|-|  
 |**Lijst van accounts**|✔|✔|✔|✔|✔|✔|✔|✔|  
 |**Groep**|✔|✔|✔|✔|✔|✔|✔|✔|  
 |**Bevoegdheden**|✔|✔|Niet ondersteund door provider|✔|✔|✔|✔||  
@@ -121,6 +115,12 @@ Om App-Connectors te gebruiken dient u ervoor te zorgen dat u over het volgende 
 |ServiceNow|Eureka en hoger|Beheer en RestAPI-rol|  
 |SalesForce||Beheer|  
   
+
+**ExpressRoute**  
+  
+Cloud App Security is geïmplementeerd in Azure en volledig geïntegreerd met [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/). Alle interacties met de Cloud App Security-apps en het verkeer dat wordt verzonden naar Cloud App Security, met inbegrip van het uploaden van detectielogboeken, verlopen via **openbare peering** van ExpressRoute voor verbeterde latentie, prestaties en beveiliging. Er zijn geen configuratiestappen vereist door de klant.  
+Zie voor meer informatie over openbare peering [ExpressRoute-circuits en routeringsdomeinen](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/).  
+  
 ## <a name="see-also"></a>Zie ook  
 [Dagelijkse activiteiten ter bescherming van uw cloudomgeving](daily-activities-to-protect-your-cloud-environment.md)   
 [Ga naar de ondersteuningspagina van Cloud App Security voor technische ondersteuning.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
@@ -129,6 +129,6 @@ Om App-Connectors te gebruiken dient u ervoor te zorgen dat u over het volgende 
    
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Oct16_HO5-->
 
 
