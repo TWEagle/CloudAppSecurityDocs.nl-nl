@@ -587,8 +587,8 @@
 * Archive Datetime: 2016-11-03 13:01:04
 * Handback File: [data-protection-policies.9283ea52b7bca46e511f7c792246a6207518a10e.nl-nl.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/62082ffe23f6bb4b12b7eb00a37994f3f103f3d4/ol-handback/Microsoft/CloudAppSecurityDocs-pr.nl-nl/live/ht/data-protection-policies.9283ea52b7bca46e511f7c792246a6207518a10e.nl-nl.xlf)
 * Handback Datetime: 2016-11-09 11:21:12
-* Bilingual File: [data-protection-policies.9283ea52b7bca46e511f7c792246a6207518a10e.nl-nl.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/eaa5cddf94ae7472b1ef9aacf6a9580ff77d299d/ol-handback/Microsoft/CloudAppSecurityDocs-pr.nl-nl/live/ht/data-protection-policies.9283ea52b7bca46e511f7c792246a6207518a10e.nl-nl.xlf)
-* Bilingual Datetime: 2016-11-09 10:56:57
+* Bilingual File: [data-protection-policies.9283ea52b7bca46e511f7c792246a6207518a10e.nl-nl.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/62082ffe23f6bb4b12b7eb00a37994f3f103f3d4/ol-handback/Microsoft/CloudAppSecurityDocs-pr.nl-nl/live/ht/data-protection-policies.9283ea52b7bca46e511f7c792246a6207518a10e.nl-nl.xlf)
+* Bilingual Datetime: 2016-11-09 11:21:50
 * [Back to Top](#report-top)
 
 ##### <a name='1fe1aa00719807f054ad8628450c89e2ce8252b225'></a> Source: [CloudAppSecurityDocs\docfx.json](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/b624504aeafe70f73977ac0db49036be62c1c621/CloudAppSecurityDocs/docfx.json)
@@ -616,8 +616,8 @@
 * Current Target File: [CloudAppSecurityDocs\enable-instant-visibility-protection-and-governance-actions-for-your-apps.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr.nl-nl/blob/c42cb6916bec0781a899a5fe82681299dfca47db/CloudAppSecurityDocs/enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
 * Current Handback File: [enable-instant-visibility-protection-and-governance-actions-for-your-apps.cb5f69f35a41584708bb295f6c3c5c18850d95a6.nl-nl.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/62082ffe23f6bb4b12b7eb00a37994f3f103f3d4/ol-handback/Microsoft/CloudAppSecurityDocs-pr.nl-nl/live/ht/enable-instant-visibility-protection-and-governance-actions-for-your-apps.cb5f69f35a41584708bb295f6c3c5c18850d95a6.nl-nl.xlf)
 * Current Handback Datetime: 2016-11-09 11:21:12
-* Bilingual File: [enable-instant-visibility-protection-and-governance-actions-for-your-apps.cb5f69f35a41584708bb295f6c3c5c18850d95a6.nl-nl.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/eaa5cddf94ae7472b1ef9aacf6a9580ff77d299d/ol-handback/Microsoft/CloudAppSecurityDocs-pr.nl-nl/live/ht/enable-instant-visibility-protection-and-governance-actions-for-your-apps.cb5f69f35a41584708bb295f6c3c5c18850d95a6.nl-nl.xlf)
-* Bilingual Datetime: 2016-11-09 10:56:57
+* Bilingual File: [enable-instant-visibility-protection-and-governance-actions-for-your-apps.cb5f69f35a41584708bb295f6c3c5c18850d95a6.nl-nl.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/62082ffe23f6bb4b12b7eb00a37994f3f103f3d4/ol-handback/Microsoft/CloudAppSecurityDocs-pr.nl-nl/live/ht/enable-instant-visibility-protection-and-governance-actions-for-your-apps.cb5f69f35a41584708bb295f6c3c5c18850d95a6.nl-nl.xlf)
+* Bilingual Datetime: 2016-11-09 11:21:50
 * [Back to Top](#report-top)
 
 ##### <a name='95dab01c101b6e6171c7985b6571ddb6b4ff592327'></a> Source: [CloudAppSecurityDocs\file-filters.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/400741713d40422a3b1c7680663a572d18e9c692/CloudAppSecurityDocs/file-filters.md)
@@ -2904,8 +2904,8 @@
 * Archive Datetime: 2016-11-03 13:01:04
 * Handback File: [what-is-cloud-app-security.15558b12c33b1fa7547b161b413c292a732924ca.nl-nl.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/62082ffe23f6bb4b12b7eb00a37994f3f103f3d4/ol-handback/Microsoft/CloudAppSecurityDocs-pr.nl-nl/live/ht/what-is-cloud-app-security.15558b12c33b1fa7547b161b413c292a732924ca.nl-nl.xlf)
 * Handback Datetime: 2016-11-09 11:21:12
-* Bilingual File: [what-is-cloud-app-security.15558b12c33b1fa7547b161b413c292a732924ca.nl-nl.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/eaa5cddf94ae7472b1ef9aacf6a9580ff77d299d/ol-handback/Microsoft/CloudAppSecurityDocs-pr.nl-nl/live/ht/what-is-cloud-app-security.15558b12c33b1fa7547b161b413c292a732924ca.nl-nl.xlf)
-* Bilingual Datetime: 2016-11-09 10:56:57
+* Bilingual File: [what-is-cloud-app-security.15558b12c33b1fa7547b161b413c292a732924ca.nl-nl.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/62082ffe23f6bb4b12b7eb00a37994f3f103f3d4/ol-handback/Microsoft/CloudAppSecurityDocs-pr.nl-nl/live/ht/what-is-cloud-app-security.15558b12c33b1fa7547b161b413c292a732924ca.nl-nl.xlf)
+* Bilingual Datetime: 2016-11-09 11:21:50
 * [Back to Top](#report-top)
 
 ##### <a name='4b9bf05e43966ff39dacc58a082c7b8eb3627eda202'></a> Source: [CloudAppSecurityDocs\working-with-cloud-discovery-data.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/ed4ea71b24767d3602d40894d1cbac7447bcd8a2/CloudAppSecurityDocs/working-with-cloud-discovery-data.md)
