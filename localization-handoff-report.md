@@ -1,42 +1,29 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 2
+ Total Files | 1
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [CloudAppSecurityDocs\azip-integration.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/2879a9c52c14c4740d48ce765474fd197881f718/CloudAppSecurityDocs/azip-integration.md) | HandedOffSuccess | [Details](#d1e6d944f998ff2aa2ef74836fd1f4eb3cdd48ee6)
- [CloudAppSecurityDocs\general-setup.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/2d39b26629579905ea30f3f769ca2a16121d51d1/CloudAppSecurityDocs/general-setup.md) | HandedOffSuccess | [Details](#b617a488dec97deb7c1e1d89cbaa62e496e1889128)
+ [CloudAppSecurityDocs\release-notes.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/04c43da18865c1381f8159b70273ad1951221c95/CloudAppSecurityDocs/release-notes.md) | HandedOffSuccess | [Details](#a94f0d9e386d98b329d2c60dbc3b29f813ba050c195)
 
 ## Item Details
-##### <a name='d1e6d944f998ff2aa2ef74836fd1f4eb3cdd48ee6'></a> Source: [CloudAppSecurityDocs\azip-integration.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/2879a9c52c14c4740d48ce765474fd197881f718/CloudAppSecurityDocs/azip-integration.md)
+##### <a name='a94f0d9e386d98b329d2c60dbc3b29f813ba050c195'></a> Source: [CloudAppSecurityDocs\release-notes.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/04c43da18865c1381f8159b70273ad1951221c95/CloudAppSecurityDocs/release-notes.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [azip-integration.bb192bd1d331da60f814da44b801cf4714502352.nl-nl.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handoff/blob/3ef54b9a3b5db53d3115da00ba725f7c0dff4f47/ol-handoff/Microsoft/CloudAppSecurityDocs-pr.nl-nl/live/ht/azip-integration.bb192bd1d331da60f814da44b801cf4714502352.nl-nl.xlf)
-* Handoff Datetime: 2016-11-10 21:22:02
+* Handoff File: [release-notes.17e301be5316791275be7a0b7d7c1a5ccef11655.nl-nl.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handoff/blob/1a446bd81ab2f6f003d1c990d0c4f6e26dca4e65/ol-handoff/Microsoft/CloudAppSecurityDocs-pr.nl-nl/live/ht/release-notes.17e301be5316791275be7a0b7d7c1a5ccef11655.nl-nl.xlf)
+* Handoff Datetime: 2016-11-14 21:07:30
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
-##### <a name='b617a488dec97deb7c1e1d89cbaa62e496e1889128'></a> Source: [CloudAppSecurityDocs\general-setup.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/2d39b26629579905ea30f3f769ca2a16121d51d1/CloudAppSecurityDocs/general-setup.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [general-setup.8c0e330c3c16247d99408f1ffadf9002e1a7b5dd.nl-nl.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handoff/blob/3ef54b9a3b5db53d3115da00ba725f7c0dff4f47/ol-handoff/Microsoft/CloudAppSecurityDocs-pr.nl-nl/live/ht/general-setup.8c0e330c3c16247d99408f1ffadf9002e1a7b5dd.nl-nl.xlf)
-* Handoff Datetime: 2016-11-10 21:22:02
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [CloudAppSecurityDocs\general-setup.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr.nl-nl/blob/56cedfa369b1599e5c23ada1f62209224f6bc6a1/CloudAppSecurityDocs/general-setup.md)
-* Current Handback File: [general-setup.8c0e330c3c16247d99408f1ffadf9002e1a7b5dd.nl-nl.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/dc4206ce532c366731e22196a66f591dcfee00ae/ol-handback/Microsoft/CloudAppSecurityDocs-pr.nl-nl/live/ht/general-setup.8c0e330c3c16247d99408f1ffadf9002e1a7b5dd.nl-nl.xlf)
-* Current Handback Datetime: 2016-11-10 08:33:52
-* Bilingual File: [general-setup.8c0e330c3c16247d99408f1ffadf9002e1a7b5dd.nl-nl.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/dc4206ce532c366731e22196a66f591dcfee00ae/ol-handback/Microsoft/CloudAppSecurityDocs-pr.nl-nl/live/ht/general-setup.8c0e330c3c16247d99408f1ffadf9002e1a7b5dd.nl-nl.xlf)
-* Bilingual Datetime: 2016-11-10 08:34:57
+* Current Target File: [CloudAppSecurityDocs\release-notes.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr.nl-nl/blob/61a5b973c581845f652c2199346215f5367ea2fd/CloudAppSecurityDocs/release-notes.md)
+* Current Handback File: [release-notes.17e301be5316791275be7a0b7d7c1a5ccef11655.nl-nl.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/eaa5cddf94ae7472b1ef9aacf6a9580ff77d299d/ol-handback/Microsoft/CloudAppSecurityDocs-pr.nl-nl/live/ht/release-notes.17e301be5316791275be7a0b7d7c1a5ccef11655.nl-nl.xlf)
+* Current Handback Datetime: 2016-11-09 10:56:13
+* Bilingual File: [release-notes.17e301be5316791275be7a0b7d7c1a5ccef11655.nl-nl.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/eaa5cddf94ae7472b1ef9aacf6a9580ff77d299d/ol-handback/Microsoft/CloudAppSecurityDocs-pr.nl-nl/live/ht/release-notes.17e301be5316791275be7a0b7d7c1a5ccef11655.nl-nl.xlf)
+* Bilingual Datetime: 2016-11-09 10:56:57
 * [Back to Top](#report-top)
 
 
