@@ -14,8 +14,8 @@ ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 669d1c1942e8c7e930cd2421e9b56821eff04d12
+ms.sourcegitcommit: 400741713d40422a3b1c7680663a572d18e9c692
+ms.openlocfilehash: 650bf424d77f6cbcf11e24058ec54278cfd579f5
 
 
 ---
@@ -48,17 +48,16 @@ Ga als volgt te werk om een momentopnamerapport te maken:
 Als de verwerking van uw logboekbestanden is voltooid, ontvangt u een e-mail met de melding dat de verwerking is voltooid. 
   
 9. Boven aan de portal in de statusbalk verschijnt een meldingsbanner om u op de hoogte te houden van de verwerkingsstatus van uw logboekbestanden.  
-  
 ![Menubalk logboekbestandsverwerking](./media/processing-log-file-menu-bar.png) 
-  
-     After the logs are uploaded successfully, you should see a notification letting you know that the log file processing completed successfully.  
    
-10. U kunt het rapport nu weergeven door op de koppeling in de statusbalk te klikken of door naar het tandwiel Instellingen te gaan en **Detectie-instellingen** te selecteren.   
+10. Nadat de logboeken zijn geüpload, krijgt u een melding te zien waarin wordt aangegeven dat de verwerking van de logboekbestanden is voltooid. U kunt het rapport nu weergeven door op de koppeling in de statusbalk te klikken of door naar het tandwiel Instellingen te gaan en **Detectie-instellingen** te selecteren.   
   
      ![Tabblad Detectie-instellingen](./media/discovery-settings-tab.png)
 11. Selecteer vervolgens **Momentopnamerapporten beheren** en selecteer uw momentopnamerapport.
  
 ![Momentopnamerapport beheren](./media/snapshot-report-managment.png)
+
+  
       
 ## <a name="see-also"></a>Zie ook  
 [Cloud-apps beheren met beleidsregels](control-cloud-apps-with-policies.md)   
@@ -69,6 +68,6 @@ Als de verwerking van uw logboekbestanden is voltooid, ontvangt u een e-mail met
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Oct16_HO5-->
 
 

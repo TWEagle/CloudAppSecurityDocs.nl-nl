@@ -13,8 +13,8 @@ ms.technology: techgroup-identity
 ms.suite: ems
 ms.assetid: 0f64ab44-50c4-46b7-8071-533f31fe3627
 translationtype: Human Translation
-ms.sourcegitcommit: 88cabd2002947a31592e3bf523ce2d7abf4d7a01
-ms.openlocfilehash: b61ffbf820d94f41afb0f595700cf95ad6180445
+ms.sourcegitcommit: dbd7814886fc79f0b9cccd55570547b0b7736c32
+ms.openlocfilehash: 6e3913969e7c7ef949c149dc1d2e7a1befe0c85c
 
 
 ---
@@ -94,59 +94,21 @@ ms.openlocfilehash: b61ffbf820d94f41afb0f595700cf95ad6180445
             <section class="journey-step-elements content">
               <ul class="row">
                 <li class="column-third">
-                  <a href="./getting-started-with-cloud-app-security.md">
-                    <h3>Algemene instelling</h3>
-                    <p>Volg de stappen voor de basisconfiguratie van Cloud App Security.</p>
-                  </a>
-                </li>
-                <li class="column-third">
                   <a href="./set-up-cloud-discovery.md">
                     <h3>Cloud Discovery instellen</h3>
                     <p>Gebruik de functie Cloud Discovery om inzicht te krijgen in het gebruik van cloud-apps en Shadow IT in uw organisatie.</p>
                   </a>
                 </li>
                 <li class="column-third">
-                  <a href="./configure-automatic-log-upload-for-continuous-reports.md">
-                    <h3>Automatische uploaden van logboeken instellen</h3>
-                    <p>U kunt het automatisch uploaden van logboeken instellen voor doorlopende Cloud Discovery-rapporten.</p>
-                  </a>
-                </li>
-              </ul>
-            </section>
-          </li>
-       </section>
-    </div>
-<div id="journeys">
-      <section class="container">
-        <ul class="journeys-list">
-          <li class="journey-step">
-            <header class="journey-step-header row">
-              <a href="./deploy.md">
-                <div class="title column-third">
-                  <span class="step-number">3</span>
-                  <p>Implementatie</p>
-                </div>
-                <p class="description column-two-thirds">Schakel API-verbinding in voor verbeterde zichtbaarheid en implementeer beleidsregels voor het beheer van uw apps.</p>
-              </a>
-            </header>
-            <section class="journey-step-elements content">
-              <ul class="row">
-                <li class="column-third">
                   <a href="./enable-instant-visibility-protection-and-governance-actions-for-your-apps.md">
-                    <h3>API-connectors inschakelen</h3>
-                    <p>Schakel API-connectors in voor verbeterde zichtbaarheid in apps, zoals Office 365, Google Apps, Box, Dropbox en meer.</p>
-                  </a>
-                </li>
-                <li class="column-third">
-                  <a href="./connect-office-365-to-microsoft-cloud-app-security.md">
-                    <h3>Verbinding maken tussen Office 365 en Cloud App Security</h3>
-                    <p>Maak een verbinding tussen Cloud App Security en uw bestaande Microsoft 365-account met behulp van de connector-API voor de app.</p>
+                    <h3>Apps koppelen</h3>
+                    <p>Cloud-apps koppelen met Cloud App Security voor meer zichtbaarheid en controle.</p>
                   </a>
                 </li>
                 <li class="column-third">
                   <a href="./control-cloud-apps-with-policies.md">
                     <h3>Cloud-apps beheren met beleidsregels</h3>
-                    <p>Stel beleidsregels in om het cloudgebruik van uw organisatie te controleren en beheren.</p>
+                    <p>Beleidsregels instellen voor het controleren en beheren van het gebruik van cloud-apps in uw organisatie.</p>
                   </a>
                 </li>
               </ul>
@@ -241,6 +203,6 @@ ms.openlocfilehash: b61ffbf820d94f41afb0f595700cf95ad6180445
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Oct16_HO5-->
 
 

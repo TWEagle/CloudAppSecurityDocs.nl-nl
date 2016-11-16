@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 10/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,13 +14,30 @@ ms.assetid: 4949ab4f-22c3-4371-b2dc-c8422a097dfe
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 6f204a955d3186013691fe876e185286a55dd8af
+ms.sourcegitcommit: 400741713d40422a3b1c7680663a572d18e9c692
+ms.openlocfilehash: d95ddaef15cbb11f005156f272578f49f012e16d
 
 
 ---
 
 # <a name="release-notes"></a>Opmerkingen bij de release
+
+## <a name="cloud-app-security-release-83"></a>Cloud App Security release 83
+Uitgebracht: 30 oktober 2016
+
+**Nieuwe functies**
+-   Om het filteren in het [Activiteitenlogboek](activity-filters.md) en het [Bestandslogboek](file-filters.md) te vereenvoudigen, zijn vergelijkbare filters samengevoegd. U kunt gebruikmaken van de activiteitenfilters Activiteitobject, IP-adres en Gebruiker. Gebruik het filter Medewerkers om precies te vinden wat u zoekt.
+-   Klik in de activiteitenlogboeklade onder **Bron** op de koppeling **Onbewerkte gegevens bekijken** om de onbewerkte gegevens die zijn gebruikt voor het genereren van het activiteitenlogboek te downloaden, zodat u verder kunt inzoomen op app-gebeurtenissen. 
+-   Aanvullende ondersteuning voor extra aanmeldactiviteiten in Okta. [Afgeschermd voorbeeld]
+-   Aanvullende ondersteuning voor extra aanmeldactiviteiten in Salesforce. 
+
+**Verbeteringen**
+-   Verbeterde bruikbaarheid van Cloud Discovery-momentopnamerapporten en het oplossen van problemen.
+-   Verbeterde zichtbaarheid van waarschuwingen voor meerdere apps in de lijst met waarschuwingen.
+-   Verbeterde functie voor het maken van doorlopende rapporten in Cloud Discovery.
+-   Verbeterde bruikbaarheid van het Beheerlogboek.
+
+
 
 ## <a name="cloud-app-security-release-82"></a>Cloud App Security-release 82
 Uitgebracht: 9 oktober 2016
@@ -198,6 +215,6 @@ Uitgebracht: 15 mei 2016
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Oct16_HO5-->
 
 

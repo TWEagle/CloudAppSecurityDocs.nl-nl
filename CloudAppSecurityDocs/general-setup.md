@@ -14,8 +14,8 @@ ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 1b131e3918a7623995656f03ba98aca698e3b0c9
+ms.sourcegitcommit: 400741713d40422a3b1c7680663a572d18e9c692
+ms.openlocfilehash: 5c93d5c0f15c0ed6dfd44c0629b8413cdc980e3f
 
 
 ---
@@ -38,7 +38,7 @@ De volgende procedure biedt u instructies voor het instellen van [!INCLUDE[Adall
   
 -   Als u de Cloud App Security-portal wilt uitvoeren, gebruikt u Internet Explorer 11, Microsoft Edge (meest recente versie), Google Chrome (meest recente versie), Mozilla Firefox (meest recente versie) of Apple Safari (meest recente versie).  
   
--   **ExpressRoute**  
+-   ExpressRoute  
   
      Cloud App Security is geïmplementeerd in Azure en volledig geïntegreerd met [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/). Alle interacties met de Cloud App Security-apps en het verkeer dat wordt verzonden naar Cloud App Security, met inbegrip van het uploaden van detectielogboeken, verlopen via **openbare peering** van ExpressRoute voor verbeterde latentie, prestaties en beveiliging. Er zijn geen configuratiestappen vereist door de klant.  
     Zie voor meer informatie over openbare peering [ExpressRoute-circuits en routeringsdomeinen](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/).  
@@ -103,9 +103,10 @@ Als u uw voorkeuren als beheerder van Cloud App Security wilt instellen, klikt u
 > [!NOTE] 
 > Het maximum aantal waarschuwingen dat via een sms-bericht kan worden verzonden, is 10 per telefoonnummer per dag. Houd er rekening mee dat de dag wordt bepaald op basis van de UTC-tijdzone. 
   
-     ![notification settings](./media/notification-settings.png "notification settings")  
+  ![instellingen voor meldingen](./media/notification-settings.png "notification settings")  
   
-     When you are done, click **Save**.  
+  
+3. Wanneer u klaar bent, klikt u op **Opslaan**.  
   
 ##  <a name="a-nameiptagsandrangesa-organize-the-data-according-to-your-needs"></a>De gegevens volgens uw behoeften organiseren  
 Om bekende IP-adressen, zoals uw fysieke IP-adressen van kantoor, eenvoudig te kunnen herkennen, moet u IP-adresbereiken instellen waarmee u ze op de juiste wijze kunt taggen en indelen en de manier waarop logboeken en waarschuwingen worden weergegeven, kunt aanpassen.   
@@ -251,6 +252,6 @@ Cloud App Security is gekoppeld aan Azure Active Directory voor de activiteiten 
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Oct16_HO5-->
 
 

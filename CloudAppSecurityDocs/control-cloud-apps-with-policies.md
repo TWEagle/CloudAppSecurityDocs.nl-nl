@@ -14,8 +14,8 @@ ms.assetid: 14d10238-0f61-43e9-ab96-71534a27d3d4
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 10b4a9575951007dbee9003fd061fb5aaa2d3823
+ms.sourcegitcommit: 2cb87afa3c5342e01cfd4049669ac4b3b7efa4fe
+ms.openlocfilehash: 36f249cbb900bdb516ea6909a0ed6c76b4ea3ab4
 
 
 ---
@@ -26,15 +26,18 @@ Met beleidsregels kunt u de manier vastleggen waarop u wilt dat uw gebruikers zi
 Als er bijvoorbeeld een gegevensschendingsbedreiging is die u in quarantaine wilt zetten, heeft u een ander stoort beleid nodig dan wanneer u een risicovolle cloud-app wilt blokkeren voor gebruik binnen uw organisatie.  
   
 ## <a name="policy-types"></a>Beleidstypen  
+Wanneer u kijkt naar de pagina **Beleid**, kunt u de verschillende beleidsregels en sjablonen onderscheiden aan de hand van het type en pictogram, om te zien welke beleidsregels beschikbaar zijn. De beschikbare beleidsregels zijn afhankelijk van de gegevensbron en wat u hebt ingeschakeld in Cloud App Security voor uw organisatie. Als u bijvoorbeeld Cloud Discovery-logboeken hebt geüpload, worden de beleidsregels met betrekking tot Cloud Discovery weergegeven.
+
 De volgende soorten beleidsregels kunnen worden gemaakt:  
   
-|Beleidstypen|Gebruik|  
-|-----------------|---------|  
-|Beleid voor activiteiten|Beleidsregels voor activiteiten zorgen ervoor dat u een breed scala aan geautomatiseerde processen kunt controleren waarbij u gebruikmaakt van de API’s van de app-provider. Met deze beleidsregels kunt u specifieke activiteiten volgen die worden uitgevoerd door verschillende gebruikers of onverwacht hoge frequenties van een bepaald type activiteit volgen.|  
-|Beleid voor afwijkingsdetectie|De beleidsregels voor afwijkingsdetectie biedt u de mogelijkheid om ongebruikelijke activiteiten op uw cloud op te sporen op basis van de risicofactoren die u hier instelt, zodat u op de hoogte wordt gebracht wanneer iets afwijkt van de basislijn binnen uw organisatie of de standaardactiviteiten van de gebruiker.|  
-|Beleid voor afwijkingsdetectie voor Cloud Discovery|De beleidsregels voor afwijkingsdetectie voor Cloud Discovery kijken naar de logboeken die u voor het detecteren van cloud-apps en het zoeken naar ongebruikelijke voorvallen gebruikt. Voorbeelden zijn wanneer een gebruiker die nog nooit gebruik heeft gemaakt van Dropbox, plotseling 600 GB upload naar Dropbox, of wanneer er veel meer transacties worden uitgevoerd dan gebruikelijk in een bepaalde app.|  
-|Beleid voor appdetectie|Beleidsregels voor appdetectie bieden u de mogelijkheid om waarschuwingen in te stellen zodat u op de hoogte bent wanneer er binnen uw organisatie nieuwe apps gedetecteerd worden.|  
-|Beleid voor bestanden|Met beleidsregels voor bestanden kunt u uw cloud-apps scannen op specifieke bestanden of bestandstypen (gedeeld, gedeeld met externe domeinen) en gegevens (vertrouwelijke, PII-, creditcardgegevens, enzovoort). Ook kunt u beheeracties uitvoeren op bestanden. Beheeracties zijn specifiek per cloud-app.|  
+|pictogram beleidstype|Beleidstypen|Gebruik|  
+|-----|-----------------|---------|  
+|![pictogram activiteitenbeleid](./media/activity_policy.png)|Beleid voor activiteiten|Beleidsregels voor activiteiten zorgen ervoor dat u een breed scala aan geautomatiseerde processen kunt controleren waarbij u gebruikmaakt van de API’s van de app-provider. Met deze beleidsregels kunt u specifieke activiteiten volgen die worden uitgevoerd door verschillende gebruikers of onverwacht hoge frequenties van een bepaald type activiteit volgen.|  
+|![pictogram beleid voor anomaliedetectie](./media/anomaly_detection_policy.png)|Beleid voor afwijkingsdetectie|De beleidsregels voor afwijkingsdetectie biedt u de mogelijkheid om ongebruikelijke activiteiten op uw cloud op te sporen op basis van de risicofactoren die u hier instelt, zodat u op de hoogte wordt gebracht wanneer iets afwijkt van de basislijn binnen uw organisatie of de standaardactiviteiten van de gebruiker.|  
+|![pictogram beleidsregels voor Cloud Discovery](./media/discovery_policy.png)|Beleid voor appdetectie|Beleidsregels voor appdetectie bieden u de mogelijkheid om waarschuwingen in te stellen zodat u op de hoogte bent wanneer er binnen uw organisatie nieuwe apps gedetecteerd worden.|  
+|![pictogram beleid voor anomaliedetectie](./media/anomaly_detection_policy.png)|Beleid voor afwijkingsdetectie voor Cloud Discovery|De beleidsregels voor afwijkingsdetectie voor Cloud Discovery kijken naar de logboeken die u voor het detecteren van cloud-apps en het zoeken naar ongebruikelijke voorvallen gebruikt. Voorbeelden zijn wanneer een gebruiker die nog nooit gebruik heeft gemaakt van Dropbox, plotseling 600 GB upload naar Dropbox, of wanneer er veel meer transacties worden uitgevoerd dan gebruikelijk in een bepaalde app.|  
+|![pictogram veldbeleid](./media/field_policy.png)|Veldbeleid|Met veldbeleid kunt u in uw cloud-apps scannen op velden in uw cloudomgeving die mogelijk gevoelige gegevens bevatten zoals berichten, chatberichten, beschrijvingen en velden met lange tekst.|  
+|![pictogram bestandsbeleid](./media/file_policy.png)|Bestandsbeleid|Met beleidsregels voor bestanden kunt u uw cloud-apps scannen op specifieke bestanden of bestandstypen (gedeeld, gedeeld met externe domeinen) en gegevens (vertrouwelijke, PII-, creditcardgegevens, enzovoort). Ook kunt u beheeracties uitvoeren op bestanden. Beheeracties zijn specifiek per cloud-app.|  
   
 ## <a name="identifying-risk"></a>Het identificeren van risico’s  
 Cloud App Security helpt u bij het beperken van verschillende risico's in de cloud. U kunt elk beleidsregel en waarschuwing zo configureren dat deze bij een van de volgende risico’s hoort:  
@@ -153,6 +156,6 @@ Als u meerdere beleidsregels hebt gemaakt, kan er een situatie ontstaan waarin d
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Oct16_HO5-->
 
 

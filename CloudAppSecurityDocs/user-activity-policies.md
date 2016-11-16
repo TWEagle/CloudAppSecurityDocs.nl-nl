@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/8/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: 99d5fd37-d922-4269-b557-86d7f84180eb
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: a88691fbe6c23fa537133c077402d8e9e1121047
+ms.sourcegitcommit: 97f270813beae64bf0572ac9e806290e4c2fcd22
+ms.openlocfilehash: e66cc36b7ff2591c9eff2b7399e7aba7304fd960
 
 
 ---
@@ -42,7 +42,7 @@ Voor de volgende procedure uit om nieuwe beleidsregels voor activiteiten te make
 4.  Om in te stellen welke acties of andere meetwaarden dit beleid activeren, werkt u met **Activiteitsfilters**.  
   
 5.  Onder **Activiteit overeenkomstig de parameters**, selecteert u of een beleidsovertreding wordt ingesteld als een enkele activiteit voldoet aan de filters of dat een schending alleen wordt gedetecteerd als er een opgegeven aantal **Herhaalde activiteiten** wordt gedetecteerd.  
-    Als u kiest voor **Herhaalde activiteiten**, stel dan de activiteiten in die leiden tot een waarschuwing: Het aantal activiteiten, de tijdspanne en of een schending telt voor een gebruiker binnen een specifieke app of voor dezelfde gebruiker in willekeurige apps.   
+    Als u **Herhaalde activiteiten** kiest, kunt u **Overeenkomende activiteiten groeperen per app** instellen. Hiermee wordt alleen overeenkomend beleid aangegeven wanneer de herhaalde activiteiten voorkomen in dezelfde app (bijvoorbeeld 5 downloads van Box).  
   
 6.  Configureer de **Acties** die moeten worden uitgevoerd wanneer een overeenkomst is gevonden.  
   
@@ -133,6 +133,6 @@ Elk beleid bestaat uit de volgende onderdelen:
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

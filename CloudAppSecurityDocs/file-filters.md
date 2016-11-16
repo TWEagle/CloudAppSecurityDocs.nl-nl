@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 10/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,14 +14,22 @@ ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 1687dd8d98a2e44acbf3f8ad34f875cbbc0bcdd1
+ms.sourcegitcommit: 400741713d40422a3b1c7680663a572d18e9c692
+ms.openlocfilehash: 95dab01c101b6e6171c7985b6571ddb6b4ff5923
 
 
 ---
 
 # <a name="files"></a>Bestanden
 
+U kunt het bestandslogboek filteren om te zoeken naar specifieke bestanden. Met het basisfilter kunt u snel aan de slag met het filteren van uw activiteiten.
+
+ ![basisfilter bestandslogboek](media/file-log-filter-basic.png)
+
+Om in te zoomen op meer specifieke bestanden, kunt u het basisfilter uitbreiden door te klikken op Geavanceerd.
+
+ ![geavanceerd filter bestandslogboek](media/file-log-filter-advanced.png)
+ 
 ###  <a name="a-namefilefiltersa-file-filters"></a> Bestandsfilters 
  
 Met Cloud App Security kunt u elk bestandstype controleren op basis van meer dan twintig metagegevensfilters (bijvoorbeeld toegangsniveau, bestandstype). 
@@ -32,16 +40,14 @@ Hieronder volgt een lijst met de bestandsfilters die kunnen worden toegepast. De
 > [!NOTE] 
 > Wanneer u de beleidsfilters gebruikt, zoekt **Bevat** alleen naar volledige woorden die zijn gescheiden door komma’s, punten, spaties of onderstrepingstekens. Als u bijvoorbeeld zoekt op **malware** of **virus**, wordt virus_malware_file.exe wel gevonden maar malwarevirusfile.exe niet. Als u zoekt op **malware.exe** vindt u ALLE bestanden met ‘malware’ of ‘exe’ in de bestandsnaam, maar als u zoekt op **”malware.exe”** (met aanhalingstekens) vindt u alleen bestanden die precies “malware.exe” bevatten.  **Is gelijk aan** zoekt alleen naar de volledige tekenreeks. Als u bijvoorbeeld zoekt naar **malware.exe** wordt malware.exe wel gevonden maar malware.exe.txt niet. 
 
-   
-![Filters bestandsbeleidstype](./media/policy_file-type-filters.png "policy_file type filters")  
-  
 -   Toegangsniveau – toegangsniveau delen; openbaar, extern, intern of privé.  Zie [General Setup, Set up the portal](getting-started-with-cloud-app-security.md) ('De portal instellen' in het artikel 'Algemene instellingen') voor meer informatie over externe bestanden. Interne bestanden zijn de bestanden in de interne domeinen die u instelt in [Algemene instellingen](General-setup.md). Externe bestanden zijn de bestanden die zijn opgeslagen op locaties die zich niet binnen de ingestelde interne domeinen bevinden. Gedeelde bestanden zijn bestanden met een hoger niveau voor delen dan Privé, inclusief intern gedeelde bestanden (bestanden die binnen uw interne domeinen worden gedeeld), extern gedeelde bestanden (bestanden die worden gedeeld in domeinen die niet in uw interne domeinen worden weergegeven), openbare bestanden met een koppeling (bestanden die met anderen kunnen worden gedeeld via een koppeling) en openbare bestanden (bestanden die kunnen worden gevonden door te zoeken op internet). 
 
 > [!NOTE]
->  Bestanden die door externe gebruikers in uw verbonden apps voor opslag worden gedeeld, worden als volgt verwerkt met Cloud App Security:     - **OneDrive:** In OneDrive wordt een interne gebruiker toegewezen als eigenaar van de bestanden die door een externe gebruiker in uw OneDrive-exemplaar worden geplaatst. Omdat de bestanden vervolgens worden gezien als eigendom van uw organisatie, worden deze bestanden gescand met Cloud App Security en worden beleidsregels op deze bestanden toegepast, zoals voor alle bestanden in OneDrive gebeurt.
-     - **Google Drive:** in Google Drive worden deze bestanden gezien als eigendom van de externe gebruiker en vanwege de juridische beperkingen voor bestanden en gegevens die geen eigendom van uw organisatie zijn, heeft Cloud App Security geen toegang tot deze bestanden.
-    - **Box:** Omdat bestanden die eigendom zijn van een externe gebruiker in Box worden gezien als privégegevens, kunnen globale beheerders van Box de inhoud van deze bestanden niet bekijken. Om deze reden heeft Cloud App Security geen toegang tot deze bestanden. 
-    - **Dropbox:** Omdat bestanden die eigendom zijn van een externe gebruiker in Dropbox worden gezien als privégegevens, kunnen globale beheerders van Box de inhoud van deze bestanden niet bekijken. Om deze reden heeft Cloud App Security geen toegang tot deze bestanden.
+>  Bestanden die door externe gebruikers zijn gedeeld in uw gekoppelde opslag-apps worden als volgt verwerkt door Cloud App Security:
+> - **OneDrive:** OneDrive wijst een interne gebruiker toe als eigenaar van ieder bestand dat door een externe gebruiker in uw OneDrive wordt geplaatst. Omdat de bestanden vervolgens worden gezien als eigendom van uw organisatie, worden deze bestanden gescand met Cloud App Security en worden beleidsregels op deze bestanden toegepast, zoals voor alle bestanden in OneDrive gebeurt.
+> - **Google Drive:** in Google Drive worden deze bestanden gezien als eigendom van de externe gebruiker en vanwege de juridische beperkingen voor bestanden en gegevens die geen eigendom van uw organisatie zijn, heeft Cloud App Security geen toegang tot deze bestanden.
+> - **Box:** Omdat bestanden die eigendom zijn van een externe gebruiker in Box worden gezien als privégegevens, kunnen globale beheerders van Box de inhoud van deze bestanden niet bekijken. Om deze reden heeft Cloud App Security geen toegang tot deze bestanden. 
+> - **Dropbox:** Omdat bestanden die eigendom zijn van een externe gebruiker in Dropbox worden gezien als privégegevens, kunnen globale beheerders van Box de inhoud van deze bestanden niet bekijken. Om deze reden heeft Cloud App Security geen toegang tot deze bestanden.
 
 -   App – alleen bestanden binnen deze apps zoeken.  
   
@@ -57,21 +63,26 @@ Hieronder volgt een lijst met de bestandsfilters die kunnen worden toegepast. De
   
 -   Gemaakt – de tijd waarop het bestand is gemaakt. Het filter ondersteunt datums ervoor en erna, evenals een datumbereik.  
   
--   Laatst gewijzigd – de tijd waarop het bestand is gewijzigd. Het filter ondersteunt datums ervoor en erna, een datumbereik en relatieve tijdsexpressies, bijvoorbeeld alle bestanden die niet zijn aangepast in de afgelopen zes maanden.  
-  
 -   Extensie – gericht op specifieke bestandsextensies, bijvoorbeeld alle bestanden die uitvoerbare bestanden zijn (exe).  
   
 -   Bestands-id – zoeken naar specifieke bestands-id's. Dit is een geavanceerde functie waarmee u bepaalde bestanden met een hoge waarde kunt bijhouden zonder afhankelijk te zijn van de eigenaar/locatie/naam.  
   
 -   Bestandsnaam – de bestandsnaam of subtekenreeks van de naam zoals deze is gedefinieerd in de cloud-app, bijvoorbeeld Alle bestanden met een wachtwoord in hun naam.  
   
+-   Bestandslabel - zoek naar bestanden met specifieke labels die zijn ingesteld door Azure Information Protection. Hiervoor is integratie met Azure Information Protection vereist.
+
 -   Bestandstype – Cloud App Security houdt rekening met het MIME-type dat van de service is ontvangen en scant het bestand om het daadwerkelijke bestandstype te bepalen. Deze scan is van toepassing op bestanden die relevant zijn voor een gegevensscan (documenten, afbeeldingen, presentaties, spreadsheets, tekst- en zipbestanden). Het filter werkt per type bestand/map, bijvoorbeeld Alle mappen die... of Alle spreadsheetbestanden die...
 
 
-     ![Prullenbak beleidsbestandsfilters](./media/policy_file-filters-trash.png "policy_file filters trash")  
+ ![Prullenbak beleidsbestandsfilters](./media/policy_file-filters-trash.png "policy_file filters trash")  
+
   
 -   In de Prullenbak – uitsluiten/opnemen van bestanden in de map Prullenbak. Deze bestanden kunnen nog steeds zijn gedeeld en vormen mogelijk een risico.  
   
+-   Laatst gewijzigd – de tijd waarop het bestand is gewijzigd. Het filter ondersteunt datums ervoor en erna, een datumbereik en relatieve tijdsexpressies, bijvoorbeeld alle bestanden die niet zijn aangepast in de afgelopen zes maanden.  
+
+-   Overeenkomend beleid - bestanden die overeenkomen met een actief beleid van Cloud App Security.
+
 -   MIME-type – controle van het MIME-type van een bestand, kan vrije tekst bevatten.  
   
 -   Eigenaar - opnemen/uitsluiten van specifieke eigenaren van bestanden, bijvoorbeeld Alle bestanden bijhouden die worden gedeeld door malafide_werknemer_100.  
@@ -133,6 +144,6 @@ U kunt ook instellen dat het beleid wordt uitgevoerd op specifieke bestanden doo
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Oct16_HO5-->
 
 

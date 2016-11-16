@@ -14,8 +14,8 @@ ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 9672336d69f19875d160eb414bf3ca2c525692e1
+ms.sourcegitcommit: 400741713d40422a3b1c7680663a572d18e9c692
+ms.openlocfilehash: 046cc96c15f76e4196c60f9864c835f4e6595dfa
 
 
 ---
@@ -37,8 +37,7 @@ Voordat u automatische logboekbestandsverzameling instelt, moet u controleren of
   
 Met een logboekverzamelaar kunt u het uploaden van logboeken vanaf uw netwerk eenvoudig automatiseren. De logboekverzamelaar wordt uitgevoerd op uw netwerk en ontvangt logboeken via Syslog of FTP. Elk logboek wordt automatisch verwerkt, gecomprimeerd en naar de portal verzonden. De FTP-logboeken worden naar Cloud App Security geüpload nadat de FTP-overdracht naar de logboekverzamelaar voor het bestand is voltooid. Voor Syslogs worden de ontvangen logboeken met de logboekverzamelaar elke 20 minuten naar de schijf geschreven en wordt het bestand vervolgens naar Cloud App Security geüpload.  De virtuele machine voor de logboekverzamelaar is beschikbaar voor de VHD-indeling van Hyper-V en de OVF-indeling voor hypervisor van VMware. Hiervoor is 250 GB aan schijfruimte, 2 CPU's en 4 GB RAM vereist. 
      
-  
-     The log collector VHD image can be downloaded and run on Azure servers.  
+De VHD-kopie van de logboekverzamelaar kan worden gedownload en uitgevoerd op Azure-servers.  
   
 2.  Ga naar de pagina met instellingen voor automatisch uploaden:  
     Klik in de Cloud App Security-portal op het pictogram Instellingen ![pictogram Instellingen](./media/settings-icon.png "settings icon"), klik op **Cloud Discovery-instellingen** en selecteer het tabblad **Logboeken automatisch uploaden**.  
@@ -81,8 +80,8 @@ Met een logboekverzamelaar kunt u het uploaden van logboeken vanaf uw netwerk ee
 1.  Open Hyper-V-beheer.  
   
 2.  Selecteer **Nieuw** en vervolgens **Virtuele machine** en klik dan op **Volgende**.  
-  
-             ![discovery hyperv virtual machine](./media/discovery-hyperv-virtual-machine.png "discovery hyperv virtual machine")  
+ 
+![detectie hyperv virtuele machine](./media/discovery-hyperv-virtual-machine.png "discovery hyperv virtual machine")  
   
 3.  Geef een **naam** voor de nieuwe virtuele machine op, bijvoorbeeld CloudAppSecurityLogCollector01. Klik vervolgens op **Volgende**.  
   
@@ -97,8 +96,7 @@ Met een logboekverzamelaar kunt u het uploaden van logboeken vanaf uw netwerk ee
 8.  Kies **Een bestaande virtuele harde schijf gebruiken** en selecteer het **VHD**-bestand dat in het ZIP-bestand zat dat u hebt gedownload.  
   
 9.  Klik op **Volgende** en klik vervolgens op **Voltooien**.  
-  
-             The machine will be added to your Hyper-V environment.  
+    De machine wordt aan uw Hyper-V-omgeving toegevoegd.  
   
 9. Klik op de machine in de tabel **Virtuele machines** en klik op **Start**.   
   
@@ -121,7 +119,6 @@ Ga als volgt te werk als u zich voor het eerst wilt aanmelden bij de logboekverz
 ```
 sudo collector_config <access token>
 ```
-
 3. Voer uw consoledomein in, bijvoorbeeld:
 
 ```
@@ -129,33 +126,29 @@ contoso.portal.cloudappsecurity.com
 ```
 
 Dit is beschikbaar via de URL die u ziet nadat u zich hebt aangemeld bij de Cloud App Security-portal. 
- 
 
-4. Voer de naam in van de logboekverzamelaar die u wilt configureren, bijvoorbeeld:
-
-**CloudAppSecurityLogCollector01** of **NewYork** in de bovenstaande afbeelding.
- 
-8.  Importeer op de volgende manier de configuratie van de logboekverzamelaar uit de portal:  
+4. Voer de naam in van de logboekverzamelaar die u wilt configureren, bijvoorbeeld: **CloudAppSecurityLogCollector01** of **NewYork** in de afbeelding hierboven.
+5.  Importeer op de volgende manier de configuratie van de logboekverzamelaar uit de portal:  
   
-      1.  Meld u aan bij de logboekverzamelaar via SSH met behulp van de referenties voor de interactieve beheerder die u in de portal heeft gekregen.  
+      a.  Meld u aan bij de logboekverzamelaar via SSH met behulp van de referenties voor de interactieve beheerder die u in de portal heeft gekregen.  
   
-       2.  Voer het hulpprogramma voor de configuratie van de verzamelaar uit met het toegangstoken dat u in de opdracht **sudo collector_config \<toegangstoken>** hebt ontvangen.  
+      b.  Voer het hulpprogramma voor de configuratie van de verzamelaar uit met het toegangstoken dat u in de opdracht **sudo collector_config \<toegangstoken>** hebt ontvangen.  
   
-             Voer uw consoledomein in, bijvoorbeeld:  
+             Enter your console domain, for example:  
   
              **contoso.portal.cloudappsecurity.com ** 
   
-             Voer de naam in van de logboekverzamelaar die u wilt configureren, bijvoorbeeld:  
+             Enter the name of the log collector you want to configure, for example:  
   
              **CloudAppSecurityLogCollector01**  
   
-5.  Configureer volgens de richtlijnen in het dialoogvenster uw netwerkfirewalls en proxy's, zodat ze periodiek logboeken naar de toegewezen Syslog-poort van de FTP-map exporteren, bijvoorbeeld:  
+6.  Configureer volgens de richtlijnen in het dialoogvenster uw netwerkfirewalls en proxy's, zodat ze periodiek logboeken naar de toegewezen Syslog-poort van de FTP-map exporteren, bijvoorbeeld:  
   
      `London Zscaler - Destination path: 614`  
   
      `SF Blue Coat - Destination path: \\CloudAppSecurityCollector01\BlueCoat\`  
   
-6.  Gebruik het beheerlogboek om te controleren dat logboeken periodiek naar de portal worden geüpload.  
+7.  Gebruik het beheerlogboek om te controleren dat logboeken periodiek naar de portal worden geüpload.  
   
 ## <a name="log-collector-performance"></a>Prestaties logboekverzamelaar
 De logboekverzamelaar kan een logboekcapaciteit van maximaal 50 GB per uur aan.
@@ -166,7 +159,15 @@ De belangrijkste knelpunten in het logboekverzamelproces zijn:
 
 De logboekverzamelaar heeft een ingebouwd beveiligingsmechanisme dat de snelheid waarmee logboeken binnenkomen bewaakt en vergelijkt met de uploadsnelheid. In geval van congestie laat de logboekverzamelaar logboekbestanden vallen. Als uw installatie meestal groter is dan 50 GB per uur, dan is het raadzaam om het verkeer over meerdere logboekverzamelaars te spreiden.
 
+## <a name="see-also"></a>Zie ook  
+[Werken met Cloud Discovery-gegevens](working-with-cloud-discovery-data.md)   
+[Ga naar de ondersteuningspagina van Cloud App Security voor technische ondersteuning.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+[Premier-klanten kunnen Cloud App Security ook rechtstreeks vanuit Premier Portal kiezen.](https://premier.microsoft.com/)  
+    
+      
+  
 
-<!--HONumber=Oct16_HO4-->
+
+<!--HONumber=Oct16_HO5-->
 
 

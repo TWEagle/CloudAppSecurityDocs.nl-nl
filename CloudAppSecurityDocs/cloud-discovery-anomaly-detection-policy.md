@@ -14,8 +14,8 @@ ms.assetid: eaf73af0-7610-4903-b656-8d90b1d2b18c
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 481ca3d68e5e7aea006eeff443ec521a374e6e11
+ms.sourcegitcommit: 400741713d40422a3b1c7680663a572d18e9c692
+ms.openlocfilehash: 132b4d296b26dd187418734b40d08ecb243692da
 
 
 ---
@@ -33,7 +33,7 @@ Elk beleid bestaat uit de volgende onderdelen:
 -   Gevoeligheid: hiermee kunt u instellen hoeveel waarschuwingen het beleid moet activeren.  
   
 ### <a name="activity-filters"></a>Activiteitfilters  
-Zie [activiteitfilters](activity-filters.md), voor een lijst van activiteitfilters.  
+Zie [Activiteiten](activity-filters.md) voor een lijst met activiteitfilters.  
   
 ### <a name="apply-to"></a>Van toepassing op  
 Het gebruik dat wordt bewaakt kan op twee manieren worden gefilterd:  
@@ -69,6 +69,6 @@ Er zijn twee manieren om het aantal waarschuwingen dat door het beleid is geacti
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Oct16_HO5-->
 
 
