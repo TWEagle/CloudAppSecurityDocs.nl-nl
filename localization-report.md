@@ -463,8 +463,8 @@
 * Archive Datetime: 2016-11-17 01:26:30
 * Handback File: [connect-office-365-to-microsoft-cloud-app-security.c08c98d3a8c623f7e01d4a5cdfb3e4571e76d449.nl-nl.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/a37f6e3c48cf11383b6a9efd2309859caead100f/ol-handback/Microsoft/CloudAppSecurityDocs-pr.nl-nl/live/ht/connect-office-365-to-microsoft-cloud-app-security.c08c98d3a8c623f7e01d4a5cdfb3e4571e76d449.nl-nl.xlf)
 * Handback Datetime: 2016-11-17 02:03:23
-* Bilingual File: [connect-office-365-to-microsoft-cloud-app-security.c08c98d3a8c623f7e01d4a5cdfb3e4571e76d449.nl-nl.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/ec035001d73df869510fad781cc82290bc292311/ol-handback/Microsoft/CloudAppSecurityDocs-pr.nl-nl/live/ht/connect-office-365-to-microsoft-cloud-app-security.c08c98d3a8c623f7e01d4a5cdfb3e4571e76d449.nl-nl.xlf)
-* Bilingual Datetime: 2016-11-16 16:55:24
+* Bilingual File: [connect-office-365-to-microsoft-cloud-app-security.c08c98d3a8c623f7e01d4a5cdfb3e4571e76d449.nl-nl.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/a37f6e3c48cf11383b6a9efd2309859caead100f/ol-handback/Microsoft/CloudAppSecurityDocs-pr.nl-nl/live/ht/connect-office-365-to-microsoft-cloud-app-security.c08c98d3a8c623f7e01d4a5cdfb3e4571e76d449.nl-nl.xlf)
+* Bilingual Datetime: 2016-11-17 02:06:16
 * [Back to Top](#report-top)
 
 ##### <a name='3fd8ada1ce622da339368c64ecc8b1d319b9c33316'></a> Source: [CloudAppSecurityDocs\connect-okta-to-microsoft-cloud-app-security.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/759692e7b270d87dc1becf88453d095f2382c411/CloudAppSecurityDocs/connect-okta-to-microsoft-cloud-app-security.md)
@@ -477,8 +477,8 @@
 * Archive Datetime: 2016-11-17 01:26:30
 * Handback File: [connect-okta-to-microsoft-cloud-app-security.f277046bc02529d3b6c2e86b31a8d1f3e5b3319c.nl-nl.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/a37f6e3c48cf11383b6a9efd2309859caead100f/ol-handback/Microsoft/CloudAppSecurityDocs-pr.nl-nl/live/ht/connect-okta-to-microsoft-cloud-app-security.f277046bc02529d3b6c2e86b31a8d1f3e5b3319c.nl-nl.xlf)
 * Handback Datetime: 2016-11-17 02:03:23
-* Bilingual File: [connect-okta-to-microsoft-cloud-app-security.f277046bc02529d3b6c2e86b31a8d1f3e5b3319c.nl-nl.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/ec035001d73df869510fad781cc82290bc292311/ol-handback/Microsoft/CloudAppSecurityDocs-pr.nl-nl/live/ht/connect-okta-to-microsoft-cloud-app-security.f277046bc02529d3b6c2e86b31a8d1f3e5b3319c.nl-nl.xlf)
-* Bilingual Datetime: 2016-11-16 16:55:24
+* Bilingual File: [connect-okta-to-microsoft-cloud-app-security.f277046bc02529d3b6c2e86b31a8d1f3e5b3319c.nl-nl.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/a37f6e3c48cf11383b6a9efd2309859caead100f/ol-handback/Microsoft/CloudAppSecurityDocs-pr.nl-nl/live/ht/connect-okta-to-microsoft-cloud-app-security.f277046bc02529d3b6c2e86b31a8d1f3e5b3319c.nl-nl.xlf)
+* Bilingual Datetime: 2016-11-17 02:06:16
 * [Back to Top](#report-top)
 
 ##### <a name='28ce67bd096d82e3775a281359fc100e2c21471517'></a> Source: [CloudAppSecurityDocs\connect-salesforce-to-microsoft-cloud-app-security.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/759692e7b270d87dc1becf88453d095f2382c411/CloudAppSecurityDocs/connect-salesforce-to-microsoft-cloud-app-security.md)
@@ -491,8 +491,8 @@
 * Archive Datetime: 2016-11-17 01:26:30
 * Handback File: [connect-salesforce-to-microsoft-cloud-app-security.9f17846790006e484c62d3662e820a3d84d414a3.nl-nl.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/a37f6e3c48cf11383b6a9efd2309859caead100f/ol-handback/Microsoft/CloudAppSecurityDocs-pr.nl-nl/live/ht/connect-salesforce-to-microsoft-cloud-app-security.9f17846790006e484c62d3662e820a3d84d414a3.nl-nl.xlf)
 * Handback Datetime: 2016-11-17 02:03:23
-* Bilingual File: [connect-salesforce-to-microsoft-cloud-app-security.9f17846790006e484c62d3662e820a3d84d414a3.nl-nl.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/ec035001d73df869510fad781cc82290bc292311/ol-handback/Microsoft/CloudAppSecurityDocs-pr.nl-nl/live/ht/connect-salesforce-to-microsoft-cloud-app-security.9f17846790006e484c62d3662e820a3d84d414a3.nl-nl.xlf)
-* Bilingual Datetime: 2016-11-16 16:55:24
+* Bilingual File: [connect-salesforce-to-microsoft-cloud-app-security.9f17846790006e484c62d3662e820a3d84d414a3.nl-nl.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/a37f6e3c48cf11383b6a9efd2309859caead100f/ol-handback/Microsoft/CloudAppSecurityDocs-pr.nl-nl/live/ht/connect-salesforce-to-microsoft-cloud-app-security.9f17846790006e484c62d3662e820a3d84d414a3.nl-nl.xlf)
+* Bilingual Datetime: 2016-11-17 02:06:16
 * [Back to Top](#report-top)
 
 ##### <a name='30ddba23a0c481cb434e9239950cce90c52efc4f18'></a> Source: [CloudAppSecurityDocs\connect-servicenow-to-microsoft-cloud-app-security.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/ed4ea71b24767d3602d40894d1cbac7447bcd8a2/CloudAppSecurityDocs/connect-servicenow-to-microsoft-cloud-app-security.md)
@@ -725,8 +725,8 @@
 * Archive Datetime: 2016-11-17 01:26:30
 * Handback File: [index.9f376d5a796451d09ac1781b0f592917baf408f1.nl-nl.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/a37f6e3c48cf11383b6a9efd2309859caead100f/ol-handback/Microsoft/CloudAppSecurityDocs-pr.nl-nl/live/ht/index.9f376d5a796451d09ac1781b0f592917baf408f1.nl-nl.xlf)
 * Handback Datetime: 2016-11-17 02:03:23
-* Bilingual File: [index.9f376d5a796451d09ac1781b0f592917baf408f1.nl-nl.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/ec035001d73df869510fad781cc82290bc292311/ol-handback/Microsoft/CloudAppSecurityDocs-pr.nl-nl/live/ht/index.9f376d5a796451d09ac1781b0f592917baf408f1.nl-nl.xlf)
-* Bilingual Datetime: 2016-11-16 16:55:24
+* Bilingual File: [index.9f376d5a796451d09ac1781b0f592917baf408f1.nl-nl.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/a37f6e3c48cf11383b6a9efd2309859caead100f/ol-handback/Microsoft/CloudAppSecurityDocs-pr.nl-nl/live/ht/index.9f376d5a796451d09ac1781b0f592917baf408f1.nl-nl.xlf)
+* Bilingual Datetime: 2016-11-17 02:06:16
 * [Back to Top](#report-top)
 
 ##### <a name='fbd75fadb63bbaecd1e0dbd12b9162c0d17ce50e34'></a> Source: [CloudAppSecurityDocs\investigate.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/23ec0b7bef05146d3ff4a953225b56b52aa4959f/CloudAppSecurityDocs/investigate.md)
@@ -756,8 +756,8 @@
 * Archive Datetime: 2016-11-17 01:26:30
 * Handback File: [manage-app-permissions.4e9e0a90857ca7ea9657170a841d43edc5129d8a.nl-nl.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/a37f6e3c48cf11383b6a9efd2309859caead100f/ol-handback/Microsoft/CloudAppSecurityDocs-pr.nl-nl/live/ht/manage-app-permissions.4e9e0a90857ca7ea9657170a841d43edc5129d8a.nl-nl.xlf)
 * Handback Datetime: 2016-11-17 02:03:23
-* Bilingual File: [manage-app-permissions.4e9e0a90857ca7ea9657170a841d43edc5129d8a.nl-nl.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/ec035001d73df869510fad781cc82290bc292311/ol-handback/Microsoft/CloudAppSecurityDocs-pr.nl-nl/live/ht/manage-app-permissions.4e9e0a90857ca7ea9657170a841d43edc5129d8a.nl-nl.xlf)
-* Bilingual Datetime: 2016-11-16 16:55:24
+* Bilingual File: [manage-app-permissions.4e9e0a90857ca7ea9657170a841d43edc5129d8a.nl-nl.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/a37f6e3c48cf11383b6a9efd2309859caead100f/ol-handback/Microsoft/CloudAppSecurityDocs-pr.nl-nl/live/ht/manage-app-permissions.4e9e0a90857ca7ea9657170a841d43edc5129d8a.nl-nl.xlf)
+* Bilingual Datetime: 2016-11-17 02:06:16
 * [Back to Top](#report-top)
 
 ##### <a name='53f98a5fdbf84c20c0efe94e935738a95f7d2e3b36'></a> Source: [CloudAppSecurityDocs\media\access-from-o365.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/a413236b04726dddc69068e39967f6ad17218719/CloudAppSecurityDocs/media/access-from-o365.png)
