@@ -14,8 +14,8 @@ ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2cb87afa3c5342e01cfd4049669ac4b3b7efa4fe
-ms.openlocfilehash: 59e97ef0bd0a1f3ed388c3d21cfe6a70abf7936a
+ms.sourcegitcommit: 97f270813beae64bf0572ac9e806290e4c2fcd22
+ms.openlocfilehash: 92507e352a88cd0c5ff4a7bc9f66b94defd864ff
 
 
 ---
@@ -86,6 +86,7 @@ Hieronder volgt een lijst met de activiteitfilters die kunnen worden toegepast. 
 U kunt meer informatie bekijken over elke activiteit door te klikken op de activiteit in het Activiteitenlogboek. Daarmee opent u de activiteitslade, die de volgende acties bevat die u met het bestand kunt uitvoeren:
 
 - Overeenkomend beleid: klik op de koppeling Overeenkomend beleid om een lijst met beleidsregels te zien waarmee deze activiteit overeenkomt.
+- Onbewerkte gegevens weergeven: klik op Onbewerkte gegevens weergeven om te zien welke gegevens daadwerkelijk van de app zijn ontvangen.
 - Gebruiker: klik op de gebruiker om de gebruikerspagina weer te geven van de gebruiker die de activiteit heeft uitgevoerd. 
 - Apparaattype: klik op het apparaattype om de onbewerkte gegevens van de gebruikersagent weer te geven. 
 - Locatie: klik op de locatie om die te openen in Bing Kaarten.
@@ -129,6 +130,6 @@ Beheeracties in apps
   
 
 
-<!--HONumber=Oct16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 

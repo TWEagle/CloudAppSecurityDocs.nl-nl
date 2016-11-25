@@ -30,12 +30,14 @@
 ### [Bestanden](file-filters.md)
 ### [Activiteiten](activity-filters.md)
 ### [Waarschuwingen](monitor-alerts.md)
+### [Integratie met Azure Information Protection](azip-integration.md)
 ## [Controle](control.md)
-## [Beheeracties](governance-actions.md)
+### [App-machtigingen beheren](manage-app-permissions.md)
+## [Beheerlogboek](governance-actions.md)
 # [Problemen oplossen](troubleshooting.md)
 ## [Problemen met Cloud Discovery oplossen](troubleshooting-cloud-discovery.md)
 ## [Foutberichten gebruiken om problemen met API-connectors op te lossen](troubleshooting-api-connectors-using-error-messages.md)
 
-<!--HONumber=Oct16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 

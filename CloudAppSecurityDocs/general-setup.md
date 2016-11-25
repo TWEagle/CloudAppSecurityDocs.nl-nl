@@ -14,8 +14,8 @@ ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 400741713d40422a3b1c7680663a572d18e9c692
-ms.openlocfilehash: 5c93d5c0f15c0ed6dfd44c0629b8413cdc980e3f
+ms.sourcegitcommit: 2d39b26629579905ea30f3f769ca2a16121d51d1
+ms.openlocfilehash: b617a488dec97deb7c1e1d89cbaa62e496e18891
 
 
 ---
@@ -37,11 +37,6 @@ De volgende procedure biedt u instructies voor het instellen van [!INCLUDE[Adall
 -   Als u Cloud App Security wilt instellen, moet u een globale beheerder, een compliancebeheerder of een beveiligingsbeheerder in Azure Active Directory of Office 365 zijn. Het is belangrijk om te begrijpen dat een gebruiker aan wie een beheerdersrol is toegewezen, dezelfde machtigingen heeft voor alle cloud-apps waar uw organisatie een abonnement voor heeft, ongeacht of u die rol toewijst in de Office 365-portal of in de klassieke Azure-portal of met behulp van de Azure AD-module voor Windows PowerShell. Zie voor meer informatie [Beheerdersrollen toewijzen in Office 365](https://support.office.com/article/Assigning-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504) en [Beheerdersrollen toewijzen in Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/).  
   
 -   Als u de Cloud App Security-portal wilt uitvoeren, gebruikt u Internet Explorer 11, Microsoft Edge (meest recente versie), Google Chrome (meest recente versie), Mozilla Firefox (meest recente versie) of Apple Safari (meest recente versie).  
-  
--   ExpressRoute  
-  
-     Cloud App Security is geïmplementeerd in Azure en volledig geïntegreerd met [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/). Alle interacties met de Cloud App Security-apps en het verkeer dat wordt verzonden naar Cloud App Security, met inbegrip van het uploaden van detectielogboeken, verlopen via **openbare peering** van ExpressRoute voor verbeterde latentie, prestaties en beveiliging. Er zijn geen configuratiestappen vereist door de klant.  
-    Zie voor meer informatie over openbare peering [ExpressRoute-circuits en routeringsdomeinen](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/).  
   
 ## <a name="set-up-the-portal"></a>De portal instellen  
   
@@ -91,7 +86,7 @@ Het is ook mogelijk om een **Logo** op te geven dat wordt weergegeven in e-mailm
   
 ![Beheerderstoegang beheren](./media/manage-admin-access.png "manage admin access")  
   
-##  <a name="a-nameadminsettingsa-customize-your-admin-settings"></a>Uw beheerinstellingen aanpassen  
+##  <a name="a-nameadminsettingsa-customize-your-admin-settings"></a><a name="Adminsettings"></a> Uw beheerinstellingen aanpassen  
 Als u uw voorkeuren als beheerder van Cloud App Security wilt instellen, klikt u op uw naam in de menubalk van de portal en selecteert u **Gebruikersinstellingen** om het volgende in te stellen:  
   
 1.  Klik op **Accountinstellingen**. Hier kunt u de taal van de portal voor uw eigen weergave aanpassen. U kunt de taal instellen om de portal weer te geven in ofwel de standaardtaal of u kunt een andere taal instellen voor uzelf.  
@@ -108,7 +103,7 @@ Als u uw voorkeuren als beheerder van Cloud App Security wilt instellen, klikt u
   
 3. Wanneer u klaar bent, klikt u op **Opslaan**.  
   
-##  <a name="a-nameiptagsandrangesa-organize-the-data-according-to-your-needs"></a>De gegevens volgens uw behoeften organiseren  
+##  <a name="a-nameiptagsandrangesa-organize-the-data-according-to-your-needs"></a><a name="IPtagsandRanges"></a> De gegevens volgens uw behoeften organiseren  
 Om bekende IP-adressen, zoals uw fysieke IP-adressen van kantoor, eenvoudig te kunnen herkennen, moet u IP-adresbereiken instellen waarmee u ze op de juiste wijze kunt taggen en indelen en de manier waarop logboeken en waarschuwingen worden weergegeven, kunt aanpassen.   
 Elke groep met IP-adresbereiken kan worden ingedeeld op basis van een vooraf gedefinieerde lijst met IP-categorieën of worden getagd met zelfgemaakte IP-tags. Met deze instelling kunt u openbare gegevens over de geografische locatie overschrijven op basis van uw interne netwerkkennis.  
   
@@ -152,7 +147,7 @@ Klik in de menubalk op het pictogram Instellingen ![pictogram Instellingen](./me
   
      ![Nieuw IP-adresbereik](./media/newipaddress-range.png "newipaddress range")  
   
-##  <a name="a-nameadallommailsettingsa-personalize-your-experience"></a>Uw ervaring aanpassen  
+##  <a name="a-nameadallommailsettingsa-personalize-your-experience"></a><a name="Adallom_mailsettings"></a> Uw ervaring aanpassen  
 Klik in de menubalk op het pictogram Instellingen ![pictogram Instellingen](./media/settings-icon.png "settings icon") en selecteer **E‑mailinstellingen** om de parameters in te stellen voor e‑mailmeldingen die vanuit Cloud App Security worden verzonden naar beheerders die om waarschuwingen vragen, en voor meldingen die naar eindgebruikers worden verzonden over schendingen waarbij zij betrokken zijn.  
   
 ![Menu E-mailinstellingen](./media/mail-setting-menu.png "mail setting menu")  
@@ -241,9 +236,14 @@ Configureer het volgende:
      Klik vervolgens op **Een test-e-mail verzenden** om een test-e‑email te verzenden naar uzelf met een voorbeeld van de sjabloon die u hebt gemaakt.  
      Het e-mailbericht wordt verzonden naar het account waarmee u zich hebt aangemeld bij de portal. In de test-e-mail kunt u de metagegevensvelden, de sjabloon, het onderwerp van de e-mail, de titel in de hoofdtekst van de e-mail en de inhoud zien.  
   
-## <a name="single-signon"></a>Eenmalige aanmelding  
+## <a name="single-sign-on"></a>Eenmalige aanmelding  
 Cloud App Security is gekoppeld aan Azure Active Directory voor de activiteiten met betrekking tot verificatie, inrichting en licentieverlening. Zie de [federatiecompatibiliteitslijst van Azure Active Directory: eenmalige aanmelding implementeren met identiteitsproviders van derden](https://msdn.microsoft.com/library/azure/jj679342.aspx) voor informatie over het beheren van eenmalige aanmelding.  
-  
+
+
+> [!NOTE] 
+> Als u ExpressRoute gebruikt, is Cloud App Security geïmplementeerd in Azure en volledig geïntegreerd met [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/). Alle interacties met de Cloud App Security-apps en het verkeer dat wordt verzonden naar Cloud App Security, met inbegrip van het uploaden van detectielogboeken, verlopen via **openbare peering** van ExpressRoute voor verbeterde latentie, prestaties en beveiliging. Er zijn geen configuratiestappen vereist door de klant.  
+    Zie voor meer informatie over openbare peering [ExpressRoute-circuits en routeringsdomeinen](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/).  
+    
 ## <a name="see-also"></a>Zie ook  
 [Cloud Discovery instellen](set-up-cloud-discovery.md)   
 [Ga naar de ondersteuningspagina van Cloud App Security voor technische ondersteuning.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
@@ -252,6 +252,6 @@ Cloud App Security is gekoppeld aan Azure Active Directory voor de activiteiten 
   
 
 
-<!--HONumber=Oct16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 

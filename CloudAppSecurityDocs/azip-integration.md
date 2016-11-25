@@ -10,17 +10,17 @@ ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
 ms.technology: 
-ms.assetid: bc11bbfe-ec6c-458c-8302-8112c383199d
+ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4ddfce677376f370e332938059e741af613853db
-ms.openlocfilehash: 1fda4411d17acf90338263df9df147ed0075881c
+ms.sourcegitcommit: 759692e7b270d87dc1becf88453d095f2382c411
+ms.openlocfilehash: 104dbdbc22d748e924f42c92ba2607e970f03b9e
 
 
 ---
 
-# <a name="azure-information-protection-integration-private-preview"></a>Integratie van Azure Information Protection **AFGESCHERMD VOORBEELD**
+# <a name="azure-information-protection-integration---private-preview"></a>Integratie van Azure Information Protection **AFGESCHERMD VOORBEELD**
 
 Met Cloud App Security kunt u bestanden onderzoeken en beleid instellen op basis van bestandslabels van Azure Information Protection. Dat zorgt voor meer zichtbaarheid van en controle over uw gevoelige gegevens in de cloud. Als u dit wilt gebruiken, maakt u een beleidsregel in Cloud App Security voor het scannen van bestanden met inhoudsinspectie ingeschakeld. Daarnaast kunt u, als onderdeel van het afgeschermde voorbeeld van Cloud App Security, waarschuwingen activeren voor activiteiten met betrekking tot geclassificeerde bestanden. Na integratie van Azure Information Protection kunt u het volgende doen:
 -   De blootstelling van gevoelige gegevens via uw cloudtoepassingen kwantificeren.
@@ -29,7 +29,7 @@ Met Cloud App Security kunt u bestanden onderzoeken en beleid instellen op basis
 
 > [!NOTE] Standaard worden bestanden alleen gescand op labels wanneer er een beleid is voor het scannen van bestanden met inhoudsinspectie ingeschakeld. Als u alle bestanden wilt scannen op labels zonder bestandsbeleid, schakelt u automatisch scannen in.
 
-## <a name="terminology-overview"></a>Overzicht van de terminologie:
+## <a name="terminology-overview"></a>Overzicht van de terminologie
 -   Azure Information Protection-classificatielabel: een kenmerk dat wordt toegevoegd aan bestanden in uw organisatie. Dit gebeurt automatisch, op basis van een beleid of handmatig door eindgebruikers.
 -   Extern: een label dat is ingesteld door iemand buiten uw organisatie.
 -   Bestandslabel: de presentatie van het classificatielabel van een bestand in Cloud App Security. Dit veld wordt weergegeven voor elk bestand in de bestandstabel en kan worden gebruikt in filters.
@@ -63,7 +63,7 @@ Of naar bestanden die zijn voorzien van een willekeurig label:
 
 ![alle bestandslabelfilters](./media/azip-file-tags-all-filter.png)
 
-## <a name="enable-automatic-scan-coming-soon"></a>Automatisch scannen inschakelen (binnenkort beschikbaar)
+## <a name="enable-automatic-scan"></a>Automatisch scannen inschakelen
 Als u het automatisch scannen op bestandslabels van nieuwe bestanden wilt inschakelen in Office 365, doet u het volgende:
 
 1. Ga in Office 365 naar de pagina **Algemene instellingen**.
@@ -72,7 +72,7 @@ Als u het automatisch scannen op bestandslabels van nieuwe bestanden wilt inscha
 ![azure information protection inschakelen](./media/enable-azip.png)
  
 
-## <a name="internal-and-external-tags-coming-soon"></a>Interne en externe labels (binnenkort beschikbaar)
+## <a name="internal-and-external-tags"></a>Interne en externe labels
 Standaard scant Cloud App Security op classificatielabels die in uw organisatie zijn gedefinieerd en op externe labels die zijn gedefinieerd door andere organisaties. 
 
 Als u die wilt negeren, selecteert u onder de **Azure-beveiligingsinstellingen** de optie **Azure Information Protection-classificatielabels van andere tenants negeren**.
@@ -119,6 +119,6 @@ Lees meer informatie over [Azure Information Protection](https://docs.microsoft.
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO3-->
 
 

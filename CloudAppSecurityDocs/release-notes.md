@@ -5,22 +5,45 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/30/2016
+ms.date: 11/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
 ms.technology: 
-ms.assetid: 4949ab4f-22c3-4371-b2dc-c8422a097dfe
+ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 400741713d40422a3b1c7680663a572d18e9c692
-ms.openlocfilehash: d95ddaef15cbb11f005156f272578f49f012e16d
+ms.sourcegitcommit: 759692e7b270d87dc1becf88453d095f2382c411
+ms.openlocfilehash: 3161fd1c61779ba943d8269d2ec979050ee0ae1f
 
 
 ---
 
 # <a name="release-notes"></a>Opmerkingen bij de release
+
+
+## <a name="cloud-app-security-release-84"></a>Cloud App Security-release 84
+Uitgebracht: 13 november 2016
+
+**Nieuwe functies**
+-   Cloud App Security biedt nu ondersteuning voor Microsoft Azure Information Protection, met verbeterde integratie en automatische inrichting. U kunt uw bestanden filteren en bestandsbeleidsregels instellen met behulp van veilige classificaties van tags en vervolgens het classificatielabel instellen dat u wilt weergeven. Daarnaast geven de labels aan of de classificatie is ingesteld door iemand in uw organisatie of door personen van een andere tenant (extern). U kunt ook beleidsregels voor activiteiten instellen op basis van de Azure Information Protection-classificatielabels en automatisch scannen voor de classificatielabels in Office 365 inschakelen. Zie [Integratie van Azure Information Protection](azip-integration.md) voor meer informatie over hoe u kunt profiteren van deze geweldige nieuwe functie.
+ 
+**Verbeteringen**
+-   Er zijn verbeteringen aangebracht in het activiteitenlogboek van Cloud App Security: 
+   -    Office 365-gebeurtenissen uit het beveiligings- en compliancecentrum zijn nu geïntegreerd met Cloud App Security en worden weergegeven in het **activiteitenlogboek**.
+   -    Alle activiteiten van Cloud App Security worden in het activiteitenlogboek van Cloud App Security geregistreerd als beheeractiviteit.
+-   Als hulp bij het onderzoeken van waarschuwingen met betrekking tot bestanden kunt u nu voor elke waarschuwing die het resultaat is van een bestandsbeleid de lijst met activiteiten weergegeven die voor het overeenkomende bestand zijn uitgevoerd.
+-   Het algoritme voor onmogelijke trajecten in de anomaliedetectie-engine is verbeterd en biedt nu betere ondersteuning voor kleine tenants. 
+ 
+**Kleine verbeteringen**
+-   De **limiet voor het exporteren van activiteiten** is verhoogd naar 10.000. 
+-   Bij het maken van een **momentopnamerapport** ontvangt u tijdens het handmatig uploaden van logboeken in Cloud Discovery nu een nauwkeurige schatting van hoe lang de logboekverwerking gaat duren. 
+-   In een bestandsbeleid kunt u de beheeractie **Samenwerker verwijderen** nu gebruiken voor groepen.
+-   Er zijn kleine verbeteringen aangebracht in de pagina **App-machtigingen**. 
+-   Als meer dan 10.000 gebruikers machtigingen hadden voor een app die is verbonden met Office 365, werd de lijst langzaam geladen. Dit probleem is opgelost.
+-   Er zijn aanvullende kenmerken toegevoegd aan de **app-catalogus** met betrekking tot PCI (Payment Card Industry).
+
 
 ## <a name="cloud-app-security-release-83"></a>Cloud App Security release 83
 Uitgebracht: 30 oktober 2016
@@ -215,6 +238,6 @@ Uitgebracht: 15 mei 2016
   
 
 
-<!--HONumber=Oct16_HO5-->
+<!--HONumber=Nov16_HO3-->
 
 
