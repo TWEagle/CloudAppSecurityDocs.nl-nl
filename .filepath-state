@@ -5,9 +5,6 @@
   "342d9fcc84f9fb4b250578b653578403a06605f1": [
     "CloudAppSecurityDocs\\activity-filters.md"
   ],
-  "92507e352a88cd0c5ff4a7bc9f66b94defd864ff": [
-    "CloudAppSecurityDocs\\activity-filters.md"
-  ],
   "ca51d36a6d899124d3d4eb84ded1972ad9c8bab4": [
     "CloudAppSecurityDocs\\anomaly-detection-policy.md"
   ],
@@ -27,9 +24,6 @@
     "CloudAppSecurityDocs\\configure-automatic-log-upload-for-continuous-reports.md"
   ],
   "2a079813677020b1181648394c818edd5f294786": [
-    "CloudAppSecurityDocs\\configure-automatic-log-upload-for-continuous-reports.md"
-  ],
-  "c6103fffd99295eb37ad575680b4169cbbac42df": [
     "CloudAppSecurityDocs\\configure-automatic-log-upload-for-continuous-reports.md"
   ],
   "a56257b7c149c3ea054f200ef88df0ab41b7e25b": [
@@ -131,9 +125,6 @@
   "5defb9bde515be712bc64ce84be42b2120935ed8": [
     "CloudAppSecurityDocs\\daily-activities-to-protect-your-cloud-environment.md"
   ],
-  "d07f8cfebd5654036078d474656a6e73e24d93d0": [
-    "CloudAppSecurityDocs\\daily-activities-to-protect-your-cloud-environment.md"
-  ],
   "12d9ef74f923c430fbfb547635786dc4c4300499": [
     "CloudAppSecurityDocs\\data-protection-policies.md"
   ],
@@ -164,16 +155,10 @@
   "57d01e08546885881da38835961cf6384c1c788e": [
     "CloudAppSecurityDocs\\general-setup.md"
   ],
-  "b617a488dec97deb7c1e1d89cbaa62e496e18891": [
-    "CloudAppSecurityDocs\\general-setup.md"
-  ],
   "57ba1ea49d009dd10797609885463948f359e11e": [
     "CloudAppSecurityDocs\\getting-started-with-cloud-app-security.md"
   ],
   "7137b7f362718f36a416d3c8e33040d208a92126": [
-    "CloudAppSecurityDocs\\getting-started-with-cloud-app-security.md"
-  ],
-  "2e9307b5166566efa65f4766c0331c6aa15118e9": [
     "CloudAppSecurityDocs\\getting-started-with-cloud-app-security.md"
   ],
   "43069f7a9f91dc34f4ce3ebb52ca399441bbb1f1": [
@@ -1031,9 +1016,6 @@
   "cb526fedc12519c05bfca8b411adb158d44c1887": [
     "CloudAppSecurityDocs\\TOC.md"
   ],
-  "93dc54bc2e38d880561c15a0f167f8246e1a6741": [
-    "CloudAppSecurityDocs\\TOC.md"
-  ],
   "cba191731133ab8b61d78e2e82d9fc8d96626331": [
     "CloudAppSecurityDocs\\troubleshooting.md"
   ],
@@ -1059,9 +1041,6 @@
     "CloudAppSecurityDocs\\what-is-cloud-app-security.md"
   ],
   "d3877fa17daaf9e838ca799f52b1b2fcbb0db5f4": [
-    "CloudAppSecurityDocs\\what-is-cloud-app-security.md"
-  ],
-  "690e58cd598ee9a6dd329e19cd65129df160e009": [
     "CloudAppSecurityDocs\\what-is-cloud-app-security.md"
   ],
   "e2123c83a770ecbfb0466c6ef1a4f67e7c271ca2": [
