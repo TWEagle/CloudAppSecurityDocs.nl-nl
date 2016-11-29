@@ -14,8 +14,8 @@ ms.assetid: a835fa24-15c5-4bbb-a25a-688444040f1f
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 42cd06942ef90bc40a191bc12ddc12a18388430d
-ms.openlocfilehash: d07f8cfebd5654036078d474656a6e73e24d93d0
+ms.sourcegitcommit: e41c04d25f12aa5207ef9ffbb6a22f4b894e92cb
+ms.openlocfilehash: 5defb9bde515be712bc64ce84be42b2120935ed8
 
 
 ---
@@ -39,7 +39,7 @@ U wordt aangeraden dagelijks in het dashboard te controleren welke nieuwe waarsc
 ![Cloud App Security-dashboard](./media/dashboard.png "dashboard")  
 
 ## <a name="handle-your-alerts"></a>Uw waarschuwingen verwerken  
-Waarschuwingen zijn het uitgangspunt van waaruit u meer inzicht in uw cloudomgeving krijgt. Mogelijk wilt u nieuwe beleidsregels maken naar aanleiding van uw bevindingen. U ziet bijvoorbeeld dat een beheerder zich vanaf een onbekende locatie aanmeldt. U kunt een beleid maken waarmee een beheerdersaccount automatisch tijdelijk wordt ingetrokken als dit wordt gebruikt voor aanmelding vanaf die locatie.  
+Waarschuwingen zijn het uitgangspunt van waaruit u meer inzicht in uw cloudomgeving krijgt. Mogelijk wilt u nieuwe beleidsregels maken naar aanleiding van uw bevindingen. U ziet bijvoorbeeld dat een beheerder is aangemeld vanuit Groenland en er heeft zich nog nooit iemand aangemeld vanuit Groenland binnen uw organisatie. U kunt een beleid maken waarmee een beheerdersaccount automatisch tijdelijk wordt ingetrokken als dit wordt gebruikt voor aanmelding vanaf die locatie.  
 
 Het is een goed idee alle waarschuwingen te bekijken en ze als hulpmiddel te gebruiken om uw beleid aan te passen. Als een onschuldige gebeurtenis wordt beschouwd als een schending van het bestaande beleid, moet u uw beleid verfijnen zodat u minder onnodige waarschuwingen ontvangt.  
 
@@ -66,7 +66,7 @@ Het is een goed idee alle waarschuwingen te bekijken en ze als hulpmiddel te geb
 
          For a data leak you might want to restrict permissions or quarantine the file.  
 
-         If a new, unsanctioned service is discovered, you might want to block access to the service on your proxy or firewall.  
+         If a new app is discovered, you might want to block access to the service on your proxy or firewall.  
 
     #### <a name="questionable-violations"></a>Verdachte schendingen
     Verdachte schendingen moeten verder worden onderzocht.  
@@ -94,7 +94,7 @@ De volgende tabel geeft een lijst van de typen waarschuwingen die kunnen worden 
 |Nieuwe locatie beheerder|Hiermee wordt u gewaarschuwd voor wijzigingen in uw beschermde accounts voor verbonden apps.|Bevestig dat de aanmelding vanaf deze afwijkende locatie is toegestaan. Als dit niet het geval is, kunt de beheerdersbevoegdheden het beste intrekken of het account tijdelijk intrekken om beveiligingsrisico's te beperken.|  
 |Nieuwe locatie|Dit is een informatieve waarschuwing over de toegang tot een verbonden app vanaf een nieuwe locatie, die slechts één keer per land wordt geactiveerd.|Onderzoek de activiteit van de specifieke gebruiker.|  
 |Nieuwe gedetecteerde service|Dit is een waarschuwing over Shadow IT - er is een nieuwe app gedetecteerd door Cloud Discovery.|<ul><li>Bepaal het risico van de service op basis van de app-catalogus.</li><li>Zoom in op de activiteit om inzicht te krijgen in gebruikspatronen en invloed.</li><li>Bepaal of u de app wel of niet wilt toestaan.</li><br /></ul>Voor niet-toegestane apps:<br /><br /><ul><li>U kunt het gebruik blokkeren in uw proxy of firewall.</li><li>Als de app niet is goedgekeurd en u een goedgekeurde app in dezelfde categorie hebt, kunt u een lijst met gebruikers van de niet-goedgekeurde app exporteren en vervolgens contact met hen opnemen om ze naar de goedgekeurde app te migreren.</li></ul></li>|  
-|Verdachte activiteiten|Deze waarschuwing laat u weten dat er afwijkende activiteit is aangetroffen die niet overeenkomt met de verwachte activiteiten of gebruikers in uw organisatie.|Onderzoek het gedrag en bevestig het met de gebruiker.<br /><br /> Dit type waarschuwing is een goed uitgangspunt om meer over uw omgeving te weten te komen en een nieuw beleid te maken. Als iemand bijvoorbeeld plotseling een grote hoeveelheid gegevens naar een van uw verbonden apps uploadt, kunt u een regel instellen voor dat type afwijkend gedrag.|  
+|Verdachte activiteiten|Deze waarschuwing laat u weten dat er afwijkende activiteit is aangetroffen die niet overeenkomt met de verwachte activiteiten of gebruikers in uw organisatie.|Onderzoek het gedrag en bevestig het met de gebruiker.<br /><br /> Dit type waarschuwing is een goed uitgangspunt om meer over uw omgeving te weten te komen en nieuwe beleidsregels te maken met deze waarschuwingen. Als iemand bijvoorbeeld plotseling een grote hoeveelheid gegevens naar een van uw verbonden apps uploadt, kunt u een regel instellen voor dat type afwijkend gedrag.|  
 |Verdacht cloudgebruik|Deze waarschuwing laat u weten dat er afwijkende activiteit is aangetroffen die niet overeenkomt met de verwachte activiteiten of gebruikers in uw organisatie.|Onderzoek het gedrag en bevestig het met de gebruiker.<br /><br /> Dit type waarschuwing is een goed uitgangspunt om meer over uw omgeving te weten te komen en nieuwe beleidsregels te maken met deze waarschuwingen. Als iemand bijvoorbeeld plotseling een grote hoeveelheid gegevens naar een van uw verbonden apps uploadt, kunt u een regel instellen voor dat type afwijkend gedrag.|  
 |Gebruik van persoonlijk account|Deze waarschuwing laat u weten dat een nieuw persoonlijk account toegang heeft tot bronnen in uw verbonden apps.|Verwijder de samenwerkingen van de gebruiker in het externe account.|  
 
@@ -130,6 +130,6 @@ Premier-klanten kunnen Cloud App Security ook rechtstreeks vanuit [Premier Porta
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO4-->
 
 

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/17/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 224c7039ecb7200ad951774ac5fb76202543a35c
-ms.openlocfilehash: 690e58cd598ee9a6dd329e19cd65129df160e009
+ms.sourcegitcommit: e41c04d25f12aa5207ef9ffbb6a22f4b894e92cb
+ms.openlocfilehash: d3877fa17daaf9e838ca799f52b1b2fcbb0db5f4
 
 
 ---
@@ -50,7 +50,7 @@ Met Cloud App Security wordt zichtbaarheid met uw cloud geïntegreerd door:
 ![Architectuur van Cloud App Security](./media/architecture.png)  
 
 > [!NOTE]  
-> Wanneer Cloud App Security inhoudsinspectie uitvoert, wordt gegevensprivacy afgedwongen. Alleen de metagegevens van de bestandsrecords en de schendingen die zijn geïdentificeerd, worden in de Cloud App Security-database opgeslagen. Uw gegevens worden niet opgeslagen in de Cloud App Security-database. Zie ons [privacybeleid](http://go.microsoft.com/fwlink/?LinkId=512132) en het [Vertrouwenscentrum van Microsoft](https://www.microsoft.com/TrustCenter/Privacy/You-are-in-control-of-your-data) voor meer informatie over het bewaren van gegevens.
+> Wanneer Cloud App Security inhoudsinspectie uitvoert, wordt gegevensprivacy afgedwongen. Uw gegevens worden niet opgeslagen in de Cloud App Security-database; alleen de metagegevens van de bestandsrecords en eventuele schendingen die zijn gedetecteerd, worden opgeslagen in de Cloud App Security-database. Lees het [privacybeleid](http://go.microsoft.com/fwlink/?LinkId=512132) of ga naar het [Vertrouwenscentrum van Microsoft Trust](https://www.microsoft.com/TrustCenter/Privacy/You-are-in-control-of-your-data) voor meer informatie over gegevensretentie.
 In Cloud App Security worden gegevens als volgt bewaard:
 >- Activiteitenlogboek: 180 dagen
 >- Detectiegegevens: 90 dagen
@@ -87,6 +87,6 @@ Premier-klanten kunnen Cloud App Security ook rechtstreeks vanuit [Premier Porta
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO4-->
 
 

@@ -14,8 +14,8 @@ ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 97f270813beae64bf0572ac9e806290e4c2fcd22
-ms.openlocfilehash: 92507e352a88cd0c5ff4a7bc9f66b94defd864ff
+ms.sourcegitcommit: a0b71a03c932ea529000d7545faf8849d99fcb6d
+ms.openlocfilehash: 342d9fcc84f9fb4b250578b653578403a06605f1
 
 
 ---
@@ -68,7 +68,10 @@ Hieronder volgt een lijst met de activiteitfilters die kunnen worden toegepast. 
 
 -   Geregistreerde ISP – de internetprovider van waaruit de activiteit is uitgevoerd.   
 
--  Bron - zoek naar de bron waar de activiteit is gedetecteerd, bijvoorbeeld App-connector. 
+-  Bron: zoeken op de bron waar de activiteit is gedetecteerd. Dit kan een van de volgende zijn:
+  - App-connector: logboeken die rechtstreeks uit de API-connector van de app afkomstig zijn.
+  - Analyse van App-connector: verbeteringen van de Cloud App Security-beveiliging op basis van een informatiescan door de API-connector.
+  
 
 -   Gebruiker - de gebruiker die de activiteit heeft uitgevoerd, te filteren op domein, groep, naam of organisatie. Als u activiteiten zonder specifieke gebruiker wilt filteren, kunt u de operator 'is niet ingesteld' gebruiken.  
     -   Gebruikersdomein - zoek naar een specifiek gebruikersdomein.
@@ -130,6 +133,6 @@ Beheeracties in apps
   
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 
