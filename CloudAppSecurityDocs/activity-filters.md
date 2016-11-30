@@ -14,8 +14,8 @@ ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a0b71a03c932ea529000d7545faf8849d99fcb6d
-ms.openlocfilehash: 342d9fcc84f9fb4b250578b653578403a06605f1
+ms.sourcegitcommit: 52f2245779568abbf41d47c4b45cdcced302529b
+ms.openlocfilehash: 40fd28f568aa9af32f9e2399435f48372ea62413
 
 
 ---
@@ -97,34 +97,9 @@ U kunt meer informatie bekijken over elke activiteit door te klikken op de activ
 
 ![activiteitslade](./media/activity-drawer.png "activity drawer")  
   
+Zie [Activiteit overeenkomstig de parameters](governance-actions.md#activity-match-parameters) voor een lijst met beschikbare beheeracties.
 
 
-## <a name="activity-match-parameters"></a>Activiteit overeenkomstig de parameters  
-Geef aan hoe vaak een activiteit moet worden herhaald voordat het overeenkomt met het beleid, bijvoorbeeld het instellen van een beleid om te waarschuwen wanneer een gebruiker 10 mislukte aanmeldpogingen uitvoert binnen 2 minuten.  
-De standaardinstelling **Activiteit overeenkomstig de parameters** vindt een overeenkomst voor elke activiteit die voldoet aan alle activiteitfilters.   
-Met behulp van **Herhaalde activiteit** kunt u het aantal herhaalde activiteiten instellen, alsmede de periode waarin de activiteiten worden geteld. U kunt zelfs opgeven dat alle activiteiten moeten worden uitgevoerd door dezelfde gebruiker en in dezelfde cloud-app.  
-  
-### <a name="actions"></a>Acties  
-Meldingen  
-  
--   Waarschuwingen – waarschuwingen kunnen in het systeem worden geactiveerd en worden doorgegeven via e-mail en SMS op basis van de ernst.  
-  
--   E-mailmeldingen voor gebruikers – e-mailberichten kunnen worden aangepast en worden verzonden naar alle eigenaren van bestanden die het beleid schenden.  
-  
--   CC naar manager – op basis van directory-integratie voor gebruikers kunnen e-mailmeldingen ook worden verzonden naar de manager van de persoon die een beleid schendt.  
-  
--   Meldingen verzenden naar aanvullende gebruikers – specifieke lijst met e-mailadressen die deze meldingen ontvangen.  
-  
-Beheeracties in apps  
-  
--   Gedetailleerde acties kunnen per app worden afgedwongen, specifieke acties zijn afhankelijk van de terminologie in de app.  
-  
--   Gebruiker blokkeren – de gebruiker blokkeren in de toepassing.  
-  
--   Wachtwoord intrekken – het gebruikerswachtwoord intrekken en afdwingen dat de gebruiker een nieuw wachtwoord instelt bij de volgende aanmelding.  
-  
-     ![Activiteitenbeleidsverwijzing6](./media/activity-policy-ref6.png "activity policy ref6")  
-  
 ## <a name="see-also"></a>Zie ook  
 [Dagelijkse activiteiten ter bescherming van uw cloudomgeving](daily-activities-to-protect-your-cloud-environment.md)   
 [Ga naar de ondersteuningspagina van Cloud App Security voor technische ondersteuning.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
@@ -133,6 +108,6 @@ Beheeracties in apps
   
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 
