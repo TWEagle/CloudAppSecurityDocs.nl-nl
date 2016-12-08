@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2016
+ms.date: 11/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,14 +14,34 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 759692e7b270d87dc1becf88453d095f2382c411
-ms.openlocfilehash: 3161fd1c61779ba943d8269d2ec979050ee0ae1f
+ms.sourcegitcommit: 52f2245779568abbf41d47c4b45cdcced302529b
+ms.openlocfilehash: cbe341faf692772ac5461e038233e9b1a6b2694f
 
 
 ---
 
 # <a name="release-notes"></a>Opmerkingen bij de release
 
+
+## <a name="cloud-app-security-release-85"></a>Cloud App Security-release 85
+Uitgebracht: 27 november 2016
+
+**Nieuwe functies**
+- Er is onderscheid gemaakt tussen goedgekeurde apps en verbonden apps. Goedkeuren en niet goedkeuren is nu een label dat kan worden toegepast op gedetecteerde apps en apps in de catalogus. Verbonden apps zijn apps die u hebt verbonden via de API-connector, voor meer zichtbaarheid en controle. U kunt apps nu labelen als goedgekeurd of niet-goedgekeurd of ze verbinden met de app-connector, indien beschikbaar. 
+ 
+- Als onderdeel van deze wijziging is de pagina Goedgekeurde apps vervangen met een nieuw ontworpen pagina **Verbonden apps**, waarop statusgegevens over de connectors extern wordt weergegeven. 
+ 
+- De logboekverzamelaars zijn gemakkelijker toegankelijk op hun eigen regel in het menu **Instellingen** onder **Bronnen**. 
+- Bij het maken van een beleidsfilter voor activiteiten kunt u het aantal fout-positieven verminderen door herhaalde activiteiten te negeren wanneer die door dezelfde gebruiker worden uitgevoerd op hetzelfde doelobject. Daardoor wordt er bijvoorbeeld geen waarschuwing geactiveerd bij meerdere downloadpogingen voor hetzelfde bestand door dezelfde gebruiker. 
+- Er zijn verbeteringen aangebracht in de activiteitslade. Wanneer u nu op een activiteitsobject in de activiteitslade klikt, kunt u inzoomen voor meer informatie.
+
+**Verbeteringen**
+- Er zijn verbeteringen aangebracht in de anomaliedetectie-engine, waaronder de waarschuwingen voor onmogelijke trajecten, waarvoor nu IP-informatie wordt gegeven in de beschrijving van de waarschuwing.
+- Er zijn verbeteringen aangebracht in de complexe filters, waardoor hetzelfde filter nu meerdere malen kan worden toegevoegd om gefilterde resultaten nog verder te filteren. 
+- Activiteiten met bestanden en mappen in Dropbox zijn nu gescheiden voor meer zichtbaarheid. 
+  
+**Oplossingen voor problemen**
+- Er is een probleem opgelost in het mechanisme voor systeemwaarschuwingen dat leidde tot fout-positieven.
 
 ## <a name="cloud-app-security-release-84"></a>Cloud App Security-release 84
 Uitgebracht: 13 november 2016
@@ -238,6 +258,6 @@ Uitgebracht: 15 mei 2016
   
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO5-->
 
 

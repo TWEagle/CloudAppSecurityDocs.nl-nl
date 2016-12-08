@@ -1,6 +1,6 @@
 ---
-title: Algemene instellingen | Microsoft Docs
-description: In dit onderwerp worden de eerste stappen beschreven die u moet uitvoeren om aan de slag te gaan met Cloud App Security.
+title: De portal aanpassen | Microsoft Docs
+description: Dit onderwerp bevat de eerste stappen voor het aanpassen van de portal.
 keywords: 
 author: rkarlin
 ms.author: rkarlin
@@ -14,39 +14,18 @@ ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3c342e019dfca316ee89f68de60886d848abdb17
-ms.openlocfilehash: 57d01e08546885881da38835961cf6384c1c788e
+ms.sourcegitcommit: 76c705a38ffb0d61b9ad2eeaf3bdb939f5326589
+ms.openlocfilehash: 912d3c5065722469c436446ba67511ffc6e44d77
 
 
 ---
 
-# <a name="general-setup"></a>Algemene instelling
-De volgende procedure biedt u instructies voor het instellen van [!INCLUDE[Adallom1](./includes/adallom1_md.md)] voor uw cloudomgeving.  
-  
-## <a name="prerequisites"></a>Vereisten  
-  
--   Uw organisatie moet beschikken over een licentie voor Cloud App Security om het product te kunnen gebruiken. Voor meer informatie raadpleegt u [Cloud App Security aanschaffen](https://www.microsoft.com/server-cloud/products/cloud-app-security/default.aspx) en kijkt u bij de [Licentieresources](https://www.microsoft.com/server-cloud/products/cloud-app-security/default.aspx).  
-  
-     Raadpleeg voor activering van de tenant [Contact opnemen met de ondersteuning van Office 365 voor bedrijven - Help voor beheerders](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).  
-  
-> [!NOTE] 
-> Een Office 365-licentie is niet vereist voor Cloud App Security.  
-  
--   Nadat u een licentie voor Cloud App Security hebt aangeschaft, ontvangt u een e-mail met activeringsgegevens en een koppeling naar de Cloud App Security-portal.  
-  
--   Als u Cloud App Security wilt instellen, moet u een globale beheerder, een compliancebeheerder of een beveiligingsbeheerder in Azure Active Directory of Office 365 zijn. Het is belangrijk om te begrijpen dat een gebruiker aan wie een beheerdersrol is toegewezen, dezelfde machtigingen heeft voor alle cloud-apps waar uw organisatie een abonnement voor heeft, ongeacht of u die rol toewijst in de Office 365-portal of in de klassieke Azure-portal of met behulp van de Azure AD-module voor [Windows PowerShell](https://technet.microsoft.com/library/mt736914.aspx). Zie voor meer informatie [Beheerdersrollen toewijzen in Office 365](https://support.office.com/article/Assigning-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504) en [Beheerdersrollen toewijzen in Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/).  
-  
--   Als u de Cloud App Security-portal wilt uitvoeren, gebruikt u Internet Explorer 11, Microsoft Edge (meest recente versie), Google Chrome (meest recente versie), Mozilla Firefox (meest recente versie) of Apple Safari (meest recente versie).  
+# <a name="customize-the-portal"></a>De portal aanpassen
+De volgende procedure bevat instructies voor het aanpassen van de Cloud App Security-portal.
   
 ## <a name="set-up-the-portal"></a>De portal instellen  
   
-1.  Als u de Cloud App Security-portal wilt openen, gaat u naar [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com).  
-  
-     U kunt de portal ook openen via het **Office 365-beheercentrum** door te klikken op het pictogram van de beheercentrums ![pictogram van O365-beheercentrums](./media/o365-admin-centers-icon.png "O365 admin centers icon") gevolgd door **Cloud App Security**.  
-  
-     ![Toegang vanuit O365](./media/access-from-o365.png "Access from O365")  
-  
-2.  In de Cloud App Security-portal klikt u op het pictogram Instellingen ![pictogram Instellingen](./media/settings-icon.png "settings icon") in de menubalk en selecteert u **Algemene instellingen** om het volgende te configureren:  
+1.  In de Cloud App Security-portal klikt u op het pictogram Instellingen ![pictogram Instellingen](./media/settings-icon.png "settings icon") in de menubalk en selecteert u **Algemene instellingen** om het volgende te configureren:  
   
 3.  **Organisatiegegevens**  
   
@@ -252,6 +231,6 @@ Cloud App Security is gekoppeld aan Azure Active Directory voor de activiteiten 
   
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

@@ -14,8 +14,8 @@ ms.assetid: 14d10238-0f61-43e9-ab96-71534a27d3d4
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2cb87afa3c5342e01cfd4049669ac4b3b7efa4fe
-ms.openlocfilehash: 36f249cbb900bdb516ea6909a0ed6c76b4ea3ab4
+ms.sourcegitcommit: 37661b255147b3f43c5bfd8b5f6459bd4c25ac95
+ms.openlocfilehash: f6ba051dfbf443509323844c6327e18cde1ec29e
 
 
 ---
@@ -36,7 +36,6 @@ De volgende soorten beleidsregels kunnen worden gemaakt:
 |![pictogram beleid voor anomaliedetectie](./media/anomaly_detection_policy.png)|Beleid voor afwijkingsdetectie|De beleidsregels voor afwijkingsdetectie biedt u de mogelijkheid om ongebruikelijke activiteiten op uw cloud op te sporen op basis van de risicofactoren die u hier instelt, zodat u op de hoogte wordt gebracht wanneer iets afwijkt van de basislijn binnen uw organisatie of de standaardactiviteiten van de gebruiker.|  
 |![pictogram beleidsregels voor Cloud Discovery](./media/discovery_policy.png)|Beleid voor appdetectie|Beleidsregels voor appdetectie bieden u de mogelijkheid om waarschuwingen in te stellen zodat u op de hoogte bent wanneer er binnen uw organisatie nieuwe apps gedetecteerd worden.|  
 |![pictogram beleid voor anomaliedetectie](./media/anomaly_detection_policy.png)|Beleid voor afwijkingsdetectie voor Cloud Discovery|De beleidsregels voor afwijkingsdetectie voor Cloud Discovery kijken naar de logboeken die u voor het detecteren van cloud-apps en het zoeken naar ongebruikelijke voorvallen gebruikt. Voorbeelden zijn wanneer een gebruiker die nog nooit gebruik heeft gemaakt van Dropbox, plotseling 600 GB upload naar Dropbox, of wanneer er veel meer transacties worden uitgevoerd dan gebruikelijk in een bepaalde app.|  
-|![pictogram veldbeleid](./media/field_policy.png)|Veldbeleid|Met veldbeleid kunt u in uw cloud-apps scannen op velden in uw cloudomgeving die mogelijk gevoelige gegevens bevatten zoals berichten, chatberichten, beschrijvingen en velden met lange tekst.|  
 |![pictogram bestandsbeleid](./media/file_policy.png)|Bestandsbeleid|Met beleidsregels voor bestanden kunt u uw cloud-apps scannen op specifieke bestanden of bestandstypen (gedeeld, gedeeld met externe domeinen) en gegevens (vertrouwelijke, PII-, creditcardgegevens, enzovoort). Ook kunt u beheeracties uitvoeren op bestanden. Beheeracties zijn specifiek per cloud-app.|  
   
 ## <a name="identifying-risk"></a>Het identificeren van risico’s  
@@ -54,7 +53,7 @@ Cloud App Security helpt u bij het beperken van verschillende risico's in de clo
   
      Monitor configuratiewijzigingen met inbegrip van configuratiebewerking op afstand.  
   
--   **Cloud Discovery:** worden er nieuwe, niet-goedgekeurde apps gebruikt binnen uw organisatie? Hebt u een probleem met schaduw IT-apps die zonder uw weten worden gebruikt?  
+-   **Cloud Discovery:** worden er nieuwe apps gebruikt binnen uw organisatie? Hebt u een probleem met schaduw IT-apps die zonder uw weten worden gebruikt?  
   
      Breng de algemene risico’s van elke cloud-app in kaart op basis van regelgevings- en branchecertificeringen, en  
     aanbevolen procedures. Dit biedt u de mogelijkheid om het aantal gebruikers, activiteiten, omvang van het verkeer en de gemiddelde gebruiksduur in uren vast te stellen voor  
@@ -107,13 +106,14 @@ Volg de volgende stappen wanneer u een beleid wilt maken met behulp van een **be
   
 U kunt ook **een beleid maken tijdens een onderzoek**. Als u **Activiteitenlogboek**, **Bestanden** of **Accounts** onderzoekt, en u zoekt verder naar iets specifieks, kunt u op elk gewenst moment een nieuw beleid maken op basis van de resultaten van uw onderzoek.  
   
-Als u bijvoorbeeld kijkt naar de **Activiteitenlogboek** en u ziet dat er bij een van uw beheerdersaccounts wordt aangemeld vanaf een onverwachte geografische locatie, kunt u de resultaten van het **Activiteitenlogboek** filteren zodat alle aanmeldpogingen bij activiteiten van die beheerder worden weergegeven, en vervolgens een rapport maken dat u op de hoogte stelt wanneer er weer een activiteit gedetecteerd wordt van deze gebruiker.  
+Als u bijvoorbeeld in het **Activiteitenlogboek** een beheerdersactiviteit vanaf een IP-adres buiten uw kantoor ziet staan.
+
   
 Volg de volgende stappen voor het maken van een beleid gebaseerd op onderzoeksresultaten:  
   
 1.  Klik in de console op **Onderzoeken** gevolgd door **Activiteitenlogboek**, **Bestanden** of **Accounts**.  
   
-2.  Gebruik de filters bovenaan de pagina om het aantal resultaten te beperken tot het verdachte gebied. Klik bijvoorbeeld in de pagina Activiteitenlogboek op **Gebruiker** en selecteer de beheerder waarbij in het account ongebruikelijke activiteiten zijn waargenomen. Klik vervolgens onder **Activiteit** op **Map kopiëren** en **Bestand kopiëren**.  
+2.  Gebruik de filters bovenaan de pagina om het aantal resultaten te beperken tot het verdachte gebied. Klik bijvoorbeeld in de pagina Activiteitenlogboek op **Activiteit** en selecteer **Aanmelding beheerder**. Selecteer vervolgens onder **IP-adres** de optie **Categorie** en stel in dat de weergegeven waarde niet de IP-adrescategorieën omvat die u hebt gemaakt voor uw herkende domeinen, zoals de IP-adressen van beheerders, zakelijke gebruikers en VPN’s.  
   
      ![](./media/create-file-from-investigation.png)  
   
@@ -142,11 +142,6 @@ Volg de volgende stappen voor het maken van een beleid gebaseerd op onderzoeksre
 >   
 >  [Beleidsregels voor Cloud Discovery](cloud-discovery-policies.md)  
   
-### <a name="policy-conflicts"></a>Beleidsconflicten
-Als u meerdere beleidsregels hebt gemaakt, kan er een situatie ontstaan waarin de beleidsregels elkaar overlappen. In dit geval worden de beleidsregels als volgt verwerkt in Cloud App Security:
-* Als twee beleidsregels acties bevatten die in elkaar zijn opgenomen (bijvoorbeeld wanneer **Externe shares verwijderen** is opgenomen in **Privé maken**), wordt het conflict in Cloud App Security opgelost en wordt de sterkere actie afgedwongen.
-* Als de acties volledig onafhankelijk van elkaar zijn (bijvoorbeeld **De eigenaar een melding sturen** en **Privé maken**), worden beide acties uitgevoerd.
-* Als de acties conflicteren (bijvoorbeeld **Eigenaar wijzigen in gebruiker A** en **Eigenaar wijzigen in gebruiker B**), kan elke overeenkomst tot andere resultaten leiden. Het is belangrijk uw beleidsregels te wijzigen om conflicten te voorkomen, omdat ze kunnen leiden tot ongewenste wijzigingen in het station die moeilijk te detecteren zijn. 
 
 
 ## <a name="see-also"></a>Zie ook  
@@ -156,6 +151,6 @@ Als u meerdere beleidsregels hebt gemaakt, kan er een situatie ontstaan waarin d
   
 
 
-<!--HONumber=Oct16_HO5-->
+<!--HONumber=Nov16_HO5-->
 
 

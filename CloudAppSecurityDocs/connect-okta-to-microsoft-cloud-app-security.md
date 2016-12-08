@@ -1,5 +1,5 @@
 ---
-title: Verbinding maken tussen Okta en Microsoft Cloud App Security | Microsoft Docs
+title: Verbinding maken met Okta | Microsoft Docs
 description: In dit onderwerp vindt u informatie over het maken van verbinding tussen Okta en Cloud App Security via de API-connector.
 keywords: 
 author: rkarlin
@@ -14,8 +14,8 @@ ms.assetid: 9c3673b9-99bd-400c-9da1-5bf809ea5892
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 759692e7b270d87dc1becf88453d095f2382c411
-ms.openlocfilehash: 3fd8ada1ce622da339368c64ecc8b1d319b9c333
+ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
+ms.openlocfilehash: 1e82f94cb8423bdaa3dcdc8d4a4f04179089546c
 
 
 ---
@@ -49,13 +49,13 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
   
          ![Okta-tokenwaarde](./media/okta-token-value.png "okta token value")  
   
-3.  Klik in de Cloud App Security-console op **Onderzoeken** en vervolgens op **Goedgekeurde apps**.  
+3.  Klik in de Cloud App Security-console op **Onderzoeken** en vervolgens op **Verbonden apps**.  
   
-4.  Klik in de rij Okta op **Verbinden** in de kolom **App Connector-status**, of klik op de knop **Verbinding maken met een app** en vervolgens op **Okta**.  
+4.  Klik op de pagina **App-connectors** op de knop met het plusteken en vervolgens op **Okta**.  
   
      ![Verbinden maken met Okta](./media/connect-okta.png "connect okta")  
   
-5.  Voer op API-pagina in het veld **Domein** uw Okta-domein in en plak uw token in het veld **Token**.  
+5.  Voer in het veld **Domein** van het pop-upvenster dat wordt geopend uw Okta-domein in en plak uw token in het veld **Token**.  
   
 6.  Klik op **Verbinden** om het token voor Okta te maken in Cloud App Security.  
   
@@ -73,6 +73,6 @@ Nadat u verbinding hebt gemaakt met Okta, ontvangt u gebeurtenissen tot 60 dagen
   
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO5-->
 
 

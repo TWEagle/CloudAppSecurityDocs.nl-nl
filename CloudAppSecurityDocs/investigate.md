@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: a9b00c2a-2f71-499e-8f57-67e560daedc1
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 23ec0b7bef05146d3ff4a953225b56b52aa4959f
-ms.openlocfilehash: fbd75fadb63bbaecd1e0dbd12b9162c0d17ce50e
+ms.sourcegitcommit: fd3be51a8a81b688383b40a19582f5739c889580
+ms.openlocfilehash: f1b32304a8218316f744defa4632b3e8a6af771d
 
 
 ---
@@ -37,17 +37,15 @@ De volgende dashboards kunnen u helpen bij het onderzoeken van apps in uw cloudo
 |Toepassingsdashboard: apps van derden|Inzoomen op apps van derden die momenteel zijn geïmplementeerd, zoals Google Apps, en het beleid voor deze apps definiëren|  
 |Gebruikersdashboard|Een volledig overzicht van het gebruikersprofiel in de cloud met inbegrip van groepen, locaties, recente activiteiten, gerelateerde waarschuwingen en gebruikte browsers|  
 
-##  <a name="a-namesanctionappa-sanction-or-unsanction-apps"></a><a name="sanctionapp"></a> Apps goedkeuren of de goedkeuring van apps intrekken  
-De eerste stap om meer inzicht te krijgen in uw cloud is het goedkeuren van apps. Nadat u een app hebt goedgekeurd, kunt u filteren op apps die niet zijn goedgekeurd en migratie naar goedgekeurde apps van hetzelfde type initiëren.  
+##  <a name="a-namesanctionappa-tag-apps-as-sanctioned-or-unsanctioned"></a><a name="sanctionapp"></a> Apps labelen als goedgekeurd of niet-goedgekeurd  
+Een belangrijke stap voor het krijgen van inzicht in uw cloud, is het labelen van apps als goedgekeurd of niet-goedgekeurd. Nadat u een app hebt goedgekeurd, kunt u filteren op apps die niet zijn goedgekeurd en migratie naar goedgekeurde apps van hetzelfde type initiëren.  
 
--   Kies in de Cloud App Security-console **Detecteren** en vervolgens **Detectiedashboard**.  
+-   Ga in de Cloud App Security-console naar de app-catalogus of gedetecteerde apps.  
 
--   In de lijst met gedetecteerde apps kiest u in de rij waarin de app die u wilt goedkeuren wordt weergegeven de drie puntjes aan het einde van de rij ![drie puntjes voor goedkeuren](./media/sanction-three-dots.png "Sanction three dots") en kiest u **Als goedgekeurd markeren**.  
+-   In de lijst met apps kiest u in de rij met de app die u wilt goedkeuren de drie puntjes aan het einde van de rij ![puntjes voor labelen als goedgekeurd](./media/sanction-three-dots.png "Tag as sanctioned dots") en kiest u **Als goedgekeurd markeren**.  
 
-     ![Als goedgekeurd markeren](./media/mark-as-sanctioned.png "mark as sanctioned")  
+     ![Als goedgekeurd labelen](./media/mark-as-sanctioned.png "tag as sanctioned")  
 
-> [!NOTE]  
->  Voor elke app die u met de Cloud App Security-API-integratie wilt controleren, kunt u het beste een beheerdersserviceaccount maken dat is toegewezen aan Cloud App Security.  
 
 ## <a name="use-the-investigation-tools"></a>Gebruik de hulpprogramma's voor onderzoek  
 
@@ -160,6 +158,6 @@ Premier-klanten kunnen Cloud App Security ook rechtstreeks vanuit [Premier Porta
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO5-->
 
 

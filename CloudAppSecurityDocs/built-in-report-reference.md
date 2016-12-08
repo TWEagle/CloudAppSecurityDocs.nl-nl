@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,16 +14,16 @@ ms.assetid: 588b3639-f748-45a6-bc4b-a6ee47c1865e
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 520017dab0301fe2a64c7b82d5e14c71efb2522f
+ms.sourcegitcommit: 9565d8a51e4c06963861d9dfaef9595944bda1ff
+ms.openlocfilehash: c7db3995c314dbc07cc1e0e2807476299d4446f7
 
 
 ---
 
-# <a name="builtin-report-reference"></a>Naslaginformatie ingebouwde rapporten
+# <a name="built-in-report-reference"></a>Naslaginformatie ingebouwde rapporten
 Het is raadzaam om ingebouwde rapporten als uitgangspunt te nemen wanneer u aangepaste rapporten maakt, vergelijkbaar met een sjabloon waarop u uw aangepaste rapporten baseert. De volgende tabel bevat een lijst met ingebouwde rapporten en de typen gebeurtenissen die u ermee kunt bewaken.  
   
-## <a name="builtin-report-list"></a>Lijst met ingebouwde rapporten  
+## <a name="built-in-report-list"></a>Lijst met ingebouwde rapporten  
   
 |Rapporttype|Naam van ingebouwd rapport|Beschrijving|  
 |-----------------|---------------------------|-----------------|  
@@ -57,6 +57,6 @@ Het is raadzaam om ingebouwde rapporten als uitgangspunt te nemen wanneer u aang
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

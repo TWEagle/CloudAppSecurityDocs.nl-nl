@@ -14,8 +14,8 @@ ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e41c04d25f12aa5207ef9ffbb6a22f4b894e92cb
-ms.openlocfilehash: 2a079813677020b1181648394c818edd5f294786
+ms.sourcegitcommit: 7901bb58f70949873fb3c423ae7951a67f7cd671
+ms.openlocfilehash: 96575cfc6bc3d736b40503049816ccc191fbf3e8
 
 
 ---
@@ -47,7 +47,7 @@ De logboekverzamelaar heeft een ingebouwd beveiligingsmechanisme dat de snelheid
 ### <a name="step-1-web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>Stap 1 - Webportalconfiguratie: gegevensbronnen definiëren en deze koppelen aan een logboekverzamelaar  
   
 1.  Ga naar de pagina met instellingen voor automatisch uploaden:  
-    Klik in de Cloud App Security-portal op het pictogram Instellingen ![pictogram Instellingen](./media/settings-icon.png "settings icon"), klik op **Logboekverzamelaars** en selecteer het tabblad **Logboekverzamelaars**.  
+    Klik in de Cloud App Security-portal op het pictogram Instellingen ![pictogram Instellingen](./media/settings-icon.png "settings icon") en vervolgens op **Logboekverzamelaars**.  
   
 3.  Maak voor elke firewall of proxy waaruit u logboeken wilt uploaden een overeenkomende gegevensbron aan:  
   
@@ -158,6 +158,6 @@ Zie [Problemen met Cloud Discovery oplossen](troubleshooting-cloud-discovery.md)
   
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

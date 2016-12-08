@@ -14,8 +14,8 @@ ms.assetid: a835fa24-15c5-4bbb-a25a-688444040f1f
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e41c04d25f12aa5207ef9ffbb6a22f4b894e92cb
-ms.openlocfilehash: 5defb9bde515be712bc64ce84be42b2120935ed8
+ms.sourcegitcommit: 9565d8a51e4c06963861d9dfaef9595944bda1ff
+ms.openlocfilehash: f4cf027220a7f4329a72d662f6ccf4d9ab02ede4
 
 
 ---
@@ -89,7 +89,7 @@ De volgende tabel geeft een lijst van de typen waarschuwingen die kunnen worden 
 |Schending van activiteitenbeleid|Dit type waarschuwing is het resultaat van een beleid dat u hebt gemaakt.|Als u groepsgewijs met dit type waarschuwingen wilt werken, wordt u aangeraden in het beleidscentrum te werken om deze te verhelpen.<br /><br /> Verfijn het beleid om ruisentiteiten uit te sluiten door meer filters en gedetailleerdere besturingselementen toe te voegen.<br /><br /> Als het beleid nauwkeurig is, de waarschuwing gerechtvaardigd was en het een schending is die u onmiddellijk wilt stoppen, kunt u overwegen automatisch herstel aan het beleid toe te voegen.|  
 |Schending van bestandsbeleid|Dit type waarschuwing is het resultaat van een beleid dat u hebt gemaakt.| Als u groepsgewijs met dit type waarschuwingen wilt werken, wordt u aangeraden in het beleidscentrum te werken om deze te verhelpen.<br /><br /> Verfijn het beleid om ruisentiteiten uit te sluiten door meer filters en gedetailleerdere besturingselementen toe te voegen.<br /><br /> Als het beleid nauwkeurig is, de waarschuwing gerechtvaardigd was en het een schending is die u onmiddellijk wilt stoppen, kunt u overwegen automatisch herstel aan het beleid toe te voegen.|  
 |Verdacht account|Dit type waarschuwing wordt geactiveerd wanneer Cloud App Security een account identificeert dat is aangetast, wat inhoudt dat de kans zeer groot is dat het account op niet-toegestane wijze is gebruikt.|U wordt aangeraden het account te blokkeren totdat u de gebruiker kunt bereiken en ervoor kunt zorgen dat deze zijn of haar wachtwoord wijzigt.|  
-|Inactieve account|Deze waarschuwing wordt geactiveerd wanneer een account niet meer wordt gebruikt in een van de gekoppelde cloud-apps.|Neem contact op met de gebruiker en de manager van de gebruiker om te bepalen of het account nog steeds actief is. Als dat niet het geval is, blokkeer dan de gebruiker en beëindig de licentie voor de app.|  
+|Inactieve account|Deze waarschuwing wordt geactiveerd wanneer een account 60 dagen lang niet is gebruikt in een van de verbonden cloud-apps.|Neem contact op met de gebruiker en de manager van de gebruiker om te bepalen of het account nog steeds actief is. Als dat niet het geval is, blokkeer dan de gebruiker en beëindig de licentie voor de app.|  
 |Nieuwe gebruiker met beheerdersrechten|Hiermee wordt u gewaarschuwd voor wijzigingen in uw beschermde accounts voor verbonden apps.|Bevestig dat de nieuwe beheerdersmachtigingen vereist zijn voor de gebruiker. Als dit niet het geval is, kunt de beheerdersbevoegdheden het beste intrekken om beveiligingsrisico's te beperken.|  
 |Nieuwe locatie beheerder|Hiermee wordt u gewaarschuwd voor wijzigingen in uw beschermde accounts voor verbonden apps.|Bevestig dat de aanmelding vanaf deze afwijkende locatie is toegestaan. Als dit niet het geval is, kunt de beheerdersbevoegdheden het beste intrekken of het account tijdelijk intrekken om beveiligingsrisico's te beperken.|  
 |Nieuwe locatie|Dit is een informatieve waarschuwing over de toegang tot een verbonden app vanaf een nieuwe locatie, die slechts één keer per land wordt geactiveerd.|Onderzoek de activiteit van de specifieke gebruiker.|  
@@ -130,6 +130,6 @@ Premier-klanten kunnen Cloud App Security ook rechtstreeks vanuit [Premier Porta
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

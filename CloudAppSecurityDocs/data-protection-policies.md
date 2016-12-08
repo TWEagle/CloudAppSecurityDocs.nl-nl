@@ -1,11 +1,11 @@
 ---
-title: Beleidsregels voor gegevensbescherming | Microsoft Docs
+title: Beleidsregels voor bestanden | Microsoft Docs
 description: In dit onderwerp vindt u een beschrijving van de procedure voor het instellen van een gegevensbeleid om de gegevens en bestanden met betrekking tot het gebruik van cloud-apps in uw organisatie te beheren en te controleren.
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,15 +14,13 @@ ms.assetid: ac53fbd6-4d31-4bce-b2bc-9dc65ad83b3e
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a413236b04726dddc69068e39967f6ad17218719
-ms.openlocfilehash: ed0701c4513f9501e0b2e5a7b0b7931f5d76a628
+ms.sourcegitcommit: 52f2245779568abbf41d47c4b45cdcced302529b
+ms.openlocfilehash: 12d9ef74f923c430fbfb547635786dc4c4300499
 
 
 ---
 
-# <a name="data-protection-policies"></a>Beleidsregels voor gegevensbescherming
-    
-## <a name="file-policies"></a>Beleidsregels voor bestanden  
+# <a name="file-policies"></a>Beleidsregels voor bestanden  
 Met Beleidsregels voor bestanden kunt u een breed scala aan geautomatiseerde processen controleren waarbij u gebruikmaakt van de API’s van de cloudprovider. Beleidsregels kunnen worden ingesteld voor het uitvoeren van continue scans voor naleving, juridische eDiscovery-taken, DLP voor gevoelige inhoud die openbaar is gedeeld en veel meer gebruiksvoorbeelden.  
 Met Cloud App Security kunt u elk bestandstype controleren op basis van meer dan twintig metagegevensfilters (bijvoorbeeld toegangsniveau, bestandstype). 
  
@@ -71,12 +69,13 @@ Voer de volgende procedure uit om een nieuw bestandsbeleid te maken:
 4.  Binnen **Type risico** koppelt u het beleid aan het meest geschikte type risico. Dit veld is alleen informatief en hiermee kunt u later zoeken naar specifieke beleidsregels en waarschuwingen, op basis van het type risico.  Het risico is mogelijk al vooraf geselecteerd volgens de categorie die u hebt gekozen om het beleid te maken. Beleidsregels voor bestanden zijn standaard ingesteld op DLP.  
   
 5.  Om in te stellen door welke gedetecteerde apps dit beleid wordt geactiveerd **maakt u een filter voor de bestanden waarop dit beleid wordt toegepast**. Verfijn de beleidsfilters totdat u de meest nauwkeurige set bestanden hebt bereikt waarop u dit beleid wilt toepassen. Wees zo strikt mogelijk om valse positieven te voorkomen. Bijvoorbeeld, als u openbare machtigingen wilt verwijderen moet u het filter “Openbaar” toevoegen, als u een externe gebruiker wilt verwijderen gebruikt u het filter “Extern” enz.  
-  
+> [!NOTE] 
+> Wanneer u de beleidsfilters gebruikt, zoekt **Bevat** alleen naar volledige woorden die zijn gescheiden door komma’s, punten, spaties of onderstrepingstekens. Als u bijvoorbeeld zoekt op **malware** of **virus**, wordt virus_malware_file.exe wel gevonden maar malwarevirusfile.exe niet. Als u zoekt op **malware.exe** vindt u ALLE bestanden met ‘malware’ of ‘exe’ in de bestandsnaam, maar als u zoekt op **”malware.exe”** (met aanhalingstekens) vindt u alleen bestanden die precies “malware.exe” bevatten. **Is gelijk aan** zoekt alleen naar de volledige tekenreeks. Als u bijvoorbeeld zoekt naar **malware.exe** wordt malware.exe wel gevonden maar malware.exe.txt niet.  
 6.  Voor Box, SharePoint, Dropbox en OneDrive kunt u het bestandsbeleid afdwingen voor alle bestanden in de app of in specifieke mappen. Onder **Van toepassing op** selecteert u **Geselecteerde mappen** of **Alle bestanden met uitzondering van de geselecteerde mappen**. U wordt doorgestuurd om u aan te melden bij de cloud-app en vervolgens voegt u de relevante mappen toe.  
   
-7.  Selecteer de **Methode voor inhoudscontrole**. Met de ingebouwde DLP kunt u bestanden filteren op de inhoud ervan. Als u bestanden wilt scannen op de inhoud, selecteert u vervolgens **Ingebouwde DLP**. Zodra inhoudscontrole is ingeschakeld, kunt u vooraf ingestelde expressies gebruiken of zoeken naar andere aangepaste expressies als een subtekenreeks of als een reguliere expressie van uzelf.  
+7.  Selecteer de **Methode voor inhoudscontrole**. Met de ingebouwde DLP kunt u bestanden filteren op de inhoud ervan. Als u bestanden wilt scannen op de inhoud, selecteert u vervolgens **Ingebouwde DLP**. Zodra inhoudscontrole is ingeschakeld, kunt u vooraf ingestelde expressies gebruiken of zoeken naar andere aangepaste expressies als een subtekenreeks of als een [reguliere expressie](working-with-the-regex-engine.md) van uzelf.  
     Bovendien kunt u een reguliere expressie opgeven als u een bestand wilt uitsluiten van de resultaten. Dit is zeer nuttig als u een standaard voor trefwoorden met de binnenste classificatie hebt die u wilt uitsluiten van het beleid.  
-    Bovendien kunt u bepalen wat het minimumaantal schendingen van inhoud is dat moet worden bereikt voordat het bestand wordt beschouwd als een schending. U kunt bijvoorbeeld 10 kiezen als u waarschuwingen wilt ontvangen voor bestanden waarin ten minste 10 creditcardnummers worden gevonden.  
+    U kunt bepalen wat het minimumaantal schendingen van inhoud is dat moet worden bereikt voordat het bestand wordt beschouwd als een schending. U kunt bijvoorbeeld 10 kiezen als u waarschuwingen wilt ontvangen voor bestanden waarin ten minste 10 creditcardnummers worden gevonden.  
     Wanneer inhoud wordt vergeleken met de geselecteerde expressie, kunt u kiezen om de overeenkomst zelf te maskeren voor de meldingen en logboeken van schendingen. Als dit is ingeschakeld, wordt de schendende tekst vervangen door "X"-tekens. Denk eraan dat getallen worden vervangen door #-tekens en nooit worden opgeslagen in Cloud App Security.  
   
 8.  Kies de **beheer**acties die in Cloud App Security moeten worden uitgevoerd wanneer een overeenkomst wordt gedetecteerd.  
@@ -113,9 +112,9 @@ Elk beleid bestaat uit de volgende onderdelen:
     > [!NOTE]  
     >  Extensies zijn alleen beschikbaar in de Technical Preview-versie van Cloud App Security.  
   
-    -   Inhoudsinspectie kan worden uitgevoerd via engines van derden voor verbeterde DLP- of antimalwaremogelijkheden.  
+    -  Inhoudsinspectie kan worden uitgevoerd via engines van derden voor verbeterde DLP- of antimalwaremogelijkheden.  
   
-    -   Beheeracties kunnen worden uitgevoerd via engines van derden voor het afdwingen van versleutelingsbeheer of andere typen bestandsverwerking (bijvoorbeeld aangepaste watermerken).  
+    -  [Beheeracties](governance-actions.md) kunnen worden uitgevoerd via engines van derden voor het afdwingen van versleutelingsbeheer of andere typen bestandsverwerking (bijvoorbeeld aangepaste watermerken).  
   
 ## <a name="see-also"></a>Zie ook  
 [Dagelijkse activiteiten ter bescherming van uw cloudomgeving](daily-activities-to-protect-your-cloud-environment.md)   
@@ -125,6 +124,6 @@ Elk beleid bestaat uit de volgende onderdelen:
   
 
 
-<!--HONumber=Oct16_HO5-->
+<!--HONumber=Nov16_HO5-->
 
 

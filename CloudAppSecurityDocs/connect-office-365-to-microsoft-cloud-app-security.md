@@ -1,5 +1,5 @@
 ---
-title: Verbinding maken tussen Office 365 en Microsoft Cloud App Security | Microsoft Docs
+title: Verbinding maken met Office 365 | Microsoft Docs
 description: In dit onderwerp vindt u informatie over het maken van verbinding tussen Office 365 en Cloud App Security via de API-connector.
 keywords: 
 author: rkarlin
@@ -14,8 +14,8 @@ ms.assetid: a79bf393-0d2c-44b6-8dab-86c740fd7333
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 759692e7b270d87dc1becf88453d095f2382c411
-ms.openlocfilehash: 31abf4ad6ee9326894592e1a98b3232bd4c03787
+ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
+ms.openlocfilehash: e0ca79daddaaa2cdcbc51308653b3ec05da1b5e2
 
 
 ---
@@ -33,7 +33,7 @@ In deze sectie vindt u instructies voor het maken van verbinding tussen Cloud Ap
 >- Het vastleggen van controlegebeurtenissen voor postvakken in Exchange moet voor elk gebruikerspostvak zijn ingeschakeld voordat de gebruikersactiviteiten in Exchange Online kunnen worden geregistreerd. Zie [Activiteiten in verband met Exchange-postvakken](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c) voor meer informatie.
 >- Als Office-apps zijn ingeschakeld, worden groepen die deel uitmaken van Office 365 ook in de specifieke Office-apps gemaakt. Als SharePoint bijvoorbeeld is ingeschakeld, worden Office 365-groepen in SharePoint gemaakt.
  
-1.  Klik in de rij Office 365 op **Verbinden** in de kolom **App Connector-status**, of klik op de knop **Verbinding maken met een app** en vervolgens op **Office 365**.  
+1.  Klik op de pagina **Verbonden apps** op de knop met het plusteken en selecteer **Office 365**.  
 
 2.  Klik in het pop-upvenster van Office 365 op Verbinding maken met Office 365.
 
@@ -58,6 +58,6 @@ In deze sectie vindt u instructies voor het maken van verbinding tussen Cloud Ap
   
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO5-->
 
 

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/17/2016
+ms.date: 11/23/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e41c04d25f12aa5207ef9ffbb6a22f4b894e92cb
-ms.openlocfilehash: d3877fa17daaf9e838ca799f52b1b2fcbb0db5f4
+ms.sourcegitcommit: 480a94edbb36cc421b5ff64ea29268f0041326bc
+ms.openlocfilehash: dfc9ec25d2c7822d9239685375136c1dc0d1a3bc
 
 
 ---
@@ -34,7 +34,7 @@ Cloud App Security is een essentieel onderdeel van de Microsoft Cloud Security-s
 |-------|---|:---|
 |![Ontdekken](./media/discovery-icon.png)|Ontdekken|Onthul Shadow IT met Cloud App Security. Krijg meer inzicht door apps, activiteiten, gebruikers, gegevens en bestanden in uw cloudomgeving te detecteren. Detecteer apps van derden die zijn verbonden met uw cloud.|
 |![Onderzoeken](./media/investigate-icon.png)|Onderzoeken|Onderzoek uw cloud-apps met forensische hulpprogramma's voor de cloud om riskante apps, specifieke gebruikers en bestanden in uw netwerk diepgaand te onderzoeken. Vind patronen in de gegevens die vanuit de cloud worden verzameld. U kunt rapporten genereren om uw cloud te bewaken.|
-|![Beheer](./media/protect-icon.png)|Beheer|Beperk risico's door beleidsregels en waarschuwingen in te stellen om maximale controle over het netwerkverkeer in de cloud te behalen. Gebruik Cloud App Security om uw gebruikers te migreren naar veilige, goedgekeurde alternatieven voor de cloud-app.|
+|![Beheer](./media/control-icon.png)|Beheer|Beperk risico's door beleidsregels en waarschuwingen in te stellen om maximale controle over het netwerkverkeer in de cloud te behalen. Gebruik Cloud App Security om uw gebruikers te migreren naar veilige, goedgekeurde alternatieven voor de cloud-app.|
 |![Beschermen](./media/protect-icon.png)|Beschermen|Gebruik Cloud App Security om toepassingen goed te keuren of de goedkeuring in te trekken, voorkomen van gegevensverlies af te dwingen, machtigingen en delen te beheren en aangepaste rapporten en waarschuwingen te genereren.|
 
 
@@ -54,7 +54,7 @@ Met Cloud App Security wordt zichtbaarheid met uw cloud geïntegreerd door:
 In Cloud App Security worden gegevens als volgt bewaard:
 >- Activiteitenlogboek: 180 dagen
 >- Detectiegegevens: 90 dagen
->- Waarschuwingen: onbeperkt
+>- Waarschuwingen: 180 dagen
 
 Nadat gegevens uit deze bronnen zijn verzameld, voert Cloud App Security een geavanceerde analyse uit op de gegevens. U wordt direct op de hoogte gesteld van afwijkende activiteiten en u krijgt meer inzicht in uw cloudomgeving. U kunt een beleid configureren in Cloud App Security en dit vervolgens gebruiken om alles in uw cloudomgeving te beveiligen.  
 
@@ -87,6 +87,6 @@ Premier-klanten kunnen Cloud App Security ook rechtstreeks vanuit [Premier Porta
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

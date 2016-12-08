@@ -1,11 +1,11 @@
 ---
-title: Directe zichtbaarheid, bescherming en beheeracties voor uw apps inschakelen | Microsoft Docs
-description: In dit onderwerp wordt het proces beschreven voor het inschakelen van API-connectors voor apps in de cloud van uw organisatie.
+title: Verbinding maken met apps | Microsoft Docs
+description: In dit onderwerp wordt het proces beschreven voor het verbinden van apps met API-connectors met apps in de cloud van uw organisatie.
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/21/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,13 +14,13 @@ ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 14de5a6b28c6593250a1a7827905fb0f8a6482b5
-ms.openlocfilehash: 3ea2fbe78b943513a1b6ce483bc50ed5d79ae7c5
+ms.sourcegitcommit: 7901bb58f70949873fb3c423ae7951a67f7cd671
+ms.openlocfilehash: 4cfad222fb78e0bfc106fab64f6cc22d3819c1c8
 
 
 ---
 
-# <a name="enable-instant-visibility-protection-and-governance-actions-for-your-apps"></a>Directe zichtbaarheid, bescherming en beheeracties voor uw apps inschakelen
+# <a name="connect-apps"></a>Apps koppelen 
 App-connectors maken gebruik van de API's van app-providers. Hierdoor zijn de apps waarmee u verbinding maakt, beter zichtbaar en controleerbaar voor Cloud App Security.  
   
 Cloud App Security maakt gebruik van de API's die door de cloudprovider worden verstrekt; elke service heeft een eigen framework en API-beperkingen. Cloud App Security heeft de services gebruikt om het gebruik van de API's te optimaliseren en om de beste prestaties te leveren. Rekening houdend met de andere beperkingen die de services opleggen aan de API's (zoals beperking, API-limieten, dynamisch verschuiven van API-tijdsvensters, enzovoort), maken de Cloud App Security-engines gebruik van de toegestane capaciteit. Bepaalde bewerkingen, zoals het scannen van alle bestanden in de tenant vereisen een grote hoeveelheid API's en worden daarom verdeeld over een langere periode. Ga ervan uit dat sommige beleidsregels gedurende enkele uren tot dagen worden uitgevoerd.  
@@ -97,6 +97,8 @@ Voor bepaalde apps kan het nodig zijn de volgende IP-adressen toe te voegen aan 
 -   Voor de console:  
   
      104.42.231.28  
+
+- Voor elke app die u wilt verbinden met de Cloud App Security-API-integratie, kunt u het beste een beheerdersserviceaccount maken dat is toegewezen aan Cloud App Security.  
   
 > [!NOTE]  
 >  Om updates te krijgen wanneer URL's en IP-adressen zijn gewijzigd moet u zich abonneren op RSS zoals uitgelegd in: [Office 365-URL's en IP-adresbereiken](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2).  
@@ -129,6 +131,6 @@ Zie voor meer informatie over openbare peering [ExpressRoute-circuits en routeri
    
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO5-->
 
 
