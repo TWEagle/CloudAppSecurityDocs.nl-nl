@@ -50,6 +50,6 @@ U kunt de verwerking van Cloud Discovery-logboeken bijhouden met behulp van het 
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

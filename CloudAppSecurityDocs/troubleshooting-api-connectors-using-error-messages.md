@@ -1,11 +1,11 @@
 ---
-title: Foutberichten gebruiken om problemen met API-connectors op te lossen | Microsoft Docs
-description: In dit onderwerp vindt u een lijst met foutberichten voor API-connectors, evenals de aanbevolen oplossingen voor elke fout.
+title: Foutberichten gebruiken om problemen met app-connectors op te lossen | Microsoft Docs
+description: In dit onderwerp vindt u een lijst met foutberichten voor API app-connectors en de aanbevolen oplossingen voor elke fout.
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 10/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,15 +14,20 @@ ms.assetid: 4b6ac04a-4653-4c4a-bd6f-5926743475cc
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 61492a0126bff93c2a61d5d1317784ca96687df7
+ms.sourcegitcommit: 9565d8a51e4c06963861d9dfaef9595944bda1ff
+ms.openlocfilehash: 71e2a213ddf6f625037b11373e55aa270c3b1785
 
 
 ---
 
-# <a name="troubleshooting-api-connectors-using-error-messages"></a>Foutberichten gebruiken om problemen met API-connectors op te lossen
+
+# <a name="troubleshooting-app-connectors-using-error-messages"></a>Foutberichten gebruiken om problemen met app-connectors op te lossen
+
+App-connectorfouten worden weergegeven in het dialoogvenster van de app-connector nadat er is geprobeerd verbinding te maken met een cloud-app met de API app-connector.
+
+
 |Foutbericht|Relevante app|Beschrijving|Oplossing|
-|----|----|----|----|
+|----|----|----|------------|
 |HttpRequestFailure: De server heeft de volgende fout geretourneerd: 400 - Ongeldige aanvraag: {"error":{"code":"AF20012","message":"De opgegeven tenant-id (Tenant_ID wordt hier ingevoegd) is onjuist geconfigureerd in het systeem."|Office 365 |Er zijn geen toegewezen Office 365-licenties gevonden. |Wijs ten minste één Office 365-licentie toe aan uw tenant.| 
 |AuthFatalFailureException: com.box.boxjavalibv2.exceptions.BoxServerException: {"error":"invalid_grant","error_description":"Ongeldig vernieuwingstoken"}|Box|Het vernieuwingstoken in Box is ongeldig|Volg opnieuw de procedure voor het maken van verbinding tussen Box en Cloud App Security.|
 |BoxRestException: Kan reactie niet parseren.|Box|Interne fout|Klik nogmaals op de koppeling Nu testen om de verbinding met Box te testen.|
@@ -59,6 +64,6 @@ ms.openlocfilehash: 61492a0126bff93c2a61d5d1317784ca96687df7
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

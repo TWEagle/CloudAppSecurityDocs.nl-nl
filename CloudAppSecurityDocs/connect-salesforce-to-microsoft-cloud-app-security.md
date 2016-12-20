@@ -1,5 +1,5 @@
 ---
-title: Verbinding maken tussen Salesforce en Microsoft Cloud App Security | Microsoft Docs
+title: Verbinding maken met Salesforce | Microsoft Docs
 description: In dit onderwerp vindt u informatie over het maken van verbinding tussen Salesforce en Cloud App Security via de API-connector.
 keywords: 
 author: rkarlin
@@ -10,12 +10,12 @@ ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
 ms.technology: 
-ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
+ms.assetid: 776d7589-acdb-4cb6-99a0-3be2f7b6aab2
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a413236b04726dddc69068e39967f6ad17218719
-ms.openlocfilehash: 03dc58139a6739f5cc4294c1913ed8b6a720a9d2
+ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
+ms.openlocfilehash: af663e48d24a869b8a30b429accf8001a8584bb1
 
 
 ---
@@ -44,7 +44,7 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
   
          ![Salesforce-gebruikersprofielen beheren](./media/salesforce-manageusers-profiles.png "salesforce manageusers profiles")  
   
-    -   Kies het profiel dat u gebruikt voor het implementeren van Cloud App Security en klik op **Bewerken**.  
+    -   Kies het profiel dat u gebruikt voor het implementeren van Cloud App Security en klik op **Bewerken**. Dit is het profiel dat voor het serviceaccount van Cloud App Security moet worden gebruikt om de app-connector in te stellen.  
   
          ![Salesforce-profiel bewerken](./media/salesforce-edit-profile.png "salesforce edit profile")  
   
@@ -72,9 +72,9 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
   
     5.  Klik op **Opslaan**.  
   
-4.  Klik in de Cloud App Security-console op **Onderzoeken** en vervolgens op **Goedgekeurde apps**.  
+4.  Klik in de Cloud App Security-console op **Onderzoeken** en vervolgens op **Verbonden apps**.  
   
-5.  Klik in de rij Box op **Verbinden** in de kolom **App Connector-status**, of klik op de knop **Verbinding maken met een app** en vervolgens op **Salesforce**.  
+5.  Klik op de pagina **App-connectors** op de knop met het plusteken en vervolgens op **Salesforce**.  
   
      ![Verbinding maken met Salesforce](./media/connect-salesforce.png "connect salesforce")  
   
@@ -105,6 +105,6 @@ Nadat u verbinding hebt gemaakt met SalesForce, ontvangt u gebeurtenissen als vo
   
 
 
-<!--HONumber=Oct16_HO5-->
+<!--HONumber=Nov16_HO5-->
 
 

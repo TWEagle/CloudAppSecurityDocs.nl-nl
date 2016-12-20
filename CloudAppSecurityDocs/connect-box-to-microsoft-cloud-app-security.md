@@ -1,5 +1,5 @@
 ---
-title: Verbinding maken tussen Box en Microsoft Cloud App Security | Microsoft Docs
+title: Verbinding maken met Box | Microsoft Docs
 description: In dit onderwerp vindt u informatie over het maken van verbinding tussen de Box-app en Cloud App Security via de API-connector.
 keywords: 
 author: rkarlin
@@ -14,8 +14,8 @@ ms.assetid: b3e4713e-986f-4a5e-9fcc-f8de94dd0df7
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 849408f84e2a80022623c11f7951e921a95625b6
+ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
+ms.openlocfilehash: 4aa741a90e356d440598eb9302dbd49f3b445c6c
 
 
 ---
@@ -45,13 +45,13 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
     > [!NOTE]  
     >  Als u een bestaande Adallom-klant bent en uw console-URL voor Adallom is en niet voor Cloud App Security, gebruikt u dit serienummer voor de app: bwahmilhdlpbqy2ongkl119o3lrkoshc.  
   
-2.  Klik in de Cloud App Security-portal op **Onderzoeken** en vervolgens op **Erkende apps**.  
+2.  Klik in de Cloud App Security-portal op **Onderzoeken** en vervolgens op **Verbonden apps**.  
   
-3.  Klik in de rij Box op **Verbinden** in de kolom **App Connector-status**, of klik op de knop **Verbinding maken met een app** en vervolgens op **Box**.  
+3.  Klik op de pagina **App-connectors** op de knop met het plusteken en selecteer **Box**.  
   
      ![Verbinding maken met box](./media/connect-box.png "connect box")  
   
-4.  Klik, op de pagina **Box-instellingen** op het tabblad **API** en vervolgens op **Volg deze link**.  
+4.  Klik in het pop-upvenster **Box-instellingen** op **Volg deze link**.  
   
 5.  Hiermee opent u de aanmeldingspagina Box. Voer uw referenties in om Cloud App Security toegang te geven tot de Box-app van uw team.  
   
@@ -77,6 +77,6 @@ Na de verbinding met Box wordt in Cloud App Security een volledige scan uitgevoe
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

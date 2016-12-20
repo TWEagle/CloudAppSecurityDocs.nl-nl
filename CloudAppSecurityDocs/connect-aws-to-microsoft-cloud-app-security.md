@@ -1,5 +1,5 @@
 ---
-title: Verbinding maken tussen AWS en Microsoft Cloud App Security | Microsoft Docs
+title: Verbinding maken met AWS | Microsoft Docs
 description: In dit onderwerp vindt u informatie over het maken van verbinding tussen de AWS-app en Cloud App Security via de API-connector.
 keywords: 
 author: rkarlin
@@ -14,8 +14,8 @@ ms.assetid: a6b4c745-cd5c-4458-819c-80cbe8b25f29
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 4b9ab028bb45f77513217dd3784cefc73e984962
+ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
+ms.openlocfilehash: a56257b7c149c3ea054f200ef88df0ab41b7e25b
 
 
 ---
@@ -96,15 +96,15 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
   
     3.  Herhaal stap 11 voor alle regio's, maar stel geen andere regio in op Include global services.  
   
-11. Klik in de Cloud App Security-portal op **Onderzoeken** en vervolgens op **Erkende apps**.  
+11. Klik in de Cloud App Security-portal op **Onderzoeken** en vervolgens op **Verbonden apps**.  
   
-12. Klik in de rij AWS op **Verbinden** in de kolom **App Connector-status**, of klik op de knop **Verbinding maken met een app** en vervolgens op **AWS**.  
+12. Klik op de pagina **App-connectors** op de knop met het plusteken en vervolgens op **AWS**.  
   
      ![Verbinding maken met AWS](./media/connect-aws.png "connect AWS")  
   
-13. Ga naar de pagina Instellingen in Amazon Web Service, plak de **Toegangssleutel** en **Geheime sleutel** uit het CSV-bestand in de velden op de API-pagina en klik op **Toegangssleutel bijwerken**.  
+13. Plak in het pop-upvenster de **toegangssleutel** en **geheime sleutel** uit het CSV-bestand in de velden op de API-pagina en klik op **Toegangssleutel bijwerken**.  
   
-14. Controleer of de verbinding tot stand is gekomen door op **API testen** te klikken.  
+14. Controleer of de verbinding tot stand is gekomen door op **Test API** te klikken.  
   
      Het testen kan enkele minuten duren. Wanneer de test is voltooid, ontvangt u een melding dat deze is Geslaagd of Mislukt. Na de ontvangst van de melding dat de actie voltooid is, klikt u op **Gereed**.  
   
@@ -118,6 +118,6 @@ Nadat u verbinding hebt gemaakt met AWS, ontvangt u gebeurtenissen tot 7 dagen v
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

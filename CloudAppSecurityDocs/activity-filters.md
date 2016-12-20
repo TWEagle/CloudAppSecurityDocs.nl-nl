@@ -14,8 +14,8 @@ ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2cb87afa3c5342e01cfd4049669ac4b3b7efa4fe
-ms.openlocfilehash: 59e97ef0bd0a1f3ed388c3d21cfe6a70abf7936a
+ms.sourcegitcommit: 52f2245779568abbf41d47c4b45cdcced302529b
+ms.openlocfilehash: 40fd28f568aa9af32f9e2399435f48372ea62413
 
 
 ---
@@ -68,7 +68,10 @@ Hieronder volgt een lijst met de activiteitfilters die kunnen worden toegepast. 
 
 -   Geregistreerde ISP – de internetprovider van waaruit de activiteit is uitgevoerd.   
 
--  Bron - zoek naar de bron waar de activiteit is gedetecteerd, bijvoorbeeld App-connector. 
+-  Bron: zoeken op de bron waar de activiteit is gedetecteerd. Dit kan een van de volgende zijn:
+  - App-connector: logboeken die rechtstreeks uit de API-connector van de app afkomstig zijn.
+  - Analyse van App-connector: verbeteringen van de Cloud App Security-beveiliging op basis van een informatiescan door de API-connector.
+  
 
 -   Gebruiker - de gebruiker die de activiteit heeft uitgevoerd, te filteren op domein, groep, naam of organisatie. Als u activiteiten zonder specifieke gebruiker wilt filteren, kunt u de operator 'is niet ingesteld' gebruiken.  
     -   Gebruikersdomein - zoek naar een specifiek gebruikersdomein.
@@ -86,6 +89,7 @@ Hieronder volgt een lijst met de activiteitfilters die kunnen worden toegepast. 
 U kunt meer informatie bekijken over elke activiteit door te klikken op de activiteit in het Activiteitenlogboek. Daarmee opent u de activiteitslade, die de volgende acties bevat die u met het bestand kunt uitvoeren:
 
 - Overeenkomend beleid: klik op de koppeling Overeenkomend beleid om een lijst met beleidsregels te zien waarmee deze activiteit overeenkomt.
+- Onbewerkte gegevens weergeven: klik op Onbewerkte gegevens weergeven om te zien welke gegevens daadwerkelijk van de app zijn ontvangen.
 - Gebruiker: klik op de gebruiker om de gebruikerspagina weer te geven van de gebruiker die de activiteit heeft uitgevoerd. 
 - Apparaattype: klik op het apparaattype om de onbewerkte gegevens van de gebruikersagent weer te geven. 
 - Locatie: klik op de locatie om die te openen in Bing Kaarten.
@@ -93,34 +97,9 @@ U kunt meer informatie bekijken over elke activiteit door te klikken op de activ
 
 ![activiteitslade](./media/activity-drawer.png "activity drawer")  
   
+Zie [Activiteit overeenkomstig de parameters](governance-actions.md#activity-match-parameters) voor een lijst met beschikbare beheeracties.
 
 
-## <a name="activity-match-parameters"></a>Activiteit overeenkomstig de parameters  
-Geef aan hoe vaak een activiteit moet worden herhaald voordat het overeenkomt met het beleid, bijvoorbeeld het instellen van een beleid om te waarschuwen wanneer een gebruiker 10 mislukte aanmeldpogingen uitvoert binnen 2 minuten.  
-De standaardinstelling **Activiteit overeenkomstig de parameters** vindt een overeenkomst voor elke activiteit die voldoet aan alle activiteitfilters.   
-Met behulp van **Herhaalde activiteit** kunt u het aantal herhaalde activiteiten instellen, alsmede de periode waarin de activiteiten worden geteld. U kunt zelfs opgeven dat alle activiteiten moeten worden uitgevoerd door dezelfde gebruiker en in dezelfde cloud-app.  
-  
-### <a name="actions"></a>Acties  
-Meldingen  
-  
--   Waarschuwingen – waarschuwingen kunnen in het systeem worden geactiveerd en worden doorgegeven via e-mail en SMS op basis van de ernst.  
-  
--   E-mailmeldingen voor gebruikers – e-mailberichten kunnen worden aangepast en worden verzonden naar alle eigenaren van bestanden die het beleid schenden.  
-  
--   CC naar manager – op basis van directory-integratie voor gebruikers kunnen e-mailmeldingen ook worden verzonden naar de manager van de persoon die een beleid schendt.  
-  
--   Meldingen verzenden naar aanvullende gebruikers – specifieke lijst met e-mailadressen die deze meldingen ontvangen.  
-  
-Beheeracties in apps  
-  
--   Gedetailleerde acties kunnen per app worden afgedwongen, specifieke acties zijn afhankelijk van de terminologie in de app.  
-  
--   Gebruiker blokkeren – de gebruiker blokkeren in de toepassing.  
-  
--   Wachtwoord intrekken – het gebruikerswachtwoord intrekken en afdwingen dat de gebruiker een nieuw wachtwoord instelt bij de volgende aanmelding.  
-  
-     ![Activiteitenbeleidsverwijzing6](./media/activity-policy-ref6.png "activity policy ref6")  
-  
 ## <a name="see-also"></a>Zie ook  
 [Dagelijkse activiteiten ter bescherming van uw cloudomgeving](daily-activities-to-protect-your-cloud-environment.md)   
 [Ga naar de ondersteuningspagina van Cloud App Security voor technische ondersteuning.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
@@ -129,6 +108,6 @@ Beheeracties in apps
   
 
 
-<!--HONumber=Oct16_HO5-->
+<!--HONumber=Dec16_HO1-->
 
 

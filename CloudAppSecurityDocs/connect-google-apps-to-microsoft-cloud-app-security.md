@@ -1,11 +1,11 @@
 ---
-title: Verbinding maken tussen Google Apps en Microsoft Cloud App Security | Microsoft Docs
+title: Verbinding maken met Google Apps | Microsoft Docs
 description: In dit onderwerp vindt u informatie over het maken van verbinding tussen Google Apps en Cloud App Security via de API-connector.
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/23/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,14 +14,16 @@ ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 0f38f61be8a0db4a28d3c7df614807ace69bb38e
+ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
+ms.openlocfilehash: b28eaa521980cb7ec8eee94f0168ca07286533e7
 
 
 ---
 
 # <a name="connect-google-apps-to-microsoft-cloud-app-security"></a>Verbinding maken tussen Google Apps en Microsoft Cloud App Security
-In deze sectie vindt u instructies voor het maken van een verbinding tussen Cloud App Security en uw bestaande Google Apps-account met behulp van de connector-API's voor de app.  
+In deze sectie vindt u instructies voor het maken van een verbinding tussen Cloud App Security en uw bestaande Google Apps-account met behulp van de connector-API's voor de app.
+
+  
   
 ## <a name="configure-google-apps"></a>Google Apps configureren  
   
@@ -218,13 +220,13 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
   
 ## <a name="configure-cloud-app-security"></a>Cloud App Security configureren  
   
-1.  Klik in de Cloud App Security-portal op **Onderzoeken** en vervolgens op **Erkende apps**.  
+1.  Klik in de Cloud App Security-portal op **Onderzoeken** en vervolgens op **Verbonden apps**.  
   
-2.  Klik in de rij Google Apps op **Verbinden** in de kolom **App Connector-status**, of klik op **Verbinding maken met een app** en vervolgens op **Google Apps**.  
+2.  Klik op de pagina **Verbonden apps** op de knop met het plusteken en selecteer **Google Apps**.  
   
      ![Verbinding maken met Google Apps](./media/connect-google-apps.png "connect google apps")  
   
-3.  Vul op de pagina met instellingen van Google Apps het volgende in:  
+3.  Vul het volgende in het pop-upvenster in:  
   
      ![Configuratie van Google Apps in Cloud App Security](./media/google-apps-configuration-in-cloud-app-security.png "Google Apps Configuration in Cloud App Security")  
   
@@ -264,6 +266,6 @@ Na de verbinding met Google Apps wordt in Cloud App Security een volledige scan 
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

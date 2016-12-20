@@ -1,5 +1,5 @@
 ---
-title: Werken met Cloud Discovery-gegevens | Microsoft Docs
+title: Cloud Discovery aanpassen | Microsoft Docs
 description: In dit onderwerp vindt u instructies voor het werken met Cloud Discovery-gegevens, waaronder het werken met de risicoscore van apps.
 keywords: 
 author: rkarlin
@@ -14,13 +14,13 @@ ms.assetid: cf94b290-b7ef-4fee-854e-c8ff8d11dea9
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 4b9bf05e43966ff39dacc58a082c7b8eb3627eda
+ms.sourcegitcommit: 76c705a38ffb0d61b9ad2eeaf3bdb939f5326589
+ms.openlocfilehash: e2123c83a770ecbfb0466c6ef1a4f67e7c271ca2
 
 
 ---
 
-# <a name="working-with-cloud-discovery-data"></a>Werken met Cloud Discovery-gegevens
+# <a name="customize-cloud-discovery"></a>Cloud Discovery aanpassen
 ## <a name="review-the-cloud-discovery-dashboard"></a>Het Cloud Discovery-dashboard bekijken
 
 Met het Cloud Discovery-dashboard hebt u meer inzicht in de manier waarop cloud-apps in uw organisatie worden gebruikt. Met het dashboard kunt u in één oogopslag een overzicht bekijken van de apps die worden gebruikt, uw openstaande waarschuwingen en de risiconiveaus van de apps in uw organisatie. Daarnaast kunt u zien wie de belangrijkste gebruikers in uw organisatie zijn en wordt een app-hoofdkantoorkaart weergegeven. Het Cloud Discovery-dashboard heeft verschillende opties voor het filteren van gegevens, zodat u specifieke weergaven kunt genereren (afhankelijk van de gegevens die het interessantst zijn voor u), en eenvoudig te begrijpen afbeeldingen zodat u in één oogopslag een volledig beeld krijgt.
@@ -132,6 +132,6 @@ Cloud Discovery-gegevens verwijderen:
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

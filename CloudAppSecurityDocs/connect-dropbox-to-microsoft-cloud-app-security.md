@@ -1,5 +1,5 @@
 ---
-title: Verbinding maken tussen Dropbox en Microsoft Cloud App Security | Microsoft Docs
+title: Verbinding maken met Dropbox | Microsoft Docs
 description: In dit onderwerp vindt u informatie over het maken van verbinding tussen de Dropbox-app en Cloud App Security via de API-connector.
 keywords: 
 author: rkarlin
@@ -14,8 +14,8 @@ ms.assetid: 4acd93f4-b885-4e1f-a385-43b5db02a3ee
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 105003dfbd8afbb10cdb2058e2da180d4b49e294
+ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
+ms.openlocfilehash: a2b9a7e9cf254c52465922af4b0e3a0256e60c5d
 
 
 ---
@@ -28,13 +28,13 @@ Omdat met Dropbox toegang tot bestanden via gedeelde koppelingen zonder aanmelde
 
 ## <a name="how-to-connect-dropbox-to-cloud-app-security"></a>Verbinding maken tussen Dropbox en Microsoft Cloud App Security  
   
-1.  Klik in de Cloud App Security-console op **Onderzoeken** en vervolgens op **Goedgekeurde apps**.  
+1.  Klik in de Cloud App Security-console op **Onderzoeken** en vervolgens op **Verbonden apps**.  
   
-2.  Klik in de rij Dropbox op **Verbinden** in de kolom **App Connector-status**, of klik op de knop **Verbinding maken met een app** en vervolgens op **Dropbox**.  
+2.  Klik op de pagina **App-connectors** op de knop met het plusteken en vervolgens op **Dropbox**.  
   
      ![Verbinding maken met Dropbox](./media/connect-dropbox.png "connect dropbox")  
   
-3.  Voer het e-mailadres van het beheeraccount in op het tabblad API van de pagina Dropbox-instellingen.  
+3.  Voer in het pop-upvenster het e-mailadres van het beheerdersaccount in.  
   
 4.  Klik op **Genereer link**.  
   
@@ -63,6 +63,6 @@ Nadat u verbinding hebt gemaakt met Dropbox, ontvangt u gebeurtenissen tot 60 da
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: Verbinding maken tussen ServiceNow en Microsoft Cloud App Security | Microsoft Docs
+title: Verbinding maken met ServiceNow | Microsoft Docs
 description: In dit onderwerp vindt u informatie over het maken van verbinding tussen de ServiceNow-app en Cloud App Security via de API-connector.
 keywords: 
 author: rkarlin
@@ -14,8 +14,8 @@ ms.assetid: c626d94d-2ffd-4daf-8fa4-4b6d308cf012
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 30ddba23a0c481cb434e9239950cce90c52efc4f
+ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
+ms.openlocfilehash: 7935006b6b28ed93601ca60adf3c1a408440eae7
 
 
 ---
@@ -36,13 +36,13 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
   
      ![ServiceNow-account](./media/servicenow-account.png "servicenow account")  
   
-4.  Klik in de Cloud App Security-portal op **Onderzoeken** en vervolgens op **Erkende apps**.  
+4.  Klik in de Cloud App Security-portal op **Onderzoeken** en vervolgens op **Verbonden apps**.  
   
-5.  Klik in de rij ServiceNow op **Verbinden** in de kolom **App Connector-status**, of klik op de knop **Verbinding maken met een app** en vervolgens op **ServiceNow**.  
+5.  Klik op de pagina **App-connectors** op de knop met het plusteken en vervolgens op **ServiceNow**.  
   
      ![Verbinding maken met ServiceNow](./media/connect-servicenow.png "connect servicenow")  
   
-6.  Voeg op de pagina ServiceNow-instellingen op het tabblad API in de bijbehorende vakken uw ServiceNow-gebruikersnaam, -wachtwoord en de URL van het exemplaar in.  
+6.  Voeg in het pop-upvenster in de bijbehorende vakken uw ServiceNow-gebruikersnaam, -wachtwoord en de URL van het exemplaar in.  
   
 7.  Klik op **Verbinden**.  
   
@@ -62,6 +62,6 @@ Nadat u verbinding hebt gemaakt met ServiceNow, ontvangt u gebeurtenissen tot 60
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

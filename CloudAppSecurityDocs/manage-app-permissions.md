@@ -10,12 +10,12 @@ ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
 ms.technology: 
-ms.assetid: bc11bbfe-ec6c-458c-8302-8112c383199d
+ms.assetid: 137e0630-5440-4c49-bfe4-48bbc64575e2
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 208f50765f2559f45dbd4a11cfb4196982b61e74
-ms.openlocfilehash: 81a6663f16264177966492ac4a1ec9e00f6d1a76
+ms.sourcegitcommit: e41c04d25f12aa5207ef9ffbb6a22f4b894e92cb
+ms.openlocfilehash: 156be8b048c12e5db0a4b1118314c0b600ded24a
 
 
 ---
@@ -30,7 +30,7 @@ Op het tabblad **App-machtigingen** wordt informatie weergegeven over de app-mac
 
 U opent het tabblad App-machtigingen als volgt:
 
-1. Klik in de Cloud App Security-portal op **Onderzoeken** en selecteer **Office 365** onder Erkende apps. 
+1. Klik in de Cloud App Security-portal op **Onderzoeken** en selecteer **Office 365** onder **Verbonden apps**. 
 > [!Note]
 > U moet Cloud App Security eerst verbinden met Office 365 voordat u App-machtigingen kunt gebruiken.
 
@@ -115,6 +115,6 @@ De filters worden automatisch toegepast en de lijst met apps wordt bijgewerkt.
   
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO5-->
 
 

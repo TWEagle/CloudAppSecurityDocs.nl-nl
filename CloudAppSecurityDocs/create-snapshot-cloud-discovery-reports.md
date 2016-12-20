@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 400741713d40422a3b1c7680663a572d18e9c692
-ms.openlocfilehash: 650bf424d77f6cbcf11e24058ec54278cfd579f5
+ms.sourcegitcommit: 851617bc68618b177600523a4d4432b3e557f394
+ms.openlocfilehash: abd134c9ff3b000170bce474e8ecebb71b762b98
 
 
 ---
@@ -36,7 +36,7 @@ Ga als volgt te werk om een momentopnamerapport te maken:
   
 4.  Selecteer de **Gegevensbron** vanwaaruit u de logboekbestanden wilt uploaden.  
   
-5.  **Kies de verkeerslogboeken** die u wilt uploaden. U kunt maximaal 20 bestanden tegelijk uploaden.  
+5.  **Kies de verkeerslogboeken** die u wilt uploaden. U kunt maximaal 20 bestanden tegelijk uploaden. Gecomprimeerde en gezipte bestanden worden ook ondersteund.  
   
 6.  Klik op **Maken**.  
   
@@ -68,6 +68,6 @@ Als de verwerking van uw logboekbestanden is voltooid, ontvangt u een e-mail met
   
 
 
-<!--HONumber=Oct16_HO5-->
+<!--HONumber=Nov16_HO5-->
 
 
