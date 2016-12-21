@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/26/2016
+ms.date: 12/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,12 +14,20 @@ ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 52f2245779568abbf41d47c4b45cdcced302529b
-ms.openlocfilehash: 40fd28f568aa9af32f9e2399435f48372ea62413
+ms.sourcegitcommit: 156dccf0c77bf7e46c0328ebf6bd1e0ad9609845
+ms.openlocfilehash: f1dc1e39309cfe06037a13da55d92935786bed81
 
 
 ---
 # <a name="activities"></a>Activiteiten
+Voor de beveiliging van gegevens maakt Cloud App Security alle activiteiten van uw verbonden apps voor u zichtbaar. Nadat u Cloud App Security hebt verbonden met een app met behulp van de App-connector, scant Cloud App Security alle activiteiten die hebben plaatsgevonden, waarbij de retroactieve scantijd per app verschilt. Daarna wordt Cloud App Security voortdurend bijgewerkt met nieuwe activiteiten. U kunt beleidsregels maken op basis van de activiteiten en vervolgens aangeven waarvoor u waarschuwingen wilt ontvangen. U kunt ook zoeken naar activiteiten die worden uitgevoerd op bepaalde bestanden. Het type activiteiten en de informatie die we voor elke activiteit ophalen, hangen af van de app en van het soort gegevens dat de app kan leveren. 
+
+U kunt bijvoorbeeld met het logboek **Activiteit** zoeken naar gebruikers in uw organisatie die gebruikmaken van besturingssystemen of browsers die verouderd zijn. Dat doet u als volgt: nadat u Office 365, Google Apps, Box, Dropbox, Okta, Amazon Web Services of Salesforce hebt verbonden met Cloud App Security op de pagina **Activiteitenlogboek**, gebruikt u het geavanceerde filter en selecteert u **Code gebruikersagent**. Selecteer vervolgens **Verouderde browser** of **Verouderd besturingssysteem**. Als u ziet dat er **vertrouwelijke** bestanden zijn die buiten uw organisatie worden gedeeld, kunt u klikken op **Nieuw beleid op basis van zoekopdracht** om een activiteitenbeleid te maken waarmee verouderde browsers en besturingssystemen worden gedetecteerd en gebruikers automatisch een melding ontvangen.
+
+ ![Voorbeeld van activiteit verouderde browser](media/activity-outdated-example.png)
+
+ 
+
 U kunt het activiteitenlogboek filteren om te zoeken naar specifieke activiteiten. Met het basisfilter kunt u snel aan de slag met het filteren van uw activiteiten.
 
  ![basisfilter logboekactiviteit](media/activity-log-filter-basic.png)
@@ -33,7 +41,8 @@ Hieronder volgt een lijst met de activiteitfilters die kunnen worden toegepast. 
   
 -   Activiteit-id - Zoek alleen naar specifieke activiteiten op basis van de id. Dit filter is zeer nuttig wanneer u verbinding maakt tussen MCAS en uw SIEM (met behulp van de SIEM-agent) en u de waarschuwingen in de MCAS-portal verder wilt onderzoeken.  
   
--   Activiteitobjecten - zoek naar bestanden, mappen of site-URL's, of doelobjecten (bestand/map).
+-   Activiteitobjecten - zoek naar de objecten waarvoor de activiteit werd uitgevoerd. Dit filter wordt toegepast op bestands-, map-, gebruikers- of app-objecten.
+    - Activiteitobject-id - de id van het object (bestands-, map-, gebruikers- of app-id).
     - Bestand, map of site-URL - hiermee kunt u bestanden, mappen en URL's selecteren die beginnen met een bepaalde tekenreeks.
     - Doelobject (bestand/map) - hiermee kunt u een specifiek bestand of specifieke map selecteren. 
     
@@ -95,7 +104,7 @@ U kunt meer informatie bekijken over elke activiteit door te klikken op de activ
 - Locatie: klik op de locatie om die te openen in Bing Kaarten.
 - Categorie en labels IP-adres: klik op het IP-label om de lijst met IP-labels die zijn gevonden in deze activiteit weer te geven. U kunt vervolgens filteren op alle activiteiten die overeenkomen met dit label.    
 
-![activiteitslade](./media/activity-drawer.png "activity drawer")  
+![activiteitlade](./media/activity-drawer.png "activiteitlade")  
   
 Zie [Activiteit overeenkomstig de parameters](governance-actions.md#activity-match-parameters) voor een lijst met beschikbare beheeracties.
 
@@ -108,6 +117,6 @@ Zie [Activiteit overeenkomstig de parameters](governance-actions.md#activity-mat
   
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

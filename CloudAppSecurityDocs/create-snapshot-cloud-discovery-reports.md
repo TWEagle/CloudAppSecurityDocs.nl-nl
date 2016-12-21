@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/29/2016
+ms.date: 12/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,14 +14,16 @@ ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 851617bc68618b177600523a4d4432b3e557f394
-ms.openlocfilehash: abd134c9ff3b000170bce474e8ecebb71b762b98
+ms.sourcegitcommit: 2a2d4396a3960bd3124196b9c616f6a7765247ce
+ms.openlocfilehash: ce887ed4f8727b0c36f5e5e9a40b13b11dc78920
 
 
 ---
 
 # <a name="create-snapshot-cloud-discovery-reports"></a>Momentopnamerapporten maken van Cloud Discovery
 Het is belangrijk een logboek handmatig te uploaden en het logboek in Cloud App Security te parseren voordat u de automatische logboekverzamelaar gebruikt.
+Als u nog geen logboek hebt en wilt zien hoe uw logboek eruit zou kunnen zien, volgt u de onderstaande procedure om een voorbeeld van een logboekbestand te downloaden.
+
 
 Ga als volgt te werk om een momentopnamerapport te maken:
   
@@ -29,19 +31,22 @@ Ga als volgt te werk om een momentopnamerapport te maken:
   
 2.  Klik in de Cloud App Security-portal op **Detecteren** en vervolgens op **Nieuw momentopnamerapport maken**.  
   
-     ![Een nieuw momentopnamerapport maken](./media/create-new-snapshot-report.png)
+   ![Een nieuw momentopnamerapport maken](./media/create-new-snapshot-report.png)
      
-      
 3.  Voer een **rapportnaam** en een **beschrijving** in.
   
+     ![Nieuw momentopnamerapport](./media/new-snapshot-report.png) 
+
 4.  Selecteer de **Gegevensbron** vanwaaruit u de logboekbestanden wilt uploaden.  
   
+5. Controleer uw logboekindeling en controleer of deze hetzelfde is als in het voorbeeld dat u kunt downloaden. Klik op **Weergeven en controleren** en klik op **Voorbeeldlogboek downloaden**. Vergelijk vervolgens uw logboek met het voorbeeld om te controleren of de indeling hetzelfde is. 
+
+ ![De logboekindeling controleren](./media/cloud-discovery-snapshot-verify.png)  
+
 5.  **Kies de verkeerslogboeken** die u wilt uploaden. U kunt maximaal 20 bestanden tegelijk uploaden. Gecomprimeerde en gezipte bestanden worden ook ondersteund.  
   
 6.  Klik op **Maken**.  
-  
-     ![Nieuw momentopnamerapport](./media/new-snapshot-report.png) 
-  
+
 7.  Nadat het uploaden is voltooid, verschijnt in de rechterbovenhoek van uw scherm een statusbericht waarin wordt aangegeven dat uw logboek is geüpload.  
   
 8.  Na het uploaden van uw logboekbestanden duurt het even voordat ze zijn geparseerd en geanalyseerd.  
@@ -68,6 +73,6 @@ Als de verwerking van uw logboekbestanden is voltooid, ontvangt u een e-mail met
   
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 
