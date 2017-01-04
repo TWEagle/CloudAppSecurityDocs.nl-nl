@@ -14,8 +14,8 @@ ms.assetid: ac53fbd6-4d31-4bce-b2bc-9dc65ad83b3e
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 52f2245779568abbf41d47c4b45cdcced302529b
-ms.openlocfilehash: 12d9ef74f923c430fbfb547635786dc4c4300499
+ms.sourcegitcommit: 156dccf0c77bf7e46c0328ebf6bd1e0ad9609845
+ms.openlocfilehash: 21edb17ac01d7f54cab9b7b2ced838752a916c1e
 
 
 ---
@@ -76,7 +76,7 @@ Voer de volgende procedure uit om een nieuw bestandsbeleid te maken:
 7.  Selecteer de **Methode voor inhoudscontrole**. Met de ingebouwde DLP kunt u bestanden filteren op de inhoud ervan. Als u bestanden wilt scannen op de inhoud, selecteert u vervolgens **Ingebouwde DLP**. Zodra inhoudscontrole is ingeschakeld, kunt u vooraf ingestelde expressies gebruiken of zoeken naar andere aangepaste expressies als een subtekenreeks of als een [reguliere expressie](working-with-the-regex-engine.md) van uzelf.  
     Bovendien kunt u een reguliere expressie opgeven als u een bestand wilt uitsluiten van de resultaten. Dit is zeer nuttig als u een standaard voor trefwoorden met de binnenste classificatie hebt die u wilt uitsluiten van het beleid.  
     U kunt bepalen wat het minimumaantal schendingen van inhoud is dat moet worden bereikt voordat het bestand wordt beschouwd als een schending. U kunt bijvoorbeeld 10 kiezen als u waarschuwingen wilt ontvangen voor bestanden waarin ten minste 10 creditcardnummers worden gevonden.  
-    Wanneer inhoud wordt vergeleken met de geselecteerde expressie, kunt u kiezen om de overeenkomst zelf te maskeren voor de meldingen en logboeken van schendingen. Als dit is ingeschakeld, wordt de schendende tekst vervangen door "X"-tekens. Denk eraan dat getallen worden vervangen door #-tekens en nooit worden opgeslagen in Cloud App Security.  
+    Wanneer inhoud wordt vergeleken met de geselecteerde expressie, kunt u kiezen om de overeenkomst zelf te maskeren voor de meldingen en logboeken van schendingen. Als dit is ingeschakeld, wordt de schendende tekst vervangen door "X"-tekens. Denk eraan dat getallen worden vervangen door #-tekens en nooit worden opgeslagen in Cloud App Security.  U kunt ook de optie selecteren om de laatste 4 tekens van een schending zichtbaar te maken. Standaard worden schendingen volledig gemaskeerd en in context weergegeven, met 40 tekens zichtbaar vóór en na de schending. Met deze optie worden de laatste 4 tekens van de schending zelf zichtbaar gemaakt.
   
 8.  Kies de **beheer**acties die in Cloud App Security moeten worden uitgevoerd wanneer een overeenkomst wordt gedetecteerd.  
   
@@ -88,7 +88,7 @@ Voer de volgende procedure uit om een nieuw bestandsbeleid te maken:
 >   
 >  Als hulp kunt u de knop **Bewerken en voorbeeld van resultaten bekijken** in de sectie Filters gebruiken.  
   
-![Bestandsbeleid bewerken en voorbeeld van de resultaten bekijken](./media/file-policy-edit-and-preview-results.png "file policy edit and preview results")  
+![bestandsbeleid bewerken en voorbeeld van resultaten](./media/file-policy-edit-and-preview-results.png "bestandsbeleid bewerken en voorbeeld van resultaten")  
   
 10. Als u overeenkomsten voor een bestandsbeleid (bestanden waarvan wordt vermoed dat ze het beleid schenden) wilt weergeven, klikt u op **Controle** en vervolgens op **Beleidsregels**. Filter de resultaten met het filter **Type** bovenaan, zodat alleen de bestandsbeleidsregels worden weergegeven. Klik op een beleid voor meer informatie over de overeenkomsten voor elk beleid. Hiermee wordt de bestanden met actuele overeenkomsten voor het beleid weergegeven. Klik op het tabblad **Geschiedenis** om de geschiedenis tot zes maanden terug te zien van bestanden met een overeenkomst met het beleid.     
   
@@ -101,12 +101,10 @@ Elk beleid bestaat uit de volgende onderdelen:
   
 -   Bestandsfilters – hiermee kunt u zeer gedetailleerde voorwaarden op basis van metagegevens maken.  
   
--   Inhoudscontrole – hiermee kunt u het beleid verfijnen op basis van de resultaten van DLP-engines.  
+-   Inhoudscontrole – hiermee kunt u het beleid verfijnen op basis van de resultaten van DLP-engines. U kunt een aangepaste expressie of een vooraf ingestelde expressie opnemen. Er kunnen uitsluitingen worden ingesteld en u kunt het aantal overeenkomsten kiezen. U kunt ook anonimiseren om de gebruikersnaam te maskeren. 
   
 -   Acties – het beleid bevat een reeks beheeracties die automatisch kunnen worden toegepast wanneer schendingen worden gevonden.  Deze worden onderverdeeld in samenwerkingsacties, beveiligingsacties en onderzoeksacties.
 
-![Vervolgkeuzelijst voor bestandsbeheer](./media/file-governance-drop-down.png)
-  
 -   Extensies  
   
     > [!NOTE]  
@@ -124,6 +122,6 @@ Elk beleid bestaat uit de volgende onderdelen:
   
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

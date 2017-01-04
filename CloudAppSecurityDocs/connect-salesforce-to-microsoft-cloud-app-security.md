@@ -14,8 +14,8 @@ ms.assetid: 776d7589-acdb-4cb6-99a0-3be2f7b6aab2
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
-ms.openlocfilehash: af663e48d24a869b8a30b429accf8001a8584bb1
+ms.sourcegitcommit: 129181e4768f068a0e30f6ef3a2d3f7fc6d47024
+ms.openlocfilehash: 0932c6bc696e7b050eae543fbea7d847dfa42b4b
 
 
 ---
@@ -42,25 +42,25 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
   
     -   Ga onder **Gebruikers beheren** naar de pagina **Profielen**.  
   
-         ![Salesforce-gebruikersprofielen beheren](./media/salesforce-manageusers-profiles.png "salesforce manageusers profiles")  
+         ![salesforce, gebruikers beheren, profielen](./media/salesforce-manageusers-profiles.png "salesforce, gebruikers beheren, profielen")  
   
     -   Kies het profiel dat u gebruikt voor het implementeren van Cloud App Security en klik op **Bewerken**. Dit is het profiel dat voor het serviceaccount van Cloud App Security moet worden gebruikt om de app-connector in te stellen.  
   
-         ![Salesforce-profiel bewerken](./media/salesforce-edit-profile.png "salesforce edit profile")  
+         ![salesforce, profiel bewerken](./media/salesforce-edit-profile.png "salesforce, profiel bewerken")  
   
     -   Zorg ervoor dat het selectievakje **API ingeschakeld** is geselecteerd. Als deze niet is geselecteerd, moet u mogelijk contact opnemen met Salesforce om deze toe voegen aan uw account.  
   
-         ![Salesforce-API ingeschakeld](./media/salesforce-api-enabled.png "salesforce api enabled")  
+         ![salesforce, api ingeschakeld](./media/salesforce-api-enabled.png "salesforce, api ingeschakeld")  
   
 3.  Als **Salesforce CRM-inhoud** is ingeschakeld voor uw organisatie, zorg er dan voor dat dit ook is ingeschakeld voor het huidige beheerdersaccount.  
   
     1.  Ga naar uw Salesforce-instellingspagina.  
   
-         ![Salesforce-instellingen](./media/salesforce-setup.png "salesforce setup")  
+         ![salesforce, instellingen](./media/salesforce-setup.png "salesforce, instellingen")  
   
     2.  Selecteer in het menu aan de zijkant **Gebruikers beheren** en klik vervolgens op **Gebruikers**.  
   
-         ![Salesforce-menu Gebruikers](./media/salesforce-menu-users.png "salesforce menu users")  
+         ![salesforce-menu, gebruikers](./media/salesforce-menu-users.png "salesforce-menu, gebruikers")  
   
     3.  Selecteer de huidige gebruiker met beheerdersrechten voor uw specifieke Cloud App Security-gebruiker.  
   
@@ -68,7 +68,7 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
   
          Als dit niet is geselecteerd, klikt u op **Bewerken** en het selecteert u selectievakje.  
   
-         ![Salesforce CRM-inhoud gebruiker](./media/salesforce-crm-content-user.png "salesforce crm content user")  
+         ![salesforce, crm-inhoud gebruiker](./media/salesforce-crm-content-user.png "salesforce, crm-inhoud gebruiker")  
   
     5.  Klik op **Opslaan**.  
   
@@ -76,13 +76,13 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
   
 5.  Klik op de pagina **App-connectors** op de knop met het plusteken en vervolgens op **Salesforce**.  
   
-     ![Verbinding maken met Salesforce](./media/connect-salesforce.png "connect salesforce")  
+     ![verbinding maken met salesforce](./media/connect-salesforce.png "verbinding maken met salesforce")  
   
 6.  Klik op de instellingspagina van Salesforce op het tabblad API en klik vervolgens op **Deze link volgen**, afhankelijk van welk exemplaar u wilt installeren.  
   
 7.  Hiermee wordt de aanmeldingspagina van Salesforce geopend. Voer uw referenties in om Cloud App Security toegang te geven tot de Salesforce-app van uw team.  
   
-     ![Aanmelden bij Salesforce](./media/salesforce-logon.png "salesforce logon")  
+     ![salesforce aanmelding](./media/salesforce-logon.png "salesforce aanmelding")  
   
 8.  Salesforce geeft een melding weer om u te vragen of u Cloud App Security toegang wilt geven tot de gegevens van uw team en het activiteitenlogboek en toestemming wilt geven om willekeurige activiteiten uit te voeren als een willekeurig teamlid. Klik op **Toestaan** om door te gaan.  
   
@@ -95,7 +95,7 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
      Het testen kan enkele minuten duren. Na de ontvangst van de melding dat de actie voltooid is, klikt u op **Gereed**.  
   
   
-Nadat u verbinding hebt gemaakt met SalesForce, ontvangt u gebeurtenissen als volgt: triggers vanaf het moment van de verbinding, aanmeldingsgebeurtenissen en instellen van audittrail tot 60 dagen voorafgaand aan de verbinding, gebeurtenisbewaking tot 30 dagen of 1 dag terug (afhankelijk van uw licentie voor SalesForce EventMonitoring).
+Nadat u verbinding hebt gemaakt met Salesforce, ontvangt u gebeurtenissen als volgt: triggers vanaf het moment van de verbinding, aanmeldingsgebeurtenissen en instellen van audittrail tot 60 dagen voorafgaand aan de verbinding, gebeurtenisbewaking tot 30 dagen of 1 dag terug (afhankelijk van uw licentie voor Salesforce EventMonitoring).
   
 ## <a name="see-also"></a>Zie ook  
 [Cloud-apps beheren met beleidsregels](control-cloud-apps-with-policies.md)   
@@ -105,6 +105,6 @@ Nadat u verbinding hebt gemaakt met SalesForce, ontvangt u gebeurtenissen als vo
   
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

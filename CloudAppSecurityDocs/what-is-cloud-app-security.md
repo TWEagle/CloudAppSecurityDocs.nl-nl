@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/23/2016
+ms.date: 12/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 480a94edbb36cc421b5ff64ea29268f0041326bc
-ms.openlocfilehash: dfc9ec25d2c7822d9239685375136c1dc0d1a3bc
+ms.sourcegitcommit: 156dccf0c77bf7e46c0328ebf6bd1e0ad9609845
+ms.openlocfilehash: 4875a1ae80dae101416c9b26932bc57edf755a84
 
 
 ---
@@ -30,13 +30,9 @@ Cloud App Security is een essentieel onderdeel van de Microsoft Cloud Security-s
 
 ## <a name="the-cloud-app-security-framework"></a>Het Cloud App Security-framework  
 
-|       |   |   |
-|-------|---|:---|
-|![Ontdekken](./media/discovery-icon.png)|Ontdekken|Onthul Shadow IT met Cloud App Security. Krijg meer inzicht door apps, activiteiten, gebruikers, gegevens en bestanden in uw cloudomgeving te detecteren. Detecteer apps van derden die zijn verbonden met uw cloud.|
-|![Onderzoeken](./media/investigate-icon.png)|Onderzoeken|Onderzoek uw cloud-apps met forensische hulpprogramma's voor de cloud om riskante apps, specifieke gebruikers en bestanden in uw netwerk diepgaand te onderzoeken. Vind patronen in de gegevens die vanuit de cloud worden verzameld. U kunt rapporten genereren om uw cloud te bewaken.|
-|![Beheer](./media/control-icon.png)|Beheer|Beperk risico's door beleidsregels en waarschuwingen in te stellen om maximale controle over het netwerkverkeer in de cloud te behalen. Gebruik Cloud App Security om uw gebruikers te migreren naar veilige, goedgekeurde alternatieven voor de cloud-app.|
-|![Beschermen](./media/protect-icon.png)|Beschermen|Gebruik Cloud App Security om toepassingen goed te keuren of de goedkeuring in te trekken, voorkomen van gegevensverlies af te dwingen, machtigingen en delen te beheren en aangepaste rapporten en waarschuwingen te genereren.|
 
+**Cloud Discovery** Ontdek alle cloudgebruik in uw organisatie. Schaduw-IT-rapportage en -beheer: - Ontdek alle cloud-apps in uw netwerk, vanaf alle apparaten - Onderzoek specifieke apps, gebruikers, bron-IP-adressen en meer - Beheer en regel het cloudgebruik door apps te blokkeren, te sanctioneren en te beveiligen - Risicoanalyse: - Inzicht in de cloudrisico's van meer dan 13.000 cloud-apps - Gebaseerd op meer dan 60 risicofactoren op het gebied van beveiliging en naleving - Waarschuwing bij riskant cloudgebruik: - Waarschuwingen bij afwijkende gebruikspatronen van gebruikers, nieuwe apps en trending apps **Information Protection** Bewaak en beheer uw gegevens in de cloud. Meer zichtbaarheid in de cloud - Meer zichtbaarheid op het niveau van delen en gevoeligheid - Bepaal de mate van blootstelling en risico - Detecteer alle toegang van apps van derden tot uw gegevens - Dwing het delen van DLP-beleid en -controle af - Beheer gegevens in de cloud met gedetailleerde DLP-beleidsregels - Gebruik DLP-engines van Microsoft en derden voor classificatie - Waarschuwen en onderzoeken - Identificeer beleidsovertredingen - Onderzoek incidenten en gerelateerde activiteiten - Automatiseer herstel inclusief quarantaine en verwijderen van machtigingen **Threat Protection** Detecteert afwijkend gebruik en beveiligingsincidenten. Beperk risico's door beleidsregels en waarschuwingen in te stellen om maximale controle over het netwerkverkeer in de cloud te behalen. Gebruik Cloud App Security om uw gebruikers te migreren naar veilige, goedgekeurde alternatieven voor de cloud-app.
+Gedragsanalyse: - Standaarddetectie van verdachte activiteiten - Afwijkingsdetectie-engine gebaseerd op meer dan 20 risicofactoren - Geavanceerd onderzoek: - Geavanceerde hulpprogramma's voor incidentonderzoek - Draait om gebruikers, bestanden, activiteiten en locaties - Pas detectie aan op basis van uw bevindingen - Bedreigingsinformatie - Gebruik de toonaangevende feed voor bedreigingsinformatie van Microsoft - Unieke inzichten op basis van biljoenen signalen in het klantenbestand van Microsoft
 
 ## <a name="architecture"></a>Architectuur  
 
@@ -50,7 +46,7 @@ Met Cloud App Security wordt zichtbaarheid met uw cloud geïntegreerd door:
 ![Architectuur van Cloud App Security](./media/architecture.png)  
 
 > [!NOTE]  
-> Wanneer Cloud App Security inhoudsinspectie uitvoert, wordt gegevensprivacy afgedwongen. Uw gegevens worden niet opgeslagen in de Cloud App Security-database; alleen de metagegevens van de bestandsrecords en eventuele schendingen die zijn gedetecteerd, worden opgeslagen in de Cloud App Security-database. Lees het [privacybeleid](http://go.microsoft.com/fwlink/?LinkId=512132) of ga naar het [Vertrouwenscentrum van Microsoft Trust](https://www.microsoft.com/TrustCenter/Privacy/You-are-in-control-of-your-data) voor meer informatie over gegevensretentie.
+> Wanneer Cloud App Security inhoudsinspectie uitvoert, wordt gegevensprivacy afgedwongen. De bestandsinhoud wordt niet opgeslagen in de Cloud App Security-database; alleen de metagegevens van de bestandsrecords en eventuele schendingen die zijn gedetecteerd, worden opgeslagen in de Cloud App Security-database. Lees het [privacybeleid](http://go.microsoft.com/fwlink/?LinkId=512132) of ga naar het [Vertrouwenscentrum van Microsoft Trust](https://www.microsoft.com/TrustCenter/Privacy/You-are-in-control-of-your-data) voor meer informatie over gegevensretentie.
 In Cloud App Security worden gegevens als volgt bewaard:
 >- Activiteitenlogboek: 180 dagen
 >- Detectiegegevens: 90 dagen
@@ -87,6 +83,6 @@ Premier-klanten kunnen Cloud App Security ook rechtstreeks vanuit [Premier Porta
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 
