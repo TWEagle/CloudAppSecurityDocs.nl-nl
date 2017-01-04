@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/27/2016
+ms.date: 12/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,13 +14,24 @@ ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bf862116fb4db1d4a50c25497d72634a97bb3a80
-ms.openlocfilehash: 8fca376e5d414192bdb7c99a7741c97ebcaf3892
+ms.sourcegitcommit: 5fe0c3c04f290fb5a087e387560bf742a7192513
+ms.openlocfilehash: 9f180b0697fbf990534670050c555800d7ba83fb
 
 
 ---
 
 # <a name="files"></a>Bestanden
+
+
+Ter beveiliging van uw gegevens maakt Cloud App Security alle bestanden van uw verbonden apps voor u zichtbaar. Nadat u Cloud App Security hebt verbonden met een app met behulp van de App-connector, scant Cloud App Security alle bestanden, bijvoorbeeld alle bestanden die zijn opgeslagen in OneDrive en Salesforce. Cloud App Security scant elk bestand opnieuw wanneer het bestand wordt gewijzigd: de wijziging kan betrekking hebben op inhoud, metagegevens of machtigingen voor delen. Scantijden zijn afhankelijk van het aantal bestanden dat is opgeslagen in uw app. Gebruik de pagina **Bestanden** om controle te krijgen over uw gegevens en om te weten welke beleidsregels u het beste kunt maken. U kunt de pagina **Bestanden** ook gebruiken voor het filteren van bestanden om te onderzoeken wat voor soort gegevens er in uw cloud-apps worden opgeslagen. 
+
+U kunt de pagina **Bestanden** bijvoorbeeld gebruiken om extern gedeelde bestanden met het label **vertrouwelijk** als volgt te beveiligen: nadat u Office 365, Google Apps, Box, Dropbox of Salesforce hebt verbonden met Cloud App Security, kunt u een integratie tot stand brengen met Azure Information Protection. Vervolgens filtert u op de pagina **Bestanden** op bestanden met het label **vertrouwelijk**. Als u ziet dat er **vertrouwelijke** bestanden zijn die buiten uw organisatie worden gedeeld, kunt u een bestandsbeleid maken voor het detecteren van **vertrouwelijke** bestanden waarvoor verkeerde toegangsniveaus zijn toegepast en daar vervolgens automatische governance-acties voor instellen, zoals **In gebruikersquarantaine plaatsen** om het bestand in quarantaine te plaatsen en verlies van gegevens voor uw organisatie te voorkomen.
+
+ ![Bestandsfilter vertrouwelijk](media/file-filter-confidential.png)
+
+Hier volgt nog een voorbeeld van het gebruik van de pagina **Bestanden** ter beveiliging van bestanden die worden gedeeld met niet-geautoriseerde domeinen of persoonlijke accounts: nadat u Office 365, Google Apps, Box of Dropbox hebt verbonden met Cloud App Security, filtert u op de pagina **Bestanden** op bestanden waarvan het toegangsniveau **Intern** of **Persoonlijk** is. Als u ziet dat er **vertrouwelijke** bestanden zijn die worden gedeeld met externe domeinen of persoonlijke accounts, kunt u een bestandsbeleid maken voor het detecteren van **vertrouwelijke** bestanden waarvoor verkeerde toegangsniveaus zijn toegepast. Vervolgens klikt u op **Nieuw beleid op basis van zoeken** en past u op de bestanden automatische governance-acties toe, zoals **Externe gebruikers verwijderen** om verlies van gegevens voor uw organisatie te voorkomen.
+
+ ![Bestandsfilter niet-geautoriseerd](media/file-filter-unauth.png)
 
 U kunt het bestandslogboek filteren om te zoeken naar specifieke bestanden. Met het basisfilter kunt u snel aan de slag met het filteren van uw activiteiten.
 
@@ -38,7 +49,11 @@ Met de ingebouwde DLP-engines van Cloud App Security worden inhoudsinspecties ui
 
 Hieronder volgt een lijst met de bestandsfilters die kunnen worden toegepast. De meeste filters bieden ondersteuning voor meerdere waarden en voor NOT (niet), zodat u over een zeer krachtig hulpprogramma beschikt voor het maken van een beleid.  
 > [!NOTE] 
-> Wanneer u de beleidsfilters voor bestanden gebruikt, zoekt **Bevat** alleen naar volledige woorden die zijn gescheiden door komma’s, punten, spaties of onderstrepingstekens. Als u woorden tussen aanhalingstekens zet, krijgt u hetzelfde resultaat als wanneer u AND zou gebruiken; als u bijvoorbeeld zoekt op **"malware”****”virus”**, wordt het bestand virus_malware_file.exe gevonden, maar niet malwarevirusfile.exe of malware.exe. Spaties tussen woorden hebben hetzelfde resultaat als het gebruik van OR; als u bijvoorbeeld zoekt op **malware** **virus**, worden alle bestanden gevonden met malware of virus in de naam, dus zowel malware-virus.exe als virus.exe.   **Is gelijk aan** zoekt alleen naar de volledige tekenreeks. Als u bijvoorbeeld zoekt naar **malware.exe** wordt malware.exe wel gevonden maar malware.exe.txt niet. 
+> Wanneer u de beleidsfilters voor bestanden gebruikt, zoekt **Bevat** alleen naar **volledige woorden** die zijn gescheiden door komma's, punten, spaties of onderstrepingstekens. 
+> - Spaties tussen woorden hebben hetzelfde resultaat als het gebruik van OR; als u bijvoorbeeld zoekt op **malware** **virus**, worden alle bestanden gevonden met malware of virus in de naam, dus zowel malware-virus.exe als virus.exe.  
+> - Als u wilt zoeken naar een tekenreeks, plaatst u de woorden tussen aanhalingstekens. Daarmee krijgt u hetzelfde resultaat als wanneer u AND zou gebruiken; als u bijvoorbeeld zoekt op **"malware"****"virus"**, wordt het bestand virus_malware_file.exe gevonden, maar niet malwarevirusfile.exe of malware.exe. Hiermee wordt echter naar de exacte tekenreeks gezocht. Als u zoekt naar **"malware virus"**, wordt **"virus"** of **"virus_malware"** niet gevonden.
+
+>**Is gelijk aan** zoekt alleen naar de volledige tekenreeks. Als u bijvoorbeeld zoekt naar **malware.exe** wordt malware.exe wel gevonden maar malware.exe.txt niet. 
 
 -   Toegangsniveau – toegangsniveau delen; openbaar, extern, intern of privé.  Zie [General Setup, Set up the portal](getting-started-with-cloud-app-security.md) ('De portal instellen' in het artikel 'Algemene instellingen') voor meer informatie over externe bestanden. Interne bestanden zijn de bestanden in de interne domeinen die u instelt in [Algemene instellingen](General-setup.md). Externe bestanden zijn de bestanden die zijn opgeslagen op locaties die zich niet binnen de ingestelde interne domeinen bevinden. Gedeelde bestanden zijn bestanden met een hoger niveau voor delen dan Privé, inclusief intern gedeelde bestanden (bestanden die binnen uw interne domeinen worden gedeeld), extern gedeelde bestanden (bestanden die worden gedeeld in domeinen die niet in uw interne domeinen worden weergegeven), openbare bestanden met een koppeling (bestanden die met anderen kunnen worden gedeeld via een koppeling) en openbare bestanden (bestanden die kunnen worden gevonden door te zoeken op internet). 
 
@@ -74,7 +89,7 @@ Hieronder volgt een lijst met de bestandsfilters die kunnen worden toegepast. De
 -   Bestandstype – Cloud App Security houdt rekening met het MIME-type dat van de service is ontvangen en scant het bestand om het daadwerkelijke bestandstype te bepalen. Deze scan is van toepassing op bestanden die relevant zijn voor een gegevensscan (documenten, afbeeldingen, presentaties, spreadsheets, tekst- en zipbestanden). Het filter werkt per type bestand/map, bijvoorbeeld Alle mappen die... of Alle spreadsheetbestanden die...
 
 
- ![Prullenbak beleidsbestandsfilters](./media/policy_file-filters-trash.png "policy_file filters trash")  
+ ![policy_file-filters, prullenbak](./media/policy_file-filters-trash.png "policy_file-filters, prullenbak")  
 
   
 -   In de Prullenbak – uitsluiten/opnemen van bestanden in de map Prullenbak. Deze bestanden kunnen nog steeds zijn gedeeld en vormen mogelijk een risico.  
@@ -95,7 +110,7 @@ Hieronder volgt een lijst met de bestandsfilters die kunnen worden toegepast. De
   
 U kunt ook instellen dat het beleid wordt uitgevoerd op specifieke bestanden door het filter **Van toepassing op** in te stellen op Alle bestanden, Geselecteerde mappen of Alle bestanden met uitzondering van geselecteerde mappen, en vervolgens de relevante bestanden of mappen te selecteren.  
   
-![Filter Toepassen op](./media/apply-to-filter.png "apply to filter")  
+![toepassen op filter](./media/apply-to-filter.png "toepassen op filter")  
   
 ## <a name="working-with-the-file-drawer"></a>Werken met de bestandslade
 
@@ -107,7 +122,7 @@ U kunt meer informatie bekijken over elk bestand door te klikken op het bestand 
 - Overeenkomend beleid: klik op de koppeling Overeenkomend beleid om een lijst met beleidsregels te zien waarmee dit bestand overeenkomt.
 - Classificatielabel: klik op het classificatielabel om de lijst met Azure Information Protection-classificatielabels te zien die in het bestand zijn gevonden. U kunt vervolgens filteren op alle bestanden die overeenkomen met dit label.    
 
-![Bestandslade](./media/file-drawer.png "File drawer")  
+![bestandslade](./media/file-drawer.png "bestandslade")  
   
 Zie [Bestandsbeheeracties](governance-actions.md#file-governance-actions) voor een lijst met beschikbare beheeracties.
 
@@ -119,6 +134,6 @@ Zie [Bestandsbeheeracties](governance-actions.md#file-governance-actions) voor e
   
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

@@ -14,8 +14,8 @@ ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 76c705a38ffb0d61b9ad2eeaf3bdb939f5326589
-ms.openlocfilehash: 912d3c5065722469c436446ba67511ffc6e44d77
+ms.sourcegitcommit: 525a6c5274843f63c300e97d1dbd40ece6465edf
+ms.openlocfilehash: 3a6750f244d3d0cd8d691ffd768cf5183da78d32
 
 
 ---
@@ -25,7 +25,7 @@ De volgende procedure bevat instructies voor het aanpassen van de Cloud App Secu
   
 ## <a name="set-up-the-portal"></a>De portal instellen  
   
-1.  In de Cloud App Security-portal klikt u op het pictogram Instellingen ![pictogram Instellingen](./media/settings-icon.png "settings icon") in de menubalk en selecteert u **Algemene instellingen** om het volgende te configureren:  
+1.  In de Cloud App Security-portal klikt u op het pictogram Instellingen ![pictogram instellingen](./media/settings-icon.png "pictogram instellingen") in de menubalk en selecteert u **Algemene instellingen** om het volgende te configureren:  
   
 3.  **Organisatiegegevens**  
   
@@ -33,52 +33,52 @@ De volgende procedure bevat instructies voor het aanpassen van de Cloud App Secu
   
      Geef een **omgevingsnaam** (tenant) op. Dit is vooral belangrijk als u meerdere tenants beheert.  
   
-     Voeg een lijst met uw **Beheerde domeinen** toe. De beheerde domeinen worden gebruikt om Cloud App Security te helpen bepalen welke gebruikers intern en extern zijn en welke bestanden al dan niet mogen worden gedeeld. Dit wordt gebruikt voor rapporten en waarschuwingen.  
+4. Het is ook mogelijk om een **Logo** op te geven dat wordt weergegeven in e-mailmeldingen en webpagina’s die vanuit het systeem worden verzonden. Het logo moet een PNG-bestand zijn met een maximale grootte van 150 x 50 pixels op een transparante achtergrond.  
+
+4.  Voeg een lijst met uw **Beheerde domeinen** toe. De beheerde domeinen worden gebruikt om Cloud App Security te helpen bepalen welke gebruikers intern en extern zijn en welke bestanden al dan niet mogen worden gedeeld. Dit wordt gebruikt voor rapporten en waarschuwingen.  
 > [!NOTE] 
-> Gebruikers in domeinen die niet zijn geconfigureerd als interne gebruikers, worden gemarkeerd als externe gebruikers en voor deze gebruikers worden de activiteiten of bestanden niet gescand.
-   
-Het is ook mogelijk om een **Logo** op te geven dat wordt weergegeven in e-mailmeldingen en webpagina’s die vanuit het systeem worden verzonden. Het logo moet een PNG-bestand zijn met een maximale grootte van 150 x 50 pixels op een transparante achtergrond.  
+> - Gebruikers in domeinen die niet zijn geconfigureerd als interne gebruikers, worden gemarkeerd als externe gebruikers en voor deze gebruikers worden de activiteiten of bestanden niet gescand.
+> - Zie [Integratie van Azure Information Protection](azip-integration.md) voor informatie als u integreert met behulp van Azure Information Protection-integratie. 
   
 4.  **Privacyinstellingen voor het e-mailen van het activiteitenlogboek**  
   
      Als er e-mailberichten worden gedetecteerd vanuit Exchange Online, is het mogelijk om in te stellen hoe deze worden weergegeven, ter bescherming van de privacy. Het is mogelijk om in te stellen dat het e-mailbericht moet worden weergegeven met een **Gemaskeerde onderwerpregel**, met de **Volledige onderwerpregel** of met **Alleen ID**.  
   
-     ![Algemene instellingen](./media/general-settings.png "general settings")  
+     ![algemene instellingen](./media/general-settings.png "algemene instellingen")  
   
 5.  **Instellingen voor land/regio en taal**  
   
      De standaardinstelling **Taal** moet worden gebruikt voor de portal. Als u de taal wilt wijzigen voor een specifieke beheerder, gaat u naar **Gebruikersinstellingen** > **Accountinstellingen**.  
   
-     ![Taal van tijdzone](./media/timezone-language.png "timezone language")  
+     ![tijdzonetaal](./media/timezone-language.png "tijdzonetaal")  
   
      Stel de **Hoofdtijdzone** in. In Cloud App Security worden uw gegevens continu geanalyseerd en verzameld. De tijdzone voor de Cloud App Security-portal is standaard ingesteld op UTC. Het is belangrijk om de hoofdtijdzone in te stellen, zodat Cloud App Security de incidenten in uw systeem nauwkeurig kan dateren. Een voorbeeld: de gegevens in de grafiek Activiteit worden georganiseerd op datum. Deze datums worden beïnvloed door de tijdzone van uw systeem. Als u de standaardtijdzone niet hebt gewijzigd, worden uw gegevens georganiseerd in 24-uurs dagen volgens de UTC-tijdzone, wat een afwijking van vele uren kan veroorzaken.  
   
-     ![Hoofdtijdzone](./media/master-time-zone.png "master time zone")  
+     ![hoofdtijdzone](./media/master-time-zone.png "hoofdtijdzone")  
   
 6.  Als u op enig moment een back-up wilt maken van uw portal-instellingen, biedt dit scherm hiervoor de mogelijkheid. Klik op Portal-instellingen exporteren om een json-bestand te maken van al uw portal-instellingen, zoals beleidsregels, gebruikersgroepen en IP-adresbereiken.  
   
-     ![Back-upconsole](./media/backup-console.png "backup console")  
+     ![back-upconsole](./media/backup-console.png "back-upconsole")  
   
-7.  Als u extra beheerders wilt toevoegen aan Cloud App Security, klikt u op het tandwiel Instellingen ![pictogram Instellingen](./media/settings-icon.png "settings icon") en vervolgens op **Beheerderstoegang beheren**. Voeg de beheerders toe die toegang moeten hebben tot Cloud App Security en klik op **Sluiten**.  
+7.  Als u extra beheerders wilt toevoegen aan Cloud App Security, klikt u op het tandwiel Instellingen ![pictogram instellingen](./media/settings-icon.png "pictogram instellingen") en vervolgens op **Beheerderstoegang beheren**. Voeg de beheerders toe die toegang moeten hebben tot Cloud App Security en klik op **Sluiten**.  
 >[!NOTE]
 >Elke niet-uitgenodigde gebruiker (met een juiste rol: globale beheerder, beveiligingsbeheerder of compliancebeheerder) kan andere gebruikers uitnodigen voor Cloud App Security.
   
-![Beheerderstoegang beheren](./media/manage-admin-access.png "manage admin access")  
+![beheerderstoegang beheren](./media/manage-admin-access.png "beheerderstoegang beheren")  
   
 ##  <a name="a-nameadminsettingsa-customize-your-admin-settings"></a><a name="Adminsettings"></a> Uw beheerinstellingen aanpassen  
 Als u uw voorkeuren als beheerder van Cloud App Security wilt instellen, klikt u op uw naam in de menubalk van de portal en selecteert u **Gebruikersinstellingen** om het volgende in te stellen:  
   
 1.  Klik op **Accountinstellingen**. Hier kunt u de taal van de portal voor uw eigen weergave aanpassen. U kunt de taal instellen om de portal weer te geven in ofwel de standaardtaal of u kunt een andere taal instellen voor uzelf.  
   
-     ![Aangepaste gebruikersinstellingen](./media/custom-user-settings.png "custom user settings")  
+     ![aangepaste gebruikersinstellingen](./media/custom-user-settings.png "aangepaste gebruikersinstellingen")  
   
 2.  Klik op **Meldingen** en stel de voorkeuren voor e-mail- en sms-berichten in die u van het systeem ontvangt.  U kunt het ernstniveau instellen voor de waarschuwingen en schendingen waarvoor u e-mails wilt ontvangen. Het ernstniveau wordt per beleid ingesteld, zodat u bij activering van een schending een e-mailmelding ontvangt, afhankelijk van deze instelling en de ernstinstelling in het beleid dat is geschonden. E-mailberichten worden verzonden naar de alias die is gekoppeld aan het beheerdersaccount dat u hebt gebruikt voor aanmelding bij Cloud App Security. Voer een telefoonnummer in zodat Cloud App Security u sms-berichten kan sturen wanneer waarschuwingen en meldingen worden verzonden, en stel het ernstniveau in waarvoor u meldingen wilt ontvangen via een sms-bericht.  
   
 > [!NOTE] 
 > Het maximum aantal waarschuwingen dat via een sms-bericht kan worden verzonden, is 10 per telefoonnummer per dag. Houd er rekening mee dat de dag wordt bepaald op basis van de UTC-tijdzone. 
   
-  ![instellingen voor meldingen](./media/notification-settings.png "notification settings")  
-  
+  ![instellingen voor meldingen](./media/notification-settings.png "instellingen voor meldingen")  
   
 3. Wanneer u klaar bent, klikt u op **Opslaan**.  
   
@@ -88,7 +88,7 @@ Elke groep met IP-adresbereiken kan worden ingedeeld op basis van een vooraf ged
   
 IPv4 en IPv6 worden ondersteund.  
   
-Klik in de menubalk op het pictogram Instellingen ![pictogram Instellingen](./media/settings-icon.png "settings icon") en selecteer **IP-adresbereiken**. Klik op **+IP-adresbereik toevoegen** en stel het volgende in:  
+Klik in de menubalk op het pictogram Instellingen ![pictogram instellingen](./media/settings-icon.png "pictogram instellingen") en selecteer **IP-adresbereiken**. Klik op **+IP-adresbereik toevoegen** en stel het volgende in:  
   
 > [!NOTE]  
 >  De locatie en de geregistreerde provider overschrijven de standaardinstellingen.   
@@ -124,12 +124,12 @@ Klik in de menubalk op het pictogram Instellingen ![pictogram Instellingen](./me
   
 7.  Wanneer u klaar bent, klikt u op **Maken**.  
   
-     ![Nieuw IP-adresbereik](./media/newipaddress-range.png "newipaddress range")  
+     ![newipaddress-bereik](./media/newipaddress-range.png "newipaddress-bereik")  
   
 ##  <a name="a-nameadallommailsettingsa-personalize-your-experience"></a><a name="Adallom_mailsettings"></a> Uw ervaring aanpassen  
-Klik in de menubalk op het pictogram Instellingen ![pictogram Instellingen](./media/settings-icon.png "settings icon") en selecteer **E‑mailinstellingen** om de parameters in te stellen voor e‑mailmeldingen die vanuit Cloud App Security worden verzonden naar beheerders die om waarschuwingen vragen, en voor meldingen die naar eindgebruikers worden verzonden over schendingen waarbij zij betrokken zijn.  
+Klik in de menubalk op het pictogram Instellingen ![pictogram instellingen](./media/settings-icon.png "pictogram instellingen") en selecteer **E‑mailinstellingen** om de parameters in te stellen voor e‑mailmeldingen die vanuit Cloud App Security worden verzonden naar beheerders die om waarschuwingen vragen, en voor meldingen die naar eindgebruikers worden verzonden over schendingen waarbij zij betrokken zijn.  
   
-![Menu E-mailinstellingen](./media/mail-setting-menu.png "mail setting menu")  
+![e-mailinstellingen, menu](./media/mail-setting-menu.png "e-mailinstellingen, menu")  
   
 Configureer het volgende:  
   
@@ -139,7 +139,7 @@ Configureer het volgende:
   
      **E-mailadres voor beantwoording**: het e-mailaccount dat moet worden gebruikt voor antwoorden op het bericht.  
   
-     ![Configuratie van e-mailinstellingen](./media/mail-settings-config.png "mail settings config")  
+     ![e-mailinstellingen, configuratie](./media/mail-settings-config.png "e-mailinstellingen, configuratie")  
   
 2.  U kunt een HTML-bestand gebruiken voor het aanpassen en ontwerpen van de e-mailberichten die vanuit het systeem worden verzonden. Het HTML-bestand dat wordt gebruikt voor de sjabloon moet het volgende omvatten:  
   
@@ -153,62 +153,63 @@ Configureer het volgende:
   
          %%content%% - een tijdelijke aanduiding voor de inhoud die wordt opgenomen voor eindgebruikers, zoals ingesteld door het beleid.  
   
-     Hier volgt een voorbeeld e-mailsjabloon:  
-  
-    ```  
-    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">  
-    <html>  
-    <head>  
-      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>  
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>  
-    </head>  
-    <body class="end-user">  
-    <table border="0" cellpadding="20%" cellspacing="0" width="100%" id="background-table">  
-      <tr>  
-        <td align="center">  
-          <!--[if (gte mso 9)|(IE)]>  
-          <table width="600" align="center" cellpadding="0" cellspacing="0" border="0">  
+     Hier volgt een voorbeeld e-mailsjabloon: 
+
+
+           
+          <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">  
+          <html>  
+          <head>  
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>  
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"/>  
+          </head>  
+          <body class="end-user">  
+          <table border="0" cellpadding="20%" cellspacing="0" width="100%" id="background-table">  
             <tr>  
-              <td>  
-          <![endif]-->  
-          <table bgcolor="#ffffff" align="center" border="0" cellpadding="0" cellspacing="0" style="padding-bottom: 40px;" id="container-table">  
-            <tr>  
-              <td align="right" id="header-table-cell">  
-                <img src="%%logo%%" alt="Microsoft Cloud App Security" id="org-logo" />  
-              </td>  
-            </tr>  
-            <tr>  
-              <td style="padding-top: 58px;" align="center" valign="top">  
-                <table width="100%" cellpadding="12">  
+              <td align="center">  
+                <!--[if (gte mso 9)|(IE)]>  
+                <table width="600" align="center" cellpadding="0" cellspacing="0" border="0">  
                   <tr>  
-                    <td align="center" class="round-title">  
-                      %%title%%  
+                    <td>  
+                <![endif]-->  
+                <table bgcolor="#ffffff" align="center" border="0" cellpadding="0" cellspacing="0" style="padding-bottom: 40px;" id="container-table">  
+                  <tr>  
+                    <td align="right" id="header-table-cell">  
+                      <img src="%%logo%%" alt="Microsoft Cloud App Security" id="org-logo" />  
                     </td>  
                   </tr>  
+                  <tr>  
+                    <td style="padding-top: 58px;" align="center" valign="top">  
+                      <table width="100%" cellpadding="12">  
+                        <tr>  
+                          <td align="center" class="round-title">  
+                            %%title%%  
+                          </td>  
+                        </tr>  
+                      </table>  
+                    </td>  
+                  </tr>  
+                  <tr>  
+                    <td style="padding: 0 40px 79px 40px;" class="content-table-cell" align="left" valign="top">  
+                        %%content%%  
+                    </td>  
+                  </tr>  
+                  <tr>  
+                    <td class="last-row"></td>  
+                  </tr>  
                 </table>  
+                <!--[if (gte mso 9)|(IE)]>  
+                </td>  
+                </tr>  
+                </table>  
+                  <![endif]-->  
               </td>  
-            </tr>  
-            <tr>  
-              <td style="padding: 0 40px 79px 40px;" class="content-table-cell" align="left" valign="top">  
-                  %%content%%  
-              </td>  
-            </tr>  
-            <tr>  
-              <td class="last-row"></td>  
-            </tr>  
+              </tr>  
           </table>  
-          <!--[if (gte mso 9)|(IE)]>  
-          </td>  
-          </tr>  
-          </table>  
-          <![endif]-->  
-        </td>  
-      </tr>  
-    </table>  
-    </body>  
-    </html>  
-  
-    ```  
+            </body>  
+          </html>  
+         
+
   
 3.  Klik op **Een sjabloon uploaden...** en selecteer het bestand dat u hebt gemaakt.  
   
@@ -231,6 +232,6 @@ Cloud App Security is gekoppeld aan Azure Active Directory voor de activiteiten 
   
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 
