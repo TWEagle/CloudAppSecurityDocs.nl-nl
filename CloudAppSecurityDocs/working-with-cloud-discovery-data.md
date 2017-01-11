@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 12/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: cf94b290-b7ef-4fee-854e-c8ff8d11dea9
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 76c705a38ffb0d61b9ad2eeaf3bdb939f5326589
-ms.openlocfilehash: e2123c83a770ecbfb0466c6ef1a4f67e7c271ca2
+ms.sourcegitcommit: 89f533e3b9c8397818e5aaa108dca168fda64db7
+ms.openlocfilehash: 0077b634d09cd9476d07c2de6a84d0c9396285da
 
 
 ---
@@ -60,7 +60,7 @@ Het is belangrijk dat u even de tijd neemt om de standaardgewichten van de score
   
 3.  Daarnaast kunt u instellen of bepaalde waarden niet beschikbaar voor of niet van toepassing op de scoreberekening zijn. Wanneer ze zijn opgenomen, dragen n.v.t.-waarden negatief bij aan de berekende score.  
   
-     ![Score](./media/score.png "score")  
+     ![score](./media/score.png "score")  
   
 ## <a name="manage-continuous-reports"></a>Doorlopende rapporten beheren  
 Met aangepaste doorlopende rapporten beschikt u over meer details bij de controle van de Cloud Discovery-logboekgegevens van uw organisatie. Als u aangepaste rapporten maakt, kunt u filteren op specifieke geografische locaties, netwerken, sites of organisatie-eenheden. Standaard worden alleen de volgende rapporten in de Cloud Discovery-rapportkiezer weergegeven:  
@@ -98,7 +98,7 @@ Een uitzondering aanmaken:
   
 4.  Voeg een gebruikersalias of IP-adres toe. Het is raadzaam om informatie toe te voegen over waarom de gebruiker of het IP-adres is uitgesloten.  
   
-     ![Gebruiker uitsluiten](./media/exclude-user.png "exclude user")  
+     ![gebruiker uitsluiten](./media/exclude-user.png "gebruiker uitsluiten")  
   
 ## <a name="deleting-cloud-discovery-data"></a>Cloud Discovery-gegevens verwijderen  
 Er zijn een aantal redenen waarom u uw Cloud Discovery- gegevens zou willen verwijderen. In de volgende gevallen is het raadzaam de gegevens te verwijderen:  
@@ -119,11 +119,14 @@ Cloud Discovery-gegevens verwijderen:
   
 3.  Klik op de knop **Verwijderen**.  
   
-     ![Gegevens verwijderen](./media/delete-data.png "delete data")  
+     ![gegevens verwijderen](./media/delete-data.png "gegevens verwijderen")  
   
     > [!NOTE]  
     >  De verwijdering duurt een paar minuten en is niet direct.  
 
+
+
+ 
 ## <a name="see-also"></a>Zie ook  
 [Dagelijkse activiteiten ter bescherming van uw cloudomgeving](daily-activities-to-protect-your-cloud-environment.md)   
 [Ga naar de ondersteuningspagina van Cloud App Security voor technische ondersteuning.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
@@ -132,6 +135,6 @@ Cloud Discovery-gegevens verwijderen:
   
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO4-->
 
 

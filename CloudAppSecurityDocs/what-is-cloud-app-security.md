@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/14/2016
+ms.date: 12/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 156dccf0c77bf7e46c0328ebf6bd1e0ad9609845
-ms.openlocfilehash: 4875a1ae80dae101416c9b26932bc57edf755a84
+ms.sourcegitcommit: 2997a79f2e0fd730302be2602b6aee6ec56999db
+ms.openlocfilehash: 64881249bbf81ad7b181eed53035b7b19791d0db
 
 
 ---
@@ -30,9 +30,11 @@ Cloud App Security is een essentieel onderdeel van de Microsoft Cloud Security-s
 
 ## <a name="the-cloud-app-security-framework"></a>Het Cloud App Security-framework  
 
-
-**Cloud Discovery** Ontdek alle cloudgebruik in uw organisatie. Schaduw-IT-rapportage en -beheer: - Ontdek alle cloud-apps in uw netwerk, vanaf alle apparaten - Onderzoek specifieke apps, gebruikers, bron-IP-adressen en meer - Beheer en regel het cloudgebruik door apps te blokkeren, te sanctioneren en te beveiligen - Risicoanalyse: - Inzicht in de cloudrisico's van meer dan 13.000 cloud-apps - Gebaseerd op meer dan 60 risicofactoren op het gebied van beveiliging en naleving - Waarschuwing bij riskant cloudgebruik: - Waarschuwingen bij afwijkende gebruikspatronen van gebruikers, nieuwe apps en trending apps **Information Protection** Bewaak en beheer uw gegevens in de cloud. Meer zichtbaarheid in de cloud - Meer zichtbaarheid op het niveau van delen en gevoeligheid - Bepaal de mate van blootstelling en risico - Detecteer alle toegang van apps van derden tot uw gegevens - Dwing het delen van DLP-beleid en -controle af - Beheer gegevens in de cloud met gedetailleerde DLP-beleidsregels - Gebruik DLP-engines van Microsoft en derden voor classificatie - Waarschuwen en onderzoeken - Identificeer beleidsovertredingen - Onderzoek incidenten en gerelateerde activiteiten - Automatiseer herstel inclusief quarantaine en verwijderen van machtigingen **Threat Protection** Detecteert afwijkend gebruik en beveiligingsincidenten. Beperk risico's door beleidsregels en waarschuwingen in te stellen om maximale controle over het netwerkverkeer in de cloud te behalen. Gebruik Cloud App Security om uw gebruikers te migreren naar veilige, goedgekeurde alternatieven voor de cloud-app.
-Gedragsanalyse: - Standaarddetectie van verdachte activiteiten - Afwijkingsdetectie-engine gebaseerd op meer dan 20 risicofactoren - Geavanceerd onderzoek: - Geavanceerde hulpprogramma's voor incidentonderzoek - Draait om gebruikers, bestanden, activiteiten en locaties - Pas detectie aan op basis van uw bevindingen - Bedreigingsinformatie - Gebruik de toonaangevende feed voor bedreigingsinformatie van Microsoft - Unieke inzichten op basis van biljoenen signalen in het klantenbestand van Microsoft
+- **Cloud Discovery**: alle cloudgebruik in uw organisatie detecteren, met inbegrip van schaduw-IT-rapportage en beheer- en risicoanalyses.
+    
+- **Gegevensbeveiliging**: uw gegevens in de cloud bewaken en beheren door het verkrijgen van zichtbaarheid, het afdwingen van DLP-beleid, waarschuwingen en onderzoek. 
+    
+- **Bedreigingsbeveiliging**: afwijkend gebruik en beveiligingsincidenten detecteren. Gebruik gedragsanalyse en geavanceerde onderzoeksmiddelen om risico's te verkleinen en beleidsregels en waarschuwingen in te stellen voor maximale controle over het netwerkverkeer in de cloud.
 
 ## <a name="architecture"></a>Architectuur  
 
@@ -83,6 +85,6 @@ Premier-klanten kunnen Cloud App Security ook rechtstreeks vanuit [Premier Porta
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

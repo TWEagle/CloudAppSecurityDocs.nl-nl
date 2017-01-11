@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/21/2016
+ms.date: 12/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,19 +14,91 @@ ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9565d8a51e4c06963861d9dfaef9595944bda1ff
-ms.openlocfilehash: 43069f7a9f91dc34f4ce3ebb52ca399441bbb1f1
+ms.sourcegitcommit: 89f533e3b9c8397818e5aaa108dca168fda64db7
+ms.openlocfilehash: f5107adbe61a9dff00754e39134a35b8f620fa4c
 
 
 ---
 
 # <a name="govern"></a>Beheren
 
+## <a name="file-governance-actions"></a>Beheeracties voor bestanden  
+De volgende beheeracties kunnen worden uitgevoerd voor een specifiek bestand, een specifieke gebruiker of vanuit een specifiek beleid.
+  
+-   Meldingen  
+  
+    -   Waarschuwingen – waarschuwingen kunnen in het systeem worden geactiveerd en worden doorgegeven via e-mail en SMS op basis van de ernst.  
+  
+    -   E-mailmeldingen voor gebruikers – e-mailberichten kunnen worden aangepast en worden verzonden naar alle eigenaren van bestanden die het beleid schenden.  
+  
+    -   CC naar manager – op basis van directory-integratie voor gebruikers kunnen e-mailmeldingen ook worden verzonden naar de manager van de persoon die een beleid schendt.  
+  
+-   Meldingen verzenden naar specifieke gebruikers – specifieke lijst met e-mailadressen die deze meldingen ontvangen.  
+  
+-   De laatste editor van het bestand informeren – meldingen verzenden naar de laatste persoon die het bestand heeft gewijzigd.  
+  
+-   Beheeracties in apps  
+  
+     Gedetailleerde acties kunnen per app worden afgedwongen, specifieke acties zijn afhankelijk van de terminologie in de app.  
+  
+    -   Delen wijzigen  
+  
+        -   Openbaar delen verwijderen – alleen toegang geven aan samenwerkers met een naam, bijvoorbeeld: Openbare toegang voor Google Apps verwijderen en Rechtstreekse gedeelde koppeling voor Box verwijderen.  
+  
+        -   Externe gebruikers verwijderen – alleen toegang tot bedrijfsgebruikers toestaan.  
+  
+        -   Privé maken – alleen de eigenaar heeft toegang tot het bestand, alle shares worden verwijderd.  
+  
+        -   Een samenwerker verwijderen – een specifieke samenwerker verwijderen uit het bestand.  
+  
+    -   Quarantaine  
+  
+        -   In quarantaine geplaatst door gebruiker – selfservice toestaan door het bestand te verplaatsen naar een door de gebruiker beheerde map voor quarantaine  
+  
+        -   In quarantaine geplaatst door administrator – het bestand wordt in quarantaine geplaatst op het administrator-station en de administrator moet dit goedkeuren.  
+  
+-   Machtigingen overnemen van bovenliggende map - met deze governance-actie kunt u specifieke machtigingen verwijderen die zijn ingesteld voor een bestand of map, en deze wijzigen in de machtigingen die zijn ingesteld voor de bovenliggende map.
+-   Prullenbak – het bestand naar de map Prullenbak verplaatsen.
+  
+![waarschuwingen maken voor beleid](./media/policy_create-alerts.png "waarschuwingen maken voor beleid")  
+  
+ 
+## <a name="activity-governance-actions"></a>Governance-acties voor activiteiten  
+
+- Meldingen  
+  
+    -   Waarschuwingen – waarschuwingen kunnen in het systeem worden geactiveerd en worden doorgegeven via e-mail en SMS op basis van de ernst.  
+  
+    -   E-mailmeldingen voor gebruikers – e-mailberichten kunnen worden aangepast en worden verzonden naar alle eigenaren van bestanden die het beleid schenden.  
+  
+    -   CC naar manager – op basis van directory-integratie voor gebruikers kunnen e-mailmeldingen ook worden verzonden naar de manager van de persoon die een beleid schendt.  
+  
+    -   Meldingen verzenden naar aanvullende gebruikers – specifieke lijst met e-mailadressen die deze meldingen ontvangen.  
+  
+- Beheeracties in apps  
+  
+    -   Gedetailleerde acties kunnen per app worden afgedwongen, specifieke acties zijn afhankelijk van de terminologie in de app.  
+  
+    -   Gebruiker blokkeren – de gebruiker blokkeren in de toepassing.  
+  
+    -   Wachtwoord intrekken – het gebruikerswachtwoord intrekken en afdwingen dat de gebruiker een nieuw wachtwoord instelt bij de volgende aanmelding.  
+  
+     ![activiteitenbeleidsverwijzing6](./media/activity-policy-ref6.png "activiteitenbeleidsverwijzing6")  
+  
+
+## <a name="governance-conflicts"></a>Beheerconflicten
+
+Als u meerdere beleidsregels hebt gemaakt, kan er een situatie ontstaan waarin de beheeractiviteiten in meerdere beleidsregels elkaar overlappen. In dit geval worden de beheeracties als volgt verwerkt in Cloud App Security:
+
+- Als twee beleidsregels acties bevatten die in elkaar zijn opgenomen (bijvoorbeeld wanneer **Externe shares verwijderen** is opgenomen in **Privé maken**), wordt het conflict in Cloud App Security opgelost en wordt de sterkere actie afgedwongen.
+- Als de acties volledig onafhankelijk van elkaar zijn (bijvoorbeeld **De eigenaar een melding sturen** en **Privé maken**), worden beide acties uitgevoerd.
+- Als de acties conflicteren (bijvoorbeeld **Eigenaar wijzigen in gebruiker A** en **Eigenaar wijzigen in gebruiker B**), kan elke overeenkomst tot andere resultaten leiden. Het is belangrijk uw beleidsregels te wijzigen om conflicten te voorkomen, omdat ze kunnen leiden tot ongewenste wijzigingen in het station die moeilijk te detecteren zijn.
+
 ## <a name="governance-log"></a>Beheerlogboek
 Het beheerlogboek biedt een statusrecord voor elke taak die met Cloud App Security moet worden uitgevoerd, waaronder zowel handmatige als automatische taken. Deze taken omvatten taken die u in beleidsregels instelt, beheeracties die u voor bestanden en gebruikers instelt en andere acties die met Cloud App Security moeten worden uitgevoerd. Het beheerlogboek bevat ook informatie over het slagen of mislukken van deze acties. U kunt bepaalde beheeracties in het beheerlogboek opnieuw uitvoeren of ongedaan maken. 
 
 Hieronder vindt u de volledige lijst met acties die u via de Cloud App Security-portal kunt uitvoeren. Deze worden ingeschakeld op verschillende locaties in de console, zoals aangegeven in de kolom **Locatie**. Elke uitgevoerde beheeractie wordt vermeld in het beheerlogboek.
-Zie het Engelstalige artikel [Policy Conflicts](control-cloud-apps-with-policies.md) (Beleidsconflicten) voor meer informatie over hoe de beheeracties worden behandeld in het geval van beleidsconflicten. 
+Zie [Beleidsconflicten](control-cloud-apps-with-policies.md) voor informatie over hoe de governance-acties worden behandeld in het geval van beleidsconflicten.
 
 **Locatie**|**Doelobjecttype**|**Beheeractie**|**Beschrijving**|**Verwante connectors** 
 ---------|---------|---------|---------|---------
@@ -70,83 +142,6 @@ Zie het Engelstalige artikel [Policy Conflicts](control-cloud-apps-with-policies
 |Instellingen > Cloud Discovery-instellingen > Logboeken handmatig uploaden/Logboeken automatisch uploaden|Cloud Discovery|Cloud Discovery-gegevens parseren|Melding dat alle logboekgegevens zijn geparseerd.|Detectie|
 
 
-## <a name="file-governance-actions"></a>Beheeracties voor bestanden  
-De volgende beheeracties kunnen worden uitgevoerd voor een specifiek bestand, een specifieke gebruiker of vanuit een specifiek beleid.
-  
--   Meldingen  
-  
-    -   Waarschuwingen – waarschuwingen kunnen in het systeem worden geactiveerd en worden doorgegeven via e-mail en SMS op basis van de ernst.  
-  
-    -   E-mailmeldingen voor gebruikers – e-mailberichten kunnen worden aangepast en worden verzonden naar alle eigenaren van bestanden die het beleid schenden.  
-  
-    -   CC naar manager – op basis van directory-integratie voor gebruikers kunnen e-mailmeldingen ook worden verzonden naar de manager van de persoon die een beleid schendt.  
-  
--   Meldingen verzenden naar specifieke gebruikers – specifieke lijst met e-mailadressen die deze meldingen ontvangen.  
-  
--   De laatste editor van het bestand informeren – meldingen verzenden naar de laatste persoon die het bestand heeft gewijzigd.  
-  
--   Beheeracties in apps  
-  
-     Gedetailleerde acties kunnen per app worden afgedwongen, specifieke acties zijn afhankelijk van de terminologie in de app.  
-  
-    -   Delen wijzigen  
-  
-        -   Openbaar delen verwijderen – alleen toegang geven aan samenwerkers met een naam, bijvoorbeeld: Openbare toegang voor Google Apps verwijderen en Rechtstreekse gedeelde koppeling voor Box verwijderen.  
-  
-        -   Externe gebruikers verwijderen – alleen toegang tot bedrijfsgebruikers toestaan.  
-  
-        -   Privé maken – alleen de eigenaar heeft toegang tot het bestand, alle shares worden verwijderd.  
-  
-        -   Een samenwerker verwijderen – een specifieke samenwerker verwijderen uit het bestand.  
-  
-    -   Quarantaine  
-  
-        -   In quarantaine geplaatst door gebruiker – selfservice toestaan door het bestand te verplaatsen naar een door de gebruiker beheerde map voor quarantaine  
-  
-        -   In quarantaine geplaatst door administrator – het bestand wordt in quarantaine geplaatst op het administrator-station en de administrator moet dit goedkeuren.  
-  
--   Prullenbak – het bestand naar de map Prullenbak verplaatsen.
-  
-![Waarschuwingen maken voor beleid](./media/policy_create-alerts.png "policy_create alerts")  
-  
- 
-## <a name="activity-match-parameters"></a>Activiteit overeenkomstig de parameters  
-Geef aan hoe vaak een activiteit moet worden herhaald voordat het overeenkomt met het beleid, bijvoorbeeld het instellen van een beleid om te waarschuwen wanneer een gebruiker 10 mislukte aanmeldpogingen uitvoert binnen 2 minuten.  
-De standaardinstelling **Activiteit overeenkomstig de parameters** vindt een overeenkomst voor elke activiteit die voldoet aan alle activiteitfilters.   
-Met behulp van **Herhaalde activiteit** kunt u het aantal herhaalde activiteiten instellen, alsmede de periode waarin de activiteiten worden geteld. U kunt zelfs opgeven dat alle activiteiten moeten worden uitgevoerd door dezelfde gebruiker en in dezelfde cloud-app.  
-  
-### <a name="actions"></a>Acties  
-Meldingen  
-  
--   Waarschuwingen – waarschuwingen kunnen in het systeem worden geactiveerd en worden doorgegeven via e-mail en SMS op basis van de ernst.  
-  
--   E-mailmeldingen voor gebruikers – e-mailberichten kunnen worden aangepast en worden verzonden naar alle eigenaren van bestanden die het beleid schenden.  
-  
--   CC naar manager – op basis van directory-integratie voor gebruikers kunnen e-mailmeldingen ook worden verzonden naar de manager van de persoon die een beleid schendt.  
-  
--   Meldingen verzenden naar aanvullende gebruikers – specifieke lijst met e-mailadressen die deze meldingen ontvangen.  
-  
-Beheeracties in apps  
-  
--   Gedetailleerde acties kunnen per app worden afgedwongen, specifieke acties zijn afhankelijk van de terminologie in de app.  
-  
--   Gebruiker blokkeren – de gebruiker blokkeren in de toepassing.  
-  
--   Wachtwoord intrekken – het gebruikerswachtwoord intrekken en afdwingen dat de gebruiker een nieuw wachtwoord instelt bij de volgende aanmelding.  
-  
-     ![Activiteitenbeleidsverwijzing6](./media/activity-policy-ref6.png "activity policy ref6")  
-  
-
-## <a name="governance-conflicts"></a>Beheerconflicten
-
-Als u meerdere beleidsregels hebt gemaakt, kan er een situatie ontstaan waarin de beheeractiviteiten in meerdere beleidsregels elkaar overlappen. In dit geval worden de beheeracties als volgt verwerkt in Cloud App Security:
-
-- Als twee beleidsregels acties bevatten die in elkaar zijn opgenomen (bijvoorbeeld wanneer **Externe shares verwijderen** is opgenomen in **Privé maken**), wordt het conflict in Cloud App Security opgelost en wordt de sterkere actie afgedwongen.
-- Als de acties volledig onafhankelijk van elkaar zijn (bijvoorbeeld **De eigenaar een melding sturen** en **Privé maken**), worden beide acties uitgevoerd.
-- Als de acties conflicteren (bijvoorbeeld **Eigenaar wijzigen in gebruiker A** en **Eigenaar wijzigen in gebruiker B**), kan elke overeenkomst tot andere resultaten leiden. Het is belangrijk uw beleidsregels te wijzigen om conflicten te voorkomen, omdat ze kunnen leiden tot ongewenste wijzigingen in het station die moeilijk te detecteren zijn.
-
-
-
 ## <a name="see-also"></a>Zie ook  
 [Dagelijkse activiteiten ter bescherming van uw cloudomgeving](daily-activities-to-protect-your-cloud-environment.md)   
 [Ga naar de ondersteuningspagina van Cloud App Security voor technische ondersteuning.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
@@ -155,6 +150,6 @@ Als u meerdere beleidsregels hebt gemaakt, kan er een situatie ontstaan waarin d
   
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO4-->
 
 

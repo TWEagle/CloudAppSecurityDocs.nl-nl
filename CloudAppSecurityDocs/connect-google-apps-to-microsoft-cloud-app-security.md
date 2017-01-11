@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/23/2016
+ms.date: 12/19/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
-ms.openlocfilehash: b28eaa521980cb7ec8eee94f0168ca07286533e7
+ms.sourcegitcommit: 2997a79f2e0fd730302be2602b6aee6ec56999db
+ms.openlocfilehash: 7734badea1da58b839d23842b73e9be57fe43be3
 
 
 ---
@@ -31,11 +31,12 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
   
 2.  Klik op **Create an empty project** (Een leeg project maken) om een nieuw project te starten.  
   
-     ![Google1](./media/google1.png "google1")  
+     ![google1](./media/google1.png "google1")  
   
 3.  In het scherm **New project** (Nieuw project):  
   
-    1.  Geef uw project de naam **Cloud App Security for Google**.  
+    1.  Geef uw project de volgende naam:</br>
+    **Cloud App Security for Google** 
   
     2.  Selecteer of u zich wilt abonneren op updates.  
   
@@ -43,19 +44,19 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
   
     4.  Klik op **Maken**.  
   
-         ![Google2](./media/google2.png "google2")  
+         ![google2](./media/google2.png "google2")  
   
 4.  Nadat het project is gemaakt, klikt u op **Enable and manage APIs** (API’s inschakelen en beheren).  
   
-     ![Google3](./media/google3.png "google3")  
+     ![google3](./media/google3.png "google3")  
   
 5.  Klik op het tabblad **Enabled APIs** (Ingeschakelde API’s) en schakel alle vermelde API's uit.  
   
-     ![Google5](./media/google5.png "google5")  
+     ![google5](./media/google5.png "google5")  
   
 6.  Klik op het tabblad **Google APIs** (API's van Google) en schakel de volgende API's in (gebruik de zoekbalk als de API niet wordt vermeld in de lijst **Popular APIs** (Populaire API's)):  
   
-     ![Google8](./media/google8.png "google8")  
+     ![google8](./media/google8.png "google8")  
   
     > [!NOTE]  
     >  Negeer de waarschuwing over **Credentials** (Referenties) voor nu.  
@@ -70,11 +71,11 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
   
     -   Gmail API  
   
-         ![Google11-waarschuwing](./media/google11-warning.png "google11 warning")  
+         ![google11-waarschuwing](./media/google11-warning.png "google11-waarschuwing")  
   
 7.  U moet 5 **Enabled APIs** (Ingeschakelde API’s) hebben:  
   
-     ![Google15](./media/google15.png "google15")  
+     ![google15](./media/google15.png "google15")  
   
 8.  Klik op **Credentials** (Referenties) gevolgd door **OAuth consent** (Toestemming OAuth)  
   
@@ -84,45 +85,45 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
   
     -   Klik op **Opslaan**.  
   
-     ![Google16](./media/google16.png "google16")  
+     ![google16](./media/google16.png "google16")  
   
 9. Op het tabblad **Credentials** (Referenties) klikt u op de pijl naast **Create credentials** (Referenties maken) en selecteert u **Service account key** (Sleutel serviceaccount).  
   
-     ![Google17](./media/google17.png "google17")  
+     ![google17](./media/google17.png "google17")  
   
 10. In **Service account** kiest u **New service account** (Nieuw serviceaccount) en typt u een naam, bijvoorbeeld **Serviceaccount 1**.  
   
-     ![Google19](./media/google19.png "google19")  
+     ![google19](./media/google19.png "google19")  
   
      Onder **Key type** (Type sleutel) kiest u **P12** en klikt u op **Create** (Maken).  
   
      Er wordt een P12-certificaatbestand gedownload. Sla het certificaat op voor later gebruik.  
   
-     ![Google20](./media/google20.png "google20")  
+     ![google20](./media/google20.png "google20")  
   
 11. Op het tabblad **Credentials** (Referenties) klikt u aan de rechterkant op **Manage service accounts** (Serviceaccounts beheren).  
   
-     ![Google Apps-referenties serviceaccount](./media/google-apps-credentials-service-account.png "google apps credentials service account")  
+     ![Google Apps-referenties serviceaccount](./media/google-apps-credentials-service-account.png "Google Apps-referenties serviceaccount")  
   
 12. Klik op de 3 punten rechts van het serviceaccount dat u hebt gemaakt en selecteer **Edit** (Bewerken).  
   
-     ![Google22](./media/google22.png "google22")  
+     ![google22](./media/google22.png "google22")  
   
 13. Schakel het selectievakje **Enable Google Apps Domain-wide Delegation** (Domeinbrede delegatie voor Google Apps inschakelen) in en klik op **Save** (Opslaan).  
   
-     ![Google24](./media/google24.png "google24")  
+     ![google24](./media/google24.png "google24")  
   
 14. Kopieer het **e-mailadres** dat is toegewezen aan uw service, u hebt dit later nodig.  
   
-     ![Google25](./media/google25.png "google25")  
+     ![google25](./media/google25.png "google25")  
   
 15. Open het Google-menu door op de drie horizontale lijnen naast Google Cloud Platform te klikken en selecteer **API manager**.  
   
-     ![Google-menu](./media/google-menu.png "google menu")  
+     ![Google-menu](./media/google-menu.png "Google-menu")  
   
      Selecteer **Enabled APIs** (Ingeschakelde API’s).  
   
-     ![Google27](./media/google27.png "google27")  
+     ![google27](./media/google27.png "google27")  
   
 16. Klik op het tandwiel voor de instellingen naast **Drive API** (API station) en vul onder **Drive UI Integration** (Integratie met API station) het volgende in:  
   
@@ -140,7 +141,7 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
   
     -   Klik op **Save Changes** (Wijzigingen opslaan).  
   
-         ![Google29](./media/google29.png "google29")  
+         ![google29](./media/google29.png "google29")  
   
 17. In de lijst **Enabled APIs** (Ingeschakelde API’s) klikt u op het tandwiel voor instellingen naast **Google Apps Marketplace SDK** en selecteert u het tabblad **Configuration** (Configuratie).  
   
@@ -156,7 +157,7 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
   
          U kunt de afbeeldingen vinden op: [https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip](https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip)  
   
-         ![Google31](./media/google31.png "google31")  
+         ![google31](./media/google31.png "google31")  
   
     -   Vul de volgende **Support URLs** (URL’s voor ondersteuning) in:  
   
@@ -208,15 +209,15 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
   
 18. Selecteer **Security** (Beveiliging) in de lijst met besturingselementen. Als u deze optie niet ziet, selecteert u More controls (Meer besturingselementen) in de grijze balk aan de onderkant van de pagina en selecteert u vervolgens **Security** (Beveiliging).  
   
-     ![Google Apps-beveiliging](./media/google-apps-security.png "google apps security")  
+     ![Google Apps-beveiliging](./media/google-apps-security.png "Google Apps-beveiliging")  
   
 19. Kies **API reference** (API-verwijzing).  
   
-     ![Google API-verwijzing](./media/google-api-ref.png "google api ref")  
+     ![Google API-verwijzing](./media/google-api-ref.png "Google API-verwijzing")  
   
 20. Selecteer **Enable API Access** (API-toegang inschakelen) en klik op **Save changes** (Wijzigingen opslaan).  
   
-     ![Google API-toegang](./media/google-api-access.png "google api access")  
+     ![Google API-toegang](./media/google-api-access.png "Google API-toegang")  
   
 ## <a name="configure-cloud-app-security"></a>Cloud App Security configureren  
   
@@ -224,11 +225,11 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
   
 2.  Klik op de pagina **Verbonden apps** op de knop met het plusteken en selecteer **Google Apps**.  
   
-     ![Verbinding maken met Google Apps](./media/connect-google-apps.png "connect google apps")  
+     ![verbinding maken met Google Apps](./media/connect-google-apps.png "verbinding maken met Google Apps")  
   
 3.  Vul het volgende in het pop-upvenster in:  
   
-     ![Configuratie van Google Apps in Cloud App Security](./media/google-apps-configuration-in-cloud-app-security.png "Google Apps Configuration in Cloud App Security")  
+     ![Configuratie van Google Apps in Cloud App Security](./media/google-apps-configuration-in-cloud-app-security.png "Configuratie van Google Apps in Cloud App Security")  
   
     1.  **Het e-mailadres van het Google serviceaccount** dat u hebt genoteerd in stap 14.  
   
@@ -244,7 +245,7 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
   
     7.  **Volg de link** om verbinding te maken met Google Apps. Google Apps wordt geopend en u wordt gevraagd de toegang voor Cloud App Security te autoriseren.  
   
-         ![Google Apps-autorisatieaanvraag](./media/google-apps-authorization-request.png "Google Apps authorization request")  
+         ![Google Apps-autorisatieaanvraag](./media/google-apps-authorization-request.png "Google Apps-autorisatieaanvraag")  
   
     8.  Controleer of de verbinding tot stand is gekomen door op **Test API** te klikken.  
   
@@ -266,6 +267,6 @@ Na de verbinding met Google Apps wordt in Cloud App Security een volledige scan 
   
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO3-->
 
 

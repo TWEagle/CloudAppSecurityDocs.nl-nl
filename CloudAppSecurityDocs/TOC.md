@@ -6,6 +6,7 @@
 ## [Cloud Discovery implementeren](set-up-cloud-discovery.md)
 ### [Momentopnamerapporten maken van Cloud Discovery](create-snapshot-cloud-discovery-reports.md)
 ### [Automatisch uploaden van logboeken configureren voor doorlopende rapporten](configure-automatic-log-upload-for-continuous-reports.md)
+### [Cloud Discovery-gegevens anoniem maken](cloud-discovery-anonymizer.md)
 ### [Cloud Discovery aanpassen](working-with-cloud-discovery-data.md)
 ## [Apps koppelen](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
 ### [Verbinding maken met Box](connect-box-to-microsoft-cloud-app-security.md)
@@ -22,7 +23,6 @@
 ### [Bestanden](file-filters.md)
 ### [Activiteiten](activity-filters.md)
 ### [Waarschuwingen](monitor-alerts.md)
-### [Integratie met Azure Information Protection](azip-integration.md)
 ## [Controle](control.md)
 ### [Cloud-apps beheren met beleidsregels](control-cloud-apps-with-policies.md)
 #### [Beleidsregels voor Cloud Discovery](cloud-discovery-policies.md)
@@ -34,11 +34,14 @@
 ##### [Werken met de RegEx-engine](working-with-the-regex-engine.md)
 ### [App-machtigingen beheren](manage-app-permissions.md)
 ## [Beheren](governance-actions.md)
+## Integreren
+### [Integratie van Azure Information Protection](azip-integration.md)
+### [SIEM-integratie](siem.md)
 # [Problemen oplossen](troubleshooting.md)
 ## [Problemen met Cloud Discovery oplossen](troubleshooting-cloud-discovery.md)
 ## [Foutberichten gebruiken om problemen met API-connectors op te lossen](troubleshooting-api-connectors-using-error-messages.md)
 ## [Problemen oplossen met inhoudsinspectie](troubleshooting-content-inspection.md)
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Jan17_HO1-->
 
 

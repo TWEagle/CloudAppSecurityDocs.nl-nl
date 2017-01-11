@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/12/2016
+ms.date: 12/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5fe0c3c04f290fb5a087e387560bf742a7192513
-ms.openlocfilehash: 9f180b0697fbf990534670050c555800d7ba83fb
+ms.sourcegitcommit: d11339040da669b77069c286f6171f7b3a6161db
+ms.openlocfilehash: 3262d01aed03bbb462832f8ff2836152e6208e74
 
 
 ---
@@ -23,17 +23,17 @@ ms.openlocfilehash: 9f180b0697fbf990534670050c555800d7ba83fb
 # <a name="files"></a>Bestanden
 
 
-Ter beveiliging van uw gegevens maakt Cloud App Security alle bestanden van uw verbonden apps voor u zichtbaar. Nadat u Cloud App Security hebt verbonden met een app met behulp van de App-connector, scant Cloud App Security alle bestanden, bijvoorbeeld alle bestanden die zijn opgeslagen in OneDrive en Salesforce. Cloud App Security scant elk bestand opnieuw wanneer het bestand wordt gewijzigd: de wijziging kan betrekking hebben op inhoud, metagegevens of machtigingen voor delen. Scantijden zijn afhankelijk van het aantal bestanden dat is opgeslagen in uw app. Gebruik de pagina **Bestanden** om controle te krijgen over uw gegevens en om te weten welke beleidsregels u het beste kunt maken. U kunt de pagina **Bestanden** ook gebruiken voor het filteren van bestanden om te onderzoeken wat voor soort gegevens er in uw cloud-apps worden opgeslagen. 
+Ter beveiliging van uw gegevens maakt Cloud App Security alle bestanden van uw verbonden apps voor u zichtbaar. Nadat u Cloud App Security hebt verbonden met een app met behulp van de App-connector, scant Cloud App Security alle bestanden, bijvoorbeeld alle bestanden die zijn opgeslagen in OneDrive en Salesforce. Cloud App Security scant elk bestand opnieuw wanneer het bestand wordt gewijzigd: de wijziging kan betrekking hebben op inhoud, metagegevens of machtigingen voor delen. Scantijden zijn afhankelijk van het aantal bestanden dat is opgeslagen in uw app. U kunt de pagina **Bestanden** ook gebruiken voor het filteren van bestanden om te onderzoeken wat voor soort gegevens er in uw cloud-apps worden opgeslagen. 
 
-U kunt de pagina **Bestanden** bijvoorbeeld gebruiken om extern gedeelde bestanden met het label **vertrouwelijk** als volgt te beveiligen: nadat u Office 365, Google Apps, Box, Dropbox of Salesforce hebt verbonden met Cloud App Security, kunt u een integratie tot stand brengen met Azure Information Protection. Vervolgens filtert u op de pagina **Bestanden** op bestanden met het label **vertrouwelijk**. Als u ziet dat er **vertrouwelijke** bestanden zijn die buiten uw organisatie worden gedeeld, kunt u een bestandsbeleid maken voor het detecteren van **vertrouwelijke** bestanden waarvoor verkeerde toegangsniveaus zijn toegepast en daar vervolgens automatische governance-acties voor instellen, zoals **In gebruikersquarantaine plaatsen** om het bestand in quarantaine te plaatsen en verlies van gegevens voor uw organisatie te voorkomen.
+U kunt de pagina **Bestanden** bijvoorbeeld gebruiken om extern gedeelde bestanden met het label **vertrouwelijk** als volgt te beveiligen: nadat u een app hebt verbonden met Cloud App Security, kunt u een integratie tot stand brengen met Azure Information Protection. Vervolgens filtert u op de pagina **Bestanden** op bestanden met het label **vertrouwelijk**. Als u ziet dat er **vertrouwelijke** bestanden zijn die buiten uw organisatie worden gedeeld door het filter **Deelnemers** te filteren om uw domein uit te sluiten, kunt u een bestandsbeleid maken voor het detecteren van **vertrouwelijke** bestanden waarvoor verkeerde toegangsniveaus zijn toegepast en daar vervolgens automatische governance-acties voor instellen, zoals **Remove external collaborators** (Externe deelnemers verwijderen) en **Send policy-match digest to file owner** (Samenvatting van beleidsovereenkomst naar bestandseigenaar verzenden) om verlies van gegevens voor uw organisatie te voorkomen.
 
  ![Bestandsfilter vertrouwelijk](media/file-filter-confidential.png)
 
-Hier volgt nog een voorbeeld van het gebruik van de pagina **Bestanden** ter beveiliging van bestanden die worden gedeeld met niet-geautoriseerde domeinen of persoonlijke accounts: nadat u Office 365, Google Apps, Box of Dropbox hebt verbonden met Cloud App Security, filtert u op de pagina **Bestanden** op bestanden waarvan het toegangsniveau **Intern** of **Persoonlijk** is. Als u ziet dat er **vertrouwelijke** bestanden zijn die worden gedeeld met externe domeinen of persoonlijke accounts, kunt u een bestandsbeleid maken voor het detecteren van **vertrouwelijke** bestanden waarvoor verkeerde toegangsniveaus zijn toegepast. Vervolgens klikt u op **Nieuw beleid op basis van zoeken** en past u op de bestanden automatische governance-acties toe, zoals **Externe gebruikers verwijderen** om verlies van gegevens voor uw organisatie te voorkomen.
+Hier volgt een voorbeeld van hoe u de pagina **Bestanden** kunt gebruiken. Ga als volgt te werk om ervoor te zorgen dat niemand in uw organisatie openbaar of extern bestanden deelt die niet zijn gewijzigd in de laatste zes maanden: nadat u een app hebt verbonden met Cloud App Security, filtert u op de pagina **Bestanden** op bestanden waarvan het toegangsniveau **Extern** of **Openbaar** is en stelt u de datum **Laatst gewijzigd** in op zes maanden geleden. U kunt een bestandsbeleid maken waarmee verlopen openbare bestanden worden gedetecteerd door te klikken op **Nieuw beleid op basis van zoekbewerking** en automatische governance-acties hierop toe te passen, zoals **Externe gebruikers verwijderen** om gegevensverlies voor uw organisatie te voorkomen.
 
- ![Bestandsfilter niet-geautoriseerd](media/file-filter-unauth.png)
+ ![Bestandsfilter verlopen extern](media/file-example-stale-external.png)
 
-U kunt het bestandslogboek filteren om te zoeken naar specifieke bestanden. Met het basisfilter kunt u snel aan de slag met het filteren van uw activiteiten.
+Met het basisfilter kunt u snel aan de slag met het filteren van uw activiteiten.
 
  ![basisfilter bestandslogboek](media/file-log-filter-basic.png)
 
@@ -134,6 +134,6 @@ Zie [Bestandsbeheeracties](governance-actions.md#file-governance-actions) voor e
   
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 
