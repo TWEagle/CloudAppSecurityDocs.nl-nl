@@ -1,7 +1,8 @@
-# [Meer informatie en verkennen](what-is-cloud-app-security.md)
+# Meer informatie en verkennen
 ## [Wat is CAS?](what-is-cloud-app-security.md)
 ## [Opmerkingen bij de release](release-notes.md)
-# [Implementatie](getting-started-with-cloud-app-security.md)
+# Implementeer
+## [Aan de slag](getting-started-with-cloud-app-security.md)
 ## [De portal aanpassen](general-setup.md)
 ## [Cloud Discovery implementeren](set-up-cloud-discovery.md)
 ### [Momentopnamerapporten maken van Cloud Discovery](create-snapshot-cloud-discovery-reports.md)
@@ -17,7 +18,8 @@
 ### [Verbinden maken met Okta](connect-okta-to-microsoft-cloud-app-security.md)
 ### [Verbinding maken met ServiceNow](connect-servicenow-to-microsoft-cloud-app-security.md)
 ### [Verbinding maken met Salesforce](connect-salesforce-to-microsoft-cloud-app-security.md)
-# [Gebruik](daily-activities-to-protect-your-cloud-environment.md)
+# Gebruik
+## [Dagelijkse activiteiten ter bescherming van uw cloudomgeving](daily-activities-to-protect-your-cloud-environment.md)
 ## [Onderzoeken](investigate.md)
 ### [Naslaginformatie voor ingebouwde rapporten](built-in-report-reference.md)
 ### [Bestanden](file-filters.md)
@@ -28,20 +30,21 @@
 #### [Beleidsregels voor Cloud Discovery](cloud-discovery-policies.md)
 ##### [Beleid voor anomaliedetectie voor Cloud Discovery](cloud-discovery-anomaly-detection-policy.md)
 #### [Activiteitbeleid](user-activity-policies.md)
-##### [Beleid voor anomaliedetectie](anomaly-detection-policy.md)
+#### [Beleid voor anomaliedetectie](anomaly-detection-policy.md)
 #### [Beleidsregels voor bestanden](data-protection-policies.md)
 ##### [Inhoudsinspectie](content-inspection.md)
 ##### [Werken met de RegEx-engine](working-with-the-regex-engine.md)
+#### [Verwijzing naar beleidssjabloon](policy-template-reference.md)
 ### [App-machtigingen beheren](manage-app-permissions.md)
 ## [Beheren](governance-actions.md)
 ## Integreren
 ### [Integratie van Azure Information Protection](azip-integration.md)
 ### [SIEM-integratie](siem.md)
-# [Problemen oplossen](troubleshooting.md)
+# Problemen oplossen
 ## [Problemen met Cloud Discovery oplossen](troubleshooting-cloud-discovery.md)
 ## [Foutberichten gebruiken om problemen met API-connectors op te lossen](troubleshooting-api-connectors-using-error-messages.md)
 ## [Problemen oplossen met inhoudsinspectie](troubleshooting-content-inspection.md)
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO2-->
 
 

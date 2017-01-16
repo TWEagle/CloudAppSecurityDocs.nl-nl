@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/26/2016
+ms.date: 1/8/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 89f533e3b9c8397818e5aaa108dca168fda64db7
-ms.openlocfilehash: f5107adbe61a9dff00754e39134a35b8f620fa4c
+ms.sourcegitcommit: 98b16c96c31039248bdfbe57f980b3ae6a26a7de
+ms.openlocfilehash: 2998a0a9aa2cfa234d8a6a45a6eb0e1646ee2a2a
 
 
 ---
@@ -57,7 +57,7 @@ De volgende beheeracties kunnen worden uitgevoerd voor een specifiek bestand, ee
   
         -   In quarantaine geplaatst door administrator – het bestand wordt in quarantaine geplaatst op het administrator-station en de administrator moet dit goedkeuren.  
   
--   Machtigingen overnemen van bovenliggende map - met deze governance-actie kunt u specifieke machtigingen verwijderen die zijn ingesteld voor een bestand of map, en deze wijzigen in de machtigingen die zijn ingesteld voor de bovenliggende map.
+-   Machtigingen overnemen van bovenliggende map - met deze governance-actie kunt u specifieke machtigingen verwijderen die zijn ingesteld voor een bestand of map in Office 365, en deze wijzigen in de machtigingen die zijn ingesteld voor de bovenliggende map.
 -   Prullenbak – het bestand naar de map Prullenbak verplaatsen.
   
 ![waarschuwingen maken voor beleid](./media/policy_create-alerts.png "waarschuwingen maken voor beleid")  
@@ -150,6 +150,6 @@ Zie [Beleidsconflicten](control-cloud-apps-with-policies.md) voor informatie ove
   
 
 
-<!--HONumber=Dec16_HO4-->
+<!--HONumber=Jan17_HO2-->
 
 

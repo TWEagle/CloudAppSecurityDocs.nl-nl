@@ -14,8 +14,8 @@ ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 89f533e3b9c8397818e5aaa108dca168fda64db7
-ms.openlocfilehash: 7ad577c4b6222d96c21f51dd4023f10a9c402c55
+ms.sourcegitcommit: 98b16c96c31039248bdfbe57f980b3ae6a26a7de
+ms.openlocfilehash: 6f465f1a322168e86208042deea405a756be6e57
 
 
 ---
@@ -48,6 +48,7 @@ Hieronder volgt een lijst met de activiteitfilters die kunnen worden toegepast. 
     - Activiteitobject-id - de id van het object (bestands-, map-, gebruikers- of app-id).
     - Bestand, map of site-URL - hiermee kunt u bestanden, mappen en URL's selecteren die beginnen met een bepaalde tekenreeks.
     - Doelobject (bestand/map) - hiermee kunt u een specifiek bestand of specifieke map selecteren. 
+    - Item - Hiermee kunt u zoeken op de naam of id van een activiteitsobject (bijvoorbeeld: gebruikersnamen, bestanden, parameters, sites). 
     
 -   Activiteitstype - zoek naar de app-activiteit.
 
@@ -132,6 +133,6 @@ Zie [Governance-acties voor activiteiten](governance-actions.md#activity-governa
   
 
 
-<!--HONumber=Dec16_HO4-->
+<!--HONumber=Jan17_HO2-->
 
 

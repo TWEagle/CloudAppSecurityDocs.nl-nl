@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/28/2016
+ms.date: 1/8/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: cc4f3db1307261c41786f7c4458b37ba9d7f620e
-ms.openlocfilehash: 2da187cd863af431c359b8079f6b30ebae0b615b
+ms.sourcegitcommit: 98b16c96c31039248bdfbe57f980b3ae6a26a7de
+ms.openlocfilehash: a4e45ff982c6f53e442ae65803695a2c858145cb
 
 
 ---
@@ -39,7 +39,7 @@ ms.openlocfilehash: 2da187cd863af431c359b8079f6b30ebae0b615b
 -   De functie Cloud Discovery ondersteunt nu Sophos Cyberoam-apparaten.
  
 **Oplossingen voor problemen**
--   SPO- en OD4B-bestanden worden in het rapport voor bestandsbeleid en op de pagina Bestanden als Intern in plaats van Privé weergegeven. Dit is opgelost.
+-   SharePoint Online- en OneDrive voor Bedrijven-bestanden worden in het rapport voor bestandsbeleid en op de pagina Bestanden als Intern in plaats van Privé weergegeven. Dit is opgelost.
  
 
 
@@ -295,6 +295,6 @@ Uitgebracht: 15 mei 2016
   
 
 
-<!--HONumber=Dec16_HO4-->
+<!--HONumber=Jan17_HO2-->
 
 

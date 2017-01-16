@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/19/2016
+ms.date: 1/8/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2997a79f2e0fd730302be2602b6aee6ec56999db
-ms.openlocfilehash: 64881249bbf81ad7b181eed53035b7b19791d0db
+ms.sourcegitcommit: 142f2ba21ddeae5878cfa5d2e0b744c4581a1d65
+ms.openlocfilehash: dd43677f5437c5733a7cee55b67c8d39445d51a4
 
 
 ---
@@ -47,12 +47,13 @@ Met Cloud App Security wordt zichtbaarheid met uw cloud geïntegreerd door:
 
 ![Architectuur van Cloud App Security](./media/architecture.png)  
 
-> [!NOTE]  
-> Wanneer Cloud App Security inhoudsinspectie uitvoert, wordt gegevensprivacy afgedwongen. De bestandsinhoud wordt niet opgeslagen in de Cloud App Security-database; alleen de metagegevens van de bestandsrecords en eventuele schendingen die zijn gedetecteerd, worden opgeslagen in de Cloud App Security-database. Lees het [privacybeleid](http://go.microsoft.com/fwlink/?LinkId=512132) of ga naar het [Vertrouwenscentrum van Microsoft Trust](https://www.microsoft.com/TrustCenter/Privacy/You-are-in-control-of-your-data) voor meer informatie over gegevensretentie.
-In Cloud App Security worden gegevens als volgt bewaard:
->- Activiteitenlogboek: 180 dagen
->- Detectiegegevens: 90 dagen
->- Waarschuwingen: 180 dagen
+### <a name="data-retention"></a>Bewaren van gegevens  
+Wanneer Cloud App Security inhoudsinspectie uitvoert, wordt gegevensprivacy afgedwongen. De bestandsinhoud wordt niet opgeslagen in de Cloud App Security-database; alleen de metagegevens van de bestandsrecords en eventuele schendingen die zijn gedetecteerd, worden opgeslagen in de Cloud App Security-database. Zie ons [privacybeleid](http://go.microsoft.com/fwlink/?LinkId=512132) en het [Vertrouwenscentrum van Microsoft](https://www.microsoft.com/TrustCenter/Privacy/You-are-in-control-of-your-data) voor meer informatie over het bewaren van gegevens.
+Gegevens worden door Cloud App Security als volgt bewaard: 
+ 
+- Activiteitenlogboek: 180 dagen 
+- Detectiegegevens: 90 dagen 
+- Waarschuwingen: 180 dagen 
 
 Nadat gegevens uit deze bronnen zijn verzameld, voert Cloud App Security een geavanceerde analyse uit op de gegevens. U wordt direct op de hoogte gesteld van afwijkende activiteiten en u krijgt meer inzicht in uw cloudomgeving. U kunt een beleid configureren in Cloud App Security en dit vervolgens gebruiken om alles in uw cloudomgeving te beveiligen.  
 
@@ -85,6 +86,6 @@ Premier-klanten kunnen Cloud App Security ook rechtstreeks vanuit [Premier Porta
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO2-->
 
 

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/2/2017
+ms.date: 1/8/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 76908638d803be2f4f8d3a2a6a56571ce0545fec
-ms.openlocfilehash: 5ba1772200d001c1565d342a23f9662bd97edb74
+ms.sourcegitcommit: 4ab3275bdff2ec3aae5b5069c5ae65ba4292e93d
+ms.openlocfilehash: f8e3e744cd030777fe82a1edbc1197784f1ac8fa
 
 
 ---
@@ -23,6 +23,8 @@ ms.openlocfilehash: 5ba1772200d001c1565d342a23f9662bd97edb74
 # <a name="siem-integration--public-preview-"></a>SIEM-integratie - OPENBARE PREVIEW- 
     
 U kunt Cloud App Security nu met uw SIEM-server integreren om gecentraliseerde bewaking van waarschuwingen en activiteiten in te schakelen. Door de integratie met een SIEM-service kunt u uw cloudtoepassingen beter beveiligen terwijl uw gebruikelijke beveiligingswerkstroom blijft behouden, beveiligingsprocedures worden geautomatiseerd en gebeurtenissen in de cloud en on-premises aan elkaar worden gekoppeld. De Cloud App Security SIEM-agent wordt uitgevoerd op uw server. De agent haalt waarschuwingen en activiteiten op uit Cloud App Security en verzendt deze naar de SIEM-server.
+
+Wanneer u uw SIEM voor het eerst integreert met Cloud App Security, worden activiteiten en waarschuwingen van de laatste twee dagen doorgestuurd naar de SIEM, plus alle activiteiten en waarschuwingen (op basis van het filter dat u selecteert) die daarna volgen. Als u deze functie voor een langere periode uitschakelt en de functie vervolgens weer inschakelt, worden bovendien waarschuwingen en activiteiten van de laatste twee dagen doorgestuurd en vervolgens alle waarschuwingen en activiteiten die daarna volgen.
 
 De integratie met uw SIEM vindt in drie stappen plaats:
 1. De integratie instellen in de Cloud App Security-portal. 
@@ -65,13 +67,15 @@ U kunt op **Resultaten bewerken en bekijken** klikken om te controleren of het f
 2. Pak het JAR-bestand van het ZIP-bestand uit en voer het uit op uw server.
  Nadat u het bestand hebt uitgevoerd, voert u het volgende uit:
     
-      java -jar siemagent-0.87.20-signed.jar [--logsDirectory MAPNAAM] [--proxy ADRES[:POORT]] --token TOKEN
+      java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory MAPNAAM] [--proxy ADRES[:POORT]] --token TOKEN
 > [!NOTE]
-> De bestandsnaam kan verschillen afhankelijk van de versie van de SIEM-agent.
+> - De bestandsnaam kan verschillen afhankelijk van de versie van de SIEM-agent.
+> - Parameters tussen vierkante haken [] zijn optioneel en moeten alleen worden gebruikt als dat relevant is.
 
-Waarbij MAPNAAM het pad is naar de map die u wilt gebruiken voor lokale agent-logboeken voor foutopsporing.
-ADRES[: POORT] het proxyserveradres en de poort is die door de server wordt gebruikt om verbinding met internet te maken.
-TOKEN het SIEM-agenttoken is dat u in de vorige stap hebt gekopieerd.
+Hierbij worden de volgende variabelen gebruikt:
+- MAPNAAM is het pad naar de map die u wilt gebruiken voor lokale agent-logboeken voor foutopsporing.
+- ADRES[: POORT] is het proxyserveradres en de poort die door de server wordt gebruikt om verbinding met internet te maken.
+- TOKEN is het SIEM-agenttoken dat u in de vorige stap hebt gekopieerd.
 
 U kunt op elk gewenst moment -h typen om hulp te krijgen.
 
@@ -131,6 +135,6 @@ Als u na het maken van de agent een van de volgende **agent-meldingen** in de Cl
   
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO2-->
 
 

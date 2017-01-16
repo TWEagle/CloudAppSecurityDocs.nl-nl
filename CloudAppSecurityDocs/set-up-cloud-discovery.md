@@ -14,8 +14,8 @@ ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 99ad61811b68b47ac62b4bac83b611e535d4a6be
-ms.openlocfilehash: 2070adb26a6b23cd0d699f3c4b9241819e24928d
+ms.sourcegitcommit: 98b16c96c31039248bdfbe57f980b3ae6a26a7de
+ms.openlocfilehash: 3c722ac79fa124193655ca053c713f3d6edc7017
 
 
 ---
@@ -113,16 +113,17 @@ De gegevenskenmerken (volgens de documentatie van de leverancier):
 |Cisco ScanSafe|**Ja**|Nee|**Ja**|**Ja**|**Ja**|**Ja**|
 |Dell Sonicwall|**Ja**|**Ja**|Nee|**Ja**|**Ja**|**Ja**|
 |FortiGate|Nee|**Ja**|Nee|**Ja**|**Ja**|**Ja**|
-|Juniper SRX|Nee|**Ja**|Nee|**Ja**|**Ja**|**Ja**|
+|Juniper SRX|Nee|**Ja**|Nee|**Ja**\*|**Ja**|**Ja**|
 |McAfee SWG|**Ja**|Nee|Nee|**Ja**|**Ja**|**Ja**|
 |Meraki|**Ja**|**Ja**|Nee|**Ja**|Nee|Nee|
 |MS TMG|**Ja**|Nee|**Ja**|**Ja**|**Ja**|**Ja**|
-|PAN|**Ja**|**Ja**|**Ja**|**Ja**|**Ja**|**Ja**|
+|Palo Alto Networks|**Ja**|**Ja**|**Ja**|**Ja**\*|**Ja**|**Ja**|
 |Sophos|**Ja**|**Ja**|**Ja**|**Ja**|**Ja**|Nee|
 |Websense - gedetailleerd onderzoeksrapport (CSV)|**Ja**|Nee|Nee|**Ja**|Nee|Nee|
 |Websense - internetactiviteitenlogboek (CEF)|**Ja**|**Ja**|**Ja**|**Ja**|**Ja**|**Ja**|
 |Zscaler|**Ja**|Nee|**Ja**|Nee|**Ja**|Nee|
 
+\*Cloud Discovery biedt ondersteuning voor IPv6.
 
 ## <a name="see-also"></a>Zie ook
  
@@ -135,6 +136,6 @@ De gegevenskenmerken (volgens de documentatie van de leverancier):
   
 
 
-<!--HONumber=Dec16_HO4-->
+<!--HONumber=Jan17_HO2-->
 
 
