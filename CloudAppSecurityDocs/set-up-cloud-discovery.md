@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 12/26/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 76c705a38ffb0d61b9ad2eeaf3bdb939f5326589
-ms.openlocfilehash: e0a3f507ddf135eed01ed3acd71b7b5ec15e8e50
+ms.sourcegitcommit: 98b16c96c31039248bdfbe57f980b3ae6a26a7de
+ms.openlocfilehash: 3c722ac79fa124193655ca053c713f3d6edc7017
 
 
 ---
@@ -28,6 +28,10 @@ Met de **catalogus met cloud-apps** wordt het risico voor uw cloud-apps beoordee
 3.  Continue analyses door het analistenteam van Cloud App Security (voor kenmerken zoals versleuteling van inactieve gegevens).
 4.  Klantgebaseerde revisieaanvragen, gebaseerd op klantaanvragen voor wijzigingen in de catalogus met cloud-apps. Alle aanvragen worden bekeken door ons cloudanalistenteam en bijgewerkt op basis van hun bevindingen.
   
+## <a name="cloud-discovery-data-anonymization"></a>Cloud Discovery-gegevens anoniem maken
+
+U kunt door Cloud Discovery-gegevens anoniem te maken de privacy van gebruikers beveiligen. Nadat het gegevenslogboek naar de Cloud App Security-portal is geüpload, wordt het logboek opgeschoond en wordt alle informatie over gebruikersnamen vervangen door versleutelde gebruikersnamen. Op deze manier blijven alle cloudactiviteiten anoniem. Zie [Cloud Discovery anoniem maken](cloud-discovery-anonymizer.md) voor meer informatie.
+
 ## <a name="snapshot-and-continuous-risk-assessment-reports"></a>Momentopname- en doorlopende risicoanalyserapporten 
 
 Er zijn twee typen rapporten die u kunt genereren: 
@@ -50,7 +54,7 @@ Het proces voor het genereren van een risicoanalyse bestaat uit de volgende stap
 >[!NOTE]
 >De gegevens voor het doorlopende rapport worden twee keer per dag geanalyseerd.
  
-## <a name="using-traffic-logs-for-cloud-discovery"></a>Verkeerslogboeken gebruiken voor Cloud Discovery
+## <a name="using-traffic-logs-for--cloud-discovery"></a>Verkeerslogboeken gebruiken voor Cloud Discovery
 In Cloud Discovery wordt gebruikgemaakt van de gegevens in uw verkeerslogboeken. Hoe gedetailleerder uw logboeken, hoe meer inzicht u krijgt. Voor Cloud Discovery zijn webverkeersgegevens met de volgende kenmerken vereist:
 - Datum van de transactie
 - Bron-IP
@@ -86,6 +90,7 @@ Als u zonder problemen een Cloud Discovery-rapport wilt genereren, moeten uw ver
 - Microsoft Forefront Threat Management Gateway (W3C)
 - Firewall Palo Alto-reeks
 - Sophos SG
+- Sophos Cyberoam
 - Squid (algemeen)
 - Squid (systeemeigen)
 - Websense - oplossingen voor webbeveiliging - gedetailleerd onderzoeksrapport (CSV)
@@ -108,19 +113,19 @@ De gegevenskenmerken (volgens de documentatie van de leverancier):
 |Cisco ScanSafe|**Ja**|Nee|**Ja**|**Ja**|**Ja**|**Ja**|
 |Dell Sonicwall|**Ja**|**Ja**|Nee|**Ja**|**Ja**|**Ja**|
 |FortiGate|Nee|**Ja**|Nee|**Ja**|**Ja**|**Ja**|
-|Juniper SRX|Nee|**Ja**|Nee|**Ja**|**Ja**|**Ja**|
+|Juniper SRX|Nee|**Ja**|Nee|**Ja**\*|**Ja**|**Ja**|
 |McAfee SWG|**Ja**|Nee|Nee|**Ja**|**Ja**|**Ja**|
 |Meraki|**Ja**|**Ja**|Nee|**Ja**|Nee|Nee|
 |MS TMG|**Ja**|Nee|**Ja**|**Ja**|**Ja**|**Ja**|
-|PAN|**Ja**|**Ja**|**Ja**|**Ja**|**Ja**|**Ja**|
+|Palo Alto Networks|**Ja**|**Ja**|**Ja**|**Ja**\*|**Ja**|**Ja**|
 |Sophos|**Ja**|**Ja**|**Ja**|**Ja**|**Ja**|Nee|
 |Websense - gedetailleerd onderzoeksrapport (CSV)|**Ja**|Nee|Nee|**Ja**|Nee|Nee|
 |Websense - internetactiviteitenlogboek (CEF)|**Ja**|**Ja**|**Ja**|**Ja**|**Ja**|**Ja**|
 |Zscaler|**Ja**|Nee|**Ja**|Nee|**Ja**|Nee|
 
+\*Cloud Discovery biedt ondersteuning voor IPv6.
 
- 
-Zie voor meer informatie 
+## <a name="see-also"></a>Zie ook
  
 [Momentopnamerapporten maken van Cloud Discovery](create-snapshot-cloud-discovery-reports.md)
 
@@ -131,6 +136,6 @@ Zie voor meer informatie
   
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Jan17_HO2-->
 
 

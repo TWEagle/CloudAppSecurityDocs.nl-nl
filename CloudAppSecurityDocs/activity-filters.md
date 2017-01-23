@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/12/2016
+ms.date: 12/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,21 +14,24 @@ ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 156dccf0c77bf7e46c0328ebf6bd1e0ad9609845
-ms.openlocfilehash: f1dc1e39309cfe06037a13da55d92935786bed81
+ms.sourcegitcommit: 98b16c96c31039248bdfbe57f980b3ae6a26a7de
+ms.openlocfilehash: 6f465f1a322168e86208042deea405a756be6e57
 
 
 ---
 # <a name="activities"></a>Activiteiten
-Voor de beveiliging van gegevens maakt Cloud App Security alle activiteiten van uw verbonden apps voor u zichtbaar. Nadat u Cloud App Security hebt verbonden met een app met behulp van de App-connector, scant Cloud App Security alle activiteiten die hebben plaatsgevonden, waarbij de retroactieve scantijd per app verschilt. Daarna wordt Cloud App Security voortdurend bijgewerkt met nieuwe activiteiten. U kunt beleidsregels maken op basis van de activiteiten en vervolgens aangeven waarvoor u waarschuwingen wilt ontvangen. U kunt ook zoeken naar activiteiten die worden uitgevoerd op bepaalde bestanden. Het type activiteiten en de informatie die we voor elke activiteit ophalen, hangen af van de app en van het soort gegevens dat de app kan leveren. 
+Cloud App Security maakt alle activiteiten van uw verbonden apps voor u zichtbaar. Nadat u Cloud App Security hebt verbonden met een app met behulp van de App-connector, scant Cloud App Security alle activiteiten die hebben plaatsgevonden, waarbij de retroactieve scantijd per app verschilt. Daarna wordt Cloud App Security voortdurend bijgewerkt met nieuwe activiteiten. U kunt het **activiteitenlogboek** filteren om te zoeken naar specifieke activiteiten. U kunt beleidsregels maken op basis van de activiteiten en vervolgens aangeven waarvoor u waarschuwingen wilt ontvangen en actie wilt ondernemen. U kunt ook zoeken naar activiteiten die worden uitgevoerd op bepaalde bestanden. Het type activiteiten en de informatie die we voor elke activiteit ophalen, hangen af van de app en van het soort gegevens dat de app kan leveren. 
 
-U kunt bijvoorbeeld met het logboek **Activiteit** zoeken naar gebruikers in uw organisatie die gebruikmaken van besturingssystemen of browsers die verouderd zijn. Dat doet u als volgt: nadat u Office 365, Google Apps, Box, Dropbox, Okta, Amazon Web Services of Salesforce hebt verbonden met Cloud App Security op de pagina **Activiteitenlogboek**, gebruikt u het geavanceerde filter en selecteert u **Code gebruikersagent**. Selecteer vervolgens **Verouderde browser** of **Verouderd besturingssysteem**. Als u ziet dat er **vertrouwelijke** bestanden zijn die buiten uw organisatie worden gedeeld, kunt u klikken op **Nieuw beleid op basis van zoekopdracht** om een activiteitenbeleid te maken waarmee verouderde browsers en besturingssystemen worden gedetecteerd en gebruikers automatisch een melding ontvangen.
+U kunt bijvoorbeeld met het **activiteitenlogboek** zoeken naar gebruikers in uw organisatie die gebruikmaken van besturingssystemen of browsers die verouderd zijn. Dat doet u als volgt: nadat u een app hebt verbonden met Cloud App Security op de pagina **Activiteitenlogboek**, gebruikt u het geavanceerde filter en selecteert u **User agent tag** (Tag gebruikersagent). Selecteer vervolgens **Verouderde browser** of **Verouderd besturingssysteem**.
 
- ![Voorbeeld van activiteit verouderde browser](media/activity-outdated-example.png)
+ ![Voorbeeld van activiteit verouderde browser](media/activity-example-outdated.png)
+
+Als u wilt controleren of er buiten uw organisatie toegang wordt verkregen tot **vertrouwelijke** bestanden, stelt u het filter **Activiteitobject** in om te zoeken op **Classificatielabel** en selecteert u het label **Vertrouwelijk**. Stel het filter **IP-adres** zo in dat wordt gezocht naar **Categorie** en sluit de IP-adressen van uw kantoor uit (IP-categorieën kunnen worden geconfigureerd in het menu **Instellingen**). U kunt klikken op **Nieuw beleid op basis van zoekbewerking** om een activiteitsbeleid te maken op basis van de filters die u hebt gedefinieerd, en automatisch de gebruikers op de hoogte te brengen.
+
+ ![Voorbeeld van vertrouwelijke bestanden activiteit extern](media/activity-example-ip.png)
 
  
-
-U kunt het activiteitenlogboek filteren om te zoeken naar specifieke activiteiten. Met het basisfilter kunt u snel aan de slag met het filteren van uw activiteiten.
+Met het basisfilter kunt u snel aan de slag met het filteren van uw activiteiten.
 
  ![basisfilter logboekactiviteit](media/activity-log-filter-basic.png)
 
@@ -45,6 +48,7 @@ Hieronder volgt een lijst met de activiteitfilters die kunnen worden toegepast. 
     - Activiteitobject-id - de id van het object (bestands-, map-, gebruikers- of app-id).
     - Bestand, map of site-URL - hiermee kunt u bestanden, mappen en URL's selecteren die beginnen met een bepaalde tekenreeks.
     - Doelobject (bestand/map) - hiermee kunt u een specifiek bestand of specifieke map selecteren. 
+    - Item - Hiermee kunt u zoeken op de naam of id van een activiteitsobject (bijvoorbeeld: gebruikersnamen, bestanden, parameters, sites). 
     
 -   Activiteitstype - zoek naar de app-activiteit.
 
@@ -66,9 +70,21 @@ Hieronder volgt een lijst met de activiteitfilters die kunnen worden toegepast. 
   
 -   IP-adres – het onbewerkte IP-adres, de IP-categorie of het IP-label waarop de activiteit is uitgevoerd.  
     - Onbewerkt IP-adres - hiermee kunt u zoeken naar activiteiten die zijn uitgevoerd op of door onbewerkte IP-adressen die gelijk zijn aan, niet gelijk zijn aan, beginnen met of niet beginnen met een bepaalde reeks, of onbewerkte IP-adressen die wel of niet zijn ingesteld. 
-    - IP-categorie – de categorie van het IP-adres waarop de activiteit is uitgevoerd, bijvoorbeeld alle activiteiten van een reeks IP-adressen voor beheer. Zie voor meer informatie over IP-categorieën [Organiseer de gegevens naar eigen gelang](general-setup.md#IPtagsandRanges).  
-    - IP-label - het label van het IP-adres waarop de activiteit is uitgevoerd, bijvoorbeeld alle activiteiten van IP-adressen met een anonieme proxy. Zie voor meer informatie over IP-tags [Organiseer de gegevens naar eigen gelang](general-setup.md#IPtagsandRanges).
-  
+    - IP-categorie – de categorie van het IP-adres waarop de activiteit is uitgevoerd, bijvoorbeeld alle activiteiten van een reeks IP-adressen voor beheer. De categorieën moeten worden geconfigureerd om de relevante IP-adressen op te nemen, met uitzondering van de categorie 'Riskant' die vooraf is geconfigureerd en die twee IP-labels bevat: Anonieme proxy en Tor. Zie [De gegevens volgens uw behoeften ordenen](general-setup.md#IPtagsandRanges) voor informatie over het configureren van IP-categorieën.  
+    - IP-label - het label van het IP-adres waarop de activiteit is uitgevoerd, bijvoorbeeld alle activiteiten van IP-adressen met een anonieme proxy. Cloud App Security maakt een aantal ingebouwde IP-labels die niet kunnen worden geconfigureerd. Bovendien kunt u uw eigen IP-labels configureren. Zie [De gegevens volgens uw behoeften ordenen](general-setup.md#IPtagsandRanges) voor meer informatie over het configureren van IP-labels.
+   De ingebouwde IP-labels zijn onder andere:
+    - Microsoft-apps (14 hiervan)
+    - Anonieme proxy
+    - Botnet
+    - Darknet scanning IP (IP voor darknet scannen)
+    - C & C-server van malware
+    - Remote Connectivity Analyzer
+    - Satelliet-providers
+    - Slimme proxy en toegangsproxy (met opzet weggelaten)
+    - Tor-eindknooppunten
+    - Zscaler
+
+
 -   Geïmiteerde activiteit – zoek alleen naar activiteiten die zijn uitgevoerd uit naam van een andere gebruiker.  
 
 -   Locatie – het land van waaruit de activiteit is uitgevoerd.  
@@ -106,7 +122,7 @@ U kunt meer informatie bekijken over elke activiteit door te klikken op de activ
 
 ![activiteitlade](./media/activity-drawer.png "activiteitlade")  
   
-Zie [Activiteit overeenkomstig de parameters](governance-actions.md#activity-match-parameters) voor een lijst met beschikbare beheeracties.
+Zie [Governance-acties voor activiteiten](governance-actions.md#activity-governance-actions) voor een lijst met beschikbare governance-acties.
 
 
 ## <a name="see-also"></a>Zie ook  
@@ -117,6 +133,6 @@ Zie [Activiteit overeenkomstig de parameters](governance-actions.md#activity-mat
   
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 

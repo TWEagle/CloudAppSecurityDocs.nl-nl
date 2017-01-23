@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/27/2016
+ms.date: 12/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: 99d5fd37-d922-4269-b557-86d7f84180eb
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9565d8a51e4c06963861d9dfaef9595944bda1ff
-ms.openlocfilehash: 68961bf66a0c0bb3b668e681502ccf10bc673197
+ms.sourcegitcommit: 2997a79f2e0fd730302be2602b6aee6ec56999db
+ms.openlocfilehash: 46ab0f13a8d0839f77525c334e75c840c9bfc73f
 
 
 ---
@@ -35,7 +35,7 @@ Voor de volgende procedure uit om nieuwe beleidsregels voor activiteiten te make
   
 2.  Klik op **Beleid maken** en selecteer **Beleidsregel voor activiteiten**.  
   
-     ![Menu Activiteitenbeleid](./media/activity-policy-menu.png "activity policy menu")  
+     ![menu Activiteitenbeleid](./media/activity-policy-menu.png "menu Activiteitenbeleid")  
   
 3.  Geef uw beleid een naam en beschrijving, wat u indien gewenst kunt baseren op een sjabloon. Voor meer informatie over beleidssjablonen, bekijk [Cloud-apps beheren met beleidsregels](control-cloud-apps-with-policies.md).  
   
@@ -54,13 +54,13 @@ Bekijk deze voorbeelden:
   
      Onder het veld **Activiteitfilters**, stelt u de parameters in waarbij de waarschuwing geactiveerd wordt.  
   
-     ![Voorbeeld van beleid voor meerdere mislukte aanmeldingspogingen](./media/multiple-failed-log-on-attempts-policy-example.png "multiple failed log on attempts policy example")  
+     ![voorbeeld van beleid voor meerdere mislukte aanmeldingspogingen](./media/multiple-failed-log-on-attempts-policy-example.png "voorbeeld van beleid voor meerdere mislukte aanmeldingspogingen")  
   
 -   Hoge downloadsnelheid  
   
      U kunt het beleid zo instellen dat u een waarschuwing ontvangt als er een onverwacht of ongebruikelijk niveau van downloadactiviteit is. Om een beleid zoals dit te configureren, kiest u onder **Tarief**parameters de parameters die de waarschuwing activeren.  
   
-     ![Voorbeeld van hoge downloadsnelheid](./media/high-download-rate-example.png "high download rate example")  
+     ![voorbeeld van hoge downloadsnelheid](./media/high-download-rate-example.png "voorbeeld van hoge downloadsnelheid")  
   
 ## <a name="anomaly-detection"></a>Afwijkingsdetectie  
 Als uw organisatie wordt beveiligd door Cloud App Security, worden alle cloudactiviteiten beoordeeld volgens verschillende vooraf ingestelde risicofactoren. Cloud App Security analyseert elke gebruikerssessie in uw cloud en vergelijkt deze vervolgens met de risicofactoren die u hier instelt om u op de hoogte te stellen als er een activiteit plaatsvindt die afwijkt van de gebruikelijke activiteiten voor uw organisatie of van de gangbare gebruikersactiviteiten. De beleidspagina afwijkingsdetectie laat u de risicofactoren instellen en aanpassen die meegenomen worden in het risicoanalyseproces. Het beleid kan anders worden afgedwongen voor verschillende gebruikers, locaties en organisatiesectoren. U kunt bijvoorbeeld een beleid instellen waarbij u geïnformeerd wordt als leden van uw IT-team buiten kantoor actief zijn.   
@@ -71,7 +71,7 @@ Een afwijkingsdetectiebeleid configureren:
   
 2.  Klik op **Beleid maken** en selecteer **Afwijkingsdetectie**beleid.  
   
-     ![Menu voor beleid voor anomaliedetectie](./media/anomaly-detection-policy-menu.png "Anomaly detection policy menu")  
+     ![menu voor beleid voor anomaliedetectie](./media/anomaly-detection-policy-menu.png "menu voor beleid voor anomaliedetectie")  
   
 3.  Vul de naam en beschrijving van het beleid in en ga naar het veld **Activiteitfilters** om de activiteit te kiezen waarop het beleid van toepassing moet zijn.  
   
@@ -109,7 +109,7 @@ Een afwijkingsdetectiebeleid configureren:
   
      De gevoeligheidswaarde bepaalt per 1000 gebruikers hoeveel waarschuwingen er wekelijks gemiddeld geactiveerd worden.  
   
-     ![Anomaliedetectie-IP's](./media/anomaly-detection-ips.png "anomaly detection IPs")  
+     ![anomaliedetectie-IP's](./media/anomaly-detection-ips.png "anomaliedetectie-IP's")  
   
 8.  Klik op **Maken**.  
  
@@ -122,7 +122,9 @@ Elk beleid bestaat uit de volgende onderdelen:
   
 -   Activiteitfilters – hiermee kunt u zeer gedetailleerde voorwaarden op basis van metagegevens maken.  
   
--   Activiteit overeenkomstig de parameters – hiermee kunt u een drempel instellen voor het aantal keren dat een activiteit wordt herhaald voordat de activiteit wordt beschouwd als overeenkomstig het beleid.  
+-   Activiteit overeenkomstig de parameters – hiermee kunt u een drempel instellen voor het aantal keren dat een activiteit wordt herhaald voordat de activiteit wordt beschouwd als overeenkomstig het beleid.  Geef aan hoe vaak een activiteit moet worden herhaald voordat het overeenkomt met het beleid, bijvoorbeeld het instellen van een beleid om te waarschuwen wanneer een gebruiker tien mislukte aanmeldpogingen uitvoert binnen twee minuten.  **Activiteit overeenkomstig de parameters** vindt standaard een overeenkomst voor elke activiteit die voldoet aan alle activiteitfilters.   
+Met behulp van **Herhaalde activiteit** kunt u het aantal herhaalde activiteiten instellen, alsmede de periode waarin de activiteiten worden geteld. U kunt zelfs opgeven dat alle activiteiten moeten worden uitgevoerd door dezelfde gebruiker en in dezelfde cloud-app.  
+  
   
 -   Acties – het beleid bevat een reeks beheeracties die automatisch kunnen worden toegepast wanneer schendingen worden gedetecteerd.  
 ## <a name="see-also"></a>Zie ook  
@@ -133,6 +135,6 @@ Elk beleid bestaat uit de volgende onderdelen:
   
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO3-->
 
 

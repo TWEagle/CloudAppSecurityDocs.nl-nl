@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/21/2016
+ms.date: 1/9/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7901bb58f70949873fb3c423ae7951a67f7cd671
-ms.openlocfilehash: 4cfad222fb78e0bfc106fab64f6cc22d3819c1c8
+ms.sourcegitcommit: a6133e3cf0521515088dfd9d301aed2df2c4b430
+ms.openlocfilehash: 199a3c9909093551e3eca5e524f6bf04ce03aa4e
 
 
 ---
@@ -77,13 +77,12 @@ De volgende tabel geeft per cloud-app aan welke vaardigheden met App-connectors 
 |**Gebruikersactiviteiten**|✔*|✔|✔|✔ - Onbeperkte Google-licentie vereist|Gedeeltelijke|Ondersteund met Salesforce Shield|✔|Niet van toepassing|  
 |**Beheeractiviteiten**|✔|✔|✔|✔|Gedeeltelijke|✔|✔|✔|  
 |**Periodiek scannen van bestanden**|✔|✔|Niet van toepassing|✔|✔|✔|✔|Binnenkort beschikbaar|  
-|**NRT-bestandsscan (Near-Realtime)**|Binnenkort beschikbaar|✔|Niet van toepassing|✔ - Onbeperkte Google-licentie vereist|||Binnenkort beschikbaar||  
+|**NRT-bestandsscan (Near-Realtime)**|✔|✔|Niet van toepassing|✔ - Onbeperkte Google-licentie vereist|||Binnenkort beschikbaar||  
 |**Beheer van delen**|✔|✔|Niet van toepassing|✔|Niet van toepassing||✔||  
 |**Quarantaine**|✔|✔|Niet van toepassing|Binnenkort beschikbaar|||Binnenkort beschikbaar||  
 |**App-machtigingen weergeven**|✔|Niet ondersteund door provider|Niet van toepassing|✔||✔|Niet ondersteund door provider||  
 |**App-machtigingen intrekken**|✔||Niet van toepassing|✔||✔|Niet van toepassing||  
   
-\* App-connector voor Office 365 omvat beheeractiviteit voor Exchange Online. Als u gebruikersactiviteit wilt toevoegen voor Exchange Online, moet u de Exchange Online connector afzonderlijk implementeren.  
   
 ## <a name="prerequisites"></a>Vereisten  
 Voor bepaalde apps kan het nodig zijn de volgende IP-adressen toe te voegen aan de lijst met geaccepteerde IP-adressen, zodat Cloud App Security de logboeken kan verzamelen en de Cloud App Security-console toegang kan krijgen:  
@@ -131,6 +130,6 @@ Zie voor meer informatie over openbare peering [ExpressRoute-circuits en routeri
    
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Jan17_HO2-->
 
 
