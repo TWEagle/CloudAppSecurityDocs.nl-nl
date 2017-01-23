@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/27/2016
+ms.date: 1/8/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,13 +14,50 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 52f2245779568abbf41d47c4b45cdcced302529b
-ms.openlocfilehash: cbe341faf692772ac5461e038233e9b1a6b2694f
+ms.sourcegitcommit: 98b16c96c31039248bdfbe57f980b3ae6a26a7de
+ms.openlocfilehash: a4e45ff982c6f53e442ae65803695a2c858145cb
 
 
 ---
 
 # <a name="release-notes"></a>Opmerkingen bij de release
+
+## <a name="cloud-app-security-release-87"></a>Cloud App Security-release 87
+25 december 2016 uitgebracht
+
+**Nieuwe functies**
+-   We zijn bezig om [het anoniem maken van gegevens](cloud-discovery-anonymizer.md) uit te rollen, zodat u kunt profiteren van Cloud Discovery en tegelijkertijd de privacy van gebruikers kunt beveiligen. Het anoniem maken van gegevens wordt uitgevoerd door informatie over de gebruikersnaam te versleutelen.
+-   We zijn bezig om de mogelijkheid uit te rollen waarbij een blokkeerscript van Cloud App Security naar meer apparaten wordt geëxporteerd. U kunt met het script eenvoudig schaduw-IT reduceren door verkeer naar niet-toegestane apps te blokkeren. Deze optie is nu beschikbaar voor: 
+    -   BlueCoat ProxySG
+    -   Cisco ASA
+    -   Fortinet
+    -   Juniper SRX
+    -   Palo Alto
+    -   Websense
+-   Er is een nieuwe governance-actie voor bestanden toegevoegd waarmee u kunt afdwingen dat een bestand machtigingen van de bovenliggende map overneemt waarbij alle unieke machtigingen voor het bestand of de map worden verwijderd. Met deze governance-actie voor bestanden kunt u de machtigingen van uw bestand of map zo wijzigen dat deze worden overgenomen van de bovenliggende map. 
+-   Er is een nieuwe gebruikersgroep toegevoegd met de naam Extern. Dit is een standaardgebruikersgroep die vooraf is geconfigureerd door Cloud App Security, voor alle gebruikers die geen deel uitmaken van uw interne domeinen. U kunt deze gebruikersgroep als een filter gebruiken. U kunt bijvoorbeeld activiteiten zoeken die worden uitgevoerd door externe gebruikers.
+-   De functie Cloud Discovery ondersteunt nu Sophos Cyberoam-apparaten.
+ 
+**Oplossingen voor problemen**
+-   SharePoint Online- en OneDrive voor Bedrijven-bestanden worden in het rapport voor bestandsbeleid en op de pagina Bestanden als Intern in plaats van Privé weergegeven. Dit is opgelost.
+ 
+
+
+## <a name="cloud-app-security-release-86"></a>Cloud App Security-release 86
+13 december 2016 uitgebracht
+
+**Nieuwe functies**
+- Alle zelfstandige Cloud App Security-licenties bieden de mogelijkheid het scannen met Azure Information Protection in te schakelen vanuit de algemene instellingen (zonder dat een beleid hoeft worden gemaakt). 
+ 
+**Verbeteringen**
+- U kunt nu 'of' gebruiken in het bestandsfilter voor de bestandsnaam en in het filter voor het MIME-type voor bestanden en beleidsregels. Hierdoor zijn scenario's mogelijk zoals het invoeren van het woord 'passport' OF 'stuurprogramma' bij het maken van een beleid met PII. Het resultaat is alle bestanden die 'passport' of 'stuurprogramma' in de bestandsnaam hebben. 
+- Wanneer een DLP-inhoudsinspectiebeleid wordt uitgevoerd, worden de gegevens in de resulterende schendingen standaard gemaskeerd. U kunt nu de laatste vier tekens van de schending zichtbaar maken. 
+
+**Kleine verbeteringen**
+- Nieuwe, aan postvakken gerelateerde Office 365 (Exchange)-gebeurtenissen die betrekking hebben op regels voor doorsturen en het toevoegen en verwijderen van postvakmachtigingen voor gemachtigden.
+- Nieuwe gebeurtenis die het verlenen van toestemming aan nieuwe apps in Azure Active Directory controleert. 
+
+
 
 
 ## <a name="cloud-app-security-release-85"></a>Cloud App Security-release 85
@@ -258,6 +295,6 @@ Uitgebracht: 15 mei 2016
   
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Jan17_HO2-->
 
 

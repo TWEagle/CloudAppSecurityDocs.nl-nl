@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2016
+ms.date: 1/8/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: ab9bc377-d2f5-4f4c-a419-f1728a15d1c7
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 002e0b82296162ee13fa378c4641cc8f21547237
-ms.openlocfilehash: ca51d36a6d899124d3d4eb84ded1972ad9c8bab4
+ms.sourcegitcommit: 98b16c96c31039248bdfbe57f980b3ae6a26a7de
+ms.openlocfilehash: a0d8975ae20830fe1b9d4ce3c1a54858038eebd3
 
 
 ---
@@ -60,6 +60,8 @@ Elke risicofactor die in de risico-evaluatie is opgenomen heeft zijn eigen trigg
   
 -   Apparaat en gebruikersagent - activiteit uitgevoerd door een gebruiker met behulp van een gebruikersagent of apparaat dat of nooit door een andere gebruiker is gebruikt, nooit door deze bepaalde gebruiker is gebruikt, of helemaal nooit is gebruikt.  
   
+-   Frequentie van activiteit - herhaalde activiteiten uitgevoerd door een gebruiker binnen een korte periode. 
+
 ### <a name="sensitivity"></a>Gevoeligheid  
 Er zijn twee manieren om het aantal waarschuwingen dat door het beleid is geactiveerd te bepalen:  
   
@@ -76,6 +78,6 @@ Er zijn twee manieren om het aantal waarschuwingen dat door het beleid is geacti
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Jan17_HO2-->
 
 
