@@ -1,11 +1,11 @@
 ---
-title: Bestanden | Microsoft Docs
+title: Informatie over de bestandsgegevens en filters die beschikbaar zijn in Cloud App Security | Microsoft Docs
 description: Dit naslagonderwerp bevat informatie over de bestandstypen en bestandsfilters die worden gebruikt in Cloud App Security.
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/19/2016
+ms.date: 3/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: d11339040da669b77069c286f6171f7b3a6161db
-ms.openlocfilehash: 3262d01aed03bbb462832f8ff2836152e6208e74
-
-
+ms.openlocfilehash: 81330b5333050bea2352f0907ac5c83d71af14bf
+ms.sourcegitcommit: b840b945b270e616560f565bcc6590dd68ad5ebd
+translationtype: HT
 ---
-
 # <a name="files"></a>Bestanden
 
 
@@ -41,7 +38,7 @@ Om in te zoomen op meer specifieke bestanden, kunt u het basisfilter uitbreiden 
 
  ![geavanceerd filter bestandslogboek](media/file-log-filter-advanced.png)
  
-###  <a name="a-namefilefiltersa-file-filters"></a><a name="Filefilters"></a> Bestandsfilters 
+###  <a name="Filefilters"></a> Bestandsfilters 
  
 Met Cloud App Security kunt u elk bestandstype controleren op basis van meer dan twintig metagegevensfilters (bijvoorbeeld toegangsniveau, bestandstype). 
  
@@ -84,7 +81,7 @@ Hieronder volgt een lijst met de bestandsfilters die kunnen worden toegepast. De
   
 -   Bestandsnaam – de bestandsnaam of subtekenreeks van de naam zoals deze is gedefinieerd in de cloud-app, bijvoorbeeld Alle bestanden met een wachtwoord in hun naam.   
   
--   Bestandslabel - zoek naar bestanden met specifieke labels die zijn ingesteld door Azure Information Protection. Hiervoor is integratie met Azure Information Protection vereist.
+-   Classificatielabel - zoek naar bestanden met specifieke labels die zijn ingesteld door Azure Information Protection. Hiervoor is integratie met Azure Information Protection vereist.
 
 -   Bestandstype – Cloud App Security houdt rekening met het MIME-type dat van de service is ontvangen en scant het bestand om het daadwerkelijke bestandstype te bepalen. Deze scan is van toepassing op bestanden die relevant zijn voor een gegevensscan (documenten, afbeeldingen, presentaties, spreadsheets, tekst- en zipbestanden). Het filter werkt per type bestand/map, bijvoorbeeld Alle mappen die... of Alle spreadsheetbestanden die...
 
@@ -132,8 +129,3 @@ Zie [Bestandsbeheeracties](governance-actions.md#file-governance-actions) voor e
 [Premier-klanten kunnen Cloud App Security ook rechtstreeks vanuit Premier Portal kiezen.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Dec16_HO3-->
-
-

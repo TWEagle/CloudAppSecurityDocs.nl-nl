@@ -4,14 +4,15 @@
 # Implementeer
 ## [Aan de slag](getting-started-with-cloud-app-security.md)
 ## [De portal aanpassen](general-setup.md)
+### [Gebruikersgroepen](user-groups.md)
+### [IP-tags en -bereiken](ip-tags.md)
 ## [Cloud Discovery implementeren](set-up-cloud-discovery.md)
 ### [Momentopnamerapporten maken van Cloud Discovery](create-snapshot-cloud-discovery-reports.md)
 ### [Automatisch uploaden van logboeken configureren voor doorlopende rapporten](configure-automatic-log-upload-for-continuous-reports.md)
 ### [Cloud Discovery-gegevens anoniem maken](cloud-discovery-anonymizer.md)
-### [Cloud Discovery aanpassen](working-with-cloud-discovery-data.md)
 ## [Apps koppelen](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
 ### [Verbinding maken met Box](connect-box-to-microsoft-cloud-app-security.md)
-### [Verbinding maken met Google Apps](connect-google-apps-to-microsoft-cloud-app-security.md)
+### [Verbinding maken met G Suite](connect-google-apps-to-microsoft-cloud-app-security.md)
 ### [Verbinding maken met Office 365](connect-office-365-to-microsoft-cloud-app-security.md)
 ### [Verbinding maken met AWS](connect-aws-to-microsoft-cloud-app-security.md)
 ### [Verbinding maken met Dropbox](connect-dropbox-to-microsoft-cloud-app-security.md)
@@ -20,6 +21,7 @@
 ### [Verbinding maken met Salesforce](connect-salesforce-to-microsoft-cloud-app-security.md)
 # Gebruik
 ## [Dagelijkse activiteiten ter bescherming van uw cloudomgeving](daily-activities-to-protect-your-cloud-environment.md)
+## [Werken met Cloud Discovery](working-with-cloud-discovery-data.md)
 ## [Onderzoeken](investigate.md)
 ### [Naslaginformatie voor ingebouwde rapporten](built-in-report-reference.md)
 ### [Bestanden](file-filters.md)
@@ -36,7 +38,8 @@
 ##### [Werken met de RegEx-engine](working-with-the-regex-engine.md)
 #### [Verwijzing naar beleidssjabloon](policy-template-reference.md)
 ### [App-machtigingen beheren](manage-app-permissions.md)
-## [Beheren](governance-actions.md)
+### [Verbonden apps beheren](governance-actions.md)
+### [Gedetecteerde apps beheren](governance-discovery.md)
 ## Integreren
 ### [Integratie van Azure Information Protection](azip-integration.md)
 ### [SIEM-integratie](siem.md)
@@ -44,7 +47,3 @@
 ## [Problemen met Cloud Discovery oplossen](troubleshooting-cloud-discovery.md)
 ## [Foutberichten gebruiken om problemen met API-connectors op te lossen](troubleshooting-api-connectors-using-error-messages.md)
 ## [Problemen oplossen met inhoudsinspectie](troubleshooting-content-inspection.md)
-
-<!--HONumber=Jan17_HO2-->
-
-
