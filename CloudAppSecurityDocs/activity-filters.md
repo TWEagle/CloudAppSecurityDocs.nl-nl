@@ -1,11 +1,11 @@
 ---
-title: Activiteiten | Microsoft Docs
+title: Inzicht in activiteiten van cloud-apps | Microsoft-documenten
 description: In dit onderwerp vindt u een lijst met de activiteiten, filters en overeenkomstparameters die kunnen worden toegepast op activiteitenbeleidsregels.
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/26/2016
+ms.date: 3/6/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,9 @@ ms.technology:
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 98b16c96c31039248bdfbe57f980b3ae6a26a7de
-ms.openlocfilehash: 6f465f1a322168e86208042deea405a756be6e57
-
-
+ms.openlocfilehash: 548dceaedc5bc22a5ca6da0690702b411b2987fb
+ms.sourcegitcommit: 80d9396833957429cf4fe178f336ab2e1793069e
+translationtype: HT
 ---
 # <a name="activities"></a>Activiteiten
 Cloud App Security maakt alle activiteiten van uw verbonden apps voor u zichtbaar. Nadat u Cloud App Security hebt verbonden met een app met behulp van de App-connector, scant Cloud App Security alle activiteiten die hebben plaatsgevonden, waarbij de retroactieve scantijd per app verschilt. Daarna wordt Cloud App Security voortdurend bijgewerkt met nieuwe activiteiten. U kunt het **activiteitenlogboek** filteren om te zoeken naar specifieke activiteiten. U kunt beleidsregels maken op basis van de activiteiten en vervolgens aangeven waarvoor u waarschuwingen wilt ontvangen en actie wilt ondernemen. U kunt ook zoeken naar activiteiten die worden uitgevoerd op bepaalde bestanden. Het type activiteiten en de informatie die we voor elke activiteit ophalen, hangen af van de app en van het soort gegevens dat de app kan leveren. 
@@ -42,7 +40,7 @@ Om in te zoomen op meer specifieke activiteiten, kunt u het basisfilter uitbreid
 ## <a name="activity-filters"></a>Activiteitfilters
 Hieronder volgt een lijst met de activiteitfilters die kunnen worden toegepast. De meeste filters bieden ondersteuning voor meerdere waarden en voor NOT (niet), zodat u over een zeer krachtig hulpprogramma beschikt voor het maken van een beleid.  
   
--   Activiteit-id - Zoek alleen naar specifieke activiteiten op basis van de id. Dit filter is zeer nuttig wanneer u verbinding maakt tussen MCAS en uw SIEM (met behulp van de SIEM-agent) en u de waarschuwingen in de MCAS-portal verder wilt onderzoeken.  
+-   Activiteit-id - Zoek alleen naar specifieke activiteiten op basis van de id. Dit filter is zeer nuttig wanneer u verbinding maakt tussen Cloud App Security en uw SIEM (met behulp van de SIEM-agent) en u de waarschuwingen in de Cloud App Security-portal verder wilt onderzoeken.  
   
 -   Activiteitobjecten - zoek naar de objecten waarvoor de activiteit werd uitgevoerd. Dit filter wordt toegepast op bestands-, map-, gebruikers- of app-objecten.
     - Activiteitobject-id - de id van het object (bestands-, map-, gebruikers- of app-id).
@@ -94,15 +92,19 @@ Hieronder volgt een lijst met de activiteitfilters die kunnen worden toegepast. 
 -   Geregistreerde ISP – de internetprovider van waaruit de activiteit is uitgevoerd.   
 
 -  Bron: zoeken op de bron waar de activiteit is gedetecteerd. Dit kan een van de volgende zijn:
-  - App-connector: logboeken die rechtstreeks uit de API-connector van de app afkomstig zijn.
-  - Analyse van App-connector: verbeteringen van de Cloud App Security-beveiliging op basis van een informatiescan door de API-connector.
+  -    App-connector: logboeken die rechtstreeks uit de API-connector van de app afkomstig zijn.
+  -    Analyse van App-connector: verbeteringen van de Cloud App Security-beveiliging op basis van een informatiescan door de API-connector.
   
 
 -   Gebruiker - de gebruiker die de activiteit heeft uitgevoerd, te filteren op domein, groep, naam of organisatie. Als u activiteiten zonder specifieke gebruiker wilt filteren, kunt u de operator 'is niet ingesteld' gebruiken.  
     -   Gebruikersdomein - zoek naar een specifiek gebruikersdomein.
-    -   Gebruikersgroep – specifieke gebruikersgroepen die automatisch door Cloud App Security worden geïmporteerd vanuit de cloud-app, bijvoorbeeld alle activiteiten die worden uitgevoerd door Office 365-beheerders.
-    -   Gebruikersnaam - zoek naar een specifieke gebruikersnaam.
     -   Organisatie van de gebruiker – de organisatie-eenheid van de gebruiker die de activiteit heeft uitgevoerd, bijvoorbeeld alle activiteiten die worden uitgevoerd door Marketing_gebruikers in EMEA.  
+    -   Gebruikersgroep – specifieke gebruikersgroepen die u kunt importeren uit verbonden apps, zoals Office 365-beheerders.  
+    -   Gebruikersnaam - zoek naar een specifieke gebruikersnaam. Voor een overzicht van gebruikers in een bepaalde gebruikersgroep klikt u in de **Activiteitenlade** op de naam van de gebruikersgroep. Hiermee gaat u naar de pagina Accounts waar een lijst met alle gebruikers in de groep staat. Van daaruit kunt u inzoomen op de details van de accounts van specifieke gebruikers in de groep.
+       -  De filters **Gebruikersgroep** en **Gebruikersnaam** kunnen verder worden gefilterd met behulp van de filter **Als** en door de rol van de gebruiker te selecteren. De rol kan een van de volgende mogelijkheden zijn:
+            - Alleen activiteitsobject - dit betekent dat de geselecteerde gebruiker of gebruikersgroep niet de betreffende activiteit heeft uitgevoerd, maar object van de activiteit was
+            - Alleen uitvoerder - dit betekent dat de gebruiker of gebruikersgroep de activiteit heeft uitgevoerd
+            - Alle rollen - dit betekent dat de gebruiker of gebruikersgroep betrokken was bij de activiteit, ofwel als uitvoerder van de activiteit of als het object ervan
 
 -   Gebruikersagent – de gebruikersagent van waaruit de activiteit is uitgevoerd.  
   
@@ -131,8 +133,3 @@ Zie [Governance-acties voor activiteiten](governance-actions.md#activity-governa
 [Premier-klanten kunnen Cloud App Security ook rechtstreeks vanuit Premier Portal kiezen.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Jan17_HO2-->
-
-

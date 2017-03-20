@@ -1,11 +1,11 @@
 ---
-title: Cloud Discovery aanpassen | Microsoft Docs
+title: Cloud Discovery-gegevens gebruiken om riskant gedrag te detecteren | Microsoft Docs
 description: In dit onderwerp vindt u instructies voor het werken met Cloud Discovery-gegevens, waaronder het werken met de risicoscore van apps.
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/26/2016
+ms.date: 2/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,14 +13,11 @@ ms.technology:
 ms.assetid: cf94b290-b7ef-4fee-854e-c8ff8d11dea9
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 89f533e3b9c8397818e5aaa108dca168fda64db7
-ms.openlocfilehash: 0077b634d09cd9476d07c2de6a84d0c9396285da
-
-
+ms.openlocfilehash: 872c5839a3fbf54e4e4d07ef9ac0629aef29aaad
+ms.sourcegitcommit: 1a01ac2d5b4ff92e46e1bc4fd4318330f6ff41dd
+translationtype: HT
 ---
-
-# <a name="customize-cloud-discovery"></a>Cloud Discovery aanpassen
+# <a name="working-with-cloud-discovery"></a>Werken met Cloud Discovery
 ## <a name="review-the-cloud-discovery-dashboard"></a>Het Cloud Discovery-dashboard bekijken
 
 Met het Cloud Discovery-dashboard hebt u meer inzicht in de manier waarop cloud-apps in uw organisatie worden gebruikt. Met het dashboard kunt u in één oogopslag een overzicht bekijken van de apps die worden gebruikt, uw openstaande waarschuwingen en de risiconiveaus van de apps in uw organisatie. Daarnaast kunt u zien wie de belangrijkste gebruikers in uw organisatie zijn en wordt een app-hoofdkantoorkaart weergegeven. Het Cloud Discovery-dashboard heeft verschillende opties voor het filteren van gegevens, zodat u specifieke weergaven kunt genereren (afhankelijk van de gegevens die het interessantst zijn voor u), en eenvoudig te begrijpen afbeeldingen zodat u in één oogopslag een volledig beeld krijgt.
@@ -133,8 +130,3 @@ Cloud Discovery-gegevens verwijderen:
 [Premier-klanten kunnen Cloud App Security ook rechtstreeks vanuit Premier Portal kiezen.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Dec16_HO4-->
-
-
