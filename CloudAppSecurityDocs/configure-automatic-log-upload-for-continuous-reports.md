@@ -1,11 +1,11 @@
 ---
-title: Automatisch uploaden van logboeken configureren voor doorlopende rapporten | Microsoft Docs
+title: Automatisch uploaden van logboeken configureren voor doorlopende rapporten in Cloud App Security | Microsoft Docs
 description: In dit onderwerp vindt u informatie over het uploaden van logboeken om automatische Cloud Discovery-rapporten te maken.
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/08/2016
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 7901bb58f70949873fb3c423ae7951a67f7cd671
-ms.openlocfilehash: 96575cfc6bc3d736b40503049816ccc191fbf3e8
-
-
+ms.openlocfilehash: f6eb2a844d62848ad232a92609a02ddb6fcfe325
+ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+translationtype: HT
 ---
-
 # <a name="configure-automatic-log-upload-for-continuous-reports"></a>Automatisch uploaden van logboeken configureren voor doorlopende rapporten
 Met een logboekverzamelaar kunt u het uploaden van logboeken vanaf uw netwerk eenvoudig automatiseren. De logboekverzamelaar wordt uitgevoerd op uw netwerk en ontvangt logboeken via Syslog of FTP. Elk logboek wordt automatisch verwerkt, gecomprimeerd en naar de portal verzonden. De FTP-logboeken worden naar Cloud App Security geüpload nadat de FTP-overdracht naar de logboekverzamelaar voor het bestand is voltooid. Voor Syslogs worden de ontvangen logboeken met de logboekverzamelaar elke 20 minuten naar de schijf geschreven en wordt het bestand vervolgens naar Cloud App Security geüpload.
 
@@ -44,7 +41,7 @@ De logboekverzamelaar heeft een ingebouwd beveiligingsmechanisme dat de snelheid
 
 ## <a name="set-up-and-configuration"></a>Installatie en configuratie  
   
-### <a name="step-1-web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>Stap 1 - Webportalconfiguratie: gegevensbronnen definiëren en deze koppelen aan een logboekverzamelaar  
+### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>Stap 1 - Webportalconfiguratie: gegevensbronnen definiëren en deze koppelen aan een logboekverzamelaar  
   
 1.  Ga naar de pagina met instellingen voor automatisch uploaden:  
     Klik in de Cloud App Security-portal op het pictogram Instellingen ![pictogram Instellingen](./media/settings-icon.png "settings icon") en vervolgens op **Logboekverzamelaars**.  
@@ -77,7 +74,7 @@ De logboekverzamelaar heeft een ingebouwd beveiligingsmechanisme dat de snelheid
   > - Kopieer de inhoud van het scherm. U hebt deze informatie nodig tijdens het configureren van de logboekverzamelaar voor de communicatie met Cloud App Security. Als u Syslog hebt geselecteerd, wordt ook informatie weergegeven over de poort waarop de Syslog-listener luistert.
 4.  **Download** een nieuwe virtuele machine voor de logboekverzamelaar door te klikken op Hyper-V of VMWare en decomprimeer het bestand met het wachtwoord dat u in de portal hebt ontvangen.  
   
-### <a name="step-2-on-premises-deployment-of-the-virtual-machine-and-network-configuration"></a>Stap 2 - On-premises implementatie van de virtuele machine en de netwerkconfiguratie   
+### <a name="step-2--on-premises-deployment-of-the-virtual-machine-and-network-configuration"></a>Stap 2 - On-premises implementatie van de virtuele machine en de netwerkconfiguratie   
 
 > [!NOTE] 
 > In de volgende stappen wordt de implementatie in Hyper-V beschreven. De implementatiestappen voor de VM-hypervisor zijn iets anders.  
@@ -114,7 +111,7 @@ sudo network_config
 
 Uw logboekverzamelaar is nu verbonden met uw netwerk en kan de Cloud App Security-portal bereiken.  
 
-### <a name="step-3-on-premises-configuration-of-the-log-collection"></a>Stap 3 - On-premises configuratie van de logboekverzamelaar 
+### <a name="step-3--on-premises-configuration-of-the-log-collection"></a>Stap 3 - On-premises configuratie van de logboekverzamelaar 
 Ga als volgt te werk als u zich voor het eerst wilt aanmelden bij de logboekverzamelaar en de configuratie van de logboekverzamelaar vanuit de portal wilt importeren: 
 
 1.  Meld u aan bij de logboekverzamelaar via SSH met behulp van de referenties voor de interactieve beheerder die u in de portal heeft gekregen. (Als dit de eerste keer is dat u zich bij de console aanmeldt, moet u het wachtwoord wijzigen en u na het wijzigen van het wachtwoord opnieuw aanmelden. Als u gebruikmaakt van een terminalsessie, moet u de terminalsessie mogelijk opnieuw opstarten. )
@@ -156,8 +153,3 @@ Zie [Problemen met Cloud Discovery oplossen](troubleshooting-cloud-discovery.md)
     
       
   
-
-
-<!--HONumber=Nov16_HO5-->
-
-

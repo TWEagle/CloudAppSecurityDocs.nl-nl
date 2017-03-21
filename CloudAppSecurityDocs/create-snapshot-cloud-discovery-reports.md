@@ -1,11 +1,11 @@
 ---
-title: Momentopnamerapporten maken van Cloud Discovery | Microsoft Docs
+title: Momentopnamerapporten maken van het gebruik van Cloud Discovery-apps | Microsoft Docs
 description: In dit artikel leest u hoe u logboeken handmatig kunt uploaden om een momentopnamerapport van uw Cloud Discovery-apps te maken.
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/14/2016
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2a2d4396a3960bd3124196b9c616f6a7765247ce
-ms.openlocfilehash: ce887ed4f8727b0c36f5e5e9a40b13b11dc78920
-
-
+ms.openlocfilehash: 189662f6122239a6db6533180265548297a5c795
+ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+translationtype: HT
 ---
-
 # <a name="create-snapshot-cloud-discovery-reports"></a>Momentopnamerapporten maken van Cloud Discovery
 Het is belangrijk een logboek handmatig te uploaden en het logboek in Cloud App Security te parseren voordat u de automatische logboekverzamelaar gebruikt.
 Als u nog geen logboek hebt en wilt zien hoe uw logboek eruit zou kunnen zien, volgt u de onderstaande procedure om een voorbeeld van een logboekbestand te downloaden.
@@ -71,8 +68,3 @@ Als de verwerking van uw logboekbestanden is voltooid, ontvangt u een e-mail met
     
       
   
-
-
-<!--HONumber=Dec16_HO2-->
-
-

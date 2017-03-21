@@ -1,11 +1,11 @@
 ---
-title: App-machtigingen beheren | Microsoft Docs
+title: Beheren welke cloud-apps van derden machtigingen krijgen | Microsoft Docs
 description: Dit artikel bevat informatie over hoe u machtigingen voor apps van derden kunt beheren, verbieden en toestaan.
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/03/2016
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: 137e0630-5440-4c49-bfe4-48bbc64575e2
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: e41c04d25f12aa5207ef9ffbb6a22f4b894e92cb
-ms.openlocfilehash: 156be8b048c12e5db0a4b1118314c0b600ded24a
-
-
+ms.openlocfilehash: 3866ae5606fd2add90338ac58a49edf646aa87c5
+ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+translationtype: HT
 ---
-
 # <a name="manage-app-permissions"></a>App-machtigingen beheren
 Veel productiviteits-apps van derden die door gebruikers in uw organisatie worden geïnstalleerd, vragen om toestemming voor het krijgen van toegang tot gebruikersinformatie en -gegevens, en het namens de gebruiker aanmelden bij andere cloud-apps, zoals Office 365.  Wanneer gebruikers deze apps installeren, klikken ze meestal op Accepteren zonder de details te lezen, zoals welke machtigingen ze de app verlenen.  Daar komt nog bij dat de IT-afdeling mogelijk te weinig inzicht heeft in de beveiligingsrisico's van een app, zodat ze geen goede afweging kunnen maken tussen die risico's en de productiviteitsvoordelen. Omdat het accepteren van app-machtigingen een mogelijk beveiligingsrisico inhoudt voor uw organisatie, is het belangrijk om de app-machtigingen die uw gebruikers verlenen te kunnen bewaken, zodat u de noodzakelijke zichtbaarheid en controle hebt om uw gebruikers en toepassingen te beschermen. Met App-machtigingen van Cloud App Security kunt u zien welke door de gebruikers geïnstalleerde toepassingen toegang hebben tot gegevens van Office 365, welke machtigingen de apps hebben en welke gebruikers de apps hebben gemachtigd voor toegang tot hun Office 365-account. Met app-machtigingen kunt u beslissen welke apps voor uw gebruikers zijn toegestaan en welke u wilt verbieden.
 
@@ -113,8 +110,3 @@ De filters worden automatisch toegepast en de lijst met apps wordt bijgewerkt.
 [Premier-klanten kunnen Cloud App Security ook rechtstreeks vanuit Premier Portal kiezen.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Nov16_HO5-->
-
-

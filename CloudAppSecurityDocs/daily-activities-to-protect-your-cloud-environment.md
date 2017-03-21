@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: a835fa24-15c5-4bbb-a25a-688444040f1f
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 9565d8a51e4c06963861d9dfaef9595944bda1ff
-ms.openlocfilehash: f4cf027220a7f4329a72d662f6ccf4d9ab02ede4
-
-
+ms.openlocfilehash: 28068d41d44aa0b2f7a5e5950546a5e185d77eba
+ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+translationtype: HT
 ---
-
 # <a name="daily-activities-to-protect-your-cloud-environment"></a>Dagelijkse activiteiten ter bescherming van uw cloudomgeving
 Als u Cloud App Security hebt opgestart, moet u de gegevensstromen configureren, de apps goedkeuren die personen mogen gebruiken en beleidsregels instellen om uw cloudomgeving te bewaken. Vervolgens kunt u Cloud App Security gebruiken om uw cloud te beveiligen en de risico's te beheren.  
 
@@ -47,7 +44,7 @@ Het is een goed idee alle waarschuwingen te bekijken en ze als hulpmiddel te geb
 
      Dit gedeelte van het dashboard biedt volledige zichtbaarheid van alle verdachte activiteiten of schendingen van de ingestelde beleidsregels. Vervolgens kunt u hiermee de beveiliging verbeteren die u voor uw cloudomgeving hebt gedefinieerd.  
 
-     ![Waarschuwingen](./media/alerts.png "alerts")  
+     ![Waarschuwingen](./media/alerts.png "waarschuwingen")  
 
 2.   Bij elke waarschuwing dient u de aard van de schending te onderzoeken en de vereiste actie te bepalen.  
 
@@ -109,11 +106,11 @@ Ga, nadat u uw openstaande waarschuwingen hebt bekeken, naar het Beleidscentrum 
 
      Als uw beleid is ingesteld op het vinden van nalevingsproblemen en iemand slaat creditcardnummers op in bestanden in OneDrive, dan hebt u een overeenkomst met het beleid.  
 
-     ![PCI-overeenkomsten](./media/pci-matches.png "pci matches")  
+     ![PCI-overeenkomsten](./media/pci-matches.png "PCI-overeenkomsten")  
 
 -   Selecteer de overeenkomst om de bestanden te zien die het beleid schenden.  
 
-     ![PCI-inhoudsovereenkomsten](./media/pci-content-matches.png "pci content matches")  
+     ![PCI-inhoudsovereenkomsten](./media/pci-content-matches.png "PCI-inhoudsovereenkomsten")  
 
      U kunt het bestand zelf selecteren voor informatie over de bestanden.  
 
@@ -121,15 +118,9 @@ Ga, nadat u uw openstaande waarschuwingen hebt bekeken, naar het Beleidscentrum 
 
      U kunt op **Overeenkomsten** klikken om de creditcardnummers zelf te zien.  
 
-     ![Inhoudsovereenkomsten creditcardnummers](./media/content-matches-ccn.png "content matches ccn")  
+     ![Inhoudsovereenkomsten creditcardnummers](./media/content-matches-ccn.png "Inhoudsovereenkomsten creditcardnummers")  
 
 ## <a name="next-steps"></a>Volgende stappen  
 Zie [Onderzoeken](investigate.md) voor meer informatie over het onderzoeken van waarschuwingen.  
 Ga naar de [ondersteuningspagina van Cloud App Security voor technische ondersteuning.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 Premier-klanten kunnen Cloud App Security ook rechtstreeks vanuit [Premier Portal](https://premier.microsoft.com/) kiezen.  
-
-
-
-<!--HONumber=Nov16_HO5-->
-
-

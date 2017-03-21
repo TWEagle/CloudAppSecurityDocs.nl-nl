@@ -1,11 +1,11 @@
 ---
-title: Cloud-apps beheren met beleidsregels | Microsoft Docs
+title: Verwijzing naar beleidssjabloon in Cloud App Security | Microsoft Docs
 description: In dit onderwerp vindt u informatie over hoe beleidsregels worden gebruikt en ingesteld om het gebruik van cloud-apps te beheren.
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/8/2017
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,9 @@ ms.technology:
 ms.assetid: a6658937-57a2-484a-85cb-5a4cdbeeb002
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 98b16c96c31039248bdfbe57f980b3ae6a26a7de
-ms.openlocfilehash: 4d09fa2aa44634e9389baeef431e897c32f3a912
-
-
+ms.openlocfilehash: a8565105b128f4109ceab7a93714cadf96defa4d
+ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+translationtype: HT
 ---
 # <a name="policy-templates"></a>Beleidssjablonen
 
@@ -64,8 +62,3 @@ Hier volgt een lijst met alle beleidssjablonen die zijn opgenomen in Cloud App S
 [Ga naar de ondersteuningspagina van Cloud App Security voor technische ondersteuning.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Premier-klanten kunnen Cloud App Security ook rechtstreeks vanuit Premier Portal kiezen.](https://premier.microsoft.com/)  
   
-
-
-<!--HONumber=Jan17_HO2-->
-
-

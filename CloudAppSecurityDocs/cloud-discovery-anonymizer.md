@@ -1,11 +1,11 @@
 ---
-title: Cloud Discovery-gegevens anoniem maken | Microsoft Docs
+title: Privacy van de gebruiker in Cloud App Security beveiligen door gegevens anoniem te maken | Microsoft Docs
 description: Dit artikel bevat informatie over het anoniem maken van de gebruikersnamen in uw Cloud Discovery-gegevens.
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/27/2016
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,14 +13,10 @@ ms.technology:
 ms.assetid: eb250ede-fede-4699-a08b-b8ea4b232f07
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 99ad61811b68b47ac62b4bac83b611e535d4a6be
-ms.openlocfilehash: 049494e45caf670f753f6b5fbfbbf117462b7156
-
-
+ms.openlocfilehash: 5e3b10cc8fa00deb296076063a6b5f6cde76999e
+ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+translationtype: HT
 ---
-
-
 ## <a name="cloud-discovery-data-anonymization"></a>Cloud Discovery-gegevens anoniem maken
 
 U kunt door Cloud Discovery-gegevens anoniem te maken de privacy van gebruikers beveiligen. Nadat het gegevenslogboek naar de Cloud App Security-portal is geüpload, wordt het logboek opgeschoond en wordt alle informatie over gebruikersnamen vervangen door versleutelde gebruikersnamen. Op deze manier blijven alle cloudactiviteiten anoniem. Beheerders kunnen zo nodig voor een specifiek beveiligingsonderzoek (bijvoorbeeld bij schending van de beveiliging of verdachte gebruikersactiviteiten) de echte gebruikersnaam herleiden. Als een beheerder reden heeft een specifieke gebruiker te verdenken, is het ook mogelijk de versleutelde gebruikersnaam van een bekende gebruikersnaam op te zoeken en vervolgens het onderzoek uit te voeren met behulp van de versleutelde gebruikersnaam. Elke omzetting van een gebruikersnaam wordt gecontroleerd in het **governance-logboek** van de portal.
@@ -77,8 +73,3 @@ Hoe het anoniem maken van gegevens werkt:
     
       
   
-
-
-<!--HONumber=Dec16_HO4-->
-
-
