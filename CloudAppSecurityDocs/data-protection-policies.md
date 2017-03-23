@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/12/2017
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: ac53fbd6-4d31-4bce-b2bc-9dc65ad83b3e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: fdaacd43a21ec1cd8d0bf8fdee08e4918af47e68
-ms.sourcegitcommit: b840b945b270e616560f565bcc6590dd68ad5ebd
+ms.openlocfilehash: 26a89346868e4d8a5df450d30b69826b4791c1f8
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
 translationtype: HT
 ---
 # <a name="file-policies"></a>Beleidsregels voor bestanden  
@@ -65,7 +65,7 @@ Voer de volgende procedure uit om een nieuw bestandsbeleid te maken:
   
 4.  Binnen **Type risico** koppelt u het beleid aan het meest geschikte type risico. Dit veld is alleen informatief en hiermee kunt u later zoeken naar specifieke beleidsregels en waarschuwingen, op basis van het type risico.  Het risico is mogelijk al vooraf geselecteerd volgens de categorie die u hebt gekozen om het beleid te maken. Beleidsregels voor bestanden zijn standaard ingesteld op DLP.  
   
-5.  Om in te stellen door welke gedetecteerde apps dit beleid wordt geactiveerd **maakt u een filter voor de bestanden waarop dit beleid wordt toegepast**. Verfijn de beleidsfilters totdat u de meest nauwkeurige set bestanden hebt bereikt waarop u dit beleid wilt toepassen. Wees zo strikt mogelijk om valse positieven te voorkomen. Bijvoorbeeld, als u openbare machtigingen wilt verwijderen moet u het filter “Openbaar” toevoegen, als u een externe gebruiker wilt verwijderen gebruikt u het filter “Extern” enz.  
+5.  Om in te stellen door welke gedetecteerde apps dit beleid wordt geactiveerd **maakt u een filter voor de bestanden waarop dit beleid wordt toegepast**. Verfijn de beleidsfilters totdat u de meest nauwkeurige set bestanden hebt bereikt waarop u dit beleid wilt toepassen. Wees zo strikt mogelijk om valse positieven te voorkomen. Als u bijvoorbeeld openbare machtigingen wilt verwijderen moet u het filter **Openbaar** toevoegen, als u een externe gebruiker wilt verwijderen gebruikt u het filter Extern enzovoort.  
 > [!NOTE] 
 > Wanneer u de beleidsfilters gebruikt, zoekt **Bevat** alleen naar volledige woorden die zijn gescheiden door komma’s, punten, spaties of onderstrepingstekens. Als u bijvoorbeeld zoekt op **malware** of **virus**, wordt virus_malware_file.exe wel gevonden maar malwarevirusfile.exe niet. Als u zoekt op **malware.exe** vindt u ALLE bestanden met ‘malware’ of ‘exe’ in de bestandsnaam, maar als u zoekt op **”malware.exe”** (met aanhalingstekens) vindt u alleen bestanden die precies “malware.exe” bevatten. **Is gelijk aan** zoekt alleen naar de volledige tekenreeks. Als u bijvoorbeeld zoekt naar **malware.exe** wordt malware.exe wel gevonden maar malware.exe.txt niet.  
 6.  Voor Box, SharePoint, Dropbox en OneDrive kunt u het bestandsbeleid afdwingen voor alle bestanden in de app of in specifieke mappen. Onder **Van toepassing op** selecteert u **Geselecteerde mappen** of **Alle bestanden met uitzondering van de geselecteerde mappen**. U wordt doorgestuurd om u aan te melden bij de cloud-app en vervolgens voegt u de relevante mappen toe.  

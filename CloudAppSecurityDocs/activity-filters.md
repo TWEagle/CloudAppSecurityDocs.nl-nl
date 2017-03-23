@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/6/2016
+ms.date: 3/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 548dceaedc5bc22a5ca6da0690702b411b2987fb
-ms.sourcegitcommit: 80d9396833957429cf4fe178f336ab2e1793069e
+ms.openlocfilehash: 97ddfe457d8d287b23eaaca61981716a42037339
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
 translationtype: HT
 ---
 # <a name="activities"></a>Activiteiten
@@ -42,11 +42,11 @@ Hieronder volgt een lijst met de activiteitfilters die kunnen worden toegepast. 
   
 -   Activiteit-id - Zoek alleen naar specifieke activiteiten op basis van de id. Dit filter is zeer nuttig wanneer u verbinding maakt tussen Cloud App Security en uw SIEM (met behulp van de SIEM-agent) en u de waarschuwingen in de Cloud App Security-portal verder wilt onderzoeken.  
   
--   Activiteitobjecten - zoek naar de objecten waarvoor de activiteit werd uitgevoerd. Dit filter wordt toegepast op bestands-, map-, gebruikers- of app-objecten.
+-   Activiteitobjecten - zoek naar de objecten waarvoor de activiteit werd uitgevoerd. Dit filter wordt toegepast op bestands-, map-, gebruikers- of app-objecten. 
     - Activiteitobject-id - de id van het object (bestands-, map-, gebruikers- of app-id).
     - Bestand, map of site-URL - hiermee kunt u bestanden, mappen en URL's selecteren die beginnen met een bepaalde tekenreeks.
     - Doelobject (bestand/map) - hiermee kunt u een specifiek bestand of specifieke map selecteren. 
-    - Item - Hiermee kunt u zoeken op de naam of id van een activiteitsobject (bijvoorbeeld: gebruikersnamen, bestanden, parameters, sites). 
+    - Item - Hiermee kunt u zoeken op de naam of id van een activiteitsobject (bijvoorbeeld: gebruikersnamen, bestanden, parameters, sites). Voor het filter **Items van activiteitsobjecten** kunt u selecteren of u wilt filteren op items die het specifieke item **bevatten**, die er **gelijk** aan zijn of die ermee **beginnen**.
     
 -   Activiteitstype - zoek naar de app-activiteit.
 
@@ -113,7 +113,7 @@ Hieronder volgt een lijst met de activiteitfilters die kunnen worden toegepast. 
   
 ## <a name="working-with-the-activity-drawer"></a>De activiteitslade gebruiken
 
-U kunt meer informatie bekijken over elke activiteit door te klikken op de activiteit in het Activiteitenlogboek. Daarmee opent u de activiteitslade, die de volgende acties bevat die u met het bestand kunt uitvoeren:
+U kunt meer informatie bekijken over elke activiteit door te klikken op de activiteit in het activiteitenlogboek. Daarmee opent u de activiteitslade, die de volgende acties bevat die u met het bestand kunt uitvoeren:
 
 - Overeenkomend beleid: klik op de koppeling Overeenkomend beleid om een lijst met beleidsregels te zien waarmee deze activiteit overeenkomt.
 - Onbewerkte gegevens weergeven: klik op Onbewerkte gegevens weergeven om te zien welke gegevens daadwerkelijk van de app zijn ontvangen.

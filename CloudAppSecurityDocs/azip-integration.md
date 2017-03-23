@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/13/2017
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e31fd5f40aa432fd149cef0b5923818247aed326
-ms.sourcegitcommit: 1a01ac2d5b4ff92e46e1bc4fd4318330f6ff41dd
+ms.openlocfilehash: 81ee0b71e6e66d102edf41269197d955b16fbeb4
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
 translationtype: HT
 ---
 # <a name="azure-information-protection-integration"></a>Integratie van Azure Information Protection
@@ -24,7 +24,7 @@ Met Cloud App Security kunt u bestanden onderzoeken en beleid instellen op basis
 Door Azure Information Protection te integreren met Cloud App Security kunt u gebruikmaken van de kracht van beide services en bestanden beveiligen in de cloud. U beschikt over de volgende mogelijkheden:
 - De mogelijkheid om alle geclassificeerde bestanden weer te geven op een centrale locatie.
 - De mogelijkheid om onderzoek uit te voeren op basis van classificatieniveau en blootstelling van gevoelige gegevens te kwantificeren via uw cloudtoepassingen.
-- De mogelijkheid om beleid te maken om ervoor te zorgen dat geclassificeerde bestanden juist worden verwerkt.
+- De mogelijkheid om beleid te maken om ervoor te zorgen dat geclassificeerde bestanden correct worden verwerkt
 
 > [!NOTE] 
 > Als u deze functie wilt inschakelen, moet u beschikken over een licentie voor Cloud App Security en een licentie voor Azure Information Protection Premium P1 of P2. Zodra beide licenties aanwezig zijn, synchroniseert Cloud App Security de labels van de organisatie uit de Azure Information Protection-service.
@@ -77,7 +77,7 @@ Als u wilt dat deze extern ingestelde labels worden genegeerd, gaat u in de Clou
 
 ![bestandslade](./media/azip-file-drawer.png)
 
-- U kunt klikken op het classificatielabel om meer informatie te bekijken of om de volledige lijst met classificatielabels weer te geven:
+- U kunt klikken op het classificatielabel om meer informatie weer te geven of om de volledige lijst met classificatielabels te bekijken:
  
 ![lijst met labels](./media/azip-tags-list.png)
 
@@ -86,7 +86,8 @@ Als u wilt dat deze extern ingestelde labels worden genegeerd, gaat u in de Clou
 
 ![azure information protection-labels in cloud app security](./media/azip-tags-in-cas.png)
 
-**Beleid 1: vertrouwelijke gegevens die extern worden gedeeld op Box:**
+> ![Opmerking] Wanneer Azure Identity Protection-labels voor een bestand worden uitgeschakeld, worden de uitgeschakelde labels ook als uitgeschakeld weergegeven in Cloud App Security. Verwijderde labels worden niet weergegeven.
+> **Beleid 1: vertrouwelijke gegevens die extern worden gedeeld op Box:**
 
 1.    Maak een bestandsbeleid.
 2.    Stel de naam, ernst en categorie van het beleid in.

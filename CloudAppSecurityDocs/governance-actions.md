@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/12/2017
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9797791f11e1329167252f713ecc0698572d2134
-ms.sourcegitcommit: b840b945b270e616560f565bcc6590dd68ad5ebd
+ms.openlocfilehash: 5db9f82b948f2db192b7c5ba47fb911413397271
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
 translationtype: HT
 ---
 # <a name="governing-connected-apps"></a>Verbonden apps beheren
@@ -103,10 +103,10 @@ Zie [Beleidsconflicten](control-cloud-apps-with-policies.md) voor informatie ove
 **Locatie**|**Doelobjecttype**|**Beheeractie**|**Beschrijving**|**Verwante connectors** 
 ---------|---------|---------|---------|---------
 |Accounts|Bestand|Samenwerkingen van gebruiker verwijderen|Hiermee worden alle samenwerkingen van een specifieke gebruiker verwijderd voor alle bestanden. Dit is handig voor mensen die het bedrijf verlaten.|Box, G Suite|
-|Accounts|Account|De toegang van de gebruiker herstellen|Hiermee wordt de toegang van de gebruiker hersteld.|G Suite, Box, Office|
+|Accounts|Account|De toegang van de gebruiker herstellen|Hiermee wordt de toegang van de gebruiker hersteld.|G Suite, Box, Office, Salesforce|
 |Accounts|Account|Accountinstellingen|Hiermee gaat u naar de pagina met accountinstellingen in de specifieke app (bijvoorbeeld in Salesforce).|Alle apps: voor OneDrive en SharePoint worden de instellingen geconfigureerd in Office.|
 |Accounts |Bestand|Eigendom van alle bestanden overdragen|In een account brengt u het eigendom van de bestanden van een gebruiker over naar een nieuwe persoon, die u selecteert. De vorige eigenaar wordt een editor. Nadat u het eigendom hebt overgedragen, wordt admin@gtest1.adallom.com een editor en kan deze de instellingen voor delen niet langer wijzigen. De nieuwe eigenaar ontvangt een e-mailmelding over het gewijzigde eigendom.|G Suite|
-|Accounts, activiteitenbeleid|Account|De gebruiker blokkeren|Hiermee wordt ingesteld dat de gebruiker geen toegang heeft en zich niet kan aanmelden. Als de gebruiker is aangemeld wanneer u dit instelt, wordt deze gebruiker onmiddellijk vergrendeld.|G Suite, Box, Office|
+|Accounts, activiteitenbeleid|Account|De gebruiker blokkeren|Hiermee wordt ingesteld dat de gebruiker geen toegang heeft en zich niet kan aanmelden. Als de gebruiker is aangemeld wanneer u dit instelt, wordt deze gebruiker onmiddellijk vergrendeld.|G Suite, Box, Office, Salesforce|
 |Activiteitenbeleid, accounts|Account|Het wachtwoord intrekken|Hiermee wordt het wachtwoord voor een gebruikersaccount ingetrokken. U kunt bijvoorbeeld een activiteitenbeleid instellen dat een wachtwoord intrekt na tien mislukte aanmeldingspogingen.|G Suite|
 |Activiteitenbeleid, accounts|Account|De beheerdersmachtigingen intrekken|Hiermee wordt het wachtwoord voor een beheerdersaccount ingetrokken. U kunt bijvoorbeeld een activiteitenbeleid instellen dat de beheerdersmachtigingen intrekt na tien mislukte aanmeldingspogingen.|G Suite|
 |App-dashboard > App-machtigingen|Machtigingen|Uitsluiten van apps ongedaan maken|In Google en Salesforce: de uitsluiting van apps ongedaan maken en toestaan dat gebruikers apps van derden kunnen machtigen voor Google of Salesforce. In Office 365: de machtigingen van apps van derden voor Office herstellen.|G Suite, Salesforce, Office|
@@ -140,6 +140,7 @@ Zie [Beleidsconflicten](control-cloud-apps-with-policies.md) voor informatie ove
 |Instellingen > Cloud Discovery-instellingen > Gegevensweergaven beheren|Cloud Discovery|Een aangepaste Cloud Discovery-filtergegevensweergave maken|Hiermee wordt een nieuwe gegevensweergave gemaakt voor een meer gedetailleerd overzicht van de detectieresultaten. Bijvoorbeeld een weergave met specifieke IP-bereiken.|Detectie|
 |Instellingen > Cloud Discovery-instellingen > Gegevens verwijderen|Cloud Discovery|Cloud Discovery-gegevens verwijderen|Hiermee worden alle gegevens verwijderd die worden verzameld vanuit detectiebronnen.|Detectie|
 |Instellingen > Cloud Discovery-instellingen > Logboeken handmatig uploaden/Logboeken automatisch uploaden|Cloud Discovery|Cloud Discovery-gegevens parseren|Melding dat alle logboekgegevens zijn geparseerd.|Detectie|
+
 
 
 ## <a name="see-also"></a>Zie ook  

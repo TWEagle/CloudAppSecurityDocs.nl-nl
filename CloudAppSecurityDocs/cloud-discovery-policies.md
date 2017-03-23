@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 45446111-ed1a-4699-9df5-840cc6664a6b
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f90d44fba89e06e160c0161e1cec7b7f95d3e00c
-ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+ms.openlocfilehash: 9d525cd9d4856c4c8c25323a656c686a4d9b944e
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
 translationtype: HT
 ---
 # <a name="cloud-discovery-policies"></a>Beleidsregels voor Cloud Discovery
@@ -66,11 +66,11 @@ Cloud App Security doorzoekt alle logboeken in uw Cloud Discovery-exemplaar op a
   
      De filters worden gekozen vanaf de linkerkant van de pagina van de filterpop-up. Het is mogelijk te filteren op servicenaam, domein, risicofactor, risicoscore, en categorie. Aan de rechterkant van de pagina worden de resultaten voor de gekozen filters uit de huidige servicecatalogus weergegeven. Sla de filters op nadat u ze hebt geselecteerd en controleer of de juiste labels worden weergegeven in de filters.  
   
-5.  Kies onder **Toepassen voor **of dit van toepassing is voor **alle gegevensweergaven** of **specifieke gegevensweergaven** en of dit van toepassing is op **gebruikers**, **IP-adressen** of beide.  
+5.  Kies onder **Toepassen voor**of dit van toepassing is voor **alle gegevensweergaven** of **specifieke gegevensweergaven** en of dit van toepassing is op **gebruikers**, **IP-adressen** of beide.  
   
 6.  Selecteer de datums gedurende welke de afwijkende activiteit heeft plaatsgevonden voor het activeren van de waarschuwing onder **Waarschuwingen alleen genereren voor verdachte activiteiten na datum.**  
   
-7.  Onder **Waarschuwingen** kunt u de gevoeligheid voor afwijkingsdetectie instellen van laag tot hoog om de waarschuwingsfrequentie te configureren.  
+7.  Onder **Waarschuwingen** kunt u de gevoeligheid voor anomaliedetectie instellen van laag tot hoog om de waarschuwingsfrequentie te configureren.  
 Stel een **Dagelijkse waarschuwingslimiet** in en selecteer of de waarschuwing wordt verzonden als e-mail, als SMS-bericht of beide en geef indien nodig gegevens op. U kunt klikken op Standaardwaarden waarschuwingsinstellingen opslaan om het mogelijk te maken voor toekomstig beleid om deze waarschuwingsinstellingen op te slaan als de standaardwaarden, waaronder telefoonnummer en e-mailadressen. U kunt ook klikken op **Standaardinstellingen organisatie gebruiken** deze instellingen in te stellen op basis van de standaard voor uw organisatie.  
   
 9. Klik op **Maken**.  

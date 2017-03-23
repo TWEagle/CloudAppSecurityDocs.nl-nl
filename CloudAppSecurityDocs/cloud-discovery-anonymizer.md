@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: eb250ede-fede-4699-a08b-b8ea4b232f07
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5e3b10cc8fa00deb296076063a6b5f6cde76999e
-ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+ms.openlocfilehash: 72228b607c3006101f9f427b38de63b090cdb9a0
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
 translationtype: HT
 ---
 ## <a name="cloud-discovery-data-anonymization"></a>Cloud Discovery-gegevens anoniem maken
@@ -22,16 +22,16 @@ translationtype: HT
 U kunt door Cloud Discovery-gegevens anoniem te maken de privacy van gebruikers beveiligen. Nadat het gegevenslogboek naar de Cloud App Security-portal is geüpload, wordt het logboek opgeschoond en wordt alle informatie over gebruikersnamen vervangen door versleutelde gebruikersnamen. Op deze manier blijven alle cloudactiviteiten anoniem. Beheerders kunnen zo nodig voor een specifiek beveiligingsonderzoek (bijvoorbeeld bij schending van de beveiliging of verdachte gebruikersactiviteiten) de echte gebruikersnaam herleiden. Als een beheerder reden heeft een specifieke gebruiker te verdenken, is het ook mogelijk de versleutelde gebruikersnaam van een bekende gebruikersnaam op te zoeken en vervolgens het onderzoek uit te voeren met behulp van de versleutelde gebruikersnaam. Elke omzetting van een gebruikersnaam wordt gecontroleerd in het **governance-logboek** van de portal.
 
 Belangrijke punten:
--   Er wordt geen persoonlijke informatie opgeslagen of weergegeven. Alleen versleutelde informatie.
--   Persoonlijke gegevens worden versleuteld met AES-128 met een speciale sleutel per tenant.
--   Het omzetten van gebruikersnamen wordt ad-hoc uitgevoerd, per gebruikersnaam door een bepaalde versleutelde gebruikersnaam te decoderen.
+-    Er wordt geen persoonlijke informatie opgeslagen of weergegeven. Alleen versleutelde informatie.
+-    Persoonlijke gegevens worden versleuteld met AES-128 met een speciale sleutel per tenant.
+-    Het omzetten van gebruikersnamen wordt ad-hoc uitgevoerd, per gebruikersnaam door een bepaalde versleutelde gebruikersnaam te decoderen.
 
 
 Hoe het anoniem maken van gegevens werkt:
 
-1.  Er zijn drie manieren om gegevens anoniem te maken: 
+1.    Er zijn drie manieren om gegevens anoniem te maken: 
     
-    - U kunt instellen dat de gegevens uit een specifiek logboekbestand anoniem worden gemaakt door [een nieuwe momentopnamerapport te maken](create-snapshot-cloud-discovery-reports.md) en **Anonymize private information** (Persoonlijke informatie anoniem maken) te selecteren.
+    - U kunt instellen dat de gegevens uit een specifiek logboekbestand anoniem worden gemaakt door [een nieuw momentopnamerapport te maken](create-snapshot-cloud-discovery-reports.md) en **Persoonlijke informatie anoniem maken** te selecteren.
  ![Gegevens van momentopnamen anoniem maken](./media/anonymize-log.png)
 
     - U kunt instellen dat de gegevens uit een [geautomatiseerde upload voor een nieuwe gegevensbron](configure-automatic-log-upload-for-continuous-reports.md) anoniem worden gemaakt door **Anonymize private information** (Persoonlijke informatie anoniem maken) te selecteren wanneer u de nieuwe gegevensbron toevoegt.  
@@ -42,23 +42,26 @@ Hoe het anoniem maken van gegevens werkt:
         1. Selecteer **Instellingen voor Cloud Discovery** onder het tandwiel Instellingen.
      
         2. Op het tabblad Anonymization (Anoniem maken) selecteert u **Anonymize private information by default in new reports and data sources** (Persoonlijke informatie standaard anoniem maken in nieuwe rapporten en gegevensbronnen) om gebruikersnamen standaard anoniem te maken.
-  ![Anoniem maken](./media/anonymizer.png)
+
+        3. Onder Versleutelingssleutel selecteert u of u **de speciale sleutel voor uw portal** of **een aangepaste sleutel** wilt gebruiken. Als u een **aangepaste sleutel** wilt gebruiken, voert u een 16-bytes UTF8-versleutelingssleutel in.
+        4. Klik op **Opslaan**.
+  ![Anoniem maken](./media/anonymizer1.png)
   
 
-2.  Als u anoniem maken hebt geselecteerd, wordt met Cloud App Security het logboek van het gegevensverkeer geparseerd en worden specifieke gegevenskenmerken geëxtraheerd.
-3.  Cloud App Security vervangt de gebruikersnaam door een versleutelde gebruikersnaam.
-4.  Vervolgens worden de cloudgebruiksgegevens geanalyseerd en worden Cloud Discovery-rapporten gegenereerd op basis van de anonieme gegevens.
+2.    Als u anoniem maken hebt geselecteerd, wordt met Cloud App Security het logboek van het gegevensverkeer geparseerd en worden specifieke gegevenskenmerken geëxtraheerd.
+3.    Cloud App Security vervangt de gebruikersnaam door een versleutelde gebruikersnaam.
+4.    Vervolgens worden de cloudgebruiksgegevens geanalyseerd en worden Cloud Discovery-rapporten gegenereerd op basis van de anonieme gegevens.
  ![Dashboard Anonymize Cloud Discovery (Cloud Discovery anoniem maken)](./media/anonymize-dashboard.png)
  
 
-5.  U kunt voor specifiek onderzoek, zoals het onderzoek van een waarschuwing over afwijkend gebruik, de specifieke gebruikersnaam in de portal omzetten en hiervoor een zakelijke reden opgeven. Deze pagina kan ook worden gebruikt om de versleutelde gebruikersnaam van een bekende gebruikersnaam op te zoeken. 
+5.    U kunt voor specifiek onderzoek, zoals het onderzoek van een waarschuwing over afwijkend gebruik, de specifieke gebruikersnaam in de portal omzetten en hiervoor een zakelijke reden opgeven. Deze pagina kan ook worden gebruikt om de versleutelde gebruikersnaam van een bekende gebruikersnaam op te zoeken. 
 
     1. Selecteer **Instellingen voor Cloud Discovery** onder het tandwiel Instellingen.
     2. Voer op het tabblad **Anonymization** (Anoniem maken) onder **Anonymize and resolve usernames** (Anoniem maken en gebruikersnamen omzetten) een reden in waarom u de omzetting uitvoert.
     3. Selecteer onder **Enter username to resolve** (Om te zetten gebruikersnaam invoeren) de optie **From anonymized** (Van anoniem gemaakt) en voer de anoniem gemaakte gebruikersnaam in of selecteer **To anonymized** (Naar anoniem gemaakt) en voer de oorspronkelijke gebruikersnaam in die u wilt omzetten. Klik op **oplossen**. 
 ![Anoniem maken](./media/anonymizer.png)
 
-6.  De actie wordt gecontroleerd in het **governance-logboek** van de portal. 
+6.    De actie wordt gecontroleerd in het **governance-logboek** van de portal. 
 ![Anoniem maken](./media/anonymize-gov-log.png)
 
 

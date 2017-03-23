@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/12/2017
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: a9b00c2a-2f71-499e-8f57-67e560daedc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c4bd7c44ec5ced6da82de3c7bf8f3aa1fd12a517
-ms.sourcegitcommit: b840b945b270e616560f565bcc6590dd68ad5ebd
+ms.openlocfilehash: 8e552aea95318288d329597ec2a0749535e06a52
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
 translationtype: HT
 ---
 # <a name="investigate"></a>Onderzoeken
@@ -79,6 +79,8 @@ Een belangrijke stap voor het krijgen van inzicht in uw cloud, is het labelen va
     -   Is er iemand ontslagen, maar heeft deze medewerker nog steeds toegang tot een app en kan hij of zij die toegang gebruiken om gegevens te stelen?  
 
     -   Wilt u de machtigingen van een gebruiker voor een specifieke app intrekken of vereisen dat een specifieke gebruiker meervoudige verificatie uitvoert?  
+    
+    -   U kunt ook inzoomen op het gebruikersaccount op het tandwiel aan het einde van de rij van het gebruikersaccount te klikken. Selecteer dan een actie, zoals **Toegang tijdelijk intrekken** of **Samenwerkingen van gebruiker verwijderen**. Als de gebruiker is geïmporteerd uit Azure Active Directory kunt u ook klikken op **Azure AD-accountinstellingen** voor eenvoudige toegang tot geavanceerde gebruikersbeheerfuncties, bijvoorbeeld voor groepsbeheer, MFA, details over de aanmeldingen van de gebruiker en het blokkeren van aanmeldingen.
 
 4.  Ga naar **Onderzoeken** en selecteer vervolgens een app. Het app-dashboard wordt geopend en biedt u informatie en inzichten. U kunt de tabbladen aan de bovenzijde gebruiken om het volgende te controleren:  
 

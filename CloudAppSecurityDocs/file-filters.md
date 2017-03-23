@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/12/2017
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 81330b5333050bea2352f0907ac5c83d71af14bf
-ms.sourcegitcommit: b840b945b270e616560f565bcc6590dd68ad5ebd
+ms.openlocfilehash: 1a44be5715d0a9af18afcafaeec3c6180d4e9283
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
 translationtype: HT
 ---
 # <a name="files"></a>Bestanden
@@ -111,10 +111,10 @@ U kunt ook instellen dat het beleid wordt uitgevoerd op specifieke bestanden doo
   
 ## <a name="working-with-the-file-drawer"></a>Werken met de bestandslade
 
-U kunt meer informatie bekijken over elk bestand door te klikken op het bestand in het Bestandslogboek. Daarmee opent u de bestandslade, die de volgende acties bevat die u met het bestand kunt uitvoeren:
+U kunt meer informatie bekijken over elk bestand door te klikken op het bestand in het bestandslogboek. Daarmee opent u de bestandslade, die de volgende acties bevat die u met het bestand kunt uitvoeren:
 
 - URL: hiermee gaat u naar de bestandslocatie.
-- Bestands-id’s: als u klikt op Bestands-id’s, wordt er een pop-up geopend met onbewerkte details over het bestand, waaronder de bestands-id en versleutelingssleutels.
+- Bestands-id's: als u klikt op Bestands-id's, wordt er een pop-up geopend met onbewerkte details over het bestand, waaronder de bestands-id en versleutelingssleutels.
 - Eigenaar: klik op de eigenaar om de gebruikerspagina van de eigenaar van dit bestand weer te geven.
 - Overeenkomend beleid: klik op de koppeling Overeenkomend beleid om een lijst met beleidsregels te zien waarmee dit bestand overeenkomt.
 - Classificatielabel: klik op het classificatielabel om de lijst met Azure Information Protection-classificatielabels te zien die in het bestand zijn gevonden. U kunt vervolgens filteren op alle bestanden die overeenkomen met dit label.    

@@ -1,11 +1,11 @@
 ---
-title: Releaseopmerkingen en versies van Cloud App Security | Microsoft Docs
+title: Opmerkingen bij de release en versies van Cloud App Security | Microsoft Docs
 description: Dit onderwerp wordt regelmatig bijgewerkt, zodat u weet wat er nieuw is in de meest recente versie van Cloud App Security.
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/5/2017
+ms.date: 3/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,12 +13,35 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 23870c7ba734acc3095f1dcd097f19954fee5e79
-ms.sourcegitcommit: 064afc7148de42c0e81763f96ec13fb2c92f02a9
+ms.openlocfilehash: e72aa915989592fda28f489d2dab0ddbe988dc31
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
 translationtype: HT
 ---
 # <a name="release-notes"></a>Opmerkingen bij de release
 
+## <a name="cloud-app-security-release-93"></a>Cloud App Security-release 93
+Uitgebracht: 20 maart 2017
+
+**Nieuwe functies**
+-    Met Cloud App Security Anonymization kunt u nu een aangepaste versleutelingssleutel configureren. Zie [Cloud Discovery anoniem maken](cloud-discovery-anonymizer.md) voor meer informatie.
+-    Voor meer controle over gebruikers- en accountbeheer hebt u nu rechtstreeks toegang tot de Azure AD-accountinstellingen voor elke gebruiker en kunt u accounts openen via de pagina **Account** door op het tandwiel naast een gebruiker te klikken. Hiermee krijgt u eenvoudiger toegang tot geavanceerde gebruikersbeheerfuncties, voor bijvoorbeeld groepsbeheer, configuratie van MFA, details over aanmeldingen van de gebruiker en het blokkeren van aanmelding. 
+-    U kunt nu via de Cloud App Security-API een blokkeerscript exporteren voor niet-goedgekeurde apps. U kunt meer lezen over API's in de Cloud App Security-portal door op het vraagteken te klikken in de menubalk. Klik daarna op **API-documentatie**.
+-    De Cloud App Security-app-connector voor ServiceNow is uitgebreid en biedt nu ondersteuning voor OAuth-tokens (reeds geïntroduceerd in Genève, Helsinki en Istanboel). Dit biedt een betere API-verbinding met ServiceNow, die niet afhankelijk is van de implementerende gebruiker. Zie [Verbinding maken tussen ServiceNow en Microsoft Cloud App Security](connect-servicenow-to-microsoft-cloud-app-security.md) voor meer informatie. Bestaande klanten kunnen hun instellingen bijwerken op de pagina van de ServiceNow-app-connector.
+-    Als u aanvullende DLP-scanners van derden hebt geconfigureerd, wordt bij de DLP-scanstatus nu de status van elke connector afzonderlijk weergegeven. Dit is om meer inzicht te bieden.
+-    Cloud App Security biedt nu ondersteuning voor de Microsoft Teams-activiteiten die worden ondersteund in het Office 365-auditlogboek. Deze functie wordt geleidelijk geïntroduceerd.
+-    Voor Exchange Online-imitatiegebeurtenissen kunt u nu filteren op het gebruikte machtigingsniveau: gedelegeerd, beheerder of gedelegeerde beheerder. U kunt in het **activiteitenlogboek** naar gebeurtenissen zoeken door het imitatieniveau weer te geven waarin u bent geïnteresseerd. Zoek daarvoor naar **Activiteitenobjecten** > **Item**.
+-    In de app-lade op het tabblad App-machtigingen ziet u nu de **uitgever** van elke app. U kunt Uitgever ook als filter gebruiken voor het zoeken naar aanvullende apps van diezelfde uitgever.
+-    Riskante IP-adressen worden nu als afzonderlijke risicofactoren weergegeven in plaats van samengevoegd onder de algemene risicofactor **Locatie**. 
+-    Wanneer Azure Identity Protection-labels voor een bestand worden uitgeschakeld, worden de uitgeschakelde labels ook als uitgeschakeld weergegeven in Cloud App Security. Verwijderde labels worden niet weergegeven.
+ 
+**Aanvullende Salesforce-ondersteuning:**
+-    U kunt nu via Cloud App Security de toegang tot Salesforce van gebruikers intrekken en weer toekennen. Dit kunt u doen via het tabblad **Accounts** van de Salesforce-connector. Klik daarvoor op het tandwiel aan het einde van de rij van een specifieke gebruiker. Selecteer **Toegang tijdelijk intrekken** of **Toegang herstellen**. U kunt deze opties ook als beheeractie gebruiken in het beleid. Alle activiteiten voor het intrekken of herstellen van de toegang in Cloud App Security worden geregistreerd in het [beheerlogboek](governance-actions.md). 
+-    Beter inzicht in het delen van inhoud via Salesforce: u kunt nu zien welke bestanden zijn gedeeld en met wie (inclusief openbaar gedeelde bestanden, bestanden die met groepen zijn gedeeld en bestanden die met het volledige Salesforce-domein zijn gedeeld). Het verbeterde inzicht wordt met terugwerkende kracht geïmplementeerd voor nieuwe en momenteel verbonden Salesforce-apps. Het kan enige tijd duren voordat het verbeterde inzicht voor het eerst wordt aangeboden tijdens een update.
+-    De dekking voor de volgende Salesforce-gebeurtenissen is verbeterd. Ze zijn verwijderd uit de activiteit **Gebruikers beheren**: 
+    - Machtigingen bewerken
+    - Gebruiker maken
+    - Rol wijzigen
+    - Wachtwoord opnieuw instellen
 
 ## <a name="cloud-app-security-release-90-91-92"></a>Cloud App Security-release 90, 91, 92
 Uitgebracht februari 2017
@@ -54,8 +77,8 @@ Cloud App Security is nu officieel gecertificeerd met Microsoft Naleving voor mo
 Uitgebracht op 22 januari 2017
 
 **Nieuwe functies**
--    We maken een begin met het implementeren van de mogelijkheid om DLP-gebeurtenissen uit het beveiligings- en compliancecentrum van Office 365 weer te geven in Cloud App Security. Als u DLP-beleid hebt geconfigureerd in het beveiligings- en compliancecentrum van Office 365, worden gedetecteerde beleidsovereenkomsten weergegeven in het activiteitenlogboek van Cloud App Security. De informatie in het activiteitenlogboek omvat het bestand of het e-mailbericht dat de overeenkomst heeft geactiveerd en het overeenkomende beleid of de waarschuwing. Met de activiteit "Security event" (Beveiligingsgebeurtenis) kunt u overeenkomsten met DLP-beleid in Office 365 weergeven in het activiteitenlogboek van Cloud App Security. Met deze functie kunt u het volgende doen:
-    -    Alle DLP-resultaten weergeven die afkomstig zijn van de DLP-engine van Office&365;.
+-    We maken een begin met het implementeren van de mogelijkheid om DLP-gebeurtenissen uit het beveiligings- en compliancecentrum van Office 365 weer te geven in Cloud App Security. Als u DLP-beleid hebt geconfigureerd in het beveiligings- en compliancecentrum van Office 365, worden gedetecteerde beleidsovereenkomsten weergegeven in het activiteitenlogboek van Cloud App Security. De informatie in het activiteitenlogboek omvat het bestand of het e-mailbericht dat de overeenkomst heeft geactiveerd en het overeenkomende beleid of de waarschuwing. Met de activiteit **Beveiligingsgebeurtenis** kunt u overeenkomsten met DLP-beleid in Office 365 weergeven in het activiteitenlogboek van Cloud App Security. Met deze functie kunt u het volgende doen:
+    -    Alle DLP-resultaten weergeven die afkomstig zijn van de DLP-engine van Office 365.
     -    Waarschuwen als DLP-beleid in Office 365 overeenkomt met een bepaald bestand, een bepaalde SharePoint-site of een bepaald beleid.
     -    DLP-overeenkomsten met een bredere context onderzoeken, bijvoorbeeld externe gebruikers die een bestand hebben geopend of gedownload dat overeenkomst met een DLP-beleid heeft geactiveerd.
  
