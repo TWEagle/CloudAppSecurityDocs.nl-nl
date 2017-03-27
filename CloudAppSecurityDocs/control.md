@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 3/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,12 +13,37 @@ ms.technology:
 ms.assetid: bc11bbfe-ec6c-458c-8302-8112c383199d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f72c13059ebcb320bed24430b06061b1cbb884cd
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+ms.openlocfilehash: b22b51e5d41f525240c0430c31760177bf62ca1f
+ms.sourcegitcommit: cda4a69f9ad9c6eb66fbdb98610f54d79585b84b
 translationtype: HT
 ---
 # <a name="control"></a>Beheer
 U kunt beheeracties toepassen op gebruikersbestanden in uw cloudomgeving. Nadat u grondig onderzoek hebt gedaan en alles weet over uw cloud, kunt u beheeracties gebruiken om uw organisatie te beschermen.  
+
+## <a name="use-policies-to-assess-risk"></a>Beleid gebruiken voor het beoordelen van risico  
+Ga, nadat u uw openstaande waarschuwingen hebt bekeken, naar het Beleidscentrum om beleidsschendingen te bekijken waarvoor geen waarschuwing is geactiveerd.  
+
+-   Klik in het Cloud App Security-dashboard op **Controle** en vervolgens op **Beleidsregels**.  
+
+-   Selecteer een specifiek beleid om de lijst **Nu in overtreding** te zien met overeenkomsten met het beleid waarvoor geen waarschuwing is geactiveerd.  
+
+-   Klik één voor één op de schendingen en bepaal bij elke schending wat u moet doen. Zie de onderstaande afbeeldingen voor meer informatie over beheeracties.  
+
+     Als uw beleid is ingesteld op het vinden van nalevingsproblemen en iemand slaat creditcardnummers op in bestanden in OneDrive, dan hebt u een overeenkomst met het beleid.  
+
+     ![PCI-overeenkomsten](./media/pci-matches.png "PCI-overeenkomsten")  
+
+-   Selecteer de overeenkomst om de bestanden te zien die het beleid schenden.  
+
+     ![PCI-inhoudsovereenkomsten](./media/pci-content-matches.png "PCI-inhoudsovereenkomsten")  
+
+     U kunt het bestand zelf selecteren voor informatie over de bestanden.  
+
+     U kunt op **Deelnemers** klikken om te zien wie toegang tot dit bestand heeft.  
+
+     U kunt op **Overeenkomsten** klikken om de creditcardnummers zelf te zien.  
+
+     ![Inhoudsovereenkomsten creditcardnummers](./media/content-matches-ccn.png "Inhoudsovereenkomsten creditcardnummers")  
 
 ## <a name="apply-governance-actions"></a>Beheeracties toepassen  
 U kunt beheeracties toepassen vanuit beleidsregels, vanuit waarschuwingen en vanuit het **bestand**slogboek.  
