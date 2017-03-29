@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/20/2017
+ms.date: 3/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e72aa915989592fda28f489d2dab0ddbe988dc31
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+ms.openlocfilehash: 2d9095a39f5000e88bd0ad94ba0ca9f4a780f58e
+ms.sourcegitcommit: cda4a69f9ad9c6eb66fbdb98610f54d79585b84b
 translationtype: HT
 ---
 # <a name="release-notes"></a>Opmerkingen bij de release
@@ -23,6 +23,7 @@ translationtype: HT
 Uitgebracht: 20 maart 2017
 
 **Nieuwe functies**
+-   U kunt nu beleid toepassen om geïmporteerde gebruikersgroepen op te nemen of uit te sluiten. 
 -    Met Cloud App Security Anonymization kunt u nu een aangepaste versleutelingssleutel configureren. Zie [Cloud Discovery anoniem maken](cloud-discovery-anonymizer.md) voor meer informatie.
 -    Voor meer controle over gebruikers- en accountbeheer hebt u nu rechtstreeks toegang tot de Azure AD-accountinstellingen voor elke gebruiker en kunt u accounts openen via de pagina **Account** door op het tandwiel naast een gebruiker te klikken. Hiermee krijgt u eenvoudiger toegang tot geavanceerde gebruikersbeheerfuncties, voor bijvoorbeeld groepsbeheer, configuratie van MFA, details over aanmeldingen van de gebruiker en het blokkeren van aanmelding. 
 -    U kunt nu via de Cloud App Security-API een blokkeerscript exporteren voor niet-goedgekeurde apps. U kunt meer lezen over API's in de Cloud App Security-portal door op het vraagteken te klikken in de menubalk. Klik daarna op **API-documentatie**.
@@ -32,7 +33,7 @@ Uitgebracht: 20 maart 2017
 -    Voor Exchange Online-imitatiegebeurtenissen kunt u nu filteren op het gebruikte machtigingsniveau: gedelegeerd, beheerder of gedelegeerde beheerder. U kunt in het **activiteitenlogboek** naar gebeurtenissen zoeken door het imitatieniveau weer te geven waarin u bent geïnteresseerd. Zoek daarvoor naar **Activiteitenobjecten** > **Item**.
 -    In de app-lade op het tabblad App-machtigingen ziet u nu de **uitgever** van elke app. U kunt Uitgever ook als filter gebruiken voor het zoeken naar aanvullende apps van diezelfde uitgever.
 -    Riskante IP-adressen worden nu als afzonderlijke risicofactoren weergegeven in plaats van samengevoegd onder de algemene risicofactor **Locatie**. 
--    Wanneer Azure Identity Protection-labels voor een bestand worden uitgeschakeld, worden de uitgeschakelde labels ook als uitgeschakeld weergegeven in Cloud App Security. Verwijderde labels worden niet weergegeven.
+-    Wanneer Azure Information Protection-labels voor een bestand worden uitgeschakeld, worden de uitgeschakelde labels ook in Cloud App Security als uitgeschakeld weergegeven. Verwijderde labels worden niet weergegeven.
  
 **Aanvullende Salesforce-ondersteuning:**
 -    U kunt nu via Cloud App Security de toegang tot Salesforce van gebruikers intrekken en weer toekennen. Dit kunt u doen via het tabblad **Accounts** van de Salesforce-connector. Klik daarvoor op het tandwiel aan het einde van de rij van een specifieke gebruiker. Selecteer **Toegang tijdelijk intrekken** of **Toegang herstellen**. U kunt deze opties ook als beheeractie gebruiken in het beleid. Alle activiteiten voor het intrekken of herstellen van de toegang in Cloud App Security worden geregistreerd in het [beheerlogboek](governance-actions.md). 
