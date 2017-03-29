@@ -35,7 +35,7 @@
 ##### [Beleid voor anomaliedetectie voor Cloud Discovery](cloud-discovery-anomaly-detection-policy.md)
 #### [Activiteitbeleid](user-activity-policies.md)
 #### [Beleid voor anomaliedetectie](anomaly-detection-policy.md)
-##### [Beleidsregels voor bestanden](data-protection-policies.md)
+#### [Beleidsregels voor bestanden](data-protection-policies.md)
 ##### [Inhoudsinspectie](content-inspection.md)
 ##### [Werken met de RegEx-engine](working-with-the-regex-engine.md)
 #### [Verwijzing naar beleidssjabloon](policy-template-reference.md)
