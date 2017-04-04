@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 4/2/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4fc7ea83542a8fee5deb55b17337f3f9ccd3f3d0
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+ms.openlocfilehash: fceebaacf3cc2fc1df894f6d1078675ccf630264
+ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
 translationtype: HT
 ---
 # <a name="what-is-cloud-app-security"></a>Wat is Cloud App Security?
@@ -50,8 +50,8 @@ Met Cloud App Security wordt zichtbaarheid met uw cloud geïntegreerd door:
 Cloud App Security is officieel gecertificeerd met Microsoft Naleving voor modelcIausules van de EU, ISO, HIPAA, CSA STAR en meer. Ga naar [Microsoft Compliance Offerings (Aanbiedingen voor Microsoft Naleving, Engelstalig)] (https://go.microsoft.com/fwlink/?linkid=842039) en selecteer Cloud App Security voor de volledige lijst met certificaten.  
 
 Wanneer Cloud App Security inhoudsinspectie uitvoert, wordt gegevensprivacy afgedwongen. De bestandsinhoud wordt niet opgeslagen in de Cloud App Security-database; alleen de metagegevens van de bestandsrecords en eventuele schendingen die zijn gedetecteerd, worden opgeslagen in de Cloud App Security-database. Zie ons [privacybeleid](http://go.microsoft.com/fwlink/?LinkId=512132) en het [Vertrouwenscentrum van Microsoft](https://www.microsoft.com/TrustCenter/Privacy/You-are-in-control-of-your-data) voor meer informatie over het bewaren van gegevens.
-Gegevens worden door Cloud App Security als volgt bewaard: 
- 
+In Cloud App Security worden gegevens als volgt bewaard:
+
 - Activiteitenlogboek: 180 dagen 
 - Detectiegegevens: 90 dagen 
 - Waarschuwingen: 180 dagen 
