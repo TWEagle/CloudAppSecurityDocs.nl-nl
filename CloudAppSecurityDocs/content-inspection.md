@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 3/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 2401adbc-0011-4938-9e3a-a4c719a2f619
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a1ff57c60d8b35711330e8e4879fe1a48a7dee77
-ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+ms.openlocfilehash: f6ed28c8edd3f2897de8bad368db1da78527aea1
+ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
 translationtype: HT
 ---
 # <a name="content-inspection"></a>Inhoudsinspectie
@@ -42,7 +42,7 @@ De ingebouwde beleidsregels voor inhoudsinspectie kunnen zoeken naar het volgend
 
 - E-mailadressen 
 - Creditcardnummers 
-  - Alle creditcardbedrijven (Visa, MasterCard, American Express, Diners Club, Discover, JCB, Dankort, UnionPay) 
+  -    Alle creditcardbedrijven (Visa, MasterCard, American Express, Diners Club, Discover, JCB, Dankort, UnionPay) 
   - Scheidingstekens (spatie, punt of streepje)
   - Deze scan omvat ook de Luhn-validatie
 - SWIFT-codes
@@ -59,6 +59,15 @@ De ingebouwde beleidsregels voor inhoudsinspectie kunnen zoeken naar het volgend
 - Huisadressen
 - Id-kaarten
 - Sofinummers
+
+## <a name="supported-languages"></a>Ondersteunde talen
+
+De Cloud App Security-inhoudsinspectie-engine:
+-    ondersteunt alle Unicode-tekens
+-    bevat informatie over meer dan 1.000 bestandstypen
+-    Meerdere talen worden ondersteund, met name de bestanden die gebruikmaken van Unicode-tekensets. Zorg ervoor dat uw beleid is gedefinieerd voor de desbetreffende talen. Als u bijvoorbeeld op zoek bent naar trefwoorden, moet u de trefwoorden invoeren in de talen die u wilt gebruiken.
+-    In tekstbestandstypen die gebruikmaken van niet-Unicode-codering, bijvoorbeeld Chinees GB2312, werkt het vergelijken met Unicode Chinese trefwoorden niet zoals verwacht.
+-    Voor bestandstypen die afhankelijk zijn van bibliotheken van derden werken overeenkomende tekenreeksen en woorden niet altijd als verwacht. Dit gebeurt meestal bij bestanden (zoals binaire bestandstypen) waarin de inhoudsinspectie afhankelijk is van bibliotheken van derden die Java-tekenreeksen voor de taal- en tekensets retourneren.
 
 
 

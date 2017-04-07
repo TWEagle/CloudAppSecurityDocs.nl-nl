@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/26/2017
+ms.date: 4/2/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,38 @@ ms.technology:
 ms.assetid: 9cb3594e-5007-48be-9b4f-e1d23355d86e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d617631819744211df5e6bee1f48df36dcedb7ce
-ms.sourcegitcommit: cda4a69f9ad9c6eb66fbdb98610f54d79585b84b
+ms.openlocfilehash: 2fcc085cc53d2d7580640022029b1a528bea416a
+ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
 translationtype: HT
 ---
 # <a name="working-with-the-risk-score"></a>Werken met de risicoscore  
+
+## <a name="the-cloud-app-catalog"></a>De Cloud App-catalogus
+
+Gebruik de Cloud App-catalogus om beter te begrijpen welke cloud-apps kunnen worden ontdekt door de Cloud Discovery van Cloud App Security.
+
+De Cloud App-catalogus bevat meer dan 14.000 SaaS-toepassingen die kunnen worden weergegeven (gefilterd) op basis van naam, domein, risicoscore, categorie of beschikbare beveiligingsfuncties.
+
+![toegang tot de cloud app-catalogus](./media/risk-cac-dropdown.png)
+
+## <a name="discovery-requests"></a>Detectieaanvragen
+
+Informatie en risicoscores in de Cloud-appcatalogus zijn gebaseerd op een groot aantal bronnen. Microsoft spant zich in om de gegevens actueel te houden, maar kan de nauwkeurigheid van de gegevensbronnen niet garanderen. 
+
+Neem contact met ons op als u denkt dat de informatie over een app is verouderd.
+
+-    Score-update aanvragen – als u wenst dat ons team deze cloud-app opnieuw beoordeelt.
+-    Nieuwe gegevens doorgeven (per specifiek veld of algemeen) – als u denkt dat de informatie over de app is verouderd.
+
+![risicogegevens bijwerken](./media/risk-cac-feedback.png)
+
+Bovendien nodigen we u uit voorstellen in te dienen voor de toevoeging van cloud-apps die uw organisatie gebruikt die op dit moment niet kunnen worden gedetecteerd door Cloud Discovery.
+
+![nieuwe apps voorstellen](./media/risk-suggest-app.png)
+
+
+## <a name="customizing-the-risk-score"></a>De risicoscore aanpassen
+
 Cloud Discovery biedt u belangrijke gegevens over de geloofwaardigheid en betrouwbaarheid van de cloud-apps die in de omgeving worden gebruikt. In de portal wordt elke gedetecteerde app weergegeven met een totale score, die weergeeft hoe Cloud App Security de vervaldatum van gebruik voor ondernemingen evalueert van de desbetreffende app. De totale score van een app is een gewogen gemiddelde van drie subscores voor de drie subcategorieën waarmee Cloud App Security rekening houdt bij het beoordelen van betrouwbaarheid:  
   
 -   **Algemeen** - Deze categorie heeft betrekking op de algemene informatie over het bedrijf dat de app produceert, waaronder het domein, jaar van oprichting en de populariteit. Deze velden zijn bedoeld om de stabiliteit van het bedrijf op het meest basale niveau weer te geven.  
@@ -32,74 +59,20 @@ Het is belangrijk dat u even de tijd neemt om de standaardgewichten van de score
   
 1.  Selecteer in de portal onder het pictogram Instellingen **Instellingen voor Cloud Discovery**.  
   
-2.  Verschuif de knop **Belang** onder **Metrische gegevens voor de score configureren** om het gewicht van het veld te wijzigen naar **Genegeerd**, **Laag**, **Gemiddeld**, **Hoog** of **Zeer hoog**.  
+2.  Verschuif de knop **Belang** onder **Metrische gegevens voor de score configureren** om het gewicht van het veld of de risicocategorie te wijzigen naar **Genegeerd**, **Laag**, **Gemiddeld**, **Hoog** of **Zeer hoog**.  
   
 3.  Daarnaast kunt u instellen of bepaalde waarden niet beschikbaar voor of niet van toepassing op de scoreberekening zijn. Wanneer ze zijn opgenomen, dragen n.v.t.-waarden negatief bij aan de berekende score.  
   
      ![score](./media/score.png "score")  
-  
-## <a name="manage-continuous-reports"></a>Doorlopende rapporten beheren  
-Met aangepaste doorlopende rapporten beschikt u over meer details bij de controle van de Cloud Discovery-logboekgegevens van uw organisatie. Als u aangepaste rapporten maakt, kunt u filteren op specifieke geografische locaties, netwerken, sites of organisatie-eenheden. Standaard worden alleen de volgende rapporten in de Cloud Discovery-rapportkiezer weergegeven:  
-  
--  Met het **algemene rapport** worden alle gegevens in de portal samengevoegd uit alle gegevensbronnen die u aan de logboeken hebt toegevoegd.  
-  
-- In het **specifieke gegevensbronrapport** worden alleen gegevens voor een specifieke gegevensbron weergegeven.  
-  
-Ga als volgt te werk om een nieuw doorlopend rapport te maken:  
-  
-1.  Selecteer in de portal onder het pictogram Instellingen **Instellingen voor Cloud Discovery**.  
-  
-2.  Klik op het tabblad **Doorlopend rapport beheren**.  
-  
-3.  Klik op de knop **Rapport maken**.  
-  
-4.  Voer een rapportnaam in.  
-  
-5.  Selecteer de gegevensbronnen die u wilt opnemen (alle of specifiek).  
-  
-6.  Stel de gewenste filters in voor gegevens (**Organisatie-eenheden**, **IP-adrestags** of **IP-adresbereiken**). Zie het Engelstalige artikel [Organize the data according to your needs](general-setup.md#IPtagsandRanges) (De gegevens organiseren op basis van uw behoeften) voor meer informatie over het werken met IP-adrestags en IP-adresbereiken.  
-  
-    ![Aangepast doorlopend rapport maken](./media/create-custom-continuous-report.png) 
-  
-## <a name="exclude-entities"></a>Entiteiten uitsluiten  
-Als u gebruikers of IP-adressen heeft die bijzonder veel ruis veroorzaken en oninteressant zijn of apps die niet relevant zijn, dan kunt u hun gegevens uitsluiten van de Cloud Discovery-gegevens die worden geanalyseerd. U zou bijvoorbeeld alle gegevens kunnen uitsluiten die afkomstig zijn van 127.0.0.1 of de lokale host.  
-  
-Een uitzondering aanmaken:  
-  
-1.  Selecteer in de portal onder het pictogram Instellingen **Instellingen voor Cloud Discovery**.  
-  
-2.  Klik op het tabblad **Entiteiten uitsluiten**.  
-  
-3.  Kies het tabblad **Uitgesloten gebruikers** of het tabblad **Uitgesloten IP-adressen** en klik op de knop **Gebruiker toevoegen** of **IP-adres toevoegen**.  
-  
-4.  Voeg een gebruikersalias of IP-adres toe. Het is raadzaam om informatie toe te voegen over waarom de gebruiker of het IP-adres is uitgesloten.  
-  
-     ![gebruiker uitsluiten](./media/exclude-user.png "gebruiker uitsluiten")  
-  
-## <a name="deleting-cloud-discovery-data"></a>Cloud Discovery-gegevens verwijderen  
-Er zijn een aantal redenen waarom u uw Cloud Discovery- gegevens zou willen verwijderen. In de volgende gevallen is het raadzaam de gegevens te verwijderen:  
-  
--   Als u logboekbestanden handmatig heeft geüpload, er veel tijd is verstreken voordat u het systeem met nieuwe logboekbestanden heeft bijgewerkt en u niet wilt dat oude gegevens uw resultaten beïnvloeden.  
-  
--   Wanneer u een nieuwe aangepaste gegevensweergave instelt, is deze alleen van toepassing op nieuwe gegevens vanaf dat moment. U zou oude gegevens dus kunnen wissen en vervolgens de logboekbestanden opnieuw uploaden, zodat de aangepaste gegevensweergave de gebeurtenissen uit de gegevens van het logboekbestand kan meenemen.  
-  
--   Als onlangs veel gebruikers of IP-adressen weer zijn gaan werken, nadat ze een tijd offline waren, dan wordt hun activiteit aangeduid als afwijkend en krijgt u mogelijk veel fout-positieve schendingen.  
-  
-Cloud Discovery-gegevens verwijderen:  
-  
-1.  Selecteer in de portal onder het pictogram Instellingen **Instellingen voor Cloud Discovery**.  
-  
-2.  Klik op het tabblad **Gegevens verwijderen**.  
-  
-     Het is belangrijk om er zeker van te zijn dat u gegevens wilt verwijderen voordat u doorgaat; deze actie kan niet ongedaan worden gemaakt en hiermee worden **alle** Cloud Discovery-gegevens in het systeem verwijderd.  
-  
-3.  Klik op de knop **Verwijderen**.  
-  
-     ![gegevens verwijderen](./media/delete-data.png "gegevens verwijderen")  
-  
-    > [!NOTE]  
-    >  De verwijdering duurt een paar minuten en is niet direct.  
 
+Alle informatie die nodig is om te begrijpen hoe onze risicoscores worden samengesteld, is beschikbaar in de Cloud App Security-portal.
+Gebruik de knop 'i' aan de rechterkant van elke veldnaam in het profiel van de app voor een beter begrip van het gewicht van een risicofactor in een specifieke risicocategorie. Dit biedt informatie over hoe Cloud App Security precies een specifieke risicofactor bepaalt. De score is de waarde van de risicofactor op een schaal van 1-10 + het gewicht in de risicocategorie:
+
+![risicoberekening](./media/cac-weight.png)
+  
+Beweeg de muisaanwijzer over de risicocategoriescore om het gewicht van een risicocategorie in de totale score van een app te begrijpen:
+
+![risicocategoriegewicht](./media/risk-category-weight.png)
 
 
  

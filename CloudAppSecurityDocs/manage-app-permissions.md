@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 4/2/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 137e0630-5440-4c49-bfe4-48bbc64575e2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5205f05b470ed61d09a70e5be066e02f4f02a9cf
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+ms.openlocfilehash: 4e4641af039ba2ad7b0f36b0322277081170be01
+ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
 translationtype: HT
 ---
 # <a name="manage-app-permissions"></a>App-machtigingen beheren
@@ -27,11 +27,7 @@ Op het tabblad **App-machtigingen** wordt informatie weergegeven over de app-mac
 
 U opent het tabblad App-machtigingen als volgt:
 
-1. Klik in de Cloud App Security-portal op **Onderzoeken** en selecteer **Office 365** onder **Verbonden apps**. 
-> [!Note]
-> U moet Cloud App Security eerst verbinden met Office 365 voordat u App-machtigingen kunt gebruiken.
-
-2. Klik vervolgens in het Office 365-dashboard op het tabblad **App-machtigingen**.
+Klik in de Cloud App Security-portal op **Onderzoeken** en vervolgens op **App-machtigingen**.
 
 
  ![app-machtigingen](./media/app-permissions.png)

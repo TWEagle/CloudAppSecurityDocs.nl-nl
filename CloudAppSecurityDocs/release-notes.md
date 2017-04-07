@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/21/2017
+ms.date: 4/2/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,25 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2d9095a39f5000e88bd0ad94ba0ca9f4a780f58e
-ms.sourcegitcommit: cda4a69f9ad9c6eb66fbdb98610f54d79585b84b
+ms.openlocfilehash: 9de7c7770e567ffc79c6af98582d46d86115babe
+ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
 translationtype: HT
 ---
 # <a name="release-notes"></a>Opmerkingen bij de release
+
+## <a name="cloud-app-security-release-94"></a>Cloud App Security-release 94
+Uitgebracht 2 april 2017
+
+**Nieuwe functies**
+-    Cloud App Security is nu geïntegreerd met Azure RMS. U kunt bestanden in Office 365 OneDrive en Sharepoint Online rechtstreeks vanuit de Cloud App Security-portal beveiligen met Microsoft Rights Management. Dit kan worden bereikt vanaf de pagina **Bestanden**. Zie voor meer informatie [Integratie van Azure Information Protection](azip-integration.md). In toekomstige versies is ondersteuning voor aanvullende toepassingen beschikbaar.
+-    Tot nu toe was het uiterst moeilijk te bepalen wanneer er robot- en crawleractiviteiten werden uitgevoerd op uw netwerk, omdat de activiteiten niet worden uitgevoerd door een gebruiker op uw netwerk. Zonder uw medeweten kunnen bots en crawlers schadelijke hulpprogramma's uitvoeren op uw computers. Nu biedt Cloud App Security u de hulpprogramma's om te zien wanneer robots en crawlers activiteiten uitvoeren op uw netwerk. U kunt de nieuwe gebruikersagenttag gebruiken om activiteiten in het gebeurtenissenlogboek te filteren. Met de gebruikersagenttag kunt u alle activiteiten die worden uitgevoerd door robots filteren en kunt u een beleid maken dat u elke keer dat dit type activiteit wordt gedetecteerd waarschuwt. U wordt op de hoogte gesteld wanneer in toekomstige releases deze riskante activiteit wordt opgenomen als ingesloten in de afwijkingsdetectiewaarschuwingen. 
+-    Met de nieuwe geïntegreerde machtigingenpagina kunt u de machtigingen die uw gebruikers aan apps van derden hebben verleend gemakkelijker onderzoeken. Door te klikken op **Onderzoeken** > **App-machtigingen** kunt u nu een lijst weergeven met alle machtigingen die uw gebruikers aan apps van derden hebben verleend met een pagina van app-machtigingen per verbonden app waarmee u beter de verschillende apps en de toegekende rechten kunt vergelijken.  Zie [App-machtigingen beheren](manage-app-permissions.md) voor meer informatie.
+-    U kunt gegevens rechtstreeks vanuit de tabellade filteren voor gemakkelijker onderzoek.
+De pagina’s **Activiteitenlogboek**, **Bestanden**tabel en **App-machtigingen** zijn nu uitgebreid met nieuwe contextuele acties die navigeren in het onderzoeksproces veel gemakkelijker maken. We hebben ook snelle koppelingen naar de configuratiepagina's en de mogelijkheid om gegevens met één klik te kopiëren toegevoegd. Zie de informatie voor [werken met de bestands- en activiteitenladen](file-filters.md).
+-    De ondersteuning voor Microsoft Teams voor de implementatie van Office 365-activiteitenlogboeken en -waarschuwingen is voltooid.
+ 
+
+
 
 ## <a name="cloud-app-security-release-93"></a>Cloud App Security-release 93
 Uitgebracht: 20 maart 2017

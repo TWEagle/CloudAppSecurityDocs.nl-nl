@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 4/2/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 81ee0b71e6e66d102edf41269197d955b16fbeb4
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+ms.openlocfilehash: b78a120c64af1887e5768082e5c81776b509f5a6
+ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
 translationtype: HT
 ---
 # <a name="azure-information-protection-integration"></a>Integratie van Azure Information Protection
@@ -107,6 +107,32 @@ U kunt ook waarschuwingen en meldingen voor gebruikers instellen of direct actie
 Meer informatie over [beheeracties](governance-actions.md).
 
 Lees meer informatie over [Azure Information Protection](https://docs.microsoft.com/en-us/information-protection/understand-explore/what-is-information-protection) en volg de zelfstudie [Snel aan de slag](https://docs.microsoft.com/en-us/information-protection/get-started/infoprotect-quick-start-tutorial) voor Azure Information Protection.
+
+
+## <a name="integration-with-azure-rights-management"></a>Integratie met Azure Rights Management
+
+Uw organisatie moet Azure Rights Management in licentie en geactiveerd hebben voor integratie tussen Cloud App Security en Azure RMS.  Deze twee afzonderlijke stappen kunt u vinden in [Azure Rights Management activeren](https://docs.microsoft.com/information-protection/deploy-use/activate-service).
+
+Cloud App Security ondersteunt momenteel alleen een algemeen beveiligingsniveau. Systeemeigen beveiliging voor Office-, PDF-en afbeeldingsbestanden is beschikbaar in toekomstige versies. 
+
+Deze functie is momenteel beschikbaar voor bestanden die zijn opgeslagen in SharePoint Online en OneDrive voor Bedrijven. In toekomstige versies worden meer cloud-apps ondersteund.
+
+Nadat Cloud App Security is verbonden met uw Office 365-service, kunt u de Cloud App Security RMS-integratiefuncties gebruiken waarmee u documenten met RMS rechtstreeks in de Cloud App Security-portal als volgt kunt beveiligen:
+
+1. Selecteer in de pagina **Bestanden** het bestand dat u wilt beveiligen, klik dan op de drie puntjes aan het einde van de bestandsrij en kies **Beveiligen**. 
+![app beveiligen](./media/protect-app.png)
+2. U wordt gevraagd om een van uw organisatiesjablonen te kiezen om het bestand te beveiligen en op **Beveiligen** te klikken. 
+![Beveiligingssjabloon](./media/protect-template.png)
+3. Nadat u een sjabloon hebt gekozen en op Beveiligen hebt geklikt, zal Cloud App Security de sjabloon toepassen en het oorspronkelijke bestand beveiligen. Het beveiligde bestand heeft dezelfde naam als het oorspronkelijke bestand, maar met de nieuwe extensie .pfile.
+> [!NOTE]
+>     Het wordt aanbevolen bedrijfsbrede RMS-sjablonen toe te passen op bestanden, zodat alle gebruikers in de organisatie toegang kunnen krijgen tot deze bestanden, met inbegrip van de oorspronkelijke eigenaar van het bestand. De eigenaar van het bestand, het beleid voor het delen van het bestand en de lijst met gebruikers die al toegang hebben, veranderen niet wanneer het bestand wordt beveiligd.
+
+4. Als gebruikers toegang willen tot het beveiligde bestand, moeten ze de RMS sharing-app op hun apparaat hebben geïnstalleerd. Zie voor meer informatie [Technisch overzicht en beveiligingsdetails voor de Microsoft Rights Management-toepassing voor delen](https://docs.microsoft.com/information-protection/rms-client/sharing-app-admin-guide-technical).
+
+5. U kunt deze actie op elk gewenst moment terugdraaien in het **Beheerlogboek** door te klikken op de knop **Herstellen** aan het einde van de rij van de eerder genomen beveiligingsactie. 
+
+
+
 
  
 ## <a name="see-also"></a>Zie ook  

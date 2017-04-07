@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 4/2/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5db9f82b948f2db192b7c5ba47fb911413397271
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+ms.openlocfilehash: 306cee70e89e232367f8f9312cde2a7db91879bf
+ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
 translationtype: HT
 ---
 # <a name="governing-connected-apps"></a>Verbonden apps beheren
@@ -127,6 +127,7 @@ Zie [Beleidsconflicten](control-cloud-apps-with-policies.md) voor informatie ove
 |Bestanden|Bestand|Terugplaatsen uit gebruikersquarantaine|Hiermee wordt u een gebruiker teruggeplaatst uit quarantaine.|Box|
 |Bestanden|Bestand|Leesmachtiging verlenen aan mijzelf|Hiermee worden leesmachtigingen voor het bestand verleend aan uzelf, zodat u toegang hebt tot het bestand en overtredingen kunt zien.|G Suite|
 |Bestanden|Bestand|Editors toestaan om te delen|In Google Drive is het delen van een bestand ook toegestaan voor de standaardmachtigingen van de editor. Deze beheeractie is het tegenovergestelde van De machtiging van de editor om te delen intrekken. Hiermee stelt u in dat de editor het bestand kan delen.|G Suite|
+|Bestanden|Bestand|Beschermen|Beveilig een bestand met Microsoft Rights Management door een organisatiesjabloon toe te passen.|Office 365|
 |Bestanden|Bestand|De leesmachtigingen intrekken voor mijzelf|Hiermee worden de leesmachtigingen voor het bestand ingetrokken voor uzelf. Dit is handig wanneer u uzelf een machtiging hebt verleend om te zien of een bestand een beleid schendt.|G Suite|
 |Bestanden, bestandsbeleid|Bestand|Eigendom van het bestand overdragen|Hiermee wordt de eigenaar gewijzigd. U kiest een specifieke eigenaar in het beleid.|G Suite|
 |Bestanden, bestandsbeleid|Bestand|Een samenwerker verwijderen|Hiermee wordt een specifieke samenwerker uit een bestand verwijderd.|G Suite, Box, OneDrive, SharePoint|
