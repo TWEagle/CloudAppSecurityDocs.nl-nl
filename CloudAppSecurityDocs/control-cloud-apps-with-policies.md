@@ -1,11 +1,11 @@
 ---
-title: Cloud-apps beheren met beleidsregels | Microsoft Docs
+title: Gebruik van cloud-apps beheren door beleidsregels te maken in Cloud App Security | Microsoft Docs
 description: In dit onderwerp vindt u informatie over hoe beleidsregels worden gebruikt en ingesteld om het gebruik van cloud-apps te beheren.
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,9 @@ ms.technology:
 ms.assetid: 14d10238-0f61-43e9-ab96-71534a27d3d4
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 5fe0c3c04f290fb5a087e387560bf742a7192513
-ms.openlocfilehash: fcf5a37aa18ca7dd6fbb61c3e6100214048deeed
-
-
+ms.openlocfilehash: 1f897a528e425a2abd74f6828a7785fdfe147286
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+translationtype: HT
 ---
 # <a name="control-cloud-apps-with-policies"></a>Cloud-apps beheren met beleidsregels
 
@@ -26,7 +24,7 @@ Met beleidsregels kunt u de manier vastleggen waarop u wilt dat uw gebruikers zi
 Als er bijvoorbeeld een gegevensschendingsbedreiging is die u in quarantaine wilt zetten, heeft u een ander stoort beleid nodig dan wanneer u een risicovolle cloud-app wilt blokkeren voor gebruik binnen uw organisatie.  
   
 ## <a name="policy-types"></a>Beleidstypen  
-Wanneer u kijkt naar de pagina **Beleid**, kunt u de verschillende beleidsregels en sjablonen onderscheiden aan de hand van het type en pictogram, om te zien welke beleidsregels beschikbaar zijn. De beschikbare beleidsregels zijn afhankelijk van de gegevensbron en wat u hebt ingeschakeld in Cloud App Security voor uw organisatie. Als u bijvoorbeeld Cloud Discovery-logboeken hebt geüpload, worden de beleidsregels met betrekking tot Cloud Discovery weergegeven.
+Wanneer u kijkt naar de pagina **Beleid**, kunt u de verschillende beleidsregels en sjablonen onderscheiden aan de hand van het type en pictogram, om te zien welke beleidsregels beschikbaar zijn. Welke beleidsregels beschikbaar zijn, is afhankelijk van de gegevensbron en wat u hebt ingeschakeld in Cloud App Security voor uw organisatie. Als u bijvoorbeeld Cloud Discovery-logboeken hebt geüpload, worden de beleidsregels met betrekking tot Cloud Discovery weergegeven.
 
 De volgende soorten beleidsregels kunnen worden gemaakt:  
   
@@ -161,8 +159,3 @@ Nadat u een nieuw beleid hebt gemaakt, is dat standaard ingeschakeld.
 [Ga naar de ondersteuningspagina van Cloud App Security voor technische ondersteuning.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Premier-klanten kunnen Cloud App Security ook rechtstreeks vanuit Premier Portal kiezen.](https://premier.microsoft.com/)  
   
-
-
-<!--HONumber=Dec16_HO2-->
-
-

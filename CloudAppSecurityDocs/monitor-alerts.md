@@ -1,11 +1,11 @@
 ---
-title: Waarschuwingen controleren | Microsoft Docs
+title: Werken met waarschuwingen in Cloud App Security | Microsoft Docs
 description: In dit onderwerp vindt u een lijst met alle waarschuwingen en de bijbehorende beschrijvingen.
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/26/2016
+ms.date: 3/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,14 +13,11 @@ ms.technology:
 ms.assetid: f118a3bf-1663-46ba-884f-b1b03a84ab66
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 9565d8a51e4c06963861d9dfaef9595944bda1ff
-ms.openlocfilehash: ee4b4e7a43603654eb415ff225a4ae3d8b139383
-
-
+ms.openlocfilehash: b3d0aacdef885ba89638628b6d485ef81c3b26f3
+ms.sourcegitcommit: b840b945b270e616560f565bcc6590dd68ad5ebd
+translationtype: HT
 ---
-
-# <a name="monitor-alerts"></a>Waarschuwingen controleren
+# <a name="alerts"></a>Waarschuwingen
 Ga als volgt te werk als u waarschuwingen wilt weergeven:
 
 Klik in de Cloud App Security-portal op Waarschuwingen.
@@ -37,7 +34,7 @@ De volgende typen waarschuwingen worden weergegeven.
 |----|----|----|
 |Nieuwe locatie|ALERT_GEOLOCATION_NEW_COUNTRY|Sinds het begin van de scan (maximaal zes maanden) is een nieuwe locatie gedetecteerd. Deze waarschuwing wordt eenmaal weergegeven voor elk land in uw hele organisatie. |
 |Nieuwe gebruiker met beheerdersrechten|ALERT_ADMIN_USER|Voor een specifieke app is een nieuwe beheerder gedetecteerd. Dit kan een persoon zijn die beheerder is in een bepaalde toepassing en nu beheerder is voor een andere toepassing. Deze waarschuwing heeft betrekking op een specifiek beheerderstype. Dit betekent dat telkens wanneer het beheerderstype wordt gewijzigd, de waarschuwing wordt weergegeven. Als een gebruiker zijn of haar beheerdersbevoegdheden is kwijtgeraakt en deze vervolgens opnieuw worden toegewezen, wordt deze waarschuwing weergegeven.|
-|Inactieve account|ALERT_ZOMBIE_USER|Een gebruiker is inactief als deze gedurende 60 dagen inactief is in een toepassing. Als iemand bijvoorbeeld actief is in Box, maar al 60 dagen inactief is in Google Apps, wordt de gebruiker als inactief beschouwd in Google Apps. Er wordt een tag toegevoegd aan deze gebruikers, zodat u kunt zoeken naar inactieve accounts.|
+|Inactieve account|ALERT_ZOMBIE_USER|Een gebruiker is inactief als deze gedurende 60 dagen inactief is in een toepassing. Als iemand bijvoorbeeld actief is in Box, maar al 60 dagen inactief is in G Suite, wordt de gebruiker als inactief beschouwd in G Suite. Er wordt een tag toegevoegd aan deze gebruikers, zodat u kunt zoeken naar inactieve accounts.|
 |Onverwachte beheerderslocatie|ALERT_NEW_ADMIN_LOCATION|Sinds het begin van de scan (maximaal zes maanden) is een nieuwe locatie voor beheerders gedetecteerd. Deze waarschuwing wordt eenmaal weergegeven voor elk land en voor elke beheerder in uw hele organisatie. |
 |Verdacht account|ALERT_COMPROMISED_ACCOUNT|Als er sprake is van een inbreuk op een toepassing en de lijst met geschonden accounts wordt gepubliceerd, wordt de lijst met Cloud App Security gedownload en vergeleken met uw lijst met gebruikers (waaronder interne gebruikers, externe gebruikers en persoonlijke accounts). |
 
@@ -60,8 +57,3 @@ De volgende typen waarschuwingen worden weergegeven.
 [Premier-klanten kunnen Cloud App Security ook rechtstreeks vanuit Premier Portal kiezen.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Nov16_HO5-->
-
-

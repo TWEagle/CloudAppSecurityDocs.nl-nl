@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/8/2017
+ms.date: 4/2/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,9 @@ ms.technology:
 ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 142f2ba21ddeae5878cfa5d2e0b744c4581a1d65
-ms.openlocfilehash: dd43677f5437c5733a7cee55b67c8d39445d51a4
-
-
+ms.openlocfilehash: fceebaacf3cc2fc1df894f6d1078675ccf630264
+ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
+translationtype: HT
 ---
 # <a name="what-is-cloud-app-security"></a>Wat is Cloud App Security?
 
@@ -26,7 +24,7 @@ ms.openlocfilehash: dd43677f5437c5733a7cee55b67c8d39445d51a4
 
 Hoewel overstappen naar de cloud voor meer flexibiliteit voor werknemers en lagere IT-kosten zorgt, introduceert het ook nieuwe uitdagingen en complexiteit voor het beveiligen van uw organisatie. Om volledig te kunnen profiteren van cloudtoepassingen, moeten IT-teams de juiste balans vinden tussen het ondersteunen van toegang en het houden van controle om kritieke gegevens te beschermen.  
 
-Cloud App Security is een essentieel onderdeel van de Microsoft Cloud Security-stack. Het is een uitgebreide oplossing die uw organisatie kan helpen te profiteren van de belofte van cloudtoepassingen terwijl u de controle houdt met verbeterde zichtbaarheid in de activiteit. Het verhoogt ook de beveiliging van essentiële gegevens in cloudtoepassingen. Met hulpprogramma's om schaduw-IT te onthullen, risico's te beoordelen, beleid af te dwingen, activiteiten te onderzoeken en bedreigingen te stoppen, kan uw organisatie veiliger overstappen naar de cloud terwijl de controle over essentiële gegevens wordt behouden.  
+Cloud App Security is een essentieel onderdeel van de Microsoft Cloud Security-stack. Het is een uitgebreide oplossing die uw organisatie kan helpen te profiteren van de belofte van cloudtoepassingen terwijl u de controle houdt met verbeterde zichtbaarheid in de activiteit. Het verhoogt ook de beveiliging van essentiële gegevens in cloudtoepassingen. Met hulpprogramma's om schaduw-IT te onthullen, risico's te beoordelen, beleid af te dwingen, activiteiten te onderzoeken en bedreigingen te stoppen, kan uw organisatie veiliger overstappen naar de cloud terwijl de controle over essentiële gegevens wordt behouden. 
 
 ## <a name="the-cloud-app-security-framework"></a>Het Cloud App Security-framework  
 
@@ -45,12 +43,15 @@ Met Cloud App Security wordt zichtbaarheid met uw cloud geïntegreerd door:
 -   Gebruik te maken van eenvoudig te implementeren app-connectors die gebruikmaken van API's van providers voor zichtbaarheid op en beheer van apps waarmee u verbinding maakt.  
 -   U te helpen doorlopend controle te hebben doordat u beleidsregels kunt instellen en aanpassen.  
 
-![Architectuur van Cloud App Security](./media/architecture.png)  
+![Diagram Cloud App Security-architectuur](./media/architecture.png)  
 
-### <a name="data-retention"></a>Bewaren van gegevens  
+### <a name="data-retention--compliance"></a>Gegevensretentie & naleving
+
+Cloud App Security is officieel gecertificeerd met Microsoft Naleving voor modelcIausules van de EU, ISO, HIPAA, CSA STAR en meer. Ga naar [Microsoft Compliance Offerings (Aanbiedingen voor Microsoft Naleving, Engelstalig)] (https://go.microsoft.com/fwlink/?linkid=842039) en selecteer Cloud App Security voor de volledige lijst met certificaten.  
+
 Wanneer Cloud App Security inhoudsinspectie uitvoert, wordt gegevensprivacy afgedwongen. De bestandsinhoud wordt niet opgeslagen in de Cloud App Security-database; alleen de metagegevens van de bestandsrecords en eventuele schendingen die zijn gedetecteerd, worden opgeslagen in de Cloud App Security-database. Zie ons [privacybeleid](http://go.microsoft.com/fwlink/?LinkId=512132) en het [Vertrouwenscentrum van Microsoft](https://www.microsoft.com/TrustCenter/Privacy/You-are-in-control-of-your-data) voor meer informatie over het bewaren van gegevens.
-Gegevens worden door Cloud App Security als volgt bewaard: 
- 
+In Cloud App Security worden gegevens als volgt bewaard:
+
 - Activiteitenlogboek: 180 dagen 
 - Detectiegegevens: 90 dagen 
 - Waarschuwingen: 180 dagen 
@@ -83,9 +84,3 @@ U kunt beleidsregels gebruiken om het gedrag van uw gebruikers in de cloud te de
 Zie [Aan de slag met Cloud App Security](getting-started-with-cloud-app-security.md) voor meer informatie over de basisprincipes.    
 Ga naar de [ondersteuningspagina van Cloud App Security](http://support.microsoft.com/oas/default.aspx?prid=16031) voor technische ondersteuning.   
 Premier-klanten kunnen Cloud App Security ook rechtstreeks vanuit [Premier Portal](https://premier.microsoft.com/) kiezen.   
-
-
-
-<!--HONumber=Jan17_HO2-->
-
-

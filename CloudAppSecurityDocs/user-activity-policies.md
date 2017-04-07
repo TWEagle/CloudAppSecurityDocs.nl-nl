@@ -1,11 +1,11 @@
 ---
-title: Activiteitbeleid | Microsoft Docs
+title: Beleidsregels voor het beheren van activiteiten maken in Cloud App Security | Microsoft Docs
 description: In dit onderwerp vindt u instructies voor het maken van en werken met beleidsregels voor activiteit.
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/19/2016
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: 99d5fd37-d922-4269-b557-86d7f84180eb
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2997a79f2e0fd730302be2602b6aee6ec56999db
-ms.openlocfilehash: 46ab0f13a8d0839f77525c334e75c840c9bfc73f
-
-
+ms.openlocfilehash: 1aaf81fe759fabd6105076d22c65f20c149b8d19
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+translationtype: HT
 ---
-
 # <a name="activity-policies"></a>Activiteitbeleid
 Activiteit-beleid zorgt ervoor dat u een breed scala aan geautomatiseerde processen kunt uitvoeren terwijl u gebruikmaakt van de API’s van de app-provider Met dit beleid kunt u specifieke activiteiten volgen die worden uitgevoerd door verschillende gebruikers of onverwacht hoge frequenties van een bepaald type activiteit volgen.  
   
@@ -62,57 +59,6 @@ Bekijk deze voorbeelden:
   
      ![voorbeeld van hoge downloadsnelheid](./media/high-download-rate-example.png "voorbeeld van hoge downloadsnelheid")  
   
-## <a name="anomaly-detection"></a>Afwijkingsdetectie  
-Als uw organisatie wordt beveiligd door Cloud App Security, worden alle cloudactiviteiten beoordeeld volgens verschillende vooraf ingestelde risicofactoren. Cloud App Security analyseert elke gebruikerssessie in uw cloud en vergelijkt deze vervolgens met de risicofactoren die u hier instelt om u op de hoogte te stellen als er een activiteit plaatsvindt die afwijkt van de gebruikelijke activiteiten voor uw organisatie of van de gangbare gebruikersactiviteiten. De beleidspagina afwijkingsdetectie laat u de risicofactoren instellen en aanpassen die meegenomen worden in het risicoanalyseproces. Het beleid kan anders worden afgedwongen voor verschillende gebruikers, locaties en organisatiesectoren. U kunt bijvoorbeeld een beleid instellen waarbij u geïnformeerd wordt als leden van uw IT-team buiten kantoor actief zijn.   
-  
-Een afwijkingsdetectiebeleid configureren:  
-  
-1.  Klik in de console op **Beheer** gevolgd door **Beleidsregels**.  
-  
-2.  Klik op **Beleid maken** en selecteer **Afwijkingsdetectie**beleid.  
-  
-     ![menu voor beleid voor anomaliedetectie](./media/anomaly-detection-policy-menu.png "menu voor beleid voor anomaliedetectie")  
-  
-3.  Vul de naam en beschrijving van het beleid in en ga naar het veld **Activiteitfilters** om de activiteit te kiezen waarop het beleid van toepassing moet zijn.  
-  
-4.  Geef uw beleid een naam en beschrijving, wat u indien gewenst kunt baseren op een sjabloon. Voor meer informatie over beleidssjablonen, bekijk [Cloud-apps beheren met beleidsregels](control-cloud-apps-with-policies.md).  
-  
-5.  Om het beleid van toepassing te laten zijn op alle activiteiten in uw cloudomgeving, selecteert u **Alle gevolgde activiteiten**. Als u het beleid tot specifieke typen activiteit wilt beperken, kiest u **Specifieke activiteiten**. Klik op **Filters toevoegen** en stel de juiste parameters in waarmee u de activiteit wilt filteren. Bijvoorbeeld, als u het beleid alleen op de activiteiten uitgevoerd door Salesforce-beheerders wilt toepassen, kiest u deze gebruikerstag.  
-  
-6.  In dit veld stelt u de **Risicofactoren** in. U kunt kiezen welke risicogroepen u wilt meenemen in de berekening van de risicoscore. Aan de rechterkant van de rij kunt u de aan/uit-knop en de verschillende risico's uitschakelen. Daarnaast kunt u, voor een grotere mate van granulatie, de activiteit kiezen die voor elke specifieke risicogroep ingesteld moet worden.  
-  
-     We hanteren de volgende risicofactoren:  
-  
-    -   **Aanmeldfouten**: proberen gebruikers zich aan te melden en mislukt dit meerdere malen in een korte tijdsspanne?  
-  
-    -   **Beheerdersactiviteit**: Gebruiken beheerders hun beheerdersaccounts om in te loggen vanaf ongebruikelijke locaties of op vreemde tijden?  
-  
-    -   **Inactieve accounts**: Is er plotseling activiteit op een account dat al enige tijd niet meer in gebruik is?  
-  
-    -   **Locatie**: Is er activiteit afkomstig uit een ongebruikelijke, verdachte of nieuwe locatie?  
-  
-    -   **Onmogelijk traject**: Is een gebruiker aangemeld vanuit Denver en tien minuten later vanuit Parijs?  
-  
-    -   **Apparaat en gebruikersagent**: Is er activiteit vanuit een niet-herkend of niet-beheerd apparaat?  
-  
-     U kunt deze parameters gebruiken voor het definiëren van complexe scenario's, bijvoorbeeld om het IP-adresbereik van uw kantoor uit te sluiten van de risicofactoren voor afwijkingsdetectie, om een 'kantoor-IP'-tag te maken en het bereik uit te sluiten van de ingestelde parameters. Om het bereik dat u hebt gemaakt uit te sluiten van de afwijkingsdectectie voor beheerdersaccounts:  
-  
-    -   Onder **Risicotype** gaat u naar **Admin-activiteit**.  
-  
-    -   Wijzig **Van toepassing op** naar **Specifieke activiteiten**.  
-  
-    -   Onder **Activiteitfilters** stelt u **Van toepassing op** in op **Specifieke activiteiten** en onder **Activiteiten die overeenkomen met al het onderstaande** kiest u **Administratieve activiteiten** is **True**.  
-  
-    -   Klik op de **+** pictogram en selecteer **IP-tag is niet gelijk aan** en selecteer de kantoor-IP-tag.  
-  
-7.  Onder **Gevoeligheid**, selecteert u hoe vaak u waarschuwingen wilt ontvangen.  
-  
-     De gevoeligheidswaarde bepaalt per 1000 gebruikers hoeveel waarschuwingen er wekelijks gemiddeld geactiveerd worden.  
-  
-     ![anomaliedetectie-IP's](./media/anomaly-detection-ips.png "anomaliedetectie-IP's")  
-  
-8.  Klik op **Maken**.  
- 
   
 ## <a name="activity-policy-reference"></a>Verwijzing naar het activiteitenbeleid  
 In deze sectie vindt u naslaginformatie over beleidsregels, met een uitleg van elk beleidstype en de velden die voor elk beleid kunnen worden geconfigureerd.  
@@ -133,8 +79,3 @@ Met behulp van **Herhaalde activiteit** kunt u het aantal herhaalde activiteiten
 [Premier-klanten kunnen Cloud App Security ook rechtstreeks vanuit Premier Portal kiezen.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Dec16_HO3-->
-
-

@@ -1,11 +1,11 @@
 ---
-title: Beheer | Microsoft Docs
+title: Beheeracties gebruiken om het gebruik van cloud-apps te beheren | Microsoft Docs
 description: In dit artikel vindt u informatie over de beheeracties die u in Cloud App Security kunt uitvoeren om het gebruik van de cloud-apps in uw organisatie te beheren.
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 3/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,22 +13,44 @@ ms.technology:
 ms.assetid: bc11bbfe-ec6c-458c-8302-8112c383199d
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2f158e2f3643629d215eb23281b17a58ee7f78fc
-ms.openlocfilehash: 5a051fc106661fc2266587ac5dbbb8bbdabd88bc
-
-
+ms.openlocfilehash: b22b51e5d41f525240c0430c31760177bf62ca1f
+ms.sourcegitcommit: cda4a69f9ad9c6eb66fbdb98610f54d79585b84b
+translationtype: HT
 ---
-
 # <a name="control"></a>Beheer
 U kunt beheeracties toepassen op gebruikersbestanden in uw cloudomgeving. Nadat u grondig onderzoek hebt gedaan en alles weet over uw cloud, kunt u beheeracties gebruiken om uw organisatie te beschermen.  
+
+## <a name="use-policies-to-assess-risk"></a>Beleid gebruiken voor het beoordelen van risico  
+Ga, nadat u uw openstaande waarschuwingen hebt bekeken, naar het Beleidscentrum om beleidsschendingen te bekijken waarvoor geen waarschuwing is geactiveerd.  
+
+-   Klik in het Cloud App Security-dashboard op **Controle** en vervolgens op **Beleidsregels**.  
+
+-   Selecteer een specifiek beleid om de lijst **Nu in overtreding** te zien met overeenkomsten met het beleid waarvoor geen waarschuwing is geactiveerd.  
+
+-   Klik één voor één op de schendingen en bepaal bij elke schending wat u moet doen. Zie de onderstaande afbeeldingen voor meer informatie over beheeracties.  
+
+     Als uw beleid is ingesteld op het vinden van nalevingsproblemen en iemand slaat creditcardnummers op in bestanden in OneDrive, dan hebt u een overeenkomst met het beleid.  
+
+     ![PCI-overeenkomsten](./media/pci-matches.png "PCI-overeenkomsten")  
+
+-   Selecteer de overeenkomst om de bestanden te zien die het beleid schenden.  
+
+     ![PCI-inhoudsovereenkomsten](./media/pci-content-matches.png "PCI-inhoudsovereenkomsten")  
+
+     U kunt het bestand zelf selecteren voor informatie over de bestanden.  
+
+     U kunt op **Deelnemers** klikken om te zien wie toegang tot dit bestand heeft.  
+
+     U kunt op **Overeenkomsten** klikken om de creditcardnummers zelf te zien.  
+
+     ![Inhoudsovereenkomsten creditcardnummers](./media/content-matches-ccn.png "Inhoudsovereenkomsten creditcardnummers")  
 
 ## <a name="apply-governance-actions"></a>Beheeracties toepassen  
 U kunt beheeracties toepassen vanuit beleidsregels, vanuit waarschuwingen en vanuit het **bestand**slogboek.  
 
-Op elk gewenst moment kunt u de status van alle eerder toegepaste beheeracties controleren en bekijken door naar het tandwiel **Instellingen** ![pictogram Instellingen](./media/settings-icon.png "settings icon") te gaan en vervolgens **Beheerlogboek** te kiezen.  
+U kunt op elk gewenst moment de status van alle eerder toegepaste beheeracties controleren en bekijken door naar het tandwiel **Instellingen** ![pictogram Instellingen](./media/settings-icon.png "pictogram Instellingen") te gaan en vervolgens **Beheerlogboek** te kiezen.  
 
-Voor iedere mislukte beheeractie kiest u het pictogram **Opnieuw proberen** ![pictogram Opnieuw proberen](./media/retry-icon.png "retry icon") om de actie opnieuw toe te passen.  
+Voor iedere mislukte beheeractie kiest u het pictogram **Opnieuw proberen** ![pictogram Opnieuw proberen](./media/retry-icon.png "pictogram Opnieuw proberen") om de actie opnieuw toe te passen.  
 
 Er zijn verschillende beheeracties beschikbaar, afhankelijk van het soort beleid, overtreding of app.  
 
@@ -42,7 +64,7 @@ Aangezien herstelacties gebruikmaken van de API's van de cloudprovider, kunnen a
 >   
 >  Als hulp kunt u de knop **Bewerken en voorbeeld van resultaten bekijken** in de sectie **Filters** gebruiken.  
 
-![Bestandsbeleid bewerken en voorbeeld van de resultaten bekijken](./media/file-policy-edit-and-preview-results.png "file policy edit and preview results")  
+![Bestandsbeleid bewerken en voorbeeld van resultaten](./media/file-policy-edit-and-preview-results.png "bestandsbeleid bewerken en voorbeeld van resultaten")  
 
 ## <a name="migration"></a>Migratie  
 Cloud App Security helpt u bij de implementatie van uw migraties door u te laten weten wie welke apps gebruikt in uw organisatie en geeft u de hulpmiddelen om het gebruik van nieuwe apps te controleren. Zo kunt u achterhalen welke typen apps u moet aanbieden in uw organisatie, omdat u kunt zien wat iedereen al gebruikt.  
@@ -56,7 +78,7 @@ Stelt u zich eens voor: u hebt recentelijk Office 365 gekocht en uw wilt dat all
 
     1.  Kies **Dropbox** in uw **Clouddetectiedashboard** en kies vervolgens het tabblad **IP-adres** of **Gebruikers**.  
 
-    2.  Kies de pijl ![pijlpictogram](./media/arrow-icon.png "arrow icon") en selecteer **Exporteren**.  
+    2.  Kies de pijl ![Pijlpictogram](./media/arrow-icon.png "pijlpictogram") en selecteer **Exporteren**.  
 
 ### <a name="find-more-secure-alternatives"></a>Veiligere alternatieven vinden  
 In de servicecatalogus van Cloud App Security kunt u alternatieven vinden die veilig werken in uw organisatie in plaats van risicovolle apps die uw gebruikers mogelijk gebruiken.  
@@ -75,9 +97,3 @@ Stelt u zich eens voor: u wilt een productiviteitshulpprogramma aanschaffen maar
 Zie [Cloud-apps beheren met beleidsregels](control-cloud-apps-with-policies.md) voor informatie over het gebruiken en instellen van het gebruik van cloud-apps.   
 Ga naar de [ondersteuningspagina van Cloud App Security](http://support.microsoft.com/oas/default.aspx?prid=16031) voor technische ondersteuning.   
 Premier-klanten kunnen Cloud App Security ook rechtstreeks vanuit [Premier Portal](https://premier.microsoft.com/) kiezen.  
-
-
-
-<!--HONumber=Nov16_HO5-->
-
-
