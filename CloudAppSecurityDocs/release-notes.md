@@ -1,11 +1,11 @@
 ---
-title: Opmerkingen bij de release | Microsoft Docs
+title: Opmerkingen bij de release en versies van Cloud App Security | Microsoft Docs
 description: Dit onderwerp wordt regelmatig bijgewerkt, zodat u weet wat er nieuw is in de meest recente versie van Cloud App Security.
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/8/2017
+ms.date: 4/2/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,33 +13,128 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 98b16c96c31039248bdfbe57f980b3ae6a26a7de
-ms.openlocfilehash: a4e45ff982c6f53e442ae65803695a2c858145cb
-
-
+ms.openlocfilehash: 9de7c7770e567ffc79c6af98582d46d86115babe
+ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
+translationtype: HT
 ---
-
 # <a name="release-notes"></a>Opmerkingen bij de release
 
+## <a name="cloud-app-security-release-94"></a>Cloud App Security-release 94
+Uitgebracht 2 april 2017
+
+**Nieuwe functies**
+-    Cloud App Security is nu geïntegreerd met Azure RMS. U kunt bestanden in Office 365 OneDrive en Sharepoint Online rechtstreeks vanuit de Cloud App Security-portal beveiligen met Microsoft Rights Management. Dit kan worden bereikt vanaf de pagina **Bestanden**. Zie voor meer informatie [Integratie van Azure Information Protection](azip-integration.md). In toekomstige versies is ondersteuning voor aanvullende toepassingen beschikbaar.
+-    Tot nu toe was het uiterst moeilijk te bepalen wanneer er robot- en crawleractiviteiten werden uitgevoerd op uw netwerk, omdat de activiteiten niet worden uitgevoerd door een gebruiker op uw netwerk. Zonder uw medeweten kunnen bots en crawlers schadelijke hulpprogramma's uitvoeren op uw computers. Nu biedt Cloud App Security u de hulpprogramma's om te zien wanneer robots en crawlers activiteiten uitvoeren op uw netwerk. U kunt de nieuwe gebruikersagenttag gebruiken om activiteiten in het gebeurtenissenlogboek te filteren. Met de gebruikersagenttag kunt u alle activiteiten die worden uitgevoerd door robots filteren en kunt u een beleid maken dat u elke keer dat dit type activiteit wordt gedetecteerd waarschuwt. U wordt op de hoogte gesteld wanneer in toekomstige releases deze riskante activiteit wordt opgenomen als ingesloten in de afwijkingsdetectiewaarschuwingen. 
+-    Met de nieuwe geïntegreerde machtigingenpagina kunt u de machtigingen die uw gebruikers aan apps van derden hebben verleend gemakkelijker onderzoeken. Door te klikken op **Onderzoeken** > **App-machtigingen** kunt u nu een lijst weergeven met alle machtigingen die uw gebruikers aan apps van derden hebben verleend met een pagina van app-machtigingen per verbonden app waarmee u beter de verschillende apps en de toegekende rechten kunt vergelijken.  Zie [App-machtigingen beheren](manage-app-permissions.md) voor meer informatie.
+-    U kunt gegevens rechtstreeks vanuit de tabellade filteren voor gemakkelijker onderzoek.
+De pagina’s **Activiteitenlogboek**, **Bestanden**tabel en **App-machtigingen** zijn nu uitgebreid met nieuwe contextuele acties die navigeren in het onderzoeksproces veel gemakkelijker maken. We hebben ook snelle koppelingen naar de configuratiepagina's en de mogelijkheid om gegevens met één klik te kopiëren toegevoegd. Zie de informatie voor [werken met de bestands- en activiteitenladen](file-filters.md).
+-    De ondersteuning voor Microsoft Teams voor de implementatie van Office 365-activiteitenlogboeken en -waarschuwingen is voltooid.
+ 
+
+
+
+## <a name="cloud-app-security-release-93"></a>Cloud App Security-release 93
+Uitgebracht: 20 maart 2017
+
+**Nieuwe functies**
+-   U kunt nu beleid toepassen om geïmporteerde gebruikersgroepen op te nemen of uit te sluiten. 
+-    Met Cloud App Security Anonymization kunt u nu een aangepaste versleutelingssleutel configureren. Zie [Cloud Discovery anoniem maken](cloud-discovery-anonymizer.md) voor meer informatie.
+-    Voor meer controle over gebruikers- en accountbeheer hebt u nu rechtstreeks toegang tot de Azure AD-accountinstellingen voor elke gebruiker en kunt u accounts openen via de pagina **Account** door op het tandwiel naast een gebruiker te klikken. Hiermee krijgt u eenvoudiger toegang tot geavanceerde gebruikersbeheerfuncties, voor bijvoorbeeld groepsbeheer, configuratie van MFA, details over aanmeldingen van de gebruiker en het blokkeren van aanmelding. 
+-    U kunt nu via de Cloud App Security-API een blokkeerscript exporteren voor niet-goedgekeurde apps. U kunt meer lezen over API's in de Cloud App Security-portal door op het vraagteken te klikken in de menubalk. Klik daarna op **API-documentatie**.
+-    De Cloud App Security-app-connector voor ServiceNow is uitgebreid en biedt nu ondersteuning voor OAuth-tokens (reeds geïntroduceerd in Genève, Helsinki en Istanboel). Dit biedt een betere API-verbinding met ServiceNow, die niet afhankelijk is van de implementerende gebruiker. Zie [Verbinding maken tussen ServiceNow en Microsoft Cloud App Security](connect-servicenow-to-microsoft-cloud-app-security.md) voor meer informatie. Bestaande klanten kunnen hun instellingen bijwerken op de pagina van de ServiceNow-app-connector.
+-    Als u aanvullende DLP-scanners van derden hebt geconfigureerd, wordt bij de DLP-scanstatus nu de status van elke connector afzonderlijk weergegeven. Dit is om meer inzicht te bieden.
+-    Cloud App Security biedt nu ondersteuning voor de Microsoft Teams-activiteiten die worden ondersteund in het Office 365-auditlogboek. Deze functie wordt geleidelijk geïntroduceerd.
+-    Voor Exchange Online-imitatiegebeurtenissen kunt u nu filteren op het gebruikte machtigingsniveau: gedelegeerd, beheerder of gedelegeerde beheerder. U kunt in het **activiteitenlogboek** naar gebeurtenissen zoeken door het imitatieniveau weer te geven waarin u bent geïnteresseerd. Zoek daarvoor naar **Activiteitenobjecten** > **Item**.
+-    In de app-lade op het tabblad App-machtigingen ziet u nu de **uitgever** van elke app. U kunt Uitgever ook als filter gebruiken voor het zoeken naar aanvullende apps van diezelfde uitgever.
+-    Riskante IP-adressen worden nu als afzonderlijke risicofactoren weergegeven in plaats van samengevoegd onder de algemene risicofactor **Locatie**. 
+-    Wanneer Azure Information Protection-labels voor een bestand worden uitgeschakeld, worden de uitgeschakelde labels ook in Cloud App Security als uitgeschakeld weergegeven. Verwijderde labels worden niet weergegeven.
+ 
+**Aanvullende Salesforce-ondersteuning:**
+-    U kunt nu via Cloud App Security de toegang tot Salesforce van gebruikers intrekken en weer toekennen. Dit kunt u doen via het tabblad **Accounts** van de Salesforce-connector. Klik daarvoor op het tandwiel aan het einde van de rij van een specifieke gebruiker. Selecteer **Toegang tijdelijk intrekken** of **Toegang herstellen**. U kunt deze opties ook als beheeractie gebruiken in het beleid. Alle activiteiten voor het intrekken of herstellen van de toegang in Cloud App Security worden geregistreerd in het [beheerlogboek](governance-actions.md). 
+-    Beter inzicht in het delen van inhoud via Salesforce: u kunt nu zien welke bestanden zijn gedeeld en met wie (inclusief openbaar gedeelde bestanden, bestanden die met groepen zijn gedeeld en bestanden die met het volledige Salesforce-domein zijn gedeeld). Het verbeterde inzicht wordt met terugwerkende kracht geïmplementeerd voor nieuwe en momenteel verbonden Salesforce-apps. Het kan enige tijd duren voordat het verbeterde inzicht voor het eerst wordt aangeboden tijdens een update.
+-    De dekking voor de volgende Salesforce-gebeurtenissen is verbeterd. Ze zijn verwijderd uit de activiteit **Gebruikers beheren**: 
+    - Machtigingen bewerken
+    - Gebruiker maken
+    - Rol wijzigen
+    - Wachtwoord opnieuw instellen
+
+## <a name="cloud-app-security-release-90-91-92"></a>Cloud App Security-release 90, 91, 92
+Uitgebracht februari 2017
+
+**Speciale aankondiging**
+
+Cloud App Security is nu officieel gecertificeerd met Microsoft Naleving voor modelcIausules van de EU, ISO, HIPAA, CSA STAR en meer. Ga naar [Microsoft Compliance Offerings](https://www.microsoft.com/trustcenter/compliance/complianceofferings) (Aanbiedingen voor Microsoft Naleving, Engelstalig) en selecteer Cloud App Security voor de volledige lijst met certificaten.
+
+**Nieuwe functies**
+
+-  **Gebruikersgroepen importeren (preview)** wanneer u apps verbindt met behulp van API-connectors, kunt u nu met Cloud App Security gebruikersgroepen importeren uit Office 365 en Azure Active Directory. Typische scenario's die gebruikmaken van de geïmporteerde gebruikersgroepen zijn: onderzoeken welke documenten de HR-mensen bekijken of controleren of er iets vreemds gebeurt in de managementgroep of dat er iemand uit de beheergroep een activiteit buiten de Verenigde Staten heeft uitgevoerd. Zie voor meer informatie en instructies [Gebruikersgroepen importeren](user-groups.md).
+
+-  In het activiteitenlogboek kunt u nu gebruikers en gebruikers in groepen filteren om weer te geven welke activiteiten door een specifieke gebruiker zijn uitgevoerd en welke zijn uitgevoerd op een specifieke gebruiker. U kunt bijvoorbeeld activiteiten onderzoeken waarin de gebruiker zich voor iemand anders heeft uitgegeven en activiteiten waarin anderen zich voor deze gebruiker hebben uitgegeven. Zie voor meer informatie [Activiteiten](activity-filters.md).
+
+- Als u bij het onderzoeken van een bestand in de pagina **Bestanden** inzoomt op de **Deelnemers** van een specifiek bestand, ziet u nu meer informatie over de deelnemers, inclusief of zij intern of extern zijn, schrijvers of lezers (bestandsmachtigingen) en, als een bestand wordt gedeeld met een groep, kunt u nu alle gebruikers zien die lid zijn van de groep. Hiermee kunt u zien of de leden van de groep externe gebruikers zijn.
+
+-  IPv6-ondersteuning is nu beschikbaar voor alle apparaten.
+
+-    Cloud Discovery ondersteunt nu Baracuda-apparaten.
+
+-    Cloud App Security-systeemwaarschuwingen omvatten nu SIEM-verbindingsfouten. Zie voor meer informatie [SIEM-integratie](siem.md).
+
+-    Cloud App Security biedt nu ondersteuning voor de volgende activiteiten:
+
+     **Office 365, SharePoint/OneDrive**: Toepassingsconfiguratie bijwerken, Eigenaar van groep verwijderen, Site verwijderen, Map maken
+
+     **Dropbox**: Lid aan groep toevoegen, Lid uit groep verwijderen, Groep maken, Naam groep wijzigen, Naam teamlid wijzigen
+
+     **Vak**: Item uit groep verwijderen, Item delen bijwerken, Gebruiker aan groep toevoegen, Gebruiker uit groep verwijderen
+
+
+## <a name="cloud-app-security-release-89"></a>Cloud App Security-release 89
+Uitgebracht op 22 januari 2017
+
+**Nieuwe functies**
+-    We maken een begin met het implementeren van de mogelijkheid om DLP-gebeurtenissen uit het beveiligings- en compliancecentrum van Office 365 weer te geven in Cloud App Security. Als u DLP-beleid hebt geconfigureerd in het beveiligings- en compliancecentrum van Office 365, worden gedetecteerde beleidsovereenkomsten weergegeven in het activiteitenlogboek van Cloud App Security. De informatie in het activiteitenlogboek omvat het bestand of het e-mailbericht dat de overeenkomst heeft geactiveerd en het overeenkomende beleid of de waarschuwing. Met de activiteit **Beveiligingsgebeurtenis** kunt u overeenkomsten met DLP-beleid in Office 365 weergeven in het activiteitenlogboek van Cloud App Security. Met deze functie kunt u het volgende doen:
+    -    Alle DLP-resultaten weergeven die afkomstig zijn van de DLP-engine van Office 365.
+    -    Waarschuwen als DLP-beleid in Office 365 overeenkomt met een bepaald bestand, een bepaalde SharePoint-site of een bepaald beleid.
+    -    DLP-overeenkomsten met een bredere context onderzoeken, bijvoorbeeld externe gebruikers die een bestand hebben geopend of gedownload dat overeenkomst met een DLP-beleid heeft geactiveerd.
+ 
+-    Beschrijvingen van activiteiten zijn verbeterd voor meer duidelijkheid en consistentie. Voor elke activiteit is er nu een feedbackknop. Als er iets onduidelijk is of als u een vraag hebt, kunt u het ons laten weten. 
+ 
+**Verbeteringen**  
+-    Er is een nieuwe beheeractie voor Office 365 toegevoegd waarmee u alle externe gebruikers van een bestand kunt verwijderen. Hierdoor kunt u bijvoorbeeld beleidsregels implementeren die **externe shares verwijderen uit bestanden met de classificatie Alleen intern**.
+-    Verbeterde identificatie van externe gebruikers in SharePoint Online. Bij het filteren van de groep 'externe gebruikers' wordt het systeemaccount app@sharepoint niet weergegeven.
+
+
+
+## <a name="cloud-app-security-release-88"></a>Cloud App Security-release 88
+Uitgebracht op 8 januari 2017
+ 
+**Nieuwe functies**
+- Uw SIEM verbinden met Cloud App Security. U kunt nu waarschuwingen en activiteiten automatisch naar de gewenste SIEM-oplossing verzenden door SIEM-agents te configureren. Nu beschikbaar als een openbare preview.  Raadpleeg het gedeelte over integratie met SIEM voor volledige documentatie en details.
+- Cloud Discovery biedt nu ondersteuning voor IPv6. We hebben ondersteuning voor Palo Alto en Juniper geïmplementeerd en in toekomstige releases worden meer apparaten geïmplementeerd.
+ 
+**Verbeteringen**
+- De catalogus met cloud-apps bevat een nieuwe risicofactor. U kunt nu een app beoordelen op basis van het feit of gebruikersverificatie voor de app vereist is. Apps die verificatie afdwingen en geen anoniem gebruik toestaan, krijgen een gezondere risicoscore.
+- We implementeren nieuwe activiteitenbeschrijvingen, die bruikbaarder en consistenter zijn. Zoeken naar activiteiten wordt hierdoor niet beïnvloed.
+- We hebben verbeterde gebruiker- en apparaat-identificatie opgenomen, zodat Cloud App Security apparaatgegevens kan verstrekken voor een groter aantal gebeurtenissen.
+ 
 ## <a name="cloud-app-security-release-87"></a>Cloud App Security-release 87
 25 december 2016 uitgebracht
 
 **Nieuwe functies**
--   We zijn bezig om [het anoniem maken van gegevens](cloud-discovery-anonymizer.md) uit te rollen, zodat u kunt profiteren van Cloud Discovery en tegelijkertijd de privacy van gebruikers kunt beveiligen. Het anoniem maken van gegevens wordt uitgevoerd door informatie over de gebruikersnaam te versleutelen.
--   We zijn bezig om de mogelijkheid uit te rollen waarbij een blokkeerscript van Cloud App Security naar meer apparaten wordt geëxporteerd. U kunt met het script eenvoudig schaduw-IT reduceren door verkeer naar niet-toegestane apps te blokkeren. Deze optie is nu beschikbaar voor: 
-    -   BlueCoat ProxySG
-    -   Cisco ASA
-    -   Fortinet
-    -   Juniper SRX
-    -   Palo Alto
-    -   Websense
--   Er is een nieuwe governance-actie voor bestanden toegevoegd waarmee u kunt afdwingen dat een bestand machtigingen van de bovenliggende map overneemt waarbij alle unieke machtigingen voor het bestand of de map worden verwijderd. Met deze governance-actie voor bestanden kunt u de machtigingen van uw bestand of map zo wijzigen dat deze worden overgenomen van de bovenliggende map. 
--   Er is een nieuwe gebruikersgroep toegevoegd met de naam Extern. Dit is een standaardgebruikersgroep die vooraf is geconfigureerd door Cloud App Security, voor alle gebruikers die geen deel uitmaken van uw interne domeinen. U kunt deze gebruikersgroep als een filter gebruiken. U kunt bijvoorbeeld activiteiten zoeken die worden uitgevoerd door externe gebruikers.
--   De functie Cloud Discovery ondersteunt nu Sophos Cyberoam-apparaten.
+-    We zijn bezig om [het anoniem maken van gegevens](cloud-discovery-anonymizer.md) uit te rollen, zodat u kunt profiteren van Cloud Discovery en tegelijkertijd de privacy van gebruikers kunt beveiligen. Het anoniem maken van gegevens wordt uitgevoerd door informatie over de gebruikersnaam te versleutelen.
+-    We zijn bezig om de mogelijkheid uit te rollen waarbij een blokkeerscript van Cloud App Security naar meer apparaten wordt geëxporteerd. U kunt met het script eenvoudig schaduw-IT reduceren door verkeer naar niet-toegestane apps te blokkeren. Deze optie is nu beschikbaar voor: 
+    -    BlueCoat ProxySG
+    -    Cisco ASA
+    -    Fortinet
+    -    Juniper SRX
+    -    Palo Alto
+    -    Websense
+-    Er is een nieuwe governance-actie voor bestanden toegevoegd waarmee u kunt afdwingen dat een bestand machtigingen van de bovenliggende map overneemt waarbij alle unieke machtigingen voor het bestand of de map worden verwijderd. Met deze governance-actie voor bestanden kunt u de machtigingen van uw bestand of map zo wijzigen dat deze worden overgenomen van de bovenliggende map. 
+-    Er is een nieuwe gebruikersgroep toegevoegd met de naam Extern. Dit is een standaardgebruikersgroep die vooraf is geconfigureerd door Cloud App Security, voor alle gebruikers die geen deel uitmaken van uw interne domeinen. U kunt deze gebruikersgroep als een filter gebruiken. U kunt bijvoorbeeld activiteiten zoeken die worden uitgevoerd door externe gebruikers.
+-    De functie Cloud Discovery ondersteunt nu Sophos Cyberoam-apparaten.
  
 **Oplossingen voor problemen**
--   SharePoint Online- en OneDrive voor Bedrijven-bestanden worden in het rapport voor bestandsbeleid en op de pagina Bestanden als Intern in plaats van Privé weergegeven. Dit is opgelost.
+-    SharePoint Online- en OneDrive voor Bedrijven-bestanden worden in het rapport voor bestandsbeleid en op de pagina Bestanden als Intern in plaats van Privé weergegeven. Dit is opgelost.
  
 
 
@@ -84,38 +179,38 @@ Uitgebracht: 27 november 2016
 Uitgebracht: 13 november 2016
 
 **Nieuwe functies**
--   Cloud App Security biedt nu ondersteuning voor Microsoft Azure Information Protection, met verbeterde integratie en automatische inrichting. U kunt uw bestanden filteren en bestandsbeleidsregels instellen met behulp van veilige classificaties van tags en vervolgens het classificatielabel instellen dat u wilt weergeven. Daarnaast geven de labels aan of de classificatie is ingesteld door iemand in uw organisatie of door personen van een andere tenant (extern). U kunt ook beleidsregels voor activiteiten instellen op basis van de Azure Information Protection-classificatielabels en automatisch scannen voor de classificatielabels in Office 365 inschakelen. Zie [Integratie van Azure Information Protection](azip-integration.md) voor meer informatie over hoe u kunt profiteren van deze geweldige nieuwe functie.
+-    Cloud App Security biedt nu ondersteuning voor Microsoft Azure Information Protection, met verbeterde integratie en automatische inrichting. U kunt uw bestanden filteren en bestandsbeleidsregels instellen met behulp van veilige classificaties van tags en vervolgens het classificatielabel instellen dat u wilt weergeven. Daarnaast geven de labels aan of de classificatie is ingesteld door iemand in uw organisatie of door personen van een andere tenant (extern). U kunt ook beleidsregels voor activiteiten instellen op basis van de Azure Information Protection-classificatielabels en automatisch scannen voor de classificatielabels in Office 365 inschakelen. Zie [Integratie van Azure Information Protection](azip-integration.md) voor meer informatie over hoe u kunt profiteren van deze geweldige nieuwe functie.
  
 **Verbeteringen**
--   Er zijn verbeteringen aangebracht in het activiteitenlogboek van Cloud App Security: 
+-    Er zijn verbeteringen aangebracht in het activiteitenlogboek van Cloud App Security: 
    -    Office 365-gebeurtenissen uit het beveiligings- en compliancecentrum zijn nu geïntegreerd met Cloud App Security en worden weergegeven in het **activiteitenlogboek**.
    -    Alle activiteiten van Cloud App Security worden in het activiteitenlogboek van Cloud App Security geregistreerd als beheeractiviteit.
--   Als hulp bij het onderzoeken van waarschuwingen met betrekking tot bestanden kunt u nu voor elke waarschuwing die het resultaat is van een bestandsbeleid de lijst met activiteiten weergegeven die voor het overeenkomende bestand zijn uitgevoerd.
--   Het algoritme voor onmogelijke trajecten in de anomaliedetectie-engine is verbeterd en biedt nu betere ondersteuning voor kleine tenants. 
+-    Als hulp bij het onderzoeken van waarschuwingen met betrekking tot bestanden kunt u nu voor elke waarschuwing die het resultaat is van een bestandsbeleid de lijst met activiteiten weergegeven die voor het overeenkomende bestand zijn uitgevoerd.
+-    Het algoritme voor onmogelijke trajecten in de anomaliedetectie-engine is verbeterd en biedt nu betere ondersteuning voor kleine tenants. 
  
 **Kleine verbeteringen**
--   De **limiet voor het exporteren van activiteiten** is verhoogd naar 10.000. 
--   Bij het maken van een **momentopnamerapport** ontvangt u tijdens het handmatig uploaden van logboeken in Cloud Discovery nu een nauwkeurige schatting van hoe lang de logboekverwerking gaat duren. 
--   In een bestandsbeleid kunt u de beheeractie **Samenwerker verwijderen** nu gebruiken voor groepen.
--   Er zijn kleine verbeteringen aangebracht in de pagina **App-machtigingen**. 
--   Als meer dan 10.000 gebruikers machtigingen hadden voor een app die is verbonden met Office 365, werd de lijst langzaam geladen. Dit probleem is opgelost.
--   Er zijn aanvullende kenmerken toegevoegd aan de **app-catalogus** met betrekking tot PCI (Payment Card Industry).
+-    De **limiet voor het exporteren van activiteiten** is verhoogd naar 10.000. 
+-    Bij het maken van een **momentopnamerapport** ontvangt u tijdens het handmatig uploaden van logboeken in Cloud Discovery nu een nauwkeurige schatting van hoe lang de logboekverwerking gaat duren. 
+-    In een bestandsbeleid kunt u de beheeractie **Samenwerker verwijderen** nu gebruiken voor groepen.
+-    Er zijn kleine verbeteringen aangebracht in de pagina **App-machtigingen**. 
+-    Als meer dan 10.000 gebruikers machtigingen hadden voor een app die is verbonden met Office 365, werd de lijst langzaam geladen. Dit probleem is opgelost.
+-    Er zijn aanvullende kenmerken toegevoegd aan de **app-catalogus** met betrekking tot PCI (Payment Card Industry).
 
 
 ## <a name="cloud-app-security-release-83"></a>Cloud App Security release 83
 Uitgebracht: 30 oktober 2016
 
 **Nieuwe functies**
--   Om het filteren in het [Activiteitenlogboek](activity-filters.md) en het [Bestandslogboek](file-filters.md) te vereenvoudigen, zijn vergelijkbare filters samengevoegd. U kunt gebruikmaken van de activiteitenfilters Activiteitobject, IP-adres en Gebruiker. Gebruik het filter Medewerkers om precies te vinden wat u zoekt.
--   Klik in de activiteitenlogboeklade onder **Bron** op de koppeling **Onbewerkte gegevens bekijken** om de onbewerkte gegevens die zijn gebruikt voor het genereren van het activiteitenlogboek te downloaden, zodat u verder kunt inzoomen op app-gebeurtenissen. 
--   Aanvullende ondersteuning voor extra aanmeldactiviteiten in Okta. [Afgeschermd voorbeeld]
--   Aanvullende ondersteuning voor extra aanmeldactiviteiten in Salesforce. 
+-    Om het filteren in het [Activiteitenlogboek](activity-filters.md) en het [Bestandslogboek](file-filters.md) te vereenvoudigen, zijn vergelijkbare filters samengevoegd. U kunt gebruikmaken van de activiteitenfilters Activiteitobject, IP-adres en Gebruiker. Gebruik het filter Medewerkers om precies te vinden wat u zoekt.
+-    Klik in de activiteitenlogboeklade onder **Bron** op de koppeling **Onbewerkte gegevens bekijken** om de onbewerkte gegevens die zijn gebruikt voor het genereren van het activiteitenlogboek te downloaden, zodat u verder kunt inzoomen op app-gebeurtenissen. 
+-    Aanvullende ondersteuning voor extra aanmeldactiviteiten in Okta. [Afgeschermd voorbeeld]
+-    Aanvullende ondersteuning voor extra aanmeldactiviteiten in Salesforce. 
 
 **Verbeteringen**
--   Verbeterde bruikbaarheid van Cloud Discovery-momentopnamerapporten en het oplossen van problemen.
--   Verbeterde zichtbaarheid van waarschuwingen voor meerdere apps in de lijst met waarschuwingen.
--   Verbeterde functie voor het maken van doorlopende rapporten in Cloud Discovery.
--   Verbeterde bruikbaarheid van het Beheerlogboek.
+-    Verbeterde bruikbaarheid van Cloud Discovery-momentopnamerapporten en het oplossen van problemen.
+-    Verbeterde zichtbaarheid van waarschuwingen voor meerdere apps in de lijst met waarschuwingen.
+-    Verbeterde functie voor het maken van doorlopende rapporten in Cloud Discovery.
+-    Verbeterde bruikbaarheid van het Beheerlogboek.
 
 
 
@@ -293,8 +388,3 @@ Uitgebracht: 15 mei 2016
 [Premier-klanten kunnen Cloud App Security ook rechtstreeks vanuit Premier Portal kiezen.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Jan17_HO2-->
-
-

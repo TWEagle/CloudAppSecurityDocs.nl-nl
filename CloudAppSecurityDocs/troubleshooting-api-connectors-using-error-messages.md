@@ -1,11 +1,11 @@
 ---
-title: Foutberichten gebruiken om problemen met app-connectors op te lossen | Microsoft Docs
+title: Foutberichten gebruiken om problemen met app-connectors op te lossen in Cloud App Security | Microsoft Docs
 description: In dit onderwerp vindt u een lijst met foutberichten voor API app-connectors en de aanbevolen oplossingen voor elke fout.
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/27/2016
+ms.date: 3/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,14 +13,10 @@ ms.technology:
 ms.assetid: 4b6ac04a-4653-4c4a-bd6f-5926743475cc
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 9565d8a51e4c06963861d9dfaef9595944bda1ff
-ms.openlocfilehash: 71e2a213ddf6f625037b11373e55aa270c3b1785
-
-
+ms.openlocfilehash: e9fa0b4d0527c6322da14cdf16cc8509ec37c1ed
+ms.sourcegitcommit: b840b945b270e616560f565bcc6590dd68ad5ebd
+translationtype: HT
 ---
-
-
 # <a name="troubleshooting-app-connectors-using-error-messages"></a>Foutberichten gebruiken om problemen met app-connectors op te lossen
 
 App-connectorfouten worden weergegeven in het dialoogvenster van de app-connector nadat er is geprobeerd verbinding te maken met een cloud-app met de API app-connector.
@@ -46,9 +42,9 @@ App-connectorfouten worden weergegeven in het dialoogvenster van de app-connecto
 |IgniteException|Office 365|Het domein of de gebruiker is ongeldig|Herstel de instellingen en volg opnieuw de procedure voor het maken van verbinding tussen Office 365 en Cloud App Security.|
 |ContextManagerServiceException: com.adallom.adalib.httputils.exceptions.TokenRefreshException: {"error":"invalid_grant","error_description":"AADSTS70002: Fout bij valideren van referenties. AADSTS70008: De opgegeven autorisatiecode of het opgegeven vernieuwingstoken is verlopen. Verzend een nieuwe interactieve autorisatieaanvraag voor deze gebruiker en bron.|Office 365|Het domein of de gebruiker is ongeldig|Herstel de instellingen en volg opnieuw de procedure voor het maken van verbinding tussen Office 365 en Cloud App Security.|
 |HttpRequestFailure: De server heeft de volgende fout geretourneerd: 400 - Ongeldige aanvraag|Office 365|Interne fout|Klik over een aantal minuten nogmaals op de koppeling Nu testen. Als deze niet werkt, volgt u nogmaals de procedure voor het maken van verbinding tussen Office 365 en Cloud App Security.|
-|GoogleJsonResponseException: 401 - Niet gemachtigd|Google Apps|Toegang geweigerd. U bent niet gemachtigd om activiteitsrecords te lezen. De gebruiker die u gebruikt voor aanmelding bij Google Apps, moet een gebruiker met beheerdersrechten zijn.|Volg nogmaals de procedure voor het maken van verbinding tussen Google Apps en Cloud App Security met een beheerdersaccount.|
-|GoogleJsonResponseException: 403 - Verboden|Google Apps|Probleem bij het uitvoeren van de API van Google Apps.|Als u de Cloud App Security-connector voor Google Apps hebt geïmplementeerd, controleert u het volgende: als u op Onbeperkt hebt geklikt, controleert u of uw Google Apps-account daadwerkelijk onbeperkt is. Als dit niet het geval is, voert u de App-connector nogmaals uit en selecteert u de optie voor een onbeperkt account. Controleer of de tijdens de installatie gedefinieerde de bereiken juist zijn. Als dit geen nieuwe implementatie is en u deze fout ziet, kan het zijn dat de API-limiet voor vandaag is bereikt en de Google Apps-gebeurtenissen morgen worden vernieuwd.|
-|TokenResponseException: 400 - Ongeldige aanvraag|Google Apps|De verbinding met Google Apps is niet voltooid of is verlopen.|Volg opnieuw de procedure voor het maken van verbinding tussen Google Apps en Cloud App Security.|
+|GoogleJsonResponseException: 401 - Niet gemachtigd|G Suite|Toegang geweigerd. U bent niet gemachtigd om activiteitsrecords te lezen. De gebruiker die wordt aangemeld bij G Suite, moet een gebruiker met beheerdersrechten zijn.|Volg nogmaals de procedure voor het instellen van een verbinding tussen G Suite en Cloud App Security met een beheerdersaccount.|
+|GoogleJsonResponseException: 403 - Verboden|G Suite|Probleem bij het uitvoeren van de API van G Suite.|Als u de Cloud App Security-connector voor G Suite hebt geïmplementeerd, controleert u het volgende: als u op Onbeperkt hebt geklikt, controleert u of uw G Suite-account daadwerkelijk onbeperkt is. Als dit niet het geval is, voert u de App-connector nogmaals uit en selecteert u de optie voor een onbeperkt account. Controleer of de tijdens de installatie gedefinieerde de bereiken juist zijn. Als dit geen nieuwe implementatie is en u deze fout ziet, kan het zijn dat de API-limiet voor vandaag is bereikt en de G Suite-gebeurtenissen morgen worden vernieuwd.|
+|TokenResponseException: 400 - Ongeldige aanvraag|G Suite|De verbinding met G Suite is niet voltooid of is verlopen.|Volg nogmaals de procedure voor het instellen van een verbinding tussen G Suite en Cloud App Security.|
 |RuntimeException: com.adallom.adalib.httputils.exceptions.HttpRequestFailure: De server heeft de volgende fout geretourneerd: 403 - Verboden|ServiceNow|De machtigingen zijn onjuist|Volg nogmaals de procedure voor het maken van verbinding tussen ServiceNow en Cloud App Security met een beheerdersaccount.|
 |HttpRequestFailure: De server heeft de volgende fout geretourneerd: 401 - Niet gemachtigd|Exchange Online|De gebruiker of het wachtwoord is onjuist|Controleer of de gebruikersnaam en het wachtwoord juist zijn en volg opnieuw de procedure voor het maken van verbinding tussen Exchange Online en Cloud App Security.|
 |HttpRequestFailure: De server heeft de volgende fout geretourneerd: 404 - Niet gevonden|Exchange Online|De gebruiker die u gebruikt voor aanmelding bij Exchange Online, heeft geen primair postvak in Exchange Online (bijvoorbeeld een gebruiker die niet in Azure AD bestaat of een gebruiker die in Azure AD bestaat, maar geen licentie heeft voor Exchange Online).|Volg nogmaals de procedure voor het maken van verbinding tussen Exchange Online en Cloud App Security met een nieuw beheerdersaccount.|
@@ -62,8 +58,3 @@ App-connectorfouten worden weergegeven in het dialoogvenster van de app-connecto
 [Premier-klanten kunnen Cloud App Security ook rechtstreeks vanuit Premier Portal kiezen.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Nov16_HO5-->
-
-

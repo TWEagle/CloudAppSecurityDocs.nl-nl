@@ -1,11 +1,11 @@
 ---
-title: Onderzoeken | Microsoft Docs
+title: Risicovolle cloud-apps en verdachte activiteiten onderzoeken met Cloud App Security | Microsoft Docs
 description: In dit onderwerp vindt u een overzicht van het proces voor het onderzoeken van waarschuwingen, problemen en verdachte activiteiten met Cloud App Security.
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/21/2016
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,15 +13,12 @@ ms.technology:
 ms.assetid: a9b00c2a-2f71-499e-8f57-67e560daedc1
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: fd3be51a8a81b688383b40a19582f5739c889580
-ms.openlocfilehash: f1b32304a8218316f744defa4632b3e8a6af771d
-
-
+ms.openlocfilehash: 8e552aea95318288d329597ec2a0749535e06a52
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+translationtype: HT
 ---
-
 # <a name="investigate"></a>Onderzoeken
-Nadat Cloud App Security wordt uitgevoerd in uw cloudomgeving, hebt u eerst een fase nodig waarin u leert en onderzoekt hoe u de hulpprogramma's van Cloud App Security kunt gebruiken om meer inzicht te krijgen in wat er in uw cloudomgeving gebeurt. Vervolgens kunt u op basis van uw specifieke omgeving en hoe deze wordt gebruikt bepalen welke vereisten nodig zijn om uw organisatie te beschermen tegen risico's.  
+Nadat Cloud App Security wordt uitgevoerd in uw cloudomgeving, hebt u eerst een fase nodig waarin u leert en onderzoekt hoe u de hulpprogramma's van Cloud App Security kunt gebruiken om meer inzicht te krijgen in wat er in uw cloudomgeving gebeurt. Vervolgens kunt u op basis van uw specifieke omgeving en hoe deze wordt gebruikt bepalen welke vereisten nodig zijn om uw organisatie te beschermen tegen risico's.
 
 In dit onderwerp wordt beschreven hoe u een onderzoek uitvoert om een beter inzicht te krijgen in wat er in uw cloudomgeving gebeurt.  
 
@@ -34,17 +31,17 @@ De volgende dashboards kunnen u helpen bij het onderzoeken van apps in uw cloudo
 |Toepassingsdashboard: algemeen|Overzicht van het gebruik van toepassingen per locatie, gebruiksgrafieken per aantal gebruikers|  
 |Toepassingsdashboard: inzichten|Analyse van gegevens die zijn opgeslagen in de app, onderverdeeld op basis van het bestandstype en het niveau van bestandsdeling|  
 |Toepassingsdashboard: bestanden|Inzoomen op bestanden, de mogelijkheid te filteren op basis van eigenaar, niveau van delen, enzovoort, alsmede het uitvoeren van beheeracties (zoals quarantaine)|  
-|Toepassingsdashboard: apps van derden|Inzoomen op apps van derden die momenteel zijn geïmplementeerd, zoals Google Apps, en het beleid voor deze apps definiëren|  
+|Toepassingsdashboard: apps van derden|Inzoomen op apps van derden die momenteel zijn geïmplementeerd, zoals G Suite, en het beleid voor deze apps definiëren|  
 |Gebruikersdashboard|Een volledig overzicht van het gebruikersprofiel in de cloud met inbegrip van groepen, locaties, recente activiteiten, gerelateerde waarschuwingen en gebruikte browsers|  
 
-##  <a name="a-namesanctionappa-tag-apps-as-sanctioned-or-unsanctioned"></a><a name="sanctionapp"></a> Apps labelen als goedgekeurd of niet-goedgekeurd  
+##  <a name="sanctionapp"></a> Apps labelen als goedgekeurd of niet-goedgekeurd  
 Een belangrijke stap voor het krijgen van inzicht in uw cloud, is het labelen van apps als goedgekeurd of niet-goedgekeurd. Nadat u een app hebt goedgekeurd, kunt u filteren op apps die niet zijn goedgekeurd en migratie naar goedgekeurde apps van hetzelfde type initiëren.  
 
 -   Ga in de Cloud App Security-console naar de app-catalogus of gedetecteerde apps.  
 
--   In de lijst met apps kiest u in de rij met de app die u wilt goedkeuren de drie puntjes aan het einde van de rij ![puntjes voor labelen als goedgekeurd](./media/sanction-three-dots.png "Tag as sanctioned dots") en kiest u **Als goedgekeurd markeren**.  
+-   In de lijst met apps kiest u in de rij met de app die u wilt labelen als goedgekeurd de drie puntjes aan het einde van de rij ![Puntjes voor labelen als goedgekeurd](./media/sanction-three-dots.png "Puntjes voor labelen als goedgekeurd") en kiest u **Als goedgekeurd markeren**.  
 
-     ![Als goedgekeurd labelen](./media/mark-as-sanctioned.png "tag as sanctioned")  
+     ![Labelen als goedgekeurd](./media/mark-as-sanctioned.png "Labelen als goedgekeurd")  
 
 
 ## <a name="use-the-investigation-tools"></a>Gebruik de hulpprogramma's voor onderzoek  
@@ -82,10 +79,12 @@ Een belangrijke stap voor het krijgen van inzicht in uw cloud, is het labelen va
     -   Is er iemand ontslagen, maar heeft deze medewerker nog steeds toegang tot een app en kan hij of zij die toegang gebruiken om gegevens te stelen?  
 
     -   Wilt u de machtigingen van een gebruiker voor een specifieke app intrekken of vereisen dat een specifieke gebruiker meervoudige verificatie uitvoert?  
+    
+    -   U kunt ook inzoomen op het gebruikersaccount op het tandwiel aan het einde van de rij van het gebruikersaccount te klikken. Selecteer dan een actie, zoals **Toegang tijdelijk intrekken** of **Samenwerkingen van gebruiker verwijderen**. Als de gebruiker is geïmporteerd uit Azure Active Directory kunt u ook klikken op **Azure AD-accountinstellingen** voor eenvoudige toegang tot geavanceerde gebruikersbeheerfuncties, bijvoorbeeld voor groepsbeheer, MFA, details over de aanmeldingen van de gebruiker en het blokkeren van aanmeldingen.
 
 4.  Ga naar **Onderzoeken** en selecteer vervolgens een app. Het app-dashboard wordt geopend en biedt u informatie en inzichten. U kunt de tabbladen aan de bovenzijde gebruiken om het volgende te controleren:  
 
-     ![App-dashboard](./media/investigate-app.png "investigate app")  
+     ![App-dashboard](./media/investigate-app.png "app onderzoeken")  
 
     -   Welke soorten apparaten gebruiken uw gebruikers om verbinding te maken met de app?  
 
@@ -135,7 +134,7 @@ Stel dat u ervan uitgaat dat u geen toegang hebt tot uw cloudomgeving via riskan
 
 5.  Onder **Activiteitfilters** kiest u de **+** om een filter toe te voegen. Schuif omlaag naar **IP-tag** en kies vervolgens **Anoniem** en **Tor**.  
 
-     ![Voorbeeldbeleid voor riskante IP-adressen](./media/example-policy-risky-ips.png "example policy risky ips")  
+     ![Voorbeeldbeleid riskante IP-adressen](./media/example-policy-risky-ips.png "voorbeeldbeleid riskante IP-adressen")  
 
 Nu u het beleid hebt geïmplementeerd, ziet u tot uw verrassing een waarschuwing dat het beleid is geschonden.  
 
@@ -155,9 +154,3 @@ Nu u het beleid hebt geïmplementeerd, ziet u tot uw verrassing een waarschuwing
 Zie [Beheer](control.md) voor meer informatie over hoe u de cloud-apps in uw organisatie kunt beheren.   
 Ga naar de [ondersteuningspagina van Cloud App Security](http://support.microsoft.com/oas/default.aspx?prid=16031) voor technische ondersteuning.  
 Premier-klanten kunnen Cloud App Security ook rechtstreeks vanuit [Premier Portal](https://premier.microsoft.com/) kiezen.  
-
-
-
-<!--HONumber=Nov16_HO5-->
-
-

@@ -1,11 +1,11 @@
 ---
-title: Werken met de RegEx-engine | Microsoft Docs
+title: De RegEx-engine gebruiken voor beleidsregels voor inhoudscontrole | Microsoft Docs
 description: In dit onderwerp vindt u instructies voor het gebruik van RegEx voor jokertekens in de beleidsregels van Cloud App Security.
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 3/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: dc8b87e5-e6c1-4a65-ab8c-067fb527fce4
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 77468efb5d4cb62f560c11e624545fc8abe8c99e
-
-
+ms.openlocfilehash: 0b635a9d2f2e5befa53abea6b7d59876def0a115
+ms.sourcegitcommit: 3bacec2f1e5b7bd34175ab5975f7be74792007e4
+translationtype: HT
 ---
-
 # <a name="working-with-the-regex-engine"></a>Bij het werken met de beleidsregels voor inhoudscontrole
  
 In de beleidsregels voor inhoudsinspectie in Cloud App Security wordt voor jokertekens gebruikgemaakt van RegEx. Inhoudscontrole kan worden toegepast als onderdeel van beleidsregels voor bestanden. Als u reguliere expressies wilt testen, kunt u de volgende websites gebruiken:  
@@ -56,7 +53,7 @@ Voorbeelden van expressies
 |-|-|-|  
 |**Reguliere expressie**|**Gegevens**|**Overeenkomsten**|  
 |Colou?r (?:black&#124;blue&#124;white)|Color black<br /><br /> Color white<br /><br /> Color red|Ja<br /><br /> Ja<br /><br /> Nee|  
-|[a-z0-9]{1,9}@[a-z0-9]{1,9}\\. [a-z] {2,3}|Some1@abc.com<br /><br /> user@host.org<br /><br /> @bad.com|Ja<br /><br /> Ja<br /><br /> Nee|  
+|[a-z0-9]{1,9}@[a-z0-9]{1,9}\\.[a-z]{2,3}|Some1@abc.com<br /><br /> user@host.org<br /><br /> @bad.com|Ja<br /><br /> Ja<br /><br /> Nee|  
 |20\d{2}-(?:0[1-9]&#124;1[0-2])-(?:[0-2][0-9]&#124;30&#124;31)|2015-12-31<br /><br /> 2015-01-09<br /><br /> 1999-12-31|Ja<br /><br /> Ja<br /><br /> Nee|  
 |d.n't\s{0,10}c.r.|Don't     care<br /><br /> D!n'tcor0<br /><br /> Doesn't care|Ja<br /><br /> Ja<br /><br /> Nee|  
  
@@ -67,8 +64,3 @@ Voorbeelden van expressies
 [Premier-klanten kunnen Cloud App Security ook rechtstreeks vanuit Premier Portal kiezen.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Nov16_HO5-->
-
-

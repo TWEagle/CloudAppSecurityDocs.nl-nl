@@ -1,11 +1,11 @@
 ---
-title: Bestanden | Microsoft Docs
+title: Informatie over de bestandsgegevens en filters die beschikbaar zijn in Cloud App Security | Microsoft Docs
 description: Dit naslagonderwerp bevat informatie over de bestandstypen en bestandsfilters die worden gebruikt in Cloud App Security.
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/19/2016
+ms.date: 4/2/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: d11339040da669b77069c286f6171f7b3a6161db
-ms.openlocfilehash: 3262d01aed03bbb462832f8ff2836152e6208e74
-
-
+ms.openlocfilehash: 046816dbffffb8f91b11656375730b07be4b4fb0
+ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
+translationtype: HT
 ---
-
 # <a name="files"></a>Bestanden
 
 
@@ -41,7 +38,7 @@ Om in te zoomen op meer specifieke bestanden, kunt u het basisfilter uitbreiden 
 
  ![geavanceerd filter bestandslogboek](media/file-log-filter-advanced.png)
  
-###  <a name="a-namefilefiltersa-file-filters"></a><a name="Filefilters"></a> Bestandsfilters 
+###  <a name="Filefilters"></a> Bestandsfilters 
  
 Met Cloud App Security kunt u elk bestandstype controleren op basis van meer dan twintig metagegevensfilters (bijvoorbeeld toegangsniveau, bestandstype). 
  
@@ -84,7 +81,7 @@ Hieronder volgt een lijst met de bestandsfilters die kunnen worden toegepast. De
   
 -   Bestandsnaam – de bestandsnaam of subtekenreeks van de naam zoals deze is gedefinieerd in de cloud-app, bijvoorbeeld Alle bestanden met een wachtwoord in hun naam.   
   
--   Bestandslabel - zoek naar bestanden met specifieke labels die zijn ingesteld door Azure Information Protection. Hiervoor is integratie met Azure Information Protection vereist.
+-   Classificatielabel - zoek naar bestanden met specifieke labels die zijn ingesteld door Azure Information Protection. Hiervoor is integratie met Azure Information Protection vereist.
 
 -   Bestandstype – Cloud App Security houdt rekening met het MIME-type dat van de service is ontvangen en scant het bestand om het daadwerkelijke bestandstype te bepalen. Deze scan is van toepassing op bestanden die relevant zijn voor een gegevensscan (documenten, afbeeldingen, presentaties, spreadsheets, tekst- en zipbestanden). Het filter werkt per type bestand/map, bijvoorbeeld Alle mappen die... of Alle spreadsheetbestanden die...
 
@@ -114,13 +111,16 @@ U kunt ook instellen dat het beleid wordt uitgevoerd op specifieke bestanden doo
   
 ## <a name="working-with-the-file-drawer"></a>Werken met de bestandslade
 
-U kunt meer informatie bekijken over elk bestand door te klikken op het bestand in het Bestandslogboek. Daarmee opent u de bestandslade, die de volgende acties bevat die u met het bestand kunt uitvoeren:
+U kunt meer informatie bekijken over elk bestand door te klikken op het bestand in het bestandslogboek. Daarmee opent u de bestandslade, die de volgende acties bevat die u met het bestand kunt uitvoeren:
 
 - URL: hiermee gaat u naar de bestandslocatie.
-- Bestands-id’s: als u klikt op Bestands-id’s, wordt er een pop-up geopend met onbewerkte details over het bestand, waaronder de bestands-id en versleutelingssleutels.
+- Bestands-id's: als u klikt op Bestands-id's, wordt er een pop-up geopend met onbewerkte details over het bestand, waaronder de bestands-id en versleutelingssleutels.
 - Eigenaar: klik op de eigenaar om de gebruikerspagina van de eigenaar van dit bestand weer te geven.
 - Overeenkomend beleid: klik op de koppeling Overeenkomend beleid om een lijst met beleidsregels te zien waarmee dit bestand overeenkomt.
 - Classificatielabel: klik op het classificatielabel om de lijst met Azure Information Protection-classificatielabels te zien die in het bestand zijn gevonden. U kunt vervolgens filteren op alle bestanden die overeenkomen met dit label.    
+
+De velden in de Activiteitenlade bieden contextuele koppelingen naar aanvullende bestanden en meer details die u rechtstreeks vanuit de lade kunt uitvoeren. Als u bijvoorbeeld de cursor naast het veld **Eigenaar** verplaatst, kunt u het pictogram ![Toevoegen aan filter](./media/add-to-filter-icon.png) gebruiken om de eigenaar rechtstreeks toe te voegen aan het filter van de huidige pagina. U kunt ook het tandwielpictogram ![Instellingen](./media/contextual-settings-icon.png) dat wordt weergegeven gebruiken om rechtstreeks naar de instellingenpagina te gaan die nodig is om de configuratie van een van de velden, zoals **Classificatielabels**, aan te passen.
+
 
 ![bestandslade](./media/file-drawer.png "bestandslade")  
   
@@ -132,8 +132,3 @@ Zie [Bestandsbeheeracties](governance-actions.md#file-governance-actions) voor e
 [Premier-klanten kunnen Cloud App Security ook rechtstreeks vanuit Premier Portal kiezen.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Dec16_HO3-->
-
-

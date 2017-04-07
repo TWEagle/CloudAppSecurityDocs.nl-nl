@@ -1,11 +1,11 @@
 ---
-title: Beleidsregels voor bestanden | Microsoft Docs
+title: Beleidregels maken voor het controleren en beveiligen van bestanden in uw cloud-apps | Microsoft Docs
 description: In dit onderwerp vindt u een beschrijving van de procedure voor het instellen van een gegevensbeleid om de gegevens en bestanden met betrekking tot het gebruik van cloud-apps in uw organisatie te beheren en te controleren.
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/27/2016
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,20 +13,17 @@ ms.technology:
 ms.assetid: ac53fbd6-4d31-4bce-b2bc-9dc65ad83b3e
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 156dccf0c77bf7e46c0328ebf6bd1e0ad9609845
-ms.openlocfilehash: 21edb17ac01d7f54cab9b7b2ced838752a916c1e
-
-
+ms.openlocfilehash: 26a89346868e4d8a5df450d30b69826b4791c1f8
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+translationtype: HT
 ---
-
 # <a name="file-policies"></a>Beleidsregels voor bestanden  
 Met Beleidsregels voor bestanden kunt u een breed scala aan geautomatiseerde processen controleren waarbij u gebruikmaakt van de API’s van de cloudprovider. Beleidsregels kunnen worden ingesteld voor het uitvoeren van continue scans voor naleving, juridische eDiscovery-taken, DLP voor gevoelige inhoud die openbaar is gedeeld en veel meer gebruiksvoorbeelden.  
 Met Cloud App Security kunt u elk bestandstype controleren op basis van meer dan twintig metagegevensfilters (bijvoorbeeld toegangsniveau, bestandstype). 
  
 **Ondersteunde bestandstypen** 
 
-Met de ingebouwde DLP-engines van Cloud App Security worden inhoudsinspecties uitgevoerd door tekst te extraheren uit meer dan 100 algemene bestandstypen (Office-bestanden, Open Office-bestanden, gecomprimeerde bestanden, verschillende RTF-indelingen, XML- en HTML-bestanden, enzovoort).
+Met de ingebouwde DLP-engines van Cloud App Security worden inhoudsinspecties uitgevoerd door tekst te extraheren uit meer dan&100; algemene bestandstypen (Office-bestanden, Open Office-bestanden, gecomprimeerde bestanden, verschillende RTF-indelingen, XML- en HTML-bestanden, enzovoort).
 
 De engine combineert drie aspecten onder elk beleid:  
   
@@ -50,7 +47,7 @@ Hier volgen enkele voorbeelden van beleidsregels voor bestanden die kunnen worde
     Ontvang een waarschuwing over een bestand dat wordt gedeeld met accounts die eigendom zijn van de specifieke externe domeinen, bijvoorbeeld met het domein van een concurrent. Selecteer het externe domein waarmee u het delen wilt beperken.  
   
 -   Gedeelde bestanden die niet worden gewijzigd tijdens de laatste periode in quarantaine plaatsen:  
-    Ontvang een waarschuwing over gedeelde bestanden die niemand onlangs gewijzigd heeft, om ze in quarantaine te plaatsen of een geautomatiseerde actie in te schakelen. Sluit alle persoonlijke bestanden die niet zijn gewijzigd tijdens een opgegeven datumbereik uit. Op Google Apps kunt u deze bestanden in quarantaine plaatsen met behulp van het selectievakje ‘bestand in quarantaine plaatsen’ op de pagina voor het maken van een beleid.  
+    Ontvang een waarschuwing over gedeelde bestanden die niemand onlangs gewijzigd heeft, om ze in quarantaine te plaatsen of een geautomatiseerde actie in te schakelen. Sluit alle persoonlijke bestanden die niet zijn gewijzigd tijdens een opgegeven datumbereik uit. In G Suite kunt u deze bestanden in quarantaine plaatsen met behulp van het selectievakje 'bestand in quarantaine plaatsen' op de pagina voor het maken van een beleid.  
   
 -   Delen met niet geautoriseerde gebruikers:  
     Ontvang een waarschuwing over bestanden die worden gedeeld met een niet geautoriseerde groep gebruikers in uw organisatie. Selecteer de gebruikers met wie delen niet is toegestaan.  
@@ -68,7 +65,7 @@ Voer de volgende procedure uit om een nieuw bestandsbeleid te maken:
   
 4.  Binnen **Type risico** koppelt u het beleid aan het meest geschikte type risico. Dit veld is alleen informatief en hiermee kunt u later zoeken naar specifieke beleidsregels en waarschuwingen, op basis van het type risico.  Het risico is mogelijk al vooraf geselecteerd volgens de categorie die u hebt gekozen om het beleid te maken. Beleidsregels voor bestanden zijn standaard ingesteld op DLP.  
   
-5.  Om in te stellen door welke gedetecteerde apps dit beleid wordt geactiveerd **maakt u een filter voor de bestanden waarop dit beleid wordt toegepast**. Verfijn de beleidsfilters totdat u de meest nauwkeurige set bestanden hebt bereikt waarop u dit beleid wilt toepassen. Wees zo strikt mogelijk om valse positieven te voorkomen. Bijvoorbeeld, als u openbare machtigingen wilt verwijderen moet u het filter “Openbaar” toevoegen, als u een externe gebruiker wilt verwijderen gebruikt u het filter “Extern” enz.  
+5.  Om in te stellen door welke gedetecteerde apps dit beleid wordt geactiveerd **maakt u een filter voor de bestanden waarop dit beleid wordt toegepast**. Verfijn de beleidsfilters totdat u de meest nauwkeurige set bestanden hebt bereikt waarop u dit beleid wilt toepassen. Wees zo strikt mogelijk om valse positieven te voorkomen. Als u bijvoorbeeld openbare machtigingen wilt verwijderen moet u het filter **Openbaar** toevoegen, als u een externe gebruiker wilt verwijderen gebruikt u het filter Extern enzovoort.  
 > [!NOTE] 
 > Wanneer u de beleidsfilters gebruikt, zoekt **Bevat** alleen naar volledige woorden die zijn gescheiden door komma’s, punten, spaties of onderstrepingstekens. Als u bijvoorbeeld zoekt op **malware** of **virus**, wordt virus_malware_file.exe wel gevonden maar malwarevirusfile.exe niet. Als u zoekt op **malware.exe** vindt u ALLE bestanden met ‘malware’ of ‘exe’ in de bestandsnaam, maar als u zoekt op **”malware.exe”** (met aanhalingstekens) vindt u alleen bestanden die precies “malware.exe” bevatten. **Is gelijk aan** zoekt alleen naar de volledige tekenreeks. Als u bijvoorbeeld zoekt naar **malware.exe** wordt malware.exe wel gevonden maar malware.exe.txt niet.  
 6.  Voor Box, SharePoint, Dropbox en OneDrive kunt u het bestandsbeleid afdwingen voor alle bestanden in de app of in specifieke mappen. Onder **Van toepassing op** selecteert u **Geselecteerde mappen** of **Alle bestanden met uitzondering van de geselecteerde mappen**. U wordt doorgestuurd om u aan te melden bij de cloud-app en vervolgens voegt u de relevante mappen toe.  
@@ -76,7 +73,7 @@ Voer de volgende procedure uit om een nieuw bestandsbeleid te maken:
 7.  Selecteer de **Methode voor inhoudscontrole**. Met de ingebouwde DLP kunt u bestanden filteren op de inhoud ervan. Als u bestanden wilt scannen op de inhoud, selecteert u vervolgens **Ingebouwde DLP**. Zodra inhoudscontrole is ingeschakeld, kunt u vooraf ingestelde expressies gebruiken of zoeken naar andere aangepaste expressies als een subtekenreeks of als een [reguliere expressie](working-with-the-regex-engine.md) van uzelf.  
     Bovendien kunt u een reguliere expressie opgeven als u een bestand wilt uitsluiten van de resultaten. Dit is zeer nuttig als u een standaard voor trefwoorden met de binnenste classificatie hebt die u wilt uitsluiten van het beleid.  
     U kunt bepalen wat het minimumaantal schendingen van inhoud is dat moet worden bereikt voordat het bestand wordt beschouwd als een schending. U kunt bijvoorbeeld 10 kiezen als u waarschuwingen wilt ontvangen voor bestanden waarin ten minste 10 creditcardnummers worden gevonden.  
-    Wanneer inhoud wordt vergeleken met de geselecteerde expressie, kunt u kiezen om de overeenkomst zelf te maskeren voor de meldingen en logboeken van schendingen. Als dit is ingeschakeld, wordt de schendende tekst vervangen door "X"-tekens. Denk eraan dat getallen worden vervangen door #-tekens en nooit worden opgeslagen in Cloud App Security.  U kunt ook de optie selecteren om de laatste 4 tekens van een schending zichtbaar te maken. Standaard worden schendingen volledig gemaskeerd en in context weergegeven, met 40 tekens zichtbaar vóór en na de schending. Met deze optie worden de laatste 4 tekens van de schending zelf zichtbaar gemaakt.
+    Wanneer inhoud wordt vergeleken met de geselecteerde expressie, wordt de schendende tekst vervangen door X-tekens. Standaard worden schendingen volledig gemaskeerd en in context weergegeven, waarbij 40 tekens vóór en na de schending worden weergegeven. Getallen in de context van de expressie worden vervangen door #-tekens en worden nooit opgeslagen in Cloud App Security. U kunt ook de optie **Unmask the last 4 characters of a violation** (De laatste 4 tekens van een schending zichtbaar maken) selecteren om de laatste 4 tekens van een schending zichtbaar te maken.
   
 8.  Kies de **beheer**acties die in Cloud App Security moeten worden uitgevoerd wanneer een overeenkomst wordt gedetecteerd.  
   
@@ -88,7 +85,7 @@ Voer de volgende procedure uit om een nieuw bestandsbeleid te maken:
 >   
 >  Als hulp kunt u de knop **Bewerken en voorbeeld van resultaten bekijken** in de sectie Filters gebruiken.  
   
-![bestandsbeleid bewerken en voorbeeld van resultaten](./media/file-policy-edit-and-preview-results.png "bestandsbeleid bewerken en voorbeeld van resultaten")  
+ ![bestandsbeleid bewerken en voorbeeld van resultaten](./media/file-policy-edit-and-preview-results.png "bestandsbeleid bewerken en voorbeeld van resultaten")  
   
 10. Als u overeenkomsten voor een bestandsbeleid (bestanden waarvan wordt vermoed dat ze het beleid schenden) wilt weergeven, klikt u op **Controle** en vervolgens op **Beleidsregels**. Filter de resultaten met het filter **Type** bovenaan, zodat alleen de bestandsbeleidsregels worden weergegeven. Klik op een beleid voor meer informatie over de overeenkomsten voor elk beleid. Hiermee wordt de bestanden met actuele overeenkomsten voor het beleid weergegeven. Klik op het tabblad **Geschiedenis** om de geschiedenis tot zes maanden terug te zien van bestanden met een overeenkomst met het beleid.     
   
@@ -120,8 +117,3 @@ Elk beleid bestaat uit de volgende onderdelen:
 [Premier-klanten kunnen Cloud App Security ook rechtstreeks vanuit Premier Portal kiezen.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Dec16_HO2-->
-
-

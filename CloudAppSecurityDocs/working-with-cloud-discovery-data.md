@@ -1,11 +1,11 @@
 ---
-title: Cloud Discovery aanpassen | Microsoft Docs
+title: Cloud Discovery-gegevens gebruiken om riskant gedrag te detecteren | Microsoft Docs
 description: In dit onderwerp vindt u instructies voor het werken met Cloud Discovery-gegevens, waaronder het werken met de risicoscore van apps.
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/26/2016
+ms.date: 3/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,14 +13,12 @@ ms.technology:
 ms.assetid: cf94b290-b7ef-4fee-854e-c8ff8d11dea9
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 89f533e3b9c8397818e5aaa108dca168fda64db7
-ms.openlocfilehash: 0077b634d09cd9476d07c2de6a84d0c9396285da
-
-
+ms.openlocfilehash: 0c1e1fbc2c67f341967c56409195baf0617eb0b0
+ms.sourcegitcommit: cda4a69f9ad9c6eb66fbdb98610f54d79585b84b
+translationtype: HT
 ---
+# <a name="discover"></a>Ontdekken
 
-# <a name="customize-cloud-discovery"></a>Cloud Discovery aanpassen
 ## <a name="review-the-cloud-discovery-dashboard"></a>Het Cloud Discovery-dashboard bekijken
 
 Met het Cloud Discovery-dashboard hebt u meer inzicht in de manier waarop cloud-apps in uw organisatie worden gebruikt. Met het dashboard kunt u in één oogopslag een overzicht bekijken van de apps die worden gebruikt, uw openstaande waarschuwingen en de risiconiveaus van de apps in uw organisatie. Daarnaast kunt u zien wie de belangrijkste gebruikers in uw organisatie zijn en wordt een app-hoofdkantoorkaart weergegeven. Het Cloud Discovery-dashboard heeft verschillende opties voor het filteren van gegevens, zodat u specifieke weergaven kunt genereren (afhankelijk van de gegevens die het interessantst zijn voor u), en eenvoudig te begrijpen afbeeldingen zodat u in één oogopslag een volledig beeld krijgt.
@@ -36,31 +34,24 @@ Het eerste wat u moet doen als u een algemeen beeld wilt krijgen van uw Cloud Di
 3. U kunt nog een niveau lager gaan en alle apps in een specifieke categorie in de widget Gedetecteerde apps bekijken.
 
 4. U kunt de belangrijkste gebruikers en de bron-IP-adressen bekijken om de dominantste gebruikers van cloud-apps in uw organisatie te identificeren.
-5. U kunt controleren hoe de gedetecteerde apps zich verspreiden volgens geografische locatie (op basis van hun hoofdkantoor) in de app-hoofdkantoorkaart.
+5. U kunt in de app-hoofdkantoorkaart controleren hoe de gedetecteerde apps zich verspreiden volgens geografische locatie (op basis van het hoofdkantoor).
 
-6. Tot slot moet u niet vergeten de risicoscore van de gedetecteerde apps te beoordelen in het risico-overzicht van apps en de status van detectiewaarschuwingen te controleren om te zien hoeveel openstaande waarschuwingen u moet onderzoeken.
-
-
-## <a name="customize-the-risk-score"></a>De risicoscore aanpassen  
-Cloud Discovery biedt u belangrijke gegevens over de geloofwaardigheid en betrouwbaarheid van de cloud-apps die in de omgeving worden gebruikt. In de portal wordt elke gedetecteerde app weergegeven met een totale score, die weergeeft hoe Cloud App Security de vervaldatum van gebruik voor ondernemingen evalueert van de desbetreffende app. De totale score van een app is een gewogen gemiddelde van drie subscores voor de drie subcategorieën waarmee Cloud App Security rekening houdt bij het beoordelen van betrouwbaarheid:  
+6. Tot slot moet u niet vergeten de risicoscore van de gedetecteerde apps te beoordelen in het **risico-overzicht van apps** en de status van detectiewaarschuwingen te controleren om te zien hoeveel openstaande waarschuwingen u moet onderzoeken.
   
--   **Algemeen** - Deze categorie heeft betrekking op de algemene informatie over het bedrijf dat de app produceert, waaronder het domein, jaar van oprichting en de populariteit. Deze velden zijn bedoeld om de stabiliteit van het bedrijf op het meest basale niveau weer te geven.  
+## <a name="exclude-entities"></a>Entiteiten uitsluiten  
+Als u gebruikers of IP-adressen heeft die bijzonder veel ruis veroorzaken en oninteressant zijn of apps die niet relevant zijn, dan kunt u hun gegevens uitsluiten van de Cloud Discovery-gegevens die worden geanalyseerd. U zou bijvoorbeeld alle gegevens kunnen uitsluiten die afkomstig zijn van 127.0.0.1 of de lokale host.  
   
--   **Beveiliging** - De beveiligingscategorie omvat alle standaarden die gaan over de fysieke beveiliging van de gegevens die door de gedetecteerde app worden gebruikt. Hieronder vallen velden als meervoudige verificatie, versleuteling, gegevensclassificatie en gegevenseigendom.  
-  
--   **Naleving** - In deze categorie wordt weergegeven welke algemene best practice-nalevingsstandaarden worden gehandhaafd door het bedrijf dat de app produceert. De lijst met specificaties bevat standaarden als HIPAA, CSA en PCI-DSS.  
-  
-Elke categorie bevat veel specifieke eigenschappen. Volgens ons score-algoritme krijgt elke eigenschap een voorlopige score tussen 0 en 10, afhankelijk van de waarde. Waarden die waar/onwaar zijn krijgen een 10 of een 0 naar gelang hun waarde, terwijl doorlopende eigenschappen, bijvoorbeeld domeinleeftijd, een bepaalde waarde binnen het spectrum krijgen. De score van elke eigenschap wordt tegen alle andere bestaande velden in de categorie afgewogen om de subscore van de categorie te berekenen. Als u een app zonder score tegenkomt, duidt dit meestal op een app met onbekende eigenschappen, die daarom geen score heeft.  
-  
-Het is belangrijk dat u even de tijd neemt om de standaardgewichten van de scoreconfiguratie van Cloud Discovery te bekijken en wijzigen. Standaard krijgen alle geëvalueerde parameters een gelijk gewicht. Als bepaalde parameters meer of minder belangrijk voor uw organisatie zijn, is het belangrijk dat u ze als volgt wijzigt:  
+Een uitzondering aanmaken:  
   
 1.  Selecteer in de portal onder het pictogram Instellingen **Instellingen voor Cloud Discovery**.  
   
-2.  Verschuif de knop **Belang** onder **Metrische gegevens voor de score configureren** om het gewicht van het veld te wijzigen naar **Genegeerd**, **Laag**, **Gemiddeld**, **Hoog** of **Zeer hoog**.  
+2.  Klik op het tabblad **Entiteiten uitsluiten**.  
   
-3.  Daarnaast kunt u instellen of bepaalde waarden niet beschikbaar voor of niet van toepassing op de scoreberekening zijn. Wanneer ze zijn opgenomen, dragen n.v.t.-waarden negatief bij aan de berekende score.  
+3.  Kies het tabblad **Uitgesloten gebruikers** of het tabblad **Uitgesloten IP-adressen** en klik op de knop **Gebruiker toevoegen** of **IP-adres toevoegen**.  
   
-     ![score](./media/score.png "score")  
+4.  Voeg een gebruikersalias of IP-adres toe. Het is raadzaam om informatie toe te voegen over waarom de gebruiker of het IP-adres is uitgesloten.  
+  
+     ![gebruiker uitsluiten](./media/exclude-user.png "gebruiker uitsluiten")  
   
 ## <a name="manage-continuous-reports"></a>Doorlopende rapporten beheren  
 Met aangepaste doorlopende rapporten beschikt u over meer details bij de controle van de Cloud Discovery-logboekgegevens van uw organisatie. Als u aangepaste rapporten maakt, kunt u filteren op specifieke geografische locaties, netwerken, sites of organisatie-eenheden. Standaard worden alleen de volgende rapporten in de Cloud Discovery-rapportkiezer weergegeven:  
@@ -84,22 +75,7 @@ Ga als volgt te werk om een nieuw doorlopend rapport te maken:
 6.  Stel de gewenste filters in voor gegevens (**Organisatie-eenheden**, **IP-adrestags** of **IP-adresbereiken**). Zie het Engelstalige artikel [Organize the data according to your needs](general-setup.md#IPtagsandRanges) (De gegevens organiseren op basis van uw behoeften) voor meer informatie over het werken met IP-adrestags en IP-adresbereiken.  
   
     ![Aangepast doorlopend rapport maken](./media/create-custom-continuous-report.png) 
-  
-## <a name="exclude-entities"></a>Entiteiten uitsluiten  
-Als u gebruikers of IP-adressen heeft die bijzonder veel ruis veroorzaken en oninteressant zijn of apps die niet relevant zijn, dan kunt u hun gegevens uitsluiten van de Cloud Discovery-gegevens die worden geanalyseerd. U zou bijvoorbeeld alle gegevens kunnen uitsluiten die afkomstig zijn van 127.0.0.1 of de lokale host.  
-  
-Een uitzondering aanmaken:  
-  
-1.  Selecteer in de portal onder het pictogram Instellingen **Instellingen voor Cloud Discovery**.  
-  
-2.  Klik op het tabblad **Entiteiten uitsluiten**.  
-  
-3.  Kies het tabblad **Uitgesloten gebruikers** of het tabblad **Uitgesloten IP-adressen** en klik op de knop **Gebruiker toevoegen** of **IP-adres toevoegen**.  
-  
-4.  Voeg een gebruikersalias of IP-adres toe. Het is raadzaam om informatie toe te voegen over waarom de gebruiker of het IP-adres is uitgesloten.  
-  
-     ![gebruiker uitsluiten](./media/exclude-user.png "gebruiker uitsluiten")  
-  
+
 ## <a name="deleting-cloud-discovery-data"></a>Cloud Discovery-gegevens verwijderen  
 Er zijn een aantal redenen waarom u uw Cloud Discovery- gegevens zou willen verwijderen. In de volgende gevallen is het raadzaam de gegevens te verwijderen:  
   
@@ -133,8 +109,3 @@ Cloud Discovery-gegevens verwijderen:
 [Premier-klanten kunnen Cloud App Security ook rechtstreeks vanuit Premier Portal kiezen.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Dec16_HO4-->
-
-
