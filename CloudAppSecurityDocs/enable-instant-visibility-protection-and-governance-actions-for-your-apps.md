@@ -1,11 +1,11 @@
 ---
-title: Verbinding maken met apps | Microsoft Docs
+title: Apps verbinden om diepgaande zichtbaarheid en controle te krijgen met Cloud App Security | Microsoft Docs
 description: In dit onderwerp wordt het proces beschreven voor het verbinden van apps met API-connectors met apps in de cloud van uw organisatie.
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/9/2017
+ms.date: 3/12/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: a6133e3cf0521515088dfd9d301aed2df2c4b430
-ms.openlocfilehash: 199a3c9909093551e3eca5e524f6bf04ce03aa4e
-
-
+ms.openlocfilehash: 0c6fbb24a0b5d7f1c5ada4b805eb8b7ae5ecada2
+ms.sourcegitcommit: b840b945b270e616560f565bcc6590dd68ad5ebd
+translationtype: HT
 ---
-
 # <a name="connect-apps"></a>Apps koppelen 
 App-connectors maken gebruik van de API's van app-providers. Hierdoor zijn de apps waarmee u verbinding maakt, beter zichtbaar en controleerbaar voor Cloud App Security.  
   
@@ -67,7 +64,7 @@ Afhankelijk van de app waarmee u verbinding maakt (zie de onderstaande tabel), m
   
 De volgende tabel geeft per cloud-app aan welke vaardigheden met App-connectors worden ondersteund:  
 
-||**Office 365**|**Box**|**Okta**|**Google Apps**|**ServiceNow**|**Salesforce**|**Dropbox**|**AWS**|  
+||**Office 365**|**Box**|**Okta**|**G Suite**|**ServiceNow**|**Salesforce**|**Dropbox**|**AWS**|  
 |-|-|-|-|-|-|-|-|-|  
 |**Lijst van accounts**|✔|✔|✔|✔|✔|✔|✔|✔|  
 |**Groep**|✔|✔|✔|✔|✔|✔|✔|✔|  
@@ -89,9 +86,26 @@ Voor bepaalde apps kan het nodig zijn de volgende IP-adressen toe te voegen aan 
   
 -   Voor de logboeken:  
   
-     104.209.35.177  
+    104.209.35.177  
   
-     13.91.98.185  
+    13.91.98.185
+ 
+    40.118.211.172
+
+    13.93.216.68
+
+    13.91.61.249
+
+    13.93.233.42
+
+    13.64.196.27
+
+    13.64.198.97
+
+    13.64.199.41
+
+    13.64.198.19
+  
   
 -   Voor de console:  
   
@@ -107,7 +121,7 @@ Om App-Connectors te gebruiken dient u ervoor te zorgen dat u over het volgende 
 |App|Licentietype|Gebruiker|  
 |---------|------------------|----------|  
 |Box|Zakelijk|U wordt aangeraden verbinding met Box te maken als een beheerder. Als u verbinding maakt als een co-beheerder, zijn niet alle gegevens zichtbaar. Zorg ervoor dat u alle machtigingen selecteert als u verbinding maakt als een co-beheerder.|  
-|Google Apps|Google Apps Unlimited gewenst<br /><br /> Google Apps Enterprise (minimaal)|Superbeheerder|  
+|G Suite|G Suite Unlimited gewenst<br /><br /> G Suite Enterprise (minimaal)|Superbeheerder|  
 |Office 365||Globale beheerder|  
 |AWS||Nieuw aangemaakte gebruiker|  
 |Dropbox|Business/Enterprise|Beheer|  
@@ -127,9 +141,5 @@ Zie voor meer informatie over openbare peering [ExpressRoute-circuits en routeri
 [Ga naar de ondersteuningspagina van Cloud App Security voor technische ondersteuning.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Premier-klanten kunnen Cloud App Security ook rechtstreeks vanuit Premier Portal kiezen.](https://premier.microsoft.com/)  
   
+
    
-
-
-<!--HONumber=Jan17_HO2-->
-
-

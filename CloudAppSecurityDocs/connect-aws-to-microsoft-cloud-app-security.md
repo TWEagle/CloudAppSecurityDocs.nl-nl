@@ -1,11 +1,11 @@
 ---
-title: Verbinding maken met AWS | Microsoft Docs
+title: Verbinding maken tussen AWS en Cloud App Security voor zichtbaarheid en gebruikscontrole | Microsoft Docs
 description: In dit onderwerp vindt u informatie over het maken van verbinding tussen de AWS-app en Cloud App Security via de API-connector.
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 3/19/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,47 +13,40 @@ ms.technology:
 ms.assetid: a6b4c745-cd5c-4458-819c-80cbe8b25f29
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
-ms.openlocfilehash: a56257b7c149c3ea054f200ef88df0ab41b7e25b
-
-
+ms.openlocfilehash: 68d4c221626706ca641a5d3e1986da543771561a
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+translationtype: HT
 ---
-
 # <a name="connect-aws-to-microsoft-cloud-app-security"></a>Verbinding maken tussen AWS en Microsoft Cloud App Security
 In deze sectie vindt u instructies voor het maken van een verbinding tussen Cloud App Security en uw bestaande Amazon Web Services-account met behulp van de connector-API's.  
   
 ## <a name="how-to-connect-amazon-web-services-to-cloud-app-security"></a>Verbinding maken tussen Amazon Web Services en Cloud App Security  
   
-1.  Klik in de Amazon Web Services-console op **Identiteits- en toegangsbeheer**.  
+1.  Klik in uw [Amazon Web Services-console](https://console.aws.amazon.com/)onder **Identiteits- en toegangsbeheer** op **IAM**.  
   
-     ![AWS-identiteit en -toegang](./media/aws-identity-and-access.png "aws identity and access")  
+     ![aws identity and access](./media/aws-identity-and-access.png "aws identity and access")  
   
-2.  Klik op het tabblad **Gebruikers**.  
+2.  Klik op het tabblad **Gebruikers** en klik vervolgens op **Gebruiker toevoegen**.  
   
-     ![AWS-gebruikers](./media/aws-users.png "aws users")  
+     ![aws users](./media/aws-users.png "aws users")      
   
-3.  Klik op **Nieuwe gebruikers maken**.  
-  
-     ![AWS-gebruiker maken](./media/aws-create-user.png "AWS create user")  
-  
-4.  Maak een nieuwe gebruiker voor Cloud App Security en zorg ervoor dat het selectievakje **Generate an access key for each user** (Voor elke gebruiker een toegangssleutel genereren) is ingeschakeld.  
-  
-5.  Klik op **Referenties downloaden**.  
-  
-     ![AWS-referenties downloaden](./media/aws-dl-cred.png "aws dl cred")  
-  
-6.  Klik op het tabblad **Permissions** (Machtigingen) op **Attach Policy** (Beleid koppelen).  
-  
-     ![AWS-gebruikersbeleid koppelen](./media/aws-attach-user-policy.png "aws attach user policy")  
-  
-7.  Het scherm **Review Policy** (Controlebeleid) wordt geopend.
- 
-     ![Controlebeleid](./media/aws-review-policy.png "aws review policy")  
-  
+4.  In de stap **Details** geeft u een nieuwe gebruikersnaam op voor Cloud-App Security en zorgt u ervoor dat u onder **Toegangstype** **Programmeerniveau** selecteert en klikt u op **Volgende machtigingen**.  
 
-8. Typ AdallomTrustPolicy onder **Policy Name** (Naam van beleid). 
-10. Kopieer en plak het volgende onder **Policy Document** (Beleidsdocument):  
+     ![AWS create user](./media/aws-create-user.png "AWS create user")
+
+5. In de stap **Machtigingen** selecteert u **Bestaande beleidsregels rechtstreeks koppelen** en klikt u vervolgens op **Beleid maken**.
+
+   ![AWS attach user](./media/aws-attach-user-policy.png "AWS attach existing policy")
+
+6.  Onder **Beleid maken** selecteert u **Uw eigen beleid maken**.
+ 
+    ![AWS create your own policy](./media/aws-create-own-policy.png "AWS create policy")
+ 
+7.  Onder **Beleid controleren**, geeft u een **Beleidsnaam** op, bijvoorbeeld CloudAppSecurityPolicy.
+
+    ![AWS review policy](./media/aws-review-policy.png "AWS review policy")
+
+8. Plak het volgende in het **Beleidsdocument**-veld en klik op **Beleid maken**:
   
     ```     
     {  
@@ -61,8 +54,7 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
       "Statement" : [{  
           "Action" : [  
             "cloudtrail:DescribeTrails",  
-  
-           "cloudtrail:LookupEvents",  
+            "cloudtrail:LookupEvents",  
             "cloudtrail:GetTrailStatus",  
             "cloudwatch:Describe*",  
             "cloudwatch:Get*",  
@@ -78,37 +70,44 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
   
     ```  
   
-9. In het gedownloade bestand `credentials.csv`, vindt u de referenties voor de nieuwe gebruiker. U moet deze later kopiëren.  
+9. Terug in het scherm **Gebruiker toevoegen**, vernieuwt u indien nodig de lijst, selecteert u vervolgens de gebruiker die u zojuist hebt gemaakt en klikt u op **Volgende controle**.
+
+   ![AWS review user policy](./media/aws-review-user.png "AWS review user")
+
+10. Als alle informatie juist is, klikt u op **Gebruiker toevoegen**.
+
+    ![AWS user permissions](./media/aws-user-permissions.png "AWS review user permissions")
+
+11. Wanneer u het bericht ontvangt dat het is voltooid, klikt u op **Downloaden .csv** om een kopie van de referenties van de nieuwe gebruiker op te slaan. U hebt deze later nodig.  
+
+    ![AWS downloaden csv](./media/aws-download-csv.png "AWS csv downloaden")
   
-10. Ga terug naar de hoofdpagina van de AWS-console en kies rechts bovenin uw regio uit het vervolgkeuzemenu. Klik vervolgens op **CloudTrail** in het hoofdmenu.  
+10. Klik in de AWS-console op **Services** en klik vervolgens onder **Beheerhulpprogramma's** op **CloudTrail**.  
   
-     ![AWS-cloudtrail](./media/aws-cloudtrail.png "aws cloudtrail")  
+     ![aws cloudtrail](./media/aws-cloudtrail.png "aws cloudtrail")  
   
-    1.  Als u CloudTrail nog niet hebt gebruikt voor deze regio, klikt u op **Get Started** (Aan de slag) en stelt u dit in door de juiste S3-bucket te kiezen.  
+    Als u CloudTrail nog niet eerder hebt gebruikt, klikt u op **Get Started** (Aan de slag) en stelt u dit in door een naam in te geven, de juiste S3-bucket te kiezen en op **Inschakelen** te klikken. Als u zeker wilt weten dat u volledige dekking hebt, stelt u **Toepassen op alle regio's** in op **Ja**.
   
-         Klik op het tabblad **Configuratie** links bovenin het scherm. Klik onder **Aanvullende configuratie** op het pictogram Bewerken.  
+       ![AWS turn on CloudTrail](./media/aws-turnon-cloudtrail.png "AWS turn on CloudTrail")
   
-         ![AWS-cloudtrail configureren](./media/aws-cloudtrail-config.png "aws cloudtrail config")  
-  
-    2.  Klik op **Ja** wanneer u wordt gevraagd **Globale services omvatten** en klik vervolgens op **Opslaan**. Dit is alleen van toepassing op de regio die u hebt gekozen.  
-  
-         ![Globale AWS-services opnemen](./media/aws-include-global-svc.png "aws include global svc")  
-  
-    3.  Herhaal stap 11 voor alle regio's, maar stel geen andere regio in op Include global services.  
+    U moet nu de naam van de nieuwe CloudTrail in de **Trails**-lijst zien.
+    
+      ![AWS CloudTrail list](./media/aws-cloudtrail-list.png "AWS CloudTrail list")
   
 11. Klik in de Cloud App Security-portal op **Onderzoeken** en vervolgens op **Verbonden apps**.  
   
 12. Klik op de pagina **App-connectors** op de knop met het plusteken en vervolgens op **AWS**.  
   
-     ![Verbinding maken met AWS](./media/connect-aws.png "connect AWS")  
+     ![connect AWS](./media/connect-aws.png "connect AWS")  
   
-13. Plak in het pop-upvenster de **toegangssleutel** en **geheime sleutel** uit het CSV-bestand in de velden op de API-pagina en klik op **Toegangssleutel bijwerken**.  
+13. Plak in het pop-upvenster de **Toegangssleutel** en **Geheime sleutel** uit het CSV-bestand in de relevante velden en klik op **Verbinden**.  
+   ![AWS connect app](./media/aws-connect-app.png "AWS connect app") 
   
 14. Controleer of de verbinding tot stand is gekomen door op **Test API** te klikken.  
   
      Het testen kan enkele minuten duren. Wanneer de test is voltooid, ontvangt u een melding dat deze is Geslaagd of Mislukt. Na de ontvangst van de melding dat de actie voltooid is, klikt u op **Gereed**.  
   
-Nadat u verbinding hebt gemaakt met AWS, ontvangt u gebeurtenissen tot 7 dagen voorafgaand aan de verbinding.
+Nadat u AWS hebt verbonden, ontvangt u gebeurtenissen van 7 dagen voorafgaand aan de verbinding, tenzij u CloudTrail zojuist hebt ingeschakeld, in welk geval u gebeurtenissen ontvangt vanaf het moment dat u CloudTrail hebt ingeschakeld.
   
 ## <a name="see-also"></a>Zie ook  
 [Cloud-apps beheren met beleidsregels](control-cloud-apps-with-policies.md)   
@@ -116,8 +115,3 @@ Nadat u verbinding hebt gemaakt met AWS, ontvangt u gebeurtenissen tot 7 dagen v
 [Premier-klanten kunnen Cloud App Security ook rechtstreeks vanuit Premier Portal kiezen.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Nov16_HO5-->
-
-

@@ -1,5 +1,5 @@
 ---
-title: Deploy Microsoft Docs
+title: Implementeer Cloud App Security voor inzicht in cloud-app-gebruik en controle | Microsoft-documenten
 description: In dit onderwerp vindt u een overzicht van de taken die u moet uitvoeren om aan de slag te gaan met Cloud App Security.
 keywords: 
 author: rkarlin
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: bf3e86ddb4c26758ce3cf6fbf4377a8550bbe78b
-ms.openlocfilehash: e9ee4724ee32d0d4592bc98dc8551b80caf1652d
-
-
+ms.openlocfilehash: 2c1b1506f4693304cc10f64b1db372dc710e026a
+ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+translationtype: HT
 ---
-
 # <a name="deploy-cloud-app-security"></a>Cloud App Security implementeren
 Met Cloud App Security kunt u profiteren van de voordelen van cloudtoepassingen, terwijl u de controle houdt over uw bedrijfsbronnen. Dit gebeurt door de zichtbaarheid van de activiteit van de cloud en de beveiliging van bedrijfsgegevens te verbeteren. In dit onderwerp wordt u stapsgewijs begeleid door de stappen voor het instellen en gebruiken van Cloud App Security.  
 
@@ -164,9 +161,3 @@ Met deze instellingen hebt u meer controle over de functies in de console. Met I
 Beleidsregels instellen [Cloud-apps beheren met beleidsregels](control-cloud-apps-with-policies.md).    
 Ga naar de [ondersteuningspagina van Cloud App Security](http://support.microsoft.com/oas/default.aspx?prid=16031) voor technische ondersteuning.   
 Premier-klanten kunnen Cloud App Security ook rechtstreeks vanuit [Premier Portal](https://premier.microsoft.com/) kiezen.   
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

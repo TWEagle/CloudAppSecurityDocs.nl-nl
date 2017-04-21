@@ -1,11 +1,11 @@
 ---
-title: Verbinding maken met Dropbox | Microsoft Docs
+title: Verbinding maken tussen Dropbox en Cloud App Security voor zichtbaarheid en gebruikscontrole | Microsoft Docs
 description: In dit onderwerp vindt u informatie over het maken van verbinding tussen de Dropbox-app en Cloud App Security via de API-connector.
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 3/19/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: 4acd93f4-b885-4e1f-a385-43b5db02a3ee
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
-ms.openlocfilehash: a2b9a7e9cf254c52465922af4b0e3a0256e60c5d
-
-
+ms.openlocfilehash: 02cf326722410041b112caf67dc7d33cf72fe375
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+translationtype: HT
 ---
-
 # <a name="connect-dropbox-to-microsoft-cloud-app-security"></a>Verbinding maken tussen Dropbox en Microsoft Cloud App Security
 In deze sectie vindt u instructies voor het maken van een verbinding tussen Cloud App Security en uw bestaande Dropbox-account met behulp van de connector-API's voor de app.  
  
@@ -32,7 +29,7 @@ Omdat met Dropbox toegang tot bestanden via gedeelde koppelingen zonder aanmelde
   
 2.  Klik op de pagina **App-connectors** op de knop met het plusteken en vervolgens op **Dropbox**.  
   
-     ![Verbinding maken met Dropbox](./media/connect-dropbox.png "connect dropbox")  
+     ![connect dropbox](./media/connect-dropbox.png "connect dropbox")  
   
 3.  Voer in het pop-upvenster het e-mailadres van het beheerdersaccount in.  
   
@@ -40,7 +37,7 @@ Omdat met Dropbox toegang tot bestanden via gedeelde koppelingen zonder aanmelde
   
 5.  Klik op **Volg deze link**.  
   
-     Hiermee opent u de aanmeldingspagina Dropbox. Voer uw referenties in om Cloud App Security toegang te geven tot het Dropbox-exemplaar van uw team.  
+     Hiermee opent u de aanmeldingspagina van Dropbox. Voer uw referenties in om Cloud App Security toegang te geven tot het Dropbox-exemplaar van uw team.  
   
 6.  Dropbox geeft een melding weer om u te vragen of u Cloud App Security toegang wilt geven tot de gegevens van uw team en het activiteitenlogboek en toestemming wilt geven om willekeurige activiteiten uit te voeren als een willekeurig teamlid. Klik op **Toestaan** om door te gaan.  
   
@@ -61,8 +58,3 @@ Nadat u verbinding hebt gemaakt met Dropbox, ontvangt u gebeurtenissen tot 60 da
 [Premier-klanten kunnen Cloud App Security ook rechtstreeks vanuit Premier Portal kiezen.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Nov16_HO5-->
-
-

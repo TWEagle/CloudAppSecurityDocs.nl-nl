@@ -1,11 +1,11 @@
 ---
-title: De portal aanpassen | Microsoft Docs
+title: De Cloud App Security-portal aanpassen voor de beste resultaten | Microsoft Docs
 description: Dit onderwerp bevat de eerste stappen voor het aanpassen van de portal.
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/21/2016
+ms.date: 3/19/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 49b64ea6cee1a33fd4005388d5b09cfbdcf59052
-ms.openlocfilehash: b5250ccb93dda950b417bbbe3fc2e64f0bab8320
-
-
+ms.openlocfilehash: b55da41080d70a41382a94b9ff527d50046c61b2
+ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
+translationtype: HT
 ---
-
 # <a name="customize-the-portal"></a>De portal aanpassen
 De volgende procedure bevat instructies voor het aanpassen van de Cloud App Security-portal.
   
@@ -66,7 +63,7 @@ De volgende procedure bevat instructies voor het aanpassen van de Cloud App Secu
   
 ![beheerderstoegang beheren](./media/manage-admin-access.png "beheerderstoegang beheren")  
   
-##  <a name="a-nameadminsettingsa-customize-your-admin-settings"></a><a name="Adminsettings"></a> Uw beheerinstellingen aanpassen  
+##  <a name="Adminsettings"></a> Uw beheerinstellingen aanpassen  
 Als u uw voorkeuren als beheerder van Cloud App Security wilt instellen, klikt u op uw naam in de menubalk van de portal en selecteert u **Gebruikersinstellingen** om het volgende in te stellen:  
   
 1.  Klik op **Accountinstellingen**. Hier kunt u de taal van de portal voor uw eigen weergave aanpassen. U kunt de taal instellen om de portal weer te geven in ofwel de standaardtaal of u kunt een andere taal instellen voor uzelf.  
@@ -82,49 +79,17 @@ Als u uw voorkeuren als beheerder van Cloud App Security wilt instellen, klikt u
   
 3. Wanneer u klaar bent, klikt u op **Opslaan**.  
   
-##  <a name="a-nameiptagsandrangesa-set-ip-ranges"></a><a name="IPtagsandRanges"></a> IP-adresbereiken instellen  
+##  <a name="IPtagsandRanges"></a> IP-adresbereiken instellen  
 Om bekende IP-adressen, zoals uw fysieke IP-adressen van kantoor, eenvoudig te kunnen herkennen, moet u IP-adresbereiken instellen waarmee u ze op de juiste wijze kunt taggen en indelen en de manier waarop logboeken en waarschuwingen worden weergegeven, kunt aanpassen.   
-Elke groep met IP-adresbereiken kan worden ingedeeld op basis van een vooraf gedefinieerde lijst met IP-categorieën of worden getagd met zelfgemaakte IP-tags. Met deze instelling kunt u openbare gegevens over de geografische locatie overschrijven op basis van uw interne netwerkkennis.  
+Zie [IP-tags](ip-tags.md) voor meer informatie.
   
-IPv4 en IPv6 worden ondersteund.  
-  
-Klik in de menubalk op het pictogram Instellingen ![pictogram instellingen](./media/settings-icon.png "pictogram instellingen") en selecteer **IP-adresbereiken**. Klik op **+IP-adresbereik toevoegen** en stel het volgende in:  
-  
-> [!NOTE]  
->  De locatie en de geregistreerde provider overschrijven de standaardinstellingen.   
-> IP-tags worden echter toegevoegd aan de activiteit zonder gegevens te overschrijven.  
-  
-1.  Geef uw IP-adresbereik een **naam**. De naam wordt niet weergegeven in het activiteitenlogboek, maar wordt alleen gebruikt voor het beheren van uw IP-adresbereik.  
-  
-     Als u het IP-adresbereik wilt opnemen in een IP-categorie, selecteert u een categorie in de vervolgkeuzelijst.  
-  
-2.  Voer het **IP-adresbereik** in dat u wilt configureren en klik vervolgens op de knop met het plusteken (+). U kunt zoveel IP-adressen en subnetten toevoegen als u wilt met behulp van de notatie voor netwerkvoorvoegsels (ook wel CIDR-notatie genoemd), bijvoorbeeld 192.168.1.0/32.  
-  
-3.  Als u de (ISP-) velden van de **locatie** of organisatie voor deze adressen wilt overschrijven, voert u een nieuwe waarde in. Als u bijvoorbeeld een IP-adres hebt dat wordt beschouwd als Iers, maar u weet dat het adres zich in de Verenigde Staten bevindt, dan kunt u deze instelling overschrijven.  
-  
-4.  Voer een **geregistreerde provider** in. Hierdoor worden de gegevens in uw activiteiten overschreven.  
-  
-5.  Om de activiteiten van deze IP-adressen te **taggen**, voert u een tag in. Als u een woord in het vak invoert, wordt de tag gemaakt. Als u al een geconfigureerde tag hebt, kunt u deze eenvoudig toevoegen aan extra IP-adresbereiken door de tag te kiezen uit de lijst. U kunt zoveel IP-tags toevoegen als u wilt voor elk bereik. IP-tags kunnen worden gebruikt tijdens het samenstellen van beleid.  Naast de IP-tags die u configureert, heeft Cloud App Security ingebouwde tags die u niet kunt configureren. Onder [IP tags filter](activity-filters.md) (Filter voor IP-tags) wordt de lijst met tags weergegeven.  
-  
-6.  **IP-categorieën** worden gebruikt om activiteiten uit interessante IP-adressen eenvoudig te herkennen. De categorieën die beschikbaar zijn in de portal vereisen nog wel gebruikersconfiguratie om te bepalen welke IP-adressen worden opgenomen in elke categorie, met uitzondering van de categorie Riskant, die twee IP-tags (Anonieme proxy en Tor) omvat.  
-  
-     De volgende IP-categorieën zijn beschikbaar:  
-  
-    -   **Beheer**: dit moeten alle IP-adressen van uw beheerders zijn.  
-  
-    -   **Intern**: dit moeten alle IP-adressen van uw interne netwerk, uw filialen en uw Wifi-roamingadressen zijn.  
-  
-    -   **Riskant**: dit moeten alle IP-adressen zijn die u beschouwt als riskant. Dit kunnen verdachte IP-adressen zijn die u in het verleden hebt bekeken, IP-adressen in de netwerken van uw concurrenten enzovoort.  
-  
-    -   **VPN**: dit moeten alle IP-adressen zijn die u voor externe werknemers gebruikt.  
-  
-    -   **Cloudproxy**: dit moet het IP-adres zijn van uw proxyserver in de cloud.  
-  
-7.  Wanneer u klaar bent, klikt u op **Maken**.  
-  
-     ![newipaddress-bereik](./media/newipaddress-range.png "newipaddress-bereik")  
-  
-##  <a name="a-nameadallommailsettingsa-personalize-your-experience"></a><a name="Adallom_mailsettings"></a> Uw ervaring aanpassen  
+## <a name="import-user-groups"></a>Gebruikersgroepen importeren
+
+Wanneer u apps verbindt met behulp van API-connectors, kunt u met Cloud App Security gebruikersgroepen importeren, bijvoorbeeld uit Office 365 en Azure Active Directory.
+
+Zie [Gebruikersgroepen](user-groups.md) voor meer informatie.
+
+##  <a name="Adallom_mailsettings"></a> Uw ervaring aanpassen  
 Klik in de menubalk op het pictogram Instellingen ![pictogram instellingen](./media/settings-icon.png "pictogram instellingen") en selecteer **E‑mailinstellingen** om de parameters in te stellen voor e‑mailmeldingen die vanuit Cloud App Security worden verzonden naar beheerders die om waarschuwingen vragen, en voor meldingen die naar eindgebruikers worden verzonden over schendingen waarbij zij betrokken zijn.  
   
 ![e-mailinstellingen, menu](./media/mail-setting-menu.png "e-mailinstellingen, menu")  
@@ -152,12 +117,10 @@ Configureer het volgende:
          %%content%% - een tijdelijke aanduiding voor de inhoud die wordt opgenomen voor eindgebruikers, zoals ingesteld door het beleid.  
   
      Hier volgt een voorbeeld e-mailsjabloon: 
-
-
-           
-          <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">  
-          <html>  
-          <head>  
+```html
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html>  
+       <head>  
             <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>  
             <meta name="viewport" content="width=device-width, initial-scale=1.0"/>  
           </head>  
@@ -206,30 +169,25 @@ Configureer het volgende:
           </table>  
             </body>  
           </html>  
-         
+    ```
 
   
-3.  Klik op **Een sjabloon uploaden...** en selecteer het bestand dat u hebt gemaakt.  
+3.  Click **Upload a template...** and select the file you created.  
   
-     Klik vervolgens op **Een test-e-mail verzenden** om een test-e‑email te verzenden naar uzelf met een voorbeeld van de sjabloon die u hebt gemaakt.  
-     Het e-mailbericht wordt verzonden naar het account waarmee u zich hebt aangemeld bij de portal. In de test-e-mail kunt u de metagegevensvelden, de sjabloon, het onderwerp van de e-mail, de titel in de hoofdtekst van de e-mail en de inhoud zien.  
+     Then, click **Send a test email** to send yourself a test email to see an example of the template you created.  
+     The email will be sent to the account you used to log into the portal. In the test email you will be able to see the metadata fields, the template, the email subject, the title in the email body and the content.  
   
-## <a name="single-sign-on"></a>Eenmalige aanmelding  
-Cloud App Security is gekoppeld aan Azure Active Directory voor de activiteiten met betrekking tot verificatie, inrichting en licentieverlening. Zie de [federatiecompatibiliteitslijst van Azure Active Directory: eenmalige aanmelding implementeren met identiteitsproviders van derden](https://msdn.microsoft.com/library/azure/jj679342.aspx) voor informatie over het beheren van eenmalige aanmelding.  
+## Single sign-on  
+Cloud App Security is coupled with Azure Active Directory for authentication, provisioning, and licensing related activities. For information on how to manage single sign-on, see [Azure Active Directory federation compatibility list: third-party identity providers that can be used to implement single sign-on](https://msdn.microsoft.com/library/azure/jj679342.aspx).  
 
 
 > [!NOTE] 
-> Als u ExpressRoute gebruikt, is Cloud App Security geïmplementeerd in Azure en volledig geïntegreerd met [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/). Alle interacties met de Cloud App Security-apps en het verkeer dat wordt verzonden naar Cloud App Security, met inbegrip van het uploaden van detectielogboeken, verlopen via **openbare peering** van ExpressRoute voor verbeterde latentie, prestaties en beveiliging. Er zijn geen configuratiestappen vereist door de klant.  
-    Zie voor meer informatie over openbare peering [ExpressRoute-circuits en routeringsdomeinen](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/).  
+> If you use ExpressRoute, Cloud App Security is deployed in Azure and fully integrated with [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/). All interactions with the Cloud App Security apps and traffic sent to Cloud App Security, including upload of discovery logs, is routed via ExpressRoute **public peering** for improved latency, performance and security. There are no configuration steps required from the customer side.  
+    For more information about  Public Peering, see [ExpressRoute circuits and routing domains](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/).  
     
-## <a name="see-also"></a>Zie ook  
-[Cloud Discovery instellen](set-up-cloud-discovery.md)   
-[Ga naar de ondersteuningspagina van Cloud App Security voor technische ondersteuning.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
-[Premier-klanten kunnen Cloud App Security ook rechtstreeks vanuit Premier Portal kiezen.](https://premier.microsoft.com/)  
+## See Also  
+[Set up Cloud Discovery](set-up-cloud-discovery.md)   
+[For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+[Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Dec16_HO4-->
-
-

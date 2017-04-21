@@ -1,11 +1,11 @@
 ---
-title: Verbinding maken met Salesforce | Microsoft Docs
+title: Verbinding maken tussen Salesforce en Microsoft Cloud App Security voor zichtbaarheid en gebruikscontrole | Microsoft Docs
 description: In dit onderwerp vindt u informatie over het maken van verbinding tussen Salesforce en Cloud App Security via de API-connector.
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/26/2016
+ms.date: 3/19/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,14 +13,10 @@ ms.technology:
 ms.assetid: 776d7589-acdb-4cb6-99a0-3be2f7b6aab2
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 129181e4768f068a0e30f6ef3a2d3f7fc6d47024
-ms.openlocfilehash: 0932c6bc696e7b050eae543fbea7d847dfa42b4b
-
-
+ms.openlocfilehash: 6e4363db83a65fbb656a844086cc08fab8cdecbd
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+translationtype: HT
 ---
-
-
 # <a name="connect-salesforce-to-microsoft-cloud-app-security"></a>Verbinding maken tussen Salesforce en Microsoft Cloud App Security
 In deze sectie vindt u instructies voor het maken van een verbinding tussen Cloud App Security en uw bestaande Salesforce-account met behulp van de connector-API voor de app.  
   
@@ -66,7 +62,7 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
   
     4.  Zorg ervoor dat het selectievakje **Salesforce CRM-inhoud gebruiker** is geselecteerd.  
   
-         Als dit niet is geselecteerd, klikt u op **Bewerken** en het selecteert u selectievakje.  
+         Als dit niet is geselecteerd, klikt u op **Bewerken** en selecteert u vervolgens het selectievakje.  
   
          ![salesforce, crm-inhoud gebruiker](./media/salesforce-crm-content-user.png "salesforce, crm-inhoud gebruiker")  
   
@@ -95,16 +91,23 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
      Het testen kan enkele minuten duren. Na de ontvangst van de melding dat de actie voltooid is, klikt u op **Gereed**.  
   
   
-Nadat u verbinding hebt gemaakt met Salesforce, ontvangt u gebeurtenissen als volgt: triggers vanaf het moment van de verbinding, aanmeldingsgebeurtenissen en instellen van audittrail tot 60 dagen voorafgaand aan de verbinding, gebeurtenisbewaking tot 30 dagen of 1 dag terug (afhankelijk van uw licentie voor Salesforce EventMonitoring).
+Nadat u verbinding hebt gemaakt met Salesforce, ontvangt u gebeurtenissen als volgt: triggers vanaf het moment van de verbinding, aanmeldingsgebeurtenissen en instellen van audittrail tot 60 dagen voorafgaand aan de verbinding, gebeurtenisbewaking tot 30 dagen of 1 dag terug (afhankelijk van uw licentie voor Salesforce EventMonitoring). De Cloud App Security API communiceert rechtstreeks met de beschikbare API's van Salesforce. Omdat Salesforce het aantal API-aanroepen die het kan ontvangen beperkt, wordt er door Cloud App Security rekening gehouden met de beperking. Salesforce-API's verzenden elk antwoord met een veld voor de API-tellers, waaronder het totaal aantal beschikbare en resterende. Cloud App Security rekent dit om naar een percentage en zorgt ervoor dat er altijd 10% van de beschikbare API-aanroepen overblijven. 
+
+> [!NOTE]
+> De beperking van Cloud App Security wordt uitsluitend berekend op de eigen API-aanroepen met Salesforce, niet met die van andere toepassingen die API-aanroepen met Salesforce gebruiken.
+> Het beperken van API-aanroepen vanwege de beperking kan de snelheid vertragen waarmee gegevens in de Cloud App Security worden opgenomen, maar dit wordt gewoonlijk ‘s nachts hersteld.
+
+
+SalesForce-gebeurtenissen worden door de Cloud App Security als volgt verwerkt: 
   
+- Aanmeldgebeurtenissen om de 15 minuten
+- Audittrail-instellingen om de 15 minuten
+- Het gebeurtenislogboek word door Salesforce elke 24 uur geëxporteerd (12:00 UTC) 
+
+
 ## <a name="see-also"></a>Zie ook  
 [Cloud-apps beheren met beleidsregels](control-cloud-apps-with-policies.md)   
 [Ga naar de ondersteuningspagina van Cloud App Security voor technische ondersteuning.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Premier-klanten kunnen Cloud App Security ook rechtstreeks vanuit Premier Portal kiezen.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Dec16_HO2-->
-
-
