@@ -23,7 +23,7 @@ Met Cloud App Security kunt u elk bestandstype controleren op basis van meer dan
  
 **Ondersteunde bestandstypen** 
 
-Met de ingebouwde DLP-engines van Cloud App Security worden inhoudsinspecties uitgevoerd door tekst te extraheren uit meer dan&100; algemene bestandstypen (Office-bestanden, Open Office-bestanden, gecomprimeerde bestanden, verschillende RTF-indelingen, XML- en HTML-bestanden, enzovoort).
+Met de ingebouwde DLP-engines van Cloud App Security worden inhoudsinspecties uitgevoerd door tekst te extraheren uit meer dan 100 algemene bestandstypen (Office-bestanden, Open Office-bestanden, gecomprimeerde bestanden, verschillende RTF-indelingen, XML- en HTML-bestanden, enzovoort).
 
 De engine combineert drie aspecten onder elk beleid:  
   

@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b78a120c64af1887e5768082e5c81776b509f5a6
-ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
+ms.openlocfilehash: b5807498a87c39b54ece698cd5bec10f05b29fe2
+ms.sourcegitcommit: f4fcea309a5ba8c99d1dea306abf5bf07649d6fb
 translationtype: HT
 ---
 # <a name="azure-information-protection-integration"></a>Integratie van Azure Information Protection
@@ -86,8 +86,11 @@ Als u wilt dat deze extern ingestelde labels worden genegeerd, gaat u in de Clou
 
 ![azure information protection-labels in cloud app security](./media/azip-tags-in-cas.png)
 
-> ![Opmerking] Wanneer Azure Identity Protection-labels voor een bestand worden uitgeschakeld, worden de uitgeschakelde labels ook als uitgeschakeld weergegeven in Cloud App Security. Verwijderde labels worden niet weergegeven.
-> **Beleid 1: vertrouwelijke gegevens die extern worden gedeeld op Box:**
+> [!Note]
+> Wanneer Azure Identity Protection-labels voor een bestand worden uitgeschakeld, worden de uitgeschakelde labels ook als uitgeschakeld weergegeven in Cloud App Security. Verwijderde labels worden niet weergegeven.
+
+
+**Beleid 1: vertrouwelijke gegevens die extern worden gedeeld op Box:**
 
 1.    Maak een bestandsbeleid.
 2.    Stel de naam, ernst en categorie van het beleid in.

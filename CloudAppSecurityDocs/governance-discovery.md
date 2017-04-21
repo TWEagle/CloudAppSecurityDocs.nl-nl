@@ -28,7 +28,7 @@ Deze oplossing vereist geen omleiding van alle webverkeer van de organisatie naa
 
    ![Labelen als Niet-goedgekeurd](./media/tag-as-unsanctioned.png)  
 
-2. Klik op de drie punten in de titelbalk en selecteer **Blokkeerscript genereren... **. 
+2. Klik op de drie punten in de titelbalk en selecteer **Blokkeerscript genereren...**. 
 
    ![Blokkeerscript genereren](./media/generate-block-script.png)  
 
