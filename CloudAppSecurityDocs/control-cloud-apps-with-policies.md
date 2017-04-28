@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 4/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 14d10238-0f61-43e9-ab96-71534a27d3d4
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 1f897a528e425a2abd74f6828a7785fdfe147286
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+ms.openlocfilehash: 2a87251a533a9e8fa68b8807966019c186d5669e
+ms.sourcegitcommit: 3e0f91099a30e014badbf9e3cfb99b65337f239d
 translationtype: HT
 ---
 # <a name="control-cloud-apps-with-policies"></a>Cloud-apps beheren met beleidsregels
@@ -139,7 +139,20 @@ Volg de volgende stappen voor het maken van een beleid gebaseerd op onderzoeksre
 >  [Beleidsregels voor gegevensbescherming](data-protection-policies.md)  
 >   
 >  [Beleidsregels voor Cloud Discovery](cloud-discovery-policies.md)  
+
   
+### <a name="add-automated-actions-to-respond-and-remediate-risks-automatically"></a>Automatische acties toevoegen om te reageren op risico’s en deze automatisch te herstellen
+
+Zie [Verbonden apps beheren](governance-actions.md) voor een lijst met beschikbare beheeracties per app.
+
+U kunt het beleid ook zodanig instellen dat u per e-mail of sms een waarschuwing ontvangt wanneer overeenkomsten worden gedetecteerd. 
+
+Ga naar [De portal aanpassen](general-setup.md) om uw meldingsvoorkeuren in te stellen. 
+  
+> [!NOTE] 
+> Het maximum aantal waarschuwingen dat via een sms-bericht kan worden verzonden, is 10 per telefoonnummer per dag. Houd er rekening mee dat de dag wordt bepaald op basis van de UTC-tijdzone. 
+
+
 ## <a name="enable-and-disable-policies"></a>Beleid in- en uitschakelen
 
 Nadat u een beleid hebt gemaakt, kunt u dat in- of uitschakelen. Daardoor hoeft u een beleid nadat u het hebt gemaakt niet te verwijderen om het te kunnen stopzetten. Als u om enigerlei reden het beleid wilt stopzetten, kunt u het tijdelijk uitschakelen.

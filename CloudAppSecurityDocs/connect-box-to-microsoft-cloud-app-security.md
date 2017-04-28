@@ -1,11 +1,11 @@
 ---
-title: Verbinding maken met Box | Microsoft Docs
+title: Verbinding maken tussen Box en Cloud App Security voor zichtbaarheid en gebruikscontrole | Microsoft Docs
 description: In dit onderwerp vindt u informatie over het maken van verbinding tussen de Box-app en Cloud App Security via de API-connector.
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 3/19/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: b3e4713e-986f-4a5e-9fcc-f8de94dd0df7
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
-ms.openlocfilehash: 4aa741a90e356d440598eb9302dbd49f3b445c6c
-
-
+ms.openlocfilehash: 11716fb83acfb893dce29c7f4179788d40bef7a4
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+translationtype: HT
 ---
-
 # <a name="connect-box-to-microsoft-cloud-app-security"></a>Verbinding maken tussen Box en Microsoft Cloud App Security
 In deze sectie vindt u instructies voor het maken van een verbinding tussen Cloud App Security en uw bestaande Box-account met behulp van de connector-API's voor de app.  
   
@@ -32,15 +29,15 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
   
     -   Klik op het pictogram Instellingen en vervolgens op **Bedrijfsinstellingen** in de beheerconsole van Box.  
   
-         ![Box-bedrijfsinstellingen](./media/box-business-settings.png "box business settings")  
+         ![box business settings](./media/box-business-settings.png "box business settings")  
   
     -   Klik op het tabblad **Apps**.  
   
-         ![Box-apps](./media/box-apps.png "box apps")  
+         ![box apps](./media/box-apps.png "box apps")  
   
     -   Als **Unpublished Applications** (Niet-gepubliceerde toepassingen) is geselecteerd, voegt u in het tekstvak **Except for** (Behalve voor) het serienummer in van de Cloud App Security-app (`nduj1o3yavu30dii7e03c3n7p49cj2qh`) en klikt u op **Save** (Opslaan).  
   
-         ![Box-instellingen Except for (Behalve voor)](./media/box-settings-except-for.png "box settings except for")  
+         ![box settings except for](./media/box-settings-except-for.png "box settings except for")  
   
     > [!NOTE]  
     >  Als u een bestaande Adallom-klant bent en uw console-URL voor Adallom is en niet voor Cloud App Security, gebruikt u dit serienummer voor de app: bwahmilhdlpbqy2ongkl119o3lrkoshc.  
@@ -49,11 +46,11 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
   
 3.  Klik op de pagina **App-connectors** op de knop met het plusteken en selecteer **Box**.  
   
-     ![Verbinding maken met box](./media/connect-box.png "connect box")  
+     ![connect box](./media/connect-box.png "connect box")  
   
-4.  Klik in het pop-upvenster **Box-instellingen** op **Volg deze link**.  
+4.  Klik in het pop-upvenster **Vakinstellingen** op **Deze koppeling volgen**.  
   
-5.  Hiermee opent u de aanmeldingspagina Box. Voer uw referenties in om Cloud App Security toegang te geven tot de Box-app van uw team.  
+5.  Hiermee opent u de Box-aanmeldingspagina. Voer uw referenties in om Cloud App Security toegang te geven tot de Box-app van uw team.  
   
 6.  Box geeft een melding weer om u te vragen of u Cloud App Security toegang wilt geven tot de gegevens van uw team en het activiteitenlogboek en toestemming wilt geven om willekeurige activiteiten uit te voeren als een willekeurig teamlid. Klik op **Toestaan** om door te gaan.  
   
@@ -75,8 +72,3 @@ Na de verbinding met Box wordt in Cloud App Security een volledige scan uitgevoe
 [Premier-klanten kunnen Cloud App Security ook rechtstreeks vanuit Premier Portal kiezen.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Nov16_HO5-->
-
-

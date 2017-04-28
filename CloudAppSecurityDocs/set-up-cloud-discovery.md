@@ -1,11 +1,11 @@
 ---
-title: Cloud Discovery implementeren | Microsoft Docs
+title: Implementeer Cloud Discovery met Cloud App Security | Microsoft Docs
 description: Dit onderwerp wordt de instellingsprocedure voor Cloud Discovery beschreven.
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/26/2016
+ms.date: 1/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,20 +13,17 @@ ms.technology:
 ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 98b16c96c31039248bdfbe57f980b3ae6a26a7de
-ms.openlocfilehash: 3c722ac79fa124193655ca053c713f3d6edc7017
-
-
+ms.openlocfilehash: 17da11ad5ca10eba14410e0a0458980b3f88d123
+ms.sourcegitcommit: 8c7c25bc727d9c471261da144d5c1d430c26af56
+translationtype: HT
 ---
-
 # <a name="set-up-cloud-discovery"></a>Cloud Discovery instellen
 In Cloud Discovery worden uw verkeerslogboeken geanalyseerd op basis van de catalogus met cloud-apps van Cloud App Security. Deze catalogus bevat meer dan 13.000 cloud-apps die op basis van meer dan 50 kenmerken worden geclassificeerd en beoordeeld, zodat u altijd inzicht hebt in het cloudgebruik, de Shadow IT en het risico dat Shadow IT vormt in uw organisatie.
 Met de **catalogus met cloud-apps** wordt het risico voor uw cloud-apps beoordeeld op basis van regelgevingscertificeringen, industrienormen en best practices. In de catalogus met cloud-apps worden vier aanvullende processen uitgevoerd om de catalogus up-to-date te houden:
-1.  Geautomatiseerde gegevensextractie rechtstreeks vanuit de cloud-app (voor kenmerken zoals SOC 2-naleving).
-2.  Geautomatiseerde geavanceerde gegevensextractie voor gegevens met Cloud App Security-algoritmen (voor kenmerken zoals HTTP-beveiligingsheaders).
-3.  Continue analyses door het analistenteam van Cloud App Security (voor kenmerken zoals versleuteling van inactieve gegevens).
-4.  Klantgebaseerde revisieaanvragen, gebaseerd op klantaanvragen voor wijzigingen in de catalogus met cloud-apps. Alle aanvragen worden bekeken door ons cloudanalistenteam en bijgewerkt op basis van hun bevindingen.
+1.    Geautomatiseerde gegevensextractie rechtstreeks vanuit de cloud-app (voor kenmerken zoals SOC 2-naleving).
+2.    Geautomatiseerde geavanceerde gegevensextractie voor gegevens met Cloud App Security-algoritmen (voor kenmerken zoals HTTP-beveiligingsheaders).
+3.    Continue analyses door het analistenteam van Cloud App Security (voor kenmerken zoals versleuteling van inactieve gegevens).
+4.    Klantgebaseerde revisieaanvragen, gebaseerd op klantaanvragen voor wijzigingen in de catalogus met cloud-apps. Alle aanvragen worden bekeken door ons cloudanalistenteam en bijgewerkt op basis van hun bevindingen.
   
 ## <a name="cloud-discovery-data-anonymization"></a>Cloud Discovery-gegevens anoniem maken
 
@@ -84,7 +81,7 @@ Als u zonder problemen een Cloud Discovery-rapport wilt genereren, moeten uw ver
 - Cisco ScanSafe
 - Merkai - URL-logboek
 - Dell Sonicwall
-- Fortiner Fortigate
+- Fortinet Fortigate
 - Juniper SRX
 - McAfee beveiligde webgateway
 - Microsoft Forefront Threat Management Gateway (W3C)
@@ -121,7 +118,7 @@ De gegevenskenmerken (volgens de documentatie van de leverancier):
 |Sophos|**Ja**|**Ja**|**Ja**|**Ja**|**Ja**|Nee|
 |Websense - gedetailleerd onderzoeksrapport (CSV)|**Ja**|Nee|Nee|**Ja**|Nee|Nee|
 |Websense - internetactiviteitenlogboek (CEF)|**Ja**|**Ja**|**Ja**|**Ja**|**Ja**|**Ja**|
-|Zscaler|**Ja**|Nee|**Ja**|Nee|**Ja**|Nee|
+|Zscaler|**Ja**|Nee|**Ja**|Nee|**Ja**|**Ja**|
 
 \*Cloud Discovery biedt ondersteuning voor IPv6.
 
@@ -132,10 +129,3 @@ De gegevenskenmerken (volgens de documentatie van de leverancier):
 [Automatisch uploaden van logboeken configureren voor doorlopende rapporten](configure-automatic-log-upload-for-continuous-reports.md)
 
 [Werken met Cloud Discovery-gegevens](working-with-cloud-discovery-data.md)
-  
-  
-
-
-<!--HONumber=Jan17_HO2-->
-
-

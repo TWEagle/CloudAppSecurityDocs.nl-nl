@@ -1,11 +1,11 @@
 ---
-title: Verbinding maken met Office 365 | Microsoft Docs
+title: Verbinding maken tussen Office 365 en Cloud App Security voor zichtbaarheid en gebruikscontrole | Microsoft Docs
 description: In dit onderwerp vindt u informatie over het maken van verbinding tussen Office 365 en Cloud App Security via de API-connector.
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/26/2016
+ms.date: 1/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: a79bf393-0d2c-44b6-8dab-86c740fd7333
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
-ms.openlocfilehash: e0ca79daddaaa2cdcbc51308653b3ec05da1b5e2
-
-
+ms.openlocfilehash: f5dfdcb0d420434a66b73098d546e4de4a36f60e
+ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+translationtype: HT
 ---
-
 # <a name="connect-office-365-to-microsoft-cloud-app-security"></a>Verbinding maken tussen Office 365 en Microsoft Cloud App Security
 In deze sectie vindt u instructies voor het maken van verbinding tussen Cloud App Security en uw bestaande Microsoft 365-account met behulp van de connector-API voor de app.  
   
@@ -56,8 +53,3 @@ In deze sectie vindt u instructies voor het maken van verbinding tussen Cloud Ap
 [Premier-klanten kunnen Cloud App Security ook rechtstreeks vanuit Premier Portal kiezen.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Nov16_HO5-->
-
-

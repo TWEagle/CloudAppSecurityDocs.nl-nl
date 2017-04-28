@@ -1,13 +1,14 @@
 ---
 layout: LandingPage
 description: Meer informatie over het gebruik van Cloud App Security.
-ms.openlocfilehash: a746de0da559ebe32f246fdb52601dc5f2309d42
-ms.sourcegitcommit: d52371ba06d72e742dd07d8a9c6db4c9ee5d5fa9
+ms.openlocfilehash: a181d0871c17e7f94b17d72182225652c9df2438
+ms.sourcegitcommit: ddfac1ff8a07ff34acfa1945400950b749bdcb4d
 translationtype: HT
 ---
 # <a name="cloud-app-security-documentation"></a>Documentatie voor Cloud App Security
 
-Beheer e-mail, documenten en gevoelige gegevens die u buiten het bedrijf deelt, en help deze beveiligen. Met Azure Information Protection beschikt u diverse manieren om uw gegevens te beveiligen, zoals gemakkelijke classificatie, ingesloten labels en machtigingen, zodat de gegevens veilig zijn ongeacht waar ze worden opgeslagen of met wie ze worden gedeeld.
+Voorzie uw cloud-apps van een beveiliging van bedrijfsniveau met Cloud App Security.
+Of u nu wel of niet in de cloud bent, uw werknemers zijn het zeker. Geef uw goedgekeurde en niet-goedgekeurde cloudtoepassingen dezelfde veiligheid als uw on-premises systemen, voor een beter inzicht, uitgebreide besturingselementen en verbeterde bescherming tegen beveiligingsproblemen in de cloud.
 
 <ul class="panelContent cardsFTitle">
     <li>
