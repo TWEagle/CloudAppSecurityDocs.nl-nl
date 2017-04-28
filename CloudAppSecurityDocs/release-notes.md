@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/2/2017
+ms.date: 4/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,26 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9de7c7770e567ffc79c6af98582d46d86115babe
-ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
+ms.openlocfilehash: c6bffe24bc127b4435a7a334cdca001f6e5ad3c5
+ms.sourcegitcommit: fd3b6c04cec30f7c9300cc02d29d562d17bf43ea
 translationtype: HT
 ---
 # <a name="release-notes"></a>Opmerkingen bij de release
+
+
+## <a name="cloud-app-security-release-95-in-roll-out"></a>Cloud App Security-release 95 (wordt geïmplementeerd)
+Uitgebracht: 24 april 2017
+
+**Updates**
+- De pagina **Accounts** is bijgewerkt met verbeteringen die het detecteren van risico’s vereenvoudigen. U kunt nu gemakkelijker filteren op interne en externe accounts, in één oogopslag zien of een gebruiker beheerdersmachtigingen heeft, en in elk account eenvoudig acties uitvoeren per app (zoals machtigingen verwijderen, samenwerkingen van gebruiker verwijderen, gebruiker blokkeren). Daarnaast worden er voor elk account geïmporteerde [gebruikersgroepen](user-groups.md) weergegeven. 
+
+- Voor Microsoft-accounts (Office 365 en Azure Active Directory) groepeert Cloud App Security verschillende gebruikers-id’s zoals proxyadressen, aliassen, beveiligings-id’s en meer onder één account. Alle aliassen die aan een account zijn gekoppeld, verschijnen onder het primaire e-mailadres. Op basis van de lijst met gebruikers-id’s wordt de uitvoerder weergegeven als de primaire gebruikersnaam UPN (User Principal Name) voor activiteiten waarvan de uitvoerder een gebruikers-id is. Op basis van de UPN worden groepen toegewezen en beleidsregels toegepast. Zo wordt het onderzoeken van activiteiten verbeterd en worden alle gerelateerde activiteiten in dezelfde sessie samengebracht voor afwijkingen en groepsgebaseerde beleidsregels. Deze functie zal de komende maand geleidelijk aan worden geïmplementeerd.
+
+- De Robot-label is als mogelijke risicofactor toegevoegd aan het ingebouwde rapport Browsergebruik. Browsergebruik wordt nu niet alleen gelabeld als verouderd, maar u kunt ook zien wanneer browsers door een robot werden gebruikt. Meer informatie over de [ingebouwde rapporten](built-in-report-reference.md).
+
+- Wanneer u een bestandsbeleid voor inhoudsinspectie maakt, kunt u het filter nu zodanig instellen dat alleen bestanden met ten minste 50 overeenkomsten worden opgenomen.
+
+
 
 ## <a name="cloud-app-security-release-94"></a>Cloud App Security-release 94
 Uitgebracht 2 april 2017

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 4/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: a6658937-57a2-484a-85cb-5a4cdbeeb002
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5a06dd9f53c4074b2842eee3f369611b5b6b274c
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+ms.openlocfilehash: 12b77282ebf900978efa6be7b6902aee5ad2eaaa
+ms.sourcegitcommit: 3e0f91099a30e014badbf9e3cfb99b65337f239d
 translationtype: HT
 ---
 # <a name="policy-templates"></a>Beleidssjablonen
@@ -36,7 +36,7 @@ Hier volgt een lijst met alle beleidssjablonen die zijn opgenomen in Cloud App S
 |Nieuwe riskante app|Ontvang een waarschuwing wanneer er nieuwe apps worden gedetecteerd met een risicoscore lager dan 6 en die worden gebruikt door meer dan 50 gebruikers met een totaal dagelijks gebruik van meer dan 50 MB.|
 |Compatibiliteitscontrole van samenwerkingsapp|Ontvang een waarschuwing wanneer er nieuwe samenwerkingsapp worden gedetecteerd die niet compatibel zijn met SOC2 en SSAE 16, en worden gebruikt door meer dan 50 gebruikers met een totaal dagelijks gebruik van meer dan 50 MB.|
 |Aanmelding vanaf een riskant IP-adres|Ontvang een waarschuwing wanneer een gebruiker zich aanmeldt bij uw goedgekeurde apps vanaf een riskant IP-adres. Standaard bevat de categorie riskante IP-adressen adressen met IP-adreslabels van een anonieme proxy, TOR of Botnet. U kunt meer IP-adressen aan deze categorie toevoegen op de pagina met instellingen voor IP-adresbereiken.|
-|Beheeractiviteiten vanaf een niet-beheerders-IP-adres|Ontvang een waarschuwing wanneer een gebruiker beheeractiviteiten uitvoert vanaf een IP-adres dat niet is opgenomen in een specifieke categorie IP-adresbereiken. U kunt meer riskante IP-adressen instellen door IP-adresbereiken te selecteren op de pagina Instellingen.|
+|Beheeractiviteiten vanaf een niet-zakelijk IP-adres|Ontvang een waarschuwing wanneer een gebruiker beheeractiviteiten uitvoert vanaf een IP-adres dat niet is opgenomen in de categorie zakelijke IP-adresbereiken. U moet eerst uw zakelijke IP-adressen configureren door naar de pagina Instellingen te gaan en **IP-adresbereiken** in te stellen.|
 |Aanmelding van een gebruiker vanaf een niet-gecategoriseerd IP-adres|Ontvang een waarschuwing wanneer een gebruiker zich aanmeldt vanaf een IP-adres dat niet is opgenomen in een specifieke categorie IP-bereiken. U kunt IP-adressen categoriseren door IP-adresbereiken te selecteren op de pagina Instellingen.|
 |Bestand met persoonsgegevens gedetecteerd in de cloud (ingebouwde DLP-engine)|Ontvang een waarschuwing wanneer een bestand met persoonsgegevens wordt gedetecteerd door onze ingebouwde DLP-engine (voor preventie van gegevensverlies) in een goedgekeurde cloud-app.|
 |Nieuwe HRM-app|Ontvang een waarschuwing wanneer er nieuwe HRM-apps worden gedetecteerd die worden gebruikt door meer dan 50 gebruikers met een totaal dagelijks gebruik van meer dan 50 MB.|

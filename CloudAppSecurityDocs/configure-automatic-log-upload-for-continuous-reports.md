@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 4/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,14 +13,18 @@ ms.technology:
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f6eb2a844d62848ad232a92609a02ddb6fcfe325
-ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+ms.openlocfilehash: 053ca16b0bff19d4c8bdd75350ed9b0bed4ce3d8
+ms.sourcegitcommit: 3e0f91099a30e014badbf9e3cfb99b65337f239d
 translationtype: HT
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports"></a>Automatisch uploaden van logboeken configureren voor doorlopende rapporten
 Met een logboekverzamelaar kunt u het uploaden van logboeken vanaf uw netwerk eenvoudig automatiseren. De logboekverzamelaar wordt uitgevoerd op uw netwerk en ontvangt logboeken via Syslog of FTP. Elk logboek wordt automatisch verwerkt, gecomprimeerd en naar de portal verzonden. De FTP-logboeken worden naar Cloud App Security geüpload nadat de FTP-overdracht naar de logboekverzamelaar voor het bestand is voltooid. Voor Syslogs worden de ontvangen logboeken met de logboekverzamelaar elke 20 minuten naar de schijf geschreven en wordt het bestand vervolgens naar Cloud App Security geüpload.
 
 Voordat u automatische logboekbestandsverzameling instelt, moet u controleren of uw logboek overeenkomt met het verwachte logboektype, zodat uw bestand kan worden geparseerd met Cloud App Security. 
+
+>[!NOTE]
+>Cloud App Security biedt ondersteuning voor het doorsturen van logboeken vanaf uw SIEM-server naar de logboekverzamelaar, ervan uitgaande dat de logboeken worden doorgestuurd in hun oorspronkelijke indeling. Het wordt echter ten zeerste aangeraden de logboekverzamelaar rechtstreeks met uw firewall en/of proxy te integreren.
+
 
 ## <a name="technical-requirements"></a>Technische vereisten
 - Hypervisor: Hyper-v- of VMware
@@ -74,7 +78,7 @@ De logboekverzamelaar heeft een ingebouwd beveiligingsmechanisme dat de snelheid
   > - Kopieer de inhoud van het scherm. U hebt deze informatie nodig tijdens het configureren van de logboekverzamelaar voor de communicatie met Cloud App Security. Als u Syslog hebt geselecteerd, wordt ook informatie weergegeven over de poort waarop de Syslog-listener luistert.
 4.  **Download** een nieuwe virtuele machine voor de logboekverzamelaar door te klikken op Hyper-V of VMWare en decomprimeer het bestand met het wachtwoord dat u in de portal hebt ontvangen.  
   
-### <a name="step-2--on-premises-deployment-of-the-virtual-machine-and-network-configuration"></a>Stap 2 - On-premises implementatie van de virtuele machine en de netwerkconfiguratie   
+###    <a name="step-2--on-premises-deployment-of-the-virtual-machine-and-network-configuration"></a>Stap 2 - On-premises implementatie van de virtuele machine en de netwerkconfiguratie   
 
 > [!NOTE] 
 > In de volgende stappen wordt de implementatie in Hyper-V beschreven. De implementatiestappen voor de VM-hypervisor zijn iets anders.  

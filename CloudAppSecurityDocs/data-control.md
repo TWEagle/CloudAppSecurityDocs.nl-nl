@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/2/2017
+ms.date: 4/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 57927618-cb66-4c7f-afd7-c96926460816
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e7e735519caa7da514f06db13afc737cf6ef1806
-ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
+ms.openlocfilehash: 25fef8249688d9116001fd7147a00aedf9d72ca7
+ms.sourcegitcommit: 3e0f91099a30e014badbf9e3cfb99b65337f239d
 translationtype: HT
 ---
 # <a name="controlling-and-protecting-your-files"></a>Uw bestanden beheren en beveiligen  
@@ -27,10 +27,10 @@ Met Cloud App Security kunt u elk bestandstype controleren op basis van meer dan
 Deze use case is van toepassing op Office 365, G Suite, Box, Dropbox en Salesforce.
 
 ### <a name="the-threat"></a>DE BEDREIGING
-Werknemers delen bedrijfsbestanden met gevoelige gegevens buiten de organisatie. Dit kan leiden tot het onbewaakt lekken van gegevens. Dit kan onschuldig zijn en uw bedrijfsbeleid niet schenden, maar zelfs in dat geval is het belangrijk om te controleren wat wordt gedeeld, zodat u altijd weet hoe uw netwerk wordt gebruikt en welke gegevens extern worden gedeeld.
+Een van de grootste voordelen van cloudtechnologie is de mogelijkheid om alles met iedereen te delen. Maar grote voordelen brengen ook grote verantwoordelijkheden met zich mee, en om te verzekeren dat gevoelige gegevens niet extern worden gedeeld, moet u weten welke bestanden gevoelige gegevens bevatten en met wie ze worden gedeeld. Met de hulpprogramma’s die worden meegeleverd bij uw cloud-apps kunt u niet zien wat er wordt opgeslagen in de cloud-app of wie er toegang heeft, zodat u zich niet bewust bent van mogelijke gegevenslekken.
 
 ### <a name="the-solution"></a>DE OPLOSSING
-Meer inzicht verkrijgen in het delen van bestanden in uw netwerk en gegevensbeheersacties implementeren door het volgende in de Cloud App Security te implementeren uit de volgende beleids- en gegevensbeheeractie in de Cloud App Security.
+Door deze twee parameters (niveau van gevoeligheid en deling) te vinden en elkaar te laten kruisen, kunt u deze mogelijke inbreuken identificeren. Cloud App Security scant alle bestanden die in uw cloud-apps zijn opgeslagen en classificeert ze automatisch op hun niveau van deling. Vervolgens kunt u in Cloud App Security een bestandsbeleid configureren om te zoeken naar alle gevoelige gegevens die in uw cloud-apps zijn opgeslagen. Zodra u een gevoelig bestand hebt gevonden dat extern is gedeeld, kunt u handmatig herstelacties uitvoeren of kunt u Cloud App Security instellen om dit automatisch voor u te doen. Zo kunt u met één klik het risico van gegevenslekken elimineren.
 
 #### <a name="prerequisites"></a>Vereisten
 
@@ -38,12 +38,12 @@ Meer inzicht verkrijgen in het delen van bestanden in uw netwerk en gegevensbehe
 
 #### <a name="setting-up-monitoring"></a>Controle instellen
 
-1.    Bestanden beheren door een beleid te maken
+1.    Begin uw app te controleren door een beleid in te stellen dat alle extern gedeelde bestanden op gevoelige inhoud scant:
 
     1. Op de pagina **Beleid**, klikt u op [ **Bestandsbeleid maken**](data-protection-policies.md). 
     ![Bestandsbeleid maken](./media/create-file-policy.png)
 
-    2. Kies in het veld [ **Beleidssjabloon** ](policy-template-reference.md) **Bestand aangetroffen met PII in de cloud (ingebouwde DLP-engine)** en klik op **Sjabloon toepassen**. 
+    2. Kies in het veld [ **Beleidssjabloon** ](policy-template-reference.md)  **Bestand aangetroffen met PII in de cloud (ingebouwde DLP-engine)** en klik op **Sjabloon toepassen**. 
     ![Bestandsbeleidssjabloon](./media/file-policy-template.png)
     3. Als u het ongepast delen van deze bestanden met persoonlijke gegevens wilt bewaken, voeg dan een filter toe met het toegangsniveau dat u probeert te blokkeren - bijvoorbeeld **Toegangsniveau is gelijk aan extern, openbaar, openbaar (internet)**. 
      ![Bestandsbeleidfilter](./media/file-policy-filter.png)
@@ -60,13 +60,13 @@ Meer inzicht verkrijgen in het delen van bestanden in uw netwerk en gegevensbehe
 #### <a name="validating-your-policy"></a>Uw beleid valideren
 
 1. Maak een nieuw Word-document met de volgende tekst: 078-05-1120.
-2. Sla het bestand dan op als *testbestand.docx* en deel het met iemand buiten uw domein of met een openbare URL. 
+2. Sla het bestand dan op als *testbestand.docx*  en deel het met iemand buiten uw domein of met een openbare URL. 
 3. Ga naar het beleidsrapport. Binnen enkele ogenblikken zou een bestandsbeleidovereenkomst moeten worden weergegeven. 
 4. U kunt op de overeenkomst klikken om de context van het bestand te zien. De overeenkomst zelf wordt gemaskeerd ter bescherming van gevoelige gegevens. 
 
 #### <a name="removing-the-risk"></a>Het risico verwijderen
 
-Nadat u het hebt gevalideerd en het beleid op uw wensen afgestemd om ervoor te zorgen dat het wordt uitgevoerd als u bedoelt, doet u het volgende: 
+Nadat u het hebt gevalideerd en het beleid op uw wensen hebt afgestemd, verwijdert u mogelijke valse positieven die overeenkomen met uw beleid. Ga als volgt verder: 
   1. U kunt onmiddellijk [bestuursacties](governance-actions.md) ondernemen door op de drie puntjes aan het einde van de rij te klikken en de relevante bestuursactie te selecteren, bijvoorbeeld **Gebruiker in quarantaine plaatsen**.
 
  ![auto gov extern](./media/auto-gov-external.png)
@@ -81,21 +81,21 @@ Deze use case is van toepassing op Office 365, G Suite, Box, Dropbox en Salesfor
 
 Deze use case maakt gebruik van de integratie tussen Cloud App Security en Azure Information Protection. Als u Azure Information Protection uitvoert in uw organisatie en de tijd hebt genomen om uw bestanden te labelen met Azure Information Protection-labels, kunt u met Cloud App Security bewaken en bepalen wat er met die bestanden gebeurt nadat ze zijn gelabeld.
 
-## <a name="the-threat"></a>DE BEDREIGING
+### <a name="the-threat"></a>DE BEDREIGING
 
 U weet dat u uw gegevens moet beveiligen, u hebt al de moeite genomen uw bestanden te classificeren in Azure Information Protection. Maar als u ze hebt geclassificeerd, hoe weet u dan waar ze zijn en wie ernaar kijkt? 
 
-## <a name="the-solution"></a>DE OPLOSSING
- U kunt deze geclassificeerde bestanden controleren in de cloud met Cloud App Security. Hiermee kunt u ervoor zorgen dat de gegevens die u hebt geclassificeerd als **vertrouwelijk** (of een andere gevoelige classificatie) niet ongepast gedeeld worden. Laat Cloud App Security de bestanden die u in Azure Information Protection geclassificeerd hebt, controleren en beheren door de volgende beleids- en gegevensbeheersacties te implementeren.
+### <a name="the-solution"></a>DE OPLOSSING
+ U kunt deze geclassificeerde bestanden controleren in de cloud met Cloud App Security. Zo kunt u ervoor zorgen dat de gegevens die u als **vertrouwelijk** (of als een ander soort gevoelige gegevens) hebt geclassificeerd, niet ongepast worden gedeeld. Laat Cloud App Security de bestanden controleren en beheren die u in Azure Information Protection hebt geclassificeerd, door de volgende beleids- en beheeracties te implementeren.
 
-### <a name="prerequisites"></a>Vereisten
+#### <a name="prerequisites"></a>Vereisten
 
 - [Verbind](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) ten minste één cloud-app met Cloud App Security.
 - Volg de [Azure Information Protection integratie-instructies](azip-integration.md) om de automatische scan in te schakelen.
 
-### <a name="setting-up-monitoring"></a>Controle instellen
+#### <a name="setting-up-monitoring"></a>Controle instellen
 
-1. Uw gegevens beheren door een beleid te maken    
+1. Controleer alle bestanden met de gewenste classificatielabels die openbaar worden gedeeld:    
     
     1. Op de pagina **Beleid**, klikt u op [ **Bestandsbeleid maken**](data-protection-policies.md). 
 
@@ -116,7 +116,7 @@ U weet dat u uw gegevens moet beveiligen, u hebt al de moeite genomen uw bestand
     3. Als u vals-positieven vindt, markeer ze dan met een vinkje om ze uit te sluiten van het rapport en live-matches. U kunt de feedbackfunctie gebruiken om het Cloud App Security-team verbeteringen die u wilt toevoegen door te geven. 
 
 
-### <a name="validating-your-policy"></a>Uw beleid valideren
+#### <a name="validating-your-policy"></a>Uw beleid valideren
 
 1. Maak een nieuw Word-document en gebruik de werkbalk van Azure Information Protection om eventuele gevoeligheidslabels als **Vertrouwelijk** in te stellen. 
 
@@ -129,7 +129,7 @@ U weet dat u uw gegevens moet beveiligen, u hebt al de moeite genomen uw bestand
 
 #### <a name="removing-the-risk"></a>Het risico verwijderen
 
-Nadat u het hebt gevalideerd en het beleid op uw wensen afgestemd om ervoor te zorgen dat het wordt uitgevoerd als u bedoelt, doet u het volgende: 
+Nadat u het hebt gevalideerd en het beleid op uw wensen hebt afgestemd om mogelijke valse positieven te verwijderen die overeenkomen met uw beleid, doet u het volgende: 
 
 1. U kunt onmiddellijk [Bestuursacties](governance-actions.md) ondernemen door op de drie puntjes aan het einde van de rij te klikken en de relevante bestuursactie te selecteren, bijvoorbeeld **Gebruiker in quarantaine plaatsen**.
     
