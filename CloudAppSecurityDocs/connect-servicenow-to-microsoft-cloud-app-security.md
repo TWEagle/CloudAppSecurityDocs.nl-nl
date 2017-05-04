@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/21/2017
+ms.date: 4/25/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,17 +13,22 @@ ms.technology:
 ms.assetid: c626d94d-2ffd-4daf-8fa4-4b6d308cf012
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 1f4fd428f762bcbe1fb2a26bf44268cf985fbd4f
-ms.sourcegitcommit: c79c405a1277c5fcebbc245fa12ff8feb53248d5
+ms.openlocfilehash: 2e21e146ffc5043b6e5a6861422818328c3a0857
+ms.sourcegitcommit: 847f0425de7686b1b4a2b242930a0069e793436a
 translationtype: HT
 ---
 # <a name="connect-servicenow-to-microsoft-cloud-app-security"></a>Verbinding maken tussen ServiceNow en Microsoft Cloud App Security
-In deze sectie vindt u instructies voor het maken van een verbinding tussen Cloud App Security en uw bestaande ServiceNow-account met behulp van de connector-API voor de app.  
-  
-## <a name="how-to-connect-servicenow-to-cloud-app-security"></a>De verbinding maken tussen ServiceNow en Cloud App Security  
-  
-> [!NOTE]  
+
+In deze sectie vindt u instructies voor het maken van een verbinding tussen Cloud App Security en uw bestaande ServiceNow-account met behulp van de connector-API voor de app. 
+
+ >  [!NOTE]
+>  Het is raadzaam ServiceNow te implementeren met OAuth-app-tokens, die beschikbaar zijn voor Fuji en latere versies (zie de relevante [ServiceNow-documentatie](http://wiki.servicenow.com/index.php?title=OAuth_Applications#gsc.tab=0). Voor eerdere versies is er een [verouderde verbindingsmodus](#legacy-servicenow-connection) beschikbaar op basis van gebruiker en wachtwoord.
+
+ > [!NOTE]  
 >  Cloud App Security ondersteunt ServiceNow-versies van Eureka, Fiji, Genève, Helsinki en Istanboel. Als u verbinding wilt maken tussen ServiceNow en Cloud App Security, moet u de rol **Beheerder** hebben en er zeker van zijn dat het ServiceNow-exemplaar API-toegang ondersteunt.  Raadpleeg voor meer informatie de [ServiceNow-productdocumentatie](http://wiki.servicenow.com/index.php?title=Base_System_Roles#gsc.tab=0).
+  
+## <a name="how-to-connect-servicenow-to-cloud-app-security-using-oauth"></a>Een verbinding maken tussen ServiceNow en Cloud App Security met behulp van OAuth
+  
   
 1.  Meld u met een beheerdersaccount aan bij uw ServiceNow-account.  
   
@@ -37,7 +42,7 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
 
    ![ServiceNow OAuth type](./media/servicenow-oauth-app-type.png)
 
-5. Onder **Nieuw record toepassingsregisters** vult u het volgende in:
+5. Onder **Nieuw record toepassingsregisters**  vult u het volgende in:
     
     - **Naam**-veld, de naam van het nieuwe OAuth-profiel, bijvoorbeeld CloudAppSecurity. 
     
@@ -69,6 +74,36 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
   
 Nadat u verbinding hebt gemaakt met ServiceNow, ontvangt u gebeurtenissen tot 60 dagen voorafgaand aan de verbinding.
   
+## <a name="legacy-servicenow-connection"></a>Verouderde ServiceNow-verbinding
+
+Als u verbinding wilt maken tussen ServiceNow en Cloud App Security, moet u machtigingen hebben op beheerdersniveau en er zeker van zijn dat het ServiceNow-exemplaar API-toegang ondersteunt.   
+
+1.  Meld u met een beheerdersaccount aan bij uw ServiceNow-account.   
+
+2.  Maak een nieuw serviceaccount voor Cloud App Security en wijs de beheerdersrol aan het nieuwe account toe.   
+
+3.  Zorg ervoor dat de REST API-plugin is ingeschakeld.   
+
+    ![servicenow-account](./media/servicenow-account.png "servicenow-account")   
+
+4.  Klik in de Cloud App Security-portal op **Onderzoeken** en vervolgens op **Erkende apps**.   
+
+5.  Klik in de rij ServiceNow op **Verbinden** in de kolom **App Connector-status**, of klik op de knop **Verbinding maken met een app** en vervolgens op **ServiceNow**.   
+
+    ![connect servicenow](./media/connect-servicenow.png "connect servicenow")   
+
+6.  Voeg op de pagina ServiceNow-instellingen op het tabblad API in de bijbehorende vakken uw ServiceNow-gebruikersnaam, -wachtwoord en de URL van het exemplaar in.   
+
+7.  Klik op **Verbinden**.   
+
+   ![wachtwoord bijwerken van servicenow](./media/servicenow-update-password.png "wachtwoord bijwerken van servicenow")   
+
+8.  Controleer of de verbinding tot stand is gekomen door op **Test API** te klikken.   
+  
+   Het testen kan enkele minuten duren. Na de ontvangst van de melding dat de actie voltooid is, klikt u op **Sluiten**.   
+ Nadat u verbinding hebt gemaakt met ServiceNow, ontvangt u gebeurtenissen tot 60 dagen voorafgaand aan de verbinding. 
+
+
 ## <a name="see-also"></a>Zie ook  
 [Cloud-apps beheren met beleidsregels](control-cloud-apps-with-policies.md)   
 [Ga naar de ondersteuningspagina van Cloud App Security voor technische ondersteuning.](http://support.microsoft.com/oas/default.aspx?prid=16031)   

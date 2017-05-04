@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c6bffe24bc127b4435a7a334cdca001f6e5ad3c5
-ms.sourcegitcommit: fd3b6c04cec30f7c9300cc02d29d562d17bf43ea
+ms.openlocfilehash: 3e84ccc43212975cc40318a5b67ea60015fbde75
+ms.sourcegitcommit: 06809e22a767723a77a52b910aa41eca9728228b
 translationtype: HT
 ---
 # <a name="release-notes"></a>Opmerkingen bij de release
@@ -26,7 +26,7 @@ Uitgebracht: 24 april 2017
 **Updates**
 - De pagina **Accounts** is bijgewerkt met verbeteringen die het detecteren van risico’s vereenvoudigen. U kunt nu gemakkelijker filteren op interne en externe accounts, in één oogopslag zien of een gebruiker beheerdersmachtigingen heeft, en in elk account eenvoudig acties uitvoeren per app (zoals machtigingen verwijderen, samenwerkingen van gebruiker verwijderen, gebruiker blokkeren). Daarnaast worden er voor elk account geïmporteerde [gebruikersgroepen](user-groups.md) weergegeven. 
 
-- Voor Microsoft-accounts (Office 365 en Azure Active Directory) groepeert Cloud App Security verschillende gebruikers-id’s zoals proxyadressen, aliassen, beveiligings-id’s en meer onder één account. Alle aliassen die aan een account zijn gekoppeld, verschijnen onder het primaire e-mailadres. Op basis van de lijst met gebruikers-id’s wordt de uitvoerder weergegeven als de primaire gebruikersnaam UPN (User Principal Name) voor activiteiten waarvan de uitvoerder een gebruikers-id is. Op basis van de UPN worden groepen toegewezen en beleidsregels toegepast. Zo wordt het onderzoeken van activiteiten verbeterd en worden alle gerelateerde activiteiten in dezelfde sessie samengebracht voor afwijkingen en groepsgebaseerde beleidsregels. Deze functie zal de komende maand geleidelijk aan worden geïmplementeerd.
+- Voor Microsoft-werkaccounts (Office 365 en Azure Active Directory) groepeert Cloud App Security verschillende gebruikers-id’s zoals proxyadressen, aliassen, beveiligings-id’s en meer onder één account. Alle aliassen die aan een account zijn gekoppeld, verschijnen onder het primaire e-mailadres. Op basis van de lijst met gebruikers-id’s wordt de uitvoerder weergegeven als de primaire gebruikersnaam UPN (User Principal Name) voor activiteiten waarvan de uitvoerder een gebruikers-id is. Op basis van de UPN worden groepen toegewezen en beleidsregels toegepast. Zo wordt het onderzoeken van activiteiten verbeterd en worden alle gerelateerde activiteiten in dezelfde sessie samengebracht voor afwijkingen en groepsgebaseerde beleidsregels. Deze functie zal de komende maand geleidelijk aan worden geïmplementeerd.
 
 - De Robot-label is als mogelijke risicofactor toegevoegd aan het ingebouwde rapport Browsergebruik. Browsergebruik wordt nu niet alleen gelabeld als verouderd, maar u kunt ook zien wanneer browsers door een robot werden gebruikt. Meer informatie over de [ingebouwde rapporten](built-in-report-reference.md).
 
