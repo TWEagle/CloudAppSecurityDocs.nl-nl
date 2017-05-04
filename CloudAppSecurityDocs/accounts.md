@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/23/2016
+ms.date: 4/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,30 +13,29 @@ ms.technology:
 ms.assetid: 7811f23b-6100-427f-93b1-44f5f81f6c76
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5d5ccc55fe0d9c3fea93446daebfcbd5bbed8c8d
-ms.sourcegitcommit: fd3b6c04cec30f7c9300cc02d29d562d17bf43ea
+ms.openlocfilehash: f6a8ad3618f27cbfecd11fd0f12817c030620c20
+ms.sourcegitcommit: 06809e22a767723a77a52b910aa41eca9728228b
 translationtype: HT
 ---
 # <a name="accounts"></a>Accounts
-Cloud App Security maakt alle accounts van uw verbonden apps voor u zichtbaar. Nadat u Cloud App Security hebt verbonden met een app met behulp van de App-connector, scant Cloud App Security alle accounts die zijn verbonden met de apps. Op de pagina Accounts kunt u die accounts onderzoeken, evenals de groepen waartoe ze behoren, hun aliassen en de apps die ze gebruiken. 
+Cloud App Security maakt de accounts van uw verbonden apps voor u zichtbaar. Nadat u Cloud App Security hebt verbonden met een app met behulp van de App-connector, leest Cloud App Security gegevens van accounts die gekoppeld zijn aan verbonden apps. Op de pagina Accounts kunt u die accounts en machtigingen onderzoeken, evenals de groepen waartoe de accounts behoren, plus hun aliassen en de apps die ze gebruiken. Wanneer Cloud App Security een nieuw account detecteert dat niet eerder aan een van de verbonden apps was gekoppeld, bijvoorbeeld in activiteiten of in het delen van bestanden, wordt het account bovendien toegevoegd aan de lijst met accounts van die app. Hiermee krijgt u inzicht in de activiteit van externe gebruikers die met uw cloud-apps werken.
 
 
-Het logboek **Accounts** kan worden gefilterd, zodat u specifieke accounts kunt vinden en verschillende soorten accounts nauwkeuriger kunt onderzoeken. U kunt bijvoorbeeld filteren op alle externe accounts die sinds vorig jaar niet meer zijn gebruikt. U kunt beleidsregels maken op basis van de accounts en vervolgens aangeven waarvoor u waarschuwingen wilt ontvangen en actie wilt ondernemen. 
+De pagina **Accounts** kan worden gefilterd, zodat u specifieke accounts kunt vinden en verschillende soorten accounts nauwkeuriger kunt onderzoeken. U kunt bijvoorbeeld filteren op alle externe accounts die sinds vorig jaar niet meer zijn gebruikt. 
 
 Op de pagina **Accounts** kunt u uw accounts gemakkelijk op problemen onderzoeken, waaronder het volgende:  
 
 -   U kunt controleren of er accounts zijn die gedurende een lange periode niet actief zijn geweest in een bepaalde service (misschien moet u de licentie van die service voor die gebruiker intrekken)  
 -   U kunt filteren op de lijst met gebruikers met beheerdersmachtigingen  
 
--   U kunt bekijken welke accounts actief zijn maar tot gebruikers behoren die niet meer bij uw organisatie werken  
+-   U kunt zoeken naar gebruikers die niet langer deel uitmaken van uw organisatie, maar wel nog steeds actieve accounts hebben  
 
--   U kunt de machtigingen van een gebruiker voor een specifieke app intrekken (afhankelijk van de app) of vereisen dat een specifieke gebruiker meervoudige verificatie uitvoert
+-   U kunt beheeracties voor de accounts ondernemen, zoals een app onderbreken of naar de instellingenpagina van een account gaan. Zie het [Beheerlogboek](governance-actions.md) voor een volledige lijst met beheeracties.
     
 -   U kunt zien welke accounts in elke gebruikersgroep zijn opgenomen  
 
 -   U kunt zien welke apps zijn geopend door elk account en welke apps zijn verwijderd voor specifieke accounts
     
--   U kunt ook inzoomen op het account van een gebruiker en relevante beheeracties selecteren, zoals **De gebruiker blokkeren** of **Samenwerkingen van gebruiker verwijderen**. Als de gebruiker is geïmporteerd uit Azure Active Directory, kunt u ook klikken op **Azure AD-accountinstellingen** voor eenvoudige toegang tot geavanceerde gebruikersbeheerfuncties, bijvoorbeeld voor groepsbeheer, meervoudige verificatie, details over de aanmeldingen van de gebruiker en het blokkeren van aanmeldingen.
 
 ![scherm Accounts](./media/accounts-page.png)
 
@@ -53,7 +52,7 @@ Hieronder volgt een lijst met de accountfilters die kunnen worden toegepast. De 
 
 - **Laatst gezien**: Met het filter **Laatst gezien** kunt u accounts vinden die inactief zijn en waarvan de gebruikers al een tijdje geen activiteiten hebben uitgevoerd.
 
-- **Organisatie/afdeling**: Hiermee kunt u filteren op leden van specifieke Azure Active Directory- of Office 365-organisatiegroepen.
+- **Organisatie/afdeling**: Hiermee kunt u filteren op leden van specifieke organisatiegroepen die in uw verbonden apps zijn gedefinieerd.
 
 - **Gebruikersgroep**: Hiermee kunt u filteren op leden van gebruikersgroepen in Cloud App Security; zowel ingebouwde gebruikersgroepen als geïmporteerde gebruikersgroepen.
 

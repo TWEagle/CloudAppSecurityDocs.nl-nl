@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 4/30/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 17da11ad5ca10eba14410e0a0458980b3f88d123
-ms.sourcegitcommit: 8c7c25bc727d9c471261da144d5c1d430c26af56
+ms.openlocfilehash: f9c86d2ce7b45a8de88ebba84ff8608b67117080
+ms.sourcegitcommit: 7e9ae94cb4f90fbccaa84f19bdebb4652a425e45
 translationtype: HT
 ---
 # <a name="set-up-cloud-discovery"></a>Cloud Discovery instellen
@@ -64,7 +64,7 @@ In Cloud Discovery wordt gebruikgemaakt van de gegevens in uw verkeerslogboeken.
  
 In Cloud Discovery kunnen geen kenmerken worden weergegeven of geanalyseerd die niet in uw logboeken zijn opgenomen.
 De standaardlogboekindeling **Cisco ASA-firewall** bevat niet de **hoeveelheid geüploade bytes per transactie** en de **gebruikersnaam**, en bevat geen **doel-URL** (maar alleen het doel-IP-adres).
-Daarom worden deze kenmerken in Cloud Discovery-gegevens voor deze logboeken weergegeven en hebt u slechts beperkt inzicht in de cloud-apps. Voor Cisco ASA-firewalls moet u het gegevensniveau instellen op 6. 
+Daarom worden deze kenmerken niet weergegeven in Cloud Discovery-gegevens voor deze logboeken en hebt u slechts beperkt inzicht in de cloud-apps. Voor Cisco ASA-firewalls moet u het gegevensniveau instellen op 6. 
  
 
 Als u zonder problemen een Cloud Discovery-rapport wilt genereren, moeten uw verkeerslogboeken aan de volgende voorwaarden voldoen:
@@ -79,7 +79,7 @@ Als u zonder problemen een Cloud Discovery-rapport wilt genereren, moeten uw ver
 - Cisco ASA-firewalls (voor deze firewalls moet u het gegevensniveau instellen op 6)
 - Cisco IronPort WSA
 - Cisco ScanSafe
-- Merkai - URL-logboek
+- Cisco Meraki - URL-logboek
 - Dell Sonicwall
 - Fortinet Fortigate
 - Juniper SRX
