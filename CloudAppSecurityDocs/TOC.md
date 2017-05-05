@@ -9,6 +9,7 @@
 ## [Cloud Discovery implementeren](set-up-cloud-discovery.md)
 ### [Momentopnamerapporten maken van Cloud Discovery](create-snapshot-cloud-discovery-reports.md)
 ### [Automatisch uploaden van logboeken configureren voor doorlopende rapporten](configure-automatic-log-upload-for-continuous-reports.md)
+### [De aangepaste logboekparser gebruiken](custom-log-parser.md)
 ### [Cloud Discovery-gegevens anoniem maken](cloud-discovery-anonymizer.md)
 ## [Apps koppelen](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
 ### [Verbinding maken met Box](connect-box-to-microsoft-cloud-app-security.md)
