@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 8b429866b6a50becacf918aed8de24c741010621
-ms.sourcegitcommit: 7e9ae94cb4f90fbccaa84f19bdebb4652a425e45
-translationtype: HT
+ms.openlocfilehash: 220cce1ff4a7197a14f2076262f168a815471894
+ms.sourcegitcommit: 945cb3c047ae1bfc05be20cc7798c43005b27c9b
+ms.translationtype: HT
+ms.contentlocale: nl-NL
 ---
 # <a name="deploy-cloud-app-security"></a>Cloud App Security implementeren
 Met Cloud App Security kunt u profiteren van de voordelen van cloudtoepassingen, terwijl u de controle houdt over uw bedrijfsbronnen. Dit gebeurt door de zichtbaarheid van de activiteit van de cloud en de beveiliging van bedrijfsgegevens te verbeteren. In dit onderwerp wordt u stapsgewijs begeleid door de stappen voor het instellen en gebruiken van Cloud App Security.  
@@ -98,7 +99,7 @@ Vereiste taak: beleidsregels maken
 U kunt beleidsregels gebruiken om trends te bewaken, beveiligingsdreigingen in te zien en aangepaste rapporten en waarschuwingen te genereren. Met beleidsregels kunt u beheeracties, DLP en besturingselementen voor het delen van bestanden maken.
 
 
-### <a name="step-4-personalize-your-experiencegeneral-setupmdadallommailsettings"></a>Stap 4. [Personaliseer uw ervaring](general-setup.md#Adallom_mailsettings).
+### <a name="step-4-personalize-your-experiencegeneral-setupmdmailsettings"></a>Stap 4. [Personaliseer uw ervaring](general-setup.md#mailsettings).
 Aanbevolen taak: gegevens van uw organisatie toevoegen
 
 **E-mailinstellingen invoeren**

@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b55da41080d70a41382a94b9ff527d50046c61b2
-ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
-translationtype: HT
+ms.openlocfilehash: f05a39b834178406a6b4b010cd7a1c6096f8c37f
+ms.sourcegitcommit: 945cb3c047ae1bfc05be20cc7798c43005b27c9b
+ms.translationtype: HT
+ms.contentlocale: nl-NL
 ---
 # <a name="customize-the-portal"></a>De portal aanpassen
 De volgende procedure bevat instructies voor het aanpassen van de Cloud App Security-portal.
@@ -89,7 +90,7 @@ Wanneer u apps verbindt met behulp van API-connectors, kunt u met Cloud App Secu
 
 Zie [Gebruikersgroepen](user-groups.md) voor meer informatie.
 
-##  <a name="Adallom_mailsettings"></a> Uw ervaring aanpassen  
+##  <a name="mailsettings"></a> Uw ervaring aanpassen  
 Klik in de menubalk op het pictogram Instellingen ![pictogram instellingen](./media/settings-icon.png "pictogram instellingen") en selecteer **E‑mailinstellingen** om de parameters in te stellen voor e‑mailmeldingen die vanuit Cloud App Security worden verzonden naar beheerders die om waarschuwingen vragen, en voor meldingen die naar eindgebruikers worden verzonden over schendingen waarbij zij betrokken zijn.  
   
 ![e-mailinstellingen, menu](./media/mail-setting-menu.png "e-mailinstellingen, menu")  

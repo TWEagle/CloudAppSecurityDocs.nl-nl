@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 5/3/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: ac53fbd6-4d31-4bce-b2bc-9dc65ad83b3e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 26a89346868e4d8a5df450d30b69826b4791c1f8
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
-translationtype: HT
+ms.openlocfilehash: 04264ea25a987e2bfef60a0e77c0a227b650b740
+ms.sourcegitcommit: 34cd68651b5a1be9bc460d7175bc2711efa103b2
+ms.translationtype: HT
+ms.contentlocale: nl-NL
 ---
 # <a name="file-policies"></a>Beleidsregels voor bestanden  
 Met Beleidsregels voor bestanden kunt u een breed scala aan geautomatiseerde processen controleren waarbij u gebruikmaakt van de API’s van de cloudprovider. Beleidsregels kunnen worden ingesteld voor het uitvoeren van continue scans voor naleving, juridische eDiscovery-taken, DLP voor gevoelige inhoud die openbaar is gedeeld en veel meer gebruiksvoorbeelden.  
@@ -103,10 +104,7 @@ Elk beleid bestaat uit de volgende onderdelen:
 -   Acties – het beleid bevat een reeks beheeracties die automatisch kunnen worden toegepast wanneer schendingen worden gevonden.  Deze worden onderverdeeld in samenwerkingsacties, beveiligingsacties en onderzoeksacties.
 
 -   Extensies  
-  
-    > [!NOTE]  
-    >  Extensies zijn alleen beschikbaar in de Technical Preview-versie van Cloud App Security.  
-  
+   
     -  Inhoudsinspectie kan worden uitgevoerd via engines van derden voor verbeterde DLP- of antimalwaremogelijkheden.  
   
     -  [Beheeracties](governance-actions.md) kunnen worden uitgevoerd via engines van derden voor het afdwingen van versleutelingsbeheer of andere typen bestandsverwerking (bijvoorbeeld aangepaste watermerken).  
