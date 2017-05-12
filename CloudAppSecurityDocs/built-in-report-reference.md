@@ -13,12 +13,17 @@ ms.technology:
 ms.assetid: 588b3639-f748-45a6-bc4b-a6ee47c1865e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4191a3c73344eb631a989ba6942b7ac6a515940f
-ms.sourcegitcommit: fd3b6c04cec30f7c9300cc02d29d562d17bf43ea
-translationtype: HT
+ms.openlocfilehash: d159cb95c9f0468e8c658c13586d07f0f20049ef
+ms.sourcegitcommit: 945cb3c047ae1bfc05be20cc7798c43005b27c9b
+ms.translationtype: HT
+ms.contentlocale: nl-NL
 ---
 # <a name="built-in-report-reference"></a>Naslaginformatie ingebouwde rapporten
-Het is raadzaam om ingebouwde rapporten als uitgangspunt te nemen wanneer u aangepaste rapporten maakt, vergelijkbaar met een sjabloon waarop u uw aangepaste rapporten baseert. De volgende tabel bevat een lijst met ingebouwde rapporten en de typen gebeurtenissen die u ermee kunt bewaken.  
+
+CAS biedt u een volledige lijst kant-en-klare ingebouwde rapporten waarmee u inzicht kunt verwerven en de manier kunt controleren waarop mensen de cloud gebruiken. U kunt de filters in de afzonderlijke rapporten gebruiken om het rapport aan te passen en de rapportgegevens te exporteren.
+
+
+De volgende tabel bevat een lijst met ingebouwde rapporten en de typen gebeurtenissen die u ermee kunt bewaken.  
   
 ## <a name="built-in-report-list"></a>Lijst met ingebouwde rapporten  
   

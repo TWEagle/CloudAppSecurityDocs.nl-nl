@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 306cee70e89e232367f8f9312cde2a7db91879bf
-ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
-translationtype: HT
+ms.openlocfilehash: f6b7a2d88c748f8e5b379fb5d70b603c2b6f0e95
+ms.sourcegitcommit: 945cb3c047ae1bfc05be20cc7798c43005b27c9b
+ms.translationtype: HT
+ms.contentlocale: nl-NL
 ---
 # <a name="governing-connected-apps"></a>Verbonden apps beheren
 Met governance kunt u beheren wat gebruikers doen, in realtime en in verschillende apps. Voor verbonden apps kunt u beheeracties toepassen op bestanden of activiteiten.
@@ -105,7 +106,7 @@ Zie [Beleidsconflicten](control-cloud-apps-with-policies.md) voor informatie ove
 |Accounts|Bestand|Samenwerkingen van gebruiker verwijderen|Hiermee worden alle samenwerkingen van een specifieke gebruiker verwijderd voor alle bestanden. Dit is handig voor mensen die het bedrijf verlaten.|Box, G Suite|
 |Accounts|Account|De toegang van de gebruiker herstellen|Hiermee wordt de toegang van de gebruiker hersteld.|G Suite, Box, Office, Salesforce|
 |Accounts|Account|Accountinstellingen|Hiermee gaat u naar de pagina met accountinstellingen in de specifieke app (bijvoorbeeld in Salesforce).|Alle apps: voor OneDrive en SharePoint worden de instellingen geconfigureerd in Office.|
-|Accounts |Bestand|Eigendom van alle bestanden overdragen|In een account brengt u het eigendom van de bestanden van een gebruiker over naar een nieuwe persoon, die u selecteert. De vorige eigenaar wordt een editor. Nadat u het eigendom hebt overgedragen, wordt admin@gtest1.adallom.com een editor en kan deze de instellingen voor delen niet langer wijzigen. De nieuwe eigenaar ontvangt een e-mailmelding over het gewijzigde eigendom.|G Suite|
+|Accounts |Bestand|Eigendom van alle bestanden overdragen|In een account brengt u het eigendom van de bestanden van een gebruiker over naar een nieuwe persoon, die u selecteert. De vorige eigenaar wordt editor en kan de instellingen voor delen niet meer wijzigen. De nieuwe eigenaar ontvangt een e-mailmelding over het gewijzigde eigendom.|G Suite|
 |Accounts, activiteitenbeleid|Account|De gebruiker blokkeren|Hiermee wordt ingesteld dat de gebruiker geen toegang heeft en zich niet kan aanmelden. Als de gebruiker is aangemeld wanneer u dit instelt, wordt deze gebruiker onmiddellijk vergrendeld.|G Suite, Box, Office, Salesforce|
 |Activiteitenbeleid, accounts|Account|Het wachtwoord intrekken|Hiermee wordt het wachtwoord voor een gebruikersaccount ingetrokken. U kunt bijvoorbeeld een activiteitenbeleid instellen dat een wachtwoord intrekt na tien mislukte aanmeldingspogingen.|G Suite|
 |Activiteitenbeleid, accounts|Account|De beheerdersmachtigingen intrekken|Hiermee wordt het wachtwoord voor een beheerdersaccount ingetrokken. U kunt bijvoorbeeld een activiteitenbeleid instellen dat de beheerdersmachtigingen intrekt na tien mislukte aanmeldingspogingen.|G Suite|
