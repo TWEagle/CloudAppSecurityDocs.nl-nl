@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/30/2017
+ms.date: 5/7/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f9c86d2ce7b45a8de88ebba84ff8608b67117080
-ms.sourcegitcommit: 7e9ae94cb4f90fbccaa84f19bdebb4652a425e45
-translationtype: HT
+ms.openlocfilehash: d12fa44f42c5545464c7e8ba9da366a2302f73c1
+ms.sourcegitcommit: 945cb3c047ae1bfc05be20cc7798c43005b27c9b
+ms.translationtype: HT
+ms.contentlocale: nl-NL
 ---
 # <a name="set-up-cloud-discovery"></a>Cloud Discovery instellen
 In Cloud Discovery worden uw verkeerslogboeken geanalyseerd op basis van de catalogus met cloud-apps van Cloud App Security. Deze catalogus bevat meer dan 13.000 cloud-apps die op basis van meer dan 50 kenmerken worden geclassificeerd en beoordeeld, zodat u altijd inzicht hebt in het cloudgebruik, de Shadow IT en het risico dat Shadow IT vormt in uw organisatie.
@@ -74,15 +75,19 @@ Als u zonder problemen een Cloud Discovery-rapport wilt genereren, moeten uw ver
 4.  Het logboekbestand is geldig en bevat gegevens over uitgaand verkeer.
  
 ## <a name="supported-firewalls-and-proxies"></a>Ondersteunde firewalls en proxy's
+
+- Barracuda - Web App Firewall (W3C)
 - Blue Coat Proxy SG - toegangslogboek (W3C)
 - Controlepunt
 - Cisco ASA-firewalls (voor deze firewalls moet u het gegevensniveau instellen op 6)
 - Cisco IronPort WSA
 - Cisco ScanSafe
 - Cisco Meraki - URL-logboek
+- Clavister NGFW (Syslog)
 - Dell Sonicwall
 - Fortinet Fortigate
 - Juniper SRX
+- Juniper SSG
 - McAfee beveiligde webgateway
 - Microsoft Forefront Threat Management Gateway (W3C)
 - Firewall Palo Alto-reeks
@@ -95,24 +100,26 @@ Als u zonder problemen een Cloud Discovery-rapport wilt genereren, moeten uw ver
 - Zscaler
 
 
-Als uw logboek niet wordt ondersteund, selecteert u **Overige** in het veld **Gegevensbron**, geeft u het apparaat op en voert u het logboek in dat u wilt uploaden. Uw logboek wordt bekeken door het cloudanalistenteam van Cloud App Security en u ontvangt een melding als ondersteuning voor het logboektype is toegevoegd. 
+Als uw logboek niet wordt ondersteund, selecteert u **Overige** in het veld **Gegevensbron**, geeft u het apparaat op en voert u het logboek in dat u wilt uploaden. Uw logboek wordt bekeken door het cloudanalistenteam van Cloud App Security en u ontvangt een melding als ondersteuning voor het logboektype is toegevoegd. U kunt ook een aangepaste parser definiëren die overeenkomt met de indeling. Zie [Een aangepaste logboekparser gebruiken](custom-log-parser.md) voor meer informatie.
 
 
 De gegevenskenmerken (volgens de documentatie van de leverancier):
 
 |Gegevensbron|URL van de doel-app|IP-adres van de doel-app|Gebruikersnaam|IP-adres van bron|Totaal verkeer|Geüploade bytes|
 |----|----|----|-----|----|----|----|
+|Barracuda|**Ja**|**Ja**|**Ja**|**Ja**|Nee|Nee|
 |Blue Coat|**Ja**|Nee|**Ja**|**Ja**|**Ja**|**Ja**|
 |Controlepunt|Nee|**Ja**|Nee|**Ja**|Nee|Nee|
 |Cisco ASA|Nee|**Ja**|Nee|**Ja**|**Ja**|Nee|
 |Cisco FWSM|Nee|**Ja**|Nee|**Ja**|**Ja**|Nee|
 |Cisco Ironport WSA|**Ja**|**Ja**|**Ja**|**Ja**|**Ja**|**Ja**|
-|Cisco ScanSafe|**Ja**|Nee|**Ja**|**Ja**|**Ja**|**Ja**|
+|Cisco Meraki|**Ja**|**Ja**|Nee|**Ja**|Nee|Nee||Cisco ScanSafe|**Ja**|Nee|**Ja**|**Ja**|**Ja**|**Ja**|
+|Clavister NGFW (Syslog)|**Ja**|**Ja**|**Ja**|**Ja**|**Ja**|**Ja**|
 |Dell Sonicwall|**Ja**|**Ja**|Nee|**Ja**|**Ja**|**Ja**|
 |FortiGate|Nee|**Ja**|Nee|**Ja**|**Ja**|**Ja**|
-|Juniper SRX|Nee|**Ja**|Nee|**Ja**\*|**Ja**|**Ja**|
+|Juniper SRX|Nee|**Ja**|Nee|**Ja**\**|**Ja**|**Ja**|
+|Juniper SSG|Nee|**Ja**|Nee|**Ja**|**Ja**|**Ja**|
 |McAfee SWG|**Ja**|Nee|Nee|**Ja**|**Ja**|**Ja**|
-|Meraki|**Ja**|**Ja**|Nee|**Ja**|Nee|Nee|
 |MS TMG|**Ja**|Nee|**Ja**|**Ja**|**Ja**|**Ja**|
 |Palo Alto Networks|**Ja**|**Ja**|**Ja**|**Ja**\*|**Ja**|**Ja**|
 |Sophos|**Ja**|**Ja**|**Ja**|**Ja**|**Ja**|Nee|

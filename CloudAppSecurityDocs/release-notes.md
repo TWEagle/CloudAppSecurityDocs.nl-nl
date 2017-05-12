@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/23/2017
+ms.date: 5/7/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,34 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3e84ccc43212975cc40318a5b67ea60015fbde75
-ms.sourcegitcommit: 06809e22a767723a77a52b910aa41eca9728228b
-translationtype: HT
+ms.openlocfilehash: 4d65fec131538981f36660d2b5ec668fa11be86e
+ms.sourcegitcommit: 945cb3c047ae1bfc05be20cc7798c43005b27c9b
+ms.translationtype: HT
+ms.contentlocale: nl-NL
 ---
 # <a name="release-notes"></a>Opmerkingen bij de release
+
+
+## <a name="cloud-app-security-release-96"></a>Cloud App Security release 96
+Uitgebracht op 8 mei 2017
+
+Nieuwe functies:
+-    De geleidelijke implementatie van de machtiging Beveiligingslezer wordt voortgezet. Hierdoor kunt u de machtigingen beheren die u aan uw beheerders toewijst in de Cloud App Security-console. Standaard hebben alle globale beheerders en beveiligingsbeheerders in Azure Active Directory en Office 365 volledige machtigingen in de portal en hebben alle beveiligingslezers in Azure Active Directory en Office 365 alleen-lezen toegang in Cloud App Security. Zie [Beheerdersmachtigingen beheren](manage-admins.md) voor meer informatie.
+-    De implementatie van Cloud Discovery-ondersteuning voor door de gebruiker gedefinieerde logboekparsers voor logboeken op CSV-basis is voltooid. In Cloud App Security kunt u een parser voor uw eerder niet-ondersteunde apparaten configureren doordat u nu beschikt over de juiste hulpprogramma's om af te bakenen welke kolommen betrekking hebben op welke specifieke gegevens. Zie [Aangepaste logboekparser](custom-log-parser.md) voor meer informatie.
+Verbeteringen:
+-    Cloud Discovery ondersteunt nu Juniper SSG-apparaten.
+-    Cloud Discovery-ondersteuning voor Cisco ASA-logboeken is verbeterd voor betere zichtbaarheid.
+-    U kunt nu gemakkelijker bulkacties uitvoeren en meerdere records selecteren in tabellen in de Cloud App-Security-portal: de paginalengte is vergroot om bulkbewerkingen te verbeteren.
+-    De ingebouwde rapporten **Delen van gegevens (uitgaand) per domein** en **Eigenaren van gedeelde bestanden** kunnen nu worden uitgevoerd voor Salesforce-gegevens.
+-    De implementatie van verdere Salesforce-activiteiten wordt gestart, waardoor u interessante informatie kunt bijhouden die is geëxtraheerd uit de activiteitsgegevens. Tot deze activiteiten behoren het weergeven en bewerken van accounts, potentiële klanten, verkoopkansen en verschillende andere interessante Salesforce-objecten.
+-    Voor Exchange zijn nieuwe activiteiten toegevoegd waarmee u kunt controleren welke machtigingen zijn verleend voor postvakken van gebruikers of postvakmappen. Tot deze activiteiten behoren:
+    -    Machtigingen voor ontvangers toevoegen
+    -    Machtigingen voor ontvangers verwijderen
+    -    Machtigingen voor postvakmappen toevoegen
+    -    Machtigingen voor postvakmappen verwijderen
+    -    Machtigingen voor postvakmappen instellen
+
+    U kunt nu bijvoorbeeld gebruikers controleren waaraan machtigingen voor **Verzenden als** voor postvakken van andere gebruikers zijn verleend en die als gevolg daarvan e-mailberichten kunnen verzenden namens die gebruikers.
 
 
 ## <a name="cloud-app-security-release-95-in-roll-out"></a>Cloud App Security-release 95 (wordt geïmplementeerd)
