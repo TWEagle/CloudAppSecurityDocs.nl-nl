@@ -3,7 +3,10 @@
 ## [Opmerkingen bij de release](release-notes.md)
 # Implementeer
 ## [Aan de slag](getting-started-with-cloud-app-security.md)
-## [De portal aanpassen](general-setup.md)
+## [Basisinstellingen](general-setup.md)
+### [Beheerders beheren](manage-admins.md)
+#### [Instellingen voor beheerders](admin-settings.md)
+### [Instellingen voor e-mail](mail-settings.md)
 ### [Gebruikersgroepen](user-groups.md)
 ### [IP-tags en -bereiken](ip-tags.md)
 ## [Cloud Discovery implementeren](set-up-cloud-discovery.md)
@@ -51,3 +54,4 @@
 ## [Problemen met Cloud Discovery oplossen](troubleshooting-cloud-discovery.md)
 ## [Foutberichten gebruiken om problemen met API-connectors op te lossen](troubleshooting-api-connectors-using-error-messages.md)
 ## [Problemen oplossen met inhoudsinspectie](troubleshooting-content-inspection.md)
+## [Problemen met SIEM-integratie oplossen](troubleshooting-siem.md)
