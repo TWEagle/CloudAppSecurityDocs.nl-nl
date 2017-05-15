@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/30/2017
+ms.date: 5/10/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,10 +13,11 @@ ms.technology:
 ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 220cce1ff4a7197a14f2076262f168a815471894
-ms.sourcegitcommit: 945cb3c047ae1bfc05be20cc7798c43005b27c9b
+ms.openlocfilehash: 7f1b4f7fc213dee315b723bf09d88dd7867c14e6
+ms.sourcegitcommit: 50fac1cec86dfb8170ba9c63a8f58a4bf24e3c5b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
+ms.lasthandoff: 05/10/2017
 ---
 # <a name="deploy-cloud-app-security"></a>Cloud App Security implementeren
 Met Cloud App Security kunt u profiteren van de voordelen van cloudtoepassingen, terwijl u de controle houdt over uw bedrijfsbronnen. Dit gebeurt door de zichtbaarheid van de activiteit van de cloud en de beveiliging van bedrijfsgegevens te verbeteren. In dit onderwerp wordt u stapsgewijs begeleid door de stappen voor het instellen en gebruiken van Cloud App Security.  
@@ -99,7 +100,7 @@ Vereiste taak: beleidsregels maken
 U kunt beleidsregels gebruiken om trends te bewaken, beveiligingsdreigingen in te zien en aangepaste rapporten en waarschuwingen te genereren. Met beleidsregels kunt u beheeracties, DLP en besturingselementen voor het delen van bestanden maken.
 
 
-### <a name="step-4-personalize-your-experiencegeneral-setupmdmailsettings"></a>Stap 4. [Personaliseer uw ervaring](general-setup.md#mailsettings).
+### <a name="step-4-personalize-your-experiencemail-settingsmd"></a>Stap 4. [Personaliseer uw ervaring](mail-settings.md).
 Aanbevolen taak: gegevens van uw organisatie toevoegen
 
 **E-mailinstellingen invoeren**
@@ -126,7 +127,7 @@ Aanbevolen taak: gegevens van uw organisatie toevoegen
 Sommige functies werken het beste wanneer u ze aanpast aan uw behoeften. Biedt uw gebruikers een betere ervaring met uw eigen e‑mailsjablonen, besluit welke meldingen u ontvangt en pas de risicoscorewaarden aan zodat deze aansluiten bij de voorkeuren van uw organisatie.
 
 
-### <a name="step-5-organize-the-data-according-to-your-needsgeneral-setupmdiptagsandranges"></a>Stap 5. [Organiseer de gegevens naar eigen gelang](general-setup.md#IPtagsandRanges).
+### <a name="step-5-organize-the-data-according-to-your-needsip-tagsmd"></a>Stap 5. [Organiseer de gegevens naar eigen gelang](ip-tags.md).
 Aanbevolen taak: belangrijke instellingen configureren
 
 **IP-adrestags maken**
