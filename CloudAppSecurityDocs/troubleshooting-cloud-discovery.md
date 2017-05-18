@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 5/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,14 +13,16 @@ ms.technology:
 ms.assetid: 76dfaebb-d477-4bdb-b3d7-04cc3fe6431d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 1cd697631f776c55fbedcec9a0ed34a3b68d8ac0
-ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
-translationtype: HT
+ms.openlocfilehash: 35d965d753dae9013a42f89ded8a87c461baa330
+ms.sourcegitcommit: 50fac1cec86dfb8170ba9c63a8f58a4bf24e3c5b
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 05/10/2017
 ---
 # <a name="troubleshooting-cloud-discovery"></a>Problemen met Cloud Discovery oplossen
 ## <a name="log-parsing-errors"></a>Fouten bij het parseren van logboeken
 
-U kunt de verwerking van Cloud Discovery-logboeken bijhouden met behulp van het beheerlogboek. In deze handleiding vindt u oplossingsacties die u moet uitvoeren voor elke fout die hier kan worden weergegeven.
+U kunt de verwerking van Cloud Discovery-logboeken bijhouden met behulp van het beheerlogboek. In dit artikel vindt u oplossingsacties die u moet uitvoeren voor elke fout die hier kan worden weergegeven.
 
 ### <a name="governance-log-errors"></a>Fouten in het beheerlogboek
 |FOUT|BESCHRIJVING|OPLOSSING|
@@ -30,7 +32,7 @@ U kunt de verwerking van Cloud Discovery-logboeken bijhouden met behulp van het 
 |De logboekindeling komt niet overeen|De logboekindeling die u hebt geüpload, komt niet overeen met de verwachte indeling voor deze gegevensbron.|1. Controleer of het logboek niet is beschadigd. <br /> 2. U moet het logboek vergelijken en afstemmen met de voorbeeldindeling die op de uploadpagina wordt weergegeven.|
 |Transacties zijn meer dan negentig dagen oud|Alle transacties zijn meer dan negentig dagen oud en worden daarom genegeerd.|Exporteer een nieuw logboek met recente gebeurtenissen en upload het logboek opnieuw.|
 |Er zijn geen transacties voor gecatalogiseerde cloud-apps|Er zijn geen transacties voor herkende cloud-apps in het logboek gevonden.|Controleer of het logboek gegevens over uitgaand verkeer bevat.|
-|Niet-ondersteunde logboektype|Wanneer u **Gegevensbron = Overige (niet ondersteund)** selecteert, wordt het logboek niet geparseerd. In plaats daarvan wordt het logboek verzonden naar het technische team van Cloud App Security.|Het technische team van Cloud App Security bouwt voor elke gegevensbron een specifieke parser. De meeste populaire gegevensbronnen worden [al ondersteund](set-up-cloud-discovery.md). Elke niet-ondersteunde gegevensbron die wordt geüpload, wordt beoordeeld en toegevoegd aan de pijplijn voor nieuwe gegevensbronparsers. Nieuwe parsermeldingen worden gepubliceerd als onderdeel van de opmerkingen bij de release voor Cloud App Security.|
+|Niet-ondersteunde logboektype|Wanneer u **Gegevensbron = Overige (niet ondersteund)** selecteert, wordt het logboek niet geparseerd. In plaats daarvan wordt het logboek verzonden naar het technische team van Cloud App Security.|Het technische team van Cloud App Security bouwt voor elke gegevensbron een specifieke parser. De meeste populaire gegevensbronnen worden [al ondersteund](set-up-cloud-discovery.md). Elke niet-ondersteunde gegevensbron die wordt geüpload, wordt beoordeeld en toegevoegd aan de pijplijn voor nieuwe gegevensbronparsers. Nieuwe parsermeldingen worden gepubliceerd als onderdeel van de [opmerkingen bij de release](release-notes.md) voor Cloud App Security.|
 ## <a name="log-collector-errors"></a>Fouten in de logboekverzamelaar
 
 |PROBLEEM|OPLOSSING|
