@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/2/2017
+ms.date: 5/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b5807498a87c39b54ece698cd5bec10f05b29fe2
-ms.sourcegitcommit: f4fcea309a5ba8c99d1dea306abf5bf07649d6fb
-translationtype: HT
+ms.openlocfilehash: 79e784c332045ebe300a34f5c6da918343a0df45
+ms.sourcegitcommit: 50fac1cec86dfb8170ba9c63a8f58a4bf24e3c5b
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 05/10/2017
 ---
 # <a name="azure-information-protection-integration"></a>Integratie van Azure Information Protection
 
@@ -135,7 +137,7 @@ Nadat Cloud App Security is verbonden met uw Office 365-service, kunt u de Cloud
 5. U kunt deze actie op elk gewenst moment terugdraaien in het **Beheerlogboek** door te klikken op de knop **Herstellen** aan het einde van de rij van de eerder genomen beveiligingsactie. 
 
 
-
+Raadpleeg [Gegevens beveiligen tegen gebruikersfouten](https://docs.microsoft.com/enterprise-mobility-security/solutions/protect-data-user-mistake) voor meer informatie over de samenwerking tussen Cloud App Security en Azure Information Protection
 
  
 ## <a name="see-also"></a>Zie ook  

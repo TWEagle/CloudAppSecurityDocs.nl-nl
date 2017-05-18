@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/4/2017
+ms.date: 5/9/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,10 +13,11 @@ ms.technology:
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 19b1f69d61488fca523d09fa0fe752029ee0f8c2
-ms.sourcegitcommit: 34cd68651b5a1be9bc460d7175bc2711efa103b2
+ms.openlocfilehash: 5880ea404d6830c5d8f12534c04f123d8c517946
+ms.sourcegitcommit: ea8207f412f31127beafd18a0bd028052fbadf90
 ms.translationtype: HT
 ms.contentlocale: nl-NL
+ms.lasthandoff: 05/09/2017
 ---
 # <a name="siem-integration"></a>Integratie van SIEM
     
@@ -27,7 +28,7 @@ Wanneer u uw SIEM voor het eerst integreert met Cloud App Security, worden activ
 De integratie met uw SIEM vindt in drie stappen plaats:
 1. De integratie instellen in de Cloud App Security-portal. 
 2. Het JAR-bestand downloaden en uitvoeren op uw server.
-3. Valideren of de SIEM-agent werkt
+3. Valideren of de SIEM-agent werkt.
 
 ## <a name="prerequisites"></a>Vereisten
 
@@ -104,35 +105,11 @@ Als u de SIEM-agent op een later tijdstip wilt verwijderen, kunt u in de tabel o
 
 ![SIEM - verwijderen](./media/siem-delete.png)
 
-## <a name="troubleshooting-the-siem-agent"></a>Problemen met de SIEM-agent oplossen
-
-Controleer of de SIEM-agent in de Cloud App Security-portal niet de status **Verbindingsfout** of **Verbroken** heeft en of er geen agentmeldingen zijn. Deze wordt weergegeven als **Verbindingsfout** als de verbinding meer dan twee uur niet beschikbaar is en als **Verbroken** als de verbinding gedurende meer dan 12 uur niet beschikbaar is.
-
-Als u tijdens het uitvoeren van de agent een van de volgende fouten in de opdrachtprompt ziet, gebruikt u de volgende stappen om het probleem te verhelpen:
-
-|Fout|Beschrijving|Oplossing|
-|----|----|----|
-|Algemene fout tijdens bootstrap|Onverwachte fout tijdens agent-bootstrap.|Neem contact op met ondersteuning.|
-|Te veel kritieke fouten|Er zijn te veel kritieke fouten opgetreden bij het verbinden van de console. Wordt afgesloten.|Neem contact op met ondersteuning.|
-|Ongeldig token|Het opgegeven token is ongeldig.|Controleer of u het juiste token hebt gekopieerd. U kunt de bovenstaande procedure gebruiken om het token opnieuw te genereren.|
-|Ongeldig proxyadres|Het opgegeven proxyadres is ongeldig.|Zorg ervoor dat u de juiste proxy en poort opgeeft.|
-
-
-Als u na het maken van de agent een van de volgende **agent-meldingen** in de Cloud App Security-portal op de pagina SIEM-agent ziet, gebruikt u de volgende stappen om het probleem te verhelpen:
-
-|Fout|Beschrijving|Oplossing|
-|----|----|----|
-|**Interne fout**|Er is een onbekende fout opgetreden bij uw SIEM-agent.|Neem contact op met ondersteuning.|
-|**Verzendfout bij gegevensserver**|U kunt deze foutmelding krijgen als u met een Syslog-server via TCP werkt. De SIEM-agent kan geen verbinding maken met de Syslog-server.  Als deze foutmelding wordt weergegeven, haalt de agent pas weer nieuwe activiteiten op als het probleem is opgelost. Voer daarom de herstelstappen uit tot er geen fouten meer worden weergegeven.|1. Controleer of u uw Syslog-server correct hebt gedefinieerd: bewerk in de Cloud App Security-gebruikersinterface uw SIEM-agent zoals hierboven wordt beschreven, zorg ervoor dat de naam van de server goed is geschreven en stel de juiste poort in. </br>2. Controleer de verbinding met de Syslog-server: zorg ervoor dat de communicatie niet wordt geblokkeerd door uw firewall.| 
-|**Fout bij gegevensserververbinding**| U kunt deze foutmelding krijgen als u met een Syslog-server via TCP werkt. De SIEM-agent kan geen verbinding maken met de Syslog-server.  Als deze foutmelding wordt weergegeven, haalt de agent pas weer nieuwe activiteiten op als het probleem is opgelost. Voer daarom de herstelstappen uit tot er geen fouten meer worden weergegeven.|1. Controleer of u uw Syslog-server correct hebt gedefinieerd: bewerk in de Cloud App Security-gebruikersinterface uw SIEM-agent zoals hierboven wordt beschreven, zorg ervoor dat de naam van de server goed is geschreven en stel de juiste poort in. </br>2. Controleer de verbinding met de Syslog-server: zorg ervoor dat de communicatie niet wordt geblokkeerd door uw firewall.|
-|**SIEM-agentfout**|De SIEM-agent is meer dan X uur verbroken|Controleer of u de SIEM-configuratie in de Cloud App Security-portal niet hebt gewijzigd. Dit kan anders duiden op problemen met de verbinding tussen Cloud App Security en de computer waarop u de SIEM-agent uitvoert.|
-|**Meldingsfout SIEM-agent**|Er werden van een SIEM-agent doorstuurfouten ontvangen van meldingen van een SIEM-agent.|Dit geeft aan dat u fouten hebt ontvangen met betrekking tot de verbinding tussen de SIEM-agent en uw SIEM-server. Zorg ervoor dat er geen firewall is die uw SIEM-server blokkeert of de computer waarop de SIEM-agent wordt uitgevoerd. Controleer ook of het IP-adres van de SIEM-server niet is gewijzigd.|
-
 > [!NOTE]
 > Deze functie is beschikbaar voor openbare preview.
 
 ## <a name="see-also"></a>Zie ook  
-[Beleidsregels voor gebruikersactiviteit](user-activity-policies.md)   
+[Problemen met SIEM-integratie oplossen](troubleshooting-siem.md)   
 [Ga naar de ondersteuningspagina van Cloud App Security voor technische ondersteuning.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Premier-klanten kunnen Cloud App Security ook rechtstreeks vanuit Premier Portal kiezen.](https://premier.microsoft.com/)  
   

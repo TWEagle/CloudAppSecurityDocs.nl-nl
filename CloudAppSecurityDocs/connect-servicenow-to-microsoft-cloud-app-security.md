@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/25/2017
+ms.date: 5/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: c626d94d-2ffd-4daf-8fa4-4b6d308cf012
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2e21e146ffc5043b6e5a6861422818328c3a0857
-ms.sourcegitcommit: 847f0425de7686b1b4a2b242930a0069e793436a
-translationtype: HT
+ms.openlocfilehash: 18ae1b7bfd740303470504f3abd4021c8aa1deb9
+ms.sourcegitcommit: f1ac8ccd470229078aaf1b58234a9a2095fa9550
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 05/15/2017
 ---
 # <a name="connect-servicenow-to-microsoft-cloud-app-security"></a>Verbinding maken tussen ServiceNow en Microsoft Cloud App Security
 
@@ -62,7 +64,7 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
   
      ![connect servicenow](./media/connect-servicenow.png "connect servicenow")  
   
-8.  Voeg in het pop-upvenster in de bijbehorende vakken uw ServiceNow-gebruikersnaam, -wachtwoord, de URL van het exemplaar, Client-ID en Clientgeheim in.  
+8.  Voeg in het pop-upvenster in de bijbehorende vakken uw ServiceNow-gebruikers-id, -wachtwoord, de URL van het exemplaar, Client-id en Clientgeheim in.  
   
 9.  Klik op **Verbinden**.  
   
@@ -92,7 +94,7 @@ Als u verbinding wilt maken tussen ServiceNow en Cloud App Security, moet u mach
 
     ![connect servicenow](./media/connect-servicenow.png "connect servicenow")   
 
-6.  Voeg op de pagina ServiceNow-instellingen op het tabblad API in de bijbehorende vakken uw ServiceNow-gebruikersnaam, -wachtwoord en de URL van het exemplaar in.   
+6.  Voeg op de pagina ServiceNow-instellingen op het tabblad API in de bijbehorende vakken uw ServiceNow-gebruikers-id, -wachtwoord en de URL van het exemplaar in.   
 
 7.  Klik op **Verbinden**.   
 
