@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/25/2017
+ms.date: 5/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 7811f23b-6100-427f-93b1-44f5f81f6c76
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: cc25a661cf7bd18be19e9e6fd82a4d39cf132c66
-ms.sourcegitcommit: 50fac1cec86dfb8170ba9c63a8f58a4bf24e3c5b
+ms.openlocfilehash: 5033a66c976775c512c0f5f0d3ebd3d9aee89b5a
+ms.sourcegitcommit: cb8238610222953751ff714b346a0b4cf73ac40c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/10/2017
+ms.lasthandoff: 05/16/2017
 ---
 # <a name="accounts"></a>Accounts
 Cloud App Security maakt de accounts van uw verbonden apps voor u zichtbaar. Nadat u Cloud App Security hebt verbonden met een app met behulp van de App-connector, leest Cloud App Security gegevens van accounts die gekoppeld zijn aan verbonden apps. Op de pagina Accounts kunt u die accounts en machtigingen onderzoeken, evenals de groepen waartoe de accounts behoren, plus hun aliassen en de apps die ze gebruiken. Wanneer Cloud App Security een nieuw account detecteert dat niet eerder aan een van de verbonden apps was gekoppeld, bijvoorbeeld in activiteiten of in het delen van bestanden, wordt het account bovendien toegevoegd aan de lijst met accounts van die app. Hiermee krijgt u inzicht in de activiteit van externe gebruikers die met uw cloud-apps werken.
