@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/9/2017
+ms.date: 5/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5880ea404d6830c5d8f12534c04f123d8c517946
-ms.sourcegitcommit: ea8207f412f31127beafd18a0bd028052fbadf90
+ms.openlocfilehash: ad09d594b73ecd24066db10a19caf39580ad040e
+ms.sourcegitcommit: f1ac8ccd470229078aaf1b58234a9a2095fa9550
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/09/2017
+ms.lasthandoff: 05/15/2017
 ---
 # <a name="siem-integration"></a>Integratie van SIEM
     
@@ -25,12 +25,38 @@ U kunt Cloud App Security nu met uw SIEM-server integreren om gecentraliseerde b
 
 Wanneer u uw SIEM voor het eerst integreert met Cloud App Security, worden activiteiten en waarschuwingen van de laatste twee dagen doorgestuurd naar de SIEM, plus alle activiteiten en waarschuwingen (op basis van het filter dat u selecteert) die daarna volgen. Als u deze functie voor een langere periode uitschakelt en de functie vervolgens weer inschakelt, worden bovendien waarschuwingen en activiteiten van de laatste twee dagen doorgestuurd en vervolgens alle waarschuwingen en activiteiten die daarna volgen.
 
+## <a name="siem-integration-architecture"></a>Architectuur van SIEM-integratie
+
+De SIEM-agent wordt geïmplementeerd in het netwerk van uw organisatie. Wanneer de agent is geïmplementeerd en geconfigureerd, pollt deze de gegevenstypen die zijn geconfigureerd (waarschuwingen en activiteiten) met Cloud App Security RESTful-API's.
+Het verkeer wordt verzonden via een gecodeerd HTTPS-kanaal op poort 443.
+
+Wanneer de SIEM-agent de gegevens van Cloud App Security ophaalt, stuurt de Syslog berichten naar uw lokale SIEM met behulp van de netwerkconfiguraties die u hebt opgegeven tijdens de installatie (TCP of UDP met een aangepaste poort). 
+
+![Architectuur van SIEM-integratie](./media/siem-architecture.png)
+
+## <a name="sample-siem-logs"></a>Voorbeelden van SIEM-logboeken
+
+De logboeken die zijn opgegeven voor uw SIEM van Cloud App Security zijn CEF over Syslog. In de volgende voorbeeldlogboeken kunt u het type gebeurtenis zien dat meestal wordt verzonden door Cloud App Security naar uw SIEM-server. Hierin kunt u zien wanneer de waarschuwing is geactiveerd, het **type gebeurtenis**het **beleid** dat is geschonden, de **gebruiker** die de gebeurtenis heeft geactiveerd, de **app** de gebruiker heeft gebruikt voor het maken van de schending en de **URL** waarvan de waarschuwing afkomstig is:
+
+Voorbeeld van activiteitenlogboek: 
+  
+2017-05-12T13:15:32.131Z CEF:0|MCAS|SIEM_Agent|0.97.33|EVENT_CATEGORY_UPLOAD_FILE|**Bestand uploaden**|0|externalId=AVv8zNojeXPEqTlM-j6M start=1494594932131 end=1494594932131 msg=**Bestand uploaden: passwords.txt** **suser=admin@contoso.com** doel**ServiceName=Jive Software** dvc= requestClientApplication= cs1Label=**portalURL cs1=https://contoso.cloudappsecurity.com**/#/audits?activity.id\=eq(AVv8zNojeXPEqTlM-j6M,) cs2Label=uniqueServiceAppIds cs2=APPID_JIVE cs3Label=targetObjects cs3=test.txt c6a1Label="Device IPv6 Address" c6a1=
+
+
+
+Voorbeeld van waarschuwingenlogboek: 
+
+2017-05-12T13:25:57.640Z CEF:0|MCAS|SIEM_Agent|0.97.33|ALERT_CABINET_EVENT_MATCH_AUDIT|asddsddas|3|externalId=5915b7e50d5d72daaf394da9 start=1494595557640 end=1494595557640 msg=**Activiteitsbeleid aanmeldingen bij Jive** is geactiveerd door admin@contoso.com **suser=admin@contoso.com** doel**ServiceName=Jive Software** cn1Label=riskScore cn1= cs1Label=portal**URL cs1=https://contoso.cloudappsecurity.com**/#/alerts/5915b7e50d5d72daaf394da9 cs2Label=uniqueServiceAppIds cs2=APPID_JIVE cs3Label=relatedAudits cs3=AVv81ljWeXPEqTlM-j-j
+
+
+## <a name="how-to-integrate"></a>Het integreren van
+
 De integratie met uw SIEM vindt in drie stappen plaats:
 1. De integratie instellen in de Cloud App Security-portal. 
 2. Het JAR-bestand downloaden en uitvoeren op uw server.
 3. Valideren of de SIEM-agent werkt.
 
-## <a name="prerequisites"></a>Vereisten
+### <a name="prerequisites"></a>Vereisten
 
 - Een standaard-Windows- of -Linux-server (kan een virtuele machine zijn).
 - Op de server moet Java 8 worden uitgevoerd; eerdere versies worden niet ondersteund.
