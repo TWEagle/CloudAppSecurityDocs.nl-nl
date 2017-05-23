@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ad09d594b73ecd24066db10a19caf39580ad040e
-ms.sourcegitcommit: f1ac8ccd470229078aaf1b58234a9a2095fa9550
+ms.openlocfilehash: 292b4c6408aa526184aefb57ee594b72b3262ce7
+ms.sourcegitcommit: cb8238610222953751ff714b346a0b4cf73ac40c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/15/2017
+ms.lasthandoff: 05/16/2017
 ---
 # <a name="siem-integration"></a>Integratie van SIEM
     
@@ -73,7 +73,7 @@ De integratie met uw SIEM vindt in drie stappen plaats:
 
    ![Algemene SIEM-instellingen](./media/siem1.png)
 
-5. Typ het IP-adres van de **externe Syslog-host** en het **Syslog-poortnummer**. Selecteer TCP of UDP als het externe Syslog-protocol.
+5. Typ het IP-adres of de hostnaam van de **externe Syslog-host** en het **Syslog-poortnummer**. Selecteer TCP of UDP als het externe Syslog-protocol.
 Vraag indien nodig uw beveiligingsbeheerder om deze informatie.
 Klik op **Volgende**.
   ![Externe Syslog-instellingen](./media/siem2.png)

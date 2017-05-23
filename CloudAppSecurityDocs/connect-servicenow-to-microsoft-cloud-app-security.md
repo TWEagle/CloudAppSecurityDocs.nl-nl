@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/14/2017
+ms.date: 5/16/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: c626d94d-2ffd-4daf-8fa4-4b6d308cf012
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 18ae1b7bfd740303470504f3abd4021c8aa1deb9
-ms.sourcegitcommit: f1ac8ccd470229078aaf1b58234a9a2095fa9550
+ms.openlocfilehash: a2b6658e14438e3504fde61605505abae8d65839
+ms.sourcegitcommit: cb8238610222953751ff714b346a0b4cf73ac40c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/15/2017
+ms.lasthandoff: 05/16/2017
 ---
 # <a name="connect-servicenow-to-microsoft-cloud-app-security"></a>Verbinding maken tussen ServiceNow en Microsoft Cloud App Security
 
@@ -64,7 +64,9 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
   
      ![connect servicenow](./media/connect-servicenow.png "connect servicenow")  
   
-8.  Voeg in het pop-upvenster in de bijbehorende vakken uw ServiceNow-gebruikers-id, -wachtwoord, de URL van het exemplaar, Client-id en Clientgeheim in.  
+8.  Voeg in het pop-upvenster in de bijbehorende vakken uw ServiceNow-gebruikers-id, -wachtwoord, de URL van het exemplaar, Client-id en Clientgeheim in. Als u uw ServiceNow-gebruikers-id wilt vinden in de ServiceNow-portal, gaat u naar **gebruikers** en vervolgens naar uw naam in de tabel; deze wordt weergegeven naast uw gebruikers-id.
+
+![ServiceNow-gebruikers-id](./media/servicenow-userid.png)
   
 9.  Klik op **Verbinden**.  
   
