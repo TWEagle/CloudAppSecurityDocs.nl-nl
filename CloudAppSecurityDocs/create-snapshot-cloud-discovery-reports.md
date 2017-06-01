@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7987786ed6db8593f8ec7baa60d1c6523ac00272
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
-translationtype: HT
+ms.openlocfilehash: b694b6f117b0c5249520a43154675cdac70361b4
+ms.sourcegitcommit: cb8238610222953751ff714b346a0b4cf73ac40c
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 05/16/2017
 ---
 # <a name="create-snapshot-cloud-discovery-reports"></a>Momentopnamerapporten maken van Cloud Discovery
 Het is belangrijk een logboek handmatig te uploaden en het logboek in Cloud App Security te parseren voordat u de automatische logboekverzamelaar gebruikt.
@@ -34,7 +36,7 @@ Ga als volgt te werk om een momentopnamerapport te maken:
   
      ![Nieuw momentopnamerapport](./media/new-snapshot-report.png) 
 
-4.  Selecteer de **Gegevensbron** vanwaaruit u de logboekbestanden wilt uploaden.  
+4.  Selecteer de **Gegevensbron** vanwaaruit u de 13 logboekbestanden wilt uploaden.  
   
 5. Controleer uw logboekindeling en controleer of deze hetzelfde is als in het voorbeeld dat u kunt downloaden. Klik op **Weergeven en controleren** en klik op **Voorbeeldlogboek downloaden**. Vergelijk vervolgens uw logboek met het voorbeeld om te controleren of de indeling hetzelfde is. 
 

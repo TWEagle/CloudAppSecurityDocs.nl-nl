@@ -327,7 +327,7 @@ Uitgebracht: 7 augustus 2016
 
 - Verbeterde parsers voor Cloud Discovery-logboekbestanden, met onder ander de toevoeging van Juniper en Cisco ASA.
 - Met Cloud App Security kunt u tijdens het negeren van waarschuwingen feedback geven over de verbeterde waarschuwingen. U kunt de kwaliteit van de waarschuwingsfunctie in Cloud App Security helpen verbeteren door te laten weten waarom u de waarschuwing negeert, bijvoorbeeld omdat deze niet interessant is, omdat u te veel vergelijkbare waarschuwingen hebt ontvangen, omdat de werkelijke urgentie van de waarschuwing lager moet zijn of omdat de waarschuwing niet juist is.
-- In de weergave Bestandsbeleid, of wanneer u een bestand bekijkt, kunt u tijdens het openen van de bestandslade gebruikmaken van een nieuwe koppeling naar overeenkomende beleidsregels. Wanneer u op de koppeling klikt, kunt u alle overeenkomsten weergegeven en kunt u nu alle overeenkomsten negeren. 
+-In de weergave Bestandsbeleid, of wanneer u een bestand bekijkt, kunt u tijdens het openen van de bestandslade gebruikmaken van een nieuwe koppeling naar overeenkomende beleidsregels. Wanneer u op de koppeling klikt, kunt u alle overeenkomsten weergegeven en kunt u nu alle overeenkomsten negeren. 
 - De organisatie-eenheid waartoe een gebruiker behoort, wordt nu aan alle relevante waarschuwingen toegevoegd.
 - Er wordt een e-mailmelding verzonden zodat u weet wanneer de verwerking van uw handmatig geüploade logboeken is voltooid.
 
