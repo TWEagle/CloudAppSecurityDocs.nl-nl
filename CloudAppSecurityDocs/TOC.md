@@ -13,6 +13,7 @@
 ### [Momentopnamerapporten maken van Cloud Discovery](create-snapshot-cloud-discovery-reports.md)
 ### [Automatisch uploaden van logboeken configureren voor doorlopende rapporten](configure-automatic-log-upload-for-continuous-reports.md)
 ### [De aangepaste logboekparser gebruiken](custom-log-parser.md)
+### [Cloud Discovery-verrijking](cloud-discovery-aad-enrichment.md)
 ### [Cloud Discovery-gegevens anoniem maken](cloud-discovery-anonymizer.md)
 ## [Apps koppelen](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
 ### [Verbinding maken met Box](connect-box-to-microsoft-cloud-app-security.md)
@@ -25,7 +26,10 @@
 ### [Verbinding maken met Salesforce](connect-salesforce-to-microsoft-cloud-app-security.md)
 # Gebruik
 ## [Werken met het dashboard](daily-activities-to-protect-your-cloud-environment.md)
-## [Detecteren](working-with-cloud-discovery-data.md)
+## Scenario's
+### [Beveiligen van uw organisatie tegen ransomware](use-case-ransomware.md)
+## Ontdekken
+### [Werken met gedetecteerde apps](discovered-apps.md)
 ### [Werken met de risicoscore](risk-score.md)
 ## [Onderzoeken](investigate.md)
 ### [Activiteiten](activity-filters.md)
@@ -47,9 +51,11 @@
 #### [Verwijzing naar beleidssjabloon](policy-template-reference.md)
 ### [Verbonden apps beheren](governance-actions.md)
 ### [Gedetecteerde apps beheren](governance-discovery.md)
-## Integreren
+## Integreren met beveiligingsextensies
 ### [Integratie van Azure Information Protection](azip-integration.md)
 ### [SIEM-integratie](siem.md)
+### [Externe DLP-integratie](icap-stunnel.md)
+### [API-tokens](api-tokens.md)
 # Problemen oplossen
 ## [Problemen met Cloud Discovery oplossen](troubleshooting-cloud-discovery.md)
 ## [Foutberichten gebruiken om problemen met API-connectors op te lossen](troubleshooting-api-connectors-using-error-messages.md)
