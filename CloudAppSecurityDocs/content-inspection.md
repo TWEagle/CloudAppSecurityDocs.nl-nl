@@ -14,8 +14,10 @@ ms.assetid: 2401adbc-0011-4938-9e3a-a4c719a2f619
 ms.reviewer: reutam
 ms.suite: ems
 ms.openlocfilehash: 1083a743f2602bab6e55e96e1e7f7dd4c0b77bce
-ms.sourcegitcommit: fd3b6c04cec30f7c9300cc02d29d562d17bf43ea
-translationtype: HT
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.translationtype: MT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="content-inspection"></a>Inhoudsinspectie
 In dit artikel wordt het proces beschreven dat in Cloud App Security wordt gevolgd wanneer DLP-inhoudsinspectie op gegevens in de cloud wordt uitgevoerd. 
@@ -42,7 +44,7 @@ De ingebouwde beleidsregels voor inhoudsinspectie kunnen zoeken naar het volgend
 
 - E-mailadressen 
 - Creditcardnummers 
-  -    Alle creditcardbedrijven (Visa, MasterCard, American Express, Diners Club, Discover, JCB, Dankort, UnionPay) 
+  - Alle creditcardbedrijven (Visa, MasterCard, American Express, Diners Club, Discover, JCB, Dankort, UnionPay) 
   - Scheidingstekens (spatie, punt of streepje)
   - Deze scan omvat ook de Luhn-validatie
 - SWIFT-codes
@@ -63,11 +65,11 @@ De ingebouwde beleidsregels voor inhoudsinspectie kunnen zoeken naar het volgend
 ## <a name="supported-languages"></a>Ondersteunde talen
 
 De Cloud App Security-inhoudsinspectie-engine:
--    ondersteunt alle Unicode-tekens
--    bevat informatie over meer dan 1.000 bestandstypen
--    Meerdere talen worden ondersteund, met name de bestanden die gebruikmaken van Unicode-tekensets. Zorg ervoor dat uw beleid is gedefinieerd voor de desbetreffende talen. Als u bijvoorbeeld op zoek bent naar trefwoorden, moet u de trefwoorden invoeren in de talen die u wilt gebruiken.
--    In tekstbestandstypen die gebruikmaken van niet-Unicode-codering, bijvoorbeeld Chinees GB2312, werkt het vergelijken met Unicode Chinese trefwoorden niet zoals verwacht.
--    Voor bestandstypen die afhankelijk zijn van bibliotheken van derden werken overeenkomende tekenreeksen en woorden niet altijd als verwacht. Dit gebeurt meestal bij bestanden (zoals binaire bestandstypen) waarin de inhoudsinspectie afhankelijk is van bibliotheken van derden die Java-tekenreeksen voor de taal- en tekensets retourneren.
+-   ondersteunt alle Unicode-tekens
+-   bevat informatie over meer dan 1.000 bestandstypen
+-   Meerdere talen worden ondersteund, met name de bestanden die gebruikmaken van Unicode-tekensets. Zorg ervoor dat uw beleid is gedefinieerd voor de desbetreffende talen. Als u bijvoorbeeld op zoek bent naar trefwoorden, moet u de trefwoorden invoeren in de talen die u wilt gebruiken.
+-   In tekstbestandstypen die gebruikmaken van niet-Unicode-codering, bijvoorbeeld Chinees GB2312, werkt het vergelijken met Unicode Chinese trefwoorden niet zoals verwacht.
+-   Voor bestandstypen die afhankelijk zijn van bibliotheken van derden werken overeenkomende tekenreeksen en woorden niet altijd als verwacht. Dit gebeurt meestal bij bestanden (zoals binaire bestandstypen) waarin de inhoudsinspectie afhankelijk is van bibliotheken van derden die Java-tekenreeksen voor de taal- en tekensets retourneren.
 
 
 

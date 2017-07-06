@@ -14,9 +14,10 @@ ms.assetid: a612d87e-5471-4add-b4b1-dbbb530f2b61
 ms.reviewer: reutam
 ms.suite: ems
 ms.openlocfilehash: 73da4104de24a7b2e6814f04b227140b0b57235f
-ms.sourcegitcommit: 945cb3c047ae1bfc05be20cc7798c43005b27c9b
-ms.translationtype: HT
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.translationtype: MT
 ms.contentlocale: nl-NL
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="use-a-custom-log-parser"></a>Een aangepaste logboekparser gebruiken
 In Cloud App Security kunt u een aangepaste parser configureren die overeenkomt met de indeling van uw logboeken en die deze indeling kan verwerken. Zo kunt u de logboeken gebruiken voor Cloud Discovery, ook als ze afkomstig zijn van een firewall of apparaat die of dat niet expliciet wordt ondersteund door Cloud App Security. 
@@ -26,7 +27,7 @@ Met de aangepaste parser kunt u logboeken van niet-ondersteunde firewalls gebrui
 
  
 Een aangepaste CSV-parser configureren:
-1.    Klik in de Cloud App Security-portal op **Detecteren** en vervolgens op **Nieuw momentopnamerapport maken**.  
+1.  Klik in de Cloud App Security-portal op **Detecteren** en vervolgens op **Nieuw momentopnamerapport maken**.  
   
     ![Een nieuw momentopnamerapport maken](./media/create-new-snapshot-report.png)
      

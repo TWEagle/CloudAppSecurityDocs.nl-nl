@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/9/2017
+ms.date: 6/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 57927618-cb66-4c7f-afd7-c96926460816
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a74df6095107943630e8bc39c0c702471325adfc
-ms.sourcegitcommit: 50fac1cec86dfb8170ba9c63a8f58a4bf24e3c5b
-ms.translationtype: HT
+ms.openlocfilehash: c218a1aa02aafaa38107bc6072a810dec2e5a0a4
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/10/2017
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="controlling-and-protecting-your-files"></a>Uw bestanden beheren en beveiligen  
 
@@ -40,7 +40,7 @@ Door deze twee parameters (niveau van gevoeligheid en deling) te vinden en elkaa
 
 #### <a name="setting-up-monitoring"></a>Controle instellen
 
-1.    Begin uw app te controleren door een beleid in te stellen dat alle extern gedeelde bestanden op gevoelige inhoud scant:
+1.  Begin uw app te controleren door een beleid in te stellen dat alle extern gedeelde bestanden op gevoelige inhoud scant:
 
     1. Op de pagina **Beleid**, klikt u op [ **Bestandsbeleid maken**](data-protection-policies.md). 
     ![Bestandsbeleid maken](./media/create-file-policy.png)
@@ -101,11 +101,11 @@ U weet dat u uw gegevens moet beveiligen, u hebt al de moeite genomen uw bestand
     
     1. Op de pagina **Beleid**, klikt u op [ **Bestandsbeleid maken**](data-protection-policies.md). 
 
-    2.    In de sectie filteren kunt u de filters voor **Toegangsniveau** en **Laatst gewijzigd** verwijderen om dit beleid op alle bestanden in uw cloud uit te laten voeren. Deze filters zijn alleen van toepassing op bestanden die vanaf nu worden gewijzigd. Voeg het filter **Classificatielabel** toe en vervolgens **is gelijk aan** en selecteer het classificatielabel van uw organisatie. 
+    2.  In de sectie filteren kunt u de filters voor **Toegangsniveau** en **Laatst gewijzigd** verwijderen om dit beleid op alle bestanden in uw cloud uit te laten voeren. Deze filters zijn alleen van toepassing op bestanden die vanaf nu worden gewijzigd. Voeg het filter **Classificatielabel** toe en vervolgens **is gelijk aan** en selecteer het classificatielabel van uw organisatie. 
     
     ![classificatielabel bestandsbeleid](./media/file-policy-class-label.png)
 
-    3.    Voeg een filter toe met het toegangsniveau dat u probeert te blokkeren om het ongepast delen van deze geclassificeerde bestanden te bewaken, bijvoorbeeld **Toegangsniveau is gelijk aan openbaar, openbaar (internet)**.  Nadat u het beleid hebt gestart, doet Cloud App Security er even over om bestaande bestanden en ook nieuwe bestanden die u toevoegt te scannen. Afhankelijk van de hoeveelheid gegevens die u in uw cloud hebt, kan het even duren om de scan te voltooien.
+    3.  Voeg een filter toe met het toegangsniveau dat u probeert te blokkeren om het ongepast delen van deze geclassificeerde bestanden te bewaken, bijvoorbeeld **Toegangsniveau is gelijk aan openbaar, openbaar (internet)**.  Nadat u het beleid hebt gestart, doet Cloud App Security er even over om bestaande bestanden en ook nieuwe bestanden die u toevoegt te scannen. Afhankelijk van de hoeveelheid gegevens die u in uw cloud hebt, kan het even duren om de scan te voltooien.
 
     ![bestandsbeleidfilter openbaar](./media/file-policy-filter-public.png)
 

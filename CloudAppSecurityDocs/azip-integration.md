@@ -14,10 +14,10 @@ ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
 ms.openlocfilehash: 79e784c332045ebe300a34f5c6da918343a0df45
-ms.sourcegitcommit: 50fac1cec86dfb8170ba9c63a8f58a4bf24e3c5b
-ms.translationtype: HT
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/10/2017
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="azure-information-protection-integration"></a>Integratie van Azure Information Protection
 
@@ -94,17 +94,17 @@ Als u wilt dat deze extern ingestelde labels worden genegeerd, gaat u in de Clou
 
 **Beleid 1: vertrouwelijke gegevens die extern worden gedeeld op Box:**
 
-1.    Maak een bestandsbeleid.
-2.    Stel de naam, ernst en categorie van het beleid in.
-3.    Voeg de volgende bestandsfilters toe om alle vertrouwelijke gegevens te vinden die extern worden gedeeld op Box:
+1.  Maak een bestandsbeleid.
+2.  Stel de naam, ernst en categorie van het beleid in.
+3.  Voeg de volgende bestandsfilters toe om alle vertrouwelijke gegevens te vinden die extern worden gedeeld op Box:
 
 ![vertrouwelijkheidsbeleid](./media/azip-confidentiality-policy.png) 
 
 **Beleid 2: beperkte gegevens die onlangs zijn gewijzigd buiten de map Financiën van SharePoint:**
 
-1.    Maak een bestandsbeleid.
-2.    Stel de naam, ernst en categorie van het beleid in.
-3.    Voeg de volgende filters toe om alle beperkte bestanden te zoeken die onlangs zijn gewijzigd, en sluit de map Financiën uit van de zoekactie bij de optie voor het selecteren van mappen: 
+1.  Maak een bestandsbeleid.
+2.  Stel de naam, ernst en categorie van het beleid in.
+3.  Voeg de volgende filters toe om alle beperkte bestanden te zoeken die onlangs zijn gewijzigd, en sluit de map Financiën uit van de zoekactie bij de optie voor het selecteren van mappen: 
  
 ![beleid voor beperkte gegevens](./media/azip-restricted-data-policy.png) 
 
@@ -130,7 +130,7 @@ Nadat Cloud App Security is verbonden met uw Office 365-service, kunt u de Cloud
 ![Beveiligingssjabloon](./media/protect-template.png)
 3. Nadat u een sjabloon hebt gekozen en op Beveiligen hebt geklikt, zal Cloud App Security de sjabloon toepassen en het oorspronkelijke bestand beveiligen. Het beveiligde bestand heeft dezelfde naam als het oorspronkelijke bestand, maar met de nieuwe extensie .pfile.
 > [!NOTE]
->     Het wordt aanbevolen bedrijfsbrede RMS-sjablonen toe te passen op bestanden, zodat alle gebruikers in de organisatie toegang kunnen krijgen tot deze bestanden, met inbegrip van de oorspronkelijke eigenaar van het bestand. De eigenaar van het bestand, het beleid voor het delen van het bestand en de lijst met gebruikers die al toegang hebben, veranderen niet wanneer het bestand wordt beveiligd.
+>   Het wordt aanbevolen bedrijfsbrede RMS-sjablonen toe te passen op bestanden, zodat alle gebruikers in de organisatie toegang kunnen krijgen tot deze bestanden, met inbegrip van de oorspronkelijke eigenaar van het bestand. De eigenaar van het bestand, het beleid voor het delen van het bestand en de lijst met gebruikers die al toegang hebben, veranderen niet wanneer het bestand wordt beveiligd.
 
 4. Als gebruikers toegang willen tot het beveiligde bestand, moeten ze de RMS sharing-app op hun apparaat hebben geïnstalleerd. Zie voor meer informatie [Technisch overzicht en beveiligingsdetails voor de Microsoft Rights Management-toepassing voor delen](https://docs.microsoft.com/information-protection/rms-client/sharing-app-admin-guide-technical).
 
