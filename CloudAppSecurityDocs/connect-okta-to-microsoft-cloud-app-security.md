@@ -14,8 +14,10 @@ ms.assetid: 9c3673b9-99bd-400c-9da1-5bf809ea5892
 ms.reviewer: reutam
 ms.suite: ems
 ms.openlocfilehash: e888fe124b72704309183be7c2516367f2a14a0d
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
-translationtype: HT
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.translationtype: MT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="connect-okta-to-microsoft-cloud-app-security"></a>Verbinding maken tussen Okta en Microsoft Cloud App Security
 In deze sectie vindt u instructies voor het maken van een verbinding tussen Cloud App Security en uw bestaande Okta-account met behulp van de connector-API's voor de app.  
