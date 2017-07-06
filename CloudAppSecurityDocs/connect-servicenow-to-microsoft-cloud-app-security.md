@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: c626d94d-2ffd-4daf-8fa4-4b6d308cf012
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a2b6658e14438e3504fde61605505abae8d65839
-ms.sourcegitcommit: cb8238610222953751ff714b346a0b4cf73ac40c
-ms.translationtype: HT
+ms.openlocfilehash: a70e561150ef8d00a3815eb4332868f4c1fbeece
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/16/2017
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="connect-servicenow-to-microsoft-cloud-app-security"></a>Verbinding maken tussen ServiceNow en Microsoft Cloud App Security
 
@@ -66,7 +66,7 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
   
 8.  Voeg in het pop-upvenster in de bijbehorende vakken uw ServiceNow-gebruikers-id, -wachtwoord, de URL van het exemplaar, Client-id en Clientgeheim in. Als u uw ServiceNow-gebruikers-id wilt vinden in de ServiceNow-portal, gaat u naar **gebruikers** en vervolgens naar uw naam in de tabel; deze wordt weergegeven naast uw gebruikers-id.
 
-![ServiceNow-gebruikers-id](./media/servicenow-userid.png)
+    ![ServiceNow-gebruikers-id](./media/servicenow-userid.png)
   
 9.  Klik op **Verbinden**.  
   
