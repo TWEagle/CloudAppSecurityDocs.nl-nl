@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b694b6f117b0c5249520a43154675cdac70361b4
-ms.sourcegitcommit: cb8238610222953751ff714b346a0b4cf73ac40c
-ms.translationtype: HT
+ms.openlocfilehash: 746727ee96513e473911a286fb53ea8cec52c3cc
+ms.sourcegitcommit: a0290ac2a662994f7771975ef6c20d0b47e9edd8
+ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/16/2017
+ms.lasthandoff: 07/03/2017
 ---
 # <a name="create-snapshot-cloud-discovery-reports"></a>Momentopnamerapporten maken van Cloud Discovery
 Het is belangrijk een logboek handmatig te uploaden en het logboek in Cloud App Security te parseren voordat u de automatische logboekverzamelaar gebruikt.
@@ -41,6 +41,11 @@ Ga als volgt te werk om een momentopnamerapport te maken:
 5. Controleer uw logboekindeling en controleer of deze hetzelfde is als in het voorbeeld dat u kunt downloaden. Klik op **Weergeven en controleren** en klik op **Voorbeeldlogboek downloaden**. Vergelijk vervolgens uw logboek met het voorbeeld om te controleren of de indeling hetzelfde is. 
 
  ![De logboekindeling controleren](./media/cloud-discovery-snapshot-verify.png)  
+
+  > [!NOTE]
+  > De FTP-voorbeeld-indeling wordt ondersteund in momentopnamen en geautomatiseerde uploaden terwijl syslog automatisch uploaden alleen wordt ondersteund.<br></br>
+Downloaden van een voorbeeldlogboek downloadt een FTP-voorbeeldlogboek.
+
 
 5.  **Kies de verkeerslogboeken** die u wilt uploaden. U kunt maximaal 20 bestanden tegelijk uploaden. Gecomprimeerde en gezipte bestanden worden ook ondersteund.  
   

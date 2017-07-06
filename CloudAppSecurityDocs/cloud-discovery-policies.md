@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 7/1/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: 45446111-ed1a-4699-9df5-840cc6664a6b
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9d525cd9d4856c4c8c25323a656c686a4d9b944e
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
-translationtype: HT
+ms.openlocfilehash: ad1b3e4c94458a35aa3f4230fe48d29e5f2f8461
+ms.sourcegitcommit: a0290ac2a662994f7771975ef6c20d0b47e9edd8
+ms.translationtype: MT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/03/2017
 ---
 # <a name="cloud-discovery-policies"></a>Beleidsregels voor Cloud Discovery
     
@@ -24,28 +26,28 @@ Beleidsregels voor appdetectie bieden u de mogelijkheid om waarschuwingen in te 
   
 1.  Klik in de console op **Beheer** gevolgd door **Beleidsregels**.  
   
-2.  Klik op **Beleid maken** en selecteer **Appdetectie-beleid**.  
+2.  Klik op **beleid maken** en selecteer **beleid voor appdetectie**.  
   
      ![menu beleid voor app-detectie](./media/app-discovery-policy-menu.png "menu beleid voor app-detectie")  
   
 3.  Geef uw beleid een naam en beschrijving, wat u indien gewenst kunt baseren op een sjabloon. Voor meer informatie over beleidssjablonen, bekijk [Cloud-apps beheren met beleidsregels](control-cloud-apps-with-policies.md).  
   
-4.  Om in te stellen voor welke gedetecteerde apps dit beleid wordt geactiveerd, klikt u op **Filters toevoegen**.  
+4.  Stel de **ernst** van het beleid.
+
+5. Om in te stellen welke gedetecteerde apps dit beleid wordt geactiveerd, kunt u filters toevoegen.  
   
-     De filters worden gekozen vanaf de linkerkant van de pagina van de filterpop-up. Het is mogelijk te filteren op **appnaam**, **domein**, **risicofactor**, **risicoscore**, en **categorie**. Aan de rechterkant van de pagina worden de resultaten voor de gekozen filters uit de huidige servicecatalogus weergegeven. Sla de filters op nadat u ze hebt geselecteerd en controleer of de juiste labels worden weergegeven in de filters.  
-  
-5.  Kies bij **Toepassen voor** of dit geldt voor **gebruikers**, **IP-adressen** of beide.  
-  
-6.  Stel de **dagelijkse gebruiksdrempel** in waaraan de app moet voldoen om overeen te komen met het beleid.  
+6.  U kunt een drempelwaarde voor gevoeligheid het beleid moet instellen. Na het inschakelen van de **een overeenkomst beleid activeren als alle volgende op dezelfde dag vallen**, kunt u instellen dat een minimum voor de **aantal gebruikers**, **nummer van de IP-adressen**, **dagelijkse verkeer**, **gedownloade gegevens**, **gegevens geüpload** en **aantal transacties** dat de app voldoen moet om te overeenkomen met het beleid.  
   
 7.  Stel een **Dagelijkse waarschuwingslimiet** in en selecteer of de waarschuwing wordt verzonden als e-mail, als SMS-bericht of beide en geef indien nodig gegevens op. U kunt klikken op Standaardwaarden waarschuwingsinstellingen opslaan om het mogelijk te maken voor toekomstig beleid om deze waarschuwingsinstellingen op te slaan als de standaardwaarden, waaronder telefoonnummer en e-mailadressen.  
   
+8. Selecteer mogelijk **Governance** acties toe te passen wanneer een app overeenkomt met dit beleid. Het label kan automatisch beleid als **Sanctioned** of **Unsanctioned** 
+
 8.  Klik op **Maken**.  
   
 Bijvoorbeeld, als u geïnteresseerd bent in het detecteren van riskante hostapps in uw cloudomgeving, stelt u uw beleid als volgt in:  
   
 Stel de beleidsfilters in om services te detecteren die zijn gevonden in de categorie **hostingservices** en die een lage score hebben, wat aangeeft dat ze riskant zijn.   
-Stel de **ernst** van het beleid in op **gemiddeld**.   
+   
 Stel de drempelwaarden die een waarschuwing moeten geven voor een bepaalde gedetecteerde app onderaan alleen in als meer dan 100 gebruikers in de omgeving de app gebruiken en als ze een bepaalde hoeveelheid gegevens uit de service hebben gedownload.   
 Daarnaast kunt u de dagelijkse waarschuwingslimiet instellen.  
   
@@ -66,7 +68,7 @@ Cloud App Security doorzoekt alle logboeken in uw Cloud Discovery-exemplaar op a
   
      De filters worden gekozen vanaf de linkerkant van de pagina van de filterpop-up. Het is mogelijk te filteren op servicenaam, domein, risicofactor, risicoscore, en categorie. Aan de rechterkant van de pagina worden de resultaten voor de gekozen filters uit de huidige servicecatalogus weergegeven. Sla de filters op nadat u ze hebt geselecteerd en controleer of de juiste labels worden weergegeven in de filters.  
   
-5.  Kies onder **Toepassen voor**of dit van toepassing is voor **alle gegevensweergaven** of **specifieke gegevensweergaven** en of dit van toepassing is op **gebruikers**, **IP-adressen** of beide.  
+5.  Kies onder **Toepassen voor **of dit van toepassing is voor **alle gegevensweergaven** of **specifieke gegevensweergaven** en of dit van toepassing is op **gebruikers**, **IP-adressen** of beide.  
   
 6.  Selecteer de datums gedurende welke de afwijkende activiteit heeft plaatsgevonden voor het activeren van de waarschuwing onder **Waarschuwingen alleen genereren voor verdachte activiteiten na datum.**  
   

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/7/2017
+ms.date: 6/4/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,23 +13,15 @@ ms.technology:
 ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d12fa44f42c5545464c7e8ba9da366a2302f73c1
-ms.sourcegitcommit: 945cb3c047ae1bfc05be20cc7798c43005b27c9b
-ms.translationtype: HT
+ms.openlocfilehash: 9559c72b2bfd8a88b47769839d17a3f31aadbd19
+ms.sourcegitcommit: a0290ac2a662994f7771975ef6c20d0b47e9edd8
+ms.translationtype: MT
 ms.contentlocale: nl-NL
+ms.lasthandoff: 07/03/2017
 ---
 # <a name="set-up-cloud-discovery"></a>Cloud Discovery instellen
-In Cloud Discovery worden uw verkeerslogboeken geanalyseerd op basis van de catalogus met cloud-apps van Cloud App Security. Deze catalogus bevat meer dan 13.000 cloud-apps die op basis van meer dan 50 kenmerken worden geclassificeerd en beoordeeld, zodat u altijd inzicht hebt in het cloudgebruik, de Shadow IT en het risico dat Shadow IT vormt in uw organisatie.
-Met de **catalogus met cloud-apps** wordt het risico voor uw cloud-apps beoordeeld op basis van regelgevingscertificeringen, industrienormen en best practices. In de catalogus met cloud-apps worden vier aanvullende processen uitgevoerd om de catalogus up-to-date te houden:
-1.    Geautomatiseerde gegevensextractie rechtstreeks vanuit de cloud-app (voor kenmerken zoals SOC 2-naleving).
-2.    Geautomatiseerde geavanceerde gegevensextractie voor gegevens met Cloud App Security-algoritmen (voor kenmerken zoals HTTP-beveiligingsheaders).
-3.    Continue analyses door het analistenteam van Cloud App Security (voor kenmerken zoals versleuteling van inactieve gegevens).
-4.    Klantgebaseerde revisieaanvragen, gebaseerd op klantaanvragen voor wijzigingen in de catalogus met cloud-apps. Alle aanvragen worden bekeken door ons cloudanalistenteam en bijgewerkt op basis van hun bevindingen.
-  
-## <a name="cloud-discovery-data-anonymization"></a>Cloud Discovery-gegevens anoniem maken
-
-U kunt door Cloud Discovery-gegevens anoniem te maken de privacy van gebruikers beveiligen. Nadat het gegevenslogboek naar de Cloud App Security-portal is geüpload, wordt het logboek opgeschoond en wordt alle informatie over gebruikersnamen vervangen door versleutelde gebruikersnamen. Op deze manier blijven alle cloudactiviteiten anoniem. Zie [Cloud Discovery anoniem maken](cloud-discovery-anonymizer.md) voor meer informatie.
-
+Cloud Discovery analyseert uw verkeerslogboeken op basis van de catalogus met Cloud App Security cloud-app van meer dan rond 14.000 cloud-apps die worden beoordeeld en gewaardeerd op basis van meer dan 50 kenmerken, om u doorlopende inzicht in de cloud gebruikt, schaduw-IT, en het risico Shadow IT oplevert voor uw organisatie te bieden.
+ 
 ## <a name="snapshot-and-continuous-risk-assessment-reports"></a>Momentopname- en doorlopende risicoanalyserapporten 
 
 Er zijn twee typen rapporten die u kunt genereren: 
@@ -44,7 +36,7 @@ Het proces voor het genereren van een risicoanalyse bestaat uit de volgende stap
   
 -   **Parseren** – Cloud App Security parseert en extraheert met een specifieke parser voor elke gegevensbron verkeersgegevens uit de verkeerslogboeken.  
   
--   **Analyseren** – De verkeersgegevens worden vergeleken met de catalogus met cloud-apps om meer dan 13.000 cloud-apps te identificeren en hun risicoscore vast te stellen. Tijdens de analyse worden actieve gebruikers en IP-adressen ook geïdentificeerd.  
+-   **Analyseren** – verkeersgegevens worden vergeleken met de catalogus met Cloud-App op meer dan rond 14.000 cloud-apps identificeren en om hun risicoscore vast te stellen. Tijdens de analyse worden actieve gebruikers en IP-adressen ook geïdentificeerd.  
   
 -   **Rapport genereren** - Hiermee wordt een risicoanalyserapport gegenereerd met gegevens die worden geëxtraheerd uit logboekbestanden.   
  
@@ -74,6 +66,8 @@ Als u zonder problemen een Cloud Discovery-rapport wilt genereren, moeten uw ver
 3.  Gebeurtenissen zijn niet ouder dan 90 dagen.
 4.  Het logboekbestand is geldig en bevat gegevens over uitgaand verkeer.
  
+
+
 ## <a name="supported-firewalls-and-proxies"></a>Ondersteunde firewalls en proxy's
 
 - Barracuda - Web App Firewall (W3C)
@@ -99,6 +93,8 @@ Als u zonder problemen een Cloud Discovery-rapport wilt genereren, moeten uw ver
 - Websense - oplossingen voor webbeveiliging - activiteitenlogboek internet (CEF)
 - Zscaler
 
+> [!NOTE]
+> Cloud Discovery ondersteunt zowel IPv4 als IPv6-adressen.
 
 Als uw logboek niet wordt ondersteund, selecteert u **Overige** in het veld **Gegevensbron**, geeft u het apparaat op en voert u het logboek in dat u wilt uploaden. Uw logboek wordt bekeken door het cloudanalistenteam van Cloud App Security en u ontvangt een melding als ondersteuning voor het logboektype is toegevoegd. U kunt ook een aangepaste parser definiëren die overeenkomt met de indeling. Zie [Een aangepaste logboekparser gebruiken](custom-log-parser.md) voor meer informatie.
 
@@ -117,17 +113,19 @@ De gegevenskenmerken (volgens de documentatie van de leverancier):
 |Clavister NGFW (Syslog)|**Ja**|**Ja**|**Ja**|**Ja**|**Ja**|**Ja**|
 |Dell Sonicwall|**Ja**|**Ja**|Nee|**Ja**|**Ja**|**Ja**|
 |FortiGate|Nee|**Ja**|Nee|**Ja**|**Ja**|**Ja**|
-|Juniper SRX|Nee|**Ja**|Nee|**Ja**\**|**Ja**|**Ja**|
+|Juniper SRX|Nee|**Ja**|Nee|**Ja**|**Ja**|**Ja**|
 |Juniper SSG|Nee|**Ja**|Nee|**Ja**|**Ja**|**Ja**|
 |McAfee SWG|**Ja**|Nee|Nee|**Ja**|**Ja**|**Ja**|
 |MS TMG|**Ja**|Nee|**Ja**|**Ja**|**Ja**|**Ja**|
-|Palo Alto Networks|**Ja**|**Ja**|**Ja**|**Ja**\*|**Ja**|**Ja**|
+|Palo Alto Networks|**Ja**|**Ja**|**Ja**|**Ja**|**Ja**|**Ja**|
 |Sophos|**Ja**|**Ja**|**Ja**|**Ja**|**Ja**|Nee|
-|Websense - gedetailleerd onderzoeksrapport (CSV)|**Ja**|Nee|Nee|**Ja**|Nee|Nee|
+|Squid (algemeen)|**Ja**|Nee|**Ja**|**Ja**|Nee|**Ja**|
+|Squid (systeemeigen)|**Ja**|Nee|**Ja**|**Ja**|Nee|**Ja**|
+|Websense - gedetailleerd onderzoeksrapport (CSV)|**Ja**|**Ja**|**Ja**|**Ja**|**Ja**|**Ja**|
 |Websense - internetactiviteitenlogboek (CEF)|**Ja**|**Ja**|**Ja**|**Ja**|**Ja**|**Ja**|
 |Zscaler|**Ja**|Nee|**Ja**|Nee|**Ja**|**Ja**|
 
-\*Cloud Discovery biedt ondersteuning voor IPv6.
+
 
 ## <a name="see-also"></a>Zie ook
  

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/2/2017
+ms.date: 6/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,10 +13,11 @@ ms.technology:
 ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f6b7a2d88c748f8e5b379fb5d70b603c2b6f0e95
-ms.sourcegitcommit: 945cb3c047ae1bfc05be20cc7798c43005b27c9b
-ms.translationtype: HT
+ms.openlocfilehash: a30cf7f973daadd38a2049183ab1800d8d210cf4
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.translationtype: MT
 ms.contentlocale: nl-NL
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="governing-connected-apps"></a>Verbonden apps beheren
 Met governance kunt u beheren wat gebruikers doen, in realtime en in verschillende apps. Voor verbonden apps kunt u beheeracties toepassen op bestanden of activiteiten.
@@ -80,20 +81,28 @@ De volgende beheeracties kunnen voor verbonden apps worden uitgevoerd op een spe
   
     -   Gedetailleerde acties kunnen per app worden afgedwongen, specifieke acties zijn afhankelijk van de terminologie in de app.  
   
-    -   Gebruiker blokkeren – de gebruiker blokkeren in de toepassing.  
+    -   Gebruiker blokkeren – de gebruiker blokkeren in de toepassing. 
+    > [!NOTE] 
+    > Als uw Azure Active Directory is ingesteld overschrijft de Azure AD-instellingen automatisch kunnen worden gesynchroniseerd met de gebruikers in uw on-premises Active Directory omgeving de instellingen in de on-premises omgeving en deze beheeractie worden geannuleerd. 
   
     -   Wachtwoord intrekken – het gebruikerswachtwoord intrekken en afdwingen dat de gebruiker een nieuw wachtwoord instelt bij de volgende aanmelding.  
   
-     ![activiteitenbeleidsverwijzing6](./media/activity-policy-ref6.png "activiteitenbeleidsverwijzing6")  
+     ![Cloud App Security activiteit beleid beheeracties](./media/activity-policy-ref6.png "ref6 van activiteit-beleid")  
   
 
 ### <a name="governance-conflicts"></a>Beheerconflicten
 
 Als u meerdere beleidsregels hebt gemaakt, kan er een situatie ontstaan waarin de beheeractiviteiten in meerdere beleidsregels elkaar overlappen. In dit geval worden de beheeracties als volgt verwerkt in Cloud App Security:
 
+#### <a name="conflicts-between-policies"></a>Conflicten tussen beleidsregels
+
 - Als twee beleidsregels acties bevatten die in elkaar zijn opgenomen (bijvoorbeeld wanneer **Externe shares verwijderen** is opgenomen in **Privé maken**), wordt het conflict in Cloud App Security opgelost en wordt de sterkere actie afgedwongen.
 - Als de acties volledig onafhankelijk van elkaar zijn (bijvoorbeeld **De eigenaar een melding sturen** en **Privé maken**), worden beide acties uitgevoerd.
 - Als de acties conflicteren (bijvoorbeeld **Eigenaar wijzigen in gebruiker A** en **Eigenaar wijzigen in gebruiker B**), kan elke overeenkomst tot andere resultaten leiden. Het is belangrijk uw beleidsregels te wijzigen om conflicten te voorkomen, omdat ze kunnen leiden tot ongewenste wijzigingen in het station die moeilijk te detecteren zijn.
+
+#### <a name="conflicts-in-user-sync"></a>Conflicten in de synchronisatie van de gebruiker
+
+- Als uw Azure Active Directory is ingesteld overschrijft de Azure AD-instellingen automatisch kunnen worden gesynchroniseerd met de gebruikers in uw on-premises Active Directory omgeving de instellingen in de on-premises omgeving en deze beheeractie worden geannuleerd. 
 
 ### <a name="governance-log"></a>Beheerlogboek
 Het beheerlogboek biedt een statusrecord voor elke taak die met Cloud App Security moet worden uitgevoerd, waaronder zowel handmatige als automatische taken. Deze taken omvatten taken die u in beleidsregels instelt, beheeracties die u voor bestanden en gebruikers instelt en andere acties die met Cloud App Security moeten worden uitgevoerd. Het beheerlogboek bevat ook informatie over het slagen of mislukken van deze acties. U kunt bepaalde beheeracties in het beheerlogboek opnieuw uitvoeren of ongedaan maken. 
@@ -124,7 +133,8 @@ Zie [Beleidsconflicten](control-cloud-apps-with-policies.md) voor informatie ove
 |Bestandsbeleid, activiteitenbeleid|Bestand, activiteit|Specifieke gebruikers informeren|Hiermee wordt een e-mail naar specifieke gebruikers verzonden over een bestand dat een beleid schendt.|Alle apps|
 |Bestandsbeleid en activiteitenbeleid|Bestand, activiteit|De gebruiker een melding sturen|Hiermee wordt een e-mail naar gebruikers verzonden om hen te melden dat ze iets hebben gedaan of een bestand hebben dat een beleid schendt. U kunt een aangepaste melding toevoegen om gebruikers te laten weten wat de schending is.|Alles|
 |Bestandsbeleid en bestanden|Bestand|De machtiging van de editor om te delen intrekken|In Google Drive staan de standaardmachtigingen van de editor het delen van een bestand ook toe. Deze beheeractie beperkt deze optie en zorgt ervoor dat alleen de eigenaar de bestanden kan delen.|G Suite|
-|Bestandsbeleid en bestanden|Bestand|In beheerquarantaine plaatsen|Hiermee worden machtigingen uit het bestand verwijderd en wordt het bestand verplaatst naar een quarantainemap onder de hoofdmap van de gebruiker. Hierdoor kan de beheerder het bestand controleren en verplaatsen.|Box|
+|Bestandsbeleid en bestanden|Bestand|[In beheerquarantaine plaatsen](use-case-admin-quarantine.md)|Hiermee verwijdert u alle machtigingen uit het bestand en wordt het bestand verplaatst naar een quarantainemap in een locatie voor de beheerder. Hierdoor kan de beheerder zijn om het bestand controleren en te verwijderen.|Office 365 SharePoint, OneDrive voor bedrijven, vak|
+|Bestandsbeleid, activiteitenbeleid, waarschuwingen|App|Vereisen dat gebruikers zich opnieuw aanmeldt|U kunt gebruikers verplichten om opnieuw aan te melden voor alle Office 365 en Azure AD-apps als een snelle en doeltreffende herstel voor de gebruiker met verdachte activiteitswaarschuwingen en accounts waarmee is geknoeid. U vindt de nieuwe governance in de beleidsinstellingen en de waarschuwing's, naast de optie onderbreken.|Office 365, Azure AD|
 |Bestanden|Bestand|Terugplaatsen uit gebruikersquarantaine|Hiermee wordt u een gebruiker teruggeplaatst uit quarantaine.|Box|
 |Bestanden|Bestand|Leesmachtiging verlenen aan mijzelf|Hiermee worden leesmachtigingen voor het bestand verleend aan uzelf, zodat u toegang hebt tot het bestand en overtredingen kunt zien.|G Suite|
 |Bestanden|Bestand|Editors toestaan om te delen|In Google Drive is het delen van een bestand ook toegestaan voor de standaardmachtigingen van de editor. Deze beheeractie is het tegenovergestelde van De machtiging van de editor om te delen intrekken. Hiermee stelt u in dat de editor het bestand kan delen.|G Suite|

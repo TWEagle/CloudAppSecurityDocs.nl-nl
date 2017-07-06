@@ -13,16 +13,31 @@ ms.technology:
 ms.assetid: e451031e-4764-411a-b366-73a49d4f25df
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ca4a10f64429c481f49c75740f651302b1c7d1ef
-ms.sourcegitcommit: 7493d88e4fe7c827f870b81e2090ffcc77f1408a
-translationtype: HT
+ms.openlocfilehash: cf14aaa243baaea8223cc6a271e7a237a0a1e287
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.translationtype: MT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 06/28/2017
 ---
-# <a name="governing-discovered-apps"></a>Gedetecteerde apps beheren
-Met Cloud App Security kunt u toegang tot niet-goedgekeurde apps blokkeren door gebruik te maken van uw bestaande on-premises beveiligingsapparaten. Genereer een toegewezen blokkeerscript en importeer dit naar uw apparaat.
-Deze oplossing vereist geen omleiding van alle webverkeer van de organisatie naar een proxy.
+## <a name="govern-discovered-apps"></a>Gedetecteerde apps bepalen
+
+Nadat u de lijst met gedetecteerde apps hebt doorgenomen in uw omgeving, kunt u uw omgeving tegen ongewenste app-gebruik op de volgende manieren kunt beveiligen.
+
+### <a name="sanctioningunsanctioning-an-app"></a>Bestraffing/goedkeuring ervan intrekken een app 
+
+U kunt een specifieke riskant app goed op de drie punten aan het einde van de rij en selecteer **Unsanction**.
+Goedkeuring ervan intrekken een app gebruik niet wordt geblokkeerd, maar u kunt het gebruik ervan eenvoudiger controleren met de Cloud Discovery-filters. U kunt meldingen verzenden naar gebruikers van de app is niet-toegestane en stelt voor een alternatieve en veilige app voor het gebruik ervan.
+
+![Labelen als Niet-goedgekeurd](./media/tag-as-unsanctioned.png)  
+
+
+Als u een lijst met apps die u wilt wel of niet erkennen hebt, kunt u gebruik de selectievakjes om Selecteer de apps die u wilt beheren en selecteer vervolgens de actie.
 
 
 ## <a name="export-a-block-script-to-govern-discovered-apps"></a>Een blokkeerscript exporteren om gedetecteerde apps te beheren
+
+Met Cloud App Security kunt u toegang tot niet-goedgekeurde apps blokkeren door gebruik te maken van uw bestaande on-premises beveiligingsapparaten. Genereer een toegewezen blokkeerscript en importeer dit naar uw apparaat.
+Deze oplossing vereist geen omleiding van alle webverkeer van de organisatie naar een proxy.
 
 1. Label alle apps die u wilt blokkeren, in het Cloud Discovery-dashboard als **Niet-goedgekeurd**.
 
