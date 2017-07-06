@@ -14,17 +14,19 @@ ms.assetid: eb250ede-fede-4699-a08b-b8ea4b232f07
 ms.reviewer: reutam
 ms.suite: ems
 ms.openlocfilehash: 3d74621d1c173c51a9a3d0e08f261290a6d24835
-ms.sourcegitcommit: 122268f3e7b0cadf1a6a495a50f388fe4adbcc2b
-translationtype: HT
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.translationtype: MT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 06/28/2017
 ---
 ## <a name="cloud-discovery-data-anonymization"></a>Cloud Discovery-gegevens anoniem maken
 
 U kunt door Cloud Discovery-gegevens anoniem te maken de privacy van gebruikers beveiligen. Nadat het gegevenslogboek naar de Cloud App Security-portal is geüpload, wordt het logboek opgeschoond en wordt alle informatie over gebruikersnamen vervangen door versleutelde gebruikersnamen. Op deze manier blijven alle cloudactiviteiten anoniem. Beheerders kunnen zo nodig voor een specifiek beveiligingsonderzoek (bijvoorbeeld bij schending van de beveiliging of verdachte gebruikersactiviteiten) de echte gebruikersnaam herleiden. Als een beheerder reden heeft een specifieke gebruiker te verdenken, is het ook mogelijk de versleutelde gebruikersnaam van een bekende gebruikersnaam op te zoeken en vervolgens het onderzoek uit te voeren met behulp van de versleutelde gebruikersnaam. Elke omzetting van een gebruikersnaam wordt gecontroleerd in het **governance-logboek** van de portal.
 
 Belangrijke punten:
--    Er wordt geen persoonlijke informatie opgeslagen of weergegeven. Alleen versleutelde informatie.
--    Persoonlijke gegevens worden versleuteld met AES-128 met een speciale sleutel per tenant.
--    Het omzetten van gebruikersnamen wordt ad-hoc uitgevoerd, per gebruikersnaam door een bepaalde versleutelde gebruikersnaam te decoderen.
+-   Er wordt geen persoonlijke informatie opgeslagen of weergegeven. Alleen versleutelde informatie.
+-   Persoonlijke gegevens worden versleuteld met AES-128 met een speciale sleutel per tenant.
+-   Het omzetten van gebruikersnamen wordt ad-hoc uitgevoerd, per gebruikersnaam door een bepaalde versleutelde gebruikersnaam te decoderen.
 
 
 Hoe het anoniem maken van gegevens werkt:
