@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/10/2017
+ms.date: 7/1/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 305c7ab0293e35ffbabc9b665a5b797619111131
-ms.sourcegitcommit: 50fac1cec86dfb8170ba9c63a8f58a4bf24e3c5b
-ms.translationtype: HT
+ms.openlocfilehash: deabe5b6ccb46ad766ba8e4c206abaf021cd5b72
+ms.sourcegitcommit: a0290ac2a662994f7771975ef6c20d0b47e9edd8
+ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/10/2017
+ms.lasthandoff: 07/03/2017
 ---
 # <a name="files"></a>Bestanden
 
@@ -83,7 +83,12 @@ Hieronder volgt een lijst met de bestandsfilters die kunnen worden toegepast. De
   
 -   Bestandsnaam – de bestandsnaam of subtekenreeks van de naam zoals deze is gedefinieerd in de cloud-app, bijvoorbeeld Alle bestanden met een wachtwoord in hun naam.   
   
--   Classificatielabel - zoek naar bestanden met specifieke labels die zijn ingesteld door Azure Information Protection. Hiervoor is integratie met Azure Information Protection vereist.
+-   Classificatie label - zoeken naar bestanden met specifieke labels ingesteld. Dit zijn beide:
+    - Azure Information Protection labels. Hiervoor is integratie met Azure Information Protection vereist.
+    - Cloud App Security-tags. biedt nu meer inzicht in de bestanden dat wordt gescand. Voor elk bestand dat wordt gescand met Cloud App Security DLP, kunt u nu weet als de bestanden zijn geblokkeerd worden geïnspecteerd omdat ze zijn versleuteld of beschadigd. Bijvoorbeeld: u kunt beleidsregels instellen om te waarschuwen en quarantaine wachtwoord beveiligde bestanden die worden gedeeld extern, als volgt: 
+        - Azure RMS versleuteld – bestanden waarvan de inhoud is niet gecontroleerd omdat ze een Azure RMS-versleuteling-set hebben.
+        - Wachtwoord versleuteld – bestanden waarvan de inhoud is niet gecontroleerd omdat ze een wachtwoord beveiligd door de gebruiker zijn.
+        - Beschadigd bestand – bestanden waarvan de inhoud is niet gecontroleerd omdat hun inhoud kan niet worden gelezen.
 
 -   Bestandstype – Cloud App Security houdt rekening met het MIME-type dat van de service is ontvangen en scant het bestand om het daadwerkelijke bestandstype te bepalen. Deze scan is van toepassing op bestanden die relevant zijn voor een gegevensscan (documenten, afbeeldingen, presentaties, spreadsheets, tekst- en zipbestanden). Het filter werkt per type bestand/map, bijvoorbeeld Alle mappen die... of Alle spreadsheetbestanden die...
 
@@ -111,6 +116,9 @@ U kunt ook instellen dat het beleid wordt uitgevoerd op specifieke bestanden doo
   
 ![toepassen op filter](./media/apply-to-filter.png "toepassen op filter")  
   
+>[!NOTE]
+> Als op elk moment dat u wilt wissen van de filters, u doen kunt door te klikken op het pictogram filters wissen ![filters wissen pictogram](./media/clear-filters.png).
+
 ## <a name="working-with-the-file-drawer"></a>Werken met de bestandslade
 
 U kunt meer informatie bekijken over elk bestand door te klikken op het bestand in het bestandslogboek. Daarmee opent u de bestandslade, die de volgende acties bevat die u met het bestand kunt uitvoeren:

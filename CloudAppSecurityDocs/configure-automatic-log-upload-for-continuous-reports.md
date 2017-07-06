@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/16/2017
+ms.date: 7/3/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,14 +13,16 @@ ms.technology:
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a5f360181eb9a39bfe50660cfd733ecb51aa161d
-ms.sourcegitcommit: cb8238610222953751ff714b346a0b4cf73ac40c
-ms.translationtype: HT
+ms.openlocfilehash: 11d3a78803c2a22f7d08bdab9d70aec73124ff8b
+ms.sourcegitcommit: a0290ac2a662994f7771975ef6c20d0b47e9edd8
+ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/16/2017
+ms.lasthandoff: 07/03/2017
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports"></a>Automatisch uploaden van logboeken configureren voor doorlopende rapporten
-Met een logboekverzamelaar kunt u het uploaden van logboeken vanaf uw netwerk eenvoudig automatiseren. De logboekverzamelaar wordt uitgevoerd op uw netwerk en ontvangt logboeken via Syslog of FTP. Elk logboek wordt automatisch verwerkt, gecomprimeerd en naar de portal verzonden. De FTP-logboeken worden naar Cloud App Security geüpload nadat de FTP-overdracht naar de logboekverzamelaar voor het bestand is voltooid. Voor Syslogs worden de ontvangen logboeken met de logboekverzamelaar elke 20 minuten naar de schijf geschreven en wordt het bestand vervolgens naar Cloud App Security geüpload.
+Met een logboekverzamelaar kunt u het uploaden van logboeken vanaf uw netwerk eenvoudig automatiseren. De logboekverzamelaar wordt uitgevoerd op uw netwerk en ontvangt logboeken via Syslog of FTP. Elk logboek wordt automatisch verwerkt, gecomprimeerd en naar de portal verzonden. FTP-logboeken zijn geüpload naar de Cloud App Security nadat het bestand klaar bent met de FTP-overdracht voor de Logboekverzamelaar en Syslog, de Logboekverzamelaar schrijft de logboeken ontvangen op de schijf en het bestand uploadt en Cloud App Security wanneer de bestandsgrootte groter dan 40 kb is.
+
+Nadat een logboek is geüpload naar de Cloud App Security, wordt deze verplaatst naar een back-map die de laatste 20 logboeken op elk gewenst moment worden opgeslagen. Wanneer nieuwe logboeken binnenkomen, worden de oude versie verwijderd. Wanneer de schijfruimte van logboek collector vol is, komt de logboekverzamelaar nieuwe logboeken totdat er meer schijfruimte vrij is.
 
 Voordat u automatische logboekbestandsverzameling instelt, moet u controleren of uw logboek overeenkomt met het verwachte logboektype, zodat uw bestand kan worden geparseerd met Cloud App Security. 
 
@@ -80,7 +82,7 @@ De logboekverzamelaar heeft een ingebouwd beveiligingsmechanisme dat de snelheid
   > - Kopieer de inhoud van het scherm. U hebt deze informatie nodig tijdens het configureren van de logboekverzamelaar voor de communicatie met Cloud App Security. Als u Syslog hebt geselecteerd, wordt ook informatie weergegeven over de poort waarop de Syslog-listener luistert.
 4.  **Download** een nieuwe virtuele machine voor de logboekverzamelaar door te klikken op Hyper-V of VMWare en decomprimeer het bestand met het wachtwoord dat u in de portal hebt ontvangen.  
   
-###    <a name="step-2--on-premises-deployment-of-the-virtual-machine-and-network-configuration"></a>Stap 2 - On-premises implementatie van de virtuele machine en de netwerkconfiguratie   
+### <a name="step-2--on-premises-deployment-of-the-virtual-machine-and-network-configuration"></a>Stap 2 - On-premises implementatie van de virtuele machine en de netwerkconfiguratie   
 
 > [!NOTE] 
 > In de volgende stappen wordt de implementatie in Hyper-V beschreven. De implementatiestappen voor de VM-hypervisor zijn iets anders.  
@@ -146,11 +148,23 @@ Configureer volgens de richtlijnen in het dialoogvenster uw netwerkfirewalls en 
   
 ### <a name="step-5---verify-the-successful-deployment-in-the-cloud-app-security-portal"></a>Stap 5 - Controleer of de implementatie is voltooid in de Cloud App Security-portal
 
+Controleer de status van de collector in de **logboekverzamelaar** tabel en zorg ervoor dat de status **verbonden**. Als het **gemaakt**, is het mogelijk dat de verbinding van de collector logboek en parseren is niet voltooid.
+
+![status collector in logboek registreren](./media/log-collector-status.png)
+
 Gebruik het beheerlogboek om te controleren of de logboeken periodiek naar de portal worden geüpload.  
   
 Zie [Problemen met Cloud Discovery oplossen](troubleshooting-cloud-discovery.md) als u tijdens de implementatie problemen ondervindt.
 
+### <a name="optional---create-custom-continuous-reports"></a>Optioneel: aangepaste continue rapporten maken
 
+Nadat u hebt gecontroleerd dat de logboeken worden naar de Cloud App Security wordt geüpload en de rapporten worden gegenereerd, kunt u aangepaste rapporten maken. U kunt nu de detectie van aangepaste rapporten op basis van Azure Active Directory-gebruikersgroepen maken. Bijvoorbeeld, als u wilt zien van de cloud gebruiken van de marketingafdeling kunt u de marketing-groep met de functie importeren groep importeren en maak vervolgens een aangepast rapport voor deze groep. U kunt ook een rapport op basis van IP-adreslabel of IP-adresbereiken aanpassen.
+
+1. Selecteer in de Cloud App Security-portal onder het instellingentandwiel **Cloud Discovery-instellingen** en selecteer vervolgens **continue rapporten beheren**. 
+2. Klik op de **rapport maken** knop en vul de velden in.
+3. Onder de **Filters** kunt u gegevens door gegevensbron door filteren [geïmporteerde gebruikersgroep](user-groups.md), of door [IP-adres-tags en bereiken](ip-tags.md). 
+
+![Aangepast continue rapport](./media/custom-continuous-report.png)
 
 ## <a name="see-also"></a>Zie ook  
 [Werken met Cloud Discovery-gegevens](working-with-cloud-discovery-data.md)   

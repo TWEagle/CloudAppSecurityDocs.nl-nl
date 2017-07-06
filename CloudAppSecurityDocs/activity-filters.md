@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/10/2017
+ms.date: 7/3/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 049ff6838e03e8d6d2fca49b4dd32c60a1a9db93
-ms.sourcegitcommit: 50fac1cec86dfb8170ba9c63a8f58a4bf24e3c5b
-ms.translationtype: HT
+ms.openlocfilehash: 104f44cb4dc890753551d23682a77b75bba510b1
+ms.sourcegitcommit: a0290ac2a662994f7771975ef6c20d0b47e9edd8
+ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/10/2017
+ms.lasthandoff: 07/03/2017
 ---
 # <a name="activities"></a>Activiteiten
 Cloud App Security maakt alle activiteiten van uw verbonden apps voor u zichtbaar. Nadat u Cloud App Security hebt verbonden met een app met behulp van de App-connector, scant Cloud App Security alle activiteiten die hebben plaatsgevonden, waarbij de retroactieve scantijd per app verschilt. Daarna wordt Cloud App Security voortdurend bijgewerkt met nieuwe activiteiten. 
@@ -80,7 +80,7 @@ Hieronder volgt een lijst met de activiteitfilters die kunnen worden toegepast. 
    De ingebouwde IP-labels zijn onder andere:
     - Microsoft-apps (14 hiervan)
     - Anonieme proxy
-    - Botnet
+    - Botnet (ziet u dat de activiteit is uitgevoerd door een botnet met een koppeling voor meer informatie over de specifieke botnet)
     - Darknet scanning IP (IP voor darknet scannen)
     - C & C-server van malware
     - Remote Connectivity Analyzer
@@ -99,8 +99,8 @@ Hieronder volgt een lijst met de activiteitfilters die kunnen worden toegepast. 
 -   Geregistreerde ISP – de internetprovider van waaruit de activiteit is uitgevoerd.   
 
 -  Bron: zoeken op de bron waar de activiteit is gedetecteerd. Dit kan een van de volgende zijn:
-  -    App-connector: logboeken die rechtstreeks uit de API-connector van de app afkomstig zijn.
-  -    Analyse van App-connector: verbeteringen van de Cloud App Security-beveiliging op basis van een informatiescan door de API-connector.
+  - App-connector: logboeken die rechtstreeks uit de API-connector van de app afkomstig zijn.
+  - Analyse van App-connector: verbeteringen van de Cloud App Security-beveiliging op basis van een informatiescan door de API-connector.
   
 
 -   Gebruiker - de gebruiker die de activiteit heeft uitgevoerd, te filteren op domein, groep, naam of organisatie. Als u activiteiten zonder specifieke gebruiker wilt filteren, kunt u de operator 'is niet ingesteld' gebruiken.  
@@ -117,10 +117,14 @@ Hieronder volgt een lijst met de activiteitfilters die kunnen worden toegepast. 
   
 -   Label van de gebruikersagent – ingebouwd label voor de gebruikersagent, bijvoorbeeld alle activiteiten van een verouderde browser of verouderde besturingssystemen.  
     
-  
-## <a name="working-with-the-activity-drawer"></a>De activiteitslade gebruiken
+>[!NOTE]
+> Als op elk moment dat u wilt wissen van de filters, u doen kunt door te klikken op het pictogram filters wissen ![filters wissen pictogram](./media/clear-filters.png).
 
-U kunt meer informatie bekijken over elke activiteit door te klikken op de activiteit in het activiteitenlogboek. Daarmee opent u de activiteitslade, die de volgende acties bevat die u met het bestand kunt uitvoeren:
+## <a name="the-activity-drawer"></a>De activiteit lade
+
+### <a name="working-with-the-activity-drawer"></a>De activiteitslade gebruiken
+
+U kunt meer informatie bekijken over elke activiteit door te klikken op de activiteit in het activiteitenlogboek. Hiermee opent u de activiteit lade dat biedt de volgende aanvullende acties die u op de activiteit uitvoeren kunt:
 
 - Overeenkomend beleid: klik op de koppeling Overeenkomend beleid om een lijst met beleidsregels te zien waarmee deze activiteit overeenkomt.
 - Onbewerkte gegevens weergeven: klik op Onbewerkte gegevens weergeven om te zien welke gegevens daadwerkelijk van de app zijn ontvangen.
@@ -135,6 +139,22 @@ De velden in de Activiteitenlade bieden contextuele koppelingen naar aanvullende
 ![activiteitlade](./media/activity-drawer.png "activiteitlade")  
   
 Zie [Governance-acties voor activiteiten](governance-actions.md#activity-governance-actions) voor een lijst met beschikbare governance-acties.
+
+### <a name="user-insights"></a>Gebruiker insights
+
+De ervaring onderzoek bevat out-of-the-box inzicht in de uitvoerende gebruiker. Met een enkele klik, als u krijgt een uitgebreid overzicht van de gebruiker die zijn betrokken bij inclusief welke locatie ze van de manier waarop verbonden veel waarschuwingen openen is en de metagegevens.
+
+Gebruiker insights weergeven:
+
+1. Klik op de activiteit zelf in de **activiteitenlogboek**.
+
+2. Klik vervolgens op de **gebruiker** tabblad. <br></br> Hiermee opent u de activiteit lade **gebruiker** tabblad bevat de volgende inzichten over de gebruiker:
+    - **Waarschuwingen openen**: het aantal openstaande waarschuwingen die de gebruiker betrokken.
+    - **Schending van het bestand**: het aantal schendingen van het bestand voor bestanden die eigendom zijn van de gebruiker.
+    - **Activiteiten**: het aantal activiteiten uitgevoerd door de gebruiker in de afgelopen 30 dagen.
+    - **Landen**: het aantal landen die de gebruiker uit in de afgelopen 30 dagen verbonden.
+    - **ISP's**: het aantal ISP's die de gebruiker van afgelopen 30 dagen verbonden.
+    - **IP-adressen**: het aantal IP-adressen van de gebruiker verbonden uit in de afgelopen 30 dagen.
 
 
 ## <a name="see-also"></a>Zie ook  

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/14/2017
+ms.date: 6/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 292b4c6408aa526184aefb57ee594b72b3262ce7
-ms.sourcegitcommit: cb8238610222953751ff714b346a0b4cf73ac40c
-ms.translationtype: HT
+ms.openlocfilehash: 77f9d0175a35b95ed45632fce7644809912acb09
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/16/2017
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="siem-integration"></a>Integratie van SIEM
     
@@ -27,26 +27,13 @@ Wanneer u uw SIEM voor het eerst integreert met Cloud App Security, worden activ
 
 ## <a name="siem-integration-architecture"></a>Architectuur van SIEM-integratie
 
-De SIEM-agent wordt geïmplementeerd in het netwerk van uw organisatie. Wanneer de agent is geïmplementeerd en geconfigureerd, pollt deze de gegevenstypen die zijn geconfigureerd (waarschuwingen en activiteiten) met Cloud App Security RESTful-API's.
+De SIEM-agent wordt geïmplementeerd in het netwerk van uw organisatie. Wanneer geïmplementeerd en geconfigureerd, wordt de gegevens ophaalt typen die zijn geconfigureerd (waarschuwingen en activiteiten) met Cloud App Security RESTful-API's.
 Het verkeer wordt verzonden via een gecodeerd HTTPS-kanaal op poort 443.
 
 Wanneer de SIEM-agent de gegevens van Cloud App Security ophaalt, stuurt de Syslog berichten naar uw lokale SIEM met behulp van de netwerkconfiguraties die u hebt opgegeven tijdens de installatie (TCP of UDP met een aangepaste poort). 
 
 ![Architectuur van SIEM-integratie](./media/siem-architecture.png)
 
-## <a name="sample-siem-logs"></a>Voorbeelden van SIEM-logboeken
-
-De logboeken die zijn opgegeven voor uw SIEM van Cloud App Security zijn CEF over Syslog. In de volgende voorbeeldlogboeken kunt u het type gebeurtenis zien dat meestal wordt verzonden door Cloud App Security naar uw SIEM-server. Hierin kunt u zien wanneer de waarschuwing is geactiveerd, het **type gebeurtenis**het **beleid** dat is geschonden, de **gebruiker** die de gebeurtenis heeft geactiveerd, de **app** de gebruiker heeft gebruikt voor het maken van de schending en de **URL** waarvan de waarschuwing afkomstig is:
-
-Voorbeeld van activiteitenlogboek: 
-  
-2017-05-12T13:15:32.131Z CEF:0|MCAS|SIEM_Agent|0.97.33|EVENT_CATEGORY_UPLOAD_FILE|**Bestand uploaden**|0|externalId=AVv8zNojeXPEqTlM-j6M start=1494594932131 end=1494594932131 msg=**Bestand uploaden: passwords.txt** **suser=admin@contoso.com** doel**ServiceName=Jive Software** dvc= requestClientApplication= cs1Label=**portalURL cs1=https://contoso.cloudappsecurity.com**/#/audits?activity.id\=eq(AVv8zNojeXPEqTlM-j6M,) cs2Label=uniqueServiceAppIds cs2=APPID_JIVE cs3Label=targetObjects cs3=test.txt c6a1Label="Device IPv6 Address" c6a1=
-
-
-
-Voorbeeld van waarschuwingenlogboek: 
-
-2017-05-12T13:25:57.640Z CEF:0|MCAS|SIEM_Agent|0.97.33|ALERT_CABINET_EVENT_MATCH_AUDIT|asddsddas|3|externalId=5915b7e50d5d72daaf394da9 start=1494595557640 end=1494595557640 msg=**Activiteitsbeleid aanmeldingen bij Jive** is geactiveerd door admin@contoso.com **suser=admin@contoso.com** doel**ServiceName=Jive Software** cn1Label=riskScore cn1= cs1Label=portal**URL cs1=https://contoso.cloudappsecurity.com**/#/alerts/5915b7e50d5d72daaf394da9 cs2Label=uniqueServiceAppIds cs2=APPID_JIVE cs3Label=relatedAudits cs3=AVv81ljWeXPEqTlM-j-j
 
 
 ## <a name="how-to-integrate"></a>Het integreren van
@@ -65,10 +52,10 @@ De integratie met uw SIEM vindt in drie stappen plaats:
 
 ### <a name="step-1-set-it-up-in-the-cloud-app-security-portal"></a>Stap 1: De integratie instellen in de Cloud App Security-portal
 
-1. Klik in de Cloud App Security-portal onder het tandwiel Instellingen op **SIEM-agents**.
+1. Klik in de Cloud App Security-portal onder het instellingentandwiel **Security extensions** en klik vervolgens op de **SIEM agents** tabblad.
 
-2. Klik op SIEM-agent toevoegen om de wizard te starten.
-3. Klik in de wizard op **SIEM-agent toevoegen**.    
+2. Klik op het plusteken om start de **toevoegen SIEM-agent** wizard.
+3. Klik in de wizard op **SIEM-agent toevoegen**. 
 4. Vul in de wizard een naam in, **selecteer uw SIEM-indeling** en stel **geavanceerde instellingen** in die relevant zijn voor deze indeling. Klik op **Volgende**.
 
    ![Algemene SIEM-instellingen](./media/siem1.png)

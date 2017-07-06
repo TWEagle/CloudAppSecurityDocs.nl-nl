@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/2/2017
+ms.date: 7/2/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,34 +13,73 @@ ms.technology:
 ms.assetid: 9cb3594e-5007-48be-9b4f-e1d23355d86e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2fcc085cc53d2d7580640022029b1a528bea416a
-ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
-translationtype: HT
+ms.openlocfilehash: 87653e25b6bb7344aa7670329d50aadae9cc9e02
+ms.sourcegitcommit: a0290ac2a662994f7771975ef6c20d0b47e9edd8
+ms.translationtype: MT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 07/03/2017
 ---
 # <a name="working-with-the-risk-score"></a>Werken met de risicoscore  
 
-## <a name="the-cloud-app-catalog"></a>De Cloud App-catalogus
+## <a name="the-cloud-app-catalog"></a>De catalogus met Cloud-App
 
-Gebruik de Cloud App-catalogus om beter te begrijpen welke cloud-apps kunnen worden ontdekt door de Cloud Discovery van Cloud App Security.
+De catalogus met Cloud App biedt een volledig overzicht van wat Cloud Discovery identificeert. Cloud Discovery analyseert uw verkeerslogboeken op basis van de catalogus met Cloud App Security cloud-app van meer dan rond 14.000 cloud-apps die worden beoordeeld en gewaardeerd op basis van meer dan 50 kenmerken, om u doorlopende inzicht in de cloud gebruikt, schaduw-IT, en het risico Shadow IT oplevert voor uw organisatie te bieden.
+Met de **catalogus met cloud-apps** wordt het risico voor uw cloud-apps beoordeeld op basis van regelgevingscertificeringen, industrienormen en best practices. In de catalogus met cloud-apps worden vier aanvullende processen uitgevoerd om de catalogus up-to-date te houden:
+1.  Geautomatiseerde gegevensextractie rechtstreeks vanuit de cloud-app (voor kenmerken zoals SOC 2-naleving).
+2.  Geautomatiseerde geavanceerde gegevensextractie voor gegevens met Cloud App Security-algoritmen (voor kenmerken zoals HTTP-beveiligingsheaders).
+3.  Continue analyses door het analistenteam van Cloud App Security (voor kenmerken zoals versleuteling van inactieve gegevens).
+4.  Klantgebaseerde revisieaanvragen, gebaseerd op klantaanvragen voor wijzigingen in de catalogus met cloud-apps. Alle aanvragen worden bekeken door ons cloudanalistenteam en bijgewerkt op basis van hun bevindingen.
+  
+![Catalogus met cloud-Apps](./media/cloud-app-catalog.png)  
 
-De Cloud App-catalogus bevat meer dan 14.000 SaaS-toepassingen die kunnen worden weergegeven (gefilterd) op basis van naam, domein, risicoscore, categorie of beschikbare beveiligingsfuncties.
+De aanvraag door business units voor cloud-apps als een oplossing voor hun behoeften aan veranderende groeit. De catalogus met Cloud-app kunt u goed kiezen welke apps aanpassen aan de beveiligingsvereisten van uw organisatie en de noodzaak om up-to-date met de meest recente beveiligingsstandaarden, beveiligingsproblemen en inbreuken op. Bijvoorbeeld, als u wilt vergelijken CRM-apps en controleert u of ze correct zijn beveiligd, kunt u de pagina app-catalogus filteren op relevante apps die u wilt: In de **Cloud-appcatalogus** pagina onder **bladeren op categorie** Selecteer zowel **CRM**. 
 
-![toegang tot de cloud app-catalogus](./media/risk-cac-dropdown.png)
+Gebruik vervolgens de **Geavanceerd** filters en set **naleving risicofactor** > **SOC 2** gelijk is aan **True**; **Naleving risicofactor** > **ISO 27001** gelijk is aan **True**; **Beveiliging risicofactor** > **Data-at-rest versleuteling** gelijk is aan **True**; **Beveiliging risicofactor** > **Data-at-rest versleuteling** gelijk is aan **True**; **Beveiliging risicofactor** > **Admin audittrail** gelijk is aan **True** en **beveiliging risicofactor** > **gebruiker audittrail** gelijk is aan **True**.
 
-## <a name="discovery-requests"></a>Detectieaanvragen
+![Cloud-app-catalogusfilters](./media/cloud-app-catalog-filters.png)
 
-Informatie en risicoscores in de Cloud-appcatalogus zijn gebaseerd op een groot aantal bronnen. Microsoft spant zich in om de gegevens actueel te houden, maar kan de nauwkeurigheid van de gegevensbronnen niet garanderen. 
+Nadat de resultaten worden gefilterd, kunt u de relevante apps bekijken en vinden die het beste past bij uw behoeften.
 
-Neem contact met ons op als u denkt dat de informatie over een app is verouderd.
+## <a name="cloud-app-catalog-filters"></a>Catalogus met cloud-App-filters
 
--    Score-update aanvragen – als u wenst dat ons team deze cloud-app opnieuw beoordeelt.
--    Nieuwe gegevens doorgeven (per specifiek veld of algemeen) – als u denkt dat de informatie over de app is verouderd.
+Er zijn basiseigenschappen en geavanceerde filters voor Cloud App-catalogus. Een complexe filter gebruiken om te creëren de geavanceerde optie waarin alle van de volgende opties:
 
-![risicogegevens bijwerken](./media/risk-cac-feedback.png)
+- **App-tags**: labels kunnen u de catalogus met Cloud App aanpassen. 
+  U kunt kiezen uit een **Sanctioned**, **Unsanctioned** of u aangepaste labels voor apps kunt maken. Deze tags kunnen vervolgens worden gebruikt als filters voor dieper verdiepen specifieke typen apps die u wilt onderzoeken. 
+- **Apps en domeinen**: Hiermee kunt u zoeken naar specifieke apps of apps die worden gebruikt in een specifieke domeinen. 
+- **Categorieën**: het filter categorieën, dat aan de linkerkant van de pagina bevindt zich, kunt u zoeken naar typen apps volgens app-categorieën, bijvoorbeeld apps sociale netwerken, opslag-Cloud-apps, enzovoort. U kunt meerdere categorieën tegelijk of één categorie selecteren en vervolgens de basiseigenschappen en geavanceerde filters boven deze op toepassen.
+- **Naleving risicofactor**: Hiermee kunt u naar een specifieke normen gehanteerd zoeken, certificering en conformiteit die de app kan voldoen aan de (HIPAA, ISO 27001, SOC 2, PCI-DSS, enz.).
+- **Algemene risicofactor**: Hiermee kunt u naar algemene risicofactoren zoals Consumer populariteit, Data zoeken center landinstellingen, enzovoort.
+- **Risicoscore**: Hiermee kunt u filteren op apps met risico score zodat u zich richten kunt op, bijvoorbeeld alleen zeer risicovolle apps controleren.
+- **Beveiliging risicofactor**: kunt u filteren op basis van specifieke veiligheidsmaatregelen (zoals versleuteling op rest, meervoudige verificatie, enz.).
 
-Bovendien nodigen we u uit voorstellen in te dienen voor de toevoeging van cloud-apps die uw organisatie gebruikt die op dit moment niet kunnen worden gedetecteerd door Cloud Discovery.
+## <a name="suggesting-a-change"></a>Een wijziging wordt voorgesteld
 
-![nieuwe apps voorstellen](./media/risk-suggest-app.png)
+Als u een nieuwe app in uw omgeving die door Cloud App Security, een nieuwe risicofactor of een score-update nog niet is berekend of app-gegevens is verouderd vinden, kunt u een overzicht van de app aanvragen:
+
+**Een nieuwe app voorstellen:**
+1. Aan de bovenkant van de **gedetecteerde apps** pagina, klikt u op de drie puntjes en selecteer vervolgens **nieuwe app voorstellen**. 
+
+  ![Een app cloud App Security voorstellen](./media/suggest-new-app.png)
+
+2. In de **suggesties nieuwe cloud-app** pop-up vullen in informatie over de nieuwe app, inclusief de naam en het domein van de app. 
+
+  ![Een app pop en Cloud App Security voorstellen](./media/suggest-new-app-popup.png)
+
+3. We raden u aan als u het vakje voor Cloud App Security analisten contact met u als u meer informatie over de app is vereist en zodat u kan worden bijgewerkt wanneer de analyse is voltooid.
+
+**Een risicofactor, score, bijwerken of bijwerken van app-gegevens:**
+
+1. In de **Cloud-Appcatalogus** pagina in de app-rij die u wilt bijwerken, klik op de drie punten aan het einde van de rij en selecteer **score update aanvragen**.
+
+  ![Score update aanvragen](./media/request-score-update.png)
+
+2. In de **raden een verbetering** pop-up selecteren of u wilt aanvragen van een update score raden een nieuwe risicofactor of update app-gegevens.
+
+  ![voorstellen en verbetering en Cloud App Security](./media/suggest-improvement-popup.png)
+
+3. We raden u aan als u het vakje voor Cloud App Security analisten contact met u als u meer informatie over de app is vereist en zodat u kan worden bijgewerkt wanneer de analyse is voltooid.
+ 
 
 
 ## <a name="customizing-the-risk-score"></a>De risicoscore aanpassen
@@ -63,7 +102,7 @@ Het is belangrijk dat u even de tijd neemt om de standaardgewichten van de score
   
 3.  Daarnaast kunt u instellen of bepaalde waarden niet beschikbaar voor of niet van toepassing op de scoreberekening zijn. Wanneer ze zijn opgenomen, dragen n.v.t.-waarden negatief bij aan de berekende score.  
   
-     ![score](./media/score.png "score")  
+  ![score](./media/score.png "score")  
 
 Alle informatie die nodig is om te begrijpen hoe onze risicoscores worden samengesteld, is beschikbaar in de Cloud App Security-portal.
 Gebruik de knop 'i' aan de rechterkant van elke veldnaam in het profiel van de app voor een beter begrip van het gewicht van een risicofactor in een specifieke risicocategorie. Dit biedt informatie over hoe Cloud App Security precies een specifieke risicofactor bepaalt. De score is de waarde van de risicofactor op een schaal van 1-10 + het gewicht in de risicocategorie:
@@ -73,6 +112,17 @@ Gebruik de knop 'i' aan de rechterkant van elke veldnaam in het profiel van de a
 Beweeg de muisaanwijzer over de risicocategoriescore om het gewicht van een risicocategorie in de totale score van een app te begrijpen:
 
 ![risicocategoriegewicht](./media/risk-category-weight.png)
+
+## <a name="overriding-the-risk-score"></a>De risicoscore overschrijven
+U kunt de risicoscore van een app zonder verandert de manier waarop die deze zodat u onmiddellijke resultaten voor uw organisatie ophalen worden gewogen overschrijven. Als de risicoscore van een LOB-app die u gebruikt 8 en het is erkend en aangemoedigd door uw organisatie, wilt u mogelijk het risico score tot 10 wijzigen. 
+
+Voor het onderdrukken van de risicoscore de **gedetecteerde apps** tabel of in de **Cloud-appcatalogus**, klik op de drie punten rechts van elke app en selecteer **risicoscore overschrijven**.
+
+![cloud app security gedetecteerde app-risicoscore overschrijven](./media/override-risk-score.png)
+
+Na het bijwerken van de score, kunt u de opmerkingen bij de app om uw zakelijke redenen voor het wijzigen van deze app score wissen aan andere beheerders kunt opnemen. 
+
+U kunt ook de opmerkingen bij om de reden van de wijziging te wissen wanneer iedereen de app bekijkt toevoegen.
 
 
  
