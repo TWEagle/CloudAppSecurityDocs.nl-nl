@@ -1,6 +1,6 @@
 # Meer informatie en verkennen
 ## [Wat is CAS?](what-is-cloud-app-security.md)
-## [Opmerkingen bij de release](release-notes.md)
+## [Wat is er nieuw?](release-notes.md)
 # Implementeer
 ## [Aan de slag](getting-started-with-cloud-app-security.md)
 ## [Basisinstellingen](general-setup.md)
