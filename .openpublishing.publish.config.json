@@ -19,9 +19,7 @@
     }
   ],
   "notification_subscribers": [],
-  "branches_to_filter": [
-    "master-oldev"
-  ],
+  "branches_to_filter": [    "live-oldev", "live" ],
   "git_repository_url_open_to_public_contributors": "https://github.com/Microsoft/CloudAppSecurityDocs.nl-nl",
   "git_repository_branch_open_to_public_contributors": "live",
   "skip_source_output_uploading": false,
