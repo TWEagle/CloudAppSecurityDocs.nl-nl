@@ -1,7 +1,7 @@
-## <a name="microsoft-open-source-code-of-conduct"></a>Microsoft Open Source-gedragscode
+## <a name="microsoft-open-source-code-of-conduct"></a>Gedragscode voor Microsoft Open Source
 
-Dit project onderschrijft de [Microsoft Open Source gedragscode](https://opensource.microsoft.com/codeofconduct/).
-Zie voor meer informatie de [Veelgestelde vragen over gedragscode](https://opensource.microsoft.com/codeofconduct/faq/) of neem contact op met [ opencode@microsoft.com ](mailto:opencode@microsoft.com) met aanvullende vragen of opmerkingen.
+Voor dit project geldt de [Gedragscode voor Microsoft Open Source](https://opensource.microsoft.com/codeofconduct/).
+Zie de [Veelgestelde vragen over de gedragscode](https://opensource.microsoft.com/codeofconduct/faq/) voor meer informatie of neem contact op met [ opencode@microsoft.com ](mailto:opencode@microsoft.com) als u aanvullende vragen of opmerkingen hebt.
 
 # <a name="docsmicrosoftcom-github-repository"></a>Docs.microsoft.com Github-opslagplaats
 
