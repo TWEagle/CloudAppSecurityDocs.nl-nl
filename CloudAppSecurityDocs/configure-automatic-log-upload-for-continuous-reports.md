@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/3/2017
+ms.date: 7/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,22 +13,13 @@ ms.technology:
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 11d3a78803c2a22f7d08bdab9d70aec73124ff8b
-ms.sourcegitcommit: a0290ac2a662994f7771975ef6c20d0b47e9edd8
+ms.openlocfilehash: d5f618feb038083dd9140a1c53d301788f561a4e
+ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 08/03/2017
 ---
-# <a name="configure-automatic-log-upload-for-continuous-reports"></a>Automatisch uploaden van logboeken configureren voor doorlopende rapporten
-Met een logboekverzamelaar kunt u het uploaden van logboeken vanaf uw netwerk eenvoudig automatiseren. De logboekverzamelaar wordt uitgevoerd op uw netwerk en ontvangt logboeken via Syslog of FTP. Elk logboek wordt automatisch verwerkt, gecomprimeerd en naar de portal verzonden. FTP-logboeken zijn geüpload naar de Cloud App Security nadat het bestand klaar bent met de FTP-overdracht voor de Logboekverzamelaar en Syslog, de Logboekverzamelaar schrijft de logboeken ontvangen op de schijf en het bestand uploadt en Cloud App Security wanneer de bestandsgrootte groter dan 40 kb is.
-
-Nadat een logboek is geüpload naar de Cloud App Security, wordt deze verplaatst naar een back-map die de laatste 20 logboeken op elk gewenst moment worden opgeslagen. Wanneer nieuwe logboeken binnenkomen, worden de oude versie verwijderd. Wanneer de schijfruimte van logboek collector vol is, komt de logboekverzamelaar nieuwe logboeken totdat er meer schijfruimte vrij is.
-
-Voordat u automatische logboekbestandsverzameling instelt, moet u controleren of uw logboek overeenkomt met het verwachte logboektype, zodat uw bestand kan worden geparseerd met Cloud App Security. 
-
->[!NOTE]
->Cloud App Security biedt ondersteuning voor het doorsturen van logboeken vanaf uw SIEM-server naar de logboekverzamelaar, ervan uitgaande dat de logboeken worden doorgestuurd in hun oorspronkelijke indeling. Het wordt echter ten zeerste aangeraden de logboekverzamelaar rechtstreeks met uw firewall en/of proxy te integreren.
-
+# <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance"></a>Logboek automatisch uploaden voor continue rapporten op een virtueel apparaat configureren
 
 ## <a name="technical-requirements"></a>Technische vereisten
 - Hypervisor: Hyper-v- of VMware
@@ -52,7 +43,7 @@ De logboekverzamelaar heeft een ingebouwd beveiligingsmechanisme dat de snelheid
 ### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>Stap 1 - Webportalconfiguratie: gegevensbronnen definiëren en deze koppelen aan een logboekverzamelaar  
   
 1.  Ga naar de pagina met instellingen voor automatisch uploaden:  
-    Klik in de Cloud App Security-portal op het pictogram Instellingen ![pictogram Instellingen](./media/settings-icon.png "settings icon") en vervolgens op **Logboekverzamelaars**.  
+    Klik in de Cloud App Security-portal op het Instellingenpictogram ![Instellingenpictogram](./media/settings-icon.png "Instellingenpictogram"), gevolgd door **Logboekverzamelaars**.  
   
 3.  Maak voor elke firewall of proxy waaruit u logboeken wilt uploaden een overeenkomende gegevensbron aan:  
   
@@ -60,7 +51,7 @@ De logboekverzamelaar heeft een ingebouwd beveiligingsmechanisme dat de snelheid
   
     b.  Geef uw proxy of firewall een **Naam**.  
   
-    c.  Selecteer het apparaat in de lijst **Bron**.  
+    c.  Selecteer het apparaat in de lijst **Bron**. Als u selecteert **aangepaste logboekindeling** om te werken met een netwerkapparaat die niet specifiek wordt vermeld, Zie [werken met de aangepaste log parser](custom-log-parser.md) voor configuratie-instructies.
   
     d.  Vergelijk uw logboek met het voorbeeld van de verwachte logboekindeling. Als de bestandsindeling van uw logboek niet met dit voorbeeld overeenkomt, moet u uw gegevensbron toevoegen onder **Overig**.  
   
@@ -90,7 +81,7 @@ De logboekverzamelaar heeft een ingebouwd beveiligingsmechanisme dat de snelheid
 1.  Open Hyper-V-beheer.  
   
 2.  Selecteer **Nieuw** en vervolgens **Virtuele machine** en klik dan op **Volgende**.  
- ![detectie hyperv virtuele machine](./media/discovery-hyperv-virtual-machine.png "discovery hyperv virtual machine")  
+ ![detectie van Hyper-v virtuele machine](./media/discovery-hyperv-virtual-machine.png "detectie Hyper-v virtuele machine")  
   
 3.  Geef een **naam** voor de nieuwe virtuele machine op, bijvoorbeeld CloudAppSecurityLogCollector01. Klik vervolgens op **Volgende**.  
   
@@ -144,7 +135,7 @@ Configureer volgens de richtlijnen in het dialoogvenster uw netwerkfirewalls en 
   
      `London Zscaler - Destination path: 614`  
   
-     `SF Blue Coat - Destination path: \\CloudAppSecurityCollector01\BlueCoat\`  
+     BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\  
   
 ### <a name="step-5---verify-the-successful-deployment-in-the-cloud-app-security-portal"></a>Stap 5 - Controleer of de implementatie is voltooid in de Cloud App Security-portal
 

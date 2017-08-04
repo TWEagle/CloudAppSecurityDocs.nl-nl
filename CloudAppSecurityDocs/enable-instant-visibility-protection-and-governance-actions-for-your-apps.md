@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 96f6aeb2ec67175bde4ed94199405d6457797659
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: 9ed4b87b3665509a4e842d985e02d414bfa532bf
+ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="connect-apps"></a>Apps koppelen 
 App-connectors maken gebruik van de API's van app-providers. Hierdoor zijn de apps waarmee u verbinding maakt, beter zichtbaar en controleerbaar voor Cloud App Security.  
@@ -66,6 +66,7 @@ Afhankelijk van de app waarmee u verbinding maakt (zie de onderstaande tabel), m
   
 De volgende tabel geeft per cloud-app aan welke vaardigheden met App-connectors worden ondersteund:  
 
+> [!div class="mx-tableFixed"]
 ||**Office 365**|**Box**|**Okta**|**G Suite**|**ServiceNow**|**Salesforce**|**Dropbox**|**AWS**|  
 |-|-|-|-|-|-|-|-|-|  
 |**Lijst van accounts**|✔|✔|✔|✔|✔|✔|✔|✔|  

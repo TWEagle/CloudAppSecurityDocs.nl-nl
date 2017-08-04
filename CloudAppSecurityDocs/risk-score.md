@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/2/2017
+ms.date: 7/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,17 +13,17 @@ ms.technology:
 ms.assetid: 9cb3594e-5007-48be-9b4f-e1d23355d86e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 87653e25b6bb7344aa7670329d50aadae9cc9e02
-ms.sourcegitcommit: a0290ac2a662994f7771975ef6c20d0b47e9edd8
+ms.openlocfilehash: c08aa36d651c060f571e580c531a6d4eee22094c
+ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="working-with-the-risk-score"></a>Werken met de risicoscore  
 
 ## <a name="the-cloud-app-catalog"></a>De catalogus met Cloud-App
 
-De catalogus met Cloud App biedt een volledig overzicht van wat Cloud Discovery identificeert. Cloud Discovery analyseert uw verkeerslogboeken op basis van de catalogus met Cloud App Security cloud-app van meer dan rond 14.000 cloud-apps die worden beoordeeld en gewaardeerd op basis van meer dan 50 kenmerken, om u doorlopende inzicht in de cloud gebruikt, schaduw-IT, en het risico Shadow IT oplevert voor uw organisatie te bieden.
+De catalogus met Cloud App biedt een volledig overzicht van wat Cloud Discovery identificeert. Cloud Discovery analyseert uw verkeerslogboeken op basis van de catalogus met Cloud App Security cloud-app van meer dan 15.000 cloud-apps die worden beoordeeld en gewaardeerd op basis van meer dan 60 risicofactoren u doorlopende inzicht in de cloud gebruikt, schaduw-IT, en het risico Shadow IT oplevert voor uw organisatie opgeven.
 Met de **catalogus met cloud-apps** wordt het risico voor uw cloud-apps beoordeeld op basis van regelgevingscertificeringen, industrienormen en best practices. In de catalogus met cloud-apps worden vier aanvullende processen uitgevoerd om de catalogus up-to-date te houden:
 1.  Geautomatiseerde gegevensextractie rechtstreeks vanuit de cloud-app (voor kenmerken zoals SOC 2-naleving).
 2.  Geautomatiseerde geavanceerde gegevensextractie voor gegevens met Cloud App Security-algoritmen (voor kenmerken zoals HTTP-beveiligingsheaders).

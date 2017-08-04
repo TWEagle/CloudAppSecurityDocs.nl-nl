@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/10/2017
+ms.date: 7/30/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7f1b4f7fc213dee315b723bf09d88dd7867c14e6
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: 148c9b275ce77a963dc27c77be791d5dcd37379a
+ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="deploy-cloud-app-security"></a>Cloud App Security implementeren
 Met Cloud App Security kunt u profiteren van de voordelen van cloudtoepassingen, terwijl u de controle houdt over uw bedrijfsbronnen. Dit gebeurt door de zichtbaarheid van de activiteit van de cloud en de beveiliging van bedrijfsgegevens te verbeteren. In dit onderwerp wordt u stapsgewijs begeleid door de stappen voor het instellen en gebruiken van Cloud App Security.  
@@ -65,7 +65,7 @@ Vereiste taak: verkeerslogboeken uploaden **Een doorlopend Cloud Discovery-rappo
  3. Voeg uw bronnen toe op het tabblad **Gegevensbronnen**.
  4. Configureer de logboekverzamelaar op het tabblad **Logboekverzamelaars**.
  
- **Een momentopnamerapport van Cloud Discovery maken**
+**Een momentopnamerapport van Cloud Discovery maken**
 
  1. Ga naar **Detecteren** > **Nieuw momentopnamerapport maken** en volg de weergegeven stappen.
 
@@ -109,19 +109,19 @@ Aanbevolen taak: gegevens van uw organisatie toevoegen
 2. Voer uw e-mailadressen en weergavenaam in onder **Identiteit afzender**.
 3. Upload de e-mailsjabloon van uw organisatie onder **E‑mailontwerp**.
 
- **Meldingen voor beheerders instellen**
+**Meldingen voor beheerders instellen**
 
 1. Kies uw gebruikersnaam op de navigatiebalk en ga vervolgens naar **Gebruikersinstellingen**.
 2. Configureer onder **Meldingen** de methoden die u wilt instellen voor systeemmeldingen.
 3. Kies **Opslaan**.
 
- **Metrische gegevens voor de score aanpassen**
+**Metrische gegevens voor de score aanpassen**
 
 1. Ga naar **Instellingen** > **Cloud Discovery-instellingen**.
 2. Configureer het belang van verschillende risicowaarden onder **Configuratie scorewaarden**.
 3. Kies **Opslaan**.
 
- De risicoscores die zijn gegeven aan de gedetecteerde apps worden nu nauwkeurig geconfigureerd op basis van de behoeften en prioriteiten van uw organisatie.
+De risicoscores die zijn gegeven aan de gedetecteerde apps worden nu nauwkeurig geconfigureerd op basis van de behoeften en prioriteiten van uw organisatie.
 
 **Waarom zou ik de omgeving aan mijn persoonlijke voorkeuren aanpassen?**
 Sommige functies werken het beste wanneer u ze aanpast aan uw behoeften. Biedt uw gebruikers een betere ervaring met uw eigen e‑mailsjablonen, besluit welke meldingen u ontvangt en pas de risicoscorewaarden aan zodat deze aansluiten bij de voorkeuren van uw organisatie.
@@ -137,12 +137,12 @@ Aanbevolen taak: belangrijke instellingen configureren
 3. Voer de **details**, **locatie**, **tags** en **categorie** van het IP-bereik in.
 4. Kies **Maken**.
 
- Nu kunt u IP-adrestags gebruiken tijdens het maken van beleidsregels en tijdens het filteren en maken van gegevensweergaven.
+ U kunt nu IP-tags gebruiken wanneer u beleidsregels maakt, en wanneer u filteren en continue rapporten maken.
 
- **Weergaven maken**
+**Continue rapporten maken**
 
 1. Ga naar **Instellingen** > **Cloud Discovery-instellingen**.
-2. Kies (+) **Gegevensweergave toevoegen** onder **Gegevensweergaven**.
+2. Onder **continue rapporten beheren**, kies **rapport maken**.
 3. Volg de configuratiestappen.
 4. Kies **Maken**.
 

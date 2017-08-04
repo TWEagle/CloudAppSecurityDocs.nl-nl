@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/23/2017
+ms.date: 7/16/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 776d7589-acdb-4cb6-99a0-3be2f7b6aab2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d50f77f5b19f9d965209639861a5672d2bcfc730
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: ef16afaa0990b86703f76fe817f86bcdd6ba38e6
+ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="connect-salesforce-to-microsoft-cloud-app-security"></a>Verbinding maken tussen Salesforce en Microsoft Cloud App Security
 In deze sectie vindt u instructies voor het maken van een verbinding tussen Cloud App Security en uw bestaande Salesforce-account met behulp van de connector-API voor de app.  
@@ -38,11 +38,12 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
   
     -   Meld u aan bij uw SalesForce-account en ga naar de **instellingspagina**.  
   
-    -   Ga onder **Gebruikers beheren** naar de pagina **Profielen**.  
+    -   Onder **gebruikers beheren**, gaat u naar de **gebruikersprofielen** pagina.  
   
          ![salesforce, gebruikers beheren, profielen](./media/salesforce-manageusers-profiles.png "salesforce, gebruikers beheren, profielen")  
   
-    -   Kies het profiel dat u gebruikt voor het implementeren van Cloud App Security en klik op **Bewerken**. Dit is het profiel dat voor het serviceaccount van Cloud App Security moet worden gebruikt om de app-connector in te stellen.  
+    -   Een nieuw profiel maken door te klikken op **nieuw**. 
+    - Kies het profiel dat u zojuist hebt gemaakt voor het implementeren van Cloud App Security en klik op **bewerken**. Dit is het profiel dat voor het serviceaccount van Cloud App Security moet worden gebruikt om de app-connector in te stellen.  
   
          ![salesforce, profiel bewerken](./media/salesforce-edit-profile.png "salesforce, profiel bewerken")  
   
@@ -108,7 +109,7 @@ SalesForce-gebeurtenissen worden door de Cloud App Security als volgt verwerkt:
   
 - Aanmeldgebeurtenissen om de 15 minuten
 - Audittrail-instellingen om de 15 minuten
-- Het gebeurtenislogboek word door Salesforce elke 24 uur geëxporteerd (12:00 UTC) 
+- SalesForce logboeken bijhouden gebruik activiteiten voor een periode van 24 uur vanaf 12:00 uur met 11:59 uur. UTC-tijd. Gebeurtenissen in Salesforce genereren logboekgegevens in realtime. Echter, logboekbestanden worden gegenereerd door Salesforce de dag nadat een gebeurtenis, tijdens de piekuren plaatsvindt. Logbestandsgegevens is daarom niet beschikbaar voor ten minste één dag na een gebeurtenis. Zie voor meer informatie over gebeurtenissen Salesforce [met bewaking](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/using_resources_event_log_files.htm).
 
 
 ## <a name="see-also"></a>Zie ook  
