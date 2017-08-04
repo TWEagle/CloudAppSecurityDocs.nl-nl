@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/26/2017
+ms.date: 7/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,17 +13,18 @@ ms.technology:
 ms.assetid: 4b6ac04a-4653-4c4a-bd6f-5926743475cc
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c046cefa687b67796e2039db079e51f510ea2ff0
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: 1c796c3933be0678183eae6e52ffd92097880ed8
+ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="troubleshooting-app-connectors-using-error-messages"></a>Foutberichten gebruiken om problemen met app-connectors op te lossen
 
 App-connectorfouten worden weergegeven in het dialoogvenster van de app-connector nadat er is geprobeerd verbinding te maken met een cloud-app met de API app-connector.
 
 
+> [!div class="mx-tableFixed"]
 |Foutbericht|Relevante app|Beschrijving|Oplossing|
 |----|----|----|------------|
 |HttpRequestFailure: De server heeft de volgende fout geretourneerd: 400 - Ongeldige aanvraag: {"error":{"code":"AF20012","message":"De opgegeven tenant-id (Tenant_ID wordt hier ingevoegd) is onjuist geconfigureerd in het systeem."|Office 365 |Er zijn geen toegewezen Office 365-licenties gevonden. |Wijs ten minste één Office 365-licentie toe aan uw tenant.| 

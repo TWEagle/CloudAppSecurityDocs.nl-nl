@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ced7bfb6581612610fab57529df3c87d36a97ae5
-ms.sourcegitcommit: dc386d21f9196c30460ca57e85a9a52077c44bf5
+ms.openlocfilehash: 7e0287543014e7bc1807d0ccceb302a75cbaa91b
+ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/05/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="working-with-discovered-apps"></a>Werken met gedetecteerde apps
 
@@ -51,6 +51,9 @@ In de **gedetecteerde apps** pagina onder **bladeren op categorie** Selecteer zo
 ![Gedetecteerde app-filters](./media/discovered-app-filters.png)
 
 Nadat de resultaten worden gefilterd, kunt u [goed en blokkeren](governance-discovery.md) ze met behulp van het selectievakje in bulk-actie voor goed ze allemaal in één actie. Nadat ze niet-toegestane zijn kunt u een blokkerende script kunt gebruiken om te blokkeren ze worden gebruikt in uw omgeving.
+
+U kunt naar dive zelfs diepere, gedetecteerde apps op het niveau van het subdomein onderzoeken en identificeren van specifieke exemplaren die gebruikt worden. 
+
 
 ## <a name="discovered-app-filters"></a>Gedetecteerde app-filters
 
@@ -150,7 +153,7 @@ Cloud Discovery-gegevens verwijderen:
 
 
 
-## <a name="see-also"></a>Zie ook
+## <a name="see-also"></a>Zie tevens
  
 [Momentopnamerapporten maken van Cloud Discovery](create-snapshot-cloud-discovery-reports.md)
 

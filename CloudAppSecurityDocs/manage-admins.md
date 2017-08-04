@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/10/2017
+ms.date: 7/31/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,17 +13,17 @@ ms.technology:
 ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f4d336b48dc7f3655a60d64ec4fe7e066db7f438
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: 4035cbaa331470cd762550470e9543b8fa256fe0
+ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 08/03/2017
 ---
 ## <a name="managing-admin-access"></a>Beheerderstoegang beheren
 
 Cloud App Security ondersteunt op rollen gebaseerd toegangsbeheer. De volgende Office 365- en Azure AD-beheerdersrollen hebben standaard toegang tot Cloud App Security:
 
-- Globale beheerder en beveiligingsbeheerder: beheerders met **volledige toegang** hebben volledige machtigingen in Cloud App Security om beheerders toe te voegen, beleidsregels en -instellingen toe te voegen, logboeken te uploaden en beheeracties uit te voeren.
+- Globale beheerder en Beveiligingsbeheerder: beheerders met **volledige toegang** beschikken over volledige machtigingen in de Cloud App Security admins toevoegen, het toevoegen van beleidsregels en instellingen, het uploaden van Logboeken en beheeracties uitvoeren.
 
 - Beveiligingslezer: heeft alleen-lezenmachtiging en kan waarschuwingen beheren. Beveiligingslezers kunnen de volgende acties niet uitvoeren:
       - Beleidsregels maken of bestaande beleidsregels bewerken of wijzigen 
@@ -32,8 +32,8 @@ Cloud App Security ondersteunt op rollen gebaseerd toegangsbeheer. De volgende O
       - Apps van derden verbieden of goedkeuren
       - De instellingenpagina voor het IP-adresbereik openen en weergeven
       - Instellingenpagina’s in het algemeen openen en weergeven 
-      - De detectie-instellingen openen en weergeven 
-      - De pagina App-connectors openen en weergeven
+      - Toegang tot en het weergeven van de instellingen voor netwerkdetectie 
+      - Toegang tot en het weergeven van het tabblad App-connectors
       - Het beheerlogboek openen en weergeven 
       - De pagina Momentopnamerapporten beheren openen en weergeven 
 

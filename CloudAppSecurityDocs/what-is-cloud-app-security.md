@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/16/2017
+ms.date: 7/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b76354c792ba75ab30b977112d3d0897ca4229a6
-ms.sourcegitcommit: a0290ac2a662994f7771975ef6c20d0b47e9edd8
+ms.openlocfilehash: 3ac136b06c0debfc42a1b4d5ece6cd6ce53f57af
+ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="what-is-cloud-app-security"></a>Wat is Cloud App Security?
 
@@ -68,7 +68,7 @@ Zie het Engelstalige artikel [Set up Cloud Discovery](set-up-cloud-discovery.md)
 
 ### <a name="sanctioning-and-unsanctioning-an-app"></a>Apps goedkeuren en de goedkeuring van apps intrekken  
 
-U kunt Cloud App Security gebruiken om apps goed te keuren of de goedkeuring ervan in te trekken in uw organisatie met behulp van de *catalogus met cloud-apps*. Het Microsoft-team van analisten heeft een uitgebreide en voortdurend groeiende catalogus van meer dan 15.000 cloud-apps die worden beoordeeld en gewaardeerd op basis van industrienormen. U kunt de cloud-app-catalogus gebruiken om het risico voor uw cloud-apps te classificeren op basis van regelgevingscertificeringen, industrienormen en best practices. U kunt vervolgens de scores en het gewicht van de verschillende parameters aanpassen aan de behoeften van uw organisatie. Op basis van deze scores laat Cloud App Security u weten hoe riskant de app is volgens meer dan 50 risicofactoren die van invloed zijn op uw omgeving.  
+U kunt Cloud App Security gebruiken om apps goed te keuren of de goedkeuring ervan in te trekken in uw organisatie met behulp van de *catalogus met cloud-apps*. Het Microsoft-team van analisten heeft een uitgebreide en voortdurend groeiende catalogus van meer dan 15.000 cloud-apps die worden beoordeeld en gewaardeerd op basis van industrienormen. U kunt de cloud-app-catalogus gebruiken om het risico voor uw cloud-apps te classificeren op basis van regelgevingscertificeringen, industrienormen en best practices. U kunt vervolgens de scores en het gewicht van de verschillende parameters aanpassen aan de behoeften van uw organisatie. Cloud App Security laat op basis van deze scores, u weten hoe riskant een app is gebaseerd op meer dan 60 risicofactoren die van invloed kunnen zijn op uw omgeving.  
 
 ### <a name="app-connectors"></a>App-connectors  
 App-connectors maken gebruik van API's van cloud-app-providers voor de integratie van Cloud App Security en andere cloud-apps. Met app-connectors worden controle en beveiliging uitgebreid. Daarnaast kunt u met app-connectors rechtstreeks vanuit cloud-apps toegang krijgen tot gegevens voor Cloud App Security-analyses.  

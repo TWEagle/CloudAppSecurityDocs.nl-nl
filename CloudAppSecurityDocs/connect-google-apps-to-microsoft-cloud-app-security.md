@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 95c92a7767f369d323d226c4362288ce043f905d
-ms.sourcegitcommit: 38e3c6749e3c746ab73b8da96cd81219781a7998
+ms.openlocfilehash: 12ea0c3833c4ff4b2a3c5c7d4478f0603e471547
+ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/04/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>Verbinding maken tussen G Suite en Microsoft Cloud App Security
 In deze sectie vindt u instructies voor het maken van een verbinding tussen Cloud App Security en uw bestaande G Suite-account met behulp van de connector-API's.
@@ -88,7 +88,7 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
 12.  Een P12-certificaatbestand wordt opgeslagen op uw computer.  
         
 12. In het scherm **Credentials** (Referenties) klikt u aan de rechterkant op **Manage service accounts** (Serviceaccounts beheren).  
-       ![G Suite credentials service account](./media/google10.png "G Suite credentials service account")  
+       ![Referenties G Suite-serviceaccount](./media/google10.png "G Suite referenties-serviceaccount")  
   
 13. Klik op de 3 punten rechts van het serviceaccount dat u hebt gemaakt en selecteer **Edit** (Bewerken).  
   
@@ -101,7 +101,7 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
 16. Open het Google-menu door in de titelbalk op de drie horizontale lijnen naast Google Cloud Platform te klikken en selecteer **API-manager** gevolgd door **Dashboard**.  
     
 17. Blader omlaag naar de lijst met ingeschakelde API's en klik op het instellingentandwiel naast **Google Drive API**.   
-       ![Google Drive select](./media/google14.png "google14")  
+       ![Selecteer in Google Drive](./media/google14.png "google14")  
 
 18. Vul het volgende in:
 
@@ -119,6 +119,9 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
   
 19. In de lijst **Enabled APIs** (Ingeschakelde API’s) klikt u op het tandwiel voor instellingen naast **Google Apps Marketplace SDK** . 
          ![google marketplace SDK config](./media/google16.png "googledriveconfig")  
+
+       >[!NOTE]
+       > Als het tandwiel is uitgeschakeld, kunt u klikken op **Google Apps Marketplace SDK** in plaats daarvan. 
 20. Selecteer het tabblad **Configuration** (Configuratie). 
   
     -   Kopieer het **projectnummer (app-id)** dat bovenaan wordt weergegeven voor later gebruik.  
@@ -187,7 +190,7 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
        ![google security](./media/googlesecurity.png "google8")  
  
 19. Kies **API reference** (API-verwijzing).  
-       ![google api enable](./media/googleapi.png "google8")  
+       ![Google api inschakelen](./media/googleapi.png "google8")  
       
 20. Selecteer **Enable API Access** (API-toegang inschakelen) en klik op **Save changes** (Wijzigingen opslaan).  
   

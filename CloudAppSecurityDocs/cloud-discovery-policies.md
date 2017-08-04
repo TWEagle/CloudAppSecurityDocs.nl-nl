@@ -68,7 +68,7 @@ Cloud App Security doorzoekt alle logboeken in uw Cloud Discovery-exemplaar op a
   
      De filters worden gekozen vanaf de linkerkant van de pagina van de filterpop-up. Het is mogelijk te filteren op servicenaam, domein, risicofactor, risicoscore, en categorie. Aan de rechterkant van de pagina worden de resultaten voor de gekozen filters uit de huidige servicecatalogus weergegeven. Sla de filters op nadat u ze hebt geselecteerd en controleer of de juiste labels worden weergegeven in de filters.  
   
-5.  Kies onder **Toepassen voor **of dit van toepassing is voor **alle gegevensweergaven** of **specifieke gegevensweergaven** en of dit van toepassing is op **gebruikers**, **IP-adressen** of beide.  
+5.  Kies onder **Toepassen voor** of dit van toepassing is voor **alle gegevensweergaven** of **specifieke gegevensweergaven** en of dit van toepassing is op **gebruikers**, **IP-adressen** of beide.  
   
 6.  Selecteer de datums gedurende welke de afwijkende activiteit heeft plaatsgevonden voor het activeren van de waarschuwing onder **Waarschuwingen alleen genereren voor verdachte activiteiten na datum.**  
   

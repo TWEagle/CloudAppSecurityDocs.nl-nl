@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/26/2017
+ms.date: 7/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a30cf7f973daadd38a2049183ab1800d8d210cf4
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: ed24b4020cd96db0bcb84378110499b289d583da
+ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="governing-connected-apps"></a>Verbonden apps beheren
 Met governance kunt u beheren wat gebruikers doen, in realtime en in verschillende apps. Voor verbonden apps kunt u beheeracties toepassen op bestanden of activiteiten.
@@ -85,7 +85,7 @@ De volgende beheeracties kunnen voor verbonden apps worden uitgevoerd op een spe
     > [!NOTE] 
     > Als uw Azure Active Directory is ingesteld overschrijft de Azure AD-instellingen automatisch kunnen worden gesynchroniseerd met de gebruikers in uw on-premises Active Directory omgeving de instellingen in de on-premises omgeving en deze beheeractie worden geannuleerd. 
   
-    -   Wachtwoord intrekken – het gebruikerswachtwoord intrekken en afdwingen dat de gebruiker een nieuw wachtwoord instelt bij de volgende aanmelding.  
+    -   Wachtwoord intrekken – het gebruikerswachtwoord intrekken en zorgen dat ze een nieuw wachtwoord instelt bij de volgende aanmelding.  
   
      ![Cloud App Security activiteit beleid beheeracties](./media/activity-policy-ref6.png "ref6 van activiteit-beleid")  
   

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/3/2017
+ms.date: 7/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 104f44cb4dc890753551d23682a77b75bba510b1
-ms.sourcegitcommit: a0290ac2a662994f7771975ef6c20d0b47e9edd8
+ms.openlocfilehash: 7d74bb482f44e2845d348dd18777d72910b7e18b
+ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="activities"></a>Activiteiten
 Cloud App Security maakt alle activiteiten van uw verbonden apps voor u zichtbaar. Nadat u Cloud App Security hebt verbonden met een app met behulp van de App-connector, scant Cloud App Security alle activiteiten die hebben plaatsgevonden, waarbij de retroactieve scantijd per app verschilt. Daarna wordt Cloud App Security voortdurend bijgewerkt met nieuwe activiteiten. 
@@ -124,23 +124,22 @@ Hieronder volgt een lijst met de activiteitfilters die kunnen worden toegepast. 
 
 ### <a name="working-with-the-activity-drawer"></a>De activiteitslade gebruiken
 
-U kunt meer informatie bekijken over elke activiteit door te klikken op de activiteit in het activiteitenlogboek. Hiermee opent u de activiteit lade dat biedt de volgende aanvullende acties die u op de activiteit uitvoeren kunt:
+U kunt meer informatie bekijken over elke activiteit door te klikken op de activiteit in het activiteitenlogboek. Hiermee opent u de activiteit lade dat voorziet in de volgende aanvullende acties en inzichten voor elke activiteit:
+    - Overeenkomend beleid: klik op de koppeling Overeenkomend beleid om een lijst met beleidsregels te zien waarmee deze activiteit overeenkomt.
+    - Onbewerkte gegevens weergeven: klik op Onbewerkte gegevens weergeven om te zien welke gegevens daadwerkelijk van de app zijn ontvangen.
+    - Gebruiker: klik op de gebruiker om de gebruikerspagina weer te geven van de gebruiker die de activiteit heeft uitgevoerd. 
+    - Apparaattype: klik op het apparaattype om de onbewerkte gegevens van de gebruikersagent weer te geven. 
+    - Locatie: klik op de locatie om die te openen in Bing Kaarten.
+    - Categorie en labels IP-adres: klik op het IP-label om de lijst met IP-labels die zijn gevonden in deze activiteit weer te geven. U kunt vervolgens filteren op alle activiteiten die overeenkomen met dit label.    
 
-- Overeenkomend beleid: klik op de koppeling Overeenkomend beleid om een lijst met beleidsregels te zien waarmee deze activiteit overeenkomt.
-- Onbewerkte gegevens weergeven: klik op Onbewerkte gegevens weergeven om te zien welke gegevens daadwerkelijk van de app zijn ontvangen.
-- Gebruiker: klik op de gebruiker om de gebruikerspagina weer te geven van de gebruiker die de activiteit heeft uitgevoerd. 
-- Apparaattype: klik op het apparaattype om de onbewerkte gegevens van de gebruikersagent weer te geven. 
-- Locatie: klik op de locatie om die te openen in Bing Kaarten.
-- Categorie en labels IP-adres: klik op het IP-label om de lijst met IP-labels die zijn gevonden in deze activiteit weer te geven. U kunt vervolgens filteren op alle activiteiten die overeenkomen met dit label.    
-
-De velden in de Activiteitenlade bieden contextuele koppelingen naar aanvullende activiteiten en meer details die u rechtstreeks vanuit de lade kunt uitvoeren. Als u bijvoorbeeld de cursor naast de categorie IP-adres verplaatst, kunt u het pictogram ![Toevoegen aan filter](./media/add-to-filter-icon.png) gebruiken om het IP-adres rechtstreeks toe te voegen aan het filter van de huidige pagina. U kunt ook het tandwielpictogram ![Instellingen](./media/contextual-settings-icon.png) dat wordt weergegeven gebruiken om rechtstreeks naar de instellingenpagina te gaan die nodig is om de configuratie van een van de velden, zoals **Gebruikersgroepen**, aan te passen.
+ De velden in de Activiteitenlade bieden contextuele koppelingen naar aanvullende activiteiten en meer details die u rechtstreeks vanuit de lade kunt uitvoeren. Als u bijvoorbeeld de cursor naast de categorie IP-adres verplaatst, kunt u het pictogram ![Toevoegen aan filter](./media/add-to-filter-icon.png) gebruiken om het IP-adres rechtstreeks toe te voegen aan het filter van de huidige pagina. U kunt ook het tandwielpictogram ![Instellingen](./media/contextual-settings-icon.png) dat wordt weergegeven gebruiken om rechtstreeks naar de instellingenpagina te gaan die nodig is om de configuratie van een van de velden, zoals **Gebruikersgroepen**, aan te passen.
 
 
 ![activiteitlade](./media/activity-drawer.png "activiteitlade")  
   
 Zie [Governance-acties voor activiteiten](governance-actions.md#activity-governance-actions) voor een lijst met beschikbare governance-acties.
 
-### <a name="user-insights"></a>Gebruiker insights
+#### <a name="user-insights"></a>Gebruiker insights
 
 De ervaring onderzoek bevat out-of-the-box inzicht in de uitvoerende gebruiker. Met een enkele klik, als u krijgt een uitgebreid overzicht van de gebruiker die zijn betrokken bij inclusief welke locatie ze van de manier waarop verbonden veel waarschuwingen openen is en de metagegevens.
 
@@ -155,6 +154,29 @@ Gebruiker insights weergeven:
     - **Landen**: het aantal landen die de gebruiker uit in de afgelopen 30 dagen verbonden.
     - **ISP's**: het aantal ISP's die de gebruiker van afgelopen 30 dagen verbonden.
     - **IP-adressen**: het aantal IP-adressen van de gebruiker verbonden uit in de afgelopen 30 dagen.
+
+![gebruiker inzicht in de Cloud App Security](./media/user-insights.png)
+
+#### <a name="ip-address-insights"></a>IP-adres insights
+
+Omdat het IP-adresgegevens is van cruciaal belang voor bijna alle onderzoek, kunt u gedetailleerde informatie over IP-adressen weergeven in de sectie van de activiteit. Uit binnen een bepaalde activiteit, kunt u op het tabblad IP-adres om samengevoegde gegevens over de IP-adres zoals het aantal openstaande waarschuwingen voor het specifieke IP-adres, een grafiek trend van recente activiteiten en een locatiekaart weer te geven. Hierdoor kunnen eenvoudig Inzoomen op, bijvoorbeeld wanneer onderzoeken onmogelijke reis waarschuwingen, gemakkelijk kunt begrijpen waar het IP-adres is gebruikt en als deze is betrokken bij verdachte activiteiten of niet. U kunt ook acties uitvoeren rechtstreeks in de sectie van de IP-adres waarmee u kunt de code van een IP-adres als riskant, VPN- of bedrijfsnetwerk te vereenvoudigen toekomstig onderzoek en -beleid maken.
+
+IP-adres insights weergeven:
+
+1. Klik op de activiteit zelf in de **activiteitenlogboek**.
+
+2. Klik vervolgens op de **IP-adres** tabblad. <br></br> Hiermee opent u de activiteit lade **IP-adres** tabblad bevat de volgende inzichten over de IP-adres:
+    - **Waarschuwingen openen**: het aantal openstaande waarschuwingen die het IP-adres betrokken.
+    - **Activiteiten**: het aantal activiteiten uitgevoerd door het IP-adres in de afgelopen 30 dagen.
+    - **Locatie van de IP-**: de geografische locaties van waaruit het IP-adres die zijn verbonden uit in de afgelopen 30 dagen.
+    - **Activiteiten**: het aantal activiteiten van dit IP-adres in de afgelopen 30 dagen uitgevoerd.
+    - **Activiteiten van de beheerder**: het aantal administratieve activiteiten van dit IP-adres in de afgelopen 30 dagen uitgevoerd.
+    - U kunt de volgende IP-adres acties uitvoeren:
+        - Als riskant tag 
+        - Label als VPN-IP-adres
+        - Riskante IP-tag en toevoegen aan geblokkeerde groep
+
+![IP-adres inzicht in de Cloud App Security](./media/ip-address-insights.png)
 
 
 ## <a name="see-also"></a>Zie ook  

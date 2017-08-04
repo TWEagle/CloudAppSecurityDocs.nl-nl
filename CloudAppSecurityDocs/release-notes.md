@@ -1,11 +1,11 @@
 ---
-title: Opmerkingen bij de release en versies van Cloud App Security | Microsoft Docs
+title: Wat is er nieuw met Cloud App Security | Microsoft Docs
 description: Dit onderwerp wordt regelmatig bijgewerkt, zodat u weet wat er nieuw is in de meest recente versie van Cloud App Security.
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/3/2017
+ms.date: 7/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,30 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4918b2765be87cb4090c6a55351f6fb0afe07339
-ms.sourcegitcommit: 83d3c800e268091a69e5dc2a229e6453d3243a62
+ms.openlocfilehash: 29df61beb80e931d9d4b0c90a3e89a2b9f496740
+ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/04/2017
+ms.lasthandoff: 08/03/2017
 ---
-# <a name="release-notes"></a>Opmerkingen bij de release
+# <a name="whats-new-with-cloud-app-security"></a>Wat is er nieuw met Cloud App Security
+
+## <a name="cloud-app-security-release-102"></a>Cloud App Security-release 102 
+30 juli 2017 uitgebracht
+ 
+-   Omdat het IP-adresgegevens is van cruciaal belang voor bijna alle onderzoek, kunt u nu gedetailleerde informatie over IP-adressen weergeven in de sectie van de activiteit. Klik in een bepaalde activiteit u kunt nu op op het tabblad IP-adres om weer te geven van de samengevoegde gegevens over de IP-adres zoals het aantal openstaande waarschuwingen voor het specifieke IP-adres, een grafiek trend van recente activiteiten en een locatiekaart. Hierdoor kunnen eenvoudig Inzoomen op, bijvoorbeeld wanneer onderzoeken onmogelijke reis waarschuwingen, gemakkelijk kunt begrijpen waar het IP-adres is gebruikt en als deze is betrokken bij verdachte activiteiten of niet. U kunt ook acties uitvoeren rechtstreeks in de sectie van de IP-adres waarmee u kunt de code van een IP-adres als riskant, VPN- of bedrijfsnetwerk te vereenvoudigen toekomstig onderzoek en -beleid maken. Zie voor meer informatie [IP-adres insights](activity-filters.md#ip-address-insights)
+
+-   In de Cloud Discovery, u kunt nu gebruiken [aangepaste logboekindelingen](custom-log-parser.md) ook voor [logboek uploads geautomatiseerde](discovery-docker.md). Hiermee kunt u eenvoudig automatiseren uploaden van Logboeken vanaf uw siem's zoals Splunk servers of andere niet-ondersteunde indeling. 
+ 
+-   De nieuwe gebruiker onderzoek acties een toegevoegde inzoomen inschakelen voor het onderzoeken van de gebruiker. Van de **onderzoek** pagina's, kunt u nu rechts klikt u op een activiteit, de gebruiker of het account en een van de volgende nieuwe filters voor geavanceerde onderzoek en filteren van toepassing: **gerelateerde activiteiten bekijken**, **gerelateerde governance weergeven**, **gerelateerde waarschuwingen weergeven**, **weergeven die eigendom zijn van bestanden**, **weergeven met deze gebruiker gedeelde bestanden**.
+
+-   De catalogus met Cloud App bevat nu een nieuw veld voor het bewaren van gegevens na het einde van de account. Deze risicofactor kunt u ervoor zorgen dat uw gegevens volledig worden verwijderd nadat u een account in een cloud-app wordt beëindigd.
+
+-   Cloud App Security heeft nu een verbeterde zichtbaarheid van activiteiten met betrekking tot de Salesforce-objecten, zoals potentiële klanten, accounts, campagnes, verkoopkansen, profielen en aanvragen. Bijvoorbeeld: inzicht krijgen in toegang van account-pagina's kunt u beleid configureren dat u wordt gewaarschuwd als een gebruiker een ongebruikelijk groot aantal pagina's van account bekijkt. Dit is beschikbaar via de Salesforce-App-Connector wanneer u Salesforce bewaking in Salesforce (onderdeel van Salesforce Shield) hebt ingeschakeld.
+
+- Kan niet volgen is nu beschikbaar voor private preview-klanten. Nu kunt u bepalen welke gebruikers activiteitsgegevens worden verwerkt. Hiermee kunt u specifieke groepen in de Cloud App Security als "Do not track" instellen. Bijvoorbeeld, u kunt nu niet meer wilt activiteitsgegevens voor gebruikers die zich in Duitsland of een land dat niet afhankelijk is van een specifieke compatibiliteitsstatus wet verwerkt. Dit kan worden geïmplementeerd op alle apps in de Cloud App Security voor een specifieke app of zelfs voor een specifieke subapp. Bovendien kan deze functie worden gebruikt voor het faciliteren geleidelijke roll buiten Cloud App Security. Neem contact op met ondersteuning of met uw accountvertegenwoordiger voor meer informatie of koppelen van de private preview voor deze functie. 
+
+
 
 ## <a name="cloud-app-security-release-100"></a>Cloud App Security-release 100 
 3 juli 2017 uitgebracht
@@ -44,6 +61,10 @@ ms.lasthandoff: 07/04/2017
     - **Opmerkingen bij de aangepaste**: bij het controleren en beoordelen van de verschillende toepassingen die zijn ontdekt in uw hele omgeving, kunt u nu uw conclusie trekt en opslaan inzicht in de notities bij.
     - **Aangepaste risicoscore**: U kunt nu de risicoscore van een app te overschrijven. Bijvoorbeeld, als de risicoscore van een app 8 is en een toegestane app in uw organisatie is, kunt u het risico score tot en met 10 voor uw organisatie. U kunt ook de opmerkingen bij om de reden van de wijziging te wissen wanneer iedereen de app bekijkt toevoegen.
 -   **Nieuwe logboek collector implementatiemodus:** We begint herstellen uit een nieuwe implementatie modus is nu beschikbaar voor de logboekverzamelaar. Naast de huidige virtueel apparaat gebaseerde implementatie van kan de nieuwe Docker (container) op basis van logboekverzamelaar worden geïnstalleerd als een pakket voor Windows en Ubuntu machines zowel on-premises en in Azure. Wanneer u de Docker gebruikt, wordt de hosting machine eigendom van de klant, die kan vrijelijk patch en deze te volgen.
+
+### <a name="announcements"></a>Aankondigingen: 
+-   De catalogus met Cloud App ondersteunt nu meer dan 15.000 detecteerbaar-apps
+-   Naleving: Cloud App Security is officieel SOC1/2/3 gecertificeerd door Azure. Zie voor een volledige lijst met certificeringen [de offerings naleving](https://www.microsoft.com/trustcenter/compliance/complianceofferings) en de resultaten filteren voor Cloud App Security.
 
 ### <a name="other-improvements"></a>Andere verbeteringen: 
 -   **Verbeterde parseren:** zijn verbeteringen aangebracht in het logboek voor Cloud Discovery mechanisme parseren. Interne fouten zijn aanzienlijk minder waarschijnlijk optreden.
@@ -171,7 +192,7 @@ Uitgebracht: 20 maart 2017
 -   Als u aanvullende DLP-scanners van derden hebt geconfigureerd, wordt bij de DLP-scanstatus nu de status van elke connector afzonderlijk weergegeven. Dit is om meer inzicht te bieden.
 -   Cloud App Security biedt nu ondersteuning voor de Microsoft Teams-activiteiten die worden ondersteund in het Office 365-auditlogboek. Deze functie wordt geleidelijk geïntroduceerd.
 -   Voor Exchange Online-imitatiegebeurtenissen kunt u nu filteren op het gebruikte machtigingsniveau: gedelegeerd, beheerder of gedelegeerde beheerder. U kunt in het **activiteitenlogboek** naar gebeurtenissen zoeken door het imitatieniveau weer te geven waarin u bent geïnteresseerd. Zoek daarvoor naar **Activiteitenobjecten** > **Item**.
--   In de app-lade op het tabblad App-machtigingen ziet u nu de **uitgever** van elke app. U kunt Uitgever ook als filter gebruiken voor het zoeken naar aanvullende apps van diezelfde uitgever.
+-   In de app lade op de **App-machtigingen** tabblad van Office 365-apps, zoals u ziet de **Publisher** van elke app. U kunt Uitgever ook als filter gebruiken voor het zoeken naar aanvullende apps van diezelfde uitgever.
 -   Riskante IP-adressen worden nu als afzonderlijke risicofactoren weergegeven in plaats van samengevoegd onder de algemene risicofactor **Locatie**. 
 -   Wanneer Azure Information Protection-labels voor een bestand worden uitgeschakeld, worden de uitgeschakelde labels ook in Cloud App Security als uitgeschakeld weergegeven. Verwijderde labels worden niet weergegeven.
  
@@ -415,7 +436,7 @@ Uitgebracht: 7 augustus 2016
 
 - Verbeterde parsers voor Cloud Discovery-logboekbestanden, met onder ander de toevoeging van Juniper en Cisco ASA.
 - Met Cloud App Security kunt u tijdens het negeren van waarschuwingen feedback geven over de verbeterde waarschuwingen. U kunt de kwaliteit van de waarschuwingsfunctie in Cloud App Security helpen verbeteren door te laten weten waarom u de waarschuwing negeert, bijvoorbeeld omdat deze niet interessant is, omdat u te veel vergelijkbare waarschuwingen hebt ontvangen, omdat de werkelijke urgentie van de waarschuwing lager moet zijn of omdat de waarschuwing niet juist is.
- -In de weergave Bestandsbeleid, of wanneer u een bestand bekijkt, kunt u tijdens het openen van de bestandslade gebruikmaken van een nieuwe koppeling naar overeenkomende beleidsregels. Wanneer u op de koppeling klikt, kunt u alle overeenkomsten weergegeven en kunt u nu alle overeenkomsten negeren. 
+-In de weergave Bestandsbeleid, of wanneer u een bestand bekijkt, kunt u tijdens het openen van de bestandslade gebruikmaken van een nieuwe koppeling naar overeenkomende beleidsregels. Wanneer u op de koppeling klikt, kunt u alle overeenkomsten weergegeven en kunt u nu alle overeenkomsten negeren. 
 - De organisatie-eenheid waartoe een gebruiker behoort, wordt nu aan alle relevante waarschuwingen toegevoegd.
 - Er wordt een e-mailmelding verzonden zodat u weet wanneer de verwerking van uw handmatig geüploade logboeken is voltooid.
 

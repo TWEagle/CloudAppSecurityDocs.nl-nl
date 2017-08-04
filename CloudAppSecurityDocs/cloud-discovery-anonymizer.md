@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: eb250ede-fede-4699-a08b-b8ea4b232f07
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3d74621d1c173c51a9a3d0e08f261290a6d24835
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: d3fd3426cc32250a2c4104292ac418b38e1d4581
+ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 08/03/2017
 ---
 ## <a name="cloud-discovery-data-anonymization"></a>Cloud Discovery-gegevens anoniem maken
 
@@ -33,7 +33,7 @@ Hoe het anoniem maken van gegevens werkt:
 
 1.  Er zijn drie manieren om gegevens anoniem te maken: 
     
-    - U kunt instellen dat de gegevens uit een specifiek logboekbestand anoniem worden gemaakt door [een nieuw momentopnamerapport te maken](create-snapshot-cloud-discovery-reports.md) en **Persoonlijke informatie anoniem maken** te selecteren.
+    - U kunt de gegevens uit een specifiek logboekbestand moet anonyimized, door instellen [maken van een nieuwe van momentopnamerapport](create-snapshot-cloud-discovery-reports.md) en te selecteren **anoniem te maken van persoonlijke gegevens**.
  ![Gegevens van momentopnamen anoniem maken](./media/anonymize-log.png)
 
     - U kunt instellen dat de gegevens uit een [geautomatiseerde upload voor een nieuwe gegevensbron](configure-automatic-log-upload-for-continuous-reports.md) anoniem worden gemaakt door **Anonymize private information** (Persoonlijke informatie anoniem maken) te selecteren wanneer u de nieuwe gegevensbron toevoegt.  
