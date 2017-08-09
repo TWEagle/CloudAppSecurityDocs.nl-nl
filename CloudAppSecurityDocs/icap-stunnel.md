@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/30/2017
+ms.date: 8/6/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 9656f6c6-7dd4-4c4c-a0eb-f22afce78071
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b1fab1835ec1ed1a4a245b87bd5324e15a28a646
-ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
+ms.openlocfilehash: 2290c594595e7754ef0e6e29d70734ff99a42b23
+ms.sourcegitcommit: f9851779aa15b11f559e56ac818f1333f027c000
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="external-dlp-integration"></a>Externe DLP-integratie
 
@@ -52,7 +52,7 @@ Open in de volgorde voor Cloud App Security gegevens via uw stunnel verzenden na
 
 Een server ICAP, u het poortnummer instellen en zorg ervoor dat u instelt **modus** naar **blokkeren**. Blokkerende modus Hiermee stelt u de server ICAP om door te sturen de classificatie eindconclusie terug naar de Cloud App Security.
 
-Raadpleeg de productdocumentatie van uw externe DLP voor instructies om dit te bereiken. Zie bijvoorbeeld [bijlage A: Forcepoint ICAP server setup](#forcepoint).
+Raadpleeg de productdocumentatie van uw externe DLP voor instructies om dit te bereiken. Zie bijvoorbeeld [bijlage A: Forcepoint ICAP server setup](#forcepoint) en [bijlage B: Symantec Deployment Guide](#symantec).
 
 ## <a name="step-2--set-up-your-stunnel-server"></a>STAP 2: Uw stunnel-server instellen 
 
@@ -252,9 +252,9 @@ In ForcePoint, stelt u uw apparaat met de volgende stappen:
     ![ICAP blokkeren](./media/icap-blocking.png)
  
 
-## <a name="appendix-b-symantec-deployment-guide"></a>Bijlage B: Symantec Implementatiehandleiding
+## Bijlage B: Symantec Implementatiehandleiding<a name="symantec"></a>
 
-De ondersteunde versies van Symantec DLP zijn 11 14,6. Zoals eerder vermeld, implementeert u een detectie-server in de dezelfde Azure-datacenter waarin uw tenant Cloud App Security zich bevindt. De detectie-server wordt gesynchroniseerd met de server afdwingen via een speciale IPSec-tunnel. 
+De ondersteunde versies van Symantec DLP zijn 11 en hoger. Zoals eerder vermeld, implementeert u een detectie-server in de dezelfde Azure-datacenter waarin uw tenant Cloud App Security zich bevindt. De detectie-server wordt gesynchroniseerd met de server afdwingen via een speciale IPSec-tunnel. 
  
 ### <a name="detection-server-installation"></a>Detectie-serverinstallatie 
 De detectie-server die wordt gebruikt door Cloud App Security is een standaard netwerk te voorkomen dat voor de webserver. Er zijn verschillende configuratieopties die moeten worden gewijzigd:

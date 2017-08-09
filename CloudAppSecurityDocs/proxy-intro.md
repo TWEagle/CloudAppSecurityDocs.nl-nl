@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 28317b70-1851-4610-b1d6-863bc5994bb6
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 46377a8447ca7a7c0e98183b9d114c329d040e74
-ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
+ms.openlocfilehash: 82e1ee0b5161dce88db815dc8eea06340bdbc532
+ms.sourcegitcommit: f9851779aa15b11f559e56ac818f1333f027c000
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="working-with-the-cloud-app-security-proxy"></a>Werken met de Cloud App Security-Proxy
 
@@ -42,7 +42,7 @@ Toegangsbeheer gebruiken in de Cloud App Security, implementeert de Proxy door e
 > [!NOTE]
 > -  Er is niet nodig voor de identiteitsprovider bestaande beleidsregels wijzigen.
 
-### <a name="supported-apps-and-identity-providers"></a>Ondersteunde apps en id-providers
+#### <a name="supported-apps-and-identity-providers"></a>Ondersteunde apps en id-providers
 
 De Proxy-toegangsbeheer is ontworpen ter ondersteuning van elke app en een identiteitsprovider die SAML of WS-Federation-protocollen ondersteunt. De Cloud App Security-team is het testen van de toonaangevende id-providers en de toonaangevende apps met de mogelijkheden voor het beheer van toegang. Echter, aangezien er zijn veel id-providers en veel cloud-apps, niet voor elke combinatie van id-providers en app wordt getest. Het is raadzaam om het proces voor eenmalige aanmelding met de id-provider en de app op een sandbox- of testomgeving te testen voordat u deze implementeert in een productieomgeving.
 
