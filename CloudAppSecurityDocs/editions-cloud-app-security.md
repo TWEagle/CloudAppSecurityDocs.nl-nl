@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/3/2017
+ms.date: 8/6/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 49c12f7c-3fb8-46ac-b2ab-59ba6cf2ddfb
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e383ffb16a30f7888d4a170aac0289c3fb8bb99b
-ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
+ms.openlocfilehash: 4d96a143f8cf1aa79fe716e8939452f7699d0eac
+ms.sourcegitcommit: f9851779aa15b11f559e56ac818f1333f027c000
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="what-are-the-differences-between-cloud-app-security-and-asm-for-office-365"></a>Wat zijn de verschillen tussen Cloud App Security en ASM voor Office 365?
 
@@ -26,11 +26,11 @@ ms.lasthandoff: 08/03/2017
 
 ## <a name="cloud-app-security"></a>Cloud App Security 
 
-De zelfstandige versie van Cloud App Security is een essentieel onderdeel van de Microsoft Cloud Security-stack. Het is een uitgebreide oplossing die uw organisatie kan helpen te profiteren van de belofte van cloudtoepassingen terwijl u de controle houdt met verbeterde zichtbaarheid in de activiteit. Het verhoogt ook de beveiliging van essentiële gegevens in cloudtoepassingen. Met hulpprogramma's om schaduw-IT te onthullen, risico's te beoordelen, beleid af te dwingen, activiteiten te onderzoeken en bedreigingen te stoppen, kan uw organisatie veiliger overstappen naar de cloud terwijl de controle over essentiële gegevens wordt behouden. 
+De zelfstandige versie van Cloud App Security is een cross-SaaS-oplossing waarmee u Shadow IT detectie niet-toegestane apps en voor uw erkende apps het biedt gegevensbeveiliging, detectie van dreigingen en voorwaardelijke toegang voor cloud-toepassingen in uw organisatie. 
 
 ## <a name="advanced-security-management"></a>Geavanceerd beveiligingsbeheer
 
-Geavanceerd beveiligingsbeheer is een uitgebreide oplossing dat Hiermee beveiliging cloud via Office 365-Geavanceerd beveiligingsbeheer. ASM ondersteunt het globale of Beveiligingsbeheerders voor het beheren van uw organisatie cloud activiteit veiliger. Nadat Geavanceerd beveiligingsbeheer is ingeschakeld, zijn de volgende stappen om te definiëren beleidsregels en waarschuwingen, meer informatie over het gebruik van de cloud in uw organisatie en het beheren van apps die uw organisatie worden gebruikt met Office 365. Dit alles is gedaan in de beheerportal geavanceerde beveiliging.
+Geavanceerd beveiligingsbeheer is een subset van Cloud App Security waarmee core Office 365-beveiligingsfuncties, rechtstreeks in de beheerportal geavanceerde beveiliging. Dit omvat threat detectie op basis van gebruiker activiteitenlogboeken, detectie van Shadow IT voor apps die parallel Office 365-aanbiedingen en app-machtigingen voor beheer op Office 365.
 
 ## <a name="feature-support"></a>Functies die worden ondersteund
 
@@ -38,22 +38,23 @@ Geavanceerd beveiligingsbeheer is een uitgebreide oplossing dat Hiermee beveilig
 |----|----|----|----|
 |Schaduwkopie maken van IT-detectie||||
 ||Gedetecteerde apps-ondersteuning|15.000 + en geautomatiseerde risico-evaluatie|750 + apps vergelijkbaar met Office 365|
-||Continue risicoanalyse||
-||Afwijkingsdetectie|Ja||
 ||Upload logboek|Handmatige en automatische|Handmatig|
-||Meld u anonymization voor de privacy van gebruikers|Ja|Ja|
+||Meld u anonymization voor de privacy van gebruikers|Ja|Yes|
+||Continue risicoanalyse: app risicoscores en nieuwe app-waarschuwingen|Ja||
+||Afwijkingsdetectie|Ja||
 ||Toegang tot de volledige app-catalogus|Yes||
+||Gedetailleerde reporting per app, gebruiker, IP-adres|Ja||
 |Gegevensbeveiliging||||
-||Beleidsinstelling en afdwingen|Ja||
 ||DLP-ondersteuning|Cross-SaaS DLP en gegevens delen beheren|Office 365 DLP en geavanceerde gegevensbeheer|
-||Integratie met 3e DLP-oplossingen van derden|Ja||
 ||Identificeren en besturingselement verbonden apps (inclusief toegang intrekken)|Ja|Ja|
-||Integratie van Azure Information Protection|Ja||
-|Dreiging te voorkomen||||
-||Waarschuwing-ondersteuning|De uitgebreide waarschuwingen, bedreigingen en schendingen dashboard cross-app|Detectie- en waarschuwingen voor Office 365 afwijkingsdetectie|
+||Beleidsinstelling en afdwingen|Yes||
+||Integratie van Azure Information Protection|Yes||
+||Integratie met 3e DLP-oplossingen van derden|Ja||
+|Detectie van dreigingen||||
+||Detectie dekking|De uitgebreide waarschuwingen, bedreigingen en schendingen dashboard cross-app|Detectie- en waarschuwingen voor Office 365 afwijkingsdetectie|
 ||Handmatige en automatische waarschuwing herstel|Ja|Ja|
-||SIEM-connector|Cross-app-waarschuwingen en activiteitenlogboek|Waarschuwingen voor Office 365|
-||Microsoft Intelligent beveiliging Graph-uitbreiding|Ja|Ja|
+||SIEM-connector|Waarschuwingen en het activiteitenlogboek|Waarschuwingen voor Office 365|
+||Microsoft Intelligent beveiliging Graph-uitbreiding|Yes|Yes|
 
 
 ## <a name="see-also"></a>Zie ook  
