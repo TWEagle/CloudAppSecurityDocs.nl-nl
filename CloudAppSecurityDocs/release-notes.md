@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/30/2017
+ms.date: 8/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,30 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 29df61beb80e931d9d4b0c90a3e89a2b9f496740
-ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
+ms.openlocfilehash: c0fead3fc70636ad96c365ec89060006124024b5
+ms.sourcegitcommit: 4cf65f627f2d370ee4a4decae1acbb9658874056
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/13/2017
 ---
 # <a name="whats-new-with-cloud-app-security"></a>Wat is er nieuw met Cloud App Security
+
+
+## <a name="cloud-app-security-release-103"></a>Cloud App Security-release 103 
+13 augustus 2017 uitgebracht
+
+- Cloud App Security toegevoegde ondersteuning voor Azure Information Protection-systeemeigen beveiliging voor de volgende Office-bestanden DOCM, DOCX, dotm, DOTX, .xlam, .xlsb, xlsm, XLSX, werkmap, XPS, .potm, POTX, PPSX, .ppsm, pptm, PPTX, .thmx, .vsdx, .vsdm, .vssx, .vssm, .vstx, .vstm (in plaats van de algemene beveiliging).
+
+- Elke beheerder van Azure Active Directory-naleving wordt automatisch vergelijkbare machtigingen in de Cloud App Security, inclusief de mogelijkheid voor het kenmerk alleen-lezen en waarschuwingen beheren, maken en wijzigen van beleidsregels voor bestanden beheeracties bestand toestaan en weergeven van de ingebouwde rapporten onder beheer van de gegevens worden verleend. 
+
+- We de context van de schending DLP uitgebreid van 40 tot 100 tekens aan beter inzicht in de context van de schending.
+
+- Gedetailleerde foutberichten naar de Cloud Discovery-logboekbestanden aangepaste uploader waarmee u gemakkelijk fouten in de upload logboek oplossen.
+
+- Het script Cloud Discovery-blok is uitgebreid om Zscaler-indeling wordt ondersteund.
+
+- Nieuwe Cloud-Appcatalogus risicofactor: bewaren van gegevens na het einde van de account. Hiermee kunt u ervoor zorgen dat uw gegevens volledig worden verwijderd nadat u een account in een cloud-app wordt beëindigd.
+
 
 ## <a name="cloud-app-security-release-102"></a>Cloud App Security-release 102 
 30 juli 2017 uitgebracht
