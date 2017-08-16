@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/8/2017
+ms.date: 8/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 49c12f7c-3fb8-46ac-b2ab-59ba6cf2ddfb
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 68ca6a7a4bacb0e04fddea4c1df36350c0e4c6fb
-ms.sourcegitcommit: b446a82c945de6452813aac7780f6a3a264495e1
+ms.openlocfilehash: 7dd8b94579255b7ccccf4df093d24c5a853f66a4
+ms.sourcegitcommit: 4cf65f627f2d370ee4a4decae1acbb9658874056
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 08/13/2017
 ---
 # <a name="what-are-the-differences-between-cloud-app-security-and-office-365-advanced-security-management-asm"></a>Wat zijn de verschillen tussen Cloud App Security- en Office 365 geavanceerde beveiliging Management (ASM)?
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 08/09/2017
 
 ## <a name="cloud-app-security"></a>Cloud App Security 
 
-De zelfstandige versie van Cloud App Security is een cross-SaaS-oplossing waarmee u Shadow IT detectie niet-toegestane apps en voor uw erkende apps het biedt gegevensbeveiliging, detectie van dreigingen en voorwaardelijke toegang voor cloud-toepassingen in uw organisatie. 
+Microsoft Cloud App Security is een uitgebreide cross-SaaS-oplossing grondige zichtbaarheid, sterk Gegevensbesturingselementen en verbeterde threat protection uw cloud-apps te brengen. Met deze service krijgt u inzicht krijgen in Shadow IT door het detecteren van cloud-apps gebruikt en u kunt beheren en beveiligen van gegevens in de apps wanneer u ze naar de service erkennen. 
 
 ## <a name="office-365-advanced-security-management"></a>Beheer van Office 365 geavanceerde beveiliging
 
@@ -34,30 +34,27 @@ Geavanceerd beveiligingsbeheer is een subset van Cloud App Security met verbeter
 
 ## <a name="feature-support"></a>Functies die worden ondersteund
 
-|Pillar|Onderdeel|Microsoft Cloud App Security|Geavanceerd beveiligingsbeheer|
+|Mogelijkheid|Onderdeel|Microsoft Cloud App Security|Beheer van Office 365 geavanceerde beveiliging|
 |----|----|----|----|
-|Schaduwkopie maken van IT-detectie||||
-||Gedetecteerde apps-ondersteuning|15.000 + en geautomatiseerde risico-evaluatie|750 + apps vergelijkbaar met Office 365|
-||Upload logboek|Handmatige en automatische|Handmatig|
-||Meld u anonymization voor de privacy van gebruikers|Ja|Ja|
-||Continue risicoanalyse: app risicoscores en nieuwe app-waarschuwingen|Ja||
-||Rapport met gedetecteerde apps|Ja|Yes|
-||Afwijkingsdetectie van App-detectie|Ja||
-||Toegang tot de volledige app-catalogus|Ja||
-||Gedetailleerde reporting per app, gebruiker, IP-adres|Ja||
-|Gegevensbeveiliging||||
-||DLP-ondersteuning|Cross-SaaS DLP en gegevens delen beheren|Opgegeven door Office 365 DLP, incidenten kunnen weergeven en gerapporteerd in ASM|
-||App-machtigingen - identificeren en OAuth-apps beheren|Yes|Ja|
-||Beleidsinstelling en afdwingen|Ja||
-||Integratie van Azure Information Protection|Ja||
-||Integratie met 3e DLP-oplossingen van derden|Ja||
-|Detectie van dreigingen||||
-||Detectie dekking|De uitgebreide waarschuwingen, bedreigingen en schendingen dashboard cross-app|Detectie- en waarschuwingen voor Office 365 afwijkingsdetectie|
-||Handmatige en automatische waarschuwing herstel|Ja|Yes|
-||SIEM-connector|Waarschuwingen en het activiteitenlogboek|Alleen waarschuwingen|
-||Microsoft Intelligent beveiliging Graph-uitbreiding|Yes|Ja|
-||Activiteitbeleid|Yes|Ja|
-||Afwijkingsdetectie|Ja|Ja|
+|Cloud Discovery|Gedetecteerde apps |15.000 + cloud-apps  |750 + cloud-apps Cloud-apps met een vergelijkbare functionaliteit op Office 365|
+||Implementatie voor analyse van de detectie|Uploaden van Logboeken voor handmatige en automatische|Handmatige upload logboek|
+||Meld u anonymization voor de privacy van gebruikers|Ja|Yes|
+||Toegang tot de volledige catalogus met Cloud-Apps|Ja||
+||Cloud app risico-evaluatie|Ja||
+||Gebruiksanalyse cloud per app, gebruiker, IP-adres|Ja||
+||Doorlopende analyse en rapportage|Ja||
+||Afwijkingsdetectie voor gedetecteerde apps|Ja||
+|Gegevensbeveiliging|Ondersteuning voor gegevens gegevensverlies te voorkomen (DLP)|Cross-SaaS DLP en gegevens delen beheren|Gebruikt bestaande Office DLP (beschikbaar in Office E3 en hoger)|
+||App-machtigingen en de mogelijkheid toegang in te trekken|Yes|Ja|
+||Beleidsinstelling en afdwingen|Yes||
+||Integratie met Azure Information Protection |Ja||
+||Integratie met DLP-oplossingen van derden|Yes||
+|Detectie van dreigingen|Afwijkingsdetectie en gedragsanalyse|Voor Cross-SaaS-apps met inbegrip van Office 365|Voor Office 365-apps |
+||Handmatige en automatische waarschuwing herstel|Ja|Ja|
+||SIEM-connector|Ja. Waarschuwingen en activiteitenlogboeken voor cross-SaaS-apps.|Ja. Alleen waarschuwingen voor Office 365.|
+||Integratie met Microsoft Intelligent beveiliging grafiek|Ja|Ja|
+||Activiteitbeleid|Ja|Yes|
+
 
 ## <a name="see-also"></a>Zie ook  
 

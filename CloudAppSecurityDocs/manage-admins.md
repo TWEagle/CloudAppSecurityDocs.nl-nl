@@ -13,17 +13,19 @@ ms.technology:
 ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4035cbaa331470cd762550470e9543b8fa256fe0
-ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
+ms.openlocfilehash: 83a89f9d916a1a95394993e9d95fb7988ec85a4b
+ms.sourcegitcommit: 4cf65f627f2d370ee4a4decae1acbb9658874056
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/13/2017
 ---
 ## <a name="managing-admin-access"></a>Beheerderstoegang beheren
 
 Cloud App Security ondersteunt op rollen gebaseerd toegangsbeheer. De volgende Office 365- en Azure AD-beheerdersrollen hebben standaard toegang tot Cloud App Security:
 
 - Globale beheerder en Beveiligingsbeheerder: beheerders met **volledige toegang** beschikken over volledige machtigingen in de Cloud App Security admins toevoegen, het toevoegen van beleidsregels en instellingen, het uploaden van Logboeken en beheeracties uitvoeren.
+
+- Naleving administrator: alleen-lezen-machtigingen heeft en waarschuwingen kunt beheren. Kunt maken en wijzigen van beleidsregels voor bestanden, bestand governance toestaan acties en bekijk de ingebouwde rapporten onder beheer. 
 
 - Beveiligingslezer: heeft alleen-lezenmachtiging en kan waarschuwingen beheren. Beveiligingslezers kunnen de volgende acties niet uitvoeren:
       - Beleidsregels maken of bestaande beleidsregels bewerken of wijzigen 

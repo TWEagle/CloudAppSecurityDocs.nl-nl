@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: ac53fbd6-4d31-4bce-b2bc-9dc65ad83b3e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c356900333b41a0aeecd8a19eea1b85305f45ba6
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: 3cbe85149a2e632b7f9804652953728945532bcb
+ms.sourcegitcommit: 4cf65f627f2d370ee4a4decae1acbb9658874056
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 08/13/2017
 ---
 # <a name="file-policies"></a>Beleidsregels voor bestanden  
 Met Beleidsregels voor bestanden kunt u een breed scala aan geautomatiseerde processen controleren waarbij u gebruikmaakt van de API’s van de cloudprovider. Beleidsregels kunnen worden ingesteld voor het uitvoeren van continue scans voor naleving, juridische eDiscovery-taken, DLP voor gevoelige inhoud die openbaar is gedeeld en veel meer gebruiksvoorbeelden.  
@@ -79,7 +79,7 @@ Voer de volgende procedure uit om een nieuw bestandsbeleid te maken:
 7.  Selecteer de **Methode voor inhoudscontrole**. Met de ingebouwde DLP kunt u bestanden filteren op de inhoud ervan. Als u bestanden wilt scannen op de inhoud, selecteert u vervolgens **Ingebouwde DLP**. Zodra inhoudscontrole is ingeschakeld, kunt u vooraf ingestelde expressies gebruiken of zoeken naar andere aangepaste expressies als een subtekenreeks of als een [reguliere expressie](working-with-the-regex-engine.md) van uzelf.  
     Bovendien kunt u een reguliere expressie opgeven als u een bestand wilt uitsluiten van de resultaten. Dit is zeer nuttig als u een standaard voor trefwoorden met de binnenste classificatie hebt die u wilt uitsluiten van het beleid.  
     U kunt bepalen wat het minimumaantal schendingen van inhoud is dat moet worden bereikt voordat het bestand wordt beschouwd als een schending. U kunt bijvoorbeeld 10 kiezen als u waarschuwingen wilt ontvangen voor bestanden waarin ten minste 10 creditcardnummers worden gevonden.  
-    Wanneer inhoud wordt vergeleken met de geselecteerde expressie, wordt de schendende tekst vervangen door X-tekens. Standaard worden schendingen volledig gemaskeerd en in context weergegeven, waarbij 40 tekens vóór en na de schending worden weergegeven. Getallen in de context van de expressie worden vervangen door #-tekens en worden nooit opgeslagen in Cloud App Security. U kunt ook de optie **Unmask the last 4 characters of a violation** (De laatste 4 tekens van een schending zichtbaar maken) selecteren om de laatste 4 tekens van een schending zichtbaar te maken.
+    Wanneer inhoud wordt vergeleken met de geselecteerde expressie, wordt de schendende tekst vervangen door X-tekens. Standaard worden schendingen volledig gemaskeerd en weergegeven in de context dat 100 tekens voor en na de schending. Getallen in de context van de expressie worden vervangen door #-tekens en worden nooit opgeslagen in Cloud App Security. U kunt ook de optie **Unmask the last 4 characters of a violation** (De laatste 4 tekens van een schending zichtbaar maken) selecteren om de laatste 4 tekens van een schending zichtbaar te maken.
   
 8.  Kies de **beheer**acties die in Cloud App Security moeten worden uitgevoerd wanneer een overeenkomst wordt gedetecteerd.  
   

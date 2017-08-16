@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 75094bde-e135-47fb-b5c6-7e1168919771
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 245e44cdf56b15795f67340442babcb0f688ea9d
-ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
+ms.openlocfilehash: 2cabdaa94c36dcf7496cc1d1126e720871ee80b9
+ms.sourcegitcommit: 4cf65f627f2d370ee4a4decae1acbb9658874056
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/13/2017
 ---
 # <a name="deploying-the-cloud-app-security-proxy"></a>De Cloud App Security-Proxy implementeren
 
@@ -25,6 +25,10 @@ ms.lasthandoff: 08/03/2017
 > Het is raadzaam om te proberen de installatie in een sandbox- of testomgeving voordat u deze installeert in een productieomgeving.
 
 De stappen die hieronder worden beschreven moeten worden genomen om de Cloud App Security-Proxy implementeren en zowel toegangsbeheer als Sessiecontrole inschakelen.
+
+Als onderdeel van de implementatie van de Proxy moet u de configuraties in zowel de id-provider en de app die u wilt wijzigen om te bepalen. Dit omvat wijzigingen van de URL, zodat zowel de id-provider en de app aanmeldingsaanvragen worden omgeleid naar de Proxy. Bovendien en indien nodig, certificaten ook worden vervangen.
+
+Zodra deze stappen zijn voltooid, gaat u alle gebeurtenissen van de aanmelding via de Proxy- en de Proxy kunt bepalen als ze toegang de app tot, geen toegang hebben, of in de bewaakte modus toegang heeft tot. Houd er rekening mee dat in deze fase wordt de Proxy kan clientcertificaten van het apparaat aanvragen, en de status van het apparaat gebruiken om beleid beslissingen te nemen.
 
 ## <a name="prerequisites"></a>Vereisten
 
