@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/10/2017
+ms.date: 8/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 350f90af7114d8b34aaaa6062bb3c14379fd3dfa
-ms.sourcegitcommit: 4cf65f627f2d370ee4a4decae1acbb9658874056
+ms.openlocfilehash: 003c56d1d05c35adac55c568d72beab18243519f
+ms.sourcegitcommit: 9111960557afb30ea2d6c155afd4885a7ca1b278
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/13/2017
+ms.lasthandoff: 08/20/2017
 ---
 # <a name="azure-information-protection-integration"></a>Integratie van Azure Information Protection
 
@@ -140,6 +140,9 @@ Nadat Cloud App Security is verbonden met uw Office 365-service, kunt u de Cloud
 Raadpleeg [Gegevens beveiligen tegen gebruikersfouten](https://docs.microsoft.com/enterprise-mobility-security/solutions/protect-data-user-mistake) voor meer informatie over de samenwerking tussen Cloud App Security en Azure Information Protection
 
  
+## <a name="related-videos"></a>Verwante video 's  
+[Cloud App Security + Azure Information Protection integraties](https://channel9.msdn.com/Shows/Microsoft-Security/MCAS--AIP-Integrations)  
+
 ## <a name="see-also"></a>Zie ook  
 [Cloud-apps beheren met beleidsregels](control-cloud-apps-with-policies.md)   
 [Ga naar de ondersteuningspagina van Cloud App Security voor technische ondersteuning.](http://support.microsoft.com/oas/default.aspx?prid=16031)   

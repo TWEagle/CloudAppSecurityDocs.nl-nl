@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/12/2017
+ms.date: 8/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: f118a3bf-1663-46ba-884f-b1b03a84ab66
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b3d0aacdef885ba89638628b6d485ef81c3b26f3
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: b5027699862a6cfe4b8dd8037f26d569b788a412
+ms.sourcegitcommit: 27170447acfaeded585c264e425a46a485e7fb19
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 08/20/2017
 ---
 # <a name="alerts"></a>Waarschuwingen
 Ga als volgt te werk als u waarschuwingen wilt weergeven:
@@ -27,6 +27,11 @@ Klik in de Cloud App Security-portal op Waarschuwingen.
 
 ![Het menu Waarschuwing](./media/alert-menu.png)
 
+Klik op de waarschuwing in de tabel voor het afhandelen van elke waarschuwing en selecteer een van de volgende opties:
+- **Waarschuwing oplossen**: nadat u onderzoeken en acties om het risico van de waarschuwing te kunnen uitvoeren, klikt u op **waarschuwing oplossen**. U kunt een opmerking voor het opslaan van gegevens over uzelf over welke acties zijn uitgevoerd invoeren en kunt u ervoor kiezen **feedback verzenden naar de Cloud App Security-team** met betrekking tot de waarschuwing. Nadat u een waarschuwing dat deze niet meer wordt weergegeven in de tabel waarschuwingen oplossen.
+- Waarschuwing oplossen en **markeren als gelezen**: U kunt de waarschuwing sluit maar Markeer deze als lezen.
+- Waarschuwing oplossen en **aangepast beleid**: U kunt het beleid dat voor de waarschuwing in het antwoord op de waarschuwing wijzigen.
+- **Negeren**: U kunt de waarschuwing die de waarschuwing wordt weergegeven in de tabel wordt gestopt, maar wordt niet weergegeven voor de waarschuwing als opgelost dat negeren. Dit wordt waarschijnlijk gebruikt wanneer de waarschuwing onschadelijk wordt of een fout-positief.
 
 De volgende typen waarschuwingen worden weergegeven. 
 
