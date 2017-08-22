@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/2/2017
+ms.date: 8/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ce0856ac24e20c1ca2ed8cdde3787d931d451bb7
-ms.sourcegitcommit: f9851779aa15b11f559e56ac818f1333f027c000
+ms.openlocfilehash: f3bb5b1618f9bc872f1171f73c2dc529b3679aec
+ms.sourcegitcommit: 9111960557afb30ea2d6c155afd4885a7ca1b278
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 08/20/2017
 ---
 # <a name="what-is-cloud-app-security"></a>Wat is Cloud App Security?
 
@@ -80,6 +80,9 @@ Cloud App Security maakt gebruik van de API's die door de cloudprovider worden v
 ### <a name="policy-control"></a>Beleidsbeheer  
 
 U kunt beleidsregels gebruiken om het gedrag van uw gebruikers in de cloud te definiëren. Gebruik beleidsregels om riskant gedrag, schendingen of verdachte gegevenspunten en activiteiten in uw cloudomgeving te detecteren. Indien nodig kunt u beleidsregels gebruiken voor het integreren van herstelprocessen om alle risico's te beperken. Verschillende typen beleidsregels hangen samen met de verschillende typen gegevens die u wilt verzamelen over uw cloudomgeving en de soorten herstelacties die u zou willen uitvoeren.  
+
+## <a name="related-videos"></a>Verwante video 's
+- [Lid worden van de security-community](https://channel9.msdn.com/Shows/Microsoft-Security/Join-the-Security-Community)
 
 ## <a name="see-also"></a>Zie ook  
 

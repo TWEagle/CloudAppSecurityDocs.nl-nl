@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/23/2017
+ms.date: 8/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9a2c3a2db12a6a67bffb0ad1bc2493fdddfaf66f
-ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
+ms.openlocfilehash: bd396f4e4f7158dfe1500d85431ef0643e6816a3
+ms.sourcegitcommit: 9111960557afb30ea2d6c155afd4885a7ca1b278
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/20/2017
 ---
 # <a name="siem-integration"></a>Integratie van SIEM
     
@@ -141,6 +141,10 @@ Als u de SIEM-agent op een later tijdstip wilt verwijderen, kunt u in de tabel o
 ## <a name="high-availability-options"></a>Opties voor hoge beschikbaarheid
 
 De SIEM-agent is één eindpunt die ondersteuning biedt voor herstel van maximaal twee dagen uitvaltijd. Extra beveiligingsmaatregel van maximale beschikbaarheid kan worden bereikt door een load balancer als het eindpunt van de klant.
+
+
+## <a name="related-videos"></a>Verwante video 's  
+[De SIEM-Connector installeren voor Cloud App Security](https://channel9.msdn.com/Shows/Microsoft-Security/Install-the-SIEM-Connector-for-Cloud-App-Security)  
 
 ## <a name="see-also"></a>Zie ook  
 [Problemen met SIEM-integratie oplossen](troubleshooting-siem.md)   

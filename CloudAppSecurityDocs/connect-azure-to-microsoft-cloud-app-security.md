@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/8/2017
+ms.date: 8/15/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3a677bc7-c8b7-4c6a-aada-82c8b3778352
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b418663d21653b1393999f50cc620a230d0b97dc
-ms.sourcegitcommit: b446a82c945de6452813aac7780f6a3a264495e1
+ms.openlocfilehash: d2c5dff92c790a9ad27c872ebbd09769eef9898d
+ms.sourcegitcommit: 27170447acfaeded585c264e425a46a485e7fb19
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 08/20/2017
 ---
 # <a name="connect-azure-to-microsoft-cloud-app-security"></a>Verbinding maken met Azure en Microsoft Cloud App Security
 
@@ -41,7 +41,7 @@ Cloud App Security verbindt met Azure via Event Hubs. Deze sectie biedt instruct
 
 ### <a name="step-2-get-a-connection-string-to-your-event-hub"></a>Stap 2: Een verbindingsreeks naar uw Event Hub ophalen
 
-1.  Ga naar de **Event Hubs** blade.
+1.  Ga naar de **Event Hubs - Preview** blade.
   
    ![Event hubs-blade](media/azure-event-hubs.png "Azure event hubs")
 
@@ -54,12 +54,12 @@ Cloud App Security verbindt met Azure via Event Hubs. Deze sectie biedt instruct
     ![Event hubs entiteiten](media/azure-event-hubs-entities.png "Azure event hub-entiteiten")
 
 4.  Selecteer de nieuwe Event Hub is gemaakt door Azure Monitor. Dit sjabloon heet **insights operationele logboeken**.
-  
-    ![Operational Insights-logboeken](media/azure-insight-operational-logs.png "Azure inzicht operationele Logboeken")
-  
   > [!NOTE]
   > Er enkele minuten duren tot de Event Hub is gemaakt.
 
+   ![Operational Insights-logboeken](media/azure-insight-operational-logs.png "Azure inzicht operationele Logboeken")
+  
+  
 5. Maak een nieuwe-beleid waarmee u Cloud App Security-machtiging voor het lezen van de Event Hub door te klikken op **gedeeld toegangsbeleid** en klik vervolgens op **toevoegen**.
   
     ![Gedeeld toegangsbeleid](media/azure-shared-access-policies.png "Azure gedeeld toegangsbeleid")
@@ -90,15 +90,8 @@ Cloud App Security verbindt met Azure via Event Hubs. Deze sectie biedt instruct
    > Als u een andere consumergroep moet worden gebruikt hebt gemaakt, gebruikt u dat **consumergroep** naam.
   
 6.  Klik op **Verbinden**.
-8.  Controleer of de verbinding tot stand is gekomen door op **Test API** te klikken.  
+     Deze tekst wordt de verbinding en kan een paar minuten duren. Na de ontvangst van de melding dat de actie voltooid is, klikt u op **Sluiten**.  
   
-     Het testen kan enkele minuten duren. Na de ontvangst van de melding dat de actie voltooid is, klikt u op **Sluiten**.  
-  
-
-
-
-
-
 ## <a name="see-also"></a>Zie ook  
 [Cloud-apps beheren met beleidsregels](control-cloud-apps-with-policies.md)   
 [Ga naar de ondersteuningspagina van Cloud App Security voor technische ondersteuning.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
