@@ -5,6 +5,7 @@
 # Implementeer
 ## [Aan de slag](getting-started-with-cloud-app-security.md)
 ## [Basisinstellingen](general-setup.md)
+### [Netwerkvereisten](network-requirements.md)
 ### [Beheerders beheren](manage-admins.md)
 #### [Instellingen voor beheerders](admin-settings.md)
 ### [Instellingen voor e-mail](mail-settings.md)
