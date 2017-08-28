@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/11/2017
+ms.date: 8/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: db600c90983cc90ad55b994a22af0ed8bb6f288a
-ms.sourcegitcommit: 27170447acfaeded585c264e425a46a485e7fb19
+ms.openlocfilehash: c0c3487980cdd5c1a3dad08e280de43ea714fadd
+ms.sourcegitcommit: c3fda43ef6fe0d15f0eb9ea23a6f245bad8c371b
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/20/2017
+ms.lasthandoff: 08/27/2017
 ---
 # <a name="governing-connected-apps"></a>Verbonden apps beheren
 Met governance kunt u beheren wat gebruikers doen, in realtime en in verschillende apps. Voor verbonden apps kunt u beheeracties toepassen op bestanden of activiteiten.
@@ -33,7 +33,7 @@ De volgende beheeracties kunnen voor verbonden apps worden uitgevoerd op een spe
   
     -   E-mailmeldingen voor gebruikers – e-mailberichten kunnen worden aangepast en worden verzonden naar alle eigenaren van bestanden die het beleid schenden.  
   
-    -   CC naar manager – op basis van directory-integratie voor gebruikers kunnen e-mailmeldingen ook worden verzonden naar de manager van de persoon die een beleid schendt.  
+    -   CC naar manager – op basis van directory-integratie voor gebruikers kunnen e-mailmeldingen ook worden verzonden naar de manager van de persoon die een beleid schendt. (Alleen Salesforce)
   
 -   Meldingen verzenden naar specifieke gebruikers – specifieke lijst met e-mailadressen die deze meldingen ontvangen.  
   
@@ -73,7 +73,7 @@ De volgende beheeracties kunnen voor verbonden apps worden uitgevoerd op een spe
   
     -   E-mailmeldingen voor gebruikers – e-mailberichten kunnen worden aangepast en worden verzonden naar alle eigenaren van bestanden die het beleid schenden.  
   
-    -   CC naar manager – op basis van directory-integratie voor gebruikers kunnen e-mailmeldingen ook worden verzonden naar de manager van de persoon die een beleid schendt.  
+    -   CC naar manager – op basis van directory-integratie voor gebruikers kunnen e-mailmeldingen ook worden verzonden naar de manager van de persoon die een beleid schendt. (Alleen Salesforce)
   
     -   Meldingen verzenden naar aanvullende gebruikers – specifieke lijst met e-mailadressen die deze meldingen ontvangen.  
   
@@ -128,8 +128,8 @@ Zie [Beleidsconflicten](control-cloud-apps-with-policies.md) voor informatie ove
 |Detecteren > Gedetecteerde apps/IP-adressen/gebruikers|Cloud Discovery|Detectiegegevens exporteren|Hiermee wordt een CSV-gemaakt van de detectiegegevens.|Detectie|
 |Bestandsbeleid|Bestand|Prullenbak|Hiermee wordt het bestand in de prullenbak van de gebruiker geplaatst.|OneDrive, SharePoint|
 |Bestandsbeleid|Bestand|De laatste editor van het bestand informeren|Hiermee wordt een e-mail verzonden om de laatste persoon die het bestand heeft bewerkt, te laten weten dat het een beleid schendt.|G Suite, Box|
-|Bestandsbeleid|Bestand|De bestandseigenaar een melding sturen|Hiermee wordt een e-mail naar de eigenaar van het bestand verzonden met de optie de beheerder in de CC-regel te zetten wanneer een bestand een beleid schendt. Als in Dropbox geen eigenaar aan een bestand is gekoppeld, wordt de melding verzonden naar de gebruiker die u instelt.|Alle apps|
-|Bestandsbeleid, activiteitenbeleid|Bestand, activiteit|cc naar de manager van de eigenaar/gebruiker|Wanneer de eigenaar van het bestand een e-mailmelding ontvangt dat het bestand een beleid schendt, wordt hiermee ook de manager van de eigenaar/gebruiker van het bestand op de hoogte gebracht (optioneel).|Alle apps behalve ServiceNow|
+|Bestandsbeleid|Bestand|De bestandseigenaar een melding sturen|Verzendt een e-mailbericht naar de eigenaar van het bestand als een bestand een beleid schendt. Als in Dropbox geen eigenaar aan een bestand is gekoppeld, wordt de melding verzonden naar de gebruiker die u instelt.|Alle apps|
+|Bestandsbeleid, activiteitenbeleid|Bestand, activiteit|cc naar de manager van de eigenaar/gebruiker|Wanneer de eigenaar van het bestand een e-mailmelding ontvangt dat het bestand een beleid schendt, wordt hiermee ook de manager van de eigenaar/gebruiker van het bestand op de hoogte gebracht (optioneel).|SalesForce|
 |Bestandsbeleid, activiteitenbeleid|Bestand, activiteit|Specifieke gebruikers informeren|Hiermee wordt een e-mail naar specifieke gebruikers verzonden over een bestand dat een beleid schendt.|Alle apps|
 |Bestandsbeleid en activiteitenbeleid|Bestand, activiteit|De gebruiker een melding sturen|Hiermee wordt een e-mail naar gebruikers verzonden om hen te melden dat ze iets hebben gedaan of een bestand hebben dat een beleid schendt. U kunt een aangepaste melding toevoegen om gebruikers te laten weten wat de schending is.|Alles|
 |Bestandsbeleid en bestanden|Bestand|De machtiging van de editor om te delen intrekken|In Google Drive staan de standaardmachtigingen van de editor het delen van een bestand ook toe. Deze beheeractie beperkt deze optie en zorgt ervoor dat alleen de eigenaar de bestanden kan delen.|G Suite|

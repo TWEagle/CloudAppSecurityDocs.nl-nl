@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/21/2017
+ms.date: 8/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a6658937-57a2-484a-85cb-5a4cdbeeb002
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 038d3c12a63f12d6b0b506de439a91e4d2d027f2
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: 00534bda0a515099a486f731e0297b9fd6dec8e3
+ms.sourcegitcommit: c3fda43ef6fe0d15f0eb9ea23a6f245bad8c371b
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 08/27/2017
 ---
 # <a name="policy-templates"></a>Beleidssjablonen
 
@@ -49,7 +49,7 @@ Hier volgt een lijst met alle beleidssjablonen die zijn opgenomen in Cloud App S
 |Detectie van dreigingen|Beheeractiviteiten vanaf een niet-zakelijk IP-adres|Ontvang een waarschuwing wanneer een gebruiker beheeractiviteiten uitvoert vanaf een IP-adres dat niet is opgenomen in de categorie zakelijke IP-adresbereiken. U moet eerst uw zakelijke IP-adressen configureren door naar de pagina Instellingen te gaan en **IP-adresbereiken** in te stellen.|
 |Detectie van dreigingen|Detectie van algemene afwijkingen|Ontvang een waarschuwing wanneer een afwijkende sessie in een van de goedgekeurde apps wordt gedetecteerd, zoals: onmogelijke reis, aanmeldingspatroon, inactief account.|
 |Detectie van dreigingen|Aanmelding vanaf een riskant IP-adres|Ontvang een waarschuwing wanneer een gebruiker zich aanmeldt bij uw goedgekeurde apps vanaf een riskant IP-adres. Standaard bevat de categorie riskante IP-adressen adressen met IP-adreslabels van een anonieme proxy, TOR of Botnet. U kunt meer IP-adressen aan deze categorie toevoegen op de pagina met instellingen voor IP-adresbereiken.|
-|Detectie van dreigingen|Groot aantal downloads door één gebruiker|Ontvang een waarschuwing wanneer één specifieke gebruiker meer dan 30 downloads binnen 5 minuten uitvoert.|
+|Detectie van dreigingen|Groot aantal downloads door één gebruiker|Waarschuwing tijdens het uitvoeren van een enkele gebruiker meer dan 50 downloads binnen 1 minuut.|
 |Detectie van dreigingen|Meerdere mislukte aanmeldingen van een gebruiker bij een app|Ontvang een waarschuwing wanneer één specifieke gebruiker zich bij een bepaalde app probeert aan te melden en hem of haar dat na meer dan 10 keer binnen 5 minuten niet lukt.|
 |Detectie van dreigingen|Mogelijke ransomware activiteit|Een waarschuwing wanneer een gebruiker bestanden uploadt naar de cloud mogelijk besmet met ransomware.|
 |Detectie van dreigingen|Aanmelding van een gebruiker vanaf een niet-gecategoriseerd IP-adres|Ontvang een waarschuwing wanneer een gebruiker zich aanmeldt vanaf een IP-adres dat niet is opgenomen in een specifieke categorie IP-bereiken. U kunt IP-adressen categoriseren door IP-adresbereiken te selecteren op de pagina Instellingen.|
