@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/27/2017
+ms.date: 9/3/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f2df50b089cf7a2b5aa989b56c243faa2dd251b2
-ms.sourcegitcommit: c3fda43ef6fe0d15f0eb9ea23a6f245bad8c371b
+ms.openlocfilehash: bacc5264d36e0948b0e802b2fbb9e04d9a058af9
+ms.sourcegitcommit: de133f251ceab10d9c2306dd76e75a68db206743
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/27/2017
+ms.lasthandoff: 09/03/2017
 ---
 # <a name="whats-new-with-cloud-app-security"></a>Wat is er nieuw met Cloud App Security
 
@@ -28,6 +28,7 @@ ms.lasthandoff: 08/27/2017
 -   U kunt nu IP-adresbereiken bulksgewijs toevoegen door het maken van een script met de [IP-adresbereiken API](https://portal.cloudappsecurity.com/api-docs/). 
 -   Cloud Discovery biedt betere zichtbaarheid voor geblokkeerde transacties nu in de vorm van zowel het totale aantal transacties, evenals de geblokkeerde transacties.
 -   U kunt nu filter cloud-toepassingen op basis van of ze zijn gecertificeerd met **ISO 27017**. Deze nieuwe Cloud-Appcatalogus risicofactor bepaalt of de toepassingsprovider heeft deze certificering waaruit blijkt dat vaak geaccepteerd besturingselementen en richtlijnen voor het verwerken en bescherming van gebruikersgegevens in een openbare cloud computeromgeving.
+- Zodat u voorbereiden op naleving GDPR verzameld we de GDPR gereedheid van de instructies uit de cloud-apps in de catalogus met Cloud App. Het heeft geen nog invloed op de risicoscore van de app, maar bevat een koppeling u naar de app-uitgever GDPR gereedheid van de pagina wanneer deze wordt opgegeven. Microsoft is niet geverifieerd voor deze inhoud en is niet verantwoordelijk voor de geldigheidsduur.
 
 
 ## <a name="cloud-app-security-release-103"></a>Cloud App Security-release 103 

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/15/2017
+ms.date: 9/3/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3a677bc7-c8b7-4c6a-aada-82c8b3778352
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d2c5dff92c790a9ad27c872ebbd09769eef9898d
-ms.sourcegitcommit: 27170447acfaeded585c264e425a46a485e7fb19
+ms.openlocfilehash: 7e2b6d0f02d49eaa4354f5344d0555fc3f503fb8
+ms.sourcegitcommit: 5688d3916a54deada225f7a83c34a7c501953960
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/20/2017
+ms.lasthandoff: 09/04/2017
 ---
 # <a name="connect-azure-to-microsoft-cloud-app-security"></a>Verbinding maken met Azure en Microsoft Cloud App Security
 
@@ -91,7 +91,12 @@ Cloud App Security verbindt met Azure via Event Hubs. Deze sectie biedt instruct
   
 6.  Klik op **Verbinden**.
      Deze tekst wordt de verbinding en kan een paar minuten duren. Na de ontvangst van de melding dat de actie voltooid is, klikt u op **Sluiten**.  
-  
+
+
+> [!NOTE]
+> Deze functie is beschikbaar voor openbare preview.
+
+
 ## <a name="see-also"></a>Zie ook  
 [Cloud-apps beheren met beleidsregels](control-cloud-apps-with-policies.md)   
 [Ga naar de ondersteuningspagina van Cloud App Security voor technische ondersteuning.](http://support.microsoft.com/oas/default.aspx?prid=16031)   

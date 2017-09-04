@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/13/2017
+ms.date: 9/03/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: eb3ad41fd9e7600d4825f4bf5100ed59663a4254
-ms.sourcegitcommit: 4cf65f627f2d370ee4a4decae1acbb9658874056
+ms.openlocfilehash: be08317610ec1f32c78be9c942c64bba7bbdcd0f
+ms.sourcegitcommit: de133f251ceab10d9c2306dd76e75a68db206743
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/13/2017
+ms.lasthandoff: 09/03/2017
 ---
 # <a name="set-up-cloud-discovery"></a>Cloud Discovery instellen
 Cloud Discovery analyseert uw verkeerslogboeken op basis van de catalogus met Cloud App Security cloud-app van meer dan 15.000 cloud-apps die worden beoordeeld en gewaardeerd op basis van meer dan 60 risicofactoren u doorlopende inzicht in de cloud gebruikt, schaduw-IT, en het risico Shadow IT oplevert voor uw organisatie opgeven.
@@ -42,9 +42,10 @@ Het proces voor het genereren van een risicoanalyse bestaat uit de volgende stap
  
  
 >[!NOTE]
->De gegevens voor het doorlopende rapport worden twee keer per dag geanalyseerd.
+>- De gegevens voor het doorlopende rapport worden twee keer per dag geanalyseerd.
+>- De logboekverzamelaar comprimeren gegevens voordat deze wordt geüpload. Het uitgaande verkeer op de logboekverzamelaar is 10% van de grootte van de verkeerslogboeken die het ontvangt. 
  
-## <a name="using-traffic-logs-for--cloud-discovery"></a>Verkeerslogboeken gebruiken voor Cloud Discovery
+## <a name="using-traffic-logs-for-cloud-discovery"></a>Met behulp van logboeken over webverkeer voor Cloud Discovery
 In Cloud Discovery wordt gebruikgemaakt van de gegevens in uw verkeerslogboeken. Hoe gedetailleerder uw logboeken, hoe meer inzicht u krijgt. Voor Cloud Discovery zijn webverkeersgegevens met de volgende kenmerken vereist:
 - Datum van de transactie
 - Bron-IP
