@@ -33,6 +33,7 @@
 ## [Werken met het dashboard](daily-activities-to-protect-your-cloud-environment.md)
 ## Scenario's
 ### [Beveiligen van uw organisatie tegen ransomware](use-case-ransomware.md)
+### [Uw bestanden beveiligen met beheerquarantaine](use-case-admin-quarantine.md)
 ## Ontdekken
 ### [Werken met gedetecteerde apps](discovered-apps.md)
 ### [Werken met de risicoscore](risk-score.md)
