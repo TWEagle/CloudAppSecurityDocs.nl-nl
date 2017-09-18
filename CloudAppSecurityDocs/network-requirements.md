@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/27/2017
+ms.date: 9/17/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,52 +13,64 @@ ms.technology:
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: dac230e191c7c2d8159a2f373e6ef939fdd841a4
-ms.sourcegitcommit: c3fda43ef6fe0d15f0eb9ea23a6f245bad8c371b
+ms.openlocfilehash: 82bdda2ab26fa1c954edb5186eeb37d909d65e64
+ms.sourcegitcommit: d012fc1a099773bd9e9dc61906faab68dae0e996
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/27/2017
+ms.lasthandoff: 09/17/2017
 ---
 # <a name="network-requirements"></a>Netwerkvereisten
 
-Dit onderwerp bevat een lijst met poorten en IP-adressen die u wilt toestaan en geaccepteerde om te kunnen werken met Cloud App Security. 
+Dit onderwerp bevat een lijst met poorten en IP-adressen die u wilt toestaan en witte lijst om te kunnen werken met Cloud App Security. 
+
+Voor meer informatie over om te zien welke gegevens Cloud App Security center u bent verbonden, Zie [API-tokens](api-tokens.md)
 
 
-## <a name="portal-access"></a>Toegang tot portal
 
-Voor toegang tot portal is het nodig zijn voor de volgende IP-adressen toevoegen aan uw firewall goedgekeurde IP-adressen voor toegang tot de Cloud App Security-portal:  
-  
-104.42.231.28  
+## <a name="portal-access-siem-agent-authentication-gateway-and-log-collector"></a>Toegang tot portal, SIEM-agent, verificatie-gateway en logboekverzamelaar
+
+Voor toegang tot portal en verificatie gateway en voor het inschakelen van Cloud App Security verbinding maken met uw SIEM, evenals de Cloud App Security inschakelen logboekverzamelaar uit te voeren is nodig om toe te voegen **uitgaande poort 443** voor het volgende IP-adres adressen van uw firewall witte lijst:  
 
 
-## <a name="app-connector-access"></a>Toegang tot de App-connector
+> [!div class="mx-tableFixed"]
+|Datacenter|IP-adressen|  
+|----|----|
+|US1|13.91.91.243<br></br>52.183.75.62|
+|EU1|52.174.56.180<br></br>13.80.125.22|
 
-Voor sommige apps van derden worden geopend door Cloud App Security, is het mogelijk nodig zijn de volgende IP-adressen toevoegen aan de lijst met geaccepteerde Cloud App Security voor het verzamelen van Logboeken en toegang verlenen voor de Cloud App Security-console:  
-  
-104.209.35.177  
-13.91.98.185 40.118.211.172 13.93.216.68 13.91.61.249 13.93.233.42 13.64.196.27 13.64.198.97 13.64.199.41 13.64.198.19
+## <a name="app-connector-access-and-external-dlp-integration"></a>Toegang tot de App-connector en externe DLP-integratie
+
+Verbinding maken met apps van derden en integreren met externe DLP-oplossingen, Cloud App Security van verbinding maken met deze IP-adressen inschakelen:
+
+
+> [!div class="mx-tableFixed"]
+|Datacenter|IP-adressen|  
+|----|----|
+|US1|104.209.35.177<br></br>13.91.98.185<br></br>40.118.211.172<br></br>13.93.216.68<br></br>13.91.61.249<br></br>13.93.233.42<br></br>13.64.196.27<br></br>13.64.198.97<br></br>13.64.199.41<br></br>13.64.198.19|
+|EU1|13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
+
+
+### <a name="app-connector"></a>App-connector
+Voor sommige apps van derden worden geopend door Cloud App Security, kunnen deze IP-adressen worden gebruikt om in te schakelen van Cloud App Security voor het verzamelen van Logboeken en toegang verlenen voor de Cloud App Security-console. 
 
 > [!NOTE]
 >Mogelijk ziet u deze IP-adressen in de activiteitenlogboeken van de leverancier omdat Cloud App Security beheeracties uitvoert en van deze IP-adressen scant. 
   
 
-## <a name="siem-agent-and-log-collector"></a>SIEM-agent en de logboekverzamelaar
+### <a name="dlp-integration"></a>DLP-integratie
 
-Om in te schakelen Cloud App Security verbinding maken met uw SIEM en kunt u de logboekverzamelaar Cloud App Security om uit te voeren, is het nodig zijn om te openen:
+Open uw firewall DMZ kan deze IP-adressen met een dynamische bronpoortnummer of bereik in de volgorde voor Cloud App Security gegevens via uw stunnel verzenden naar uw server ICAP. 
 
-- Uitgaande poort 443-104.42.231.28
-
-## <a name="external-dlp-integration"></a>Externe DLP-integratie
-
-Open in de volgorde voor Cloud App Security gegevens via uw stunnel verzenden naar uw server ICAP uw firewall DMZ kan het externe IP-adressen die door Cloud App Security gebruikt met een dynamische bronpoortnummer of bereik. 
-
-1.  Adressen van bron: dit moeten goedgekeurde lijst zoals hierboven vermeld voor apps voor API-connector van derden
+1.  Adressen van bron: dit moeten wit weergegeven als hierboven vermeld voor apps voor API-connector van derden
 2.  TCP-bronpoort: dynamische
 3.  Bestemming adres(sen): één of twee IP-adres van de stunnel verbonden met de externe ICAP-server
 4.  Doel-TCP-poort: zoals gedefinieerd in uw netwerk
 
 > [!NOTE] 
 > Het poortnummer stunnel is standaard ingesteld op 11344. U kunt dit wijzigen in een andere poort, indien nodig, maar zorg ervoor dat Noteer het nieuwe poortnummer.
+
+
+    
 
 
 
