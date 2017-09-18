@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/12/2017
+ms.date: 9/18/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9ed4b87b3665509a4e842d985e02d414bfa532bf
-ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
+ms.openlocfilehash: 9ee63f826e3ab23f20f7a0d3f3ccf37d63e16345
+ms.sourcegitcommit: 60fea672ed205ae9cbe622646b2681c69cf8ac7a
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/18/2017
 ---
 # <a name="connect-apps"></a>Apps koppelen 
 App-connectors maken gebruik van de API's van app-providers. Hierdoor zijn de apps waarmee u verbinding maakt, beter zichtbaar en controleerbaar voor Cloud App Security.  
@@ -85,34 +85,8 @@ De volgende tabel geeft per cloud-app aan welke vaardigheden met App-connectors 
   
   
 ## <a name="prerequisites"></a>Vereisten  
-Voor bepaalde apps kan het nodig zijn de volgende IP-adressen toe te voegen aan de lijst met geaccepteerde IP-adressen, zodat Cloud App Security de logboeken kan verzamelen en de Cloud App Security-console toegang kan krijgen:  
-  
--   Voor de logboeken:  
-  
-    104.209.35.177  
-  
-    13.91.98.185
- 
-    40.118.211.172
 
-    13.93.216.68
-
-    13.91.61.249
-
-    13.93.233.42
-
-    13.64.196.27
-
-    13.64.198.97
-
-    13.64.199.41
-
-    13.64.198.19
-  
-  
--   Voor de console:  
-  
-     104.42.231.28  
+- Voor sommige apps, is het mogelijk nodig witte lijst IP-adressen inschakelen Cloud App Security voor het verzamelen van Logboeken en toegang verlenen voor de Cloud App Security-console. Zie voor meer informatie [vereisten](network-requirements.md).
 
 - Voor elke app die u wilt verbinden met de Cloud App Security-API-integratie, kunt u het beste een beheerdersserviceaccount maken dat is toegewezen aan Cloud App Security.  
   
