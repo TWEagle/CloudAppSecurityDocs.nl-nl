@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 9/17/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b3e4713e-986f-4a5e-9fcc-f8de94dd0df7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 11716fb83acfb893dce29c7f4179788d40bef7a4
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: 1a51be2be508459866f284261643001d12ebe0c0
+ms.sourcegitcommit: d012fc1a099773bd9e9dc61906faab68dae0e996
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 09/17/2017
 ---
 # <a name="connect-box-to-microsoft-cloud-app-security"></a>Verbinding maken tussen Box en Microsoft Cloud App Security
 In deze sectie vindt u instructies voor het maken van een verbinding tussen Cloud App Security en uw bestaande Box-account met behulp van de connector-API's voor de app.  
@@ -37,7 +37,7 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
   
          ![box apps](./media/box-apps.png "box apps")  
   
-    -   Als **Unpublished Applications** (Niet-gepubliceerde toepassingen) is geselecteerd, voegt u in het tekstvak **Except for** (Behalve voor) het serienummer in van de Cloud App Security-app (`nduj1o3yavu30dii7e03c3n7p49cj2qh`) en klikt u op **Save** (Opslaan).  
+    -   Als **niet-gepubliceerde toepassingen** is geselecteerd in de **behalve voor** tekst Voeg het serienummer van de Cloud App Security-app:<br></br>US1 Datacenter:`nduj1o3yavu30dii7e03c3n7p49cj2qh` <br></br>EU1 Datacenter:`me9cm6n7kr4mfz135yt0ab9f5k4ze8qp`<br></br>Klik vervolgens op **Opslaan**. Voor meer informatie over om te zien welke gegevens Cloud App Security center u bent verbonden, Zie [API tokens](api-tokens.md). 
   
          ![box settings except for](./media/box-settings-except-for.png "box settings except for")  
   

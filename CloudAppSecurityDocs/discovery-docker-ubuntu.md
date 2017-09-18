@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7fe91dbeba5b899ca7e19a2b8bf3458fa36f52fe
-ms.sourcegitcommit: f9851779aa15b11f559e56ac818f1333f027c000
+ms.openlocfilehash: dba7c5cf9a5160e4bd6be4a236f8e64ac4a412e2
+ms.sourcegitcommit: d012fc1a099773bd9e9dc61906faab68dae0e996
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/17/2017
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>Stel omhoog en configuratie op Ubuntu
 
@@ -105,7 +105,7 @@ De logboekverzamelaar kan een logboekcapaciteit van maximaal 50 GB per uur aan. 
 
 1.  Open een terminal op uw Ubuntu-machine.
 
-2.  Wijzig in de hoofdmap bevoegdheden met de opdracht:`sudo - i`
+2.  Wijzig in de hoofdmap bevoegdheden met de opdracht:`sudo -i`
 
 3.  Verwijderen van oude versies en Docker CE installeren met de volgende opdracht:
 

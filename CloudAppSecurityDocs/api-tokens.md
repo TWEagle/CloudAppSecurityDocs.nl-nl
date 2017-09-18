@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/1/2017
+ms.date: 9/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4f5e6b1e-6b2c-4358-98f0-945e2993d5fe
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 291a9bf9a0c45a7ef2667b5a4266ebb582d3a23b
-ms.sourcegitcommit: a0290ac2a662994f7771975ef6c20d0b47e9edd8
+ms.openlocfilehash: a4d882791554344926b99320bf6d7fd4678af0b5
+ms.sourcegitcommit: d012fc1a099773bd9e9dc61906faab68dae0e996
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 09/17/2017
 ---
 # <a name="api-tokens"></a>API-tokens
     
@@ -30,7 +30,7 @@ De Cloud App Security-API biedt programmatische toegang tot Cloud App Security v
 
 Om te zien van de volledige documentatie over de API, in de Cloud App Security-portal-Ga naar Help > **API-documentatie**.
 
-U hebt toegang tot de API wordt een API-token maken en deze gebruiken in uw software verbinding maken met de Cloud App Security-APi.
+U hebt toegang tot de API wordt een API-token maken en deze gebruiken in uw software verbinding maken met de Cloud App Security-API.
 
 Het tabblad API-tokens kunt u helpen bij het beheren van de API-tokens van uw tenant. 
 
@@ -49,7 +49,11 @@ Het tabblad API-tokens kunt u helpen bij het beheren van de API-tokens van uw te
   - Gegenereerd zijn tokens die nooit zijn gebruikt. 
   - Actieve zijn tokens die zijn gegenereerd en in de afgelopen 7 dagen zijn gebruikt. 
   - Niet-actief zijn gebruikt, maar er is geen activiteit in de afgelopen 7 dagen.
+5. Nadat u een nieuw token genereren, krijgt u een nieuwe URL op voor toegang tot de Cloud App Security-portal. 
 
+ ![Cloud App Security-API-token](./media/generate-api-token.png)
+
+De algemene portal URL blijven werken, maar ook aanzienlijk langzamer dan de aangepaste URL voorzien van uw token. Als u de URL op elk gewenst moment vergeet, kunt u deze bekijken door te gaan naar de **?** pictogram in het menu en selecteer **over**.
 
 ## <a name="api-token-management"></a>Token management API
 
@@ -63,6 +67,14 @@ Nadat een token is ingetrokken, wordt deze verwijderd uit de tabel en de softwar
 
 > [!NOTE]
 > SIEM-connectors en logboekverzamelaars ook API tokens te gebruiken. Deze tokens moeten worden beheerd vanaf de SIEM-agent secties en logboekverzamelaars en worden niet weergegeven in deze tabel. 
+
+
+## <a name="view-your-data-center"></a>Weergeven van uw datacenter
+
+Als u wilt zien welke datacenter die u in de Cloud App Security-portal verbinding maakt, klikt u op de **?** in de menubalk en selecteer **over**. 
+
+U ziet in het scherm Cloud App Security-versie van het datacenter.
+
 
 ## <a name="see-also"></a>Zie ook  
 [Problemen met SIEM-integratie oplossen](troubleshooting-siem.md)   
