@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 9/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,13 @@ ms.technology:
 ms.assetid: eb250ede-fede-4699-a08b-b8ea4b232f07
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d3fd3426cc32250a2c4104292ac418b38e1d4581
-ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
+ms.openlocfilehash: f0b2463a034a99a8f0e4a605efea65f596afc1d9
+ms.sourcegitcommit: 1c4e2d6a8488ef01bea52f5c600f606c84724857
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/19/2017
 ---
-## <a name="cloud-discovery-data-anonymization"></a>Cloud Discovery-gegevens anoniem maken
+# <a name="cloud-discovery-data-anonymization"></a>Cloud Discovery-gegevens anoniem maken
 
 U kunt door Cloud Discovery-gegevens anoniem te maken de privacy van gebruikers beveiligen. Nadat het gegevenslogboek naar de Cloud App Security-portal is geüpload, wordt het logboek opgeschoond en wordt alle informatie over gebruikersnamen vervangen door versleutelde gebruikersnamen. Op deze manier blijven alle cloudactiviteiten anoniem. Beheerders kunnen zo nodig voor een specifiek beveiligingsonderzoek (bijvoorbeeld bij schending van de beveiliging of verdachte gebruikersactiviteiten) de echte gebruikersnaam herleiden. Als een beheerder reden heeft een specifieke gebruiker te verdenken, is het ook mogelijk de versleutelde gebruikersnaam van een bekende gebruikersnaam op te zoeken en vervolgens het onderzoek uit te voeren met behulp van de versleutelde gebruikersnaam. Elke omzetting van een gebruikersnaam wordt gecontroleerd in het **governance-logboek** van de portal.
 
