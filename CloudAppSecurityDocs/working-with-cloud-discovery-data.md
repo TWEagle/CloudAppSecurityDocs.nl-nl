@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/14/2017
+ms.date: 9/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: cf94b290-b7ef-4fee-854e-c8ff8d11dea9
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 8b76c732e35258212b4ab97d5e21811a5f2f2828
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: 63631cef50738096e98414a1a9dfe7a1218fc475
+ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="discover"></a>Ontdekken
 
@@ -77,6 +77,10 @@ Ga als volgt te werk om een nieuw doorlopend rapport te maken:
 6.  Stel de gewenste filters in voor gegevens (**Organisatie-eenheden**, **IP-adrestags** of **IP-adresbereiken**). Zie het Engelstalige artikel [Organize the data according to your needs](ip-tags.md) (De gegevens organiseren op basis van uw behoeften) voor meer informatie over het werken met IP-adrestags en IP-adresbereiken.  
   
     ![Aangepast doorlopend rapport maken](./media/create-custom-continuous-report.png) 
+
+
+> [!NOTE]
+> Alle aangepaste rapporten zijn beperkt tot een maximum van 1 GB aan niet-gecomprimeerde gegevens. Als er meer dan 1 GB aan gegevens, wordt de eerste 1 GB aan gegevens geëxporteerd naar het rapport.
 
 ## <a name="deleting-cloud-discovery-data"></a>Cloud Discovery-gegevens verwijderen  
 Er zijn een aantal redenen waarom u uw Cloud Discovery- gegevens zou willen verwijderen. In de volgende gevallen is het raadzaam de gegevens te verwijderen:  

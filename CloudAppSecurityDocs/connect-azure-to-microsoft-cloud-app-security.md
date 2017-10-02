@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/3/2017
+ms.date: 9/25/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3a677bc7-c8b7-4c6a-aada-82c8b3778352
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7e2b6d0f02d49eaa4354f5344d0555fc3f503fb8
-ms.sourcegitcommit: 5688d3916a54deada225f7a83c34a7c501953960
+ms.openlocfilehash: 7497a52a48a7cb3b943da847b85144d0ce78ca84
+ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/04/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="connect-azure-to-microsoft-cloud-app-security"></a>Verbinding maken met Azure en Microsoft Cloud App Security
 
@@ -32,18 +32,18 @@ Cloud App Security verbindt met Azure via Event Hubs. Deze sectie biedt instruct
 1.  De Azure Activity Log van uw Azure-abonnement naar een Event Hub stream. Ga als volgt de officiële guide in de documentatie van Azure: https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/monitoring-stream-activity-logs-event-hubs
 
  > [!NOTE]
- > Als u meer dan één Azure-abonnement hebt, Herhaal dit voor elk abonnement, maar een enkele Event Hub die wordt gedeeld met uw abonnementen gebruiken.
+ > Als u meer dan één Azure-abonnement hebt, herhaalt u deze stap voor elk abonnement met behulp van een enkele Event Hub, gedeeld door uw abonnementen.
 
  Na het voltooien van de instructies wordt een nieuwe Event Hub gemaakt in de Namespace die u hebt gekozen.
  
  > [!NOTE]
- > Als u een fout krijgt na het exporteren van de logboeken van de activiteit, gaat u naar de **resourceproviders** blade in Azure en zorg ervoor dat 'microsoft.insights' is geregistreerd.
+ > Als u een fout krijgt na het exporteren van de logboeken van de activiteit, gaat u naar **resourceproviders** in Azure, in het menu links en zorg ervoor dat 'microsoft.insights' is geregistreerd.
 
 ### <a name="step-2-get-a-connection-string-to-your-event-hub"></a>Stap 2: Een verbindingsreeks naar uw Event Hub ophalen
 
-1.  Ga naar de **Event Hubs - Preview** blade.
+1.  Ga naar de **Event Hubs - Preview** in het menu links.
   
-   ![Event hubs-blade](media/azure-event-hubs.png "Azure event hubs")
+   ![Event hubs menu](media/azure-event-hubs.png "Azure event hubs")
 
 2.  Selecteer uw Event Hub-Namespace.
   
@@ -55,7 +55,7 @@ Cloud App Security verbindt met Azure via Event Hubs. Deze sectie biedt instruct
 
 4.  Selecteer de nieuwe Event Hub is gemaakt door Azure Monitor. Dit sjabloon heet **insights operationele logboeken**.
   > [!NOTE]
-  > Er enkele minuten duren tot de Event Hub is gemaakt.
+  > Duurt enkele minuten tot de Event Hub is gemaakt.
 
    ![Operational Insights-logboeken](media/azure-insight-operational-logs.png "Azure inzicht operationele Logboeken")
   
@@ -66,13 +66,13 @@ Cloud App Security verbindt met Azure via Event Hubs. Deze sectie biedt instruct
 
 6.  Voer een naam voor het nieuwe beleid en zorg ervoor dat ten minste de **Listen claim**. Wanneer u klaar bent, klikt u op **maken**.
   
-    ![Nieuw beleid voor Azure](media/azure-new-policy.png "Azure nieuw beleid maken")
+    ![Nieuw beleid voor Azure](media/azure-new-policy.png "Azure nieuw beleid")
 
-7.  Onder **instellingen** en vervolgens **gedeeld toegangsbeleid**, klikt u op in het toegangsbeleid dat u zojuist hebt gemaakt.   
+7.  Onder **instellingen** en vervolgens **gedeeld toegangsbeleid**, klikt u op in het toegangsbeleid dat u hebt gemaakt.   
   
-    ![Azure Selecteer beleid](media/azure-select-policy.png "Azure beleid selecteren")
+    ![Azure beleid](media/azure-select-policy.png "Azure beleid")
 
-8. Kopieer een van de verbindingsreeksen in het venster beleid door te klikken op de knop naast de **Connection string - primaire sleutel** of **Connection String - secundaire sleutel**.
+8. Kopieer een van de verbindingsreeksen in het venster beleid door te klikken op de knop naast **Connection string - primaire sleutel** of **Connection String - secundaire sleutel**.
 
 ### <a name="step-3-add-azure-to-cloud-app-security"></a>Stap 3: Azure cloud App Security toevoegen
  
@@ -89,8 +89,7 @@ Cloud App Security verbindt met Azure via Event Hubs. Deze sectie biedt instruct
    >[!NOTE] 
    > Als u een andere consumergroep moet worden gebruikt hebt gemaakt, gebruikt u dat **consumergroep** naam.
   
-6.  Klik op **Verbinden**.
-     Deze tekst wordt de verbinding en kan een paar minuten duren. Na de ontvangst van de melding dat de actie voltooid is, klikt u op **Sluiten**.  
+6.  Klik op **Connect** verbinding maakt en test de verbinding. Het kan enkele minuten duren. Na de ontvangst van de melding dat de actie voltooid is, klikt u op **Sluiten**.  
 
 
 > [!NOTE]

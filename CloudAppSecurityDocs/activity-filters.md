@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/30/2017
+ms.date: 9/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7d74bb482f44e2845d348dd18777d72910b7e18b
-ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
+ms.openlocfilehash: 835ffc05fb84117bf9bbf848d5718de4557e5e15
+ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="activities"></a>Activiteiten
 Cloud App Security maakt alle activiteiten van uw verbonden apps voor u zichtbaar. Nadat u Cloud App Security hebt verbonden met een app met behulp van de App-connector, scant Cloud App Security alle activiteiten die hebben plaatsgevonden, waarbij de retroactieve scantijd per app verschilt. Daarna wordt Cloud App Security voortdurend bijgewerkt met nieuwe activiteiten. 
@@ -45,15 +45,15 @@ Om in te zoomen op meer specifieke activiteiten, kunt u het basisfilter uitbreid
  ![geavanceerd filter logboekactiviteit](media/activity-log-filter-advanced.png)
 
 ## <a name="activity-filters"></a>Activiteitfilters
-Hieronder volgt een lijst met de activiteitfilters die kunnen worden toegepast. De meeste filters bieden ondersteuning voor meerdere waarden en voor NOT (niet), zodat u over een zeer krachtig hulpprogramma beschikt voor het maken van een beleid.  
+Hier volgt een lijst van activiteitfilters die kunnen worden toegepast. De meeste filters bieden ondersteuning voor meerdere waarden en niet, zodat u over een krachtig hulpprogramma voor het maken van beleid.  
   
--   Activiteit-id - Zoek alleen naar specifieke activiteiten op basis van de id. Dit filter is zeer nuttig wanneer u verbinding maakt tussen Cloud App Security en uw SIEM (met behulp van de SIEM-agent) en u de waarschuwingen in de Cloud App Security-portal verder wilt onderzoeken.  
+-   Activiteit-id - Zoek alleen naar specifieke activiteiten op basis van de id. Dit filter is handig als u Cloud App Security verbinding met uw SIEM (met behulp van de SIEM-agent) en u verder wilt onderzoeken waarschuwingen in de Cloud App Security-portal.  
   
--   Activiteitobjecten - zoek naar de objecten waarvoor de activiteit werd uitgevoerd. Dit filter wordt toegepast op bestands-, map-, gebruikers- of app-objecten. 
+-   Activiteitobjecten - zoek naar de objecten waarvoor de activiteit werd uitgevoerd. Dit filter wordt toegepast op bestand, map, gebruiker of app-objecten. 
     - Activiteitobject-id - de id van het object (bestands-, map-, gebruikers- of app-id).
-    - Bestand, map of site-URL - hiermee kunt u bestanden, mappen en URL's selecteren die beginnen met een bepaalde tekenreeks.
+    - Bestand, map of URL van de site - kunt u bestanden, mappen en URL's die beginnen met een specifieke tekenreeks.
     - Doelobject (bestand/map) - hiermee kunt u een specifiek bestand of specifieke map selecteren. 
-    - Item - Hiermee kunt u zoeken op de naam of id van een activiteitsobject (bijvoorbeeld: gebruikersnamen, bestanden, parameters, sites). Voor het filter **Items van activiteitsobjecten** kunt u selecteren of u wilt filteren op items die het specifieke item **bevatten**, die er **gelijk** aan zijn of die ermee **beginnen**.
+    - Item - Hiermee kunt u zoeken op de naam of id van een activiteitsobject (bijvoorbeeld: gebruikersnamen, bestanden, parameters, sites). Voor de **activiteitsobject Item** filter, kunt u selecteren of u wilt filteren op items die **bevatten**, **gelijk**, of **begint met** het item.
     
 -   Activiteitstype - zoek naar de app-activiteit.
 
@@ -73,9 +73,9 @@ Hieronder volgt een lijst met de activiteitfilters die kunnen worden toegepast. 
 
 -   Apparaattype - zoek alleen naar activiteiten die zijn uitgevoerd met behulp van een specifiek apparaattype, bijvoorbeeld alle activiteiten van mobiele apparaten, pc's of tablets.  
   
--   IP-adres – het onbewerkte IP-adres, de IP-categorie of het IP-label waarop de activiteit is uitgevoerd.  
+-   IP-adres – de onbewerkte IP-adres, categorie of code van waaruit de activiteit is uitgevoerd.  
     - Onbewerkt IP-adres - hiermee kunt u zoeken naar activiteiten die zijn uitgevoerd op of door onbewerkte IP-adressen die gelijk zijn aan, niet gelijk zijn aan, beginnen met of niet beginnen met een bepaalde reeks, of onbewerkte IP-adressen die wel of niet zijn ingesteld. 
-    - IP-categorie – de categorie van het IP-adres waarop de activiteit is uitgevoerd, bijvoorbeeld alle activiteiten van een reeks IP-adressen voor beheer. De categorieën moeten worden geconfigureerd om de relevante IP-adressen op te nemen, met uitzondering van de categorie 'Riskant' die vooraf is geconfigureerd en die twee IP-labels bevat: Anonieme proxy en Tor. Zie [De gegevens volgens uw behoeften ordenen](ip-tags.md) voor informatie over het configureren van IP-categorieën.  
+    - IP-categorie – de categorie van het IP-adres waarop de activiteit is uitgevoerd, bijvoorbeeld alle activiteiten van een reeks IP-adressen voor beheer. De categorieën moeten zodanig worden geconfigureerd dat deze de relevante IP-adressen, met uitzondering van de categorie "Riskant" die vooraf is geconfigureerd en bevat twee IP-tags - anonieme proxy en Tor. Zie [De gegevens volgens uw behoeften ordenen](ip-tags.md) voor informatie over het configureren van IP-categorieën.  
     - IP-label - het label van het IP-adres waarop de activiteit is uitgevoerd, bijvoorbeeld alle activiteiten van IP-adressen met een anonieme proxy. Cloud App Security maakt een aantal ingebouwde IP-labels die niet kunnen worden geconfigureerd. Bovendien kunt u uw eigen IP-labels configureren. Zie [De gegevens volgens uw behoeften ordenen](ip-tags.md) voor meer informatie over het configureren van IP-labels.
    De ingebouwde IP-labels zijn onder andere:
     - Microsoft-apps (14 hiervan)
@@ -98,16 +98,16 @@ Hieronder volgt een lijst met de activiteitfilters die kunnen worden toegepast. 
 
 -   Geregistreerde ISP – de internetprovider van waaruit de activiteit is uitgevoerd.   
 
--  Bron: zoeken op de bron waar de activiteit is gedetecteerd. Dit kan een van de volgende zijn:
+-  Bron: zoeken op de bron waar de activiteit is gedetecteerd. Kan bestaan uit een van de volgende bronnen:
   - App-connector: logboeken die rechtstreeks uit de API-connector van de app afkomstig zijn.
   - Analyse van App-connector: verbeteringen van de Cloud App Security-beveiliging op basis van een informatiescan door de API-connector.
   
 
--   Gebruiker - de gebruiker die de activiteit heeft uitgevoerd, te filteren op domein, groep, naam of organisatie. Als u activiteiten zonder specifieke gebruiker wilt filteren, kunt u de operator 'is niet ingesteld' gebruiken.  
+-   Gebruiker – de gebruiker die de activiteit kan worden gefilterd in het domein, groep, naam of organisatie heeft uitgevoerd. Als u activiteiten zonder specifieke gebruiker wilt filteren, kunt u de operator 'is niet ingesteld' gebruiken.  
     -   Gebruikersdomein - zoek naar een specifiek gebruikersdomein.
     -   Organisatie van de gebruiker – de organisatie-eenheid van de gebruiker die de activiteit heeft uitgevoerd, bijvoorbeeld alle activiteiten die worden uitgevoerd door Marketing_gebruikers in EMEA.  
     -   Gebruikersgroep – specifieke gebruikersgroepen die u kunt importeren uit verbonden apps, zoals Office 365-beheerders.  
-    -   Gebruikersnaam - zoek naar een specifieke gebruikersnaam. Voor een overzicht van gebruikers in een bepaalde gebruikersgroep klikt u in de **Activiteitenlade** op de naam van de gebruikersgroep. Hiermee gaat u naar de pagina Accounts waar een lijst met alle gebruikers in de groep staat. Van daaruit kunt u inzoomen op de details van de accounts van specifieke gebruikers in de groep.
+    -   Gebruikersnaam - zoek naar een specifieke gebruikersnaam. Voor een overzicht van gebruikers in een bepaalde gebruikersgroep klikt u in de **Activiteitenlade** op de naam van de gebruikersgroep. Hiermee gaat u naar de pagina voor Accounts met een lijst met alle gebruikers in de groep. Van daaruit, kunt u inzoomen op de details van de accounts van specifieke gebruikers in de groep.
        -  De filters **Gebruikersgroep** en **Gebruikersnaam** kunnen verder worden gefilterd met behulp van de filter **Als** en door de rol van de gebruiker te selecteren. De rol kan een van de volgende mogelijkheden zijn:
             - Alleen activiteitsobject - dit betekent dat de geselecteerde gebruiker of gebruikersgroep niet de betreffende activiteit heeft uitgevoerd, maar object van de activiteit was
             - Alleen uitvoerder - dit betekent dat de gebruiker of gebruikersgroep de activiteit heeft uitgevoerd
@@ -124,7 +124,7 @@ Hieronder volgt een lijst met de activiteitfilters die kunnen worden toegepast. 
 
 ### <a name="working-with-the-activity-drawer"></a>De activiteitslade gebruiken
 
-U kunt meer informatie bekijken over elke activiteit door te klikken op de activiteit in het activiteitenlogboek. Hiermee opent u de activiteit lade dat voorziet in de volgende aanvullende acties en inzichten voor elke activiteit:
+U kunt meer informatie bekijken over elke activiteit door te klikken op de activiteit in het activiteitenlogboek. Hiermee opent u de sectie van de activiteit met de volgende aanvullende acties en inzichten voor elke activiteit:
     - Overeenkomend beleid: klik op de koppeling Overeenkomend beleid om een lijst met beleidsregels te zien waarmee deze activiteit overeenkomt.
     - Onbewerkte gegevens weergeven: klik op Onbewerkte gegevens weergeven om te zien welke gegevens daadwerkelijk van de app zijn ontvangen.
     - Gebruiker: klik op de gebruiker om de gebruikerspagina weer te geven van de gebruiker die de activiteit heeft uitgevoerd. 
@@ -141,7 +141,7 @@ Zie [Governance-acties voor activiteiten](governance-actions.md#activity-governa
 
 #### <a name="user-insights"></a>Gebruiker insights
 
-De ervaring onderzoek bevat out-of-the-box inzicht in de uitvoerende gebruiker. Met een enkele klik, als u krijgt een uitgebreid overzicht van de gebruiker die zijn betrokken bij inclusief welke locatie ze van de manier waarop verbonden veel waarschuwingen openen is en de metagegevens.
+De ervaring onderzoek bevat out-of-the-box inzicht in de uitvoerende gebruiker. Met een enkele klik, als u krijgt een uitgebreid overzicht van de gebruiker die met inbegrip van welke locatie ze verbonden uit hoeveel openstaande waarschuwingen zijn ze zijn betrokken bij en informatie over de metagegevens.
 
 Gebruiker insights weergeven:
 
@@ -159,7 +159,7 @@ Gebruiker insights weergeven:
 
 #### <a name="ip-address-insights"></a>IP-adres insights
 
-Omdat het IP-adresgegevens is van cruciaal belang voor bijna alle onderzoek, kunt u gedetailleerde informatie over IP-adressen weergeven in de sectie van de activiteit. Uit binnen een bepaalde activiteit, kunt u op het tabblad IP-adres om samengevoegde gegevens over de IP-adres zoals het aantal openstaande waarschuwingen voor het specifieke IP-adres, een grafiek trend van recente activiteiten en een locatiekaart weer te geven. Hierdoor kunnen eenvoudig Inzoomen op, bijvoorbeeld wanneer onderzoeken onmogelijke reis waarschuwingen, gemakkelijk kunt begrijpen waar het IP-adres is gebruikt en als deze is betrokken bij verdachte activiteiten of niet. U kunt ook acties uitvoeren rechtstreeks in de sectie van de IP-adres waarmee u kunt de code van een IP-adres als riskant, VPN- of bedrijfsnetwerk te vereenvoudigen toekomstig onderzoek en -beleid maken.
+Omdat het IP-adresgegevens is van cruciaal belang voor bijna alle onderzoek, kunt u gedetailleerde informatie over IP-adressen weergeven in de sectie van de activiteit. Uit binnen een bepaalde activiteit, kunt u op het tabblad IP-adres om samengevoegde gegevens over de IP-adres zoals het aantal openstaande waarschuwingen voor het specifieke IP-adres, een grafiek trend van recente activiteiten en een locatiekaart weer te geven. Hierdoor kunnen eenvoudig Inzoomen op, bijvoorbeeld wanneer onderzoeken onmogelijke reis waarschuwingen, gemakkelijk kunt begrijpen waar het IP-adres is gebruikt en als deze is betrokken bij verdachte activiteiten of niet. U kunt ook acties uitvoeren rechtstreeks in de sectie van de IP-adres waarmee u kunt de code van een IP-adres als riskant, VPN, of in een bedrijfsnetwerk te vereenvoudigen toekomstig onderzoek en -beleid maken.
 
 IP-adres insights weergeven:
 

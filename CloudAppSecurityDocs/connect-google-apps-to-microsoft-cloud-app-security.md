@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/4/2017
+ms.date: 9/25/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: af60110859b027a9e9d58443f202752d6044d1a2
-ms.sourcegitcommit: f9851779aa15b11f559e56ac818f1333f027c000
+ms.openlocfilehash: 1b33f8bcb27cc303463ac83b46098bf82d66d25c
+ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>Verbinding maken tussen G Suite en Microsoft Cloud App Security
 In deze sectie vindt u instructies voor het maken van een verbinding tussen Cloud App Security en uw bestaande G Suite-account met behulp van de connector-API's.
@@ -26,13 +26,13 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
   
 ## <a name="configure-g-suite"></a>G Suite configureren  
   
-1.  Als G Suite Super Admin meldt u zich aan bij [https://cloud.google.com/console/project](https://cloud.google.com/console/project).  
+1.  Als een G Suite Super Admin, meld u aan bij [https://cloud.google.com/console/project](https://cloud.google.com/console/project).  
   
 2.  Klik op **Create project** (Een project maken) om een nieuw project te starten.  
   
      ![google1](./media/google1.png "google1")  
   
-3.  In het scherm **Nieuw project** geeft u uw project als volgt een naam:</br>
+3.  In de **nieuw project** scherm, Geef uw project als volgt:</br>
     **Microsoft Cloud App Security** en klik op **maken**.  
            ![google2](./media/google2.png "google2")  
   
@@ -71,54 +71,54 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
   
     -   Klik op **Opslaan**.  
   
-     ![google prod name](./media/google6.png "google6")  
+     ![Google-Productnaam](./media/google6.png "google6")  
   
 9. In het scherm **API Credentials** (API-referenties), klikt u op de pijl naast **Create credentials** (Referenties maken).  
   
-     ![google credentials](./media/google7.png "google7")  
+     ![Google-referenties](./media/google7.png "google7")  
 
 10. Selecteer **Service account key** (Serviceaccountsleutel).
 
-     ![google service account key](./media/google8.png "google8")  
+     ![Google-account servicesleutel](./media/google8.png "google8")  
   
-11. Onder **Create service account key** (sleutel voor service-account maken), kies **New service account** (nieuwe serviceaccount) en typ een naam, bijvoorbeeld **Serviceaccount 1**onder **Role** (rol) kies **Project** en vervolgens **Editor** en onder **Key type** (sleuteltype) kies **P12** en klik op **Create** (Maken). Schakel het selectievakje **Enable G Suite Domain-wide Delegation** (Domeinbrede delegatie voor Google Apps inschakelen) in en klik op **Save** (Opslaan).  
+11. Onder **maken service account key**, kies **nieuwe serviceaccount**, en typ een naam, bijvoorbeeld **serviceaccount 1**. Onder **rol**, kies **Project** en vervolgens **Editor**. Onder **sleuteltype**, kies **P12** en klik op **maken**. Schakel het selectievakje **Enable G Suite Domain-wide Delegation** (Domeinbrede delegatie voor Google Apps inschakelen) in en klik op **Save** (Opslaan).  
   
-     ![google service account key](./media/google9.png "google9")  
+     ![Sleutel voor service-account maken in Google](./media/google9.png "google9")  
   
 12.  Een P12-certificaatbestand wordt opgeslagen op uw computer.  
         
 12. In het scherm **Credentials** (Referenties) klikt u aan de rechterkant op **Manage service accounts** (Serviceaccounts beheren).  
        ![Referenties G Suite-serviceaccount](./media/google10.png "G Suite referenties-serviceaccount")  
   
-13. Klik op de 3 punten rechts van het serviceaccount dat u hebt gemaakt en selecteer **Edit** (Bewerken).  
+13. Klik op de drie punten rechts van het serviceaccount dat u hebt gemaakt en selecteer **bewerken**.  
   
      ![google edit](./media/google11.png "google edit")  
   
-15. Kopieer de **Service account ID** die is toegewezen aan uw service, u hebt die later nodig.  
+15. Kopieer de **Service-account-ID** toegewezen aan uw service - u hebt dit later nodig.  
   
      ![google service account ID](./media/google13.png "google13")  
   
-16. Open het Google-menu door in de titelbalk op de drie horizontale lijnen naast Google Cloud Platform te klikken en selecteer **API-manager** gevolgd door **Dashboard**.  
+16. Open het Google-menu door te klikken op de drie horizontale lijnen naast Google Cloud Platform in de titelbalk. Selecteer **API manager** gevolgd door **Dashboard**.  
     
 17. Blader omlaag naar de lijst met ingeschakelde API's en klik op het instellingentandwiel naast **Google Drive API**.   
-       ![Selecteer in Google Drive](./media/google14.png "google14")  
+       ![Selecteer Google Drive](./media/google14.png "google14")  
 
-18. Vul het volgende in:
+18. Vul in de volgende informatie:
 
     -   **Toepassingsnaam**: Microsoft Cloud App Security.  
   
-    -   **Short Description & Long Description** (Korte beschrijving en lange beschrijving)(optioneel): Microsoft Cloud App Security biedt u inzicht in cloud-toepassingen, zodat u het gebruik van cloud-toepassingen kunt sturen, onderzoeken en beheren; bedrijfsgegevens kunt beveiligen; en verdachte activiteiten kunt detecteren voor alle cloud-toepassingen.  
+    -   **Korte beschrijving en lange beschrijving** (optioneel): Microsoft Cloud App Security kunt u inzicht krijgen in cloudtoepassingen, zodat u kunt beheren, onderzoeken en beheren gebruik van cloudtoepassingen; bedrijfsgegevens kunt beveiligen; en detecteren verdachte activiteiten voor alle cloudtoepassingen.  
   
     -   Google vereist dat u ten minste één toepassingspictogram uploadt. Ga naar [https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip](https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip) voor het downloaden van een zip-bestand met Cloud App Security-pictogrammen. Vervolgens sleept u onder **Application icon** (Pictogram voor toepassing) de afbeeldingen van 128x128 en 32x32 pixels en zet u die neer.  
   
-    -   Onder **Drive Integration** (stationsintegratie) typt u onder **URL openen het volgende:**  
+    -   Onder **station integratie** Typ de volgende URL onder **URL openen:**  
   
          https://portal.cloudappsecurity.com/#/services/11770?tab=files  
      
-         ![google drive config](./media/google15.png "googledriveconfig")  
+         ![Google station config](./media/google15.png "Google Drive-configuratie")  
   
 19. In de lijst **Enabled APIs** (Ingeschakelde API’s) klikt u op het tandwiel voor instellingen naast **Google Apps Marketplace SDK** . 
-         ![google marketplace SDK config](./media/google16.png "googledriveconfig")  
+         ![Google marketplace SDK config](./media/google16.png "Google Drive-configuratie")  
 
        >[!NOTE]
        > Als het tandwiel is uitgeschakeld, kunt u klikken op **Google Apps Marketplace SDK** in plaats daarvan. 
@@ -128,11 +128,11 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
   
     -   De **toepassingsnaam** melding **Microsoft Cloud App Security**.
   
-         Vul bij **Application description** (Beschrijving toepassing) het volgende in: "Met Microsoft Cloud App Security kunt u inzicht krijgen in cloud-apps, zodat u het gebruik van cloud-apps kunt sturen, onderzoeken en beheren; bedrijfsgegevens kunt beveiligen; en verdachte activiteiten kunt detecteren voor alle cloud-apps."  
+         Vul de **toepassingsbeschrijving** veld met het 'Microsoft Cloud App Security kunt u inzicht krijgen in de cloud-apps beter kunt beheren, te onderzoeken en te bepalen van cloud-app-gebruik; bedrijfsgegevens kunt beveiligen; en het detecteren van verdachte activiteiten voor alle cloud-Apps."  
   
     -   Schakel het vakje **Enable individual install** (Afzonderlijke installatie inschakelen) uit.  
   
-    -   Configureer de 4 vereiste afbeeldingen onder **Application icons** (Pictogrammen voor toepassingen).  
+    -   Configureren van de vier vereiste afbeeldingen onder **toepassingspictogrammen**.  
   
          U kunt de afbeeldingen vinden op: [https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip](https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip)  
   
@@ -144,7 +144,7 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
   
         -   **URL privacybeleid**: http://go.microsoft.com/fwlink/?LinkId=512132  
   
-    -   Onder **OAuth 2.0 scopes** (bereiken) kopieert en plakt u het volgende. U moet deze een voor een kopiëren en na elke regel op Enter drukken:  
+    -   Onder **OAuth 2.0 scopes**, kopiëren en plakken van de volgende URL's (kopiëren ze op een tijd en druk op Enter na elke opdracht):  
   
            https://www.googleapis.com/auth/admin.reports.audit.readonly  
   
@@ -204,7 +204,7 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
 2.  Klik op de pagina **Connected apps** (Verbonden apps) op de knop met het plusteken en selecteer **G Suite**.  
        
   
-3.  Vul het volgende in het pop-upvenster in:  
+3.  Vul in het pop-upvenster in de volgende informatie:  
   
      ![Configuratie van G Suite in Cloud App Security](./media/gsuite-config-cas.png "Configuratie van G Suite in Cloud App Security")  
   
@@ -212,15 +212,15 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
   
     2.  **Het projectnummer (app-id)** dat u hebt gekopieerd in stap 21.  
   
-    3.  Upload het P12-**certificaat** dat u hebt opgeslagen in stap 12. U hebt hiervoor het wachtwoord nodig dat u hebt opgeslagen.  
+    3.  Upload het P12-**certificaat** dat u hebt opgeslagen in stap 12. U moet het wachtwoord die u hebt opgeslagen om dit te doen.  
   
     4.  Voer een **admin account email** in van uw G Suite-beheerder.  
   
-    5.  Als u een onbeperkt account van G Suite hebt, schakelt u dit selectievakje in. Zie [Enable instant visibility, protection and governance actions for your apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) (Directe zichtbaarheid, bescherming en beheeracties voor uw apps inschakelen) voor informatie over welke functies beschikbaar zijn in Cloud App Security voor een onbeperkt account van G Suite.  
+    5.  Als u een onbeperkt account van G Suite hebt, schakelt u dit selectievakje in. Zie voor informatie over welke functies beschikbaar in de Cloud App Security voor G Suite onbeperkte zijn [Schakel directe zichtbaarheid, bescherming en beheeracties voor uw apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).  
   
     6.  Klik op **Instellingen opslaan**.  
   
-    7.  **Klik op de koppeling** om verbinding te maken met G Suite. G Suite wordt geopend en u wordt gevraagd de toegang voor Cloud App Security te autoriseren.  
+    7.  **Klik op de koppeling** om verbinding te maken met G Suite. Hiermee opent u G Suite en u wordt gevraagd om toegang te verlenen voor Cloud App Security.  
          
     8.  Controleer of de verbinding tot stand is gekomen door op **Test now** (Nu testen) te klikken.  
   
@@ -231,7 +231,7 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
   
 Nadat u verbinding hebt gemaakt met G Suite, ontvangt u gebeurtenissen tot 60 dagen voorafgaand aan de verbinding.
   
-Na de verbinding met G Suite wordt in Cloud App Security een volledige scan uitgevoerd. Afhankelijk van hoeveel bestanden en gebruikers u hebt, kan het voltooien van de volledige scan even duren. Als u NRT-scans (Near Real-Time) wilt inschakelen, worden de bestanden waarvoor activiteit is gedetecteerd naar het begin van de scanwachtrij verplaatst. Een bestand dat wordt bewerkt, bijgewerkt of gedeeld, wordt bijvoorbeeld direct gescand en voor een dergelijk bestand wordt niet op het reguliere scanproces gewacht. Dit geldt niet voor bestanden die niet inherent zijn gewijzigd, bijvoorbeeld bestanden die zijn weergegeven, afgedrukt, geëxporteerd of waarvan een voorbeeld is bekeken.
+Na de verbinding met G Suite wordt in Cloud App Security een volledige scan uitgevoerd. Afhankelijk van hoeveel bestanden en gebruikers u hebt, kan het voltooien van de volledige scan even duren. Zodat bijna de real-timescans worden waarop de activiteit wordt gedetecteerd verplaatst naar het begin van de wachtrij scan. Bijvoorbeeld, wordt een bestand dat wordt bewerkt, bijgewerkt of gedeeld meteen gescand. Dit geldt niet voor bestanden die inherent niet zijn gewijzigd. Bijvoorbeeld worden bestanden die worden weergegeven, bekeken, afgedrukt of geëxporteerd gescand tijdens de reguliere scan.
   
   
 ## <a name="see-also"></a>Zie ook  
