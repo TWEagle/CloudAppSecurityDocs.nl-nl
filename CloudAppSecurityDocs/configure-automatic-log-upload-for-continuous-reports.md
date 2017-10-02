@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/24/2017
+ms.date: 9/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f6475c66a8786d3d9f39c70d460453aeed352feb
-ms.sourcegitcommit: 13148ac82e496e8d4e0d10851e5d6e4f231229e4
+ms.openlocfilehash: bf434c9f9ed1cc4c2d0edd375e0f51b45fdf6571
+ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/24/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance"></a>Logboek automatisch uploaden voor continue rapporten op een virtueel apparaat configureren
 
@@ -33,7 +33,9 @@ ms.lasthandoff: 09/24/2017
     - Toestaan dat de logboekverzamelaar inkomend FTP- en Syslog-verkeer mag ontvangen
     - Toestaan dat de logboekverzamelaar uitgaand verkeer naar de portal mag starten (bijvoorbeeld contoso.cloudappsecurity.com) op poort 443
 
-  
+> [!NOTE]
+> Als uw firewall vereist dat een lijst met statische IP-adressen toegang en biedt geen ondersteuning voor whitelisting op basis van de URL, staan de logboekverzamelaar initiëren uitgaand verkeer naar de [Microsoft Azure datacenter IP-bereiken op poort 443](https://www.microsoft.com/download/details.aspx?id=41653&751be11f-ede8-5a0c-058c-2ee190a24fa6=True).
+
 ## <a name="log-collector-performance"></a>Prestaties logboekverzamelaar
 De logboekverzamelaar kan een logboekcapaciteit van maximaal 50 GB per uur aan.
 De belangrijkste knelpunten in het logboekverzamelproces zijn:
@@ -54,7 +56,7 @@ De logboekverzamelaar heeft een ingebouwd beveiligingsmechanisme dat de snelheid
   
     b.  Geef uw proxy of firewall een **Naam**.  
   
-    c.  Selecteer het apparaat in de lijst **Bron**. Als u selecteert **aangepaste logboekindeling** om te werken met een netwerkapparaat die niet specifiek wordt vermeld, Zie [werken met de aangepaste log parser](custom-log-parser.md) voor configuratie-instructies.
+    c.  Selecteer het apparaat in de lijst **Bron**. Als u selecteert **aangepaste logboekindeling** om te werken met een netwerkapparaat die niet wordt vermeld, Zie [werken met de aangepaste log parser](custom-log-parser.md) voor configuratie-instructies.
   
     d.  Vergelijk uw logboek met het voorbeeld van de verwachte logboekindeling. Als de bestandsindeling van uw logboek niet met dit voorbeeld overeenkomt, moet u uw gegevensbron toevoegen onder **Overig**.  
   
@@ -73,18 +75,18 @@ De logboekverzamelaar heeft een ingebouwd beveiligingsmechanisme dat de snelheid
   
   > [!NOTE] 
   > - Eén logboekverzamelaar kan meerdere gegevensbronnen verwerken.
-  > - Kopieer de inhoud van het scherm. U hebt deze informatie nodig tijdens het configureren van de logboekverzamelaar voor de communicatie met Cloud App Security. Als u Syslog hebt geselecteerd, wordt ook informatie weergegeven over de poort waarop de Syslog-listener luistert.
-4.  **Download** een nieuwe virtuele machine voor de logboekverzamelaar door te klikken op Hyper-V of VMWare en decomprimeer het bestand met het wachtwoord dat u in de portal hebt ontvangen.  
+  > - Kopieer de inhoud van het scherm omdat deze wordt gebruikt bij het configureren van de Logboekverzamelaar om te communiceren met Cloud App Security. Als u Syslog hebt geselecteerd, bevat deze informatie informatie over de poort die de Syslog-listener luistert op.
+4.  **Download** een nieuwe virtuele machine van een logboek-collector door te klikken op de Hyper-V- of VMWare. Vervolgens Decomprimeer het bestand met het wachtwoord die u hebt ontvangen in de portal.  
   
 ### <a name="step-2--on-premises-deployment-of-the-virtual-machine-and-network-configuration"></a>Stap 2 - On-premises implementatie van de virtuele machine en de netwerkconfiguratie   
 
 > [!NOTE] 
-> In de volgende stappen wordt de implementatie in Hyper-V beschreven. De implementatiestappen voor de VM-hypervisor zijn iets anders.  
+> De volgende stappen beschrijven de implementatie in Hyper-V. De implementatiestappen voor de VM-hypervisor zijn iets anders.  
 
 1.  Open Hyper-V-beheer.  
   
 2.  Selecteer **Nieuw** en vervolgens **Virtuele machine** en klik dan op **Volgende**.  
- ![detectie van Hyper-v virtuele machine](./media/discovery-hyperv-virtual-machine.png "detectie Hyper-v virtuele machine")  
+ ![detectie van Hyper-V virtuele machine](./media/discovery-hyperv-virtual-machine.png "detectie Hyper-V virtuele machine")  
   
 3.  Geef een **naam** voor de nieuwe virtuele machine op, bijvoorbeeld CloudAppSecurityLogCollector01. Klik vervolgens op **Volgende**.  
   
@@ -96,35 +98,35 @@ De logboekverzamelaar heeft een ingebouwd beveiligingsmechanisme dat de snelheid
   
 7.  Kies de **Verbinding** voor het netwerk, indien beschikbaar, en klik op **Volgende**.  
   
-8.  Kies **Een bestaande virtuele harde schijf gebruiken** en selecteer het **VHD**-bestand dat in het ZIP-bestand zat dat u hebt gedownload.  
+8.  Kies **gebruik een bestaande virtuele harde schijf** en selecteer de **.vhd** -bestand dat is opgenomen in het Zip-bestand dat u hebt gedownload.  
   
 9.  Klik op **Volgende** en klik vervolgens op **Voltooien**.  
-    De machine wordt aan uw Hyper-V-omgeving toegevoegd.  
+    De machine is toegevoegd aan uw Hyper-V-omgeving.  
   
 9. Klik op de machine in de tabel **Virtuele machines** en klik op **Start**.   
   
-10. Maak verbinding met de virtuele machine voor de logboekverzamelaar om te zien of hieraan een DHCP-adres is toegewezen. Hiervoor klikt u op de virtuele machine en selecteert u **Verbinden**. Als het goed is, wordt de aanmeldingsprompt weergegeven. Als u een IP-adres ziet, kunt u verbinding maken met de virtuele machine met behulp van een terminal-/SSH-hulpprogramma.  Als u het IP-adres niet ziet, meldt u zich aan met behulp van de Hyper-V-/VMWare-verbindingshulpprogramma's met de referenties die u hebt gekopieerd tijdens het maken van de bovenstaande logboekverzamelaar. U kunt het wachtwoord wijzigen en u kunt de virtuele machine configureren met het netwerkconfiguratiehulpprogramma door de volgende opdracht uit te voeren:
+10. Maak verbinding met de virtuele machine voor de logboekverzamelaar om te zien of hieraan een DHCP-adres is toegewezen. Hiervoor klikt u op de virtuele machine en selecteert u **Verbinden**. Als het goed is, wordt de aanmeldingsprompt weergegeven. Als u een IP-adres ziet, kunt u verbinding maken met de virtuele machine met behulp van een terminal-/SSH-hulpprogramma.  Als u een IP-adres niet ziet, meld u aan met de hulpprogramma's voor Hyper-V/VMWare connection met de referenties die u hebt gekopieerd naar beneden wanneer u de Logboekverzamelaar eerder hebt gemaakt. U kunt het wachtwoord wijzigen en u kunt de virtuele machine configureren met het netwerkconfiguratiehulpprogramma door de volgende opdracht uit te voeren:
 ```
 sudo network_config
 ```
 > [!NOTE]
-> De virtuele machine is vooraf geconfigureerd voor het ophalen van een IP-adres via een DHCP-server. Als u vaste IP-adressen, een standaardgateway, een hostnaam, DNS-servers en NTPS wilt configureren, kunt u het hulpprogramma **network_config** gebruiken of de wijzigingen handmatig aanbrengen.
+> De virtuele machine is vooraf geconfigureerd voor het ophalen van een IP-adres via een DHCP-server. Als u configureren wilt, een statisch IP-adres, standaardgateway, hostnaam, DNS-servers en NTPS, kunt u de **network_config** hulpprogramma of wijzigingen handmatig uitvoeren.
 
 
 Uw logboekverzamelaar is nu verbonden met uw netwerk en kan de Cloud App Security-portal bereiken.  
 
 ### <a name="step-3--on-premises-configuration-of-the-log-collection"></a>Stap 3 - On-premises configuratie van de logboekverzamelaar 
-Ga als volgt te werk als u zich voor het eerst wilt aanmelden bij de logboekverzamelaar en de configuratie van de logboekverzamelaar vanuit de portal wilt importeren: 
+De eerste keer aanmelden bij de logboekverzamelaar en configuratie van de logboekverzamelaar als volgt importeren vanuit de portal. 
 
-1.  Meld u aan bij de logboekverzamelaar via SSH met behulp van de referenties voor de interactieve beheerder die u in de portal heeft gekregen. (Als dit de eerste keer is dat u zich bij de console aanmeldt, moet u het wachtwoord wijzigen en u na het wijzigen van het wachtwoord opnieuw aanmelden. Als u gebruikmaakt van een terminalsessie, moet u de terminalsessie mogelijk opnieuw opstarten. )
+1.  Meld u aan bij de logboekverzamelaar via SSH met behulp van de interactieve beheerdersreferenties die u in de portal. (Als dit de eerste keer aanmelden bij de console, u moet het wachtwoord wijzigen en meld u opnieuw na het wijzigen van het wachtwoord. Als u een terminal-sessie gebruikt, moet u mogelijk de terminal-sessie opnieuw starten. )
 2.  Voer het configuratiehulpprogramma van de verzamelaar uit met het toegangstoken dat u tijdens het maken van de logboekverzamelaar hebt gekregen.```sudo collector_config <access token> ```
-3. Voer uw consoledomein in. Bijvoorbeeld: ```contoso.portal.cloudappsecurity.com``` Dit is beschikbaar via de URL die u ziet nadat u zich hebt aangemeld bij de Cloud App Security-portal. 
+3. Voer uw consoledomein in, bijvoorbeeld: ```contoso.portal.cloudappsecurity.com``` deze optie is beschikbaar via de URL die u ziet na het aanmelden bij de Cloud App Security-portal. 
 
-4. Voer de naam in van de logboekverzamelaar die u wilt configureren, bijvoorbeeld: **CloudAppSecurityLogCollector01** of **NewYork** in de afbeelding hierboven.
+4. Voer de naam van de logboekverzamelaar die u configureren wilt, bijvoorbeeld: **CloudAppSecurityLogCollector01** of **NewYork** van de voorgaande afbeelding.
 
 5.  Importeer op de volgende manier de configuratie van de logboekverzamelaar uit de portal:  
   
-      a.  Meld u aan bij de logboekverzamelaar via SSH met behulp van de referenties voor de interactieve beheerder die u in de portal heeft gekregen.  
+      a.  Meld u aan bij de logboekverzamelaar via SSH met behulp van de interactieve beheerdersreferenties die u in de portal.  
   
       b.  Voer het configuratiehulpprogramma van de verzamelaar uit met het toegangstoken dat u in de opdracht ```sudo collector_config \<access token>``` hebt gekregen.  
      
@@ -142,7 +144,7 @@ Configureer volgens de richtlijnen in het dialoogvenster uw netwerkfirewalls en 
   
 ### <a name="step-5---verify-the-successful-deployment-in-the-cloud-app-security-portal"></a>Stap 5 - Controleer of de implementatie is voltooid in de Cloud App Security-portal
 
-Controleer de status van de collector in de **logboekverzamelaar** tabel en zorg ervoor dat de status **verbonden**. Als het **gemaakt**, is het mogelijk dat de verbinding van de collector logboek en parseren is niet voltooid.
+Controleer de status van de collector in de **logboekverzamelaar** tabel en zorg ervoor dat de status **verbonden**. Als het **gemaakt**, is het mogelijk dat het logboek collector verbinding en parseren nog niet voltooid.
 
 ![status collector in logboek registreren](./media/log-collector-status.png)
 
@@ -154,9 +156,12 @@ Zie [Problemen met Cloud Discovery oplossen](troubleshooting-cloud-discovery.md)
 
 Nadat u hebt gecontroleerd dat de logboeken worden naar de Cloud App Security wordt geüpload en de rapporten worden gegenereerd, kunt u aangepaste rapporten maken. U kunt nu de detectie van aangepaste rapporten op basis van Azure Active Directory-gebruikersgroepen maken. Bijvoorbeeld, als u wilt zien van de cloud gebruiken van de marketingafdeling kunt u de marketing-groep met de functie importeren groep importeren en maak vervolgens een aangepast rapport voor deze groep. U kunt ook een rapport op basis van IP-adreslabel of IP-adresbereiken aanpassen.
 
-1. Selecteer in de Cloud App Security-portal onder het instellingentandwiel **Cloud Discovery-instellingen** en selecteer vervolgens **continue rapporten beheren**. 
+1. Selecteer in de Cloud App Security-portal onder het instellingentandwiel **Cloud Discovery-instellingen**, en selecteer vervolgens **continue rapporten beheren**. 
 2. Klik op de **rapport maken** knop en vul de velden in.
 3. Onder de **Filters** kunt u gegevens door gegevensbron door filteren [geïmporteerde gebruikersgroep](user-groups.md), of door [IP-adres-tags en bereiken](ip-tags.md). 
+
+> [!NOTE]
+> Alle aangepaste rapporten zijn beperkt tot een maximum van 1 GB aan niet-gecomprimeerde gegevens. Als er meer dan 1 GB aan gegevens, wordt de eerste 1 GB aan gegevens geëxporteerd naar het rapport.
 
 ![Aangepast continue rapport](./media/custom-continuous-report.png)
 

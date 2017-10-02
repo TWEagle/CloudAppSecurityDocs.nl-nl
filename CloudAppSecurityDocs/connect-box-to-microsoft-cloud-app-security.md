@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/17/2017
+ms.date: 9/25/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b3e4713e-986f-4a5e-9fcc-f8de94dd0df7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 1a51be2be508459866f284261643001d12ebe0c0
-ms.sourcegitcommit: d012fc1a099773bd9e9dc61906faab68dae0e996
+ms.openlocfilehash: 6c8b27ac5d148980463b68feded3667e1ebb19e1
+ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/17/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="connect-box-to-microsoft-cloud-app-security"></a>Verbinding maken tussen Box en Microsoft Cloud App Security
 In deze sectie vindt u instructies voor het maken van een verbinding tussen Cloud App Security en uw bestaande Box-account met behulp van de connector-API's voor de app.  
@@ -25,7 +25,7 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
 ## <a name="how-to-connect-box-to-cloud-app-security"></a>Verbinding maken tussen Box en Microsoft Cloud App Security  
   
 > [!NOTE]  
->  Als u een account implementeert dat geen beheerdersaccount is, mislukt de API-test en kan Cloud App Security niet alle bestanden in Box scannen. Als dit problemen voor u oplevert, kunt u gebruikmaken van een co-beheerder waarbij alle bevoegdheden zijn aangevinkt. Hierdoor blijft de API-test echter mislukken en worden bestanden van andere beheerders in Box niet gescand.  
+>  Implementeren met een account dat is niet een beheerdersaccount leidt tot een fout in de API-test en kan geen Cloud App Security alle bestanden in Box scannen. Als dit problemen voor u oplevert, kunt u gebruikmaken van een co-beheerder waarbij alle bevoegdheden zijn aangevinkt. Hierdoor blijft de API-test echter mislukken en worden bestanden van andere beheerders in Box niet gescand.  
   
 1.  Als u toegang tot machtigingen van de toepassing beperkt, volgt u deze stap. Ga anders verder met stap 2.  
   
@@ -52,9 +52,9 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
   
 4.  Klik in het pop-upvenster **Vakinstellingen** op **Deze koppeling volgen**.  
   
-5.  Hiermee opent u de Box-aanmeldingspagina. Voer uw referenties in om Cloud App Security toegang te geven tot de Box-app van uw team.  
+5.  Hiermee opent u de aanmeldingspagina Box. Voer uw referenties in om Cloud App Security toegang te geven tot de Box-app van uw team.  
   
-6.  Box geeft een melding weer om u te vragen of u Cloud App Security toegang wilt geven tot de gegevens van uw team en het activiteitenlogboek en toestemming wilt geven om willekeurige activiteiten uit te voeren als een willekeurig teamlid. Klik op **Toestaan** om door te gaan.  
+6.  Vak wordt u gevraagd of u wilt toestaan Cloud App Security-toegang tot de teamgegevens van uw, activiteitenlogboek, en activiteiten uitvoeren als teamlid van een. Klik op **Toestaan** om door te gaan.  
   
 7.  In de Cloud App Security-portal zou u nu een bericht moeten ontvangen, waarin staat vermeld dat er verbinding is gemaakt met Box.  
   
@@ -66,7 +66,7 @@ Box is nu verbonden met Cloud App Security.
  
 Nadat u verbinding hebt gemaakt met Box, ontvangt u gebeurtenissen tot 60 dagen voorafgaand aan de verbinding.
   
-Na de verbinding met Box wordt in Cloud App Security een volledige scan uitgevoerd. Afhankelijk van hoeveel bestanden en gebruikers u hebt, kan het voltooien van de volledige scan even duren. Als u NRT-scans (Near Real-Time) wilt inschakelen, worden de bestanden waarvoor activiteit is gedetecteerd naar het begin van de scanwachtrij verplaatst. Een bestand dat wordt bewerkt, bijgewerkt of gedeeld, wordt bijvoorbeeld direct gescand en voor een dergelijk bestand wordt niet op het reguliere scanproces gewacht. Dit geldt niet voor bestanden die niet inherent zijn gewijzigd, bijvoorbeeld bestanden die zijn weergegeven, afgedrukt, geëxporteerd of waarvan een voorbeeld is bekeken.
+Na de verbinding met Box wordt in Cloud App Security een volledige scan uitgevoerd. Afhankelijk van hoeveel bestanden en gebruikers u hebt, kan het voltooien van de volledige scan even duren. Zodat bijna de real-timescans worden waarop activiteiten worden gedetecteerd verplaatst naar het begin van de wachtrij scan. Bijvoorbeeld, een bestand dat wordt bewerkt, bijgewerkt of gedeeld gescand meteen in plaats van te wachten tot de reguliere scanproces. Bijna de real-timescans geldt niet voor bestanden die inherent niet zijn gewijzigd. Bijvoorbeeld worden bestanden die worden weergegeven, bekeken, afgedrukt of geëxporteerd gescand als onderdeel van de regelmatig geplande scan.
   
 ## <a name="see-also"></a>Zie ook  
 [Cloud-apps beheren met beleidsregels](control-cloud-apps-with-policies.md)   
