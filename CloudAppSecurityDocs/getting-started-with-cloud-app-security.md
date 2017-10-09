@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/3/2017
+ms.date: 10/1/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,23 +13,23 @@ ms.technology:
 ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b16231a0456cce028e69add3d6a643a9698ea0f1
-ms.sourcegitcommit: 5688d3916a54deada225f7a83c34a7c501953960
+ms.openlocfilehash: bdde7b7c25244b2b11710d998754e5e115c40c9a
+ms.sourcegitcommit: 55f06262640332e5c02c5fa1c6db74789dbdd552
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/04/2017
+ms.lasthandoff: 10/03/2017
 ---
 # <a name="deploy-cloud-app-security"></a>Cloud App Security implementeren
 Met Cloud App Security kunt u profiteren van de voordelen van cloudtoepassingen, terwijl u de controle houdt over uw bedrijfsbronnen. Dit gebeurt door de zichtbaarheid van de activiteit van de cloud en de beveiliging van bedrijfsgegevens te verbeteren. In dit onderwerp wordt u stapsgewijs begeleid door de stappen voor het instellen en gebruiken van Cloud App Security.  
 
-Uw organisatie moet beschikken over een licentie om Cloud App Security te kunnen gebruiken. Zie de sectie 'Licentieresources' in [Cloud App Security aanschaffen](https://www.microsoft.com/en-us/cloud-platform/cloud-app-security) voor meer informatie.  
+Uw organisatie moet beschikken over een licentie om Cloud App Security te kunnen gebruiken. Zie voor meer informatie de [Cloud App Security aanschaffen](https://www.microsoft.com/cloud-platform/cloud-app-security) sectie op de startpagina van de Cloud App Security.  
 
 >[!NOTE]
 >U hebt geen Office 365-licentie nodig om Cloud App Security te kunnen gebruiken.  
 
 ## <a name="prerequisites"></a>Vereisten  
   
--   Uw organisatie moet beschikken over een licentie voor Cloud App Security om het product te kunnen gebruiken. Voor meer informatie raadpleegt u [Cloud App Security aanschaffen](https://www.microsoft.com/server-cloud/products/cloud-app-security/default.aspx) en kijkt u bij de [Licentieresources](https://www.microsoft.com/server-cloud/products/cloud-app-security/default.aspx).  
+-   Uw organisatie moet beschikken over een licentie voor Cloud App Security om het product te kunnen gebruiken. Zie voor meer informatie de [Cloud App Security aanschaffen](https://www.microsoft.com/cloud-platform/cloud-app-security) sectie op de startpagina van de Cloud App Security.  
   
      Raadpleeg voor activering van de tenant [Contact opnemen met de ondersteuning van Office 365 voor bedrijven - Help voor beheerders](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).  
   
