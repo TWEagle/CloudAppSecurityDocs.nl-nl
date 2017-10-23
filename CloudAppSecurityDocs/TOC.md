@@ -1,7 +1,9 @@
 # Meer informatie en verkennen
-## [Wat is CAS?](what-is-cloud-app-security.md)
+## [Wat is Cloud App Security?](what-is-cloud-app-security.md)
 ## [Wat is er nieuw?](release-notes.md)
-## [CAS versies](editions-cloud-app-security.md)
+## Vergelijken
+### [Office 365](editions-cloud-app-security-o365.md)
+### [Azure AD](editions-cloud-app-security-aad.md)
 # Implementeer
 ## [Aan de slag](getting-started-with-cloud-app-security.md)
 ## [Basisinstellingen](general-setup.md)
