@@ -31,10 +31,13 @@
 ### [Verbinden maken met Okta](connect-okta-to-microsoft-cloud-app-security.md)
 ### [Verbinding maken met ServiceNow](connect-servicenow-to-microsoft-cloud-app-security.md)
 ### [Verbinding maken met Salesforce](connect-salesforce-to-microsoft-cloud-app-security.md)
+## [Apps beveiligen met proxy](proxy-intro-aad.md)
+### [Proxy voor Azure AD-apps implementeren](proxy-deployment-aad.md)
 # Gebruik
 ## [Werken met het dashboard](daily-activities-to-protect-your-cloud-environment.md)
 ## Scenario's
 ### [Beveiligen van uw organisatie tegen ransomware](use-case-ransomware.md)
+### [Downloads van gevoelige informatie blokkeren](use-case-proxy-block-session-aad.md)
 ### [Uw bestanden beveiligen met beheerquarantaine](use-case-admin-quarantine.md)
 ## Ontdekken
 ### [Werken met gedetecteerde apps](discovered-apps.md)
@@ -56,6 +59,7 @@
 #### [Beleidsregels voor bestanden](data-protection-policies.md)
 ##### [Inhoudsinspectie](content-inspection.md)
 ##### [Werken met de RegEx-engine](working-with-the-regex-engine.md)
+#### [Sessie-beleid](session-policy-aad.md)
 #### [Verwijzing naar beleidssjabloon](policy-template-reference.md)
 ### [Verbonden apps beheren](governance-actions.md)
 ### [Gedetecteerde apps beheren](governance-discovery.md)
