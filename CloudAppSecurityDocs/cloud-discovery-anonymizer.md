@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/24/2017
+ms.date: 10/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: eb250ede-fede-4699-a08b-b8ea4b232f07
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e6f9377942a969137fe766b4b146662d359b0224
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: f3d710cabf1477ea248182a994dee8c00e2c4536
+ms.sourcegitcommit: f9c6bd3c629cc48ce771fec47dd6e40bc4c7a197
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/30/2017
 ---
 # <a name="cloud-discovery-data-anonymization"></a>Cloud Discovery-gegevens anoniem maken
 
@@ -34,10 +34,12 @@ Hoe het anoniem maken van gegevens werkt:
 1.  Er zijn drie manieren om gegevens anoniem te maken: 
     
     - U kunt de gegevens instellen van een specifiek logboekbestand om te worden geanonimiseerde, [maken van een nieuwe van momentopnamerapport](create-snapshot-cloud-discovery-reports.md) en het selecteren van **anoniem te maken van persoonlijke gegevens**.
- ![Gegevens van momentopnamen anoniem maken](./media/anonymize-log.png)
+
+      ![Snapshotgegevens anoniem te maken](./media/anonymize-log.png)
 
     - U kunt instellen dat de gegevens uit een [geautomatiseerde upload voor een nieuwe gegevensbron](configure-automatic-log-upload-for-continuous-reports.md) anoniem worden gemaakt door **Anonymize private information** (Persoonlijke informatie anoniem maken) te selecteren wanneer u de nieuwe gegevensbron toevoegt.  
- ![Logboekgegevens anoniem maken](./media/anonymize-autolog.png)
+  
+      ![Anoniem gegevens aan het logboek te maken](./media/anonymize-autolog.png)
 
     - U kunt als volgt in Cloud App Security instellen dat standaard alle gegevens van de momentopnamerapporten van geüploade logboekbestanden en doorlopende rapporten van logboekcollectors anoniem worden gemaakt:
      
@@ -47,24 +49,27 @@ Hoe het anoniem maken van gegevens werkt:
 
         3. Onder Versleutelingssleutel selecteert u of u **de speciale sleutel voor uw portal** of **een aangepaste sleutel** wilt gebruiken. Als u een **aangepaste sleutel** wilt gebruiken, voert u een 16-bytes UTF8-versleutelingssleutel in.
         4. Klik op **Opslaan**.
-  ![Anoniem maken](./media/anonymizer1.png)
+ 
+       ![Anonymization](./media/anonymizer1.png)
   
 
 2.  Als u anoniem maken hebt geselecteerd, wordt met Cloud App Security het logboek van het gegevensverkeer geparseerd en worden specifieke gegevenskenmerken geëxtraheerd.
 3.  Cloud App Security vervangt de gebruikersnaam door een versleutelde gebruikersnaam.
 4.  Vervolgens worden de cloudgebruiksgegevens geanalyseerd en worden Cloud Discovery-rapporten gegenereerd op basis van de anonieme gegevens.
- ![Dashboard Anonymize Cloud Discovery (Cloud Discovery anoniem maken)](./media/anonymize-dashboard.png)
  
-
+    ![Cloud Discovery-dashboard anoniem te maken](./media/anonymize-dashboard.png)
+ 
 5.  U kunt voor specifiek onderzoek, zoals het onderzoek van een waarschuwing over afwijkend gebruik, de specifieke gebruikersnaam in de portal omzetten en hiervoor een zakelijke reden opgeven. Deze pagina kan ook worden gebruikt om de versleutelde gebruikersnaam van een bekende gebruikersnaam op te zoeken. 
 
     1. Selecteer **Instellingen voor Cloud Discovery** onder het tandwiel Instellingen.
     2. Voer op het tabblad **Anonymization** (Anoniem maken) onder **Anonymize and resolve usernames** (Anoniem maken en gebruikersnamen omzetten) een reden in waarom u de omzetting uitvoert.
     3. Selecteer onder **Enter username to resolve** (Om te zetten gebruikersnaam invoeren) de optie **From anonymized** (Van anoniem gemaakt) en voer de anoniem gemaakte gebruikersnaam in of selecteer **To anonymized** (Naar anoniem gemaakt) en voer de oorspronkelijke gebruikersnaam in die u wilt omzetten. Klik op **oplossen**. 
-![Anoniem maken](./media/anonymizer.png)
+
+   ![Anonymization](./media/anonymizer.png)
 
 6.  De actie wordt gecontroleerd in het **governance-logboek** van de portal. 
-![Anoniem maken](./media/anonymize-gov-log.png)
+
+     ![Anonymization](./media/anonymize-gov-log.png)
 
 
 

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/27/2017
+ms.date: 10/30/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,30 +13,52 @@ ms.technology:
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a43adb2dfbfce0164384bd9fccb87d602e9eb7b7
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: f67e363f9b6cdb866124960037ecb81e07756d8a
+ms.sourcegitcommit: 9eb5c9c43629329a081f970b480956975e424ecb
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/30/2017
 ---
 # <a name="network-requirements"></a>Netwerkvereisten
 
 Dit onderwerp bevat een lijst met poorten en IP-adressen die u wilt toestaan en witte lijst om te kunnen werken met Cloud App Security. 
 
-Voor meer informatie over om te zien welke gegevens Cloud App Security center u bent verbonden, Zie [API-tokens](api-tokens.md)
 
+## <a name="view-your-data-center"></a>Weergeven van uw datacenter
 
+Sommige van de onderstaande vereisten zijn afhankelijk van op welke Datacenter u met verbonden bent. 
 
-## <a name="portal-access-siem-agent-authentication-gateway-and-log-collector"></a>Toegang tot portal, SIEM-agent, verificatie-gateway en logboekverzamelaar
+Als u wilt zien welke datacentrum u een verbinding met:
 
-Voor toegang tot portal en verificatie gateway en voor het inschakelen van Cloud App Security verbinding maken met uw SIEM, evenals de Cloud App Security inschakelen logboekverzamelaar uit te voeren is nodig om toe te voegen **uitgaande poort 443** voor het volgende IP-adres adressen van uw firewall witte lijst:  
+1. Klik in de Cloud App Security-portal op de **?** in de menubalk en selecteer **over**. 
+
+    ![Klik op over](./media/about-menu.png)
+
+2. In het scherm van de versie van Cloud App Security ziet u de regio en het datacenter.
+
+    ![Weergeven van uw datacenter](./media/data-center.png)
+
+## <a name="portal-access"></a>Toegang tot portal
+
+Voor toegang tot de Cloud App Security-portal, voegt u **uitgaande poort 443** van de volgende IP-adressen van uw firewall witte lijst:  
 
 
 > [!div class="mx-tableFixed"]
 |Datacenter|IP-adressen|  
 |----|----|
-|US1|13.91.91.243<br></br>52.183.75.62|
-|EU1|52.174.56.180<br></br>13.80.125.22|
+|US1|13.80.125.22<br></br>52.183.75.62<br></br>13.91.91.243|
+|EU1|13.80.125.22<br></br>52.183.75.62<br></br>52.174.56.180|
+
+## <a name="siem-agent-connection"></a>Verbinding van SIEM-agent
+
+Toevoegen zodat Cloud App Security verbinding maken met uw SIEM **uitgaande poort 443** van de volgende IP-adressen van uw firewall witte lijst:  
+
+
+> [!div class="mx-tableFixed"]
+|Datacenter|IP-adressen|  
+|----|----|
+|US1|13.91.91.243|
+|EU1|52.174.56.180|
 
 ## <a name="app-connector-access-and-external-dlp-integration"></a>Toegang tot de App-connector en externe DLP-integratie
 
@@ -77,10 +99,20 @@ Het IP-adres van de Cloud App Security-specifieke e-mailadres is:
 
 Zorg ervoor dat aan de lijst met geaccepteerde dit IP-adres met uw service tegen ongewenste e-mail waarmee meldingen worden verzonden.
     
+## <a name="log-collector"></a>Logboekverzamelaar 
+
+Cloud Discovery-functies met een logboekverzamelaar inschakelen en de Shadow IT detecteren in uw organisatie, is het nodig zijn voor het openen van het volgende:
+
+- Toestaan dat de logboekverzamelaar binnenkomend FTP- en Syslog-verkeer ontvangen.
+- De logboekverzamelaar initiëren uitgaand verkeer naar de portal (bijvoorbeeld contoso.cloudappsecurity.com) op poort 443 toestaan.
+- Toestaan dat de logboekverzamelaar initiëren uitgaand verkeer naar Azure blob storage (https://adaprodconsole.blob.core.windows.net/) op poort 80 en 443.
+
+> [!NOTE]
+> Als uw firewall vereist dat een lijst met statische IP-adressen toegang en biedt geen ondersteuning voor whitelisting op basis van de URL, kunt u de logboekverzamelaar initiëren uitgaand verkeer naar de Microsoft Azure datacenter IP-adresbereiken op poort 443.
 
 
 
-  
+
 ## <a name="see-also"></a>Zie ook  
 [Dagelijkse activiteiten ter bescherming van uw cloudomgeving](daily-activities-to-protect-your-cloud-environment.md)   
 [Ga naar de ondersteuningspagina van Cloud App Security voor technische ondersteuning.](http://support.microsoft.com/oas/default.aspx?prid=16031)   

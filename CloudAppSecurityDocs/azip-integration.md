@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/24/2017
+ms.date: 10/9/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b22d1ad368b05b5cee7d7459f199ce1ff2769cc4
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: e7b4fbb7ed71e1a49de93447c3c00dbff43f2894
+ms.sourcegitcommit: 4daaec64c5a773cd092d94ee17ca05dfbd9e92c5
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/09/2017
 ---
 # <a name="azure-information-protection-integration"></a>Integratie van Azure Information Protection
 
@@ -30,6 +30,8 @@ Door Azure Information Protection te integreren met Cloud App Security kunt u ge
 
 > [!NOTE] 
 > U schakelt deze functie moet u zowel een Cloud App Security-licentie en een licentie voor Azure Information Protection Premium P1 of P2. Als beide licenties gemaakt zijn, wordt de organisaties labels van de Azure Information Protection-service door Cloud App Security gesynchroniseerd.
+> Cloud App Security biedt geen ondersteuning voor Azure Information Protection binnen het bereik van beleid.
+
 
 ## <a name="how-it-works"></a>Hoe het werkt
 U bent waarschijnlijk bekend met classificatielabels voor bestanden in [Azure Information Protection](https://docs.microsoft.com/information-protection/). U kunt de Azure Information Protection-classificatielabels zien in Cloud App Security. Nadat u Cloud App Security hebt geïntegreerd in Azure Information Protection, scant Cloud App Security bestanden als volgt:

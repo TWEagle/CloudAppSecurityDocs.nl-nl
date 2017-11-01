@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/25/2017
+ms.date: 10/9/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 308c06b3-f58b-4a21-86f6-8f87823a893a
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 062ada4cc621eff89bf2968dd230f33fc84000d6
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: 8150248a35b966b96498b508be726e4ab2b473a1
+ms.sourcegitcommit: 4daaec64c5a773cd092d94ee17ca05dfbd9e92c5
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/09/2017
 ---
 # <a name="set-up-and-configure-the-automatic-log-collector-docker-on-windows-server-2016"></a>Installeren en configureren van de automatische logboek Collector Docker op Windows Server 2016
 
@@ -39,6 +39,8 @@ ms.lasthandoff: 09/28/2017
     -   Toestaan dat de logboekverzamelaar binnenkomend FTP- en Syslog-verkeer ontvangen.
 
     -   De logboekverzamelaar initiëren uitgaand verkeer naar de portal (bijvoorbeeld contoso.cloudappsecurity.com) op poort 443 toestaan.
+
+    - Toestaan dat de logboekverzamelaar initiëren uitgaand verkeer naar Azure blob storage (https://adaprodconsole.blob.core.windows.net/) op poort 80 en 443.
 
 > [!NOTE]
 > Als uw firewall vereist dat een lijst met statische IP-adressen toegang en biedt geen ondersteuning voor whitelisting op basis van de URL, staan de logboekverzamelaar initiëren uitgaand verkeer naar de [Microsoft Azure datacenter IP-bereiken op poort 443](https://www.microsoft.com/download/details.aspx?id=41653&751be11f-ede8-5a0c-058c-2ee190a24fa6=True).

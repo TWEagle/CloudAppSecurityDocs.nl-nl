@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/27/2017
+ms.date: 10/9/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 42e562f484ee5e0a980ab3678c34508cbff113f3
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: 14e6490802a0adba5a9aa0c05ad15366172dadfa
+ms.sourcegitcommit: 3bc510959e66a29d474cbef412deac0daefa8a24
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>Stel omhoog en configuratie op Ubuntu
 
@@ -39,6 +39,8 @@ ms.lasthandoff: 09/28/2017
     -   Toestaan dat de logboekverzamelaar binnenkomend FTP- en Syslog-verkeer ontvangen.
 
     -   De logboekverzamelaar initiëren uitgaand verkeer naar de portal (bijvoorbeeld contoso.cloudappsecurity.com) op poort 443 toestaan.
+
+    - Toestaan dat de logboekverzamelaar initiëren uitgaand verkeer naar Azure blob storage (https://adaprodconsole.blob.core.windows.net/) op poort 80 en 443.
 
 > [!NOTE]
 > Als uw firewall vereist dat een lijst met statische IP-adressen toegang en biedt geen ondersteuning voor whitelisting op basis van de URL, staan de logboekverzamelaar initiëren uitgaand verkeer naar de [Microsoft Azure datacenter IP-bereiken op poort 443](https://www.microsoft.com/download/details.aspx?id=41653&751be11f-ede8-5a0c-058c-2ee190a24fa6=True).
@@ -93,7 +95,7 @@ De logboekverzamelaar kan een logboekcapaciteit van maximaal 50 GB per uur aan. 
 
 4.  Meer informatie over de implementatie wordt weergegeven.
 
- ![ubuntu3](./media/ubuntu3.png)
+ ![ubuntu3](./media/windows7.png)
 
 5.  **Kopiëren** de opdracht uitvoeren in het dialoogvenster. U kunt de kopiëren naar Klembord-pictogram ![kopiëren naar Klembord-pictogram](./media/copy-icon.png).
 

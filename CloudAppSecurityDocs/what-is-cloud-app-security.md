@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/20/2017
+ms.date: 10/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f3bb5b1618f9bc872f1171f73c2dc529b3679aec
-ms.sourcegitcommit: 9111960557afb30ea2d6c155afd4885a7ca1b278
+ms.openlocfilehash: 54e7dbe0f12319fb9c5d35ad57a19446c00011cf
+ms.sourcegitcommit: 0dc6e8eae04e8b5901eef7dbe558238790f07140
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/20/2017
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="what-is-cloud-app-security"></a>Wat is Cloud App Security?
 
@@ -43,9 +43,10 @@ Met Cloud App Security wordt zichtbaarheid met uw cloud geïntegreerd door:
 -   Cloud Discovery te gebruiken om uw cloudomgeving en de cloud-apps die uw organisatie gebruikt te identificeren en toe te wijzen.
 -   Apps in de cloud goed te keuren en de goedkeuring ervan in te trekken.  
 -   Gebruik te maken van eenvoudig te implementeren app-connectors die gebruikmaken van API's van providers voor zichtbaarheid op en beheer van apps waarmee u verbinding maakt.  
+-   bij de beveiliging van de proxy real-time inzicht en controle over toegang en activiteiten die worden uitgevoerd binnen uw cloud-apps ophalen.
 -   U te helpen doorlopend controle te hebben doordat u beleidsregels kunt instellen en aanpassen.  
 
-![Diagram Cloud App Security-architectuur](./media/architecture.png)  
+![Diagram Cloud App Security-architectuur](./media/proxy-architecture.png)  
 
 ### <a name="data-retention--compliance"></a>Gegevensretentie & naleving
 
@@ -76,6 +77,13 @@ App-connectors maken gebruik van API's van cloud-app-providers voor de integrati
 Als u een app wilt koppelen en de beveiliging wilt uitbreiden, autoriseert de app-beheerder Cloud App Security voor toegang tot de app. Vervolgens voert Cloud App Security in de app een query uit op de activiteitenlogboeken en worden de gegevens, accounts en cloudinhoud gescand. Cloud App Security kan beleidsregels afdwingen, bedreigingen detecteren en beheeracties bieden voor het oplossen van problemen.  
 
 Cloud App Security maakt gebruik van de API's die door de cloudprovider worden verstrekt. Elke app heeft een eigen framework en API-beperkingen. Cloud App Security gebruikt de app-providers om het gebruik van API's te optimaliseren en om de beste prestaties te leveren. Rekening houdend met de verschillende beperkingen die de apps opleggen aan de API's (zoals beperking, API-limieten, dynamisch verschuiven van API-tijdsvensters, enzovoort), maken de Cloud App Security-engines gebruik van de toegestane capaciteit. Bepaalde bewerkingen, zoals het scannen van alle bestanden in de tenant, vereisen een grote hoeveelheid API's en worden daarom verdeeld over een langere periode. Ga ervan uit dat sommige beleidsregels gedurende enkele uren tot dagen worden uitgevoerd.  
+
+### <a name="proxy-protection"></a>Proxy-beveiliging
+De proxy Cloud App Security kunt u de hulpprogramma's die moet u beschikken over real-time inzicht en controle over toegang tot en activiteiten die worden uitgevoerd binnen uw cloudomgeving. Met de proxy, kunt u uw organisatie beschermen: 
+-   Voorkomen van gegevenslekken door downloads worden geblokkeerd voordat ze optreden
+-   Setregels die gegevens opgeslagen en gedownload vanuit de cloud moet worden beveiligd met versleuteling forceren
+-   Meer inzicht verkrijgen in niet-beveiligde eindpunten zodat u kunt controleren wat op onbeheerde apparaten wordt uitgevoerd
+-   Toegang van niet-zakelijk netwerken of riskante IP-adressen beheren
 
 ### <a name="policy-control"></a>Beleidsbeheer  
 

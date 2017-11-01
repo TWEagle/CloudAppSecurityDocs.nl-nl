@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: bbf54f66-4ce2-428c-afc8-b5a64277014f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: edf852bf90a0d4b9345f1beb675ef5ee3c4f941d
-ms.sourcegitcommit: c3fda43ef6fe0d15f0eb9ea23a6f245bad8c371b
+ms.openlocfilehash: 8076ba72f8e431145be3df8e9b371cd1175a5c4d
+ms.sourcegitcommit: 4daaec64c5a773cd092d94ee17ca05dfbd9e92c5
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/27/2017
+ms.lasthandoff: 10/09/2017
 ---
 #  <a name="IPtagsandRanges"></a>Werken met IP-bereiken en -tags
 
@@ -69,14 +69,15 @@ Klik in de menubalk op het pictogram Instellingen ![pictogram instellingen](./me
   
     -   **Beheer**: dit moeten alle IP-adressen van uw beheerders zijn.  
   
-    -   **Intern**: dit moeten alle IP-adressen van uw interne netwerk, uw filialen en uw Wifi-roamingadressen zijn.  
+    -  **Cloudprovider**: dit moeten de IP-adressen die worden gebruikt door de cloudprovider.
+  
+    -   **Zakelijke**: dit moeten alle IP-adressen van uw interne netwerk, uw filialen en uw zwervende Wi-Fi-adressen.  
   
     -   **Riskant**: dit moeten alle IP-adressen zijn die u beschouwt als riskant. Dit kunnen verdachte IP-adressen zijn die u in het verleden hebt bekeken, IP-adressen in de netwerken van uw concurrenten enzovoort.  
   
     -   **VPN**: dit moeten alle IP-adressen zijn die u voor externe werknemers gebruikt.  
-  
-    -   **Cloudproxy**: dit moet het IP-adres zijn van uw proxyserver in de cloud.  
-  
+ 
+
 7.  Wanneer u klaar bent, klikt u op **Maken**.  
   
      ![newipaddress-bereik](./media/newipaddress-range.png "newipaddress-bereik")  

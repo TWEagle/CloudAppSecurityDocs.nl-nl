@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/1/2017
+ms.date: 10/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f13b48876c91f88143ecb9bb846a654fe9fa34f8
-ms.sourcegitcommit: 55f06262640332e5c02c5fa1c6db74789dbdd552
+ms.openlocfilehash: 484023c6e3a94dc2d2fc0ed56ba6a5b69530b3c0
+ms.sourcegitcommit: 8dd7c155538ec9b95be3902c7ece95f6d0edde25
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/03/2017
+ms.lasthandoff: 10/22/2017
 ---
 # <a name="siem-integration"></a>Integratie van SIEM
     
@@ -83,7 +83,8 @@ U kunt op **Resultaten bewerken en bekijken** klikken om te controleren of het f
 > [!NOTE]
 > - De bestandsnaam kan verschillen afhankelijk van de versie van de SIEM-agent.
 > - Parameters tussen vierkante haken [] zijn optioneel en moeten alleen worden gebruikt als dat relevant is.
-> - Wanneer dit wordt uitgevoerd op Windows, wordt het aanbevolen voor het configureren van een geplande taak voor de opdracht uitvoert. Hiermee zorgt u ervoor dat de service altijd actief is.
+> - Het is raadzaam de JAR als een geplande taak uitvoeren. Wanneer dit wordt uitgevoerd op Windows, zorg ervoor dat u configureert u de taak voor **uitvoeren of de gebruiker is aangemeld of niet** en of u schakelt de **de taak stoppen als deze wordt uitgevoerd logner dan** selectievakje.
+
 
 Hierbij worden de volgende variabelen gebruikt:
 - MAPNAAM is het pad naar de map die u wilt gebruiken voor lokale agent-logboeken voor foutopsporing.
@@ -142,10 +143,6 @@ Als u de SIEM-agent op een later tijdstip wilt verwijderen, kunt u in de tabel o
 ## <a name="high-availability-options"></a>Opties voor hoge beschikbaarheid
 
 De SIEM-agent is één eindpunt die ondersteuning biedt voor herstel van maximaal twee dagen uitvaltijd. Extra beveiligingsmaatregel van maximale beschikbaarheid kan worden bereikt door een load balancer als het eindpunt van de klant.
-
-
-## <a name="related-videos"></a>Verwante video 's  
-[De SIEM-Connector installeren voor Cloud App Security](https://channel9.msdn.com/Shows/Microsoft-Security/Install-the-SIEM-Connector-for-Cloud-App-Security)  
 
 ## <a name="see-also"></a>Zie ook  
 [Problemen met SIEM-integratie oplossen](troubleshooting-siem.md)   
