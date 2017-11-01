@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/3/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,14 +13,40 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: bacc5264d36e0948b0e802b2fbb9e04d9a058af9
-ms.sourcegitcommit: de133f251ceab10d9c2306dd76e75a68db206743
+ms.openlocfilehash: 9e8cba61d9046c341675a736c718bbcd0ad34e2c
+ms.sourcegitcommit: 3bc510959e66a29d474cbef412deac0daefa8a24
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/03/2017
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="whats-new-with-cloud-app-security"></a>Wat is er nieuw met Cloud App Security
+# <a name="whats-new-with-microsoft-cloud-app-security"></a>Wat is er nieuw is bij de Microsoft Cloud App Security
 
+
+## <a name="cloud-app-security-releases-109"></a>Cloud App Security releases 109
+29 oktober 2017 uitgebracht 
+
+- Microsoft Cloud App Security proxy functie implementeert is gestart. De Microsoft Cloud App Security-proxy biedt u de hulpprogramma's die moet u beschikken over real-time inzicht en controle over toegang tot uw cloudomgeving en de activiteiten die worden uitgevoerd binnen het. Bijvoorbeeld:
+    -   Vermijd gegevenslekken door downloads worden geblokkeerd voordat ze optreden.
+    -   Regels die gegevens opgeslagen en gedownload vanuit de cloud moet worden beveiligd met versleuteling geforceerd ingesteld.
+    -   Meer inzicht verkrijgen in niet-beveiligde eindpunten zodat u kunt controleren wat op onbeheerde apparaten wordt uitgevoerd.
+    -   Toegang beheren vanuit niet-zakelijk netwerken of riskante IP-adressen.
+  
+  Zie voor meer informatie [apps met proxy beveiligen](proxy-intro-aad.md).
+
+-   We zijn de mogelijkheid om te filteren op basis van activiteit-specifieke servicenamen geleidelijk rolt. Dit nieuwe Type activiteit-filter is meer gedetailleerde, zodat u specifieke app activiteiten, in plaats van algemene activiteitstypen bewaken. Bijvoorbeeld, voorheen kan filtert u op de **opdracht uitvoeren**, en u kunt nu filteren op specifieke EXO-cmdlets. Naam van de activiteit kan ook worden weergegeven in de activiteit lade onder **Type (in-app)**. Deze mogelijkheid wordt uiteindelijk vervangen door het type activiteitfilter.  
+
+-   Cloud discovery ondersteunt nu Cisco ASA van de vuurkracht. 
+
+-   Verbeterde prestaties zijn aangebracht in de detectie van gebruikers en IP-pagina's voor het verbeteren van de gebruikerservaring.
+
+
+## <a name="cloud-app-security-releases-105-106-107-108"></a>Cloud App Security releases 105, 106, 107, 108
+Uitgebrachte September/oktober 2017
+ 
+-   Cloud App Security bevat nu een datacentrum dat zich in de EU. Naast ons Datacenter VS wordt het datacenter EU kunnen Cloud App Security klanten volledige compatibiliteit met nieuwe en toekomstige Europese normalisatie en certificeringen liggen. 
+-   Nieuwe filters zijn toegevoegd aan de **App-connectors** pagina waarmee u eenvoudiger filteren en meer inzicht.
+-   Cloud discovery op logboekbestanden die alleen doel-IP-informatie bevatten is verbeterd.
+ 
 
 ## <a name="cloud-app-security-release-104"></a>Cloud App Security-release 104 
 27 augustus 2017 uitgebracht

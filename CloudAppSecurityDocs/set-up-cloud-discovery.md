@@ -1,11 +1,11 @@
 ---
-title: Implementeer Cloud Discovery met Cloud App Security | Microsoft Docs
+title: Cloud Discovery implementeren met Microsoft Cloud App Security | Microsoft Docs
 description: Dit onderwerp wordt de instellingsprocedure voor Cloud Discovery beschreven.
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/03/2017
+ms.date: 10/29/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: be08317610ec1f32c78be9c942c64bba7bbdcd0f
-ms.sourcegitcommit: de133f251ceab10d9c2306dd76e75a68db206743
+ms.openlocfilehash: 0fa9125b611574d4f4fafb18c8bc649de82b1ad6
+ms.sourcegitcommit: 1c9ed4923cb6b761aebd13a6caa3a6605412419a
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/03/2017
+ms.lasthandoff: 10/29/2017
 ---
 # <a name="set-up-cloud-discovery"></a>Cloud Discovery instellen
 Cloud Discovery analyseert uw verkeerslogboeken op basis van de catalogus met Cloud App Security cloud-app van meer dan 15.000 cloud-apps die worden beoordeeld en gewaardeerd op basis van meer dan 60 risicofactoren u doorlopende inzicht in de cloud gebruikt, schaduw-IT, en het risico Shadow IT oplevert voor uw organisatie opgeven.
@@ -75,6 +75,7 @@ Als u zonder problemen een Cloud Discovery-rapport wilt genereren, moeten uw ver
 - Blue Coat Proxy SG - toegangslogboek (W3C)
 - Controlepunt
 - Cisco ASA-firewalls (voor deze firewalls moet u het gegevensniveau instellen op 6)
+- Cisco ASA van de vuurkracht
 - Cisco IronPort WSA
 - Cisco ScanSafe
 - Cisco Meraki - URL-logboek
@@ -108,6 +109,7 @@ De gegevenskenmerken (volgens de documentatie van de leverancier):
 |Blue Coat|**Ja**|Nee|**Ja**|**Ja**|**Ja**|**Ja**|
 |Controlepunt|Nee|**Ja**|Nee|**Ja**|Nee|Nee|
 |Cisco ASA|Nee|**Ja**|Nee|**Ja**|**Ja**|Nee|
+|Cisco ASA van de vuurkracht|**Ja**|**Ja**|**Ja**|**Ja**|**Ja**|**Ja**|
 |Cisco FWSM|Nee|**Ja**|Nee|**Ja**|**Ja**|Nee|
 |Cisco Ironport WSA|**Ja**|**Ja**|**Ja**|**Ja**|**Ja**|**Ja**|
 |Cisco Meraki|**Ja**|**Ja**|Nee|**Ja**|Nee|Nee||Cisco ScanSafe|**Ja**|Nee|**Ja**|**Ja**|**Ja**|**Ja**|

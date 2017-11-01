@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/3/2017
+ms.date: 10/22/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9c97187c93391c3cfd754e9bad0daab3d6ce496f
-ms.sourcegitcommit: 55f06262640332e5c02c5fa1c6db74789dbdd552
+ms.openlocfilehash: 59337a573abce3fb057d7d8056034daa54737c4a
+ms.sourcegitcommit: 8dd7c155538ec9b95be3902c7ece95f6d0edde25
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/03/2017
+ms.lasthandoff: 10/22/2017
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>Verbinding maken tussen G Suite en Microsoft Cloud App Security
 In deze sectie vindt u instructies voor het maken van een verbinding tussen Cloud App Security en uw bestaande G Suite-account met behulp van de connector-API's.
@@ -36,7 +36,9 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
     **Microsoft Cloud App Security** en klik op **maken**.  
            ![google2](./media/google2.png "google2")  
   
-4.  Klik na het project is gemaakt, in de werkbalk op Google Cloud Platform.
+4.  Nadat het project is gemaakt, in de werkbalk klikt u op **Google Cloud Platform** en zorg ervoor dat het juiste project is geselecteerd in de vervolgkeuzelijst omlaag aan de bovenkant.
+       
+       ![Google project](./media/googleverify-project.png "googleverify project")  
 
 5. Onder **API's** klikt u op **gaat u naar de API's overzicht**.  
   
@@ -112,7 +114,7 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
   
     -   **Korte beschrijving en lange beschrijving** (optioneel): Microsoft Cloud App Security kunt u inzicht krijgen in cloudtoepassingen, zodat u kunt beheren, onderzoeken en beheren gebruik van cloudtoepassingen; bedrijfsgegevens kunt beveiligen; en detecteren verdachte activiteiten voor alle cloudtoepassingen.  
   
-    -   Google vereist dat u ten minste één toepassingspictogram uploadt. Ga naar [https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip](https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip) voor het downloaden van een zip-bestand met Cloud App Security-pictogrammen. Vervolgens sleept u onder **Application icon** (Pictogram voor toepassing) de afbeeldingen van 128x128 en 32x32 pixels en zet u die neer.  
+    -   Google vereist dat u ten minste één toepassingspictogram uploadt. Ga naar [https://us.portal.cloudappsecurity.com/cas/static/files/MSLogos.zip](https://us.portal.cloudappsecurity.com/cas/static/files/MSLogos.zip) een zipbestand met Cloud App Security pictogrammen te downloaden. Vervolgens sleept u onder **Application icon** (Pictogram voor toepassing) de afbeeldingen van 128x128 en 32x32 pixels en zet u die neer.  
   
     -   Schuif omlaag en in de **station integratie** sectie, typ de volgende URL onder **URL openen:**  
   
