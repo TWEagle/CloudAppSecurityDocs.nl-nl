@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/19/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 54e7dbe0f12319fb9c5d35ad57a19446c00011cf
-ms.sourcegitcommit: 0dc6e8eae04e8b5901eef7dbe558238790f07140
+ms.openlocfilehash: 2d085cb1df45748ec869766f7c6824dc427b61fe
+ms.sourcegitcommit: 991e957c70d49e3fbf77828c2d2064fa363da667
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="what-is-cloud-app-security"></a>Wat is Cloud App Security?
 
@@ -59,7 +59,7 @@ In Cloud App Security worden gegevens als volgt bewaard:
 - Detectiegegevens: 90 dagen 
 - Waarschuwingen: 180 dagen 
 
-Nadat gegevens uit deze bronnen zijn verzameld, voert Cloud App Security een geavanceerde analyse uit op de gegevens. U wordt direct op de hoogte gesteld van afwijkende activiteiten en u krijgt meer inzicht in uw cloudomgeving. U kunt een beleid configureren in Cloud App Security en dit vervolgens gebruiken om alles in uw cloudomgeving te beveiligen.  
+Nadat de gegevens worden verzameld van deze bronnen, Cloud App Security wordt uitgevoerd een afwijkingsdetectie voor geavanceerde heuristische detectie-engine die profielen van uw omgeving en waarschuwt u over afwijkende activiteiten met betrekking tot de basislijn geleerd en biedt u grondige zichtbaarheid in uw cloudomgeving. U kunt een beleid configureren in Cloud App Security en dit vervolgens gebruiken om alles in uw cloudomgeving te beveiligen.  
 
 ### <a name="cloud-discovery"></a>Cloud Discovery  
 
