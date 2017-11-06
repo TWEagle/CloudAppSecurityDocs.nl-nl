@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/24/2017
+ms.date: 11/5/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 835ffc05fb84117bf9bbf848d5718de4557e5e15
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: 148884c2709658d53b658e3b3a7d9f33daf18771
+ms.sourcegitcommit: 2b8965381d94a5bb6349d8e25e1dc29b092a88b0
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/05/2017
 ---
 # <a name="activities"></a>Activiteiten
 Cloud App Security maakt alle activiteiten van uw verbonden apps voor u zichtbaar. Nadat u Cloud App Security hebt verbonden met een app met behulp van de App-connector, scant Cloud App Security alle activiteiten die hebben plaatsgevonden, waarbij de retroactieve scantijd per app verschilt. Daarna wordt Cloud App Security voortdurend bijgewerkt met nieuwe activiteiten. 
@@ -51,11 +51,11 @@ Hier volgt een lijst van activiteitfilters die kunnen worden toegepast. De meest
   
 -   Activiteitobjecten - zoek naar de objecten waarvoor de activiteit werd uitgevoerd. Dit filter wordt toegepast op bestand, map, gebruiker of app-objecten. 
     - Activiteitobject-id - de id van het object (bestands-, map-, gebruikers- of app-id).
-    - Bestand, map of URL van de site - kunt u bestanden, mappen en URL's die beginnen met een specifieke tekenreeks.
-    - Doelobject (bestand/map) - hiermee kunt u een specifiek bestand of specifieke map selecteren. 
     - Item - Hiermee kunt u zoeken op de naam of id van een activiteitsobject (bijvoorbeeld: gebruikersnamen, bestanden, parameters, sites). Voor de **activiteitsobject Item** filter, kunt u selecteren of u wilt filteren op items die **bevatten**, **gelijk**, of **begint met** het item.
     
 -   Activiteitstype - zoek naar de app-activiteit.
+
+-   Activiteitstype (preview)-binnenkort beschikbaar. Hiermee kunt u zoeken naar de app-activiteit met grotere mate van granulatie, met behulp van de activiteitencategorie of de naam van de activiteit opgegeven rechtstreeks door de app.
 
 -   Beheeractiviteit – zoek alleen naar beheeractiviteiten.  
   
