@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/22/2017
+ms.date: 11/5/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 484023c6e3a94dc2d2fc0ed56ba6a5b69530b3c0
-ms.sourcegitcommit: 8dd7c155538ec9b95be3902c7ece95f6d0edde25
+ms.openlocfilehash: 6abf7cbaf3f13bd84255846f3d2430a67a0db523
+ms.sourcegitcommit: 2b8965381d94a5bb6349d8e25e1dc29b092a88b0
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/22/2017
+ms.lasthandoff: 11/05/2017
 ---
 # <a name="siem-integration"></a>Integratie van SIEM
     
@@ -82,9 +82,10 @@ U kunt op **Resultaten bewerken en bekijken** klikken om te controleren of het f
       java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory MAPNAAM] [--proxy ADRES[:POORT]] --token TOKEN
 > [!NOTE]
 > - De bestandsnaam kan verschillen afhankelijk van de versie van de SIEM-agent.
-> - Parameters tussen vierkante haken [] zijn optioneel en moeten alleen worden gebruikt als dat relevant is.
-> - Het is raadzaam de JAR als een geplande taak uitvoeren. Wanneer dit wordt uitgevoerd op Windows, zorg ervoor dat u configureert u de taak voor **uitvoeren of de gebruiker is aangemeld of niet** en of u schakelt de **de taak stoppen als deze wordt uitgevoerd logner dan** selectievakje.
-
+> - Parameters vierkante haakjes [] zijn optioneel en moeten alleen worden gebruikt als relevant.
+> - Het is raadzaam de JAR tijdens het opstarten van de server uitgevoerd.
+>   - Windows: Als een geplande taak uitvoeren en zorg ervoor dat u configureert u de taak voor **uitvoeren of de gebruiker is aangemeld of niet** en of u schakelt de **de taak stoppen als deze wordt uitgevoerd logner dan** selectievakje.
+>   - Linux: Voeg de opdracht uitvoeren met een  **&**  naar het bestand rc.local. Bijvoorbeeld: `java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN &`
 
 Hierbij worden de volgende variabelen gebruikt:
 - MAPNAAM is het pad naar de map die u wilt gebruiken voor lokale agent-logboeken voor foutopsporing.
