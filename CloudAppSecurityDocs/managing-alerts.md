@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/23/2017
+ms.date: 11/6/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 1b1dbcc6-472f-43ea-af59-2aa926e3e5a9
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c4134370302fe8d35e6a3e2232d6ff8a65ad96f6
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: 1ca10f668634a45894d0b4d6bc1528d31f024e35
+ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 11/06/2017
 ---
 ## <a name="manage-your-alerts"></a>De waarschuwingen beheren  
 Waarschuwingen zijn het uitgangspunt van waaruit u meer inzicht in uw cloudomgeving krijgt. Mogelijk wilt u nieuwe beleidsregels maken naar aanleiding van uw bevindingen. U ziet bijvoorbeeld dat een beheerder is aangemeld vanuit Groenland en er heeft zich nog nooit iemand aangemeld vanuit Groenland binnen uw organisatie. U kunt een beleid maken waarmee een beheerdersaccount automatisch tijdelijk wordt ingetrokken als dit wordt gebruikt voor aanmelding vanaf die locatie.  
