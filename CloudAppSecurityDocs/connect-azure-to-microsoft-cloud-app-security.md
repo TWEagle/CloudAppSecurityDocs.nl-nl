@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/25/2017
+ms.date: 11/7/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3a677bc7-c8b7-4c6a-aada-82c8b3778352
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7497a52a48a7cb3b943da847b85144d0ce78ca84
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: d7c37ad69347de717dbef2179191e35284bd27c2
+ms.sourcegitcommit: 938c799a13a81f3289229ea883c65bd1669b2ec4
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="connect-azure-to-microsoft-cloud-app-security"></a>Verbinding maken met Azure en Microsoft Cloud App Security
 
@@ -93,7 +93,7 @@ Cloud App Security verbindt met Azure via Event Hubs. Deze sectie biedt instruct
 
 
 > [!NOTE]
-> Deze functie is beschikbaar voor openbare preview.
+> Deze functie is afgeschermd voorbeeld.
 
 
 ## <a name="see-also"></a>Zie ook  

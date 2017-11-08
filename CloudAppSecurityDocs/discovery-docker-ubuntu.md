@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2e762f9f4a90a9777ef1782c1c12305ea7d065ef
-ms.sourcegitcommit: 4f87ebd072c54232692483dcf07ccc2ac5daf445
+ms.openlocfilehash: 1e7596ff9bb62f998a98fe9ff09e37ef0f93a906
+ms.sourcegitcommit: 938c799a13a81f3289229ea883c65bd1669b2ec4
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>Stel omhoog en configuratie op Ubuntu
 
@@ -38,7 +38,7 @@ ms.lasthandoff: 11/06/2017
 
     -   Toestaan dat de logboekverzamelaar binnenkomend FTP- en Syslog-verkeer ontvangen.
 
-    -   De logboekverzamelaar initiëren uitgaand verkeer naar de portal (bijvoorbeeld contoso.cloudappsecurity.com) op poort 443 toestaan.
+    -   De logboekverzamelaar initiëren uitgaand verkeer naar de portal (bijvoorbeeld contoso.portal.cloudappsecurity.com) op poort 443 toestaan.
 
     - Toestaan dat de logboekverzamelaar initiëren uitgaand verkeer naar Azure blob storage (https://adaprodconsole.blob.core.windows.net/) op poort 80 en 443.
 
