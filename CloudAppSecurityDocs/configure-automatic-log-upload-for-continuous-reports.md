@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/27/2017
+ms.date: 11/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: bf434c9f9ed1cc4c2d0edd375e0f51b45fdf6571
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: 057de59d0688b28ca9f9265ff7b4010ae9b3c3aa
+ms.sourcegitcommit: 7e0d28b1ac39f7e44e258ab2a0d9563b8fd2aba6
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/13/2017
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance"></a>Logboek automatisch uploaden voor continue rapporten op een virtueel apparaat configureren
 
@@ -76,7 +76,7 @@ De logboekverzamelaar heeft een ingebouwd beveiligingsmechanisme dat de snelheid
   > [!NOTE] 
   > - Eén logboekverzamelaar kan meerdere gegevensbronnen verwerken.
   > - Kopieer de inhoud van het scherm omdat deze wordt gebruikt bij het configureren van de Logboekverzamelaar om te communiceren met Cloud App Security. Als u Syslog hebt geselecteerd, bevat deze informatie informatie over de poort die de Syslog-listener luistert op.
-4.  **Download** een nieuwe virtuele machine van een logboek-collector door te klikken op de Hyper-V- of VMWare. Vervolgens Decomprimeer het bestand met het wachtwoord die u hebt ontvangen in de portal.  
+4.  Als u akkoord gaan met de [licentievoorwaarden voor eindgebruikers](https://go.microsoft.com/fwlink/?linkid=862492), **downloaden** een nieuwe virtuele machine van een logboek-collector door te klikken op de Hyper-V- of VMWare. Vervolgens Decomprimeer het bestand met het wachtwoord die u hebt ontvangen in de portal.  
   
 ### <a name="step-2--on-premises-deployment-of-the-virtual-machine-and-network-configuration"></a>Stap 2 - On-premises implementatie van de virtuele machine en de netwerkconfiguratie   
 

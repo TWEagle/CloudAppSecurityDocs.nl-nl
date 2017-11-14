@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/5/2017
+ms.date: 11/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6abf7cbaf3f13bd84255846f3d2430a67a0db523
-ms.sourcegitcommit: 2b8965381d94a5bb6349d8e25e1dc29b092a88b0
+ms.openlocfilehash: b6a9fe29fddf499e8dee070dc81926f1127a9416
+ms.sourcegitcommit: 7e0d28b1ac39f7e44e258ab2a0d9563b8fd2aba6
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/05/2017
+ms.lasthandoff: 11/13/2017
 ---
 # <a name="siem-integration"></a>Integratie van SIEM
     
@@ -74,7 +74,7 @@ U kunt op **Resultaten bewerken en bekijken** klikken om te controleren of het f
 
 ### <a name="step-2-download-the-jar-file-and-run-it-on-your-server"></a>Stap 2: Het JAR-bestand downloaden en uitvoeren op uw server
 
-1. [Download het ZIP-bestand vanuit het Microsoft Downloadcentrum](https://go.microsoft.com/fwlink/?linkid=838596) en pak het uit.
+1. In de [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=838596) lezen de [gebruiksrechtovereenkomst](https://go.microsoft.com/fwlink/?linkid=862491) en downloaden van het ZIP-bestand en pak deze.
 
 2. Pak het JAR-bestand van het ZIP-bestand uit en voer het uit op uw server.
  Nadat u het bestand hebt uitgevoerd, voert u het volgende uit:

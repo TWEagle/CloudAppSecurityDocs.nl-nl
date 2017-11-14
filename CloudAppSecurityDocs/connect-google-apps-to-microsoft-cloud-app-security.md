@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 59337a573abce3fb057d7d8056034daa54737c4a
-ms.sourcegitcommit: 8dd7c155538ec9b95be3902c7ece95f6d0edde25
+ms.openlocfilehash: bf74c9d16fe44fd1b5a4d56be84db76153274ca3
+ms.sourcegitcommit: 7e0d28b1ac39f7e44e258ab2a0d9563b8fd2aba6
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/22/2017
+ms.lasthandoff: 11/13/2017
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>Verbinding maken tussen G Suite en Microsoft Cloud App Security
 In deze sectie vindt u instructies voor het maken van een verbinding tussen Cloud App Security en uw bestaande G Suite-account met behulp van de connector-API's.
@@ -114,7 +114,7 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
   
     -   **Korte beschrijving en lange beschrijving** (optioneel): Microsoft Cloud App Security kunt u inzicht krijgen in cloudtoepassingen, zodat u kunt beheren, onderzoeken en beheren gebruik van cloudtoepassingen; bedrijfsgegevens kunt beveiligen; en detecteren verdachte activiteiten voor alle cloudtoepassingen.  
   
-    -   Google vereist dat u ten minste één toepassingspictogram uploadt. Ga naar [https://us.portal.cloudappsecurity.com/cas/static/files/MSLogos.zip](https://us.portal.cloudappsecurity.com/cas/static/files/MSLogos.zip) een zipbestand met Cloud App Security pictogrammen te downloaden. Vervolgens sleept u onder **Application icon** (Pictogram voor toepassing) de afbeeldingen van 128x128 en 32x32 pixels en zet u die neer.  
+    -   Google vereist dat u ten minste één toepassingspictogram uploadt. Ga naar [https://go.microsoft.com/fwlink/?linkid=856644](https://go.microsoft.com/fwlink/?linkid=856644) een zipbestand met Cloud App Security pictogrammen te downloaden. Vervolgens sleept u onder **Application icon** (Pictogram voor toepassing) de afbeeldingen van 128x128 en 32x32 pixels en zet u die neer.  
   
     -   Schuif omlaag en in de **station integratie** sectie, typ de volgende URL onder **URL openen:**  
   
@@ -136,7 +136,7 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
   
     -   Configureren van de vier vereiste afbeeldingen onder **toepassingspictogrammen**.  
   
-         U kunt de afbeeldingen vinden op: [https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip](https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip)  
+         De afbeeldingen kunnen worden gevonden op: [https://go.microsoft.com/fwlink/?linkid=856644](https://go.microsoft.com/fwlink/?linkid=856644)  
   
     -   Vul de volgende **Support URLs** (URL’s voor ondersteuning) in:  
   

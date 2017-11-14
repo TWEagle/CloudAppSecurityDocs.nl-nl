@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/24/2017
+ms.date: 11/12/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: c75ba963-ad5a-48e6-8d5d-610fc6e0b990
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f0f6f0de46e8833b4f4ffb6bd31c7c46eeacac9a
-ms.sourcegitcommit: 13148ac82e496e8d4e0d10851e5d6e4f231229e4
+ms.openlocfilehash: f05fd8f548067c7e9ceb32c93e739072d682d15c
+ms.sourcegitcommit: 7e0d28b1ac39f7e44e258ab2a0d9563b8fd2aba6
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/24/2017
+ms.lasthandoff: 11/13/2017
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports"></a>Automatisch uploaden van logboeken configureren voor doorlopende rapporten
 
@@ -36,9 +36,7 @@ Voordat u automatische logboekbestandsverzameling instelt, moet u controleren of
 
 De Logboekverzamelaar ondersteunt twee implementatiemodi:
 
--   **Container** (*Preview*): wordt uitgevoerd als een Docker-installatiekopie op [Windows](discovery-docker-windows.md) en [Ubuntu](discovery-docker-ubuntu.md), een on-premises op in Azure. 
-
-
+-   **Container** : wordt uitgevoerd als een Docker-installatiekopie op [Ubuntu on-premises](discovery-docker-ubuntu.md), of [Ubuntu in Azure](discovery-docker-ubuntu-azure.md). 
 
 -   **Virtueel apparaat**: [wordt uitgevoerd als een installatiekopie via Hyper-V- of VMware-hypervisor](configure-automatic-log-upload-for-continuous-reports.md)
 
