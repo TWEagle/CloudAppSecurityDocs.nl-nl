@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/12/2017
+ms.date: 11/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0f8713c1d7b1e3d5ad822a51191dbcd463d8be1b
-ms.sourcegitcommit: 7e0d28b1ac39f7e44e258ab2a0d9563b8fd2aba6
+ms.openlocfilehash: 660857c34b6a8ff7dccffc581901e52061df937f
+ms.sourcegitcommit: ab552b8e663033f4758b6a600f6d620a80c1c7e0
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>Stel omhoog en configuratie op Ubuntu
 
@@ -106,12 +106,20 @@ De logboekverzamelaar kan een logboekcapaciteit van maximaal 50 GB per uur aan. 
 
 2.  Wijzig in de hoofdmap bevoegdheden met de opdracht:`sudo -i`
 
-3.  Verwijderen van oude versies en Docker CE installeren met de volgende opdracht:
+3. Voer de volgende twee opdrachten voor het overslaan van een proxyserver in uw netwerk:
+        
+        export http_proxy='<IP>:<PORT>' (e.g. 168.192.1.1:8888)
+        export https_proxy='<IP>:<PORT>'
+
+3.  Als u akkoord gaan met de [softwarelicentievoorwaarden](https://go.microsoft.com/fwlink/?linkid=862492), verwijderen van oude versies en Docker CE installeren met de volgende opdracht:
 
     `curl -o /tmp/MCASInstallDocker.sh
     https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh
     && chmod +x /tmp/MCASInstallDocker.sh; sudo /tmp/MCASInstallDocker.sh`
 
+     > [!NOTE] 
+     > Als deze opdracht is mislukt om uw proxycertificaat te valideren, voert u de opdracht met behulp van `curl -k` aan het begin.
+    
     ![ubuntu5](./media/ubuntu5.png)
 
 4.  De collector-installatiekopie op de host machine implementeren door het importeren van configuratie van de collector. Dit doen met het kopiëren van de opdracht uitvoeren in de portal is gegenereerd. Als u nodig hebt voor het configureren van een proxy toevoegen van de proxy-IP-adres en poort-nummer. Bijvoorbeeld, als uw proxy-gegevens 192.168.10.1:8080 zijn, is uw bijgewerkte opdracht uitvoeren:

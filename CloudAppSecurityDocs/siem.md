@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/12/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b6a9fe29fddf499e8dee070dc81926f1127a9416
-ms.sourcegitcommit: 7e0d28b1ac39f7e44e258ab2a0d9563b8fd2aba6
+ms.openlocfilehash: 3a1799636f58eb9c53cce3975ebc80aba3799d4e
+ms.sourcegitcommit: fbeb299e8c41fc57b50d491b1becbf488fdd3642
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="siem-integration"></a>Integratie van SIEM
     
@@ -34,7 +34,9 @@ Wanneer de SIEM-agent de gegevens van Cloud App Security ophaalt, stuurt de Sysl
 
 ![Architectuur van SIEM-integratie](./media/siem-architecture.png)
 
+## <a name="supported-siems"></a>Ondersteunde siem 's
 
+Cloud App Security ondersteunt momenteel HP archsight en algemene CEF.
 
 ## <a name="how-to-integrate"></a>Het integreren van
 
@@ -63,7 +65,8 @@ De integratie met uw SIEM vindt in drie stappen plaats:
 5. Typ het IP-adres of de hostnaam van de **externe Syslog-host** en het **Syslog-poortnummer**. Selecteer TCP of UDP als het externe Syslog-protocol.
 Vraag indien nodig uw beveiligingsbeheerder om deze informatie.
 Klik op **Volgende**.
-  ![Externe Syslog-instellingen](./media/siem2.png)
+
+  ![Instellingen van extern Syslog](./media/siem2.png)
 
 6. Selecteer welke gegevenstypen, **waarschuwingen** en **activiteiten** u wilt exporteren naar uw SIEM-server. Gebruik de schuifregelaar om deze in en uit te schakelen. Standaard is alles geselecteerd. U kunt de vervolgkeuzelijst **Toepassen op** gebruiken om filters zo in te stellen dat alleen bepaalde waarschuwingen en activiteiten naar uw SIEM-server worden verzonden.
 U kunt op **Resultaten bewerken en bekijken** klikken om te controleren of het filter goed werkt. Klik op **Volgende**. 
@@ -74,12 +77,13 @@ U kunt op **Resultaten bewerken en bekijken** klikken om te controleren of het f
 
 ### <a name="step-2-download-the-jar-file-and-run-it-on-your-server"></a>Stap 2: Het JAR-bestand downloaden en uitvoeren op uw server
 
-1. In de [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=838596) lezen de [gebruiksrechtovereenkomst](https://go.microsoft.com/fwlink/?linkid=862491) en downloaden van het ZIP-bestand en pak deze.
+1. In de [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=838596), na het accepteren van de [softwarelicentievoorwaarden](https://go.microsoft.com/fwlink/?linkid=862491), moet het ZIP-bestand downloaden en uitpakken van het.
 
 2. Pak het JAR-bestand van het ZIP-bestand uit en voer het uit op uw server.
  Nadat u het bestand hebt uitgevoerd, voert u het volgende uit:
     
-      java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory MAPNAAM] [--proxy ADRES[:POORT]] --token TOKEN
+        java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN
+
 > [!NOTE]
 > - De bestandsnaam kan verschillen afhankelijk van de versie van de SIEM-agent.
 > - Parameters vierkante haakjes [] zijn optioneel en moeten alleen worden gebruikt als relevant.

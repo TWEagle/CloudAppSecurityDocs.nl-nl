@@ -5,19 +5,19 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/12/2017
+ms.date: 11/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
 ms.technology: 
-ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
+ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6396c1f0acf249942948a7abd12b920aba2010e3
-ms.sourcegitcommit: 7e0d28b1ac39f7e44e258ab2a0d9563b8fd2aba6
+ms.openlocfilehash: b75fbd49bb55160b66ad028cbd68ef5eb61c5d9f
+ms.sourcegitcommit: ab552b8e663033f4758b6a600f6d620a80c1c7e0
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>Stel omhoog en configuratie op Ubuntu
 
@@ -126,7 +126,7 @@ De logboekverzamelaar kan een logboekcapaciteit van maximaal 50 GB per uur aan. 
 
 4.  Wijzig in de hoofdmap bevoegdheden met `sudo -i`.
 
-5.  Verwijderen van oude versies en Docker CE installeren met de volgende opdracht:
+5.  Als u akkoord gaan met de [softwarelicentievoorwaarden](https://go.microsoft.com/fwlink/?linkid=862492), verwijderen van oude versies en Docker CE installeren met de volgende opdracht:
         
         curl -o /tmp/MCASInstallDocker.sh https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh && chmod +x /tmp/MCASInstallDocker.sh; sudo /tmp/MCASInstallDocker.sh
 
