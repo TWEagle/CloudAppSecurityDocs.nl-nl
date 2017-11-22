@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/30/2017
+ms.date: 12/11/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f67e363f9b6cdb866124960037ecb81e07756d8a
-ms.sourcegitcommit: 9eb5c9c43629329a081f970b480956975e424ecb
+ms.openlocfilehash: 4b681ef0cd982b79ae096f257f793920607669a2
+ms.sourcegitcommit: 4d84f9d15256b05c785a1886338651b86622070c
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/30/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="network-requirements"></a>Netwerkvereisten
 
@@ -47,6 +47,7 @@ Voor toegang tot de Cloud App Security-portal, voegt u **uitgaande poort 443** v
 |Datacenter|IP-adressen|  
 |----|----|
 |US1|13.80.125.22<br></br>52.183.75.62<br></br>13.91.91.243|
+|US2|13.80.125.22<br></br>52.183.75.62<br></br>52.184.165.82|
 |EU1|13.80.125.22<br></br>52.183.75.62<br></br>52.174.56.180|
 
 ## <a name="siem-agent-connection"></a>Verbinding van SIEM-agent
@@ -58,6 +59,7 @@ Toevoegen zodat Cloud App Security verbinding maken met uw SIEM **uitgaande poor
 |Datacenter|IP-adressen|  
 |----|----|
 |US1|13.91.91.243|
+|US2|52.184.165.82|
 |EU1|52.174.56.180|
 
 ## <a name="app-connector-access-and-external-dlp-integration"></a>Toegang tot de App-connector en externe DLP-integratie
@@ -68,8 +70,9 @@ Verbinding maken met apps van derden en integreren met externe DLP-oplossingen, 
 > [!div class="mx-tableFixed"]
 |Datacenter|IP-adressen|  
 |----|----|
-|US1|104.209.35.177<br></br>13.91.98.185<br></br>40.118.211.172<br></br>13.93.216.68<br></br>13.91.61.249<br></br>13.93.233.42<br></br>13.64.196.27<br></br>13.64.198.97<br></br>13.64.199.41<br></br>13.64.198.19|
-|EU1|13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
+|US1|13.91.91.243 <br></br> 104.209.35.177 <br></br> 13.91.98.185 <br></br> 40.118.211.172 <br></br> 13.93.216.68 <br></br> 13.91.61.249 <br></br> 13.93.233.42 <br></br> 13.64.196.27 <br></br> 13.64.198.97 <br></br> 13.64.199.41 <br></br> 13.64.198.19|
+|US2|52.184.165.82<br></br> 40.84.4.93 <br></br> 40.84.4.119 <br></br> 40.84.2.83 |
+|EU1|52.174.56.180<br></br>13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
 
 
 ### <a name="app-connector"></a>App-connector
@@ -105,7 +108,13 @@ Cloud Discovery-functies met een logboekverzamelaar inschakelen en de Shadow IT 
 
 - Toestaan dat de logboekverzamelaar binnenkomend FTP- en Syslog-verkeer ontvangen.
 - De logboekverzamelaar initiëren uitgaand verkeer naar de portal (bijvoorbeeld contoso.cloudappsecurity.com) op poort 443 toestaan.
-- Toestaan dat de logboekverzamelaar initiëren uitgaand verkeer naar Azure blob storage (https://adaprodconsole.blob.core.windows.net/) op poort 80 en 443.
+- De logboekverzamelaar initiëren uitgaand verkeer naar Azure blob storage op poort 80 en 443 toestaan:
+   
+    |Datacenter|URL|
+    |----|----|
+    |US1|https://adaprodconsole.BLOB.Core.Windows.NET/|
+    |US2|https://prod03use2console1.BLOB.Core.Windows.NET/|
+    |EU1|https://prod02euwconsole1.BLOB.Core.Windows.NET/|
 
 > [!NOTE]
 > Als uw firewall vereist dat een lijst met statische IP-adressen toegang en biedt geen ondersteuning voor whitelisting op basis van de URL, kunt u de logboekverzamelaar initiëren uitgaand verkeer naar de Microsoft Azure datacenter IP-adresbereiken op poort 443.

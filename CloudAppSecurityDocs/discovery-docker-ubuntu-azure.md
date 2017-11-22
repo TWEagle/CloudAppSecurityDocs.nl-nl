@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/14/2017
+ms.date: 12/11/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b75fbd49bb55160b66ad028cbd68ef5eb61c5d9f
-ms.sourcegitcommit: ab552b8e663033f4758b6a600f6d620a80c1c7e0
-ms.translationtype: MT
+ms.openlocfilehash: 58d3b69673237929a76870bcb81b2ef72e799ca0
+ms.sourcegitcommit: 4d84f9d15256b05c785a1886338651b86622070c
+ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>Stel omhoog en configuratie op Ubuntu
 
@@ -32,16 +32,7 @@ ms.lasthandoff: 11/14/2017
 
 -   RAM: 4 GB
 
--   Firewall-instellingen:
-
-    -   Toestaan dat de logboekverzamelaar binnenkomend FTP- en Syslog-verkeer ontvangen.
-
-    -   De logboekverzamelaar initiëren uitgaand verkeer naar de portal (bijvoorbeeld contoso.portal.cloudappsecurity.com) op poort 443 toestaan.
-
-    - Toestaan dat de logboekverzamelaar initiëren uitgaand verkeer naar Azure blob storage (https://adaprodconsole.blob.core.windows.net/) op poort 80 en 443.
-
-> [!NOTE]
-> Als uw firewall vereist dat een lijst met statische IP-adressen toegang en biedt geen ondersteuning voor whitelisting op basis van de URL, staan de logboekverzamelaar initiëren uitgaand verkeer naar de [Microsoft Azure datacenter IP-bereiken op poort 443](https://www.microsoft.com/download/details.aspx?id=41653&751be11f-ede8-5a0c-058c-2ee190a24fa6=True).
+-   Uw firewall ingesteld zoals beschreven in [vereisten](network-requirements#log-collector)
 
 ## <a name="log-collector-performance"></a>Prestaties logboekverzamelaar
 
@@ -128,7 +119,7 @@ De logboekverzamelaar kan een logboekcapaciteit van maximaal 50 GB per uur aan. 
 
 5.  Als u akkoord gaan met de [softwarelicentievoorwaarden](https://go.microsoft.com/fwlink/?linkid=862492), verwijderen van oude versies en Docker CE installeren met de volgende opdracht:
         
-        curl -o /tmp/MCASInstallDocker.sh https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh && chmod +x /tmp/MCASInstallDocker.sh; sudo /tmp/MCASInstallDocker.sh
+        curl -o /tmp/MCASInstallDocker.sh https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh && chmod +x /tmp/MCASInstallDocker.sh; /tmp/MCASInstallDocker.sh
 
 6. In de Cloud App Security-portal in de **maken nieuwe logboekverzamelaar** venster de opdracht voor het importeren van de configuratie van de collector op de host machine kopiëren:
 
@@ -138,12 +129,12 @@ De logboekverzamelaar kan een logboekcapaciteit van maximaal 50 GB per uur aan. 
 
       ![Ubuntu Azure-opdracht](./media/ubuntu-azure-command.png)
 
->[!NOTE]
->Voor het configureren van een proxy toevoegen de proxy IP-adres en poort. Bijvoorbeeld, als uw proxy-gegevens 192.168.10.1:8080 zijn, is uw bijgewerkte opdracht: 
+     >[!NOTE]
+     >Voor het configureren van een proxy toevoegen de proxy IP-adres en poort. Bijvoorbeeld, als uw proxy-gegevens 192.168.10.1:8080 zijn, is uw bijgewerkte opdracht: 
 
-        (echo db3a7c73eb7e91a0db53566c50bab7ed3a755607d90bb348c875825a7d1b2fce) | sudo docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=mod244533.us.portal.cloudappsecurity.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
+        (echo db3a7c73eb7e91a0db53566c50bab7ed3a755607d90bb348c875825a7d1b2fce) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=mod244533.us.portal.cloudappsecurity.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
 
-         ![Ubuntu proxy](./media/ubuntu-proxy.png)
+     ![Ubuntu-proxy](./media/ubuntu-proxy.png)
 
 8. Om te bevestigen dat de logboekverzamelaar correct wordt uitgevoerd, voert u de volgende opdracht uit: `Docker logs <collector_name>`. Krijgt u de resultaten: **is voltooid!**
 
