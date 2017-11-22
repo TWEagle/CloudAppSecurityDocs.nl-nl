@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/31/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,16 +13,24 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9e8cba61d9046c341675a736c718bbcd0ad34e2c
-ms.sourcegitcommit: 3bc510959e66a29d474cbef412deac0daefa8a24
+ms.openlocfilehash: f8b50bd5b3524a782888dcd73f0f6690a2b13a89
+ms.sourcegitcommit: 7e0d28b1ac39f7e44e258ab2a0d9563b8fd2aba6
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/13/2017
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Wat is er nieuw is bij de Microsoft Cloud App Security
 
 
-## <a name="cloud-app-security-releases-109"></a>Cloud App Security releases 109
+## <a name="cloud-app-security-release-110"></a>Cloud App Security-release 110
+12 November 2017 uitgebracht
+ 
+-   Nu algemeen beschikbaar: We implementeert een nieuwe implementatiemodus voor de logboekverzamelaar begint. Naast de huidige virtueel apparaat gebaseerde implementatie van de nieuwe Docker (container) op basis van logboekverzamelaar kan worden geïnstalleerd als een pakket op [Ubuntu machines](discovery-docker.md) zowel on-premises en in Azure. Wanneer u de Docker gebruikt, wordt de hosting machine eigendom van de klant, die kan vrijelijk patch en deze te volgen.
+-   Met het nieuwe blauw vraagteken in de hoek en u kunt nu toegang tot de relevante pagina met de Cloud App Security-documentatie op docs.microsoft.com uit op de pagina's van de portal. Elke koppeling is contextgevoelige brengen u naar informatie die u nodig op basis van de pagina die u gaat.
+-   U kunt nu feedback verzenden vanaf elke pagina van de Cloud App Security-portal. Hiermee kunt u fouten rapporteren, het aanvragen van nieuwe functies en het delen van uw ervaring rechtstreeks met de Cloud App Security-team.
+-   Er zijn verbeteringen aangebracht in de Cloud discovery mogelijkheid voor het herkennen van subdomeinen voor dieper onderzoek van gebruik van de cloud van uw organisatie. Zie voor meer informatie [werken met gedetecteerde apps](discovered-apps.md).
+
+## <a name="cloud-app-security-release-109"></a>Cloud App Security-release 109
 29 oktober 2017 uitgebracht 
 
 - Microsoft Cloud App Security proxy functie implementeert is gestart. De Microsoft Cloud App Security-proxy biedt u de hulpprogramma's die moet u beschikken over real-time inzicht en controle over toegang tot uw cloudomgeving en de activiteiten die worden uitgevoerd binnen het. Bijvoorbeeld:

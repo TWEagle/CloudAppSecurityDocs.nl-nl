@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/31/2017
+ms.date: 12/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,16 +13,14 @@ ms.technology:
 ms.assetid: 06238ebc-2088-4372-9412-96cceaf3b145
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c84cadea48fb131c4602cbaa5377827236764690
-ms.sourcegitcommit: 3bc510959e66a29d474cbef412deac0daefa8a24
+ms.openlocfilehash: d086dc6e05d64662625340594f0bb355936c0a7a
+ms.sourcegitcommit: 4d84f9d15256b05c785a1886338651b86622070c
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="blocking-downloads-of-sensitive-information-using-the-microsoft-cloud-app-security-proxy"></a>Downloads van gevoelige gegevens via de Microsoft Cloud App Security-proxy worden geblokkeerd
 
-> [!NOTE]
-> Microsoft Cloud App Security proxy functie implementeert is gestart.
 
 De hedendaagse IT-beheerder is vastgelopen tussen een steen en vaste place: U wilt uw werknemers productief inschakelen. Dit betekent dat werknemers toegang tot apps om te op elk gewenst moment, vanaf elk apparaat werken kunnen toestaan. Aan de andere kant u wilt beveiligen van het bedrijf en die bedrijfseigen en bevoorrechte informatie bevat. Hoe kunt u uw werknemers toegang hebben tot uw cloud-apps en bescherming van uw gegevens inschakelen? **U kunt deze gebruiksvoorbeeld naar blok downloads door gebruikers die toegang tot uw vertrouwelijke gegevens in de enterprise cloud-apps van niet-beheerde apparaten of locaties buiten-bedrijfsnetwerk hebben.**
 
@@ -127,7 +125,9 @@ Na het voltooien van deze taak gaat u verder met de Cloud App Security-portal en
 
 4. In het rapport beleid kunt u zien welke aanmeldingen indien omgeleid naar de proxy voor het beheer van sessies en welke bestanden zijn gedownload of worden geblokkeerd van de bewaakte sessies.
 
-  
+
+
+
 ## <a name="see-also"></a>Zie ook  
 [Een sessie-beleid maken](session-policy-aad.md)   
 [Ga naar de ondersteuningspagina van Cloud App Security voor technische ondersteuning.](http://support.microsoft.com/oas/default.aspx?prid=16031)   

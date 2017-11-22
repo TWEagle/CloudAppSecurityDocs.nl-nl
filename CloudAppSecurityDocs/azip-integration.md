@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e7b4fbb7ed71e1a49de93447c3c00dbff43f2894
-ms.sourcegitcommit: 4daaec64c5a773cd092d94ee17ca05dfbd9e92c5
+ms.openlocfilehash: 64fd889e309be254d5aa99320e040129a5de8e1d
+ms.sourcegitcommit: fbeb299e8c41fc57b50d491b1becbf488fdd3642
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/09/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="azure-information-protection-integration"></a>Integratie van Azure Information Protection
 
@@ -61,6 +61,7 @@ Nadat u Azure Information Protection hebt ingeschakeld, kunt u bestanden met cla
 
 ### <a name="set-internal-and-external-tags"></a>Interne en externe labels instellen
 Cloud App Security scant standaard classificatielabels die zijn gedefinieerd in uw organisatie, evenals externe waarden die zijn gedefinieerd door andere organisaties. 
+
 
 Als u wilt dat deze extern ingestelde labels worden genegeerd, gaat u in de Cloud App Security-portal onder **Algemene instellingen** naar **Azure-beveiligingsinstellingen** en selecteert u de optie **Azure Information Protection-classificatielabels van andere tenants negeren**.
  
@@ -118,7 +119,7 @@ Lees meer informatie over [Azure Information Protection](https://docs.microsoft.
 
 ## <a name="integration-with-azure-rights-management"></a>Integratie met Azure Rights Management
 
-Uw organisatie moet Azure Rights Management in licentie en geactiveerd hebben voor integratie tussen Cloud App Security en Azure RMS.  Deze twee afzonderlijke stappen kunt u vinden in [Azure Rights Management activeren](https://docs.microsoft.com/information-protection/deploy-use/activate-service).
+Uw organisatie moet Azure Rights Management in licentie en geactiveerd hebben voor integratie tussen Cloud App Security en Azure RMS. Deze twee afzonderlijke stappen vindt u in [Azure Rights Management activeren](https://docs.microsoft.com/information-protection/deploy-use/activate-service).
 
 Cloud App Security ondersteunt momenteel systeemeigen beveiliging voor Office-bestanden (2016 en up-to-date). PDF-en afbeeldingsbestanden zijn beschikbaar in toekomstige versies. 
 
@@ -133,7 +134,7 @@ Nadat Cloud App Security is verbonden met uw Office 365-service, kunt u de Cloud
 
 2. U wordt gevraagd om een van de classificatielabels van uw organisatie te gebruiken voor het beveiligen van het bestand en klik op **beveiligen**. 
 ![beveiliging classificatie label](./media/protect-template.png)
-3. Nadat u ervoor kiezen een classificatie-label en klik op beveiligen, Cloud App Security wordt de classificatie-label worden toegepast en beveiligt u het oorspronkelijke bestand. T
+3. Nadat u ervoor kiezen een classificatie-label en klik op beveiligen, Cloud App Security wordt de classificatie-label worden toegepast en beveiligt u het oorspronkelijke bestand.
 > [!NOTE]
 >   Het verdient aanbeveling bedrijfsbreed RMS classificatielabels toepassen op bestanden, zodat alle gebruikers in de organisatie toegang tot deze bestanden, met inbegrip van de oorspronkelijke eigenaar van het bestand zijn. De eigenaar van het bestand, het beleid voor het delen van het bestand en de lijst met gebruikers die al toegang hebben, veranderen niet wanneer het bestand wordt beveiligd.
 

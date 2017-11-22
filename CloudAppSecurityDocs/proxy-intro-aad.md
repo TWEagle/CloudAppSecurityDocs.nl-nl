@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/31/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology:
 ms.assetid: 35a43120-bf67-4cf9-9b48-ebe157dbbd18
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 764428c87317d5b4ab706b5a9d4b3c83147628b3
-ms.sourcegitcommit: 3bc510959e66a29d474cbef412deac0daefa8a24
+ms.openlocfilehash: 6174cfe5fc0c5ba1bbde2b1f68234f727c7db223
+ms.sourcegitcommit: eb4e70b6fa15cfff01932a711cecee38f67bc058
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/13/2017
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-proxy"></a>Apps met Microsoft Cloud App Security proxy beveiligen
 
 > [!NOTE]
-> Microsoft Cloud App Security proxy functie implementeert is gestart.
+> Dit is een preview-functie.
+
 
 Vandaag de dag is het vaak niet genoeg om te weten wat er gebeurt in uw cloudomgeving achteraf, u wilt stoppen schendingen en lekken in realtime kunnen voordat werknemers opzettelijk of per ongeluk risico voor uw gegevens en uw organisatie. Het is belangrijk om in te schakelen voor gebruikers in uw organisatie wilt maken van de services en hulpprogramma's die voor hen beschikbaar in de cloud-apps en laat ze hun eigen apparaten meebrengen naar het werk. Op hetzelfde moment moet u de hulpprogramma's om u te helpen uw organisatie beschermen tegen gegevenslekken en diefstal van gegevens in realtime. Samen met Azure Active Directory biedt de Cloud App Security-proxy deze mogelijkheden in een holistische en geïntegreerde ervaring.
 
@@ -79,6 +80,7 @@ In termen van clients is de Sessiecontrole beschikbaar voor elke browser op een 
 
 > [!NOTE]
 > Office 365-toepassingen zijn niet geconfigureerd met SAML zodat ze worden momenteel niet ondersteund.
+
 
 ## <a name="see-also"></a>Zie ook  
 [De Cloud App Security-proxy implementeren](proxy-deployment-aad.md)   

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/31/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,16 +13,16 @@ ms.technology:
 ms.assetid: 745df28a-654c-4abf-9c90-203841169f90
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 97ebb7db49fcf5ed524a05943557d616487294f8
-ms.sourcegitcommit: 3bc510959e66a29d474cbef412deac0daefa8a24
+ms.openlocfilehash: c955e20b4abd506f5e44659fbdd921bb54def131
+ms.sourcegitcommit: eb4e70b6fa15cfff01932a711cecee38f67bc058
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/13/2017
 ---
 # <a name="session-policies"></a>Sessie-beleid 
 
 > [!NOTE]
-> Microsoft Cloud App Security proxy functie implementeert is gestart.
+> Dit is een preview-functie.
 
 Beleidsregels voor cloud App Security sessie realtime niveau van de sessie-bewaking inschakelen, u gedetailleerde inzicht in de cloud-apps en de mogelijkheid om verschillende acties, afhankelijk van het beleid dat u voor een gebruikerssessie instelt uitvoeren op het netwerk. In plaats van toe te staan of volledig toegang blokkeert, kunt Sessiecontrole u toegang toestaan bij de bewaking van de sessie en/of de limiet voor bepaalde sessie-activiteiten. 
 
@@ -159,7 +159,7 @@ Wanneer **blok** is ingesteld als de **actie** u wilt uitvoeren in de Cloud App 
 
 Wanneer **beveiligen** is ingesteld als de **actie** om te worden uitgevoerd in de Cloud App Security proxy sessie beleid, de proxy wordt afgedwongen de labels en volgende beveiliging van een bestand in overeenstemming met het beleid bestand filters. Labels zijn geconfigureerd in de Azure Information Protection-console in Azure en **beveiligen** moet worden geselecteerd in het label voor het label als een optie in de Cloud App Security-beleid wordt weergegeven. Als een label is ingeschakeld en een bestand wordt gedownload, die voldoet aan de criteria van de Cloud App Security-beleid, wordt de naam en de bijbehorende beveiliging (met machtigingen) toegepast op het bestand tijdens het downloaden. Het oorspronkelijke bestand blijft-is in de cloud-app wanneer het gedownloade bestand is nu worden beveiligd. Gebruikers die proberen toegang tot het bestand moeten voldoen aan de machtigingsvereisten bepaald door de beveiliging kan worden toegepast.  
  
-  
+ 
 ## <a name="see-also"></a>Zie ook  
 [Downloads op niet-beheerde apparaten met behulp van Azure AD-proxy-mogelijkheden worden geblokkeerd](use-case-proxy-block-session-aad.md)   
 [Ga naar de ondersteuningspagina van Cloud App Security voor technische ondersteuning.](http://support.microsoft.com/oas/default.aspx?prid=16031)   

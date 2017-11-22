@@ -1,6 +1,6 @@
 ---
 title: Automatisch uploaden van logboeken configureren voor doorlopende rapporten | Microsoft Docs
-description: In dit onderwerp beschrijft het proces automatisch logboekgegevens uploaden voor continue rapporten configureren in de Cloud App Security met een Docker op Ubuntu in een on-premises server.
+description: In dit onderwerp beschrijft het proces automatisch logboekgegevens uploaden voor continue rapporten configureren in de Cloud App Security met behulp van een Docker op Ubuntu in Azure.
 keywords: 
 author: rkarlin
 ms.author: rkarlin
@@ -10,12 +10,12 @@ ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
 ms.technology: 
-ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
+ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 64f37fe71c89a4a9f57542255d7d044164d7d3f3
+ms.openlocfilehash: 58d3b69673237929a76870bcb81b2ef72e799ca0
 ms.sourcegitcommit: 4d84f9d15256b05c785a1886338651b86622070c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: nl-NL
 ms.lasthandoff: 11/22/2017
 ---
@@ -33,7 +33,6 @@ ms.lasthandoff: 11/22/2017
 -   RAM: 4 GB
 
 -   Uw firewall ingesteld zoals beschreven in [vereisten](network-requirements#log-collector)
-
 
 ## <a name="log-collector-performance"></a>Prestaties logboekverzamelaar
 
@@ -89,42 +88,56 @@ De logboekverzamelaar kan een logboekcapaciteit van maximaal 50 GB per uur aan. 
 
    ![Logboekverzamelaar maken](./media/windows7.png)
 
-### <a name="step-2--on-premises-deployment-of-your-machine"></a>Stap 2: On-premises implementatie van uw machine
+### <a name="step-2--deployment-of-your-machine-in-azure"></a>Stap 2: implementatie van uw machine in Azure
 
-> [!Note]
+> [!NOTE]
 > De volgende stappen beschrijven de implementatie in Ubuntu. De implementatiestappen voor andere platforms zijn enigszins anders.
 
-1.  Open een terminal op uw Ubuntu-machine.
 
-2.  Wijzig in de hoofdmap bevoegdheden met de opdracht:`sudo -i`
-
-3. Voer de volgende twee opdrachten voor het overslaan van een proxyserver in uw netwerk:
-        
-        export http_proxy='<IP>:<PORT>' (e.g. 168.192.1.1:8888)
-        export https_proxy='<IP>:<PORT>'
-
-3.  Als u akkoord gaan met de [softwarelicentievoorwaarden](https://go.microsoft.com/fwlink/?linkid=862492), verwijderen van oude versies en Docker CE installeren met de volgende opdracht:
-
-    `curl -o /tmp/MCASInstallDocker.sh
-    https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh
-    && chmod +x /tmp/MCASInstallDocker.sh; /tmp/MCASInstallDocker.sh`
-
-     > [!NOTE] 
-     > Als deze opdracht is mislukt om uw proxycertificaat te valideren, voert u de opdracht met behulp van `curl -k` aan het begin.
+1.  Maak een nieuwe Ubuntu-machine in uw Azure-omgeving. 
+2.  Nadat de computer is, opent u de poorten die door:
+    1.  Ga in de weergave van de machine naar **Networking** Selecteer de relevante interface door dubbele erop te klikken.
+    2.  Ga naar **netwerkbeveiligingsgroep** en selecteer de relevante netwerkbeveiligingsgroep.
+    3.  Ga naar **inkomende beveiligingsregels** en klik op **toevoegen**,
+      
+      ![Ubuntu Azure](./media/ubuntu-azure.png)
     
-    ![ubuntu5](./media/ubuntu5.png)
+    4. De volgende regels toevoegen (in **Geavanceerd** modus):
 
-4.  De collector-installatiekopie op de host machine implementeren door het importeren van configuratie van de collector. Dit doen met het kopiëren van de opdracht uitvoeren in de portal is gegenereerd. Als u nodig hebt voor het configureren van een proxy toevoegen van de proxy-IP-adres en poort-nummer. Bijvoorbeeld, als uw proxy-gegevens 192.168.10.1:8080 zijn, is uw bijgewerkte opdracht uitvoeren:
+    |Naam|Poortbereik van doel|Protocol|Bron|Bestemming|
+    |----|----|----|----|----|
+    |caslogcollector_ftp|21|TCP|Alle|Alle|
+    |caslogcollector_ftp_passive|20000-20099|TCP|Alle|Alle|
+    |caslogcollector_syslogs_tcp|601-700|TCP|Alle|Alle|
+    |caslogcollector_syslogs_tcp|514-600|UDP|Alle|Alle|
+      
+      ![Ubuntu Azure regels](./media/ubuntu-azure-rules.png)
 
-            (echo 6f19225ea69cf5f178139551986d3d797c92a5a43bef46469fcc997aec2ccc6f) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.2.2.2'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=tenant2.eu1-rs.adallom.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
+3.  Ga terug naar de machine en klik op **Connect** openen van een terminal op de machine.
 
-   ![Logboekverzamelaar maken](./media/windows7.png)
+4.  Wijzig in de hoofdmap bevoegdheden met `sudo -i`.
 
-5.  Controleer of de collector correct wordt uitgevoerd met de volgende opdracht:`docker logs \<collector_name\>`
+5.  Als u akkoord gaan met de [softwarelicentievoorwaarden](https://go.microsoft.com/fwlink/?linkid=862492), verwijderen van oude versies en Docker CE installeren met de volgende opdracht:
+        
+        curl -o /tmp/MCASInstallDocker.sh https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh && chmod +x /tmp/MCASInstallDocker.sh; /tmp/MCASInstallDocker.sh
 
-U ziet het bericht: **is voltooid!**
+6. In de Cloud App Security-portal in de **maken nieuwe logboekverzamelaar** venster de opdracht voor het importeren van de configuratie van de collector op de host machine kopiëren:
 
-  ![ubuntu8](./media/ubuntu8.png)
+      ![Ubuntu Azure](./media/ubuntu-azure.png)
+
+7. Voer de opdracht voor het implementeren van de logboekverzamelaar.
+
+      ![Ubuntu Azure-opdracht](./media/ubuntu-azure-command.png)
+
+     >[!NOTE]
+     >Voor het configureren van een proxy toevoegen de proxy IP-adres en poort. Bijvoorbeeld, als uw proxy-gegevens 192.168.10.1:8080 zijn, is uw bijgewerkte opdracht: 
+
+        (echo db3a7c73eb7e91a0db53566c50bab7ed3a755607d90bb348c875825a7d1b2fce) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=mod244533.us.portal.cloudappsecurity.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
+
+     ![Ubuntu-proxy](./media/ubuntu-proxy.png)
+
+8. Om te bevestigen dat de logboekverzamelaar correct wordt uitgevoerd, voert u de volgende opdracht uit: `Docker logs <collector_name>`. Krijgt u de resultaten: **is voltooid!**
+
 
 ### <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>Stap 3 - On-premises configuratie van uw netwerkapparaten
 
