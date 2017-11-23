@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/9/2017
+ms.date: 11/22/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 437504a73f9b3ae4a8a21b379356934b76d2430b
-ms.sourcegitcommit: 4daaec64c5a773cd092d94ee17ca05dfbd9e92c5
+ms.openlocfilehash: a87855be812c7f4228cb78eda2a023faad436011
+ms.sourcegitcommit: 6e4eac42e553fd288da7de9c67eb79f11a420245
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/09/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="connect-apps"></a>Apps koppelen 
 App-connectors maken gebruik van de API's van app-providers. Hierdoor zijn de apps waarmee u verbinding maakt, beter zichtbaar en controleerbaar voor Cloud App Security.  
@@ -76,7 +76,7 @@ De volgende tabel geeft per cloud-app aan welke vaardigheden met App-connectors 
 |**Aanmeldingsactiviteiten**|✔|✔|✔|✔|✔|✔|✔|✔|  
 |**Gebruikersactiviteiten**|✔*|✔|✔|✔ - Onbeperkte Google-licentie vereist|Gedeeltelijke|Ondersteund met Salesforce Shield|✔|Niet van toepassing|  
 |**Beheeractiviteiten**|✔|✔|✔|✔|Gedeeltelijke|✔|✔|✔|  
-|**Periodiek scannen van bestanden**|✔|✔|Niet van toepassing|✔|✔|✔|✔|Binnenkort beschikbaar|  
+|**Periodiek scannen van bestanden**|✔|✔|Niet van toepassing|✔|✔|✔|✔|Niet van toepassing|  
 |**NRT-bestandsscan (Near-Realtime)**|✔|✔|Niet van toepassing|✔ - Onbeperkte Google-licentie vereist|||Binnenkort beschikbaar||  
 |**Beheer van delen**|✔|✔|Niet van toepassing|✔|Niet van toepassing||✔||  
 |**Quarantaine**|✔|✔|Niet van toepassing|Binnenkort beschikbaar|||Binnenkort beschikbaar||  

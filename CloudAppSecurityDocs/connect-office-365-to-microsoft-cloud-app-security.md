@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/25/2017
+ms.date: 11/22/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a79bf393-0d2c-44b6-8dab-86c740fd7333
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 58cf8529634951c778e9a0abca743e4b8c7d05d7
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: e568172068f5ec63a519c495f7e824bd49b03883
+ms.sourcegitcommit: 6e4eac42e553fd288da7de9c67eb79f11a420245
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="connect-office-365-to-microsoft-cloud-app-security"></a>Verbinding maken tussen Office 365 en Microsoft Cloud App Security
 In deze sectie vindt u instructies voor het maken van verbinding tussen Cloud App Security en uw bestaande Microsoft 365-account met behulp van de connector-API voor de app.  
@@ -43,7 +43,7 @@ Cloud App Security ondersteunt de volgende Office 365-apps:
 >- U moet ten minste één toegewezen Office 365-licentie hebben om verbinding te kunnen maken tussen Office 365 en Cloud App Security.
 >-  Met controlelogboekregistratie voor Exchange-beheerders, standaard ingeschakeld in Office 365, wordt een gebeurtenis in het Office 365-controlelogboek geregistreerd wanneer een beheerder (of een gebruiker aan wie beheerdersrechten zijn toegewezen) een wijziging aanbrengt in uw Exchange Online-organisatie. Wijzigingen die zijn aangebracht via het Exchange-beheercentrum of door een cmdlet uit te voeren in Windows PowerShell, worden geregistreerd in het auditlogboek in het Exchange-beheercentrum. Zie het Engelstalige artikel [Administrator audit logging](http://go.microsoft.com/fwlink/p/?LinkID=619225) (Controlelogboekregistratie voor administrator) voor meer informatie over controlelogboekregistratie voor administrators in Exchange.
 >- Exchange-postvak logboekregistratie moet worden ingeschakeld voor elke gebruikerspostvak voordat gebruikersactiviteit in Exchange Online wordt vastgelegd, Zie [Exchange-postvak activiteiten](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c).
->- Als Office-apps zijn ingeschakeld, worden groepen die deel van Office 365 uitmaken ook gemaakt in de specifieke Office-apps, bijvoorbeeld als SharePoint is ingeschakeld, Office 365-groepen zijn gemaakt in SharePoint.
+>- Als Office-apps zijn ingeschakeld, zijn groepen die deel van Office 365 uitmaken ook geïmporteerde en Cloud App Security van de specifieke Office-apps, bijvoorbeeld als SharePoint is ingeschakeld, Office 365-groepen worden geïmporteerd als SharePoint-groepen.
 >- U moet [inschakelen in Power BI](https://powerbi.microsoft.com/documentation/powerbi-admin-auditing/) ophalen van de logboeken van daaruit. Zodra de controle is ingeschakeld, wordt door Cloud App Security gestart ophalen van de logboeken (met een vertraging van 24 72 uur).
 > Als uw Azure Active Directory is ingesteld op automatisch synchroniseren met de gebruikers in uw on-premises Active Directory omgeving overschrijven de instellingen van de instellingen in de on-premises omgeving de Azure AD-instellingen en het gebruik van de **onderbreken gebruiker** beheeractie is hersteld. 
  
