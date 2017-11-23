@@ -13,9 +13,9 @@ ms.technology:
 ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 58d3b69673237929a76870bcb81b2ef72e799ca0
-ms.sourcegitcommit: 4d84f9d15256b05c785a1886338651b86622070c
-ms.translationtype: HT
+ms.openlocfilehash: 139d848936def3e97d8270027a3e288196e96f90
+ms.sourcegitcommit: f23705ee51c6cb0113191aef9545e7ec3111f75d
+ms.translationtype: MT
 ms.contentlocale: nl-NL
 ms.lasthandoff: 11/22/2017
 ---
@@ -109,7 +109,7 @@ De logboekverzamelaar kan een logboekcapaciteit van maximaal 50 GB per uur aan. 
     |caslogcollector_ftp|21|TCP|Alle|Alle|
     |caslogcollector_ftp_passive|20000-20099|TCP|Alle|Alle|
     |caslogcollector_syslogs_tcp|601-700|TCP|Alle|Alle|
-    |caslogcollector_syslogs_tcp|514-600|UDP|Alle|Alle|
+    |caslogcollector_syslogs_udp|514-600|UDP|Alle|Alle|
       
       ![Ubuntu Azure regels](./media/ubuntu-azure-rules.png)
 
