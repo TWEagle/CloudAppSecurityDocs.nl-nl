@@ -13,13 +13,26 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f8b50bd5b3524a782888dcd73f0f6690a2b13a89
-ms.sourcegitcommit: 7e0d28b1ac39f7e44e258ab2a0d9563b8fd2aba6
+ms.openlocfilehash: c40d24a20e6a05a0cec29cd99f66d7937f10e73d
+ms.sourcegitcommit: 473d96a6383a6e4d01ef03ed31f2e773cea82cab
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 11/27/2017
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Wat is er nieuw is bij de Microsoft Cloud App Security
+
+## <a name="cloud-app-security-release-111"></a>Cloud App Security-release 111
+26 November 2017 uitgebracht
+
+-   Beleidsregels voor appdetectie bieden nu ondersteuning voor app-tags, als een voorwaarde en als een beheeractie. U kunt automatisch tag zojuist gedetecteerde apps met aangepaste labels zoals **Trending apps**. U kunt ook de app-code als een filter, bijvoorbeeld 'waarschuwen wanneer een app in de 'Watchlist' meer dan 100 gebruikers in een enkele dag is' gebruiken.
+
+-   De **tijd** filter is verbeterd, zodat u meer gebruiker beschrijvende.
+
+-   Inhoudscontrole nu kunt u onderscheid maken tussen de inhoud, de metagegevens en de bestandsnaam, waarin u kunt selecteren welke van de volgende u wilt controleren.
+
+-   Een nieuwe beheeractie is toegevoegd voor Suite G. U kunt nu **openbare toegang beperken** met gedeelde bestanden. Hiermee kunt u openbaar beschikbare bestanden zijn alleen beschikbaar als een gedeelde koppeling ingesteld.
+
+-   Alle OKTA-logboek voor de activiteiten voor andere toepassingen wordt nu weergegeven in de Cloud App Security als zijnde afkomstig van OKTA. U kunt bekijken en te filteren op basis van de doeltoepassing waarnaar de aanmelding van de activiteit is uitgevoerd **activiteit objecten** veld.
 
 
 ## <a name="cloud-app-security-release-110"></a>Cloud App Security-release 110
@@ -496,7 +509,7 @@ Uitgebracht: 7 augustus 2016
 
 - Verbeterde parsers voor Cloud Discovery-logboekbestanden, met onder ander de toevoeging van Juniper en Cisco ASA.
 - Met Cloud App Security kunt u tijdens het negeren van waarschuwingen feedback geven over de verbeterde waarschuwingen. U kunt de kwaliteit van de waarschuwingsfunctie in Cloud App Security helpen verbeteren door te laten weten waarom u de waarschuwing negeert, bijvoorbeeld omdat deze niet interessant is, omdat u te veel vergelijkbare waarschuwingen hebt ontvangen, omdat de werkelijke urgentie van de waarschuwing lager moet zijn of omdat de waarschuwing niet juist is.
--In de weergave Bestandsbeleid, of wanneer u een bestand bekijkt, kunt u tijdens het openen van de bestandslade gebruikmaken van een nieuwe koppeling naar overeenkomende beleidsregels. Wanneer u op de koppeling klikt, kunt u alle overeenkomsten weergegeven en kunt u nu alle overeenkomsten negeren. 
+ -In de weergave Bestandsbeleid, of wanneer u een bestand bekijkt, kunt u tijdens het openen van de bestandslade gebruikmaken van een nieuwe koppeling naar overeenkomende beleidsregels. Wanneer u op de koppeling klikt, kunt u alle overeenkomsten weergegeven en kunt u nu alle overeenkomsten negeren. 
 - De organisatie-eenheid waartoe een gebruiker behoort, wordt nu aan alle relevante waarschuwingen toegevoegd.
 - Er wordt een e-mailmelding verzonden zodat u weet wanneer de verwerking van uw handmatig geüploade logboeken is voltooid.
 

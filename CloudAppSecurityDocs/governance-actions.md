@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 11/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 76066e4747630b1aa7cb5c3301c8053c8254a8a0
-ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
+ms.openlocfilehash: c0de0f106ce5505edcc437b1d94084759eac2838
+ms.sourcegitcommit: 473d96a6383a6e4d01ef03ed31f2e773cea82cab
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 11/27/2017
 ---
 # <a name="governing-connected-apps"></a>Verbonden apps beheren
 Met governance kunt u beheren wat gebruikers doen, in realtime en in verschillende apps. Voor verbonden apps kunt u beheeracties toepassen op bestanden of activiteiten.
@@ -52,6 +52,8 @@ De volgende beheeracties kunnen voor verbonden apps worden uitgevoerd op een spe
         -   Privé maken – alleen de eigenaar heeft toegang tot het bestand, alle shares worden verwijderd.  
   
         -   Een samenwerker verwijderen – een specifieke samenwerker verwijderen uit het bestand.  
+
+        - Openbare toegang - ingesteld openbaar beschikbare bestanden zijn alleen beschikbaar als een gedeelde koppeling verminderen.
   
     -   Quarantaine  
   
@@ -141,6 +143,7 @@ Zie [Beleidsconflicten](control-cloud-apps-with-policies.md) voor informatie ove
 |Bestanden|Bestand|Beveiligen|Een bestand met Azure Information Protection beveiligen door het toepassen van een organisatie-sjabloon.|Office 365 (SharePoint en OneDrive)|
 |Bestanden|Bestand|De leesmachtigingen intrekken voor mijzelf|Hiermee worden de leesmachtigingen voor het bestand ingetrokken voor uzelf. Dit is handig wanneer u uzelf een machtiging hebt verleend om te zien of een bestand een beleid schendt.|G Suite|
 |Bestanden, bestandsbeleid|Bestand|Eigendom van het bestand overdragen|Hiermee wordt de eigenaar gewijzigd. U kiest een specifieke eigenaar in het beleid.|G Suite|
+|Bestanden, bestandsbeleid|Bestand|De openbare toegang niet beperken|Hiermee kunt u openbaar beschikbare bestanden zijn alleen beschikbaar als een gedeelde koppeling ingesteld.|G Suite|
 |Bestanden, bestandsbeleid|Bestand|Een samenwerker verwijderen|Hiermee wordt een specifieke samenwerker uit een bestand verwijderd.|G Suite, Box, OneDrive, SharePoint|
 |Bestanden, bestandsbeleid|Bestand|Privé maken|Hiermee wordt het bestand privé gemaakt: er zijn geen samenwerkers of openbare koppelingen meer en het bestand wordt met niemand gedeeld.|G Suite, OneDrive, SharePoint|
 |Bestanden, bestandsbeleid|Bestand|Externe gebruikers verwijderen|Hiermee worden alle externe deelnemers verwijderd (buiten de domeinen die als intern zijn geconfigureerd in Instellingen).|G Suite, Box |
