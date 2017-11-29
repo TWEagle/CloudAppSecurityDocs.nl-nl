@@ -4,7 +4,7 @@
 ## Vergelijken
 ### [Office 365](editions-cloud-app-security-o365.md)
 ### [Azure AD](editions-cloud-app-security-aad.md)
-# Implementeer
+# Implementeren
 ## [Aan de slag](getting-started-with-cloud-app-security.md)
 ## [Basisinstellingen](general-setup.md)
 ### [Netwerkvereisten](network-requirements.md)
@@ -18,6 +18,9 @@
 ### [Automatisch uploaden van logboeken configureren voor doorlopende rapporten](discovery-docker.md)
 #### [Docker op Ubuntu on-premises](discovery-docker-ubuntu.md)
 #### [Docker op Ubuntu in Azure](discovery-docker-ubuntu-azure.md)
+##### De Docker-configuratie wijzigen
+###### [Certificaatbestanden aanpassen](discovery-docker-custom-cert.md)
+###### [Het FTP-wachtwoord wijzigen](discovery-docker-change-ftp.md)
 #### [Een virtueel apparaat gebruiken](configure-automatic-log-upload-for-continuous-reports.md)
 ### [De aangepaste logboekparser gebruiken](custom-log-parser.md)
 ### [Cloud Discovery-verrijking](cloud-discovery-aad-enrichment.md)
