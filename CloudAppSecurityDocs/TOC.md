@@ -4,7 +4,7 @@
 ## Vergelijken
 ### [Office 365](editions-cloud-app-security-o365.md)
 ### [Azure AD](editions-cloud-app-security-aad.md)
-# Implementeren
+# Implementeer
 ## [Aan de slag](getting-started-with-cloud-app-security.md)
 ## [Basisinstellingen](general-setup.md)
 ### [Netwerkvereisten](network-requirements.md)
@@ -18,10 +18,7 @@
 ### [Automatisch uploaden van logboeken configureren voor doorlopende rapporten](discovery-docker.md)
 #### [Docker op Ubuntu on-premises](discovery-docker-ubuntu.md)
 #### [Docker op Ubuntu in Azure](discovery-docker-ubuntu-azure.md)
-##### De Docker-configuratie wijzigen
-###### [Certificaatbestanden aanpassen](discovery-docker-custom-cert.md)
-###### [Het FTP-wachtwoord wijzigen](discovery-docker-change-ftp.md)
-#### [Een virtueel apparaat gebruiken](configure-automatic-log-upload-for-continuous-reports.md)
+#### [Een virtueel apparaat gebruiken - afgeschaft](configure-automatic-log-upload-for-continuous-reports.md)
 ### [De aangepaste logboekparser gebruiken](custom-log-parser.md)
 ### [Cloud Discovery-verrijking](cloud-discovery-aad-enrichment.md)
 ### [Cloud Discovery-gegevens anoniem maken](cloud-discovery-anonymizer.md)
@@ -76,3 +73,5 @@
 ## [Foutberichten gebruiken om problemen met API-connectors op te lossen](troubleshooting-api-connectors-using-error-messages.md)
 ## [Problemen oplossen met inhoudsinspectie](troubleshooting-content-inspection.md)
 ## [Problemen met SIEM-integratie oplossen](troubleshooting-siem.md)
+## [Problemen oplossen met de dockerimplementatie voor Cloud Discovery](troubleshoot-docker.md)
+## [Beleid voor problemen oplossen](troubleshoot-policies.md)
