@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/22/2017
+ms.date: 11/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,15 +13,15 @@ ms.technology:
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 298358657f775ec3a53a52112ee05af5db13ca16
-ms.sourcegitcommit: 6e4eac42e553fd288da7de9c67eb79f11a420245
+ms.openlocfilehash: 908050cfc46ebeec5f201d562dca9c37b963c0eb
+ms.sourcegitcommit: f4ec7f2cb81c9d83bb7f406ddcca91ab07790a98
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="siem-integration"></a>Integratie van SIEM
     
-Nu kunt u Cloud App Security integreren met uw SIEM-server gecentraliseerde bewaking van Office 365-waarschuwingen en activiteiten wilt inschakelen. Als nieuwe activiteiten en gebeurtenissen worden ondersteund door Office 365, wordt inzicht in deze vervolgens in de Cloud App Security uitgerold. Door de integratie met een SIEM-service kunt u uw cloudtoepassingen beter beveiligen terwijl uw gebruikelijke beveiligingswerkstroom blijft behouden, beveiligingsprocedures worden geautomatiseerd en gebeurtenissen in de cloud en on-premises aan elkaar worden gekoppeld. De Cloud App Security SIEM-agent wordt uitgevoerd op uw server. De agent haalt waarschuwingen en activiteiten op uit Cloud App Security en verzendt deze naar de SIEM-server.
+Nu kunt u Cloud App Security integreren met uw SIEM-server om in te schakelen gecentraliseerde bewaking van waarschuwingen en activiteiten van verbonden apps. Als nieuwe activiteiten en gebeurtenissen worden ondersteund door verbonden apps, wordt inzicht in deze vervolgens in de Cloud App Security uitgerold. Door de integratie met een SIEM-service kunt u uw cloudtoepassingen beter beveiligen terwijl uw gebruikelijke beveiligingswerkstroom blijft behouden, beveiligingsprocedures worden geautomatiseerd en gebeurtenissen in de cloud en on-premises aan elkaar worden gekoppeld. De Cloud App Security SIEM-agent wordt uitgevoerd op uw server. De agent haalt waarschuwingen en activiteiten op uit Cloud App Security en verzendt deze naar de SIEM-server.
 
 Wanneer u uw SIEM voor het eerst integreert met Cloud App Security, worden activiteiten en waarschuwingen van de laatste twee dagen doorgestuurd naar de SIEM, plus alle activiteiten en waarschuwingen (op basis van het filter dat u selecteert) die daarna volgen. Als u deze functie voor een langere periode uitschakelt en de functie vervolgens weer inschakelt, worden bovendien waarschuwingen en activiteiten van de laatste twee dagen doorgestuurd en vervolgens alle waarschuwingen en activiteiten die daarna volgen.
 

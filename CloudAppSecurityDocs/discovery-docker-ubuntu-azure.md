@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/11/2017
+ms.date: 29/11/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 139d848936def3e97d8270027a3e288196e96f90
-ms.sourcegitcommit: f23705ee51c6cb0113191aef9545e7ec3111f75d
+ms.openlocfilehash: feb5bf67709d2bed80af0d6d52cf1efd3d4dc479
+ms.sourcegitcommit: 80faf74bea04f9e09b6f04bab1fa99728aff0e3e
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>Stel omhoog en configuratie op Ubuntu
 
@@ -166,7 +166,7 @@ Nadat u hebt gecontroleerd dat de logboeken worden naar de Cloud App Security wo
 ![Aangepast continue rapport](./media/custom-continuous-report.png)
 
 ## <a name="see-also"></a>Zie ook
-[Werken met Cloud Discovery-gegevens](working-with-cloud-discovery-data.md)  
+[Problemen met Cloud Discovery docker-implementatie oplossen](troubleshoot-docker.md)
 [Ga naar de ondersteuningspagina van Cloud App Security voor technische ondersteuning.](http://support.microsoft.com/oas/default.aspx?prid=16031)  
 [Premier-klanten kunnen Cloud App Security ook rechtstreeks vanuit de Premier Portal kiezen](https://premier.microsoft.com/)
 
