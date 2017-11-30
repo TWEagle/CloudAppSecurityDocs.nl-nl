@@ -13,18 +13,18 @@ ms.technology:
 ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7b28565c3dc87fb1134bec17ac8d0f464bcd5cdb
-ms.sourcegitcommit: 80faf74bea04f9e09b6f04bab1fa99728aff0e3e
+ms.openlocfilehash: c09c0204028f3c6be91950be4780646cbc0ac077
+ms.sourcegitcommit: 48cc077576b04dfc1cc75af9fafbdc60ed7992c9
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>Stel omhoog en configuratie op Ubuntu
 
 
 ## <a name="technical-requirements"></a>Technische vereisten
 
--   Besturingssysteem: Ubuntu 14.04 of hoger
+-   Besturingssysteem: Ubuntu 14.04 of hoger (Er is geen stabiele versie van docker ondersteuning Ubuntu 17.10)
 
 -   Schijfruimte: 250 GB
 
@@ -153,7 +153,7 @@ Nadat u hebt gecontroleerd dat de logboeken worden naar de Cloud App Security wo
 ![Aangepast continue rapport](./media/custom-continuous-report.png)
 
 ## <a name="see-also"></a>Zie ook
-[Problemen met Cloud Discovery docker-implementatie oplossen](troubleshoot-docker.md)  
+[Problemen oplossen met de dockerimplementatie voor Cloud Discovery](troubleshoot-docker.md)  
 [Ga naar de ondersteuningspagina van Cloud App Security voor technische ondersteuning.](http://support.microsoft.com/oas/default.aspx?prid=16031)  
 [Premier-klanten kunnen Cloud App Security ook rechtstreeks vanuit de Premier Portal kiezen](https://premier.microsoft.com/)
 
