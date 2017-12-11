@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 12/10/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: bbf54f66-4ce2-428c-afc8-b5a64277014f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2b82ea305209555d48d3b47489a28f19249b29c3
-ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
+ms.openlocfilehash: 758605fddf97c0f35cbc0c3029d20e536fc9dee1
+ms.sourcegitcommit: 2e89f41bc2581859a24d55b700dcd89e70e730a5
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 12/10/2017
 ---
 #  <a name="IPtagsandRanges"></a>Werken met IP-bereiken en -tags
 
@@ -40,7 +40,7 @@ Cloud App Security is vooraf geconfigureerd met ingebouwde tags voor de volgende
 Raadpleeg de ID in de Cloud App Security API-documentatie voor het gebruik van deze ingebouwde tags als onderdeel van een zoekopdracht. 
 
 > [!NOTE]
-> U kunt IP-adresbereiken bulksgewijs toevoegen door het maken van een script met de [IP-adresbereiken API](https://portal.cloudappsecurity.com/api-docs/)
+> U kunt IP-adresbereiken bulksgewijs toevoegen door het maken van een script met de **IP-adresbereiken API**, die kan worden gevonden in de Cloud App Security-portalmenubalk door te klikken op het vraagteken en vervolgens **API-documentatie**.
 
 
 Ingebouwde IP-Adreslabels en aangepaste IP-tags worden beschouwd als hiërarchisch met aangepaste IP-tags voorrang heeft op de ingebouwde IP-tags. Bijvoorbeeld, als een IP-adres wordt het gelabeld als **riskant** op basis van dreigingen, maar er is een aangepaste IP-code die wordt geïdentificeerd als **zakelijk** aangepaste categorie en labels voorrang.

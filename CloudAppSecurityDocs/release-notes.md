@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2017
+ms.date: 12/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,22 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c40d24a20e6a05a0cec29cd99f66d7937f10e73d
-ms.sourcegitcommit: 473d96a6383a6e4d01ef03ed31f2e773cea82cab
+ms.openlocfilehash: e3426172efe25f641af4757a1bc77d6aec3624d2
+ms.sourcegitcommit: 2e89f41bc2581859a24d55b700dcd89e70e730a5
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 12/10/2017
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Wat is er nieuw is bij de Microsoft Cloud App Security
+
+## <a name="cloud-app-security-release-112"></a>Cloud App Security-release 112
+10 December 2017 uitgebracht
+
+-   U kunt nu toegang tot de relevante inzicht lade door te klikken op een gebruikersnaam of het IP-adres in het gebeurtenissenlogboek. 
+-   Bij het onderzoeken van activiteiten kunt u nu eenvoudig bekijken alle activiteiten binnen de dezelfde periode uit binnen de lade inzicht door te klikken op het klokpictogram, waarmee u kunt het weergeven van alle activiteiten die worden uitgevoerd binnen 48 uur van de activiteit die u weergeeft.
+-   Er zijn verbeteringen aangebracht in de Cloud Discovery log parser voor Juniper SRX.
+-   Voor activiteiten die worden bewaakt door de proxy, de **activiteitsobject** is uitgebreid met informatie die relevant zijn voor DLP-scans en overeenkomende beleidsregels zijn uitgebreid met DLP-schendingen indien ze bestaan.
+
 
 ## <a name="cloud-app-security-release-111"></a>Cloud App Security-release 111
 26 November 2017 uitgebracht
@@ -72,7 +81,7 @@ Uitgebrachte September/oktober 2017
 ## <a name="cloud-app-security-release-104"></a>Cloud App Security-release 104 
 27 augustus 2017 uitgebracht
 
--   U kunt nu IP-adresbereiken bulksgewijs toevoegen door het maken van een script met de [IP-adresbereiken API](https://portal.cloudappsecurity.com/api-docs/). 
+-   U kunt nu IP-adresbereiken bulksgewijs toevoegen door het maken van een script met de **IP-adresbereiken API**, die kan worden gevonden in de Cloud App Security-portalmenubalk door te klikken op het vraagteken en vervolgens **API-documentatie**. 
 -   Cloud Discovery biedt betere zichtbaarheid voor geblokkeerde transacties nu in de vorm van zowel het totale aantal transacties, evenals de geblokkeerde transacties.
 -   U kunt nu filter cloud-toepassingen op basis van of ze zijn gecertificeerd met **ISO 27017**. Deze nieuwe Cloud-Appcatalogus risicofactor bepaalt of de toepassingsprovider heeft deze certificering waaruit blijkt dat vaak geaccepteerd besturingselementen en richtlijnen voor het verwerken en bescherming van gebruikersgegevens in een openbare cloud computeromgeving.
 - Zodat u voorbereiden op naleving GDPR verzameld we de GDPR gereedheid van de instructies uit de cloud-apps in de catalogus met Cloud App. Het heeft geen nog invloed op de risicoscore van de app, maar bevat een koppeling u naar de app-uitgever GDPR gereedheid van de pagina wanneer deze wordt opgegeven. Microsoft is niet geverifieerd voor deze inhoud en is niet verantwoordelijk voor de geldigheidsduur.
@@ -509,7 +518,7 @@ Uitgebracht: 7 augustus 2016
 
 - Verbeterde parsers voor Cloud Discovery-logboekbestanden, met onder ander de toevoeging van Juniper en Cisco ASA.
 - Met Cloud App Security kunt u tijdens het negeren van waarschuwingen feedback geven over de verbeterde waarschuwingen. U kunt de kwaliteit van de waarschuwingsfunctie in Cloud App Security helpen verbeteren door te laten weten waarom u de waarschuwing negeert, bijvoorbeeld omdat deze niet interessant is, omdat u te veel vergelijkbare waarschuwingen hebt ontvangen, omdat de werkelijke urgentie van de waarschuwing lager moet zijn of omdat de waarschuwing niet juist is.
- -In de weergave Bestandsbeleid, of wanneer u een bestand bekijkt, kunt u tijdens het openen van de bestandslade gebruikmaken van een nieuwe koppeling naar overeenkomende beleidsregels. Wanneer u op de koppeling klikt, kunt u alle overeenkomsten weergegeven en kunt u nu alle overeenkomsten negeren. 
+-In de weergave Bestandsbeleid, of wanneer u een bestand bekijkt, kunt u tijdens het openen van de bestandslade gebruikmaken van een nieuwe koppeling naar overeenkomende beleidsregels. Wanneer u op de koppeling klikt, kunt u alle overeenkomsten weergegeven en kunt u nu alle overeenkomsten negeren. 
 - De organisatie-eenheid waartoe een gebruiker behoort, wordt nu aan alle relevante waarschuwingen toegevoegd.
 - Er wordt een e-mailmelding verzonden zodat u weet wanneer de verwerking van uw handmatig geüploade logboeken is voltooid.
 
