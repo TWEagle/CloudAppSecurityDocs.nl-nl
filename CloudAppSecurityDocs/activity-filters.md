@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 148884c2709658d53b658e3b3a7d9f33daf18771
-ms.sourcegitcommit: 2b8965381d94a5bb6349d8e25e1dc29b092a88b0
+ms.openlocfilehash: b13f7c6270b79050e8ba0f871f2096f420bf6691
+ms.sourcegitcommit: 2e89f41bc2581859a24d55b700dcd89e70e730a5
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/05/2017
+ms.lasthandoff: 12/10/2017
 ---
 # <a name="activities"></a>Activiteiten
 Cloud App Security maakt alle activiteiten van uw verbonden apps voor u zichtbaar. Nadat u Cloud App Security hebt verbonden met een app met behulp van de App-connector, scant Cloud App Security alle activiteiten die hebben plaatsgevonden, waarbij de retroactieve scantijd per app verschilt. Daarna wordt Cloud App Security voortdurend bijgewerkt met nieuwe activiteiten. 
@@ -134,7 +134,13 @@ U kunt meer informatie bekijken over elke activiteit door te klikken op de activ
 
  De velden in de Activiteitenlade bieden contextuele koppelingen naar aanvullende activiteiten en meer details die u rechtstreeks vanuit de lade kunt uitvoeren. Als u bijvoorbeeld de cursor naast de categorie IP-adres verplaatst, kunt u het pictogram ![Toevoegen aan filter](./media/add-to-filter-icon.png) gebruiken om het IP-adres rechtstreeks toe te voegen aan het filter van de huidige pagina. U kunt ook het tandwielpictogram ![Instellingen](./media/contextual-settings-icon.png) dat wordt weergegeven gebruiken om rechtstreeks naar de instellingenpagina te gaan die nodig is om de configuratie van een van de velden, zoals **Gebruikersgroepen**, aan te passen.
 
-
+ U kunt ook de pictogrammen aan de bovenkant van het tabblad om te gebruiken:
+ - Activiteiten van hetzelfde type weergeven
+ - Alle activiteiten van dezelfde gebruiker bekijken
+ - Activiteiten van hetzelfde IP-adres weergeven
+ - activiteiten op dezelfde geografische locatie weergeven
+ - Activiteiten van de weergave van dezelfde periode (48 uur)
+ 
 ![activiteitlade](./media/activity-drawer.png "activiteitlade")  
   
 Zie [Governance-acties voor activiteiten](governance-actions.md#activity-governance-actions) voor een lijst met beschikbare governance-acties.
@@ -165,7 +171,7 @@ IP-adres insights weergeven:
 
 1. Klik op de activiteit zelf in de **activiteitenlogboek**.
 
-2. Klik vervolgens op de **IP-adres** tabblad. <br></br> Hiermee opent u de activiteit lade **IP-adres** tabblad bevat de volgende inzichten over de IP-adres:
+2. Klik vervolgens op de **IP-adres** tabblad. <br></br> Hiermee opent u de activiteit lade **IP-adres** tabblad de volgende inzichten over de IP-adres biedt:
     - **Waarschuwingen openen**: het aantal openstaande waarschuwingen die het IP-adres betrokken.
     - **Activiteiten**: het aantal activiteiten uitgevoerd door het IP-adres in de afgelopen 30 dagen.
     - **Locatie van de IP-**: de geografische locaties van waaruit het IP-adres die zijn verbonden uit in de afgelopen 30 dagen.
@@ -175,6 +181,7 @@ IP-adres insights weergeven:
         - Als riskant tag 
         - Label als VPN-IP-adres
         - Riskante IP-tag en toevoegen aan geblokkeerde groep
+
 
 ![IP-adres inzicht in de Cloud App Security](./media/ip-address-insights.png)
 
