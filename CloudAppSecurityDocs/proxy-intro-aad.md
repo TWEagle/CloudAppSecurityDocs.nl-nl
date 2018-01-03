@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2017
+ms.date: 12/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 35a43120-bf67-4cf9-9b48-ebe157dbbd18
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6174cfe5fc0c5ba1bbde2b1f68234f727c7db223
-ms.sourcegitcommit: eb4e70b6fa15cfff01932a711cecee38f67bc058
+ms.openlocfilehash: d180fce8789fa20bea7135ce3fba437db996dcce
+ms.sourcegitcommit: 3d943dbb0e0850af0dc390a78d8feca2f3fde61b
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/20/2017
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-proxy"></a>Apps met Microsoft Cloud App Security proxy beveiligen
 
@@ -29,9 +29,9 @@ Vandaag de dag is het vaak niet genoeg om te weten wat er gebeurt in uw cloudomg
 
 ## <a name="how-it-works"></a>Hoe het werkt
 
-De Cloud App Security-proxy is geïntegreerd met voorwaardelijke toegang van Azure AD. Voorwaardelijke toegang van Azure AD kunt u toegangsbeheer voor uw organisatie-apps op basis van bepaalde voorwaarden afdwingen. De voorwaarden definiëren *die* (bijvoorbeeld een gebruiker of groep gebruikers) en *wat* (die cloud-apps) en *waar* (welke locaties en netwerken) een beleid voor voorwaardelijke toegang is toegepast op. Nadat u de voorwaarden hebt vastgesteld, kunt u versturen gebruikers naar de Cloud App Security-proxy waar u Sessiecontrole kunt toepassen.
+De Cloud App Security-proxy is geïntegreerd met voorwaardelijke toegang van Azure AD. Voorwaardelijke toegang van Azure AD kunt u toegangsbeheer voor uw organisatie-apps op basis van bepaalde voorwaarden afdwingen. De voorwaarden definiëren *die* (bijvoorbeeld een gebruiker of groep gebruikers) en *wat* (die cloud-apps) en *waar* (welke locaties en netwerken) een beleid voor voorwaardelijke toegang is toegepast op. Nadat u de voorwaarden hebt vastgesteld, kunt u versturen gebruikers naar de Cloud App Security-proxy waar u toegangs- en -besturingselementen kunt toepassen.
 
-Nadat een gebruiker wordt doorgestuurd naar de Cloud App Security-proxy, kunnen hun sessies app worden gecontroleerd en beheerd in realtime op basis van sessie-beleid. Sessie-beleidsregels worden gebruikt in de Cloud App Security-portal verder verfijnen sessie filters en acties moeten worden uitgevoerd op een gebruiker ingesteld. U kunt met het beleid voor sessie:
+Nadat een gebruiker wordt doorgestuurd naar de Cloud App Security-proxy, kunnen de toegang tot Apps en de sessies worden gecontroleerd en beheerd in realtime op basis van beleid voor toegang en -sessie. Beleid voor toegang en sessie worden gebruikt in de Cloud App Security-portal verder verfijnen filters en acties moeten worden uitgevoerd op een gebruiker ingesteld. U kunt met het beleid voor toegang en sessie:
 
 -   **Blok bij het downloaden**: U kunt het downloaden van gevoelige documenten blokkeren. Bijvoorbeeld: op niet-beheerde apparaten.
 
@@ -40,6 +40,9 @@ Nadat een gebruiker wordt doorgestuurd naar de Cloud App Security-proxy, kunnen 
 -   **Gebruikerssessies van niet-zakelijk netwerken beperken**: beperkte toegang door gebruikers toegang hebben tot een beveiligde app vanaf een locatie die geen deel uitmaakt van uw bedrijfsnetwerk, zijn toegestaan en het downloaden van gevoelige materialen is geblokkeerd of beveiligd.
 
 -   **Laag-trust-gebruikerssessies bewaken**: riskant gebruikers wanneer ze zich in apps en hun acties worden vastgelegd uit in de sessie worden bewaakt. U kunt onderzoeken en analyseren van het gedrag van de gebruiker om te begrijpen wanneer en onder welke omstandigheden sessie beleid in de toekomst moeten worden toegepast. 
+
+- **Toegang blokkeren**: U kunt volledig toegang tot bepaalde apps voor gebruikers die afkomstig zijn van niet-beheerde apparaten of van niet-zakelijk netwerken blokkeren.
+
 
 ### <a name="how-session-control-works"></a>De werking van Sessiecontrole
 
@@ -66,7 +69,7 @@ De proxy kunt u beleid maken waarmee u rekening mee houden of een apparaat wordt
  
  
 ### <a name="compliant-and-domain-joined-devices"></a>Compatibele en het domein gekoppelde apparaten
-Voorwaardelijke toegang van Azure AD kunt compatibele en domein apparaatgegevens rechtstreeks naar de Cloud App Security-proxy worden doorgegeven. Van daaruit kunt u een sessie-beleid ontwikkeld die gebruikmaakt van de status van het apparaat als een filter.
+Voorwaardelijke toegang van Azure AD kunt compatibele en domein apparaatgegevens rechtstreeks naar de Cloud App Security-proxy worden doorgegeven. Van daaruit kan een toegangsbeleid of een sessie-beleid worden ontwikkeld die gebruikmaakt van de status van het apparaat als een filter.
 Zie voor meer informatie de [Inleiding tot beheer van apparaten in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-introduction). 
 
 ### <a name="client-certificate-authenticated-devices"></a>Clientcertificaat geverifieerde apparaten
@@ -75,11 +78,15 @@ Het proxy-mechanisme voor apparaat-id aanvragen van relevante apparaten met behu
  
 ## <a name="supported-apps-and-clients"></a>Ondersteunde apps en -clients
 
-De proxy ondersteunt momenteel apps die zijn geconfigureerd met SAML voor eenmalige aanmelding in Azure AD. Sessie-besturingselement is niet automatisch beschikbaar voor alle apps. Het team Cloud App Security getest veel populaire apps met beheer van sessies. Andere apps moet mogelijk een voorbereidingsproces dat wordt uitgevoerd met de klant.
-In termen van clients is de Sessiecontrole beschikbaar voor elke browser op een primaire platform. Mobiele apps en bureaublad-apps worden echter niet ondersteund. 
+De proxy ondersteunt momenteel apps die zijn geconfigureerd met SAML voor eenmalige aanmelding in Azure AD. 
 
 > [!NOTE]
-> Office 365-toepassingen zijn niet geconfigureerd met SAML zodat ze worden momenteel niet ondersteund.
+> - De proxy biedt ook ondersteuning voor apps die zijn geconfigureerd met identiteitsproviders dan Azure AD in Private Preview. Voor meer informatie over de Private Preview sturen een e-mail naar mcaspreview@microsoft.com.
+> - Office 365-toepassingen zijn niet geconfigureerd met SAML zodat ze worden momenteel niet ondersteund.
+
+Sessie-besturingselement is niet automatisch beschikbaar voor alle apps. Het team Cloud App Security getest veel populaire apps met beheer van sessies. Andere apps moet mogelijk een voorbereidingsproces dat wordt uitgevoerd met de klant.
+In termen van clients is de Sessiecontrole beschikbaar voor elke browser op een primaire platform. Mobiele apps en bureaublad-apps worden echter niet ondersteund door het besturingselement van de sessie. 
+
 
 
 ## <a name="see-also"></a>Zie ook  
