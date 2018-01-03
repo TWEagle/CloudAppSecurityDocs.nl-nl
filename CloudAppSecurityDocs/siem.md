@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2acabcc195b8496f0a9bda812cc11b289911b81a
-ms.sourcegitcommit: 2e89f41bc2581859a24d55b700dcd89e70e730a5
+ms.openlocfilehash: beaf31d7c365f62fb9c9dc7b79b0d89f31ee694d
+ms.sourcegitcommit: e547c4c91d8de9d4da376e4d4eebbe18c503b7ca
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/10/2017
+ms.lasthandoff: 12/18/2017
 ---
 # <a name="siem-integration"></a>Integratie van SIEM
     
@@ -130,57 +130,25 @@ Evenals de volgende waarschuwingen logfile voorbeeld:
 #### <a name="sample-cloud-app-security-alerts-in-cef-format"></a>Voorbeeld Cloud App Security waarschuwingen in CEF-indeling
 
 
-##### <a name="activity-logs"></a>Activiteitenlogboeken
+|Van toepassing op|De naam van de CEF-veld|Description|
+|----|-----|----|
+|Activiteiten /-waarschuwingen|Start| Activiteit of waarschuwing tijdstempel|
+|Activiteiten /-waarschuwingen|Einde|Activiteit of waarschuwing tijdstempel|
+|Activiteiten /-waarschuwingen|RT|Activiteit of waarschuwing tijdstempel|
+|Activiteiten /-waarschuwingen|bericht |Activiteit of waarschuwing beschrijving zoals weergegeven in de portal|
+|Activiteiten /-waarschuwingen|suser| Activiteit of waarschuwing onderwerp gebruiker|
+|Activiteiten /-waarschuwingen|destinationServiceName| Activiteit of waarschuwing app, bijvoorbeeld Office 365, Sharepoint, vak die afkomstig zijn.|
+|Activiteiten /-waarschuwingen|CS<X>Label|Elk label moet een andere betekenis, maar deze bijvoorbeeld targetObjects in het label zelf wordt uitgelegd.|
+|Activiteiten /-waarschuwingen|CS<X>|De informatie die overeenkomt met het label (de doelgebruiker van de activiteit of een waarschuwing aan de hand van het label voorbeeld).|
+|Activiteiten|EVENT_CATEGORY_ * |Categorie op hoog niveau van de activiteit|
+|Activiteiten|<ACTION> |Het activiteitstype, zoals weergegeven in de portal|
+|Activiteiten|externalId| Gebeurtenis-id|
+|Activiteiten|DVC| IP-adres van het clientapparaat.|
+|Activiteiten|requestClientApplication|Gebruikersagent van het clientapparaat.|
+|Waarschuwingen|<alert type>|Bijvoorbeeld 'ALERT_CABINET_EVENT_MATCH_AUDIT'|
+|Waarschuwingen|<name>|De naam van de overeenkomende beleid|
+|Waarschuwingen|externalId|Waarschuwing-ID|
 
--   EVENT_CATEGORY_ * - categorie op hoog niveau van de activiteit
-
--   <ACTION>-Het activiteitstype, zoals weergegeven in de portal
-
--   externalId: gebeurtenis-ID
-
--   Begindatum – tijdstempel van de activiteit
-
--   einde: tijdstempel van de activiteit
-
--   RT - activiteit tijdstempel
-
--   bericht – gebeurtenisbeschrijving zoals weergegeven in de portal
-
--   suser – activiteit gebruiker
-
--   destinationServiceName activiteit als gevolg van app, bijvoorbeeld, Office 365, Sharepoint, vak.
-
--   DVC – IP-adres van het clientapparaat.
-
--   requestClientApplication – de gebruikersagent van het clientapparaat.
-
--   CS<X>Label – elk label heeft een andere betekenis, maar deze bijvoorbeeld targetObjects in het label zelf wordt uitgelegd.
-
--   CS<X> : de informatie die overeenkomt met het label (de doelgebruiker van de activiteit of een waarschuwing aan de hand van het label voorbeeld).
-
-##### <a name="alerts"></a>Waarschuwingen
-
--   <alert type>-Bijvoorbeeld 'ALERT_CABINET_EVENT_MATCH_AUDIT'
-
--   <name>-De naam van de overeenkomende beleid
-
--   externalId – Alert id.
-
--   Start-de waarschuwing tijdstempel
-
--   end-waarschuwing tijdstempel
-
--   RT - waarschuwing tijdstempel
-
--   bericht: Beschrijving van de waarschuwing wordt geïllustreerd in de portal
-
--   suser – waarschuwing onderwerp gebruiker
-
--   destinationServiceName – bijvoorbeeld afkomstig van de app, waarschuwing, Office 365, Sharepoint, vak
-
--   CS<X>Label – elk label heeft een andere betekenis, maar deze bijvoorbeeld targetObjects in het label zelf wordt uitgelegd.
-
--   CS<X> : de informatie die overeenkomt met het label (de doelgebruiker van de activiteit of een waarschuwing aan de hand van het label voorbeeld).
 
 
 ### <a name="step-3-validate-that-the-siem-agent-is-working"></a>Stap 3: Valideren dat de SIEM-agent werkt

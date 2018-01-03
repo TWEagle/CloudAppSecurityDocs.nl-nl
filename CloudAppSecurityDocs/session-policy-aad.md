@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2017
+ms.date: 12/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,18 +13,18 @@ ms.technology:
 ms.assetid: 745df28a-654c-4abf-9c90-203841169f90
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c955e20b4abd506f5e44659fbdd921bb54def131
-ms.sourcegitcommit: eb4e70b6fa15cfff01932a711cecee38f67bc058
+ms.openlocfilehash: 62694b685bb82074d74c72b4ec60f4e0e7436fd1
+ms.sourcegitcommit: 3d943dbb0e0850af0dc390a78d8feca2f3fde61b
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/20/2017
 ---
 # <a name="session-policies"></a>Sessie-beleid 
 
 > [!NOTE]
 > Dit is een preview-functie.
 
-Beleidsregels voor cloud App Security sessie realtime niveau van de sessie-bewaking inschakelen, u gedetailleerde inzicht in de cloud-apps en de mogelijkheid om verschillende acties, afhankelijk van het beleid dat u voor een gebruikerssessie instelt uitvoeren op het netwerk. In plaats van toe te staan of volledig toegang blokkeert, kunt Sessiecontrole u toegang toestaan bij de bewaking van de sessie en/of de limiet voor bepaalde sessie-activiteiten. 
+Beleidsregels voor cloud App Security sessie realtime niveau van de sessie-bewaking inschakelen, u gedetailleerde inzicht in de cloud-apps en de mogelijkheid om verschillende acties, afhankelijk van het beleid dat u voor een gebruikerssessie instelt uitvoeren op het netwerk. In plaats van [toestaan of blokkeren van toegang volledig](access-policy-aad.md), u kunt met Sessiecontrole toegang toestaan bij de bewaking van de sessie en/of de limiet voor bepaalde sessie-activiteiten. 
 
 Bijvoorbeeld, kunt u die bepalen van niet-beheerde apparaten of voor sessies die afkomstig zijn van specifieke locaties, die u wilt toestaan dat de gebruiker toegang tot de app, maar ook het downloaden van gevoelige bestanden beperken of vereisen dat bepaalde documenten worden beveiligd op downloaden. Sessie-beleid kunnen u deze besturingselementen gebruikerssessie instellen. 
 
@@ -34,6 +34,8 @@ Bijvoorbeeld, kunt u die bepalen van niet-beheerde apparaten of voor sessies die
 - De relevante apps moeten de [geïmplementeerd met de proxy](proxy-deployment-aad.md)
 - Een [beleid voor voorwaardelijke toegang van Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) moet worden voldaan waarmee gebruikers worden omgeleid naar de Cloud App Security-proxy, zoals hieronder wordt beschreven.
 
+> [!NOTE]
+> - Sessie-beleid ondersteunt ook apps die zijn geconfigureerd met identiteitsproviders dan Azure AD in Private Preview. Voor meer informatie over de Private Preview sturen een e-mail naar mcaspreview@microsoft.com.
 
 ## <a name="create-an-azure-ad-conditional-access-policy"></a>Een beleid voor voorwaardelijke toegang van Azure AD maken
 
