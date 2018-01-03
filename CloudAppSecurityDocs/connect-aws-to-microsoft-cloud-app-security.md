@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/25/2017
+ms.date: 12/31/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a6b4c745-cd5c-4458-819c-80cbe8b25f29
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: bb0703442d3568556dc54df5e1bd7901906ca9b3
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: ed30e0b0e3d49db23e404ef87454e48361996443
+ms.sourcegitcommit: 2544faf07c6373ac5505bbdf4ebd5d184daf68db
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/31/2017
 ---
 # <a name="connect-aws-to-microsoft-cloud-app-security"></a>Verbinding maken tussen AWS en Microsoft Cloud App Security
 In deze sectie vindt u instructies voor het maken van een verbinding tussen Cloud App Security en uw bestaande Amazon Web Services-account met behulp van de connector-API's.  
@@ -36,20 +36,12 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
 
      ![gebruiker maken in AWS](./media/aws-create-user.png "gebruiker maken in AWS")
 
-5. In de stap **Machtigingen** selecteert u **Bestaande beleidsregels rechtstreeks koppelen** en klikt u vervolgens op **Beleid maken**.
+5. Klik op het tabblad JSON:
 
-   ![De gebruiker koppelen in AWS](./media/aws-attach-user-policy.png "gebruikersbeleid in AWS koppelen")
+     ![AWS JSON](./media/aws-json.png "AWS JSON-tabblad")
 
-6.  Onder **Beleid maken** selecteert u **Uw eigen beleid maken**.
- 
-    ![Uw eigen beleid maakt in AWS](./media/aws-create-own-policy.png "beleid maakt in AWS")
- 
-7.  Onder **Beleid controleren**, geeft u een **Beleidsnaam** op, bijvoorbeeld CloudAppSecurityPolicy.
+6. Plak het volgende script in het opgegeven gebied:
 
-    ![Bekijk beleid in AWS](./media/aws-review-policy.png "beleid in AWS bekijken")
-
-8. Plak het volgende script in de **beleidsdocument** veld en klikt u op **beleid maken**:
-  
     ```     
     {  
       "Version" : "2012-10-17",  
@@ -71,7 +63,15 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
      }  
   
     ```  
-  
+
+     ![AWS-code](./media/aws-code.png "AWS-code")
+    
+6. Klik op **beleid bekijken**.
+
+7. Geef een **naam** en klik op **beleid maken**.
+
+     ![AWS naam beleid](./media/aws-create-policy.png "AWS-beleid maken")
+
 9. Terug in de **gebruiker toevoegen** scherm en vernieuw de lijst met indien nodig, selecteert u de gebruiker hebt gemaakt Klik op **volgende controle**.
 
    ![Bekijk gebruikersbeleid in AWS](./media/aws-review-user.png "revisie gebruiker in AWS")

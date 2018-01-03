@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2017
+ms.date: 12/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,21 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e3426172efe25f641af4757a1bc77d6aec3624d2
-ms.sourcegitcommit: 2e89f41bc2581859a24d55b700dcd89e70e730a5
+ms.openlocfilehash: 5e69e5ed47218477a73f28809aee812ea82a5f71
+ms.sourcegitcommit: c0c0612cdf6805c8e92d7929be0f12f33660b2d2
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/10/2017
+ms.lasthandoff: 12/25/2017
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Wat is er nieuw is bij de Microsoft Cloud App Security
+
+## <a name="cloud-app-security-release-113"></a>Cloud App Security-release 113
+25 December 2017 uitgebracht
+
+-   We zijn trots aankondiging van Cloud App Security ondersteunt nu verdiept integratie met Azure Information Protection. Deze openbare preview-functie kunt u om te scannen en classificeren van bestanden in de cloud-apps en Azure Information protection labels voor beveiliging automatisch worden toegepast. Deze functie is beschikbaar voor Box, SharePoint en OneDrive. Zie voor meer informatie [integratie van Azure Information Protection](azip-integration.md).
+
+-   Cloud Discovery logboek parsers nu ondersteuning voor algemene indelingen: LEEF, CEF en WC3.
+
 
 ## <a name="cloud-app-security-release-112"></a>Cloud App Security-release 112
 10 December 2017 uitgebracht
