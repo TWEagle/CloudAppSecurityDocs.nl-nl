@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/31/2017
+ms.date: 12/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: eac0b192-98d7-4939-9a07-1d4a7f8c39c3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6e6c7365be26dc379bcf0269812931387972bc8f
-ms.sourcegitcommit: 3bc510959e66a29d474cbef412deac0daefa8a24
+ms.openlocfilehash: 6ef94215cbb07dd35e9353e3a63b9e575905b16b
+ms.sourcegitcommit: c0c0612cdf6805c8e92d7929be0f12f33660b2d2
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/25/2017
 ---
 # <a name="automatically-apply-azure-information-protection-classification-labels"></a>Azure Information Protection classificatielabels automatisch worden toegepast  
 
@@ -41,16 +41,16 @@ Deze hoog beveiligingsniveau verplaatst met het bestand - als u het bestand verz
 Een gebruiker in uw organisatie informatiebestanden worden opgeslagen klant vertrouwelijke aan vak en deze kan worden gedeeld met iedereen in de organisatie. De gebruiker niet Houd er rekening mee dat naast hun directe team de hele ondersteuningsmedewerkers toegang tot die Box-account heeft, inclusief leveranciers, partners en bezoekers die af en toe in de office stoppen. Iedere persoon met toegang tot de Box-account van uw organisatie heeft nu toegang tot die informatie. Niet alleen kunt die gevaarlijk zijn voor uw organisatie, kan het zijn tegen PII-voorschriften in veel landen mogelijke juridische problemen veroorzaakt.
 
 ## <a name="the-solution"></a>De oplossing
-Cloud App Security met Azure Information Protection te gebruiken voor het insluiten van classificatie en beveiliging van informatie voor permanente beveiliging die volgt op uw gegevens, zodat deze blijft beveiligd, ongeacht waar deze wordt opgeslagen of dat ze worden gedeeld met. Hiermee kunt u ook gegevens veilig delen met collega's, evenals uw klanten en partners. Definieer wie toegang heeft tot gegevens en wat ze ermee kunnen doen, zoals zodat gebruikers kunnen weergeven en bewerken van bestanden, maar niet afdrukken of doorsturen, naast andere [beheeracties](governance-actions.md) ondersteund door Cloud App Security, zoals deelnemers verwijderen en mogelijkheden voor het delen verwijderen.
+Cloud App Security met Azure Information Protection te gebruiken voor het insluiten van classificatie en beveiliging van informatie voor permanente beveiliging die volgt op uw gegevens, zodat deze blijft beveiligd, ongeacht waar deze wordt opgeslagen of dat ze worden gedeeld met. Hiermee kunt u ook gegevens veilig delen met collega's, evenals uw klanten en partners. Definieer wie toegang heeft tot gegevens en wat ze ermee kunnen doen--zoals zodat gebruikers kunnen weergeven en bewerken van bestanden, maar niet afdrukken of doorsturen--naast andere [beheeracties](governance-actions.md) ondersteund door Cloud App Security, zoals deelnemers verwijderen en mogelijkheden voor het delen verwijderen.
 
 ## <a name="prerequisites"></a>Vereisten
 
-- Cloud App Security en Azure Information Protection inschakelen voor uw tenant
+- [Cloud App Security en Azure Information Protection inschakelen](azip-integration.md) voor uw tenant.
 - [Verbinding maken tussen Box](connect-box-to-microsoft-cloud-app-security.md) met Cloud App Security.
 
 ## <a name="setting-up-data-protection"></a>Configureren van gegevensbeveiliging
 
-Stel een beleid dat u in de bestanden die zijn opgeslagen in uw account vak, en zoekt wanneer ze worden gevonden, creditcardnummers instellen.
+Stel een beleid dat u in de bestanden die zijn opgeslagen in uw account vak creditcardnummers zoekt instellen en wanneer ze niet zijn gevonden, automatisch een Azure Information Protection-label worden toegepast en vervolgens bepalen wat er gebeurt met alle bestanden met dat label.
 
 1. Beginnen met het beveiligen van de gegevens die u opslaan in het vak door het instellen van een beleid dat wordt opgeslagen in het vak gevoelige gegevens versleutelen:
 
