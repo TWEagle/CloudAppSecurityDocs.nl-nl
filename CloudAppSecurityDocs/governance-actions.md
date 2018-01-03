@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/26/2017
+ms.date: 12/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c0de0f106ce5505edcc437b1d94084759eac2838
-ms.sourcegitcommit: 473d96a6383a6e4d01ef03ed31f2e773cea82cab
+ms.openlocfilehash: 167593985fcf88e87cce4e524dd0d91d06de0cbf
+ms.sourcegitcommit: 3d943dbb0e0850af0dc390a78d8feca2f3fde61b
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 12/20/2017
 ---
 # <a name="governing-connected-apps"></a>Verbonden apps beheren
 Met governance kunt u beheren wat gebruikers doen, in realtime en in verschillende apps. Voor verbonden apps kunt u beheeracties toepassen op bestanden of activiteiten.
@@ -133,9 +133,11 @@ Zie [Beleidsconflicten](control-cloud-apps-with-policies.md) voor informatie ove
 |Bestandsbeleid|Bestand|De bestandseigenaar een melding sturen|Verzendt een e-mailbericht naar de eigenaar van het bestand als een bestand een beleid schendt. Als in Dropbox geen eigenaar aan een bestand is gekoppeld, wordt de melding verzonden naar de gebruiker die u instelt.|Alle apps|
 |Bestandsbeleid, activiteitenbeleid|Bestand, activiteit|cc naar de manager van de eigenaar/gebruiker|Wanneer de eigenaar van het bestand een e-mailmelding ontvangt dat het bestand een beleid schendt, wordt hiermee ook de manager van de eigenaar/gebruiker van het bestand op de hoogte gebracht (optioneel).|SalesForce|
 |Bestandsbeleid, activiteitenbeleid|Bestand, activiteit|Specifieke gebruikers informeren|Hiermee wordt een e-mail naar specifieke gebruikers verzonden over een bestand dat een beleid schendt.|Alle apps|
-|Bestandsbeleid en activiteitenbeleid|Bestand, activiteit|De gebruiker een melding sturen|Hiermee wordt een e-mail naar gebruikers verzonden om hen te melden dat ze iets hebben gedaan of een bestand hebben dat een beleid schendt. U kunt een aangepaste melding toevoegen om gebruikers te laten weten wat de schending is.|Alles|
+|Bestandsbeleid en activiteitenbeleid|Bestand, activiteit|De gebruiker een melding sturen|Hiermee wordt een e-mail naar gebruikers verzonden om hen te melden dat ze iets hebben gedaan of een bestand hebben dat een beleid schendt. U kunt een aangepaste melding toevoegen om gebruikers te laten weten wat de schending is.|Alle|
 |Bestandsbeleid en bestanden|Bestand|De machtiging van de editor om te delen intrekken|In Google Drive staan de standaardmachtigingen van de editor het delen van een bestand ook toe. Deze beheeractie beperkt deze optie en zorgt ervoor dat alleen de eigenaar de bestanden kan delen.|G Suite|
 |Bestandsbeleid en bestanden|Bestand|[In beheerquarantaine plaatsen](use-case-admin-quarantine.md)|Hiermee verwijdert u alle machtigingen uit het bestand en wordt het bestand verplaatst naar een quarantainemap in een locatie voor de beheerder. Hierdoor kan de beheerder zijn om het bestand controleren en te verwijderen.|Office 365 SharePoint, OneDrive voor bedrijven, vak|
+|Bestandsbeleid en bestanden|Bestand|Classificatie-label worden toegepast|Een Azure Information Protection classificatie label geldt voor bestanden automatisch op basis van de voorwaarden in het beleid.|Box, OneDrive, SharePoint|
+|Bestandsbeleid en bestanden|Bestand|Classificatie label verwijderen|Hiermee verwijdert u een label Azure Information Protection-classificatie van bestanden automatisch op basis van de voorwaarden in het beleid.|Box, OneDrive, SharePoint|
 |Bestandsbeleid, activiteitenbeleid, waarschuwingen|App|Vereisen dat gebruikers zich opnieuw aanmeldt|U kunt gebruikers verplichten om opnieuw aan te melden voor alle Office 365 en Azure AD-apps als een snelle en doeltreffende herstel voor de gebruiker met verdachte activiteitswaarschuwingen en accounts waarmee is geknoeid. U vindt de nieuwe governance in de beleidsinstellingen en de waarschuwing's, naast de optie onderbreken.|Office 365, Azure AD|
 |Bestanden|Bestand|Terugplaatsen uit gebruikersquarantaine|Hiermee wordt u een gebruiker teruggeplaatst uit quarantaine.|Box|
 |Bestanden|Bestand|Leesmachtiging verlenen aan mijzelf|Hiermee worden leesmachtigingen voor het bestand verleend aan uzelf, zodat u toegang hebt tot het bestand en overtredingen kunt zien.|G Suite|

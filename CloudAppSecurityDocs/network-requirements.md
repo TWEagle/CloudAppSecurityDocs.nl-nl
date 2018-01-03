@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/11/2017
+ms.date: 12/19/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4b681ef0cd982b79ae096f257f793920607669a2
-ms.sourcegitcommit: 4d84f9d15256b05c785a1886338651b86622070c
+ms.openlocfilehash: bb6fab3aeb7e9f758ecc63969c05ab4137e378e7
+ms.sourcegitcommit: 8132433d8a4bd15571ef76752c28de136ec95bd0
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="network-requirements"></a>Netwerkvereisten
 
@@ -40,15 +40,19 @@ Als u wilt zien welke datacentrum u een verbinding met:
 
 ## <a name="portal-access"></a>Toegang tot portal
 
-Voor toegang tot de Cloud App Security-portal, voegt u **uitgaande poort 443** van de volgende IP-adressen van uw firewall witte lijst:  
+Voor toegang tot de Cloud App Security-portal, voegt u **uitgaande poort 443** voor de volgende IP-adressen en DNS-namen van uw firewall witte lijst:  
 
 
 > [!div class="mx-tableFixed"]
-|Datacenter|IP-adressen|  
-|----|----|
-|US1|13.80.125.22<br></br>52.183.75.62<br></br>13.91.91.243|
-|US2|13.80.125.22<br></br>52.183.75.62<br></br>52.184.165.82|
-|EU1|13.80.125.22<br></br>52.183.75.62<br></br>52.174.56.180|
+|Datacenter|IP-adressen|DNS-naam|
+|----|----|----|
+|ONS|13.80.125.22<br></br>52.183.75.62<br></br>13.91.91.243|Portal.cloudappsecurity.com<br></br>\*. portal.cloudappsecurity.com <br></br>\*. us.portal.cloudappsecurity.com|
+|US2|13.80.125.22<br></br>52.183.75.62<br></br>52.184.165.82|Portal.cloudappsecurity.com<br></br>\*. portal.cloudappsecurity.com <br></br>\*. us2.portal.cloudappsecurity.com|
+|EU|13.80.125.22<br></br>52.183.75.62<br></br>52.174.56.180|Portal.cloudappsecurity.com<br></br>\*. portal.cloudappsecurity.com <br></br>\*. eu.portal.cloudappsecurity.com|
+
+
+>[!NOTE]
+>In plaats van een jokerteken (\*) kunt u de URL van uw specifieke tenant openen, bijvoorbeeld op basis van de bovenstaande schermafbeelding kunt u openen: mod244533.us.portal.cloudappsecurity.com
 
 ## <a name="siem-agent-connection"></a>Verbinding van SIEM-agent
 
@@ -58,21 +62,21 @@ Toevoegen zodat Cloud App Security verbinding maken met uw SIEM **uitgaande poor
 > [!div class="mx-tableFixed"]
 |Datacenter|IP-adressen|  
 |----|----|
-|US1|13.91.91.243|
+|ONS|13.91.91.243|
 |US2|52.184.165.82|
-|EU1|52.174.56.180|
+|EU|52.174.56.180|
 
 ## <a name="app-connector-access-and-external-dlp-integration"></a>Toegang tot de App-connector en externe DLP-integratie
 
-Verbinding maken met apps van derden en integreren met externe DLP-oplossingen, Cloud App Security van verbinding maken met deze IP-adressen inschakelen:
+Als u wilt verbinding maken met apps van derden en integreren met externe DLP-oplossingen, inschakelen Cloud App Security verbinding worden gemaakt vanaf deze IP-adressen:
 
 
 > [!div class="mx-tableFixed"]
 |Datacenter|IP-adressen|  
 |----|----|
-|US1|13.91.91.243 <br></br> 104.209.35.177 <br></br> 13.91.98.185 <br></br> 40.118.211.172 <br></br> 13.93.216.68 <br></br> 13.91.61.249 <br></br> 13.93.233.42 <br></br> 13.64.196.27 <br></br> 13.64.198.97 <br></br> 13.64.199.41 <br></br> 13.64.198.19|
+|ONS|13.91.91.243 <br></br> 104.209.35.177 <br></br> 13.91.98.185 <br></br> 40.118.211.172 <br></br> 13.93.216.68 <br></br> 13.91.61.249 <br></br> 13.93.233.42 <br></br> 13.64.196.27 <br></br> 13.64.198.97 <br></br> 13.64.199.41 <br></br> 13.64.198.19|
 |US2|52.184.165.82<br></br> 40.84.4.93 <br></br> 40.84.4.119 <br></br> 40.84.2.83 |
-|EU1|52.174.56.180<br></br>13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
+|EU|52.174.56.180<br></br>13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
 
 
 ### <a name="app-connector"></a>App-connector
@@ -112,12 +116,12 @@ Cloud Discovery-functies met een logboekverzamelaar inschakelen en de Shadow IT 
    
     |Datacenter|URL|
     |----|----|
-    |US1|https://adaprodconsole.BLOB.Core.Windows.NET/|
+    |ONS|https://adaprodconsole.BLOB.Core.Windows.NET/|
     |US2|https://prod03use2console1.BLOB.Core.Windows.NET/|
-    |EU1|https://prod02euwconsole1.BLOB.Core.Windows.NET/|
+    |EU|https://prod02euwconsole1.BLOB.Core.Windows.NET/|
 
 > [!NOTE]
-> Als uw firewall vereist dat een lijst met statische IP-adressen toegang en biedt geen ondersteuning voor whitelisting op basis van de URL, kunt u de logboekverzamelaar initiëren uitgaand verkeer naar de Microsoft Azure datacenter IP-adresbereiken op poort 443.
+> Als uw firewall vereist dat een lijst met statische IP-adressen toegang en biedt geen ondersteuning voor whitelisting op basis van de URL, staan de logboekverzamelaar initiëren uitgaand verkeer naar de [Microsoft Azure datacenter IP-adresbereiken](https://www.microsoft.com/download/details.aspx?id=41653) op poort 443.
 
 
 

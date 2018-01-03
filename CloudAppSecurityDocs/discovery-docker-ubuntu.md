@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 29/11/2017
+ms.date: 12/10/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c09c0204028f3c6be91950be4780646cbc0ac077
-ms.sourcegitcommit: 48cc077576b04dfc1cc75af9fafbdc60ed7992c9
+ms.openlocfilehash: b1155fa6ade88636f2dac575bfaa84db0f7bdd8b
+ms.sourcegitcommit: e547c4c91d8de9d4da376e4d4eebbe18c503b7ca
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/18/2017
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>Stel omhoog en configuratie op Ubuntu
 
@@ -62,8 +62,9 @@ De logboekverzamelaar kan een logboekcapaciteit van maximaal 50 GB per uur aan. 
     d. Vergelijk uw logboek met het voorbeeld van de verwachte logboekindeling. Als de bestandsindeling van uw logboek niet met dit voorbeeld overeenkomt, moet u uw gegevensbron toevoegen onder **Overig**.
 
     e. Instellen de **type ontvanger** naar elk **FTP**, **FTPS**, **Syslog – UDP**, of **Syslog – TCP**, of **Syslog – TLS**.
-    >[!NOTE]
-    >Integratie met veilige overdrachtprotocollen (FTPS en Syslog-TLS) vaak aanvullende instellingen of uw firewall/de proxy is vereist.
+    
+     >[!NOTE]
+     >Integratie met veilige overdrachtprotocollen (FTPS en Syslog-TLS) vaak aanvullende instellingen of uw firewall/de proxy is vereist.
 
     f. Herhaal dit proces voor elke firewall en proxy waarvan het logboek kan worden gebruikt om verkeer op uw netwerk te detecteren.
 
@@ -73,15 +74,18 @@ De logboekverzamelaar kan een logboekcapaciteit van maximaal 50 GB per uur aan. 
 
     b. Geef de logboekverzamelaar een **Naam**.
 
-    c. Voer de **Host-IP-adres** van de computer die u gebruiken wilt voor het implementeren van de Docker.
+    c. Voer de **Host-IP-adres** van de computer die u gebruiken wilt voor het implementeren van de Docker. 
+       
+       > [!NOTE]
+       > Het IP-adres van de host kan worden vervangen door de naam van de machine, als er een DNS-server (of gelijkwaardige) die de naam van de host wordt opgelost.
 
     d. Selecteer alle **gegevensbronnen** die u wilt verbinding maken met de collector en klikt u op **Update** om op te slaan van het configuratie-Zie de volgende implementatiestappen.
 
     ![ubuntu2](./media/ubuntu2.png)
 
-    >  [!NOTE]
-    > - Eén logboekverzamelaar kan meerdere gegevensbronnen verwerken.
-    >- Kopieer de inhoud van het scherm. U hebt deze informatie nodig tijdens het configureren van de logboekverzamelaar voor de communicatie met Cloud App Security. Als u Syslog hebt geselecteerd, wordt ook informatie weergegeven over de poort waarop de Syslog-listener luistert.
+     >  [!NOTE]
+     > - Eén logboekverzamelaar kan meerdere gegevensbronnen verwerken.
+     > - Kopieer de inhoud van het scherm. U hebt deze informatie nodig tijdens het configureren van de logboekverzamelaar voor de communicatie met Cloud App Security. Als u Syslog hebt geselecteerd, wordt ook informatie weergegeven over de poort waarop de Syslog-listener luistert.
 
 4.  Meer informatie over de implementatie wordt weergegeven. **Kopiëren** de opdracht uitvoeren in het dialoogvenster. U kunt de kopiëren naar Klembord-pictogram ![kopiëren naar Klembord-pictogram](./media/copy-icon.png).
 
@@ -91,7 +95,7 @@ De logboekverzamelaar kan een logboekcapaciteit van maximaal 50 GB per uur aan. 
 
 ### <a name="step-2--on-premises-deployment-of-your-machine"></a>Stap 2: On-premises implementatie van uw machine
 
-> [!Note]
+> [!NOTE]
 > De volgende stappen beschrijven de implementatie in Ubuntu. De implementatiestappen voor andere platforms zijn enigszins anders.
 
 1.  Open een terminal op uw Ubuntu-machine.
@@ -153,7 +157,10 @@ Nadat u hebt gecontroleerd dat de logboeken worden naar de Cloud App Security wo
 ![Aangepast continue rapport](./media/custom-continuous-report.png)
 
 ## <a name="see-also"></a>Zie ook
-[Problemen oplossen met de dockerimplementatie voor Cloud Discovery](troubleshoot-docker.md)  
+
+[Problemen oplossen met de dockerimplementatie voor Cloud Discovery](troubleshoot-docker.md)
+
 [Ga naar de ondersteuningspagina van Cloud App Security voor technische ondersteuning.](http://support.microsoft.com/oas/default.aspx?prid=16031)  
+
 [Premier-klanten kunnen Cloud App Security ook rechtstreeks vanuit de Premier Portal kiezen](https://premier.microsoft.com/)
 

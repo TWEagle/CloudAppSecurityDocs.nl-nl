@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2017
+ms.date: 12/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 2490c5e5-e723-4fc2-a5e0-d0a3a7d01fc2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3717d7358b3b869dca918fcaa60a2b2b465df367
-ms.sourcegitcommit: eb4e70b6fa15cfff01932a711cecee38f67bc058
+ms.openlocfilehash: a784b9e935bfa3396a64edb12202b50be17a7319
+ms.sourcegitcommit: e547c4c91d8de9d4da376e4d4eebbe18c503b7ca
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/18/2017
 ---
 # <a name="deploy-proxy-for-azure-ad-apps"></a>Proxy voor Azure AD-apps implementeren
 
@@ -78,7 +78,7 @@ Volg deze stappen voor het configureren van Azure AD-apps worden beheerd door de
 
         ![Apparaat-id](./media/device-identification.png)
  
-       Nadat het certificaat is geüpload, kunt u sessie beleid op basis van **apparaat tag** gelijk is aan of niet gelijk aan **geldig clientcertificaat**.
+       Nadat het certificaat is geüpload, kunt u toegang tot beleid en de sessie beleidsregels maken op basis van **apparaat tag** gelijk is aan of niet gelijk aan **geldig clientcertificaat**.
  
       > [!NOTE]
       >Een certificaat wordt alleen worden aangevraagd van een gebruiker als de sessie overeenkomt met een beleid dat het certificaat geldig client filter gebruikt. 
@@ -99,7 +99,7 @@ Om te bevestigen dat de activiteit goed wordt vastgelegd, klikt u op een logboek
  ![label van de gebruikersagent testen](./media/domain-joined.png)
 
 
-U bent nu klaar om te maken [sessie beleid](session-policy-aad.md) om uw proxy-apps te beheren.
+U bent nu klaar om te maken [toegangsbeleid](access-policy-aad.md) en [sessie beleid](session-policy-aad.md) om uw proxy-apps te beheren.
 
 
 
