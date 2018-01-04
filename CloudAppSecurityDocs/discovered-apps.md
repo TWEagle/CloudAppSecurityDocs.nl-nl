@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/26/2017
+ms.date: 1/3/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d349488692f006908426fd8f33eb6ae654350958
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: 23fe601cba94ad58f4baceb0df461faafbe7a974
+ms.sourcegitcommit: bbf4a2715d1ea3fd21c1a1b87c7f5a2947d2ca68
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="working-with-discovered-apps"></a>Werken met gedetecteerde apps
 
@@ -52,46 +52,6 @@ In de **gedetecteerde apps** pagina onder **bladeren op categorie** Selecteer zo
 
 Nadat de resultaten worden gefilterd, kunt u [goed en blokkeren](governance-discovery.md) ze met behulp van het selectievakje in bulk-actie voor goed ze allemaal in één actie. Nadat ze niet-toegestane zijn kunt u een blokkerende script kunt gebruiken om te blokkeren ze worden gebruikt in uw omgeving.
 
-Cloud discovery kan u zelfs diepere Duik in de cloud-gebruik van uw organisatie en identificeren van specifieke exemplaren die gebruikt worden door het onderzoeken van de gedetecteerde sub-domeinen.
-
-U kunt bijvoorbeeld onderscheid maken tussen verschillende SharePoint-sites.
-
-Dit wordt alleen ondersteund in firewalls en proxy's die doel-URL gegevens bevatten. Zie de lijst met ondersteunde apparaten in [firewalls en proxy's ondersteund](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
-
-![subdomein informatie](./media/discovery-domains.png)  
-
-## <a name="discovered-app-filters"></a>Gedetecteerde app-filters
-
-Er zijn basiseigenschappen en geavanceerde doorzochte app-filters. Gebruiken om te creëren van een complexe filter (zoals in het bovenstaande voorbeeld) de optie voor Geavanceerd waarin alle van de volgende opties:
-
-![Gedetecteerde apps](./media/discovered-apps.png)  
-
-
-- **App-tag**: Selecteer of de app is erkende of niet-toegestane of niet is gemarkeerd. Bovendien kunt u een aangepast label maken voor uw app en vervolgens worden gebruikt om te filteren op specifieke typen apps. 
-- **Apps en domeinen**: Hiermee kunt u zoeken naar specifieke apps of apps die worden gebruikt in een specifieke domeinen. 
-- **Categorieën**: het filter categorieën, dat aan de linkerkant van de pagina bevindt zich, kunt u zoeken naar typen apps volgens app-categorieën, bijvoorbeeld apps sociale netwerken, opslag-Cloud-apps, enzovoort. U kunt meerdere categorieën tegelijk of één categorie selecteren en vervolgens de basiseigenschappen en geavanceerde filters boven deze op toepassen.
-- **Naleving risicofactor**: Hiermee kunt u naar een specifieke normen gehanteerd zoeken, certificering en conformiteit die de app kan voldoen aan de (HIPAA, ISO 27001, SOC 2, PCI-DSS, enz.).
-- **Algemene risicofactor**: Hiermee kunt u naar algemene risicofactoren zoals Consumer populariteit, Data zoeken center landinstellingen, enzovoort.
-- **Risicoscore**: Hiermee kunt u filteren op apps met risico score zodat u zich richten kunt op, bijvoorbeeld alleen zeer risicovolle apps controleren. U kunt ook de risicoscore ingesteld door Cloud App Security overschrijven. Zie voor meer informatie [werken met de risicoscore](risk-score.md).
-- **Beveiliging risicofactor**: kunt u filteren op basis van specifieke veiligheidsmaatregelen (zoals versleuteling op rest, meervoudige verificatie, enz.).
-- **Gebruik**: Hiermee kunt u filteren op basis van de gebruiksstatistieken van deze app, zoals apps met minder dan of meer dan een opgegeven hoeveelheid **gegevens uploads**, apps met meer dan of kleiner dan een opgegeven aantal **gebruikers**.
-
-## <a name="creating-and-managing-custom-app-tags"></a>Maken en beheren van aangepaste app labels
-
-U kunt een aangepaste app-code kunt maken. Deze tags kunnen vervolgens worden gebruikt als filters voor dieper verdiepen specifieke typen apps die u wilt onderzoeken. Bijvoorbeeld, aangepaste controleoverzicht, toewijzing aan een bepaalde bedrijfseenheid of aangepaste goedkeuringen, zoals 'goedgekeurd door juridische'.
-
-Een aangepaste app-label maken:
-
-1. Van de **instellingen** tandwiel, selecteer **Cloud Discovery** en in de **beheren van app-tags** en klik op het pictogram ![plus pictogram](./media/plus-icon.png). 
-
-![aangepaste app label maken](./media/create-app-tag.png)
-
-2. U kunt de **app-codes beheren** tabel om weer te geven welke apps op dit moment zijn gemarkeerd met elke tag app en u ongebruikte app labels kunt verwijderen.
-
-3. Toepassen van een app-tag in het **gedetecteerde apps** tabblad, klik op de drie punten aan de rechterkant van de tabel en selecteer de app-tag toe te passen. 
-
-> [!NOTE]
->U kunt ook maken een nieuwe app-code rechtstreeks in de **gedetecteerde apps** tabel door te klikken op **maakt app label** na het selecteren van de drie punten rechts van alle geselecteerde app. U kunt ook toegang tot de **app-codes beheren** scherm door te klikken op de koppeling in de hoek voor de **maakt app label** pop.
 
 ## <a name="exclude-entities"></a>Entiteiten uitsluiten  
 Als u gebruikers of IP-adressen heeft die bijzonder veel ruis veroorzaken en oninteressant zijn of apps die niet relevant zijn, dan kunt u hun gegevens uitsluiten van de Cloud Discovery-gegevens die worden geanalyseerd. U zou bijvoorbeeld alle gegevens kunnen uitsluiten die afkomstig zijn van 127.0.0.1 of de lokale host.  
@@ -162,7 +122,7 @@ Cloud Discovery-gegevens verwijderen:
 
 
 
-## <a name="see-also"></a>Zie tevens
+## <a name="see-also"></a>Zie ook
  
 [Momentopnamerapporten maken van Cloud Discovery](create-snapshot-cloud-discovery-reports.md)
 
