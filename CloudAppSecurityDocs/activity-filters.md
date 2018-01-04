@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/5/2017
+ms.date: 1/3/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b13f7c6270b79050e8ba0f871f2096f420bf6691
-ms.sourcegitcommit: 2e89f41bc2581859a24d55b700dcd89e70e730a5
+ms.openlocfilehash: 9e69481693e961c759f6d3bfd09f2e70a345576f
+ms.sourcegitcommit: bbf4a2715d1ea3fd21c1a1b87c7f5a2947d2ca68
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/10/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="activities"></a>Activiteiten
 Cloud App Security maakt alle activiteiten van uw verbonden apps voor u zichtbaar. Nadat u Cloud App Security hebt verbonden met een app met behulp van de App-connector, scant Cloud App Security alle activiteiten die hebben plaatsgevonden, waarbij de retroactieve scantijd per app verschilt. Daarna wordt Cloud App Security voortdurend bijgewerkt met nieuwe activiteiten. 
@@ -44,81 +44,6 @@ Om in te zoomen op meer specifieke activiteiten, kunt u het basisfilter uitbreid
 
  ![geavanceerd filter logboekactiviteit](media/activity-log-filter-advanced.png)
 
-## <a name="activity-filters"></a>Activiteitfilters
-Hier volgt een lijst van activiteitfilters die kunnen worden toegepast. De meeste filters bieden ondersteuning voor meerdere waarden en niet, zodat u over een krachtig hulpprogramma voor het maken van beleid.  
-  
--   Activiteit-id - Zoek alleen naar specifieke activiteiten op basis van de id. Dit filter is handig als u Cloud App Security verbinding met uw SIEM (met behulp van de SIEM-agent) en u verder wilt onderzoeken waarschuwingen in de Cloud App Security-portal.  
-  
--   Activiteitobjecten - zoek naar de objecten waarvoor de activiteit werd uitgevoerd. Dit filter wordt toegepast op bestand, map, gebruiker of app-objecten. 
-    - Activiteitobject-id - de id van het object (bestands-, map-, gebruikers- of app-id).
-    - Item - Hiermee kunt u zoeken op de naam of id van een activiteitsobject (bijvoorbeeld: gebruikersnamen, bestanden, parameters, sites). Voor de **activiteitsobject Item** filter, kunt u selecteren of u wilt filteren op items die **bevatten**, **gelijk**, of **begint met** het item.
-    
--   Activiteitstype - zoek naar de app-activiteit.
-
--   Activiteitstype (preview)-binnenkort beschikbaar. Hiermee kunt u zoeken naar de app-activiteit met grotere mate van granulatie, met behulp van de activiteitencategorie of de naam van de activiteit opgegeven rechtstreeks door de app.
-
--   Beheeractiviteit – zoek alleen naar beheeractiviteiten.  
-  
--   Waarschuwings-id - zoek naar waarschuwings-id.
-
--   App – zoek alleen naar activiteiten binnen specifieke apps.  
-  
--   Toegepaste actie - zoek naar toegepaste beheeractie: Geblokkeerd, Proxy overslaan, Ontsleuteld, Versleuteld, Versleutelen is mislukt, Geen actie.
-
--   Datum – de datum waarop de activiteit is uitgevoerd. Het filter ondersteunt datums ervoor en erna, evenals een datumbereik.  
-  
--   Beschrijving – specifieke trefwoorden in de beschrijving van de activiteit, bijvoorbeeld alle activiteiten met de tekenreeks **gebruiker** in de beschrijving.  
-  
--   Apparaatlabel - zoek naar compatibele, beheerde of geverifieerde apparaten.
-
--   Apparaattype - zoek alleen naar activiteiten die zijn uitgevoerd met behulp van een specifiek apparaattype, bijvoorbeeld alle activiteiten van mobiele apparaten, pc's of tablets.  
-  
--   IP-adres – de onbewerkte IP-adres, categorie of code van waaruit de activiteit is uitgevoerd.  
-    - Onbewerkt IP-adres - hiermee kunt u zoeken naar activiteiten die zijn uitgevoerd op of door onbewerkte IP-adressen die gelijk zijn aan, niet gelijk zijn aan, beginnen met of niet beginnen met een bepaalde reeks, of onbewerkte IP-adressen die wel of niet zijn ingesteld. 
-    - IP-categorie – de categorie van het IP-adres waarop de activiteit is uitgevoerd, bijvoorbeeld alle activiteiten van een reeks IP-adressen voor beheer. De categorieën moeten zodanig worden geconfigureerd dat deze de relevante IP-adressen, met uitzondering van de categorie "Riskant" die vooraf is geconfigureerd en bevat twee IP-tags - anonieme proxy en Tor. Zie [De gegevens volgens uw behoeften ordenen](ip-tags.md) voor informatie over het configureren van IP-categorieën.  
-    - IP-label - het label van het IP-adres waarop de activiteit is uitgevoerd, bijvoorbeeld alle activiteiten van IP-adressen met een anonieme proxy. Cloud App Security maakt een aantal ingebouwde IP-labels die niet kunnen worden geconfigureerd. Bovendien kunt u uw eigen IP-labels configureren. Zie [De gegevens volgens uw behoeften ordenen](ip-tags.md) voor meer informatie over het configureren van IP-labels.
-   De ingebouwde IP-labels zijn onder andere:
-    - Microsoft-apps (14 hiervan)
-    - Anonieme proxy
-    - Botnet (ziet u dat de activiteit is uitgevoerd door een botnet met een koppeling voor meer informatie over de specifieke botnet)
-    - Darknet scanning IP (IP voor darknet scannen)
-    - C & C-server van malware
-    - Remote Connectivity Analyzer
-    - Satelliet-providers
-    - Slimme proxy en toegangsproxy (met opzet weggelaten)
-    - Tor-eindknooppunten
-    - Zscaler
-
-
--   Geïmiteerde activiteit – zoek alleen naar activiteiten die zijn uitgevoerd uit naam van een andere gebruiker.  
-
--   Locatie – het land van waaruit de activiteit is uitgevoerd.  
-
--   Overeenkomend beleid – zoek naar activiteiten die overeenkomen met een specifiek beleid dat is ingesteld in de portal.  
-
--   Geregistreerde ISP – de internetprovider van waaruit de activiteit is uitgevoerd.   
-
--  Bron: zoeken op de bron waar de activiteit is gedetecteerd. Kan bestaan uit een van de volgende bronnen:
-  - App-connector: logboeken die rechtstreeks uit de API-connector van de app afkomstig zijn.
-  - Analyse van App-connector: verbeteringen van de Cloud App Security-beveiliging op basis van een informatiescan door de API-connector.
-  
-
--   Gebruiker – de gebruiker die de activiteit kan worden gefilterd in het domein, groep, naam of organisatie heeft uitgevoerd. Als u activiteiten zonder specifieke gebruiker wilt filteren, kunt u de operator 'is niet ingesteld' gebruiken.  
-    -   Gebruikersdomein - zoek naar een specifiek gebruikersdomein.
-    -   Organisatie van de gebruiker – de organisatie-eenheid van de gebruiker die de activiteit heeft uitgevoerd, bijvoorbeeld alle activiteiten die worden uitgevoerd door Marketing_gebruikers in EMEA.  
-    -   Gebruikersgroep – specifieke gebruikersgroepen die u kunt importeren uit verbonden apps, zoals Office 365-beheerders.  
-    -   Gebruikersnaam - zoek naar een specifieke gebruikersnaam. Voor een overzicht van gebruikers in een bepaalde gebruikersgroep klikt u in de **Activiteitenlade** op de naam van de gebruikersgroep. Hiermee gaat u naar de pagina voor Accounts met een lijst met alle gebruikers in de groep. Van daaruit, kunt u inzoomen op de details van de accounts van specifieke gebruikers in de groep.
-       -  De filters **Gebruikersgroep** en **Gebruikersnaam** kunnen verder worden gefilterd met behulp van de filter **Als** en door de rol van de gebruiker te selecteren. De rol kan een van de volgende mogelijkheden zijn:
-            - Alleen activiteitsobject - dit betekent dat de geselecteerde gebruiker of gebruikersgroep niet de betreffende activiteit heeft uitgevoerd, maar object van de activiteit was
-            - Alleen uitvoerder - dit betekent dat de gebruiker of gebruikersgroep de activiteit heeft uitgevoerd
-            - Alle rollen - dit betekent dat de gebruiker of gebruikersgroep betrokken was bij de activiteit, ofwel als uitvoerder van de activiteit of als het object ervan
-
--   Gebruikersagent – de gebruikersagent van waaruit de activiteit is uitgevoerd.  
-  
--   Label van de gebruikersagent – ingebouwd label voor de gebruikersagent, bijvoorbeeld alle activiteiten van een verouderde browser of verouderde besturingssystemen.  
-    
->[!NOTE]
-> Als op elk moment dat u wilt wissen van de filters, u doen kunt door te klikken op het pictogram filters wissen ![filters wissen pictogram](./media/clear-filters.png).
 
 ## <a name="the-activity-drawer"></a>De activiteit lade
 
