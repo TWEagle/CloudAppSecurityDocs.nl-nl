@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/19/2017
+ms.date: 1/4/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: bb6fab3aeb7e9f758ecc63969c05ab4137e378e7
-ms.sourcegitcommit: 8132433d8a4bd15571ef76752c28de136ec95bd0
+ms.openlocfilehash: 27e14be8501964ea62d2e5df84d96a9553d30ad6
+ms.sourcegitcommit: f96793b1b6d0a88cf52279fff0ab6bf4bddc5c6b
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="network-requirements"></a>Netwerkvereisten
 
@@ -68,6 +68,14 @@ Toevoegen zodat Cloud App Security verbinding maken met uw SIEM **uitgaande poor
 
 ## <a name="app-connector-access-and-external-dlp-integration"></a>Toegang tot de App-connector en externe DLP-integratie
 
+
+### <a name="app-connector"></a>App-connector
+
+Voor sommige apps van derden worden geopend door Cloud App Security, kunnen deze IP-adressen worden gebruikt om in te schakelen van Cloud App Security voor het verzamelen van Logboeken en toegang verlenen voor de Cloud App Security-console. 
+
+> [!NOTE]
+>Mogelijk ziet u deze IP-adressen in de activiteitenlogboeken van de leverancier omdat Cloud App Security beheeracties uitvoert en van deze IP-adressen scant. 
+
 Als u wilt verbinding maken met apps van derden en integreren met externe DLP-oplossingen, inschakelen Cloud App Security verbinding worden gemaakt vanaf deze IP-adressen:
 
 
@@ -77,14 +85,7 @@ Als u wilt verbinding maken met apps van derden en integreren met externe DLP-op
 |ONS|13.91.91.243 <br></br> 104.209.35.177 <br></br> 13.91.98.185 <br></br> 40.118.211.172 <br></br> 13.93.216.68 <br></br> 13.91.61.249 <br></br> 13.93.233.42 <br></br> 13.64.196.27 <br></br> 13.64.198.97 <br></br> 13.64.199.41 <br></br> 13.64.198.19|
 |US2|52.184.165.82<br></br> 40.84.4.93 <br></br> 40.84.4.119 <br></br> 40.84.2.83 |
 |EU|52.174.56.180<br></br>13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
-
-
-### <a name="app-connector"></a>App-connector
-Voor sommige apps van derden worden geopend door Cloud App Security, kunnen deze IP-adressen worden gebruikt om in te schakelen van Cloud App Security voor het verzamelen van Logboeken en toegang verlenen voor de Cloud App Security-console. 
-
-> [!NOTE]
->Mogelijk ziet u deze IP-adressen in de activiteitenlogboeken van de leverancier omdat Cloud App Security beheeracties uitvoert en van deze IP-adressen scant. 
-  
+ 
 
 ### <a name="dlp-integration"></a>DLP-integratie
 
