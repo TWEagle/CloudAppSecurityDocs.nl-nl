@@ -41,9 +41,11 @@
 ### [Uw bestanden beveiligen met beheerquarantaine](use-case-admin-quarantine.md)
 ## Ontdekken
 ### [Werken met gedetecteerde apps](discovered-apps.md)
+#### [Gedetecteerde app-filters en -query's](discovered-app-queries.md)
 ### [Werken met de risicoscore](risk-score.md)
 ## [Onderzoeken](investigate.md)
 ### [Activiteiten](activity-filters.md)
+#### [Activiteitsfilters en -query's](activity-filters-queries.md)
 ### [Bestanden](file-filters.md)
 ### [Accounts](accounts.md)
 ### [Naslaginformatie voor ingebouwde rapporten](built-in-report-reference.md)
@@ -69,6 +71,7 @@
 ### [Externe DLP-integratie](icap-stunnel.md)
 ### [API-tokens](api-tokens.md)
 # Problemen oplossen
+## [Problemen oplossen van de servicestatus](troubleshooting-status.md)
 ## [Problemen met Cloud Discovery oplossen](troubleshooting-cloud-discovery.md)
 ## [Foutberichten gebruiken om problemen met API-connectors op te lossen](troubleshooting-api-connectors-using-error-messages.md)
 ## [Problemen oplossen met inhoudsinspectie](troubleshooting-content-inspection.md)
