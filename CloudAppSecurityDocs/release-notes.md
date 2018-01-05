@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 51728b05a63b6eaefd194ddaf76f8c6dff80a149
-ms.sourcegitcommit: bbf4a2715d1ea3fd21c1a1b87c7f5a2947d2ca68
+ms.openlocfilehash: c42fa2eebd962d3f3c7db2afee5927b79ab30b97
+ms.sourcegitcommit: f96793b1b6d0a88cf52279fff0ab6bf4bddc5c6b
 ms.translationtype: MT
 ms.contentlocale: nl-NL
 ms.lasthandoff: 01/04/2018
@@ -26,7 +26,7 @@ ms.lasthandoff: 01/04/2018
 
 - Vanaf versie 114, rolt Cloud App Security geleidelijk de mogelijkheid om te maken en aangepaste query's opslaan. Query's zijn opgenomen de **activiteitenlogboek** en **gedetecteerde apps** pagina's om u te bieden de mogelijkheid om op te slaan van aangepaste query's die u wilt gebruiken in de toekomst. Bovendien **query's voorgestelde** toegevoegd die out-of-the-box aanbevolen mogelijkheden van onderzoek voor het filteren van uw activiteiten en gedetecteerde apps bieden. De voorgestelde query's omvatten verdiepen zoals imitatie activiteiten, beheerder activiteiten, riskant niet-compatibele cloud-opslag-apps, zakelijke apps met zwakke versleuteling en beveiligingsrisico's. U hebt de toegevoegde mogelijkheid om de voorgestelde query's als uitgangspunt gebruiken en deze aanpassen aan uw wensen en deze vervolgens opslaan als een nieuwe query. Zie voor meer informatie [activiteitfilters en query's](activity-filters-queries.md) en [gedetecteerde app-filters en query's](discovered-app-queries.md).
  
-- U kunt nu de huidige status van de Cloud App Security-service controleren door te gaan [status.cloudappsecurity.com](http://www.status.cloudappsecurity.com) of rechtstreeks uit binnen de portal door te klikken op **Help**>**System status**. 
+- U kunt nu de huidige status van de Cloud App Security-service controleren door te gaan [status.cloudappsecurity.com](https://status.cloudappsecurity.com) of rechtstreeks uit binnen de portal door te klikken op **Help**>**System status**. 
  
 
 ## <a name="cloud-app-security-release-113"></a>Cloud App Security-release 113
