@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/25/2017
+ms.date: 1/7/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,18 +13,18 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c42fa2eebd962d3f3c7db2afee5927b79ab30b97
-ms.sourcegitcommit: f96793b1b6d0a88cf52279fff0ab6bf4bddc5c6b
+ms.openlocfilehash: 183b62579184fb1dfba96efb16b4ffc241c4e0bc
+ms.sourcegitcommit: 06517c2828ecfd1f4f4ab3e31c02d80e27388a4e
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/07/2018
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Wat is er nieuw is bij de Microsoft Cloud App Security
 
 ## <a name="cloud-app-security-release-114"></a>Cloud App Security-release 114
 7 januari 2018 uitgebracht
 
-- Vanaf versie 114, rolt Cloud App Security geleidelijk de mogelijkheid om te maken en aangepaste query's opslaan. Query's zijn opgenomen de **activiteitenlogboek** en **gedetecteerde apps** pagina's om u te bieden de mogelijkheid om op te slaan van aangepaste query's die u wilt gebruiken in de toekomst. Bovendien **query's voorgestelde** toegevoegd die out-of-the-box aanbevolen mogelijkheden van onderzoek voor het filteren van uw activiteiten en gedetecteerde apps bieden. De voorgestelde query's omvatten verdiepen zoals imitatie activiteiten, beheerder activiteiten, riskant niet-compatibele cloud-opslag-apps, zakelijke apps met zwakke versleuteling en beveiligingsrisico's. U hebt de toegevoegde mogelijkheid om de voorgestelde query's als uitgangspunt gebruiken en deze aanpassen aan uw wensen en deze vervolgens opslaan als een nieuwe query. Zie voor meer informatie [activiteitfilters en query's](activity-filters-queries.md) en [gedetecteerde app-filters en query's](discovered-app-queries.md).
+- Vanaf versie 114, zijn wij geleidelijk rolt de mogelijkheid om te maken en aangepaste query's opslaan in het activiteitenlogboek en doorzochte apps's. Aangepaste query's kunnen u filter sjablonen maakt die opnieuw kunnen worden gebruikt voor dieper onderzoek. Bovendien **query's voorgestelde** hebt onderzoek out-of-the-box-sjablonen om te filteren op uw activiteiten kunnen worden toegevoegd en apps gedetecteerd. De **query's voorgestelde** bevatten aangepaste filters om risico's zoals imitatie activiteiten, beheerder activiteiten, riskant niet-compatibele cloud-opslag-apps, zakelijke apps met zwakke versleuteling en beveiligingsrisico's te identificeren. U kunt de **query's voorgestelde** als uitgangspunt nemen ze wijzigen als u naar eigen inzicht en deze vervolgens opslaan als een nieuwe query. Zie voor meer informatie [activiteitfilters en query's](activity-filters-queries.md) en [gedetecteerde app-filters en query's](discovered-app-queries.md).
  
 - U kunt nu de huidige status van de Cloud App Security-service controleren door te gaan [status.cloudappsecurity.com](https://status.cloudappsecurity.com) of rechtstreeks uit binnen de portal door te klikken op **Help**>**System status**. 
  
