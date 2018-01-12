@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/25/2017
+ms.date: 1/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4bc6716b469962e1196b76ab7d55652d2081af51
-ms.sourcegitcommit: c0c0612cdf6805c8e92d7929be0f12f33660b2d2
+ms.openlocfilehash: ec5fbb7ee06a8b57374fb5f36efeecea4413191e
+ms.sourcegitcommit: 09eabb9b69a01790476641d6e672d125ea057fbd
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/25/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="azure-information-protection-integration"></a>Integratie van Azure Information Protection
 
@@ -51,7 +51,7 @@ Bestanden die zijn gelabeld met beveiliging buiten Cloud App Security kunnen mom
 ## <a name="how-it-works"></a>Hoe het werkt
 U bent waarschijnlijk bekend met classificatielabels voor bestanden in [Azure Information Protection](https://docs.microsoft.com/information-protection/). U kunt de Azure Information Protection-classificatielabels zien in Cloud App Security. Nadat u Cloud App Security hebt geïntegreerd in Azure Information Protection, scant Cloud App Security bestanden als volgt:
 1. Cloud App Security haalt de lijst met alle classificatielabels binnen uw tenant op. Dit wordt ieder uur uitgevoerd om te zorgen dat de lijst actueel is.
-2. Cloud App Security scant de bestanden dan als volgt op classificatielabels: a. Als u automatisch scannen (Zie de volgende) hebt ingeschakeld, worden alle nieuwe en gewijzigde bestanden worden toegevoegd aan de wachtrij van de scan.
+2. Cloud App Security scant de bestanden dan als volgt op classificatielabels: a. Als u automatische ingeschakeld scannen (Zie hieronder), alle nieuwe of gewijzigde bestanden worden toegevoegd aan de wachtrij scan en alle bestaande bestanden en opslagplaatsen worden gescand, ingedeeld en beveiligd.
     b. Als u een bestand (Zie hieronder) om te zoeken voor, classificatielabels, deze bestanden worden toegevoegd aan de wachtrij scan voor classificatielabels.
 3. Zoals hierboven vermeld, gelden deze scans voor de classificatielabels die worden gedetecteerd tijdens de initiële scan die Cloud App Security uitvoert om vast te stellen welke classificatielabels in uw tenant worden gebruikt. Externe labels, classificatielabels die zijn ingesteld door iemand buiten uw tenant, worden toegevoegd aan de lijst met classificatielabels. Als u niet wilt zoeken naar deze, selecteert u de **alleen scannen bestanden voor Azure Information Protection classificatielabels van deze tenant** selectievakje (Zie hieronder).
 4. Nadat u Azure Information Protection in Cloud App Security hebt ingeschakeld, worden ook alle nieuwe bestanden die aan Office 365 worden toegevoegd op classificatielabels gescand.
