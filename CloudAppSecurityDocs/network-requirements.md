@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/4/2018
+ms.date: 1/15/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 27e14be8501964ea62d2e5df84d96a9553d30ad6
-ms.sourcegitcommit: f96793b1b6d0a88cf52279fff0ab6bf4bddc5c6b
+ms.openlocfilehash: ad089d71975a83c2f41fb9a9694acb8d01defdc7
+ms.sourcegitcommit: c4b40afff6a66b101fadfc1bd221c10186bad71a
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/15/2018
 ---
 # <a name="network-requirements"></a>Netwerkvereisten
 
@@ -66,17 +66,14 @@ Toevoegen zodat Cloud App Security verbinding maken met uw SIEM **uitgaande poor
 |US2|52.184.165.82|
 |EU|52.174.56.180|
 
-## <a name="app-connector-access-and-external-dlp-integration"></a>Toegang tot de App-connector en externe DLP-integratie
-
-
-### <a name="app-connector"></a>App-connector
+## <a name="app-connector"></a>App-connector
 
 Voor sommige apps van derden worden geopend door Cloud App Security, kunnen deze IP-adressen worden gebruikt om in te schakelen van Cloud App Security voor het verzamelen van Logboeken en toegang verlenen voor de Cloud App Security-console. 
 
 > [!NOTE]
 >Mogelijk ziet u deze IP-adressen in de activiteitenlogboeken van de leverancier omdat Cloud App Security beheeracties uitvoert en van deze IP-adressen scant. 
 
-Als u wilt verbinding maken met apps van derden en integreren met externe DLP-oplossingen, inschakelen Cloud App Security verbinding worden gemaakt vanaf deze IP-adressen:
+Als u wilt verbinding maken met apps van derden, schakelt u Cloud App Security verbinding worden gemaakt vanaf deze IP-adressen:
 
 
 > [!div class="mx-tableFixed"]
@@ -87,7 +84,7 @@ Als u wilt verbinding maken met apps van derden en integreren met externe DLP-op
 |EU|52.174.56.180<br></br>13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
  
 
-### <a name="dlp-integration"></a>DLP-integratie
+## <a name="dlp-integration"></a>DLP-integratie
 
 Open uw firewall DMZ kan deze IP-adressen met een dynamische bronpoortnummer of bereik in de volgorde voor Cloud App Security gegevens via uw stunnel verzenden naar uw server ICAP. 
 
@@ -97,8 +94,18 @@ Open uw firewall DMZ kan deze IP-adressen met een dynamische bronpoortnummer of 
 4.  Doel-TCP-poort: zoals gedefinieerd in uw netwerk
 
 > [!NOTE] 
-> Het poortnummer stunnel is standaard ingesteld op 11344. U kunt dit wijzigen in een andere poort, indien nodig, maar zorg ervoor dat Noteer het nieuwe poortnummer.
+> -  Het poortnummer stunnel is standaard ingesteld op 11344. U kunt dit wijzigen in een andere poort, indien nodig, maar zorg ervoor dat Noteer het nieuwe poortnummer.
+> - Mogelijk ziet u deze IP-adressen in de activiteitenlogboeken van de leverancier omdat Cloud App Security beheeracties uitvoert en van deze IP-adressen scant. 
 
+Als u wilt verbinding maken met apps van derden en integreren met externe DLP-oplossingen, inschakelen Cloud App Security verbinding worden gemaakt vanaf deze IP-adressen:
+
+> [!div class="mx-tableFixed"]
+|Datacenter|IP-adressen|  
+|----|----|
+|ONS|13.91.91.243 <br></br> 104.209.35.177 <br></br> 13.91.98.185 <br></br> 40.118.211.172 <br></br> 13.93.216.68 <br></br> 13.91.61.249 <br></br> 13.93.233.42 <br></br> 13.64.196.27 <br></br> 13.64.198.97 <br></br> 13.64.199.41 <br></br> 13.64.198.19|
+|US2|52.184.165.82<br></br> 40.84.4.93 <br></br> 40.84.4.119 <br></br> 40.84.2.83 |
+|EU|52.174.56.180<br></br>13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
+ 
 ## <a name="email-server"></a>E-mailserver
 
 Het IP-adres van de Cloud App Security-specifieke e-mailadres is: 

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/31/2017
+ms.date: 1/15/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a76b9eac65a82ece148eaaf05dead1c920d0fb62
-ms.sourcegitcommit: 2544faf07c6373ac5505bbdf4ebd5d184daf68db
+ms.openlocfilehash: 1742fbaae18fe4624bf057e54b9e11d2d68c5335
+ms.sourcegitcommit: c4b40afff6a66b101fadfc1bd221c10186bad71a
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/31/2017
+ms.lasthandoff: 01/15/2018
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>Verbinding maken tussen G Suite en Microsoft Cloud App Security
 In deze sectie vindt u instructies voor het maken van een verbinding tussen Cloud App Security en uw bestaande G Suite-account met behulp van de connector-API's.
@@ -25,7 +25,7 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
   
 ## <a name="configure-g-suite"></a>G Suite configureren  
   
-1.  Als een G Suite Super Admin, meld u aan bij [https://cloud.google.com/console/project](https://cloud.google.com/console/project).  
+1.  Als een G Suite Super Admin, meld u aan bij <a href="https://cloud.google.com/console/project" target="_blank">https://cloud.google.com/console/project</a>.  
   
 2.  Klik op **Create project** (Een project maken) om een nieuw project te starten.  
   
@@ -113,7 +113,7 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
   
     -   **Korte beschrijving en lange beschrijving** (optioneel): Microsoft Cloud App Security kunt u inzicht krijgen in cloudtoepassingen, zodat u kunt beheren, onderzoeken en beheren gebruik van cloudtoepassingen; bedrijfsgegevens kunt beveiligen; en detecteren verdachte activiteiten voor alle cloudtoepassingen.  
   
-    -   Google vereist dat u ten minste één toepassingspictogram uploadt. Ga naar [https://go.microsoft.com/fwlink/?linkid=862826](https://go.microsoft.com/fwlink/?linkid=862826) een zipbestand met Cloud App Security pictogrammen te downloaden. Vervolgens sleept u onder **Application icon** (Pictogram voor toepassing) de afbeeldingen van 128x128 en 32x32 pixels en zet u die neer.  
+    -   Google vereist dat u ten minste één toepassingspictogram uploadt. Ga naar [https://go.microsoft.com/fwlink/?linkid=862826](https://go.microsoft.com/fwlink/?linkid=862826) een zipbestand met Cloud App Security pictogrammen te downloaden. Klik vervolgens onder **toepassingspictogram**, klikt u op **Selecteer** naast de 128 x 128 installatiekopie en sleep deze naar het pop-scherm. Klik op **Selecteer** naast de 32 x 32 installatiekopie en sleep deze naar het pop-scherm.  
   
     -   Schuif omlaag en in de **station integratie** sectie, typ de volgende URL onder **URL openen:**  
   
@@ -184,7 +184,8 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
            https://www.googleapis.com/auth/admin.directory.device.mobile  
   
            https://www.googleapis.com/auth/admin.directory.user  
-  
+
+    -   Als G suite gevraagd voor zichtbaarheid, selecteert u **mijn domein** (niet-openbare). 
     -   Klik op **Save Changes** (Wijzigingen opslaan).  
   
 22. Ga naar [admin.google.com](https://admin.google.com/) en kies vervolgens **Security** (beveiliging). 
