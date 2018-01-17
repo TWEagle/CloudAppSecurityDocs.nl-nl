@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/7/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 183b62579184fb1dfba96efb16b4ffc241c4e0bc
-ms.sourcegitcommit: 06517c2828ecfd1f4f4ab3e31c02d80e27388a4e
+ms.openlocfilehash: 7af8bb9db16ae5b45b2251e6de03aec57b15d1d9
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/07/2018
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Wat is er nieuw is bij de Microsoft Cloud App Security
 
@@ -629,7 +629,7 @@ Uitgebracht: 15 mei 2016
 * Als u instelt dat er een waarschuwing moet worden verzonden wanneer een beleid wordt geschonden, kunt u een minimale waarde voor de ernst van de waarschuwing instellen waarbij u wilt worden gewaarschuwd. U kunt ervoor kiezen om de standaardinstelling van uw organisatie hiervoor te gebruiken en u kunt een specifieke waarschuwingsinstelling als standaard instellen voor uw organisatie.
 
 ## <a name="see-also"></a>Zie ook  
-[Ga naar de ondersteuningspagina van Cloud App Security voor technische ondersteuning.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Premier-klanten kunnen Cloud App Security ook rechtstreeks vanuit Premier Portal kiezen.](https://premier.microsoft.com/)  
   
   

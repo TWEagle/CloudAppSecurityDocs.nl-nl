@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/24/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 7811f23b-6100-427f-93b1-44f5f81f6c76
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9e6b47d61464e2a8b7fb95d8a7fdad9873d09d0b
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: e710418938af85a8a16a866dcbae43ac612f090a
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="accounts"></a>Accounts
 Cloud App Security maakt de accounts van uw verbonden apps voor u zichtbaar. Nadat u Cloud App Security hebt verbonden met een app met behulp van de App-connector, leest Cloud App Security gegevens van accounts die gekoppeld zijn aan verbonden apps. Op de pagina Accounts kunt u die accounts en machtigingen onderzoeken, evenals de groepen waartoe de accounts behoren, plus hun aliassen en de apps die ze gebruiken. Bovendien – wanneer Cloud App Security een nieuw account die niet eerder is zichtbaar detecteert in een van de verbonden apps - bijvoorbeeld in activiteiten of in het delen van bestanden - is het account toegevoegd aan de lijst met accounts van deze app. Hiermee krijgt u inzicht in de activiteit van externe gebruikers die met uw cloud-apps werken.
@@ -61,7 +61,7 @@ Hier volgt een lijst van de account-filters die kunnen worden toegepast. De mees
 
 ## <a name="see-also"></a>Zie ook  
 [Dagelijkse activiteiten ter bescherming van uw cloudomgeving](daily-activities-to-protect-your-cloud-environment.md)   
-[Ga naar de ondersteuningspagina van Cloud App Security voor technische ondersteuning.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Premier-klanten kunnen Cloud App Security ook rechtstreeks vanuit Premier Portal kiezen.](https://premier.microsoft.com/)  
   
   

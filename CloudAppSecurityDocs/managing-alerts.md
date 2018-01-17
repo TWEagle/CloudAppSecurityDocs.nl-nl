@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 1b1dbcc6-472f-43ea-af59-2aa926e3e5a9
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 1ca10f668634a45894d0b4d6bc1528d31f024e35
-ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
+ms.openlocfilehash: a674379eea455c1a7f384c56f1c3a6013f8aac6e
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 01/16/2018
 ---
 ## <a name="manage-your-alerts"></a>De waarschuwingen beheren  
 Waarschuwingen zijn het uitgangspunt van waaruit u meer inzicht in uw cloudomgeving krijgt. Mogelijk wilt u nieuwe beleidsregels maken naar aanleiding van uw bevindingen. U ziet bijvoorbeeld dat een beheerder is aangemeld vanuit Groenland en er heeft zich nog nooit iemand aangemeld vanuit Groenland binnen uw organisatie. U kunt een beleid maken waarmee een beheerdersaccount automatisch tijdelijk wordt ingetrokken als dit wordt gebruikt voor aanmelding vanaf die locatie.  
@@ -65,7 +65,7 @@ Het is een goed idee alle waarschuwingen te bekijken en ze als hulpmiddel te geb
 
 De volgende tabel geeft een lijst van de typen waarschuwingen die kunnen worden geactiveerd en de aanbevolen manier om ze op te lossen.  
 
-|Waarschuwingstype|Beschrijving|Aanbevolen oplossing|  
+|Waarschuwingstype|Description|Aanbevolen oplossing|  
 |----------------|-----------------|----------------------------|  
 |Schending van activiteitenbeleid|Dit type waarschuwing is het resultaat van een beleid dat u hebt gemaakt.|Als u groepsgewijs met dit type waarschuwingen wilt werken, wordt u aangeraden in het beleidscentrum te werken om deze te verhelpen.<br /><br /> Verfijn het beleid om ruisentiteiten uit te sluiten door meer filters en gedetailleerdere besturingselementen toe te voegen.<br /><br /> Als het beleid nauwkeurig is, de waarschuwing gerechtvaardigd was en het een schending is die u onmiddellijk wilt stoppen, kunt u overwegen automatisch herstel aan het beleid toe te voegen.|  
 |Schending van bestandsbeleid|Dit type waarschuwing is het resultaat van een beleid dat u hebt gemaakt.| Als u groepsgewijs met dit type waarschuwingen wilt werken, wordt u aangeraden in het beleidscentrum te werken om deze te verhelpen.<br /><br /> Verfijn het beleid om ruisentiteiten uit te sluiten door meer filters en gedetailleerdere besturingselementen toe te voegen.<br /><br /> Als het beleid nauwkeurig is, de waarschuwing gerechtvaardigd was en het een schending is die u onmiddellijk wilt stoppen, kunt u overwegen automatisch herstel aan het beleid toe te voegen.|  
@@ -82,5 +82,5 @@ De volgende tabel geeft een lijst van de typen waarschuwingen die kunnen worden 
 
 ## <a name="next-steps"></a>Volgende stappen  
 Zie [Onderzoeken](investigate.md) voor meer informatie over het onderzoeken van waarschuwingen.  
-Ga naar de [ondersteuningspagina van Cloud App Security voor technische ondersteuning.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 Premier-klanten kunnen Cloud App Security ook rechtstreeks vanuit [Premier Portal](https://premier.microsoft.com/) kiezen.  

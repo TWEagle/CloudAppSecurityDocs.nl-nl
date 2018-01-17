@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: beaf31d7c365f62fb9c9dc7b79b0d89f31ee694d
-ms.sourcegitcommit: e547c4c91d8de9d4da376e4d4eebbe18c503b7ca
+ms.openlocfilehash: 4f5e69282dc52802d8b6ff764c956eb7c1d82693
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/18/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="siem-integration"></a>Integratie van SIEM
     
@@ -138,12 +138,12 @@ Evenals de volgende waarschuwingen logfile voorbeeld:
 |Activiteiten /-waarschuwingen|bericht |Activiteit of waarschuwing beschrijving zoals weergegeven in de portal|
 |Activiteiten /-waarschuwingen|suser| Activiteit of waarschuwing onderwerp gebruiker|
 |Activiteiten /-waarschuwingen|destinationServiceName| Activiteit of waarschuwing app, bijvoorbeeld Office 365, Sharepoint, vak die afkomstig zijn.|
-|Activiteiten /-waarschuwingen|CS<X>Label|Elk label moet een andere betekenis, maar deze bijvoorbeeld targetObjects in het label zelf wordt uitgelegd.|
-|Activiteiten /-waarschuwingen|CS<X>|De informatie die overeenkomt met het label (de doelgebruiker van de activiteit of een waarschuwing aan de hand van het label voorbeeld).|
-|Activiteiten|EVENT_CATEGORY_ * |Categorie op hoog niveau van de activiteit|
+|Activiteiten /-waarschuwingen|cs<X>Label|Elk label moet een andere betekenis, maar deze bijvoorbeeld targetObjects in het label zelf wordt uitgelegd.|
+|Activiteiten /-waarschuwingen|cs<X>|De informatie die overeenkomt met het label (de doelgebruiker van de activiteit of een waarschuwing aan de hand van het label voorbeeld).|
+|Activiteiten|EVENT_CATEGORY_* |Categorie op hoog niveau van de activiteit|
 |Activiteiten|<ACTION> |Het activiteitstype, zoals weergegeven in de portal|
 |Activiteiten|externalId| Gebeurtenis-id|
-|Activiteiten|DVC| IP-adres van het clientapparaat.|
+|Activiteiten|dvc| IP-adres van het clientapparaat.|
 |Activiteiten|requestClientApplication|Gebruikersagent van het clientapparaat.|
 |Waarschuwingen|<alert type>|Bijvoorbeeld 'ALERT_CABINET_EVENT_MATCH_AUDIT'|
 |Waarschuwingen|<name>|De naam van de overeenkomende beleid|
@@ -184,8 +184,8 @@ Als u de SIEM-agent op een later tijdstip wilt verwijderen, kunt u in de tabel o
 De SIEM-agent is één eindpunt die ondersteuning biedt voor herstel van maximaal twee dagen uitvaltijd. Extra beveiligingsmaatregel van maximale beschikbaarheid kan worden bereikt door een load balancer als het eindpunt van de klant.
 
 ## <a name="see-also"></a>Zie ook  
-[Problemen met SIEM-integratie oplossen](troubleshooting-siem.md)   
-[Ga naar de ondersteuningspagina van Cloud App Security voor technische ondersteuning.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+[Het oplossen van problemen van SIEM-integratie](troubleshooting-siem.md)   
+
 [Premier-klanten kunnen Cloud App Security ook rechtstreeks vanuit Premier Portal kiezen.](https://premier.microsoft.com/)  
   
   

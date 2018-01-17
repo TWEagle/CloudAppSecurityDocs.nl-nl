@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ad089d71975a83c2f41fb9a9694acb8d01defdc7
-ms.sourcegitcommit: c4b40afff6a66b101fadfc1bd221c10186bad71a
+ms.openlocfilehash: 75c79f8ebda04c5ee82edc5c8cfe37bd1d3643f4
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/15/2018
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="network-requirements"></a>Netwerkvereisten
 
@@ -46,9 +46,9 @@ Voor toegang tot de Cloud App Security-portal, voegt u **uitgaande poort 443** v
 > [!div class="mx-tableFixed"]
 |Datacenter|IP-adressen|DNS-naam|
 |----|----|----|
-|ONS|13.80.125.22<br></br>52.183.75.62<br></br>13.91.91.243|Portal.cloudappsecurity.com<br></br>\*. portal.cloudappsecurity.com <br></br>\*. us.portal.cloudappsecurity.com|
-|US2|13.80.125.22<br></br>52.183.75.62<br></br>52.184.165.82|Portal.cloudappsecurity.com<br></br>\*. portal.cloudappsecurity.com <br></br>\*. us2.portal.cloudappsecurity.com|
-|EU|13.80.125.22<br></br>52.183.75.62<br></br>52.174.56.180|Portal.cloudappsecurity.com<br></br>\*. portal.cloudappsecurity.com <br></br>\*. eu.portal.cloudappsecurity.com|
+|ONS|13.80.125.22<br></br>52.183.75.62<br></br>13.91.91.243|portal.cloudappsecurity.com<br></br>\*.portal.cloudappsecurity.com <br></br>\*.us.portal.cloudappsecurity.com|
+|US2|13.80.125.22<br></br>52.183.75.62<br></br>52.184.165.82|portal.cloudappsecurity.com<br></br>\*.portal.cloudappsecurity.com <br></br>\*.us2.portal.cloudappsecurity.com|
+|EU|13.80.125.22<br></br>52.183.75.62<br></br>52.174.56.180|portal.cloudappsecurity.com<br></br>\*.portal.cloudappsecurity.com <br></br>\*.eu.portal.cloudappsecurity.com|
 
 
 >[!NOTE]
@@ -124,9 +124,9 @@ Cloud Discovery-functies met een logboekverzamelaar inschakelen en de Shadow IT 
    
     |Datacenter|URL|
     |----|----|
-    |ONS|https://adaprodconsole.BLOB.Core.Windows.NET/|
-    |US2|https://prod03use2console1.BLOB.Core.Windows.NET/|
-    |EU|https://prod02euwconsole1.BLOB.Core.Windows.NET/|
+    |ONS|https://adaprodconsole.blob.core.windows.net/|
+    |US2|https://prod03use2console1.blob.core.windows.net/|
+    |EU|https://prod02euwconsole1.blob.core.windows.net/|
 
 > [!NOTE]
 > Als uw firewall vereist dat een lijst met statische IP-adressen toegang en biedt geen ondersteuning voor whitelisting op basis van de URL, staan de logboekverzamelaar initiëren uitgaand verkeer naar de [Microsoft Azure datacenter IP-adresbereiken](https://www.microsoft.com/download/details.aspx?id=41653) op poort 443.
@@ -136,7 +136,7 @@ Cloud Discovery-functies met een logboekverzamelaar inschakelen en de Shadow IT 
 
 ## <a name="see-also"></a>Zie ook  
 [Dagelijkse activiteiten ter bescherming van uw cloudomgeving](daily-activities-to-protect-your-cloud-environment.md)   
-[Ga naar de ondersteuningspagina van Cloud App Security voor technische ondersteuning.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Premier-klanten kunnen Cloud App Security ook rechtstreeks vanuit Premier Portal kiezen.](https://premier.microsoft.com/)  
   
 

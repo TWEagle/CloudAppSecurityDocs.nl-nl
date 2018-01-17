@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2017
+ms.date: 1/15/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 1742fbaae18fe4624bf057e54b9e11d2d68c5335
-ms.sourcegitcommit: c4b40afff6a66b101fadfc1bd221c10186bad71a
+ms.openlocfilehash: 0985bae59132180b4a22140afd5f00e0b722660a
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/15/2018
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>Verbinding maken tussen G Suite en Microsoft Cloud App Security
 In deze sectie vindt u instructies voor het maken van een verbinding tussen Cloud App Security en uw bestaande G Suite-account met behulp van de connector-API's.
@@ -119,7 +119,7 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
   
          https://portal.cloudappsecurity.com/#/services/11770?tab=files  
     
-       ![Google Drive bewerken](./media/google15.png "google15")  
+       ![Edit Google Drive](./media/google15.png "google15")  
 
 20. Klik op **wijzigingen opslaan**.
 
@@ -193,7 +193,7 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
       ![Google beveiliging](./media/googlesec.png "google-beveiliging")  
  
 23. Kies **API reference** (API-verwijzing).  
-       ![Google api inschakelen](./media/googleapi.png "google api")  
+       ![google api enable](./media/googleapi.png "google api")  
       
 24. Selecteer **Enable API Access** (API-toegang inschakelen) en klik op **Save changes** (Wijzigingen opslaan).  
   
@@ -239,7 +239,7 @@ Na de verbinding met G Suite wordt in Cloud App Security een volledige scan uitg
   
 ## <a name="see-also"></a>Zie ook  
 [Cloud-apps beheren met beleidsregels](control-cloud-apps-with-policies.md)   
-[Ga naar de ondersteuningspagina van Cloud App Security voor technische ondersteuning.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Premier-klanten kunnen Cloud App Security ook rechtstreeks vanuit Premier Portal kiezen.](https://premier.microsoft.com/)  
   
   

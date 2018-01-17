@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/24/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.app: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 588b3639-f748-45a6-bc4b-a6ee47c1865e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2b95533e39ce21693f46d431fcc70d82a2d423d1
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: 56b29da76a14e95b2ec3b31083013befb9ce8f21
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="built-in-report-reference"></a>Naslaginformatie ingebouwde rapporten
 
@@ -28,7 +28,7 @@ De volgende tabel bevat een lijst met ingebouwde rapporten en de typen gebeurten
   
 ## <a name="built-in-report-list"></a>Lijst met ingebouwde rapporten  
   
-|Rapporttype|Naam van ingebouwd rapport|Beschrijving|  
+|Rapporttype|Naam van ingebouwd rapport|Description|  
 |-----------------|---------------------------|-----------------|  
 |Beveiliging|Activiteit per locatie|Dit rapport geeft de landen weer waar activiteit in de cloud-apps vandaan komt, met verschillende parameters voor het volume van de activiteit vanuit elk land, zoals het aantal gebeurtenissen, aantal gebruikers, enz. Gebruik dit rapport voor een overzicht van de geografische verdeling van uw gebruikers.|  
 |Beveiliging|Browsergebruik|Tot de meest voorkomende aanvalsvectoren behoren aanvallen via de browser. Leveranciers investeren enorm veel middelen in het beveiligen van browsersoftware en creëren een effectief updatemechanisme om updates naar eindpunten te verspreiden. Door een afgeschafte browser te gebruiken lang nadat deze moet worden bijgewerkt, wordt het een makkelijk doelwit voor bedreigingen die beschikbare aanvalspakketten gebruiken. Dit rapport geeft een lijst met verouderde browsers die in de afgelopen 7 dagen zijn gebruikt door gebruikers die toegang tot uw cloud-apps verkregen. Het rapport laat u ook weten of de verouderde browsers door een robot werden gebruikt.|  
@@ -41,8 +41,8 @@ De volgende tabel bevat een lijst met ingebouwde rapporten en de typen gebeurten
 |Gegevensbeheer|Eigenaren van gedeelde bestanden|Dit rapport geeft een lijst van gebruikers die zakelijke bestanden met de buitenwereld delen. Extern gedeelde bestanden worden gedeeld met specifieke externe deelnemers. Openbaar gedeelde bestanden zijn via een privékoppeling toegankelijk voor iedereen op internet en kunnen alleen worden gevonden door degenen die expliciet de koppeling hebben gekregen. Openbaar gedeelde (internet)bestanden zijn toegankelijk voor iedereen op internet, zelfs via een zoekmachine.  Als u gebruikers die een uitzonderlijk groot aantal bestanden delen vindt, wordt u aangeraden dat u de aard van deze overmatige deelmachtigingen met behulp van het tabblad bestanden onderzoeken en neem contact op met deze gebruikers voor meer informatie over hun gebruik van extern delen.|  
   
 ## <a name="see-also"></a>Zie ook  
-[Beheer](control.md)   
-[Ga naar de ondersteuningspagina van Cloud App Security voor technische ondersteuning.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+[Controle](control.md)   
+
 [Premier-klanten kunnen Cloud App Security ook rechtstreeks vanuit Premier Portal kiezen.](https://premier.microsoft.com/)  
   
   

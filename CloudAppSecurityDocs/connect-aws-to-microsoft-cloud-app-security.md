@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/31/2017
+ms.date: 1/15/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a6b4c745-cd5c-4458-819c-80cbe8b25f29
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ed30e0b0e3d49db23e404ef87454e48361996443
-ms.sourcegitcommit: 2544faf07c6373ac5505bbdf4ebd5d184daf68db
+ms.openlocfilehash: 06844dfc86947bff1baaf3234b3c2949b57ff49a
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/31/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="connect-aws-to-microsoft-cloud-app-security"></a>Verbinding maken tussen AWS en Microsoft Cloud App Security
 In deze sectie vindt u instructies voor het maken van een verbinding tussen Cloud App Security en uw bestaande Amazon Web Services-account met behulp van de connector-API's.  
@@ -30,7 +30,7 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
   
 2.  Klik op het tabblad **Gebruikers** en klik vervolgens op **Gebruiker toevoegen**.  
   
-     ![AWS gebruikers](./media/aws-users.png "AWS-gebruikers")      
+     ![AWS users](./media/aws-users.png "AWS users")      
   
 4.  In de **Details** stap, typt u een nieuwe gebruikersnaam voor Cloud App Security. Zorg ervoor dat onder **toegangstype** u **toegang op programmeerniveau** en klik op **volgende machtigingen**.  
 
@@ -64,7 +64,7 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
   
     ```  
 
-     ![AWS-code](./media/aws-code.png "AWS-code")
+     ![AWS code](./media/aws-code.png "AWS code")
     
 6. Klik op **beleid bekijken**.
 
@@ -113,7 +113,7 @@ Nadat u verbinding maakt met AWS, ontvangt u gebeurtenissen voor zeven dagen vó
   
 ## <a name="see-also"></a>Zie ook  
 [Cloud-apps beheren met beleidsregels](control-cloud-apps-with-policies.md)   
-[Ga naar de ondersteuningspagina van Cloud App Security voor technische ondersteuning.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Premier-klanten kunnen Cloud App Security ook rechtstreeks vanuit Premier Portal kiezen.](https://premier.microsoft.com/)  
   
   

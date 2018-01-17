@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: f118a3bf-1663-46ba-884f-b1b03a84ab66
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6d2d677ef91a22a4489c4709a84742410d991899
-ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
+ms.openlocfilehash: d160d0dd0ac1103fb84788c632f3569c5109a1a6
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="alerts"></a>Waarschuwingen
 Ga als volgt te werk als u waarschuwingen wilt weergeven:
@@ -37,7 +37,7 @@ De volgende typen waarschuwingen worden weergegeven.
 
 ## <a name="built-in-alerts"></a>Ingebouwde waarschuwingen
 
-|Naam van waarschuwing|Waarschuwings-id|Beschrijving|
+|Naam van waarschuwing|Waarschuwings-id|Description|
 |----|----|----|
 |Nieuwe locatie|ALERT_GEOLOCATION_NEW_COUNTRY|Sinds het begin van de scan (maximaal zes maanden) is een nieuwe locatie gedetecteerd. Deze waarschuwing wordt eenmaal weergegeven voor elk land in uw hele organisatie. |
 |Nieuwe gebruiker met beheerdersrechten|ALERT_ADMIN_USER|Voor een specifieke app is een nieuwe beheerder gedetecteerd. Dit kan een persoon zijn die beheerder is in een bepaalde toepassing en nu beheerder is voor een andere toepassing. Deze waarschuwing heeft betrekking op een specifiek beheerderstype. Dit betekent dat telkens wanneer het beheerderstype wordt gewijzigd, de waarschuwing wordt weergegeven. Als een gebruiker zijn of haar beheerdersbevoegdheden is kwijtgeraakt en deze vervolgens opnieuw worden toegewezen, wordt deze waarschuwing weergegeven.|
@@ -47,7 +47,7 @@ De volgende typen waarschuwingen worden weergegeven.
 
 ## <a name="custom-alerts"></a>Aangepaste waarschuwingen
 
-|Naam van waarschuwing|Waarschuwings-id|Beschrijving|
+|Naam van waarschuwing|Waarschuwings-id|Description|
 |----|----|----|
 |Waarschuwing verdachte activiteit|ALERT_SUSPICIOUS_ACTIVITY|Verdachte activiteiten worden beoordeeld op basis van hoe verdacht de afwijkende activiteit is (bijvoorbeeld: is er een inactief account bij betrokken? Is de activiteit afkomstig van een nieuwe locatie?). Deze criteria worden samen beoordeeld, waarna een risicoscore wordt berekend op basis van de volgende risicofactoren: <br>Gebruiker is beheerder <br>Alleen externe gebruikers<br>Anonieme proxy<br> Aanmeldingspogingen van de hele sessie zijn mislukt<br>Groot aantal mislukte aanmeldingspogingen<br>Nieuw (beheerder)<br>IP/ISP/land/gebruikersagent voor gebruiker/tenant<br> IP/ISP/land/gebruikersagent alleen gebruikt door gebruiker (met beheerdersrechten)<br>Eerste activiteit van gebruiker (met beheerdersrechten) sinds langere tijd<br>Eerste keer sinds langere tijd dat deze specifieke beheeractiviteit is uitgevoerd<br>Deze specifieke beheeractiviteit is niet gebruikelijk of niet eerder uitgevoerd<br>Voor dit IP bestaan alleen mislukte aanmeldingspogingen in het verleden<br>Onmogelijk traject|
 |Waarschuwing verdacht gebruik van de cloud|ALERT_DISCOVERY_ANOMALY_DETECTION|Met de anomaliedetectie van Cloud Discovery wordt het patroon van normaal gedrag gecontroleerd en wordt gekeken naar gebruikers en apps die op een ongebruikelijke manier worden gebruikt. |
@@ -60,7 +60,7 @@ De volgende typen waarschuwingen worden weergegeven.
 
 ## <a name="see-also"></a>Zie ook  
 [Dagelijkse activiteiten ter bescherming van uw cloudomgeving](daily-activities-to-protect-your-cloud-environment.md)   
-[Ga naar de ondersteuningspagina van Cloud App Security voor technische ondersteuning.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Premier-klanten kunnen Cloud App Security ook rechtstreeks vanuit Premier Portal kiezen.](https://premier.microsoft.com/)  
   
   

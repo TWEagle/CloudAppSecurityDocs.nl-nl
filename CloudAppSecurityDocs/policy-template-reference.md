@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,17 +13,17 @@ ms.technology:
 ms.assetid: a6658937-57a2-484a-85cb-5a4cdbeeb002
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d9ffe832652885548ddeb49fd782d2a104c7523f
-ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
+ms.openlocfilehash: 8e6d318be12d776c2bf399f4aec07be92b0a7128
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="policy-templates"></a>Beleidssjablonen
 
 Hier volgt een lijst met alle beleidssjablonen die zijn opgenomen in Cloud App Security. Voor het gebruiksgemak raden wij u aan bij het maken van beleid zoveel mogelijk gebruik te maken van een bestaande sjabloon.
 
-|Risicocategorie|Naam van sjabloon|Beschrijving|
+|Risicocategorie|Naam van sjabloon|Description|
 |-----|----|----|
 |Cloud Discovery|Afwijkend gedrag in gedetecteerde gebruikers|Ontvang een waarschuwing wanneer afwijkend gedrag wordt vastgesteld bij gedetecteerde gebruikers en apps, zoals: grote hoeveelheden geüploade gegevens in vergelijking met andere gebruikers, grote gebruikerstransacties vergeleken met de geschiedenis van de gebruiker.|
 |Cloud Discovery|Afwijkend gedrag van gedetecteerde IP-adressen|Ontvang een waarschuwing wanneer in gevonden IP-adressen en apps afwijkend gedrag wordt gedetecteerd, zoals grote hoeveelheden geüploade gegevens in vergelijking met andere IP-adressen, grote app-transacties in vergelijking met de geschiedenis van het IP-adres.|
@@ -62,6 +62,6 @@ Hier volgt een lijst met alle beleidssjablonen die zijn opgenomen in Cloud App S
 
 ## <a name="see-also"></a>Zie ook  
 [Dagelijkse activiteiten ter bescherming van uw cloudomgeving](daily-activities-to-protect-your-cloud-environment.md)   
-[Ga naar de ondersteuningspagina van Cloud App Security voor technische ondersteuning.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Premier-klanten kunnen Cloud App Security ook rechtstreeks vanuit Premier Portal kiezen.](https://premier.microsoft.com/)  
   
