@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/7/2017
+ms.date: 1/15/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3a677bc7-c8b7-4c6a-aada-82c8b3778352
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d7c37ad69347de717dbef2179191e35284bd27c2
-ms.sourcegitcommit: 938c799a13a81f3289229ea883c65bd1669b2ec4
+ms.openlocfilehash: 81860849cb2c1a2a6d35c34e893d0e241a5f670f
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="connect-azure-to-microsoft-cloud-app-security"></a>Verbinding maken met Azure en Microsoft Cloud App Security
 
@@ -98,7 +98,7 @@ Cloud App Security verbindt met Azure via Event Hubs. Deze sectie biedt instruct
 
 ## <a name="see-also"></a>Zie ook  
 [Cloud-apps beheren met beleidsregels](control-cloud-apps-with-policies.md)   
-[Ga naar de ondersteuningspagina van Cloud App Security voor technische ondersteuning.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Premier-klanten kunnen Cloud App Security ook rechtstreeks vanuit Premier Portal kiezen.](https://premier.microsoft.com/)  
   
   

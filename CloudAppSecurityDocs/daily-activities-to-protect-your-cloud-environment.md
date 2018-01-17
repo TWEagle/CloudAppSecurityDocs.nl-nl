@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a835fa24-15c5-4bbb-a25a-688444040f1f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 8bfd63e9d2491025158526fa41fb2f5240df2a28
-ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
+ms.openlocfilehash: 23962681e54706002322edeab3166d1a09e12f2f
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="working-with-the-dashboard"></a>Werken met het dashboard
 Als u Cloud App Security hebt opgestart, moet u de gegevensstromen configureren, de apps goedkeuren die personen mogen gebruiken en beleidsregels instellen om uw cloudomgeving te bewaken. Vervolgens kunt u Cloud App Security gebruiken om uw cloud te beveiligen en de risico's te beheren.  
@@ -40,5 +40,5 @@ U wordt aangeraden dagelijks in het dashboard te controleren welke nieuwe waarsc
 
 ## <a name="next-steps"></a>Volgende stappen  
 Zie [Onderzoeken](investigate.md) voor meer informatie over het onderzoeken van waarschuwingen.  
-Ga naar de [ondersteuningspagina van Cloud App Security voor technische ondersteuning.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 Premier-klanten kunnen Cloud App Security ook rechtstreeks vanuit [Premier Portal](https://premier.microsoft.com/) kiezen.  

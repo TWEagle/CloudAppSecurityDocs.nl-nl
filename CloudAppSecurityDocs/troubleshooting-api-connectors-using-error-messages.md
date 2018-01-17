@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4b6ac04a-4653-4c4a-bd6f-5926743475cc
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 306d2d2a5dde99efb99d1e2e04e03ed1abfb71bb
-ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
+ms.openlocfilehash: 83533fcf57da6fa65e0c1efda15a3d3440c290e6
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="troubleshooting-app-connectors-using-error-messages"></a>Foutberichten gebruiken om problemen met app-connectors op te lossen
 
@@ -25,7 +25,7 @@ App-connectorfouten worden weergegeven in het dialoogvenster van de app-connecto
 
 
 > [!div class="mx-tableFixed"]
-|Foutbericht|Relevante app|Beschrijving|Oplossing|
+|Foutbericht|Relevante app|Description|Oplossing|
 |----|----|----|------------|
 |HttpRequestFailure: De server heeft de volgende fout geretourneerd: 400 - Ongeldige aanvraag: {"error":{"code":"AF20012","message":"De opgegeven tenant-id (Tenant_ID wordt hier ingevoegd) is onjuist geconfigureerd in het systeem."|Office 365 |Er zijn geen toegewezen Office 365-licenties gevonden. |Wijs ten minste één Office 365-licentie toe aan uw tenant.| 
 |AuthFatalFailureException: com.box.boxjavalibv2.exceptions.BoxServerException: {"error":"invalid_grant","error_description":"Ongeldig vernieuwingstoken"}|Box|Het vernieuwingstoken in Box is ongeldig|Volg opnieuw de procedure voor het maken van verbinding tussen Box en Cloud App Security.|
@@ -57,7 +57,7 @@ App-connectorfouten worden weergegeven in het dialoogvenster van de app-connecto
 
 ## <a name="see-also"></a>Zie ook  
 [Dagelijkse activiteiten ter bescherming van uw cloudomgeving](daily-activities-to-protect-your-cloud-environment.md)   
-[Ga naar de ondersteuningspagina van Cloud App Security voor technische ondersteuning.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Premier-klanten kunnen Cloud App Security ook rechtstreeks vanuit Premier Portal kiezen.](https://premier.microsoft.com/)  
   
   

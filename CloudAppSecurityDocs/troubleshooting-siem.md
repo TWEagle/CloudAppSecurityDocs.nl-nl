@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: de64d9ca-eaed-4243-bcf7-adca5aff18c8
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 386f9d87ea477b75af03bc03d44f2a36657e2b6d
-ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
+ms.openlocfilehash: 5b801b889abdac386cba5cb850dc5d38bbba205c
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="troubleshooting-the-siem-agent"></a>Problemen met de SIEM-agent oplossen
 
@@ -25,7 +25,7 @@ Controleer of de SIEM-agent in de Cloud App Security-portal niet de status **Ver
 
 Als u tijdens het uitvoeren van de agent een van de volgende fouten in de opdrachtprompt ziet, gebruikt u de volgende stappen om het probleem te verhelpen:
 
-|Fout|Beschrijving|Oplossing|
+|Fout|Description|Oplossing|
 |----|----|----|
 |Algemene fout tijdens bootstrap|Onverwachte fout tijdens agent-bootstrap.|Neem contact op met ondersteuning.|
 |Te veel kritieke fouten|Er zijn te veel kritieke fouten opgetreden bij het verbinden van de console. Wordt afgesloten.|Neem contact op met ondersteuning.|
@@ -35,7 +35,7 @@ Als u tijdens het uitvoeren van de agent een van de volgende fouten in de opdrac
 
 Als u na het maken van de agent een van de volgende **agent-meldingen** in de Cloud App Security-portal op de pagina SIEM-agent ziet, gebruikt u de volgende stappen om het probleem te verhelpen:
 
-|Fout|Beschrijving|Oplossing|
+|Fout|Description|Oplossing|
 |----|----|----|
 |**Interne fout**|Er is een onbekende fout opgetreden bij uw SIEM-agent.|Neem contact op met ondersteuning.|
 |**Verzendfout bij gegevensserver**|U kunt deze foutmelding krijgen als u met een Syslog-server via TCP werkt. De SIEM-agent kan geen verbinding maken met de Syslog-server.  Als deze foutmelding wordt weergegeven, haalt de agent pas weer nieuwe activiteiten op als het probleem is opgelost. Voer daarom de herstelstappen uit tot er geen fouten meer worden weergegeven.|1. Controleer of u uw Syslog-server correct hebt gedefinieerd: bewerk in de Cloud App Security-gebruikersinterface uw SIEM-agent zoals hierboven wordt beschreven, zorg ervoor dat de naam van de server goed is geschreven en stel de juiste poort in. </br>2. Controleer de verbinding met de Syslog-server: zorg ervoor dat de communicatie niet wordt geblokkeerd door uw firewall.| 
@@ -47,7 +47,7 @@ Als u na het maken van de agent een van de volgende **agent-meldingen** in de Cl
 
 ## <a name="see-also"></a>Zie ook  
 [Dagelijkse activiteiten ter bescherming van uw cloudomgeving](daily-activities-to-protect-your-cloud-environment.md)   
-[Ga naar de ondersteuningspagina van Cloud App Security voor technische ondersteuning.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Premier-klanten kunnen Cloud App Security ook rechtstreeks vanuit Premier Portal kiezen.](https://premier.microsoft.com/)  
   
   

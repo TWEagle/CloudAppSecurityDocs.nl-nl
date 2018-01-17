@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/24/2017
+ms.date: 1/15/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 85cae50d-f571-4907-9600-da4cc187b43b
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2bd354c817152735be5485b24202c8706163404e
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: cc5f5896a8a4abb69efff6deab94f7e55108eeff
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 01/16/2018
 ---
 ##  <a name="Adminsettings"></a> Uw beheerinstellingen aanpassen  
 Als u uw voorkeuren instelt als beheerder van Cloud App Security, klikt u op uw naam in de portalmenubalk en selecteer **gebruikersinstellingen** om de volgende instellingen:  
@@ -41,7 +41,7 @@ Als u uw voorkeuren instelt als beheerder van Cloud App Security, klikt u op uw 
     
 ## <a name="see-also"></a>Zie ook  
 [Cloud Discovery instellen](set-up-cloud-discovery.md)   
-[Ga naar de ondersteuningspagina van Cloud App Security voor technische ondersteuning.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Premier-klanten kunnen Cloud App Security ook rechtstreeks vanuit Premier Portal kiezen.](https://premier.microsoft.com/)  
   
   

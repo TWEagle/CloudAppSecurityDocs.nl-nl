@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a9b00c2a-2f71-499e-8f57-67e560daedc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7ffb49e882856b144fff028c7b10167b5c55356f
-ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
+ms.openlocfilehash: e0d61fcd3147b25b84c7e5071ba8e7a02bc05f67
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="investigate"></a>Onderzoeken
 Nadat Cloud App Security wordt uitgevoerd in uw cloudomgeving, hebt u eerst een fase nodig waarin u leert en onderzoekt hoe u de hulpprogramma's van Cloud App Security kunt gebruiken om meer inzicht te krijgen in wat er in uw cloudomgeving gebeurt. Vervolgens kunt u op basis van uw specifieke omgeving en hoe deze wordt gebruikt bepalen welke vereisten nodig zijn om uw organisatie te beschermen tegen risico's.
@@ -27,7 +27,7 @@ In dit onderwerp wordt beschreven hoe u een onderzoek uitvoert om een beter inzi
 ## <a name="dashboards"></a>Dashboards  
 De volgende dashboards kunnen u helpen bij het onderzoeken van apps in uw cloudomgeving:  
 
-|Dashboard|Beschrijving|  
+|Dashboard|Description|  
 |---------------|-----------------|  
 |Hoofddashboard|Overzicht van cloudstatus (gebruikers, bestanden, activiteiten) en de vereiste acties (waarschuwingen, schendingen van activiteiten en schendingen van inhoud)|  
 |Toepassingsdashboard: algemeen|Overzicht van het gebruik van toepassingen per locatie, gebruiksgrafieken per aantal gebruikers|  
@@ -154,5 +154,5 @@ Nu u het beleid hebt geïmplementeerd, ziet u tot uw verrassing een waarschuwing
 
 ## <a name="see-also"></a>Zie ook  
 Zie [Beheer](control.md) voor meer informatie over hoe u de cloud-apps in uw organisatie kunt beheren.   
-Ga naar de [ondersteuningspagina van Cloud App Security](http://support.microsoft.com/oas/default.aspx?prid=16031) voor technische ondersteuning.  
+
 Premier-klanten kunnen Cloud App Security ook rechtstreeks vanuit [Premier Portal](https://premier.microsoft.com/) kiezen.  

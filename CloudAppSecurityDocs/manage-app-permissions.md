@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 137e0630-5440-4c49-bfe4-48bbc64575e2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b75e0c1cc4d91cfcbb8631170a0adfbde9349dee
-ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
+ms.openlocfilehash: 6d6daa74269057595a34db7813d0cd6ba5eaf947
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="manage-app-permissions"></a>App-machtigingen beheren
 Veel productiviteits-apps van derden die door gebruikers in uw organisatie worden geïnstalleerd, vragen om toestemming voor het krijgen van toegang tot gebruikersinformatie en -gegevens, en het namens de gebruiker aanmelden bij andere cloud-apps, zoals Office 365, G Suite en Salesforce.  Wanneer gebruikers deze apps installeren, klikken ze meestal op Accepteren zonder de details te lezen, zoals welke machtigingen ze de app verlenen.  Daar komt nog bij dat de IT-afdeling mogelijk te weinig inzicht heeft in de beveiligingsrisico's van een app, zodat ze geen goede afweging kunnen maken tussen die risico's en de productiviteitsvoordelen. Omdat het accepteren van app-machtigingen een mogelijk beveiligingsrisico inhoudt voor uw organisatie, is het belangrijk om de app-machtigingen die uw gebruikers verlenen te kunnen bewaken, zodat u de noodzakelijke zichtbaarheid en controle hebt om uw gebruikers en toepassingen te beschermen. Met App-machtigingen van Cloud App Security kunt u zien welke door de gebruikers geïnstalleerde toepassingen toegang hebben tot gegevens van Office 365, G Suite en Salesforce, welke machtigingen de apps hebben en welke gebruikers de apps hebben gemachtigd voor toegang tot hun Office 365-, G Suite- en Salesforce-account. Met app-machtigingen kunt u beslissen welke apps voor uw gebruikers zijn toegestaan en welke u wilt verbieden.
@@ -55,7 +55,7 @@ De pagina App-machtigingen biedt de volgende informatie over apps van derden waa
 ## <a name="ban-or-approve-an-app"></a>Een app verbieden of goedkeuren
 1. Klik op de pagina App-machtigingen op de app te openen van de App lade voor meer informatie over de app en de machtigingen die deze heeft gekregen. U kunt klikken op de koppeling Machtigingen voor een volledige lijst met machtigingen die aan de app zijn verleend. Onder Gebruik van community's kunt u zien in hoeverre de app wordt gebruikt bij andere organisaties. U kunt ook klikken op de koppeling Gerelateerde activiteiten om de activiteiten weer te geven die zijn vermeld in het beheerlogboek voor deze app.
 2. Als u de app wilt verbieden, klikt u op het pictogram Verbieden aan het einde van de rij voor de app in de tabel. <br></br>
- ![pictogram app verbieden](./media/ban-app-icon.png) <br></br>
+ ![pictogram bEen-app](./media/ban-app-icon.png) <br></br>
 Wanneer u een app verbiedt, kunt u kiezen of u wilt dat de gebruikers die de app hebben geïnstalleerd en geautoriseerd, ervan op de hoogte worden gebracht dat de app is verboden en uitgeschakeld, en geen toegang heeft tot de verbonden app. Als u dat niet wilt, schakelt u de optie Gebruikers op de hoogte stellen die toegang hebben verleend tot deze verboden app in het dialoogvenster App verbieden uit.
 
     ![app verbieden](./media/ban-app.png)
@@ -91,7 +91,7 @@ U kunt app-machtigingen opvragen in de weergave **Standaard** of **Geavanceerd**
 
 ## <a name="see-also"></a>Zie ook  
 [Cloud-apps beheren met beleidsregels](control-cloud-apps-with-policies.md)   
-[Ga naar de ondersteuningspagina van Cloud App Security voor technische ondersteuning.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Premier-klanten kunnen Cloud App Security ook rechtstreeks vanuit Premier Portal kiezen.](https://premier.microsoft.com/)  
   
   
