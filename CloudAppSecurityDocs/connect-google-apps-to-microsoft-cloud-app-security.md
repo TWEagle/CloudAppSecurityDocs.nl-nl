@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0985bae59132180b4a22140afd5f00e0b722660a
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 4b673fa732e553319483f11af5c95e33148bb05f
+ms.sourcegitcommit: 9cfb4b4e91e37fa3acf238b729cb68be0adc7086
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 01/21/2018
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>Verbinding maken tussen G Suite en Microsoft Cloud App Security
 In deze sectie vindt u instructies voor het maken van een verbinding tussen Cloud App Security en uw bestaande G Suite-account met behulp van de connector-API's.
@@ -185,7 +185,7 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
   
            https://www.googleapis.com/auth/admin.directory.user  
 
-    -   Als G suite gevraagd voor zichtbaarheid, selecteert u **mijn domein** (niet-openbare). 
+    -   Onder **zichtbaarheid**, selecteer **mijn domein** (niet-openbare). 
     -   Klik op **Save Changes** (Wijzigingen opslaan).  
   
 22. Ga naar [admin.google.com](https://admin.google.com/) en kies vervolgens **Security** (beveiliging). 

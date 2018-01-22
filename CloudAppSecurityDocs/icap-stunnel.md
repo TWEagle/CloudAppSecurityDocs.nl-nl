@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 1/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 9656f6c6-7dd4-4c4c-a0eb-f22afce78071
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6277f0789780a2ae4fe9a4978af970f7ad961503
-ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
+ms.openlocfilehash: eeda929ecc4bc029f0fd292f4276ba55f202d314
+ms.sourcegitcommit: 9cfb4b4e91e37fa3acf238b729cb68be0adc7086
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 01/21/2018
 ---
 # <a name="external-dlp-integration"></a>Externe DLP-integratie
 
@@ -254,7 +254,9 @@ In ForcePoint, stelt u uw apparaat met de volgende stappen:
 
 ## Bijlage B: Symantec Implementatiehandleiding<a name="symantec"></a>
 
-De ondersteunde versies van Symantec DLP zijn 11 en hoger. Zoals eerder vermeld, implementeert u een detectie-server in de dezelfde Azure-datacenter waarin uw tenant Cloud App Security zich bevindt. De detectie-server wordt gesynchroniseerd met de server afdwingen via een speciale IPSec-tunnel. 
+De ondersteunde versies van Symantec DLP zijn 11 en hoger. 
+
+Zoals eerder vermeld, implementeert u een detectie-server in de dezelfde Azure-datacenter waarin uw tenant Cloud App Security zich bevindt. De detectie-server wordt gesynchroniseerd met de server afdwingen via een speciale IPSec-tunnel. 
  
 ### <a name="detection-server-installation"></a>Detectie-serverinstallatie 
 De detectie-server die wordt gebruikt door Cloud App Security is een standaard netwerk te voorkomen dat voor de webserver. Er zijn verschillende configuratieopties die moeten worden gewijzigd:
@@ -279,7 +281,10 @@ De detectie-server die wordt gebruikt door Cloud App Security is een standaard n
 
 
 ### <a name="policy-configuration"></a>Configuratie van beleid
-Cloud App Security ondersteunt naadloos alle typen detectieregels opgenomen met de Symantec DLP, dus u hoeft niet te wijzigen van bestaande regels. Er is echter een configuratiewijziging die moet worden toegepast op alle nieuwe en bestaande beleidsregels voor volledige integratie. Deze wijziging is de toevoeging van een specifieke antwoordregel voor elk beleid. Wijzigen van de configuratie toevoegen aan uw Vontu:
+Cloud App Security ondersteunt naadloos alle typen detectieregels opgenomen met de Symantec DLP, dus u hoeft niet te wijzigen van bestaande regels. Er is echter een configuratiewijziging die moet worden toegepast op alle nieuwe en bestaande beleidsregels voor volledige integratie. Deze wijziging is de toevoeging van een specifieke antwoordregel voor elk beleid. 
+
+Wijzigen van de configuratie toevoegen aan uw Vontu:
+
 1.  Ga naar **beheren** > **beleid** > **antwoord regels** en klik op **antwoord-regel toevoegen**.
     
     ![antwoordregel voor het toevoegen](./media/icap-add-response-rule.png)
@@ -293,13 +298,22 @@ Cloud App Security ondersteunt naadloos alle typen detectieregels opgenomen met 
     ![blok http](./media/icap-block-http.png)
 
 De regel die u hebt gemaakt voor elk bestaand beleid toevoegen:
+
 1. In elke beleidsregel overschakelen naar de **antwoord** tabblad.
-2. Van de **antwoordregel** vervolgkeuzelijst, selecteer het antwoord blok regel u die eerder is gemaakt.
+
+2. Van de **antwoordregel** vervolgkeuzelijst het antwoord blok regel u die eerder is gemaakt.
+
 3. Sla het beleid.
    
     ![proefmodus uitschakelen](./media/icap-add-policy.png)
 
 Deze regel moet worden toegevoegd aan het bestaande beleid.
 
+>[!NOTE]
+> Als u een Symantec vontu gebruikt om te scannen bestanden van Dropbox, CA's wordt automatisch het bestand als weergegeven die afkomstig zijn van de volgende URL: http://misc/filename deze tijdelijke aanduiding-url niet daadwerkelijk leiden voor elke locatie, maar wordt gebruikt voor de registratie.
 
 
+## <a name="see-also"></a>Zie ook  
+[Cloud-apps beheren met beleidsregels](control-cloud-apps-with-policies.md)   
+
+[Premier-klanten kunnen Cloud App Security ook rechtstreeks vanuit Premier Portal kiezen.](https://premier.microsoft.com/)  

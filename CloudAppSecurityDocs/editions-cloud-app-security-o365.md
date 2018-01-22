@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 49c12f7c-3fb8-46ac-b2ab-59ba6cf2ddfb
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 31ad69a45beee3bb55e8df84ff92384f639caede
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: cfe5f1170793249290e0785c99bd94548dbef92f
+ms.sourcegitcommit: 9cfb4b4e91e37fa3acf238b729cb68be0adc7086
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 01/21/2018
 ---
 # <a name="what-are-the-differences-between-microsoft-cloud-app-security-and-office-365-cloud-app-security"></a>Wat zijn de verschillen tussen Microsoft Cloud App Security- en Office 365 Cloud App Security?
 
@@ -38,7 +38,7 @@ Office 365 Cloud App Security is een subset van de Microsoft Cloud App Security 
 |----|----|----|----|
 |Cloud Discovery|Gedetecteerde apps |15.000 + cloud-apps  |750 + cloud-apps Cloud-apps met een vergelijkbare functionaliteit op Office 365|
 ||Implementatie voor analyse van de detectie|Uploaden van Logboeken voor handmatige en automatische|Handmatige upload logboek|
-||Meld u anonymization voor de privacy van gebruikers|Ja|Nee|
+||Meld u anonymization voor de privacy van gebruikers|Ja||
 ||Toegang tot de volledige catalogus met Cloud-Apps|Ja||
 ||Cloud app risico-evaluatie|Ja||
 ||Gebruiksanalyse cloud per app, gebruiker, IP-adres|Ja||
