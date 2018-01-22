@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 1/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,23 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7af8bb9db16ae5b45b2251e6de03aec57b15d1d9
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: e47525f2a84b2c0515cb87010ce20681b9519a3b
+ms.sourcegitcommit: 9cfb4b4e91e37fa3acf238b729cb68be0adc7086
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 01/21/2018
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Wat is er nieuw is bij de Microsoft Cloud App Security
+
+## <a name="cloud-app-security-release-115"></a>Cloud App Security-release 115
+21 januari 2018 uitgebracht
+
+-   Deze versie biedt een verbeterde ervaring bij het selecteren van specifieke mappen in de beleidsregels voor bestanden. U kunt nu eenvoudig weergeven en selecteren meerdere mappen in een beleid op te nemen. 
+-   In de **gedetecteerde apps** pagina: 
+   - De functie Labels bulksgewijs kunt u aangepaste labels (in aanvulling op erkende en niet-toegestane tags) toepassen. 
+   - Wanneer u **een IP-adres genereren**, de geëxporteerde rapporten omvatten nu de informatie over het verkeer van erkende is of niet-toegestane apps. 
+-   U kunt nu een nieuwe API-App-connector van het team van Microsoft Cloud App Security rechtstreeks in de portal aanvragen bij de **verbinding maken met een app** pagina. 
+
 
 ## <a name="cloud-app-security-release-114"></a>Cloud App Security-release 114
 7 januari 2018 uitgebracht
@@ -34,7 +44,7 @@ ms.lasthandoff: 01/16/2018
 
 -   We zijn trots aankondiging van Cloud App Security ondersteunt nu verdiept integratie met Azure Information Protection. Deze openbare preview-functie kunt u om te scannen en classificeren van bestanden in de cloud-apps en Azure Information protection labels voor beveiliging automatisch worden toegepast. Deze functie is beschikbaar voor Box, SharePoint en OneDrive. Zie voor meer informatie [integratie van Azure Information Protection](azip-integration.md).
 
--   Cloud Discovery logboek parsers nu ondersteuning voor algemene indelingen: LEEF, CEF en WC3.
+-   Cloud Discovery logboek parsers nu ondersteuning voor algemene indelingen: LEEF, CEF en W3C.
 
 
 ## <a name="cloud-app-security-release-112"></a>Cloud App Security-release 112
