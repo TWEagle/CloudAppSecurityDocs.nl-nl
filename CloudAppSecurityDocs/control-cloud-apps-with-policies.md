@@ -13,20 +13,20 @@ ms.technology:
 ms.assetid: 14d10238-0f61-43e9-ab96-71534a27d3d4
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 354beea33a126b676e379b54d05989f87a0a9910
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 89a71f9274d5005a93576dfc4ef6436870b9bd4b
+ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="control-cloud-apps-with-policies"></a>Cloud-apps beheren met beleidsregels
 
-Met beleidsregels kunt u de manier vastleggen waarop u wilt dat uw gebruikers zich gedragen in de cloud. Beleidsregels helpen u risicovol gedrag, schendingen of verdachte datapunten en -activiteiten binnen uw cloudomgeving te detecteren en, indien vereist, herstelwerkstromen te integreren om een optimale risicobeperking te behalen. Er zijn meerdere typen beleidsregels die samenhangen met de verschillende typen gegevens die u wilt verzamelen over uw cloudomgeving en de soorten herstelacties die u zou willen ondernemen.  
+Met beleidsregels kunt u de manier vastleggen waarop u wilt dat uw gebruikers zich gedragen in de cloud. Beleidsregels helpen u risicovol gedrag, schendingen of verdachte datapunten en activiteiten in uw cloudomgeving detecteren en indien nodig, te integreren herstelwerkstromen voor een optimale risicobeperking te behalen. Er zijn meerdere typen beleidsregels die samenhangen met de verschillende typen gegevens die u wilt verzamelen over uw cloudomgeving en de soorten herstelacties die u zou willen ondernemen.  
   
-Als er bijvoorbeeld een gegevensschendingsbedreiging is die u in quarantaine wilt zetten, heeft u een ander stoort beleid nodig dan wanneer u een risicovolle cloud-app wilt blokkeren voor gebruik binnen uw organisatie.  
+Bijvoorbeeld, als er een schending bedreiging voor gegevens die u wilt isoleren, moet u een ander type beleid dan als u wilt blokkeren een risicovolle cloud-app wordt gebruikt door uw organisatie.  
   
 ## <a name="policy-types"></a>Beleidstypen  
-Wanneer u kijkt naar de pagina **Beleid**, kunt u de verschillende beleidsregels en sjablonen onderscheiden aan de hand van het type en pictogram, om te zien welke beleidsregels beschikbaar zijn. Welke beleidsregels beschikbaar zijn, is afhankelijk van de gegevensbron en wat u hebt ingeschakeld in Cloud App Security voor uw organisatie. Als u bijvoorbeeld Cloud Discovery-logboeken hebt geüpload, worden de beleidsregels met betrekking tot Cloud Discovery weergegeven.
+Wanneer u bekijkt de **beleid** pagina, de verschillende beleidsregels en sjablonen kunnen worden onderscheiden door het type en pictogram om te zien welke beleidsregels zijn beschikbaar. Beschikbaar beleid is afhankelijk van de gegevensbron en wat u hebt ingeschakeld in de Cloud App Security voor uw organisatie, bijvoorbeeld, als u Cloud Discovery-logboeken geüpload, het beleid met betrekking tot Cloud Discovery weergegeven.
 
 De volgende soorten beleidsregels kunnen worden gemaakt:  
   
@@ -58,8 +58,7 @@ Cloud App Security helpt u bij het beperken van verschillende risico's in de clo
   
 -   **Cloud Discovery:** worden er nieuwe apps gebruikt binnen uw organisatie? Hebt u een probleem met schaduw IT-apps die zonder uw weten worden gebruikt?  
   
-     Breng de algemene risico’s van elke cloud-app in kaart op basis van regelgevings- en branchecertificeringen, en  
-    aanbevolen procedures. Dit biedt u de mogelijkheid om het aantal gebruikers, activiteiten, omvang van het verkeer en de gemiddelde gebruiksduur in uren vast te stellen voor  
+     Algemene risico's voor elke cloud-app op basis van regelgeving beoordelen en branchecertificeringen en best practices, kunt u het aantal gebruikers, activiteiten, omvang van het verkeer en gemiddelde gebruiksduur in uren voor bewaken  
     elke cloud-app.  
   
 -   **DLP:** worden vertrouwelijke bestanden openbaar gedeeld? Moet u de bestanden in quarantaine plaatsen?  
@@ -90,9 +89,9 @@ Ga als volgt te werk om met beleidsregels risico’s te beheren:
 ### <a name="create-a-policy"></a>Een beleid maken  
 U kunt als basis voor al uw beleidsregels gebruikmaken van een van de beleidssjablonen van Cloud App Security of uw beleidsregels maken met behulp van een query.  
   
-Beleidssjablonen helpen u bij het instellen van de juiste filters en configuraties die nodig zijn voor het detecteren van specifieke gebeurtenissen die van belang zijn binnen uw omgeving. De sjablonen omvatten alle typen beleidsregels en kunnen toegepast worden op diverse services.  
+Beleidssjablonen helpen u de juiste filters en configuraties die nodig zijn voor het detecteren van specifieke gebeurtenissen van belang zijn binnen uw omgeving instellen. De sjablonen omvatten alle typen beleidsregels en kunnen toegepast worden op diverse services.  
   
-Volg de volgende stappen wanneer u een beleid wilt maken met behulp van een **beleidssjabloon**:  
+Maken van een beleid van **beleidssjablonen**, voer de volgende stappen uit:  
   
 1.  Klik in de console op **Besturingselement** gevolgd door **Sjablonen**.  
   
@@ -102,21 +101,21 @@ Volg de volgende stappen wanneer u een beleid wilt maken met behulp van een **be
   
 3.  Pas de sjabloon aan op uw op maat gemaakte beleid. Elke eigenschap en elk veld van dit nieuwe beleid dat op een sjabloon is gebaseerd, kan aan uw wensen worden aangepast.  
 > [!NOTE] 
->Wanneer u de beleidsfilters gebruikt, zoekt **Bevat** alleen naar volledige woorden die zijn gescheiden door komma’s, punten, spaties of onderstrepingstekens. Als u bijvoorbeeld zoekt op **malware** of **virus**, wordt virus_malware_file.exe wel gevonden maar malwarevirusfile.exe niet. Als u zoekt op **malware.exe** vindt u ALLE bestanden met ‘malware’ of ‘exe’ in de bestandsnaam, maar als u zoekt op **”malware.exe”** (met aanhalingstekens) vindt u alleen bestanden die precies “malware.exe” bevatten. 
-     **Is gelijk aan** zoekt alleen naar de volledige tekenreeks. Als u bijvoorbeeld zoekt naar **malware.exe** wordt malware.exe wel gevonden maar malware.exe.txt niet.  
-4.  Nadat u het nieuwe beleid maakt op basis van een sjabloon, wordt een koppeling naar het nieuwe beleid weergegeven in de kolom **Gekoppelde beleidsregels** in de beleidssjabloontabel naast de sjabloon waarmee het beleid is gemaakt.  
+>Wanneer u de beleidsfilters **bevat** wordt alleen gezocht naar volledige woorden die zijn gescheiden door komma's, punten, spaties of onderstrepingstekens bevatten. Bijvoorbeeld als u zoeken naar **malware** of **virus**, wordt virus_malware_file.exe gevonden maar malwarevirusfile.exe niet gevonden. Als u zoekt *malware.exe*, u alle bestanden met kwaadaardige software of exe vinden in de bestandsnaam, dat als u zoekt **"malware.exe"** (met aanhalingstekens) vindt u alleen bestanden die bevatten precies "malware.exe". 
+     **Is gelijk aan** wordt alleen gezocht naar de volledige tekenreeks, bijvoorbeeld als u zoeken naar *malware.exe* malware.exe gevonden maar malware.exe.txt niet gevonden.  
+4.  Nadat u het nieuwe beleid maakt op basis van een sjabloon, wordt een koppeling naar het nieuwe beleid weergegeven in de kolom **Gekoppelde beleidsregels** in de beleidssjabloontabel naast de sjabloon waarmee het beleid is gemaakt.   
      U kunt vanuit elke sjabloon zoveel beleidsregels maken als u wilt en deze zullen allemaal gekoppeld zijn aan de oorspronkelijke sjabloon. Hierdoor kunt u alle gemaakte beleidsregels volgen met behulp van dezelfde sjabloon.  
   
 U kunt ook **een beleid maken tijdens een onderzoek**. Als u **Activiteitenlogboek**, **Bestanden** of **Accounts** onderzoekt, en u zoekt verder naar iets specifieks, kunt u op elk gewenst moment een nieuw beleid maken op basis van de resultaten van uw onderzoek.  
   
-Als u bijvoorbeeld in het **Activiteitenlogboek** een beheerdersactiviteit vanaf een IP-adres buiten uw kantoor ziet staan.
+Als u bijvoorbeeld de **activiteitenlogboek**, en zien van een beheerdersactiviteit van buiten uw kantoor-IP-adressen.
 
   
-Volg de volgende stappen voor het maken van een beleid gebaseerd op onderzoeksresultaten:  
+Voer de volgende stappen uit voor het maken van een beleid dat is gebaseerd op onderzoeksresultaten:  
   
-1.  Klik in de console op **Onderzoeken** gevolgd door **Activiteitenlogboek**, **Bestanden** of **Accounts**.  
+1.  Klik in de console op **onderzoeken** gevolgd door **activiteitenlogboek**, **bestanden**, of **Accounts**.  
   
-2.  Gebruik de filters bovenaan de pagina om het aantal resultaten te beperken tot het verdachte gebied. Klik bijvoorbeeld in de pagina Activiteitenlogboek op **Activiteit** en selecteer **Aanmelding beheerder**. Selecteer vervolgens onder **IP-adres** de optie **Categorie** en stel in dat de weergegeven waarde niet de IP-adrescategorieën omvat die u hebt gemaakt voor uw herkende domeinen, zoals de IP-adressen van beheerders, zakelijke gebruikers en VPN’s.  
+2.  Gebruik de filters bovenaan de pagina om het aantal resultaten te beperken tot het verdachte gebied. Klik bijvoorbeeld in de pagina Activiteitenlogboek op **Activiteit** en selecteer **Aanmelding beheerder**. Klik vervolgens onder **IP-adres**, selecteer **categorie** en stel de waarde niet op te nemen IP-adres categorieën die u hebt gemaakt voor uw herkende domeinen, zoals de beheerder, het bedrijf en VPN IP-adressen.  
   
      ![Bestand maken op basis van onderzoek](./media/create-file-from-investigation.png)  
   
@@ -127,8 +126,8 @@ Volg de volgende stappen voor het maken van een beleid gebaseerd op onderzoeksre
 5.  Pas de sjabloon aan op uw op maat gemaakte beleid. Elke eigenschap en elk veld van dit nieuwe beleid dat op een onderzoek is gebaseerd, kan aan uw wensen worden aangepast.  
    
 > [!NOTE] 
-> Wanneer u de beleidsfilters gebruikt, zoekt **Bevat** alleen naar volledige woorden die zijn gescheiden door komma’s, punten, spaties of onderstrepingstekens. Als u bijvoorbeeld zoekt op **malware** of **virus**, wordt virus_malware_file.exe wel gevonden maar malwarevirusfile.exe niet.  
-     **Is gelijk aan** zoekt alleen naar de volledige tekenreeks. Als u bijvoorbeeld zoekt naar **malware.exe** wordt malware.exe wel gevonden maar malware.exe.txt niet.  
+> Wanneer u de beleidsfilters **bevat** wordt alleen gezocht naar volledige woorden die zijn gescheiden door komma's, punten, spaties of onderstrepingstekens bevatten. Bijvoorbeeld als u zoeken naar **malware** of **virus**, wordt virus_malware_file.exe gevonden maar malwarevirusfile.exe niet gevonden.  
+     **Is gelijk aan** wordt alleen gezocht naar de volledige tekenreeks, bijvoorbeeld als u zoeken naar **malware.exe** malware.exe gevonden maar malware.exe.txt niet gevonden.  
   
  
  
@@ -137,7 +136,7 @@ Volg de volgende stappen voor het maken van een beleid gebaseerd op onderzoeksre
  
   
 > [!NOTE]  
->  Raadpleeg de bijbehorende documentatie over beleid voor meer informatie over het instellen van de beleidsvelden:  
+>  Zie de bijbehorende documentatie over beleid voor meer informatie over het instellen van de Beleidsvelden:  
 >   
 >  [Beleidsregels voor gebruikersactiviteit](user-activity-policies.md)  
 >   
@@ -155,12 +154,12 @@ U kunt het beleid ook zodanig instellen dat u per e-mail of sms een waarschuwing
 Ga naar [De portal aanpassen](general-setup.md) om uw meldingsvoorkeuren in te stellen. 
   
 > [!NOTE] 
-> Het maximum aantal waarschuwingen dat via een sms-bericht kan worden verzonden, is 10 per telefoonnummer per dag. Houd er rekening mee dat de dag wordt bepaald op basis van de UTC-tijdzone. 
+> Het maximum aantal waarschuwingen die worden verzonden via SMS-bericht is 10 per telefoonnummer per dag. De dag wordt berekend op basis van de UTC-tijdzone. 
 
 
 ## <a name="enable-and-disable-policies"></a>Beleid in- en uitschakelen
 
-Nadat u een beleid hebt gemaakt, kunt u dat in- of uitschakelen. Daardoor hoeft u een beleid nadat u het hebt gemaakt niet te verwijderen om het te kunnen stopzetten. Als u om enigerlei reden het beleid wilt stopzetten, kunt u het tijdelijk uitschakelen.
+Nadat u een beleid hebt gemaakt, kunt u dat in- of uitschakelen. Daardoor hoeft u een beleid nadat u het hebt gemaakt niet te verwijderen om het te kunnen stopzetten. In plaats daarvan als u stoppen van het beleid voor een bepaalde reden wilt, uitschakelen tot u het opnieuw inschakelen.
 
 - Als u een beleid wilt inschakelen, klikt u op de pagina **Beleid** op de drie punten aan het einde van de rij van het beleid dat u wilt inschakelen en selecteert u **Inschakelen**. 
 

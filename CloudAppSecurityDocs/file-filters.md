@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 1/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c7c9fe0a5ace1bfd464160ee4c1c777cdc5f4195
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 995bcacd450856fb9aa75a4c7d48596a7fbc168c
+ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="files"></a>Bestanden
 
@@ -54,7 +54,10 @@ Hieronder volgt een lijst met de bestandsfilters die kunnen worden toegepast. De
 
 >**Is gelijk aan** zoekt alleen naar de volledige tekenreeks. Als u bijvoorbeeld zoekt naar **malware.exe** wordt malware.exe wel gevonden maar malware.exe.txt niet. 
 
--   Toegangsniveau – toegangsniveau delen; openbaar, extern, intern of privé.  Zie [General Setup, Set up the portal](getting-started-with-cloud-app-security.md) ('De portal instellen' in het artikel 'Algemene instellingen') voor meer informatie over externe bestanden. Interne bestanden zijn de bestanden in de interne domeinen die u instelt in [Algemene instellingen](General-setup.md). Externe bestanden zijn de bestanden die zijn opgeslagen op locaties die zich niet binnen de ingestelde interne domeinen bevinden. Gedeelde bestanden zijn bestanden met een hoger niveau voor delen dan Privé, inclusief intern gedeelde bestanden (bestanden die binnen uw interne domeinen worden gedeeld), extern gedeelde bestanden (bestanden die worden gedeeld in domeinen die niet in uw interne domeinen worden weergegeven), openbare bestanden met een koppeling (bestanden die met anderen kunnen worden gedeeld via een koppeling) en openbare bestanden (bestanden die kunnen worden gevonden door te zoeken op internet). 
+-   Toegangsniveau – toegangsniveau delen; openbaar, extern, intern of privé.  Zie voor meer informatie over externe bestanden [algemene instellingen van de portal instellen](getting-started-with-cloud-app-security.md)
+    - Interne zijn alle bestanden in de interne domeinen die u instelt in [algemene instellingen](General-setup.md). 
+    - Externe bestanden zijn de bestanden die zijn opgeslagen op locaties die zich niet binnen de ingestelde interne domeinen bevinden. 
+    - Gedeelde bestanden zijn bestanden met een hoger niveau voor delen dan Privé, inclusief intern gedeelde bestanden (bestanden die binnen uw interne domeinen worden gedeeld), extern gedeelde bestanden (bestanden die worden gedeeld in domeinen die niet in uw interne domeinen worden weergegeven), openbare bestanden met een koppeling (bestanden die met anderen kunnen worden gedeeld via een koppeling) en openbare bestanden (bestanden die kunnen worden gevonden door te zoeken op internet). 
 
 > [!NOTE]
 >  Bestanden die door externe gebruikers zijn gedeeld in uw gekoppelde opslag-apps worden als volgt verwerkt door Cloud App Security:
