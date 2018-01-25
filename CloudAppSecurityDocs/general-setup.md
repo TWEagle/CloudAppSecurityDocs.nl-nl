@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 1/21/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,13 @@ ms.technology:
 ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5f9868fab58c1809b80aaa6b06a797c4e70e2e64
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 7299b52fe26a079664489c0bc832dd898c2c6cfc
+ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 01/24/2018
 ---
-# <a name="basic-set-up"></a>Basisinstellingen
+# <a name="basic-setup"></a>Basisconfiguratie
 De volgende procedure bevat instructies voor het aanpassen van de Cloud App Security-portal.
 
 ## <a name="prerequisites"></a>Vereisten 
@@ -36,28 +36,24 @@ Voor toegang tot portal is het nodig zijn voor de volgende IP-adressen toevoegen
      
      ![algemene instellingen](./media/general-settings.png "algemene instellingen")  
   
-3.  Bij **Organisatiegegevens** is het van belang dat u een **Weergavenaam organisatie** opgeeft voor uw organisatie. Deze wordt weergegeven op de e-mailberichten en webpagina's die vanuit het systeem worden verzonden.  
+3.  Bij **Organisatiegegevens** is het van belang dat u een **Weergavenaam organisatie** opgeeft voor uw organisatie. Deze wordt weergegeven op het e-mailberichten en webpagina's die uit het systeem worden verzonden.  
   
 4. Geef een **omgevingsnaam** (tenant) op. Dit is vooral belangrijk als u meerdere tenants beheert.  
   
-4. Het is ook mogelijk om een **Logo** op te geven dat wordt weergegeven in e-mailmeldingen en webpagina’s die vanuit het systeem worden verzonden. Het logo moet een PNG-bestand zijn met een maximale grootte van 150 x 50 pixels op een transparante achtergrond.  
+4. Het is ook mogelijk om een **Logo** die wordt weergegeven in e-mailmeldingen verzonden uit het systeem en de webpagina's die uit het systeem worden verzonden. Het logo moet een PNG-bestand zijn met een maximale grootte van 150 x 50 pixels op een transparante achtergrond.  
 
 4.  Denk eraan om een lijst met uw **Beheerde domeinen** toe te voegen. Deze stap is cruciaal omdat in Cloud App Security door middel van de beheerde domeinen wordt bepaald welke gebruikers intern en extern zijn en welke bestanden al dan niet mogen worden gedeeld. Dit wordt gebruikt voor rapporten en waarschuwingen.  
 > [!NOTE] 
-> - Gebruikers in domeinen die niet zijn geconfigureerd als interne gebruikers, worden gemarkeerd als externe gebruikers en voor deze gebruikers worden de activiteiten of bestanden niet gescand.
+> - Gebruikers in domeinen die niet zijn geconfigureerd als interne zijn gemarkeerd als extern en niet voor activiteiten en bestanden worden gescand.
 
 5. Zie [Integratie van Azure Information Protection](azip-integration.md) voor informatie als u integreert met behulp van Azure Information Protection-integratie. 
   
   
-6.  Als u op enig moment een back-up wilt maken van uw portal-instellingen, biedt dit scherm hiervoor de mogelijkheid. Klik op **Portal-instellingen exporteren** om een json-bestand te maken van al uw portal-instellingen, zoals beleidsregels, gebruikersgroepen en IP-adresbereiken.  
+6.  Als u op enig moment een back-up wilt maken van uw portal-instellingen, biedt dit scherm hiervoor de mogelijkheid. Klik op **portal-instellingen exporteren** voor het maken van een json-bestand van alle uw portal-instellingen, met inbegrip van beleid regels, gebruikersgroepen en IP-adresbereiken.  
   
-       
-
-
-
+   
 > [!NOTE] 
-> Als u ExpressRoute gebruikt, is Cloud App Security geïmplementeerd in Azure en volledig geïntegreerd met [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/). Alle interacties met de Cloud App Security-apps en het verkeer dat wordt verzonden naar Cloud App Security, met inbegrip van het uploaden van detectielogboeken, verlopen via **openbare peering** van ExpressRoute voor verbeterde latentie, prestaties en beveiliging. Er zijn geen configuratiestappen vereist door de klant.  
-    Zie voor meer informatie over openbare peering [ExpressRoute-circuits en routeringsdomeinen](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/).  
+> Als u ExpressRoute gebruikt, is Cloud App Security geïmplementeerd in Azure en volledig geïntegreerd met [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/). Alle interacties met de Cloud App Security-apps en het verkeer dat wordt verzonden naar de Cloud App Security, waaronder het uploaden van detectielogboeken, verloopt via ExpressRoute **openbare peering** voor verbeterde latentie, prestaties en beveiliging. Er zijn geen configuratiestappen vereist door de klant. <br></br>Zie voor meer informatie over openbare peering [ExpressRoute-circuits en routeringsdomeinen](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/).  
     
 ## <a name="see-also"></a>Zie ook  
 [Cloud Discovery instellen](set-up-cloud-discovery.md)   

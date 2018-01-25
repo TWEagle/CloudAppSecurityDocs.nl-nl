@@ -13,17 +13,17 @@ ms.technology:
 ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 635535c0089a7c1dc8c1505c302b4e5245449029
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: af4552c9ffac66fae14b3fc5f84860e2d3761f88
+ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 01/24/2018
 ---
 ## <a name="managing-admin-access"></a>Beheerderstoegang beheren
 
-Cloud App Security ondersteunt op rollen gebaseerd toegangsbeheer. De volgende Office 365- en Azure AD-beheerdersrollen hebben standaard toegang tot Cloud App Security:
+Toegangsbeheer op basis van rollen biedt ondersteuning voor cloud App Security. De volgende Office 365- en Azure AD-beheerdersrollen hebben standaard toegang tot Cloud App Security:
 
-- Globale beheerder en Beveiligingsbeheerder: beheerders met **volledige toegang** beschikken over volledige machtigingen in de Cloud App Security admins toevoegen, het toevoegen van beleidsregels en instellingen, het uploaden van Logboeken en beheeracties uitvoeren.
+- Globale beheerder en Beveiligingsbeheerder: beheerders met **volledige toegang** volledige machtigingen hebben in de Cloud App Security admins toevoegen, het toevoegen van beleidsregels en instellingen, het uploaden van Logboeken en beheeracties uitvoeren.
 
 - Naleving administrator: alleen-lezen-machtigingen heeft en waarschuwingen kunt beheren. Kunt maken en wijzigen van beleidsregels voor bestanden, bestand governance toestaan acties en bekijk de ingebouwde rapporten onder beheer. 
 
@@ -31,7 +31,7 @@ Cloud App Security ondersteunt op rollen gebaseerd toegangsbeheer. De volgende O
       - Beleidsregels maken of bestaande beleidsregels bewerken of wijzigen 
       - Beheeracties uitvoeren 
       - Detectielogboeken uploaden
-      - Apps van derden verbieden of goedkeuren
+      - Verboden of voor het goedkeuren van apps van derden
       - De instellingenpagina voor het IP-adresbereik openen en weergeven
       - Instellingenpagina’s in het algemeen openen en weergeven 
       - Toegang tot en het weergeven van de instellingen voor netwerkdetectie 
@@ -39,19 +39,19 @@ Cloud App Security ondersteunt op rollen gebaseerd toegangsbeheer. De volgende O
       - Het beheerlogboek openen en weergeven 
       - De pagina Momentopnamerapporten beheren openen en weergeven 
 
-Zie voor meer informatie [Beheerdersrollen toewijzen in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-assign-admin-roles).
+Zie voor meer informatie [beheerdersrollen toewijzen in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-assign-admin-roles).
 
-U kunt via de volgende stappen ook extra beheerders toevoegen aan Cloud App Security zonder gebruikers toe te voegen aan Azure Active Directory-beheerdersrollen:
+U kunt ook extra beheerders toevoegen aan de Cloud App Security zonder gebruikers toevoegen aan Azure Active Directory-beheerdersrollen, door de volgende stappen uit te voeren:
 
 1. Klik op het tandwiel Instellingen ![instellingenpictogram](./media/settings-icon.png "instellingenpictogram") en vervolgens op **Beheerderstoegang beheren**. 
 
 2. Voeg de beheerders toe die toegang moeten hebben tot Cloud App Security.
   
       
-3. Klik vervolgens op de vervolgkeuzelijst om het type toegang voor de beheerder in te stellen: **volledige toegang** of **alleen lezen en waarschuwingen beheren**.
+3. Volgende, klikt u op de vervolgkeuzelijst om in te stellen welk type toegang tot de beheerder heeft, **volledige toegang** of **alleen-lezen en waarschuwingen beheren**.
 
      >[!NOTE]
-      >Een beheerder die slechts toegang heeft voor **alleen lezen en waarschuwingen beheren** en die probeert toegang te krijgen tot een pagina met beperkte toegang of probeert een actie met beperkte toegang uit te voeren, ontvangt een foutbericht dat hij of zij geen machtiging heeft om de pagina te openen of de actie uit te voeren.
+      >Een beheerder, waarvoor de toegang beperkt tot is **alleen-lezen en waarschuwingen beheren**, die probeert te krijgen van een pagina met beperkte toegang of het uitvoeren van een beperkte actie wordt een foutbericht dat ze niet gemachtigd voor toegang tot de pagina of de actie uitvoeren.
 
    ![beheerderstoegang beheren](./media/manage-admin-access.png "beheerderstoegang beheren")  
 
@@ -69,7 +69,7 @@ Als u bijvoorbeeld aan Sabien, die beveiligingslezer is in Azure Active Director
 Meer beheerders toevoegen aan Cloud App Security:
 1. Klik op het tandwiel Instellingen ![instellingenpictogram](./media/settings-icon.png "instellingenpictogram") en vervolgens op **Beheerderstoegang beheren**. 
 
-2. Voeg de beheerders toe die toegang moeten hebben tot Cloud App Security, selecteer hun toegangsniveau en klik op **Sluiten**.
+2. Voeg de beheerders toe die toegang moeten hebben tot Cloud App Security. Selecteer het toegangsniveau en klik op **sluiten**.
 
 
 

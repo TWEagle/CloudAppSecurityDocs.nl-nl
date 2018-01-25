@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 1/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 76dfaebb-d477-4bdb-b3d7-04cc3fe6431d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ae08c4e39fa01b1007dc0e14d8235558d2180372
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 0e3ed6adf784f1252e02c4abe847a7b3741d11ca
+ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="troubleshooting-cloud-discovery"></a>Problemen met Cloud Discovery oplossen
 ## <a name="log-parsing-errors"></a>Fouten bij het parseren van logboeken
@@ -28,7 +28,6 @@ U kunt de verwerking van Cloud Discovery-logboeken bijhouden met behulp van het 
 |FOUT|BESCHRIJVING|OPLOSSING|
 |----|----|----|
 |Niet-ondersteund bestandstype|Het geüploade bestand is geen geldig logboekbestand (bijvoorbeeld een afbeeldingsbestand).|Upload een **tekst**-, **zip**- of **gzip**-bestand dat rechtstreeks vanuit uw firewall of proxyserver is geëxporteerd.|
-|Interne fout|Er is een interne bronfout gedetecteerd|Klik op **Opnieuw** om de taak opnieuw uit te voeren.|
 |De logboekindeling komt niet overeen|De logboekindeling die u hebt geüpload, komt niet overeen met de verwachte indeling voor deze gegevensbron.|1. Controleer of het logboek niet is beschadigd. <br /> 2. U moet het logboek vergelijken en afstemmen met de voorbeeldindeling die op de uploadpagina wordt weergegeven.|
 |Transacties zijn meer dan negentig dagen oud|Alle transacties zijn meer dan negentig dagen oud en worden daarom genegeerd.|Exporteer een nieuw logboek met recente gebeurtenissen en upload het logboek opnieuw.|
 |Er zijn geen transacties voor gecatalogiseerde cloud-apps|Er zijn geen transacties voor herkende cloud-apps in het logboek gevonden.|Controleer of het logboek gegevens over uitgaand verkeer bevat.|

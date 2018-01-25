@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 1/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,20 +13,43 @@ ms.technology:
 ms.assetid: ab9bc377-d2f5-4f4c-a419-f1728a15d1c7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d23922461638b819b1f102a56dd86c01f544bfa8
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 11b8471a4693c283af22529a44e13ea857e37f79
+ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="anomaly-detection-policy"></a>Beleid voor afwijkingsdetectie
 Dit artikel bevat een verwijzing naar meer informatie over beleidsregels en geeft uitleg over elk beleidstype en de velden die kunnen worden geconfigureerd voor elk beleid.  
 
-Als uw organisatie wordt beveiligd door Cloud App Security, worden alle cloudactiviteiten beoordeeld volgens verschillende vooraf ingestelde risicofactoren. Cloud App Security analyseert elke gebruikerssessie in uw cloud en vergelijkt deze vervolgens met de risicofactoren die u hier instelt om u op de hoogte te stellen als er een activiteit plaatsvindt die afwijkt van de gebruikelijke activiteiten voor uw organisatie of van de gangbare gebruikersactiviteiten. De beleidspagina afwijkingsdetectie kunt u configureren en aanpassen welke families risicofactor worden meegenomen in het risicoanalyseproces. Het beleid kan anders worden afgedwongen voor verschillende gebruikers, locaties en organisatiesectoren. U kunt bijvoorbeeld een beleid instellen waarbij u geïnformeerd wordt als leden van uw IT-team buiten kantoor actief zijn.   
+Als uw organisatie wordt beveiligd door Cloud App Security, worden alle cloudactiviteiten beoordeeld volgens verschillende vooraf ingestelde risicofactoren. Cloud App Security analyseert elke gebruikerssessie in uw cloud en vergelijkt deze vervolgens met de risicofactoren die u hier instelt om u op de hoogte te stellen als er een activiteit plaatsvindt die afwijkt van de gebruikelijke activiteiten voor uw organisatie of van de gangbare gebruikersactiviteiten. Het beleid kan anders worden afgedwongen voor verschillende gebruikers, locaties en organisatiesectoren. U kunt bijvoorbeeld een beleid instellen waarbij u geïnformeerd wordt als leden van uw IT-team buiten kantoor actief zijn.   
 
-Cloud App Security heeft een initiële learning periode van zeven dagen waarover deze niet alle nieuwe gebruikers, de activiteit, de apparaten of de locaties als afwijkend markeren komt. Na deze periode wordt elke sessie vergeleken met de activiteiten, de tijd dat gebruikers actief waren, de IP-adressen, de apparaten, enzovoort die de afgelopen maand zijn gedetecteerd en wordt naar de risicoscore van deze activiteiten gekeken. Gebruik de schuifregelaar voor gevoeligheid in het beleid in te stellen van de minimale risicoscore waaruit worden waarschuwingen gegenereerd. Het wordt aanbevolen wanneer u een beleid voor afwijkingsdetectie maakt, gebruikt u de gevoeligheidsdrempelwaarde standaard voor een week, voordat u deze in overeenstemming met het aantal waarschuwingen die u hebt ontvangen, Cloud App Security verzendt u meer of minder waarschuwingen voor verschillende risico wanneer scores wijzigen u de gevoeligheid wijzigen.
-  
-![Schuifregelaar voor gevoeligheid](./media/sensitivity-slider.png)
+Cloud App Security heeft een initiële learning periode van zeven dagen waarover deze niet alle nieuwe gebruikers, de activiteit, de apparaten of de locaties als afwijkend markeren komt. Na deze periode wordt elke sessie vergeleken met de activiteiten, de tijd dat gebruikers actief waren, de IP-adressen, de apparaten, enzovoort die de afgelopen maand zijn gedetecteerd en wordt naar de risicoscore van deze activiteiten gekeken. 
+
+
+De volgende beleidsregels voor afwijkingsdetectie zijn beschikbaar:
+
+**Onmogelijke reis**
+- Deze detectie is onderdeel van de afwijkingsdetectie heuristische detectie-engine die profielen van uw omgeving en activeert waarschuwingen met betrekking tot een basislijn die is doorgegeven voor de activiteit van uw organisatie. Twee activiteiten van gebruikers worden aangeduid (is één of meerdere sessies) die afkomstig zijn van geografisch verafgelegen locaties binnen een periode korter is dan de tijd die het zou heb getransporteerd van de eerste locatie naar de tweede, die aangeeft dat de gebruiker een andere gebruiker dezelfde referenties gebruikt. Deze detectie maakt gebruik van een machine learning-algoritme dat wordt genegeerd voor de hand liggende 'valse positieven' bijdragen aan de voorwaarde onmogelijke reis zoals VPN-verbindingen en de locaties die regelmatig worden gebruikt door andere gebruikers in de organisatie. De detectie heeft een initiële learning periode van 7 dagen aan waarover het patroon van een nieuwe gebruiker-activiteit leert.
+
+
+**Activiteit van incidentele land**
+- Deze detectie is onderdeel van de afwijkingsdetectie heuristische detectie-engine die profielen van uw omgeving en activeert waarschuwingen met betrekking tot een basislijn die is doorgegeven voor de activiteit van uw organisatie. Deze detectie beschouwt voorbij activiteit locaties om te bepalen van de nieuwe en incidentele locaties. De afwijkingsdetectie detectie-engine bevat informatie over de voorgaande locaties die worden gebruikt door gebruikers in de organisatie. Een waarschuwing t wordt geactiveerd wanneer een activiteit plaatsvindt vanaf een locatie die niet onlangs of nooit door de gebruiker of door een gebruiker in de organisatie bezocht is. De detectie heeft een initiële learning periode van 7 dagen, waarin het heeft geen waarschuwing bij nieuwe locaties.
+
+
+**Activiteit vanaf anonieme IP-adressen**
+- Deze detectie is onderdeel van de afwijkingsdetectie heuristische detectie-engine die profielen van uw omgeving en activeert waarschuwingen met betrekking tot een basislijn die is doorgegeven voor de activiteit van uw organisatie. Deze detectie identificeert of de gebruikers actief vanaf een IP-adres dat is geïdentificeerd als een anonieme proxy IP-adres zijn. Deze proxy's worden gebruikt door mensen die u wilt verbergen, IP-adres van het apparaat en kan worden gebruikt voor kwade bedoelingen. Deze detectie maakt gebruik van een machine learning-algoritme dat reduceert 'valse positieven', zoals niet-gecodeerde IP-adressen die algemeen worden gebruikt door gebruikers in de organisatie.
+
+**Activiteit van verdachte IP-adressen**
+- Deze detectie is onderdeel van de afwijkingsdetectie heuristische detectie-engine die profielen van uw omgeving en activeert waarschuwingen met betrekking tot een basislijn die is doorgegeven voor de activiteit van uw organisatie. Deze detectie identificeert of de gebruikers actief vanaf een IP-adres dat door Microsoft dreigingen is geïdentificeerd als riskant zijn. Deze IP zijn betrokken bij schadelijke activiteiten, zoals Botnet C & C, en kan wijzen op verdacht account. Deze detectie maakt gebruik van een machine learning-algoritme dat reduceert 'valse positieven', zoals niet-gecodeerde IP-adressen die algemeen worden gebruikt door gebruikers in de organisatie.
+
+
+**Ongebruikelijke X activiteit (door gebruiker)**
+- Deze detectie is onderdeel van de afwijkingsdetectie heuristische detectie-engine die profielen van uw omgeving en activeert waarschuwingen met betrekking tot een basislijn die is doorgegeven voor de activiteit van uw organisatie. Deze detectie identificeert gebruikers die meerdere X activiteit in één sessie uitvoeren ten opzichte van de basislijn hebt geleerd, dit kan betekenen dat er bij een poging geschonden. Deze detectie maakt gebruik van een machine learning-algoritme dat gebruikers aanmelden met een patroon profielen en vermindert 'valse positieven'.
+
+
+**Meerdere mislukte aanmeldingspogingen**
+- Deze detectie is onderdeel van de afwijkingsdetectie heuristische detectie-engine die profielen van uw omgeving en activeert waarschuwingen met betrekking tot een basislijn die is doorgegeven voor de activiteit van uw organisatie. Deze detectie identificeert gebruikers die niet meerdere aanmeldingspogingen in één sessie ten opzichte van de basislijn hebt geleerd, dit kan betekenen dat er bij een poging geschonden. Deze detectie maakt gebruik van een machine learning-algoritme dat gebruikers aanmelden met een patroon profielen en vermindert 'valse positieven'.
 
 Een afwijkingsdetectiebeleid configureren:  
   
@@ -116,11 +139,7 @@ Elke risicofactor die in de risico-evaluatie is opgenomen heeft zijn eigen trigg
 -   Frequentie van activiteit - herhaalde activiteiten uitgevoerd door een gebruiker binnen een korte periode. 
 
 ### <a name="sensitivity"></a>Gevoeligheid  
-Er zijn twee manieren om het aantal waarschuwingen dat door het beleid is geactiveerd te bepalen:  
-  
--   Schuifregelaar voor gevoeligheid: kies hoeveel waarschuwingen per 1000 gebruikers per week geactiveerd moeten worden. De waarschuwingen worden van de activiteiten met het hoogste risico geactiveerd.  
-  
--   Dagelijks waarschuwingslimiet: beperk het aantal waarschuwingen dat op één dag worden gegeven.  
+Om te bepalen het aantal waarschuwingen geactiveerd door het beleid, stel de **dagelijkse waarschuwingslimiet** en Beperk het aantal waarschuwingen die op een enkele dag zijn geactiveerd.  
   
 ## <a name="see-also"></a>Zie ook  
 [Dagelijkse activiteiten ter bescherming van uw cloudomgeving](daily-activities-to-protect-your-cloud-environment.md)   

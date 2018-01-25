@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 9656f6c6-7dd4-4c4c-a0eb-f22afce78071
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: eeda929ecc4bc029f0fd292f4276ba55f202d314
-ms.sourcegitcommit: 9cfb4b4e91e37fa3acf238b729cb68be0adc7086
+ms.openlocfilehash: 6d0de456770d06967db07bb0d145908405196968
+ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/21/2018
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="external-dlp-integration"></a>Externe DLP-integratie
 
@@ -31,11 +31,11 @@ Deze handleiding bevat de stappen die nodig zijn voor het configureren van de ve
 >Deze functie is beschikbaar voor openbare preview.
 
 ## <a name="architecture"></a>Architectuur
-Cloud App Security scant uw cloudomgeving en op basis van uw bestand beleidsconfiguratie bepaald of het bestand met de interne DLP-engine of de externe DLP te scannen. Als externe DLP-scan wordt toegepast, het bestand wordt verzonden via een beveiligde tunnel naar de klantomgeving waar deze is doorgegeven aan het toestel ICAP voor de eindconclusie DLP: toegestaan/geblokkeerd. Antwoorden worden verzonden naar Cloud App Security via de stunnel waar deze wordt gebruikt door het beleid om te bepalen van de volgende acties zoals het meldingen, quarantaine en delen.
+Cloud App Security scant uw cloudomgeving en op basis van uw bestand beleidsconfiguratie bepaald of het bestand met de interne DLP-engine of de externe DLP te scannen. Als externe DLP-scan wordt toegepast, het bestand wordt verzonden via een beveiligde tunnel naar de klantomgeving waar deze is doorgegeven aan het toestel ICAP voor de eindconclusie DLP: toegestaan/geblokkeerd. Antwoorden worden verzonden naar Cloud App Security via de stunnel waar deze wordt gebruikt door het beleid om te bepalen van de volgende acties zoals meldingen, in quarantaine plaatsen en delen besturingselement.
 
 ![Stunnel-architectuur](./media/icap-architecture-stunnel.png)
 
-Aangezien Cloud App Security wordt uitgevoerd in Azure, resulteert in een implementatie in Azure betere prestaties. Andere opties, waaronder andere Clouds en On-Premises implementatie worden echter ondersteund. In andere omgevingen implementeert, kan dit leiden tot verminderde prestaties als gevolg van hogere latentie en lagere doorvoer. De server ICAP en stunnel moeten samen worden geïmplementeerd op hetzelfde netwerk om ervoor te zorgen dat het verkeer wordt gecodeerd.
+Aangezien Cloud App Security wordt uitgevoerd in Azure, een implementatie in Azure-verbeterde prestaties levert. Andere opties, waaronder andere Clouds en On-Premises implementatie worden echter ondersteund. In andere omgevingen implementeert, kan dit leiden tot verminderde prestaties als gevolg van hogere latentie en lagere doorvoer. De server ICAP en stunnel moeten samen worden geïmplementeerd op hetzelfde netwerk om ervoor te zorgen dat het verkeer wordt gecodeerd.
 
 ## <a name="prerequisites"></a>Vereisten
 Open in de volgorde voor Cloud App Security gegevens via uw stunnel verzenden naar uw server ICAP uw firewall DMZ kan het externe IP-adressen die door Cloud App Security gebruikt met een dynamische bronpoortnummer of bereik. 
@@ -50,13 +50,13 @@ Open in de volgorde voor Cloud App Security gegevens via uw stunnel verzenden na
 
 ## <a name="step-1--set-up-icap-server"></a>STAP 1: ICAP server instellen
 
-Een server ICAP, u het poortnummer instellen en zorg ervoor dat u instelt **modus** naar **blokkeren**. Blokkerende modus Hiermee stelt u de server ICAP om door te sturen de classificatie eindconclusie terug naar de Cloud App Security.
+Instellen van een server ICAP, u het poortnummer en zorg ervoor dat u ingesteld **modus** naar **blokkeren**. Blokkerende modus Hiermee stelt u de server ICAP om door te sturen de classificatie eindconclusie terug naar de Cloud App Security.
 
 Raadpleeg de productdocumentatie van uw externe DLP voor instructies om dit te bereiken. Zie bijvoorbeeld [bijlage A: Forcepoint ICAP server setup](#forcepoint) en [bijlage B: Symantec Deployment Guide](#symantec).
 
 ## <a name="step-2--set-up-your-stunnel-server"></a>STAP 2: Uw stunnel-server instellen 
 
-In deze stap stelt u de stunnel verbonden met uw ICAP-server. 
+In deze stap moet u de stunnel aangesloten op uw server ICAP instellen. 
 
 >[!NOTE]
 > Hoewel ten zeerste aangeraden, wordt deze stap is optioneel en op testwerkbelastingen worden overgeslagen. 
@@ -74,7 +74,7 @@ Raadpleeg de [stunnel website](https://www.stunnel.org/index.html) voor meer inf
 1. [Download de meest recente installatie van Windows Server](https://www.stunnel.org/downloads.html) (dit moet werken op een recente versie van Windows Server).
 (standaardinstallatie)
 
-2. Tijdens de installatie, maak een nieuw zelfondertekend certificaat geen, maakt u een certificaat in een later stadium.
+2. Tijdens de installatie, maak een nieuw zelfondertekend certificaat geen, u een certificaat in een later stadium.
 
 3. Klik op **server na de installatie Start**.
 
@@ -125,7 +125,7 @@ Raadpleeg de [stunnel website](https://www.stunnel.org/index.html) voor meer inf
 
 Het volgende voorbeeld is gebaseerd op de installatie van een virtuele Ubuntu server wanneer u bent aangemeld als hoofdgebruiker - voor andere servers parallelle opdrachten gebruiken. 
 
-Op de server voorbereid, download en installeer de nieuwste versie van stunnel met de volgende opdracht op uw Ubuntu server die u stunnel en OpenSSL installeert:
+Op de server voorbereid, download en installeer de nieuwste versie van stunnel door met de volgende opdracht op de Ubuntu server stunnel en OpenSSL installeert:
 
     apt-get update
     apt-get install openssl -y
@@ -227,12 +227,12 @@ Als het proces nog steeds niet wordt uitgevoerd, raadpleegt u de [stunnel docume
    > [!NOTE]
    > Het is raadzaam om te controleren de **gebruik secure ICAP** vak voor het instellen van een versleutelde stunnel-gateway. Als voor het testen van doeleinden of als u een server stunnel geen hebt, u dit rechtstreeks te integreren met uw DLP-server uitschakelen kunt. 
 
-5. In de **serverconfiguratie** scherm, bieden de **IP-adres** en **poort** van de stunnel-server die u in stap 2 hebt ingesteld. Voor de load balancer doeleinden kunt u de **IP-adres** en **poort** van een extra server. De opgegeven IP-adressen moet de externe statische IP-adressen van uw servers.
+5. In de **serverconfiguratie** scherm, bieden de **IP-adres** en **poort** van de stunnel-server die u in stap 2 hebt ingesteld. Voor taakverdeling doeleinden kunt u de **IP-adres** en **poort** van een extra server. De opgegeven IP-adressen moet de externe statische IP-adressen van uw servers.
 
    ![Cloud App Security ICAP verbinding](./media/icap-wizard2.png)
-6. Klik op **Volgende**. Cloud App Security wordt testen van verbinding met de server die u hebt geconfigureerd. Als u een foutbericht ontvangt, raadpleegt u de instructies en netwerkinstellingen. Nadat deze is verbonden, kunt u **afsluiten**.
+6. Klik op **Volgende**. Cloud App Security test de connectiviteit met de server die u hebt geconfigureerd. Als u een foutbericht ontvangt, raadpleegt u de instructies en netwerkinstellingen. Nadat deze is verbonden, kunt u **afsluiten**.
 
-7. Nu aan de verkeer omleiden naar deze externe DLP-server bij het maken van een **Bestandsbeleid**onder **methode voor inhoudscontrole**, selecteert u de verbinding die u zojuist hebt gemaakt. Lees meer over [maken van een bestandsbeleid](data-protection-policies.md).
+7. Nu aan de verkeer omleiden naar deze externe DLP-server bij het maken van een **Bestandsbeleid**onder **methode voor inhoudscontrole**, selecteert u de verbinding die u hebt gemaakt. Lees meer over [maken van een bestandsbeleid](data-protection-policies.md).
 
 
 ## Bijlage A: ForcePoint ICAP server setup<a name="forcepoint"></a>
@@ -293,7 +293,7 @@ Wijzigen van de configuratie toevoegen aan uw Vontu:
 
     ![geautomatiseerd antwoord](./media/icap-automated-response.png)
 
-3. Typ een naam, bijvoorbeeld **blok HTTP/HTTPS**. Onder **acties** Selecteer **blok HTTP/HTTPS** en klik op **opslaan**.
+3. Typ een naam, bijvoorbeeld **blok HTTP/HTTPS**. Onder **acties**, selecteer **blok HTTP/HTTPS** en klik op **opslaan**.
 
     ![blok http](./media/icap-block-http.png)
 
@@ -301,7 +301,7 @@ De regel die u hebt gemaakt voor elk bestaand beleid toevoegen:
 
 1. In elke beleidsregel overschakelen naar de **antwoord** tabblad.
 
-2. Van de **antwoordregel** vervolgkeuzelijst het antwoord blok regel u die eerder is gemaakt.
+2. Van de **antwoordregel** vervolgkeuzelijst, selecteer het antwoord blok regel u eerder hebt gemaakt.
 
 3. Sla het beleid.
    
@@ -310,7 +310,7 @@ De regel die u hebt gemaakt voor elk bestaand beleid toevoegen:
 Deze regel moet worden toegevoegd aan het bestaande beleid.
 
 >[!NOTE]
-> Als u een Symantec vontu gebruikt om te scannen bestanden van Dropbox, CA's wordt automatisch het bestand als weergegeven die afkomstig zijn van de volgende URL: http://misc/filename deze tijdelijke aanduiding-url niet daadwerkelijk leiden voor elke locatie, maar wordt gebruikt voor de registratie.
+> Als u Symantec vontu gebruiken om te scannen bestanden van Dropbox, CA's wordt automatisch het bestand weergegeven als zijnde afkomstig van de volgende URL: http://misc/filename deze tijdelijke aanduiding-url niet daadwerkelijk leiden voor elke locatie, maar wordt gebruikt voor de registratie.
 
 
 ## <a name="see-also"></a>Zie ook  

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 1/21/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,15 +13,15 @@ ms.technology:
 ms.assetid: bbf54f66-4ce2-428c-afc8-b5a64277014f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: dad7bc9194fd8c064e57ef0466f2fdb40f08d154
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: dc032e1e5b560a8f6550a091c6694d0f63ff5822
+ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 01/24/2018
 ---
 #  <a name="IPtagsandRanges"></a>Werken met IP-bereiken en -tags
 
-Om bekende IP-adressen, zoals uw fysieke IP-adressen van kantoor, eenvoudig te kunnen herkennen, moet u IP-adresbereiken instellen waarmee u ze op de juiste wijze kunt taggen en indelen en de manier waarop logboeken en waarschuwingen worden weergegeven, kunt aanpassen.   
+Eenvoudig kunt herkennen bekende IP-adressen, zoals uw fysieke office IP-adressen, moet u IP-adresbereiken, waarmee u kunt taggen en indelen op de juiste wijze instellen en aanpassen van de manier waarop Logboeken en waarschuwingen worden weergegeven en worden onderzocht. <br></br>  
 Elke groep met IP-adresbereiken kan worden ingedeeld op basis van een vooraf gedefinieerde lijst met IP-categorieën of worden getagd met zelfgemaakte IP-tags. Met deze instelling kunt u openbare gegevens over de geografische locatie overschrijven op basis van uw interne netwerkkennis.  
   
 IPv4 en IPv6 worden ondersteund.  
@@ -31,7 +31,7 @@ Cloud App Security is vooraf geconfigureerd met ingebouwde tags voor de volgende
 - Verouderd besturingssysteem
 - Beheerde apparaten
 - Anonieme proxy
-- Botnet (als een activiteit is uitgevoerd door een botnet, ontvangt u een koppeling voor meer informatie over de specifieke botnet)
+- Botnet (wanneer een activiteit is uitgevoerd door een botnet, ontvangt u een koppeling voor meer informatie over de specifieke botnet)
 - Tor
 - Compatibel apparaat
 - Geverifieerd apparaat
@@ -43,15 +43,15 @@ Raadpleeg de ID in de Cloud App Security API-documentatie voor het gebruik van d
 > U kunt IP-adresbereiken bulksgewijs toevoegen door het maken van een script met de **IP-adresbereiken API**, die kan worden gevonden in de Cloud App Security-portalmenubalk door te klikken op het vraagteken en vervolgens **API-documentatie**.
 
 
-Ingebouwde IP-Adreslabels en aangepaste IP-tags worden beschouwd als hiërarchisch met aangepaste IP-tags voorrang heeft op de ingebouwde IP-tags. Bijvoorbeeld, als een IP-adres wordt het gelabeld als **riskant** op basis van dreigingen, maar er is een aangepaste IP-code die wordt geïdentificeerd als **zakelijk** aangepaste categorie en labels voorrang.
+Ingebouwde IP-Adreslabels en aangepaste IP-tags worden beschouwd als hiërarchisch met aangepaste IP-tags voorrang heeft op de ingebouwde IP-tags. Bijvoorbeeld, als een IP-adres wordt gemarkeerd als **riskant** op basis van dreigingen, maar er is een aangepaste IP-code die wordt geïdentificeerd als **zakelijk** aangepaste categorie en labels voorrang.
 
-Klik in de menubalk op het pictogram Instellingen ![pictogram instellingen](./media/settings-icon.png "pictogram instellingen") en selecteer **IP-adresbereiken**. Klik op **+IP-adresbereik toevoegen** en stel het volgende in:  
+Klik in de menubalk op het Instellingenpictogram ![het Instellingenpictogram](./media/settings-icon.png "Instellingenpictogram") en selecteer **IP-adresbereiken**. Klik op **+ IP-adresbereik toevoegen** en stel de volgende velden:  
   
 > [!NOTE]  
->  De locatie en de geregistreerde provider overschrijven de standaardinstellingen.   
-> IP-tags worden echter toegevoegd aan de activiteit zonder gegevens te overschrijven.  
+> - De locatie en de geregistreerde provider overschrijven de standaardinstellingen.   
+> - IP-tags worden echter toegevoegd aan de activiteit zonder gegevens te overschrijven.  
   
-1.  Geef uw IP-adresbereik een **naam**. De naam wordt niet weergegeven in het activiteitenlogboek, maar wordt alleen gebruikt voor het beheren van uw IP-adresbereik.  
+1.  Geef uw IP-adresbereik een **naam**. De naam niet wordt weergegeven in het activiteitenlogboek, deze wordt alleen gebruikt voor het beheren van uw IP-adresbereik.  
   
      Als u het IP-adresbereik wilt opnemen in een IP-categorie, selecteert u een categorie in de vervolgkeuzelijst.  
   
@@ -59,11 +59,11 @@ Klik in de menubalk op het pictogram Instellingen ![pictogram instellingen](./me
   
 3.  Als u de (ISP-) velden van de **locatie** of organisatie voor deze adressen wilt overschrijven, voert u een nieuwe waarde in. Als u bijvoorbeeld een IP-adres hebt dat wordt beschouwd als Iers, maar u weet dat het adres zich in de Verenigde Staten bevindt, dan kunt u deze instelling overschrijven.  
   
-4.  Voer een **geregistreerde provider** in. Hierdoor worden de gegevens in uw activiteiten overschreven.  
+4.  Voer een **geregistreerde provider** in. Overschrijft dit de gegevens in uw activiteiten  
   
-5.  Om de activiteiten van deze IP-adressen te **taggen**, voert u een tag in. Als u een woord in het vak invoert, wordt de tag gemaakt. Als u al een geconfigureerde tag hebt, kunt u deze eenvoudig toevoegen aan extra IP-adresbereiken door de tag te kiezen uit de lijst. U kunt zoveel IP-tags toevoegen als u wilt voor elk bereik. IP-tags kunnen worden gebruikt tijdens het samenstellen van beleid.  Naast de IP-tags die u configureert, heeft Cloud App Security ingebouwde tags die u niet kunt configureren. Onder [IP tags filter](activity-filters.md) (Filter voor IP-tags) wordt de lijst met tags weergegeven.  
+5.  Om de activiteiten van deze IP-adressen te **taggen**, voert u een tag in. Als u een woord in het vak invoert, wordt de tag gemaakt. Nadat u al een geconfigureerde tag hebt, kunt u eenvoudig deze toevoegen aan extra IP-adresbereiken door deze te kiezen uit de lijst. U kunt zoveel IP-tags toevoegen als u wilt voor elk bereik. IP-tags kunnen worden gebruikt tijdens het samenstellen van beleid.  Naast de IP-tags die u configureert, heeft Cloud App Security ingebouwde tags die u niet kunt configureren. Onder [IP tags filter](activity-filters.md) (Filter voor IP-tags) wordt de lijst met tags weergegeven.  
   
-6.  **IP-categorieën** worden gebruikt om activiteiten uit interessante IP-adressen eenvoudig te herkennen. De categorieën die beschikbaar zijn in de portal vereisen nog wel gebruikersconfiguratie om te bepalen welke IP-adressen worden opgenomen in elke categorie, met uitzondering van de categorie Riskant, die twee IP-tags (Anonieme proxy en Tor) omvat.  
+6.  **IP-categorieën** worden gebruikt om activiteiten uit interessante IP-adressen eenvoudig te herkennen. De categorieën zijn beschikbaar in de portal vereisen nog wel Gebruikersconfiguratie om te bepalen welke IP-adressen zijn opgenomen in elke categorie, met uitzondering van de categorie "Riskant", waaronder twee IP-tags - anonieme proxy en Tor.  
   
      De volgende IP-categorieën zijn beschikbaar:  
   
