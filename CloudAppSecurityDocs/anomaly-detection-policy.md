@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: ab9bc377-d2f5-4f4c-a419-f1728a15d1c7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 11b8471a4693c283af22529a44e13ea857e37f79
-ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
+ms.openlocfilehash: 9d93cf34908a357a80d5f98ec5c6ebe401789845
+ms.sourcegitcommit: 4fdf9ae2e2b189d4efa6a6588898c8d46d0dda70
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="anomaly-detection-policy"></a>Beleid voor afwijkingsdetectie
 Dit artikel bevat een verwijzing naar meer informatie over beleidsregels en geeft uitleg over elk beleidstype en de velden die kunnen worden geconfigureerd voor elk beleid.  
