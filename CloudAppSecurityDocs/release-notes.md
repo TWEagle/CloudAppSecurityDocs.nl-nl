@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/21/2018
+ms.date: 1/30/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e47525f2a84b2c0515cb87010ce20681b9519a3b
-ms.sourcegitcommit: 9cfb4b4e91e37fa3acf238b729cb68be0adc7086
+ms.openlocfilehash: ff87496df1ccea1aa3291e894a4912fe04d8b0ac
+ms.sourcegitcommit: 8d137c4ee27819cde6fb966d71b7809818347e5f
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/21/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Wat is er nieuw is bij de Microsoft Cloud App Security
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 01/21/2018
 -   Deze versie biedt een verbeterde ervaring bij het selecteren van specifieke mappen in de beleidsregels voor bestanden. U kunt nu eenvoudig weergeven en selecteren meerdere mappen in een beleid op te nemen. 
 -   In de **gedetecteerde apps** pagina: 
    - De functie Labels bulksgewijs kunt u aangepaste labels (in aanvulling op erkende en niet-toegestane tags) toepassen. 
-   - Wanneer u **een IP-adres genereren**, de geëxporteerde rapporten omvatten nu de informatie over het verkeer van erkende is of niet-toegestane apps. 
+   - Wanneer u **een IP-adressen genereren**, of **een gebruikers-rapport genereren** de geëxporteerde rapporten omvatten nu de informatie over het verkeer van erkende is of niet-toegestane apps. 
 -   U kunt nu een nieuwe API-App-connector van het team van Microsoft Cloud App Security rechtstreeks in de portal aanvragen bij de **verbinding maken met een app** pagina. 
 
 

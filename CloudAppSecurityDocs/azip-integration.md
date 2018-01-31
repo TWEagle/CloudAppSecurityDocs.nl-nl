@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/28/2018
+ms.date: 1/30/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2d7c8a4ed07ddfdfd6893d9a1b4020fb88cb8e04
-ms.sourcegitcommit: 4fdf9ae2e2b189d4efa6a6588898c8d46d0dda70
+ms.openlocfilehash: a0fbfd3e8ceb6d01f945287c58f34b83bf15c87a
+ms.sourcegitcommit: 8d137c4ee27819cde6fb966d71b7809818347e5f
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="azure-information-protection-integration"></a>Integratie van Azure Information Protection
 
@@ -91,7 +91,7 @@ Als u wilt dat deze extern ingestelde labels worden genegeerd, gaat u in de Clou
  ![Beveilig-app](./media/protect-app.png)
   
   >[!NOTE]
-  >Wanneer u Cloud App Security bestanden met Azure Information Protection beveiligt, is de maximale bestandsgrootte ondersteund 50 MB. 
+  > Cloud App Security kunt Azure Information Protection toepassen op bestanden die maximaal 50 MB zijn.  
 
 2. U wordt gevraagd om een van de classificatielabels van uw organisatie op het bestand wilt toepassen en klik op **toepassen**. 
 ![beveiliging classificatie label](./media/protect-template.png)
