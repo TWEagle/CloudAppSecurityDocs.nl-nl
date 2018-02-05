@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/30/2018
+ms.date: 2/4/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,26 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ff87496df1ccea1aa3291e894a4912fe04d8b0ac
-ms.sourcegitcommit: 8d137c4ee27819cde6fb966d71b7809818347e5f
+ms.openlocfilehash: 05f3249c17b4ef16246ec5bafa83023a247bce01
+ms.sourcegitcommit: bfe898e82c195981cc2fdaa899b0f8ab48957a00
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/05/2018
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Wat is er nieuw is bij de Microsoft Cloud App Security
+
+## <a name="cloud-app-security-release-116"></a>Cloud App Security-release 116
+4 februari 2018 uitgebracht
+
+- Gefaseerde implementatie: Cloud App Security correleert nu tussen gebruikers en hun accounts in de SaaS-apps. Hiermee kunt u eenvoudig onderzoeken alle activiteiten voor een gebruiker over alle hun verschillende gecorreleerde SaaS-apps, ongeacht welke app of het account gebruikt.  
+
+-   Gefaseerde implementatie: Cloud App Security ondersteunt nu meerdere exemplaren van dezelfde verbonden app. Als er meerdere exemplaren van bijvoorbeeld Salesforce (één voor verkoop, één voor marketing) kunt u zich ze beide verbindt met Cloud App Security en ze te beheren vanuit dezelfde console om gedetailleerde beleidsregels en nadere analyse te maken. 
+
+- Cloud App Security onderzoek is verbeterd. U kunt nu Inzoomen vanuit de **waarschuwingen** pagina in de **activiteitenlogboek** en bekijk de aanvullende acties die u rechtstreeks vanuit de waarschuwing kunt uitvoeren.
+
+- De parsers voor Cloud Discovery ondersteunen nu twee extra controlepunt indelingen, XML en KPC.
+
+
 
 ## <a name="cloud-app-security-release-115"></a>Cloud App Security-release 115
 21 januari 2018 uitgebracht

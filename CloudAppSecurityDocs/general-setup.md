@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/21/2018
+ms.date: 1/31/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7299b52fe26a079664489c0bc832dd898c2c6cfc
-ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
+ms.openlocfilehash: e5b3647abff4edfb5dbc2c1d38ce322011da901a
+ms.sourcegitcommit: bfe898e82c195981cc2fdaa899b0f8ab48957a00
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 02/05/2018
 ---
 # <a name="basic-setup"></a>Basisconfiguratie
 De volgende procedure bevat instructies voor het aanpassen van de Cloud App Security-portal.
@@ -47,7 +47,9 @@ Voor toegang tot portal is het nodig zijn voor de volgende IP-adressen toevoegen
 > - Gebruikers in domeinen die niet zijn geconfigureerd als interne zijn gemarkeerd als extern en niet voor activiteiten en bestanden worden gescand.
 
 5. Zie [Integratie van Azure Information Protection](azip-integration.md) voor informatie als u integreert met behulp van Azure Information Protection-integratie. 
-  
+
+ >[!NOTE]
+ > Met Azure Information Protection-integratie wilt werken, moet u inschakelen de [App-connector voor Office 365](connect-office-365-to-microsoft-cloud-app-security.md).
   
 6.  Als u op enig moment een back-up wilt maken van uw portal-instellingen, biedt dit scherm hiervoor de mogelijkheid. Klik op **portal-instellingen exporteren** voor het maken van een json-bestand van alle uw portal-instellingen, met inbegrip van beleid regels, gebruikersgroepen en IP-adresbereiken.  
   
