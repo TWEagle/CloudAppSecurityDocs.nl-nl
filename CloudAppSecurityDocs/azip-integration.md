@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/30/2018
+ms.date: 1/31/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a0fbfd3e8ceb6d01f945287c58f34b83bf15c87a
-ms.sourcegitcommit: 8d137c4ee27819cde6fb966d71b7809818347e5f
+ms.openlocfilehash: 9682c7badb19365ea74ffc78a7a2a38152f84669
+ms.sourcegitcommit: bfe898e82c195981cc2fdaa899b0f8ab48957a00
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/05/2018
 ---
 # <a name="azure-information-protection-integration"></a>Integratie van Azure Information Protection
 
@@ -35,6 +35,8 @@ Door Azure Information Protection te integreren met Cloud App Security kunt u ge
 
 
 ## <a name="prerequisites"></a>Vereisten
+
+- Met Azure Information Protection-integratie wilt werken, moet u inschakelen de [App-connector voor Office 365](connect-office-365-to-microsoft-cloud-app-security.md).
 
 Cloud App Security ondersteunt momenteel toepassen Azure Information Protection-classificatielabels voor de volgende bestandstypen:
 
