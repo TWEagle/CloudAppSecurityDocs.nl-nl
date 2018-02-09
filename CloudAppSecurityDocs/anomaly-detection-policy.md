@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/1/2018
+ms.date: 2/5/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: ab9bc377-d2f5-4f4c-a419-f1728a15d1c7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: bf4935db1267819167a392fb1c0ce8ba73181fd7
-ms.sourcegitcommit: bfe898e82c195981cc2fdaa899b0f8ab48957a00
+ms.openlocfilehash: 9ac466a721a9e5eef13d868d2eae2ce1c2df58c8
+ms.sourcegitcommit: 8bfb8236b83f7423e73fe449d662935c084ff844
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/05/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="get-instantaneous-behavioral-analytics-and-anomaly-detection"></a>Onmiddellijk gebruikersgedrag analytics en afwijkingsdetectie detectie ophalen
 
@@ -27,6 +27,7 @@ De beleidsregels voor afwijkingsdetectie worden automatisch ingeschakeld, maar d
 
 Als u de gebruikersactiviteit scant, worden afwijkingen gedetecteerd. Het risico wordt geëvalueerd door te kijken dan 30 verschillende risico indicatoren, gegroepeerd in meerdere risicofactoren, als volgt: 
           
+ -   Riskante IP-adres
  -   Mislukte aanmeldingen
  -   Beheerdersactiviteit
  -   Inactieve accounts

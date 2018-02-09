@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 2/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 35a43120-bf67-4cf9-9b48-ebe157dbbd18
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 950ccd90c2efa777bc8f43abf87a2638f7316de1
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 850436b8cb0c7a8e63a67a408ba51b6fecd9ac19
+ms.sourcegitcommit: 8bfb8236b83f7423e73fe449d662935c084ff844
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-proxy"></a>Apps met Microsoft Cloud App Security proxy beveiligen
 
@@ -84,8 +84,36 @@ De proxy ondersteunt momenteel apps die zijn geconfigureerd met SAML voor eenmal
 > - De proxy biedt ook ondersteuning voor apps die zijn geconfigureerd met identiteitsproviders dan Azure AD in Private Preview. Voor meer informatie over de Private Preview sturen een e-mail naar mcaspreview@microsoft.com.
 > - Office 365-toepassingen zijn niet geconfigureerd met SAML zodat ze worden momenteel niet ondersteund.
 
-Sessie-besturingselement is niet automatisch beschikbaar voor alle apps. Het team Cloud App Security getest veel populaire apps met beheer van sessies. Andere apps moet mogelijk een voorbereidingsproces dat wordt uitgevoerd met de klant.
-In termen van clients is de Sessiecontrole beschikbaar voor elke browser op een primaire platform. Mobiele apps en bureaublad-apps worden echter niet ondersteund door het besturingselement van de sessie. 
+Sessiecontrole is beschikbaar voor elke browser op een primaire platform (mobiele apps en bureaublad-apps worden momenteel niet ondersteund). Door systeemeigen integreren met Azure AD, kunnen alle apps die zijn geconfigureerd met SAML eenmalige aanmelding in Azure AD worden ondersteund, waaronder de volgende apps:
+
+-   SalesForce
+
+-   Box
+
+-   G Suite
+
+-   Werkdag
+
+-   Vertraging
+
+-   Werkplek door Facebook
+
+-   ServiceNow
+
+-   JIRA/Confluence
+
+-   AWS
+
+-   Workiva
+
+-   Basis op aanvraag
+
+-   DocuSign
+
+-   HighQ 
+
+Aanvullende apps worden continu geïntegreerde om te bepalen van de sessie. Als u geïnteresseerd bent in een specifieke app die hier niet wordt vermeld [Stuur ons informatie over de app](mailto:casfeedback@microsoft.com) het gebruiksvoorbeeld u geïnteresseerd bent in en ingebouwde wordt deze.
+
 
 
 
