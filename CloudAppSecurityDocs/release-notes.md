@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 05f3249c17b4ef16246ec5bafa83023a247bce01
-ms.sourcegitcommit: bfe898e82c195981cc2fdaa899b0f8ab48957a00
+ms.openlocfilehash: 3463402d2878d08ffcada968e2f1e958eea26038
+ms.sourcegitcommit: 8bfb8236b83f7423e73fe449d662935c084ff844
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/05/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Wat is er nieuw is bij de Microsoft Cloud App Security
 
@@ -28,9 +28,7 @@ ms.lasthandoff: 02/05/2018
 
 -   Gefaseerde implementatie: Cloud App Security ondersteunt nu meerdere exemplaren van dezelfde verbonden app. Als er meerdere exemplaren van bijvoorbeeld Salesforce (één voor verkoop, één voor marketing) kunt u zich ze beide verbindt met Cloud App Security en ze te beheren vanuit dezelfde console om gedetailleerde beleidsregels en nadere analyse te maken. 
 
-- Cloud App Security onderzoek is verbeterd. U kunt nu Inzoomen vanuit de **waarschuwingen** pagina in de **activiteitenlogboek** en bekijk de aanvullende acties die u rechtstreeks vanuit de waarschuwing kunt uitvoeren.
-
-- De parsers voor Cloud Discovery ondersteunen nu twee extra controlepunt indelingen, XML en KPC.
+De Cloud Discovery parsers oul - ondersteunen nu twee extra controlepunt indelingen, XML en KPC.
 
 
 

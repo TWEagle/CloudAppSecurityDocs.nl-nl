@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 2/5/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4f5e69282dc52802d8b6ff764c956eb7c1d82693
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 3c75bc2fe08a969f9a3f63cfff913f4c6f462f8c
+ms.sourcegitcommit: 8bfb8236b83f7423e73fe449d662935c084ff844
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="siem-integration"></a>Integratie van SIEM
     
@@ -74,6 +74,10 @@ U kunt op **Resultaten bewerken en bekijken** klikken om te controleren of het f
   ![Instellingen voor gegevenstypen](./media/siem3.png)
 
 7. Kopieer het token en bewaar het voor later. Nadat u op Voltooien hebt geklikt en de wizard hebt afgesloten, wordt de SIEM-pagina opnieuw weergegeven en ziet u in de tabel de SIEM-agent die u hebt toegevoegd. Er wordt nu weergegeven dat deze is **gemaakt** totdat deze later wordt verbonden.
+
+> [!NOTE]
+> Een token dat u maakt is gebonden aan de beheerder die het hebt gemaakt. Dit betekent dat als de gebruiker met beheerdersrechten is verwijderd uit de Cloud App security, het token wordt niet langer geldig.
+
 
 ### <a name="step-2-download-the-jar-file-and-run-it-on-your-server"></a>Stap 2: Het JAR-bestand downloaden en uitvoeren op uw server
 
