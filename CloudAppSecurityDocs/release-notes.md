@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/4/2018
+ms.date: 2/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,22 +13,24 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3463402d2878d08ffcada968e2f1e958eea26038
-ms.sourcegitcommit: 8bfb8236b83f7423e73fe449d662935c084ff844
+ms.openlocfilehash: ae784655539e62358aabf7094f7b6b1634e6386d
+ms.sourcegitcommit: e1868428958901c51091b23fa032a989b3059b4b
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/12/2018
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Wat is er nieuw is bij de Microsoft Cloud App Security
 
 ## <a name="cloud-app-security-release-116"></a>Cloud App Security-release 116
 4 februari 2018 uitgebracht
 
+- Afwijkingsdetectiebeleid cloud App Security is uitgebreid met nieuwe **detecties scenario's gebaseerde** inclusief onmogelijke reis activiteit van een verdachte IP-adres en meld u aan meerdere mislukte pogingen. Het nieuwe beleid worden automatisch ingeschakeld, detectie van dreigingen out-of-the-box bieden in uw cloudomgeving. Het nieuwe beleid tonen bovendien meer gegevens uit de Cloud App Security-detectie-engine, kunt u het versnellen onderzoek en doorlopende bedreigingen kunnen bevatten. Zie voor meer informatie [ophalen onmiddellijk gebruikersgedrag analytics en afwijkingsdetectie detectie](https://docs.microsoft.com/en-us/cloud-app-security/anomaly-detection-policy).
+
 - Gefaseerde implementatie: Cloud App Security correleert nu tussen gebruikers en hun accounts in de SaaS-apps. Hiermee kunt u eenvoudig onderzoeken alle activiteiten voor een gebruiker over alle hun verschillende gecorreleerde SaaS-apps, ongeacht welke app of het account gebruikt.  
 
 -   Gefaseerde implementatie: Cloud App Security ondersteunt nu meerdere exemplaren van dezelfde verbonden app. Als er meerdere exemplaren van bijvoorbeeld Salesforce (één voor verkoop, één voor marketing) kunt u zich ze beide verbindt met Cloud App Security en ze te beheren vanuit dezelfde console om gedetailleerde beleidsregels en nadere analyse te maken. 
 
-De Cloud Discovery parsers oul - ondersteunen nu twee extra controlepunt indelingen, XML en KPC.
+- De parsers voor Cloud Discovery ondersteunen nu twee extra controlepunt indelingen, XML en KPC.
 
 
 
