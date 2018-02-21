@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/31/2018
+ms.date: 2/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9682c7badb19365ea74ffc78a7a2a38152f84669
-ms.sourcegitcommit: bfe898e82c195981cc2fdaa899b0f8ab48957a00
+ms.openlocfilehash: f11b7e50a779b1720c338986eaa3a32405231cf8
+ms.sourcegitcommit: 79cdf84f6fd60a57b771a7fd4e5a37d4cc8d9aed
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/05/2018
+ms.lasthandoff: 02/20/2018
 ---
 # <a name="azure-information-protection-integration"></a>Integratie van Azure Information Protection
 
@@ -45,7 +45,7 @@ Cloud App Security ondersteunt momenteel toepassen Azure Information Protection-
 - PowerPoint: potm, potx, ppsx, ppsm, pptm, pptx
 - PDF-en afbeeldingsbestanden zijn beschikbaar in toekomstige versies 
 
-Deze functie is momenteel beschikbaar zijn voor bestanden die zijn opgeslagen in Box, SharePoint Online en OneDrive voor bedrijven. In toekomstige versies worden meer cloud-apps ondersteund.
+Deze functie is momenteel beschikbaar zijn voor bestanden die zijn opgeslagen in het vak, G Suite, SharePoint Online en OneDrive voor bedrijven. In toekomstige versies worden meer cloud-apps ondersteund.
 
 Bestanden die zijn gelabeld met beveiliging buiten Cloud App Security kunnen momenteel gescand of gewijzigd door Cloud App Security. Bestanden die zijn gelabeld (zonder beveiliging) extern en Cloud App Security kan worden gescand en Cloud App Security kunt een ander label (met of zonder beveiliging) toepassen, zoals gedefinieerd in de Cloud App Security-beleid.
 

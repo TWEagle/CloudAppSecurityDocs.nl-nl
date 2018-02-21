@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/12/2018
+ms.date: 2/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,17 +13,25 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ae784655539e62358aabf7094f7b6b1634e6386d
-ms.sourcegitcommit: e1868428958901c51091b23fa032a989b3059b4b
+ms.openlocfilehash: a8b6d36419d1553dcc5f3257a3dee22944f60d41
+ms.sourcegitcommit: 79cdf84f6fd60a57b771a7fd4e5a37d4cc8d9aed
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 02/20/2018
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Wat is er nieuw is bij de Microsoft Cloud App Security
 
+## <a name="cloud-app-security-release-117"></a>Cloud App Security-release 117
+20 februari 2018 uitgebracht
+
+-   Cloud App Security verdiept integratie met Azure Information Protection nu kunt u bestanden beveiligen in G Suite. Deze openbare preview-functie kunt u om te scannen en bestanden classificeren in G Suite en Azure Information protection labels voor beveiliging automatisch worden toegepast. Zie voor meer informatie [integratie van Azure Information Protection](azip-integration.md).
+
+-   Cloud Discovery ondersteunt nu i-FILTER.
+
+-   De tabel SIEM-agents biedt nu meer details voor eenvoudiger beheer.
+
 ## <a name="cloud-app-security-release-116"></a>Cloud App Security-release 116
 4 februari 2018 uitgebracht
-
 - Afwijkingsdetectiebeleid cloud App Security is uitgebreid met nieuwe **detecties scenario's gebaseerde** inclusief onmogelijke reis activiteit van een verdachte IP-adres en meld u aan meerdere mislukte pogingen. Het nieuwe beleid worden automatisch ingeschakeld, detectie van dreigingen out-of-the-box bieden in uw cloudomgeving. Het nieuwe beleid tonen bovendien meer gegevens uit de Cloud App Security-detectie-engine, kunt u het versnellen onderzoek en doorlopende bedreigingen kunnen bevatten. Zie voor meer informatie [ophalen onmiddellijk gebruikersgedrag analytics en afwijkingsdetectie detectie](https://docs.microsoft.com/en-us/cloud-app-security/anomaly-detection-policy).
 
 - Gefaseerde implementatie: Cloud App Security correleert nu tussen gebruikers en hun accounts in de SaaS-apps. Hiermee kunt u eenvoudig onderzoeken alle activiteiten voor een gebruiker over alle hun verschillende gecorreleerde SaaS-apps, ongeacht welke app of het account gebruikt.  
