@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/15/2018
+ms.date: 2/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f11b7e50a779b1720c338986eaa3a32405231cf8
-ms.sourcegitcommit: 79cdf84f6fd60a57b771a7fd4e5a37d4cc8d9aed
+ms.openlocfilehash: 048b2e594190ad19d20fcba57767b6fcf6ebd2fd
+ms.sourcegitcommit: 4f9a4884672633927ce649e51df3b10c547787af
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="azure-information-protection-integration"></a>Integratie van Azure Information Protection
 
@@ -116,6 +116,9 @@ Volg deze instructies voor het bestandsbeleid maken:
 3.  Onder beheeracties voor de relevante app **toepassen van een label classificatie** en selecteer vervolgens het labeltype.
 
    ![Label worden toegepast](./media/aip-gov-action.png)
+
+> [!NOTE]
+> De mogelijkheid om automatisch een Azure Information Protection-label via beleid voor bestanden is een krachtige functie. Om klanten te beschermen van per ongeluk een label wordt toegepast op een groot aantal bestanden, omdat er een veiligheidsmaatregel een dagelijkse limiet van 100 **toepassen label** acties per app per tenant. Nadat de dagelijkse limiet is bereikt, wordt de label-actie toepassen tijdelijk wordt onderbroken en wordt automatisch voortgezet de volgende dag (na 12:00 UTC). De limiet voor uw tenant verhogen [contact op met ondersteuning voor Cloud App Security](mailto:cascoresupport@microsoft.com).
 
 ### <a name="control-file-exposure"></a>Blootstelling van bestanden beheren
 
