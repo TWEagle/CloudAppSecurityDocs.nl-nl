@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 2/25/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,13 @@ ms.technology:
 ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4d1e5c839f6cd8e22cb10182b26d3158e33f3b59
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 13110a717b907decd2bafc938a01548f16d7bd76
+ms.sourcegitcommit: 85d90d51e9e265d077f38b0188bcfdab2ce63ed1
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="set-up-and-configuration-on-ubuntu"></a>Stel omhoog en configuratie op Ubuntu
+# <a name="docker-on-ubuntu-and-rhel-on-premises"></a>Docker op Ubuntu en RHEL on-premises
 
 
 ## <a name="technical-requirements"></a>Technische vereisten
@@ -100,7 +100,7 @@ De logboekverzamelaar kan een logboekcapaciteit van maximaal 50 GB per uur aan. 
 
 1.  Open een terminal op uw Ubuntu-machine.
 
-2.  Wijzig in de hoofdmap bevoegdheden met de opdracht:`sudo -i`
+2.  Wijzig in de hoofdmap bevoegdheden met de opdracht: `sudo -i`
 
 3. Voer de volgende twee opdrachten voor het overslaan van een proxyserver in uw netwerk:
         
@@ -124,7 +124,7 @@ De logboekverzamelaar kan een logboekcapaciteit van maximaal 50 GB per uur aan. 
 
    ![Logboekverzamelaar maken](./media/windows7.png)
 
-5.  Controleer of de collector correct wordt uitgevoerd met de volgende opdracht:`docker logs \<collector_name\>`
+5.  Controleer of de collector correct wordt uitgevoerd met de volgende opdracht: `docker logs \<collector_name\>`
 
 U ziet het bericht: **is voltooid!**
 

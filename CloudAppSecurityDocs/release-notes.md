@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/20/2018
+ms.date: 3/1/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,20 +13,34 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a8b6d36419d1553dcc5f3257a3dee22944f60d41
-ms.sourcegitcommit: 79cdf84f6fd60a57b771a7fd4e5a37d4cc8d9aed
+ms.openlocfilehash: 44561ed62462eedc201f7b5b42745bed7e46a1bd
+ms.sourcegitcommit: 85d90d51e9e265d077f38b0188bcfdab2ce63ed1
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Wat is er nieuw is bij de Microsoft Cloud App Security
+
+
+## <a name="cloud-app-security-release-118"></a>Cloud App Security-release 118
+4 maart 2018 uitgebracht
+
+- Nu kunt u profiteren van de Microsoft Cloud App Security van shadow IT detectie en mogelijkheden voor bewaking uitvoeren op uw eigen eigen aangepaste apps. De nieuwe mogelijkheid voor het toevoegen van aangepaste apps aan Cloud Discovery kunt u app-gebruik controleren en de hoogte worden gebracht van wijzigingen in het gebruikspatroon. Zie voor meer informatie [beveiligen van uw aangepaste apps](cloud-discovery-custom-apps.md). Deze functie wordt geleidelijk geïntroduceerd.
+
+- De Cloud App Security-portal *instellingen** pagina's zijn aangepast om te ervaren voor verbeterde gebruiker. De nieuwe pagina consolideert alle pagina's van de instellingen, biedt functionaliteit voor het zoeken en een duidelijker ontwerp. 
+
+- Cloud Discovery ondersteunt nu Barracuda F-serie Firewalls en Barracuda F-serie Firewall Web logboek Streaming.
+
+- De zoekfunctie in de gebruikers- en IP-adres-pagina's worden nu automatisch aanvullen gemakkelijker te vinden wat u zoekt inschakelen.
+
+- U kunt nu Bulksgewijze bewerkingen uitvoeren in de entiteiten uitsluiten en pagina's uitsluiten IP-adres-instellingen. Dit maakt het eenvoudiger voor u te selecteren van meerdere gebruikers en groepen of IP-adressen uitsluiten wordt bewaakt als onderdeel van de Cloud Discovery in uw organisatie. 
 
 ## <a name="cloud-app-security-release-117"></a>Cloud App Security-release 117
 20 februari 2018 uitgebracht
 
 -   Cloud App Security verdiept integratie met Azure Information Protection nu kunt u bestanden beveiligen in G Suite. Deze openbare preview-functie kunt u om te scannen en bestanden classificeren in G Suite en Azure Information protection labels voor beveiliging automatisch worden toegepast. Zie voor meer informatie [integratie van Azure Information Protection](azip-integration.md).
 
--   Cloud Discovery ondersteunt nu i-FILTER.
+-   Cloud Discovery nu ondersteunt [digitaal werken i-FILTER](http://www.daj.jp/en/products/if/).
 
 -   De tabel SIEM-agents biedt nu meer details voor eenvoudiger beheer.
 

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/29/2017
+ms.date: 2/25/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0fa9125b611574d4f4fafb18c8bc649de82b1ad6
-ms.sourcegitcommit: 1c9ed4923cb6b761aebd13a6caa3a6605412419a
+ms.openlocfilehash: 1aa29723d5acf9806e4bce12e9ad41d9db0caa13
+ms.sourcegitcommit: 85d90d51e9e265d077f38b0188bcfdab2ce63ed1
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/29/2017
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="set-up-cloud-discovery"></a>Cloud Discovery instellen
 Cloud Discovery analyseert uw verkeerslogboeken op basis van de catalogus met Cloud App Security cloud-app van meer dan 15.000 cloud-apps die worden beoordeeld en gewaardeerd op basis van meer dan 60 risicofactoren u doorlopende inzicht in de cloud gebruikt, schaduw-IT, en het risico Shadow IT oplevert voor uw organisatie opgeven.
@@ -81,6 +81,7 @@ Als u zonder problemen een Cloud Discovery-rapport wilt genereren, moeten uw ver
 - Cisco Meraki - URL-logboek
 - Clavister NGFW (Syslog)
 - Dell Sonicwall
+- Digitale Arts i-FILTER
 - Fortinet Fortigate
 - Juniper SRX
 - Juniper SSG
@@ -108,19 +109,20 @@ De gegevenskenmerken (volgens de documentatie van de leverancier):
 |Barracuda|**Ja**|**Ja**|**Ja**|**Ja**|Nee|Nee|
 |Blue Coat|**Ja**|Nee|**Ja**|**Ja**|**Ja**|**Ja**|
 |Controlepunt|Nee|**Ja**|Nee|**Ja**|Nee|Nee|
-|Cisco ASA|Nee|**Ja**|Nee|**Ja**|**Ja**|Nee|
+|Cisco ASA (Syslog)|Nee|**Ja**|Nee|**Ja**|**Ja**|Nee|
 |Cisco ASA van de vuurkracht|**Ja**|**Ja**|**Ja**|**Ja**|**Ja**|**Ja**|
 |Cisco FWSM|Nee|**Ja**|Nee|**Ja**|**Ja**|Nee|
 |Cisco Ironport WSA|**Ja**|**Ja**|**Ja**|**Ja**|**Ja**|**Ja**|
 |Cisco Meraki|**Ja**|**Ja**|Nee|**Ja**|Nee|Nee||Cisco ScanSafe|**Ja**|Nee|**Ja**|**Ja**|**Ja**|**Ja**|
 |Clavister NGFW (Syslog)|**Ja**|**Ja**|**Ja**|**Ja**|**Ja**|**Ja**|
 |Dell Sonicwall|**Ja**|**Ja**|Nee|**Ja**|**Ja**|**Ja**|
+|Digitale Arts i-FILTER|**Ja**|**Ja**|**Ja**|**Ja**|**Ja**|**Ja**|
 |FortiGate|Nee|**Ja**|Nee|**Ja**|**Ja**|**Ja**|
 |Juniper SRX|Nee|**Ja**|Nee|**Ja**|**Ja**|**Ja**|
-|Juniper SSG|Nee|**Ja**|Nee|**Ja**|**Ja**|**Ja**|
+|Juniper SSG|Nee|**Ja**|**Ja**|**Ja**|**Ja**|**Ja**|
 |McAfee SWG|**Ja**|Nee|Nee|**Ja**|**Ja**|**Ja**|
 |MS TMG|**Ja**|Nee|**Ja**|**Ja**|**Ja**|**Ja**|
-|Palo Alto Networks|**Ja**|**Ja**|**Ja**|**Ja**|**Ja**|**Ja**|
+|Palo Alto Networks|Nee|**Ja**|**Ja**|**Ja**|**Ja**|**Ja**|
 |Sophos|**Ja**|**Ja**|**Ja**|**Ja**|**Ja**|Nee|
 |Squid (algemeen)|**Ja**|Nee|**Ja**|**Ja**|Nee|**Ja**|
 |Squid (systeemeigen)|**Ja**|Nee|**Ja**|**Ja**|Nee|**Ja**|
@@ -130,7 +132,7 @@ De gegevenskenmerken (volgens de documentatie van de leverancier):
 
 
 
-## <a name="see-also"></a>Zie tevens
+## <a name="see-also"></a>Zie ook
  
 [Momentopnamerapporten maken van Cloud Discovery](create-snapshot-cloud-discovery-reports.md)
 

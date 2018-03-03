@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 2/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: fd4c2cc8a4382a5e3a50903499d098d1e90dce53
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: ec381d45d9124220fd227f91d4e4c4673f127014
+ms.sourcegitcommit: 85d90d51e9e265d077f38b0188bcfdab2ce63ed1
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="create-snapshot-cloud-discovery-reports"></a>Momentopnamerapporten maken van Cloud Discovery
 Het is belangrijk een logboek handmatig te uploaden en het logboek in Cloud App Security te parseren voordat u de automatische logboekverzamelaar gebruikt.
@@ -62,7 +62,7 @@ Als de verwerking van uw logboekbestanden is voltooid, ontvangt u een e-mail met
 10. Nadat de logboeken zijn geüpload, krijgt u een melding te zien waarin wordt aangegeven dat de verwerking van de logboekbestanden is voltooid. U kunt het rapport nu weergeven door op de koppeling in de statusbalk te klikken of door naar het tandwiel Instellingen te gaan en **Detectie-instellingen** te selecteren.   
   
      ![Tabblad Detectie-instellingen](./media/discovery-settings-tab.png)
-11. Selecteer vervolgens **Momentopnamerapporten beheren** en selecteer uw momentopnamerapport.
+11. Selecteren **momentopname maken van rapporten** en selecteert u de momentopname van een rapport.
  
 ![momentopnamerapport beheren](./media/snapshot-report-managment.png)
 
