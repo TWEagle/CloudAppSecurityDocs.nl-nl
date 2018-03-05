@@ -1,5 +1,6 @@
 # Meer informatie en verkennen
 ## [Wat is Cloud App Security?](what-is-cloud-app-security.md)
+## [Naleving, vertrouwen, gegevensbeveiliging en privacy met behulp van Cloud App Security](cas-compliance-trust.md)
 ## [Wat is er nieuw?](release-notes.md)
 ## Vergelijken
 ### [Office 365](editions-cloud-app-security-o365.md)
@@ -16,7 +17,7 @@
 ## [Cloud Discovery implementeren](set-up-cloud-discovery.md)
 ### [Momentopnamerapporten maken van Cloud Discovery](create-snapshot-cloud-discovery-reports.md)
 ### [Automatisch uploaden van logboeken configureren voor doorlopende rapporten](discovery-docker.md)
-#### [Docker op Ubuntu on-premises](discovery-docker-ubuntu.md)
+#### [Docker op Ubuntu en RHEL on-premises](discovery-docker-ubuntu.md)
 #### [Docker op Ubuntu in Azure](discovery-docker-ubuntu-azure.md)
 #### [Een virtueel apparaat gebruiken - afgeschaft](configure-automatic-log-upload-for-continuous-reports.md)
 ### [De aangepaste logboekparser gebruiken](custom-log-parser.md)
@@ -61,6 +62,7 @@
 #### [Beleidsregels voor bestanden](data-protection-policies.md)
 ##### [Inhoudsinspectie](content-inspection.md)
 ##### [Werken met de RegEx-engine](working-with-the-regex-engine.md)
+#### [Toegangsbeleidsregels](access-policy-aad.md)
 #### [Sessie-beleid](session-policy-aad.md)
 #### [Verwijzing naar beleidssjabloon](policy-template-reference.md)
 ### [Verbonden apps beheren](governance-actions.md)
