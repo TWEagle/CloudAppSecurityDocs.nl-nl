@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/21/2018
+ms.date: 3/3/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,18 +13,18 @@ ms.technology:
 ms.assetid: c626d94d-2ffd-4daf-8fa4-4b6d308cf012
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9988a610e9768173f0c89458974997647cabceaa
-ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
+ms.openlocfilehash: 1a8e439e170b5684c105ac7ae398deaa4e0c10f6
+ms.sourcegitcommit: c5533d66b8e037d6221c48bdbad81574f25f2817
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="connect-servicenow-to-microsoft-cloud-app-security"></a>Verbinding maken tussen ServiceNow en Microsoft Cloud App Security
 
 In deze sectie vindt u instructies voor het maken van een verbinding tussen Cloud App Security en uw bestaande ServiceNow-account met behulp van de connector-API voor de app. 
 
  >  [!NOTE]
->  Het is raadzaam ServiceNow te implementeren met OAuth-app-tokens, die beschikbaar zijn voor Fuji en latere versies (zie de relevante [ServiceNow-documentatie](http://wiki.servicenow.com/index.php?title=OAuth_Applications#gsc.tab=0). Voor eerdere versies is er een [verouderde verbindingsmodus](#legacy-servicenow-connection) beschikbaar op basis van gebruiker en wachtwoord.
+>  Het is raadzaam ServiceNow te implementeren met OAuth-app-tokens, die beschikbaar zijn voor Fuji en latere versies (zie de relevante [ServiceNow-documentatie](http://wiki.servicenow.com/index.php?title=OAuth_Applications#gsc.tab=0). Voor eerdere versies is er een [verouderde verbindingsmodus](#legacy-servicenow-connection) beschikbaar op basis van gebruiker en wachtwoord. De gebruikersnaam en wachtwoord opgegeven worden alleen gebruikt voor het genereren van API-tokens en niet na het eerste verbindingsproces worden opgeslagen.
 
  > [!NOTE]  
 >  Cloud App Security ondersteunt ServiceNow-versies van Eureka, Fiji Geneva, Helsinki en Istanboel. Als u verbinding wilt maken tussen ServiceNow en Cloud App Security, moet u de rol **Beheerder** hebben en er zeker van zijn dat het ServiceNow-exemplaar API-toegang ondersteunt.  Raadpleeg voor meer informatie de [ServiceNow-productdocumentatie](http://wiki.servicenow.com/index.php?title=Base_System_Roles#gsc.tab=0).
@@ -33,7 +33,10 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
   
   
 1.  Meld u met een beheerdersaccount aan bij uw ServiceNow-account.  
-  
+ 
+  > [!NOTE]
+  >  De gebruikersnaam en wachtwoord opgegeven worden alleen gebruikt voor het genereren van API-tokens en niet na het eerste verbindingsproces worden opgeslagen.
+
 2.  In de zoekbalk **Filter navigator** typt u **OAuth** en selecteert u **Toepassingsregister**.
 
 3. In de menubalk **Toepassingsregisters** klikt u op **Nieuw** om een nieuw OAuth-profiel te maken.

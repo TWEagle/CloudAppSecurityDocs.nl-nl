@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 3/3/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4526b93a0d95f4bd1cc0a97867ba585002408130
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: e33f277a9576ab1855cf5700584d7ddbb7dfac6c
+ms.sourcegitcommit: c47fd92c71028ede8840e0766f20eb0ad2898e70
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="deploy-cloud-app-security"></a>Cloud App Security implementeren
 Met Cloud App Security kunt u profiteren van de voordelen van cloudtoepassingen, terwijl u de controle houdt over uw bedrijfsbronnen. Dit gebeurt door de zichtbaarheid van de activiteit van de cloud en de beveiliging van bedrijfsgegevens te verbeteren. In dit onderwerp wordt u stapsgewijs begeleid door de stappen voor het instellen en gebruiken van Cloud App Security.  
@@ -60,14 +60,14 @@ U kunt de portal ook openen via het **Office 365-beheercentrum** door te klikken
 ### <a name="step-1-set-up-cloud-discoveryset-up-cloud-discoverymd"></a>Stap 1. [Stel Cloud Discovery in](set-up-cloud-discovery.md).
 Vereiste taak: verkeerslogboeken uploaden **Een doorlopend Cloud Discovery-rapport maken**
 
- 1. Ga naar **Instellingen** > **Cloud Discovery-instellingen**.
- 2. Kies **Logboek automatisch uploaden**.
+ 1 Selecteer in het instellingentandwiel **Cloud Discovery-instellingen**.
+ 2. Kies **logboek automatisch uploaden**.
  3. Voeg uw bronnen toe op het tabblad **Gegevensbronnen**.
  4. Configureer de logboekverzamelaar op het tabblad **Logboekverzamelaars**.
  
 **Een momentopnamerapport van Cloud Discovery maken**
 
- 1. Ga naar **Detecteren** > **Nieuw momentopnamerapport maken** en volg de weergegeven stappen.
+ 1. Ga naar **Discover** > **een momentopname van rapport** en volg de stappen die wordt weergegeven.
 
 **Waarom zou ik Cloud Discovery-rapporten configureren?**
 Inzicht in Shadow IT is essentieel voor uw organisatie.
@@ -77,8 +77,8 @@ Nadat de logboeken zijn geanalyseerd, kunt u gemakkelijk ontdekken welke cloud-a
 ### <a name="step-2-set-instant-visibility-protection-and-governance-actions-for-your-appsenable-instant-visibility-protection-and-governance-actions-for-your-appsmd"></a>Stap 2. [Directe zichtbaarheid, beveiliging en beheeracties voor uw apps instellen](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 Vereiste taak: verbinding maken met apps
 
-1. Ga naar **instellingen** > **App connectors**.
-2. Kies **App koppelen** en selecteer een app.
+1 Selecteer in het instellingentandwiel **App-connectors**.
+2. Klik op het plusteken om een app toevoegen en selecteer een app.
 3. Volg de configuratiestappen om de app te koppelen.
 
 **Waarom moet ik een app koppelen?**
@@ -105,7 +105,7 @@ Aanbevolen taak: gegevens van uw organisatie toevoegen
 
 **E-mailinstellingen invoeren**
 
-1. Ga naar **Instellingen** > **E-mailinstellingen**.
+1. Selecteer in het instellingentandwiel **e-mailinstellingen**.
 2. Voer uw e-mailadressen en weergavenaam in onder **Identiteit afzender**.
 3. Upload de e-mailsjabloon van uw organisatie onder **E‑mailontwerp**.
 
@@ -117,8 +117,9 @@ Aanbevolen taak: gegevens van uw organisatie toevoegen
 
 **Metrische gegevens voor de score aanpassen**
 
-1. Ga naar **Instellingen** > **Cloud Discovery-instellingen**.
-2. Configureer het belang van verschillende risicowaarden onder **Configuratie scorewaarden**.
+1. Selecteer in het instellingentandwiel **Cloud Discovery-instellingen**.
+1 Selecteer in het instellingentandwiel **Cloud Discovery-instellingen**.
+2. Onder **Score metrische gegevens**, configureer het belang van verschillende risicowaarden.
 3. Kies **Opslaan**.
 
 De risicoscores die zijn gegeven aan de gedetecteerde apps worden nu nauwkeurig geconfigureerd op basis van de behoeften en prioriteiten van uw organisatie.
@@ -132,8 +133,9 @@ Aanbevolen taak: belangrijke instellingen configureren
 
 **IP-adrestags maken**
 
-1. Ga naar **Instellingen** > **IP-adrestags**.
-2. Kies (+) **IP-adresbereik toevoegen**.
+1 Selecteer in het instellingentandwiel **Cloud Discovery-instellingen**.
+1 Selecteer in het instellingentandwiel **IP-adresbereiken**.
+2. Klik op het plusteken om een IP-adresbereik toevoegen.
 3. Voer de **details**, **locatie**, **tags** en **categorie** van het IP-bereik in.
 4. Kies **Maken**.
 
@@ -141,8 +143,8 @@ Aanbevolen taak: belangrijke instellingen configureren
 
 **Continue rapporten maken**
 
-1. Ga naar **Instellingen** > **Cloud Discovery-instellingen**.
-2. Onder **continue rapporten beheren**, kies **rapport maken**.
+1. Van het instellingentandwiel **Cloud Discovery-instellingen**.
+2. Onder **continue rapporten**, kies **rapport maken**.
 3. Volg de configuratiestappen.
 4. Kies **Maken**.
 
@@ -150,7 +152,7 @@ U kunt nu gedetecteerde gegevens weer laten geven op basis van uw eigen voorkeur
 
 **Domeinen toevoegen**
 
-1. Ga naar **Instellingen** > **Algemene instellingen**.
+1. Selecteer in het instellingentandwiel **instellingen**.
 2. Voeg de interne domeinen van uw organisatie toe onder **Organisatiedetails**.
 3. Kies **Opslaan**.
 

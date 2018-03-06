@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/21/2018
+ms.date: 3/3/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 048b2e594190ad19d20fcba57767b6fcf6ebd2fd
-ms.sourcegitcommit: 4f9a4884672633927ce649e51df3b10c547787af
+ms.openlocfilehash: 92182731b6ee80c24aa2f3d7836415b2dfa4da2c
+ms.sourcegitcommit: c5533d66b8e037d6221c48bdbad81574f25f2817
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="azure-information-protection-integration"></a>Integratie van Azure Information Protection
 
@@ -43,7 +43,7 @@ Cloud App Security ondersteunt momenteel toepassen Azure Information Protection-
 - Word: docm, docx, dotm, dotx
 - Excel: xlam, xlsm, xlsx, xltx
 - PowerPoint: potm, potx, ppsx, ppsm, pptm, pptx
-- PDF-en afbeeldingsbestanden zijn beschikbaar in toekomstige versies 
+- PDF-bestand is beschikbaar in toekomstige versies 
 
 Deze functie is momenteel beschikbaar zijn voor bestanden die zijn opgeslagen in het vak, G Suite, SharePoint Online en OneDrive voor bedrijven. In toekomstige versies worden meer cloud-apps ondersteund.
 

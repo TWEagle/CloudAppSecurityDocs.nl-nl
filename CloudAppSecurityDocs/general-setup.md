@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/31/2018
+ms.date: 3/3/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e5b3647abff4edfb5dbc2c1d38ce322011da901a
-ms.sourcegitcommit: bfe898e82c195981cc2fdaa899b0f8ab48957a00
+ms.openlocfilehash: ff8f123a1bab8831071865422f8afa34e20e416b
+ms.sourcegitcommit: c47fd92c71028ede8840e0766f20eb0ad2898e70
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/05/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="basic-setup"></a>Basisconfiguratie
 De volgende procedure bevat instructies voor het aanpassen van de Cloud App Security-portal.
@@ -32,10 +32,8 @@ Voor toegang tot portal is het nodig zijn voor de volgende IP-adressen toevoegen
   
 ## <a name="set-up-the-portal"></a>De portal instellen  
   
-1.  In de Cloud App Security-portal klikt u op het pictogram Instellingen ![pictogram instellingen](./media/settings-icon.png "pictogram instellingen") in de menubalk en selecteert u **Algemene instellingen** om het volgende te configureren:  
-     
-     ![algemene instellingen](./media/general-settings.png "algemene instellingen")  
-  
+1.  Klik in de Cloud App Security-portal in de menubalk op het instellingentandwiel ![Instellingenpictogram](./media/settings-icon.png "Instellingenpictogram") en selecteer **instellingen** om gegevens van uw organisatie te configureren.     
+
 3.  Bij **Organisatiegegevens** is het van belang dat u een **Weergavenaam organisatie** opgeeft voor uw organisatie. Deze wordt weergegeven op het e-mailberichten en webpagina's die uit het systeem worden verzonden.  
   
 4. Geef een **omgevingsnaam** (tenant) op. Dit is vooral belangrijk als u meerdere tenants beheert.  
