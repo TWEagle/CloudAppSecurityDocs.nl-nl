@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/5/2018
+ms.date: 3/3/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b3e4713e-986f-4a5e-9fcc-f8de94dd0df7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 54dd79b76386eda64e06936801849089c5f7d438
-ms.sourcegitcommit: 8bfb8236b83f7423e73fe449d662935c084ff844
+ms.openlocfilehash: 2b9239b43d2f104f6e54c519ba089346c7672456
+ms.sourcegitcommit: c5533d66b8e037d6221c48bdbad81574f25f2817
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="connect-box-to-microsoft-cloud-app-security"></a>Verbinding maken tussen Box en Microsoft Cloud App Security
 In deze sectie vindt u instructies voor het maken van een verbinding tussen Cloud App Security en uw bestaande Box-account met behulp van de connector-API's voor de app.  
@@ -29,7 +29,7 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
   
 1.  Als u toegang tot machtigingen van de toepassing beperkt, volgt u deze stap. Ga anders verder met stap 2.  
   
-    -   Klik op het pictogram Instellingen en vervolgens op **Bedrijfsinstellingen** in de beheerconsole van Box.  
+    -   Klik op het Instellingenpictogram, gevolgd door in de beheerconsole van Box **Bedrijfsinstellingen** of **instellingen van de onderneming**.  
   
          ![box business settings](./media/box-business-settings.png "box business settings")  
   
@@ -37,7 +37,7 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
   
          ![box apps](./media/box-apps.png "box apps")  
   
-    -   Als **niet-gepubliceerde toepassingen** is geselecteerd in de **behalve voor** tekst Voeg het serienummer van de Cloud App Security-app:<br></br>US1 Datacenter:`nduj1o3yavu30dii7e03c3n7p49cj2qh` <br></br>US2 Datacenter:`w0ouf1apiii9z8o0r6kpr4nu1pvyec75`<br></br>EU1 Datacenter:`me9cm6n7kr4mfz135yt0ab9f5k4ze8qp`<br></br>Klik vervolgens op **Opslaan**. Voor meer informatie over om te zien welke gegevens Cloud App Security center u bent verbonden, Zie [API tokens](api-tokens.md). 
+    -   Als **niet-gepubliceerde toepassingen** is geselecteerd in de **behalve voor** tekst Voeg het serienummer van de Cloud App Security-app:<br></br>US1 Datacenter: `nduj1o3yavu30dii7e03c3n7p49cj2qh` <br></br>US2 Datacenter: `w0ouf1apiii9z8o0r6kpr4nu1pvyec75`<br></br>EU1 Datacenter: `me9cm6n7kr4mfz135yt0ab9f5k4ze8qp`<br></br>Klik vervolgens op **Opslaan**. Voor meer informatie over om te zien welke gegevens Cloud App Security center u bent verbonden, Zie [API tokens](api-tokens.md). 
   
          ![box settings except for](./media/box-settings-except-for.png "box settings except for")  
   

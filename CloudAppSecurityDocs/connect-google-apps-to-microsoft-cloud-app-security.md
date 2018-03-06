@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 3/3/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4b673fa732e553319483f11af5c95e33148bb05f
-ms.sourcegitcommit: 9cfb4b4e91e37fa3acf238b729cb68be0adc7086
+ms.openlocfilehash: cf4f05f7605a15682141ae321bba3aad70d463fd
+ms.sourcegitcommit: c47fd92c71028ede8840e0766f20eb0ad2898e70
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/21/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>Verbinding maken tussen G Suite en Microsoft Cloud App Security
 In deze sectie vindt u instructies voor het maken van een verbinding tussen Cloud App Security en uw bestaande G Suite-account met behulp van de connector-API's.
@@ -62,7 +62,9 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
    > [!NOTE]  
    >  Negeer de waarschuwing over **Credentials** (Referenties) voor nu.  
 
-8.  U moet 5 **Enabled APIs** (Ingeschakelde API’s) hebben:  
+8. Klik op inschakelen voor elke API.
+     ![enable Google APPI](./media/google-api.png "google-api")  
+1. U moet beschikken over 5 **ingeschakeld API's**, zorg ervoor dat u andere API's uitschakelen:
   
      ![google enabled apis](./media/google5.png "google5")  
   
@@ -187,7 +189,7 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
 
     -   Onder **zichtbaarheid**, selecteer **mijn domein** (niet-openbare). 
     -   Klik op **Save Changes** (Wijzigingen opslaan).  
-  
+        ![Google zichtbaarheid](./media/google-visibility.png "google zichtbaarheid")  
 22. Ga naar [admin.google.com](https://admin.google.com/) en kies vervolgens **Security** (beveiliging). 
    
       ![Google beveiliging](./media/googlesec.png "google-beveiliging")  
@@ -219,7 +221,7 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
   
     4.  Voer een **admin account email** in van uw G Suite-beheerder.  
   
-    5.  Als u een onbeperkt account van G Suite hebt, schakelt u dit selectievakje in. Zie voor informatie over welke functies beschikbaar in de Cloud App Security voor G Suite onbeperkte zijn [Schakel directe zichtbaarheid, bescherming en beheeracties voor uw apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).  
+    5.  Als u een G Suite bedrijven of Enterprise-account hebt, controleert u dit selectievakje in. Zie voor informatie over welke functies beschikbaar in de Cloud App Security for G Suite bedrijf of onderneming zijn [Schakel directe zichtbaarheid, bescherming en beheeracties voor uw apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).  
   
     6.  Klik op **Instellingen opslaan**.  
   

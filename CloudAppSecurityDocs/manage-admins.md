@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: af4552c9ffac66fae14b3fc5f84860e2d3761f88
-ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
+ms.openlocfilehash: e20af36ddf5d3758d42a13caab89663ec1fab985
+ms.sourcegitcommit: c47fd92c71028ede8840e0766f20eb0ad2898e70
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 03/05/2018
 ---
 ## <a name="managing-admin-access"></a>Beheerderstoegang beheren
 
@@ -43,7 +43,7 @@ Zie voor meer informatie [beheerdersrollen toewijzen in Azure Active Directory](
 
 U kunt ook extra beheerders toevoegen aan de Cloud App Security zonder gebruikers toevoegen aan Azure Active Directory-beheerdersrollen, door de volgende stappen uit te voeren:
 
-1. Klik op het tandwiel Instellingen ![instellingenpictogram](./media/settings-icon.png "instellingenpictogram") en vervolgens op **Beheerderstoegang beheren**. 
+1. Klik op het instellingentandwiel ![Instellingenpictogram](./media/settings-icon.png "Instellingenpictogram") en vervolgens **beheerders beheren**. 
 
 2. Voeg de beheerders toe die toegang moeten hebben tot Cloud App Security.
   

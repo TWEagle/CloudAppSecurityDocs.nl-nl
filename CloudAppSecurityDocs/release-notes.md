@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/1/2018
+ms.date: 3/3/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 44561ed62462eedc201f7b5b42745bed7e46a1bd
-ms.sourcegitcommit: 85d90d51e9e265d077f38b0188bcfdab2ce63ed1
+ms.openlocfilehash: c2e6d6b3b31c93d69f366b93a7426f62518b948c
+ms.sourcegitcommit: c5533d66b8e037d6221c48bdbad81574f25f2817
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Wat is er nieuw is bij de Microsoft Cloud App Security
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 03/02/2018
 
 - Nu kunt u profiteren van de Microsoft Cloud App Security van shadow IT detectie en mogelijkheden voor bewaking uitvoeren op uw eigen eigen aangepaste apps. De nieuwe mogelijkheid voor het toevoegen van aangepaste apps aan Cloud Discovery kunt u app-gebruik controleren en de hoogte worden gebracht van wijzigingen in het gebruikspatroon. Zie voor meer informatie [beveiligen van uw aangepaste apps](cloud-discovery-custom-apps.md). Deze functie wordt geleidelijk geïntroduceerd.
 
-- De Cloud App Security-portal *instellingen** pagina's zijn aangepast om te ervaren voor verbeterde gebruiker. De nieuwe pagina consolideert alle pagina's van de instellingen, biedt functionaliteit voor het zoeken en een duidelijker ontwerp. 
+- De Cloud App Security-portal **instellingen** pagina's zijn ontworpen. Het nieuwe ontwerp consolideert alle pagina's van de instellingen, biedt functionaliteit voor het zoeken en een verbeterd ontwerp. 
 
 - Cloud Discovery ondersteunt nu Barracuda F-serie Firewalls en Barracuda F-serie Firewall Web logboek Streaming.
 

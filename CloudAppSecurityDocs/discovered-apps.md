@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/3/2018
+ms.date: 3/5/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 23fe601cba94ad58f4baceb0df461faafbe7a974
-ms.sourcegitcommit: 85d90d51e9e265d077f38b0188bcfdab2ce63ed1
+ms.openlocfilehash: 276af05cd289496c277a5ab0709e7fca3453d469
+ms.sourcegitcommit: c47fd92c71028ede8840e0766f20eb0ad2898e70
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="working-with-discovered-apps"></a>Werken met gedetecteerde apps
 
@@ -52,6 +52,13 @@ In de **gedetecteerde apps** pagina onder **bladeren op categorie** Selecteer zo
 
 Nadat de resultaten worden gefilterd, kunt u [goed en blokkeren](governance-discovery.md) ze met behulp van het selectievakje in bulk-actie voor goed ze allemaal in één actie. Nadat ze niet-toegestane zijn kunt u een blokkerende script kunt gebruiken om te blokkeren ze worden gebruikt in uw omgeving.
 
+Cloud discovery kan u zelfs diepere Duik in de cloud-gebruik van uw organisatie en identificeren van specifieke exemplaren die gebruikt worden door de gedetecteerde subdomeinen onderzoeken.
+     
+U kunt bijvoorbeeld onderscheid maken tussen verschillende SharePoint-sites.
+
+Dit wordt alleen ondersteund in firewalls en proxy's die doel-URL gegevens bevatten. Zie de lijst met ondersteunde apparaten in [firewalls en proxy's ondersteund](set-up-cloud-discovery#supported-firewalls-and-proxies).
+
+ ![subdomein informatie](./media/discovery-domains.png) 
 
 ## <a name="exclude-entities"></a>Entiteiten uitsluiten  
 Als u gebruikers of IP-adressen heeft die bijzonder veel ruis veroorzaken en oninteressant zijn of apps die niet relevant zijn, dan kunt u hun gegevens uitsluiten van de Cloud Discovery-gegevens die worden geanalyseerd. U zou bijvoorbeeld alle gegevens kunnen uitsluiten die afkomstig zijn van 127.0.0.1 of de lokale host.  
