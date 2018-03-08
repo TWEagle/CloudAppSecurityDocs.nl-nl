@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 3/7/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a61579877c230849ef721a923d4148ea4950c8d3
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: a010bdab8d58ca3454ab3a47d181fe999e3bee54
+ms.sourcegitcommit: 9de7ed2224aeed049fc2a87e52307988f8837eeb
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="governing-connected-apps"></a>Verbonden apps beheren
 Met governance kunt u beheren wat gebruikers doen, in realtime en in verschillende apps. Voor verbonden apps kunt u beheeracties toepassen op bestanden of activiteiten.
@@ -87,7 +87,7 @@ De volgende beheeracties kunnen voor verbonden apps worden uitgevoerd op een spe
     > [!NOTE] 
     > Als uw Azure Active Directory is ingesteld overschrijft de Azure AD-instellingen automatisch kunnen worden gesynchroniseerd met de gebruikers in uw on-premises Active Directory omgeving de instellingen in de on-premises omgeving en deze beheeractie worden geannuleerd. 
   
-    -   Wachtwoord intrekken – het gebruikerswachtwoord intrekken en zorgen dat ze een nieuw wachtwoord instelt bij de volgende aanmelding.  
+    -   Vereist dat de gebruiker opnieuw zich aanmelden met de gebruiker uit en ze nodig heeft om zich opnieuw aanmelden.  
   
      ![Cloud App Security activiteit beleid beheeracties](./media/activity-policy-ref6.png "ref6 van activiteit-beleid")  
   
@@ -119,7 +119,7 @@ Zie [Beleidsconflicten](control-cloud-apps-with-policies.md) voor informatie ove
 |Accounts|Account|Accountinstellingen|Hiermee gaat u naar de pagina met accountinstellingen in de specifieke app (bijvoorbeeld in Salesforce).|Alle apps: voor OneDrive en SharePoint worden de instellingen geconfigureerd in Office.|
 |Accounts |Bestand|Eigendom van alle bestanden overdragen|In een account brengt u het eigendom van de bestanden van een gebruiker over naar een nieuwe persoon, die u selecteert. De vorige eigenaar wordt editor en kan de instellingen voor delen niet meer wijzigen. De nieuwe eigenaar ontvangt een e-mailmelding over het gewijzigde eigendom.|G Suite|
 |Accounts, activiteitenbeleid|Account|De gebruiker blokkeren|Hiermee wordt ingesteld dat de gebruiker geen toegang heeft en zich niet kan aanmelden. Als de gebruiker is aangemeld wanneer u dit instelt, wordt deze gebruiker onmiddellijk vergrendeld.|G Suite, Box, Office, Salesforce|
-|Activiteitenbeleid, accounts|Account|Het wachtwoord intrekken|Hiermee wordt het wachtwoord voor een gebruikersaccount ingetrokken. U kunt bijvoorbeeld een activiteitenbeleid instellen dat een wachtwoord intrekt na tien mislukte aanmeldingspogingen.|G Suite|
+|Activiteitenbeleid, accounts|Account|Gebruiker aanmelden opnieuw vereisen|Trekt alle vernieuwen van tokens en problemen met cookies sessies voor toepassingen door de gebruiker. Hiermee wordt voorkomen dat toegang tot gegevens van de organisatie en de gebruiker zich aanmeldt bij alle toepassingen opnieuw wordt geforceerd.|G Suite|
 |Activiteitenbeleid, accounts|Account|De beheerdersmachtigingen intrekken|Hiermee wordt het wachtwoord voor een beheerdersaccount ingetrokken. U kunt bijvoorbeeld een activiteitenbeleid instellen dat de beheerdersmachtigingen intrekt na tien mislukte aanmeldingspogingen.|G Suite|
 |App-dashboard > App-machtigingen|Machtigingen|Uitsluiten van apps ongedaan maken|In Google en Salesforce: de uitsluiting van apps ongedaan maken en toestaan dat gebruikers apps van derden kunnen machtigen voor Google of Salesforce. In Office 365: de machtigingen van apps van derden voor Office herstellen.|G Suite, Salesforce, Office|
 |App-dashboard > App-machtigingen|Machtigingen|App-machtigingen uitschakelen|De machtigingen voor een app van derden intrekken voor Google, Salesforce of Office. Dit is een eenmalige actie die wordt uitgevoerd voor alle bestaande machtigingen, maar waarmee toekomstige verbindingen niet worden voorkomen. |G Suite, Salesforce, Office|
