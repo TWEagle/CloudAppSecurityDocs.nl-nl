@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/21/2018
+ms.date: 3/7/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: bbf54f66-4ce2-428c-afc8-b5a64277014f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: dc032e1e5b560a8f6550a091c6694d0f63ff5822
-ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
+ms.openlocfilehash: d05b1151383526ff37821c7d15abbd9b0f4f4f41
+ms.sourcegitcommit: 9de7ed2224aeed049fc2a87e52307988f8837eeb
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 03/08/2018
 ---
 #  <a name="IPtagsandRanges"></a>Werken met IP-bereiken en -tags
 
@@ -45,7 +45,7 @@ Raadpleeg de ID in de Cloud App Security API-documentatie voor het gebruik van d
 
 Ingebouwde IP-Adreslabels en aangepaste IP-tags worden beschouwd als hiërarchisch met aangepaste IP-tags voorrang heeft op de ingebouwde IP-tags. Bijvoorbeeld, als een IP-adres wordt gemarkeerd als **riskant** op basis van dreigingen, maar er is een aangepaste IP-code die wordt geïdentificeerd als **zakelijk** aangepaste categorie en labels voorrang.
 
-Klik in de menubalk op het Instellingenpictogram ![het Instellingenpictogram](./media/settings-icon.png "Instellingenpictogram") en selecteer **IP-adresbereiken**. Klik op **+ IP-adresbereik toevoegen** en stel de volgende velden:  
+Klik in de menubalk op het Instellingenpictogram ![het Instellingenpictogram](./media/settings-icon.png "Instellingenpictogram") en selecteer **IP-adresbereiken**. Klik op het plusteken om IP-adresbereiken toevoegen en instellen van de volgende velden:  
   
 > [!NOTE]  
 > - De locatie en de geregistreerde provider overschrijven de standaardinstellingen.   
@@ -57,13 +57,7 @@ Klik in de menubalk op het Instellingenpictogram ![het Instellingenpictogram](./
   
 2.  Voer het **IP-adresbereik** in dat u wilt configureren en klik vervolgens op de knop met het plusteken (+). U kunt zoveel IP-adressen en subnetten toevoegen als u wilt met behulp van de notatie voor netwerkvoorvoegsels (ook wel CIDR-notatie genoemd), bijvoorbeeld 192.168.1.0/32.  
   
-3.  Als u de (ISP-) velden van de **locatie** of organisatie voor deze adressen wilt overschrijven, voert u een nieuwe waarde in. Als u bijvoorbeeld een IP-adres hebt dat wordt beschouwd als Iers, maar u weet dat het adres zich in de Verenigde Staten bevindt, dan kunt u deze instelling overschrijven.  
-  
-4.  Voer een **geregistreerde provider** in. Overschrijft dit de gegevens in uw activiteiten  
-  
-5.  Om de activiteiten van deze IP-adressen te **taggen**, voert u een tag in. Als u een woord in het vak invoert, wordt de tag gemaakt. Nadat u al een geconfigureerde tag hebt, kunt u eenvoudig deze toevoegen aan extra IP-adresbereiken door deze te kiezen uit de lijst. U kunt zoveel IP-tags toevoegen als u wilt voor elk bereik. IP-tags kunnen worden gebruikt tijdens het samenstellen van beleid.  Naast de IP-tags die u configureert, heeft Cloud App Security ingebouwde tags die u niet kunt configureren. Onder [IP tags filter](activity-filters.md) (Filter voor IP-tags) wordt de lijst met tags weergegeven.  
-  
-6.  **IP-categorieën** worden gebruikt om activiteiten uit interessante IP-adressen eenvoudig te herkennen. De categorieën zijn beschikbaar in de portal vereisen nog wel Gebruikersconfiguratie om te bepalen welke IP-adressen zijn opgenomen in elke categorie, met uitzondering van de categorie "Riskant", waaronder twee IP-tags - anonieme proxy en Tor.  
+3.  **Categorieën** gemakkelijk herkennen activiteiten uit interessante IP-adressen worden gebruikt. De categorieën zijn beschikbaar in de portal vereisen nog wel Gebruikersconfiguratie om te bepalen welke IP-adressen zijn opgenomen in elke categorie, met uitzondering van de categorie "Riskant", waaronder twee IP-tags - anonieme proxy en Tor.  
   
      De volgende IP-categorieën zijn beschikbaar:  
   
@@ -76,9 +70,13 @@ Klik in de menubalk op het Instellingenpictogram ![het Instellingenpictogram](./
     -   **Riskant**: dit moeten alle IP-adressen zijn die u beschouwt als riskant. Dit kunnen verdachte IP-adressen zijn die u in het verleden hebt bekeken, IP-adressen in de netwerken van uw concurrenten enzovoort.  
   
     -   **VPN**: dit moeten alle IP-adressen zijn die u voor externe werknemers gebruikt.  
+4.  Om de activiteiten van deze IP-adressen te **taggen**, voert u een tag in. Als u een woord in het vak invoert, wordt de tag gemaakt. Nadat u al een geconfigureerde tag hebt, kunt u eenvoudig deze toevoegen aan extra IP-adresbereiken door deze te kiezen uit de lijst. U kunt zoveel IP-tags toevoegen als u wilt voor elk bereik. IP-tags kunnen worden gebruikt tijdens het samenstellen van beleid.  Naast de IP-tags die u configureert, heeft Cloud App Security ingebouwde tags die u niet kunt configureren. Onder [IP tags filter](activity-filters.md) (Filter voor IP-tags) wordt de lijst met tags weergegeven.  
+  
+5.  Als u de (ISP-) velden van de **locatie** of organisatie voor deze adressen wilt overschrijven, voert u een nieuwe waarde in. Als u bijvoorbeeld een IP-adres hebt dat wordt beschouwd als Iers, maar u weet dat het adres zich in de Verenigde Staten bevindt, dan kunt u deze instelling overschrijven.  
+  
+6.  Voer een **geregistreerde provider** in. Overschrijft dit de gegevens in uw activiteiten  
  
-
-7.  Wanneer u klaar bent, klikt u op **Maken**.  
+7.   Wanneer u klaar bent, klikt u op **Maken**.  
   
      ![newipaddress-bereik](./media/newipaddress-range.png "newipaddress-bereik")  
   

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 3/3/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,26 +13,24 @@ ms.technology:
 ms.assetid: 8402cdc9-4969-4150-b567-ccc9d75e5370
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 50bf7a8bb69e20b1f4f8e54b22dfad47d2a81690
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: de4e7025f046f15e0aa36f2cf45d17a3502a0644
+ms.sourcegitcommit: 9de7ed2224aeed049fc2a87e52307988f8837eeb
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 03/08/2018
 ---
 ##  <a name="mailsettings"></a> Voorkeuren voor e mailmeldingen instellen  
-Klik in de menubalk op het pictogram Instellingen ![pictogram instellingen](./media/settings-icon.png "pictogram instellingen") en selecteer **E‑mailinstellingen** om de parameters in te stellen voor e‑mailmeldingen die vanuit Cloud App Security worden verzonden naar beheerders die om waarschuwingen vragen, en voor meldingen die naar eindgebruikers worden verzonden over schendingen waarbij zij betrokken zijn.  
 
-Zie voor informatie over de IP-adres voor Cloud App Security e-server die u moet de goedgekeurde IP-adressen in uw service tegen ongewenste e-mail [vereisten](network-requirements.md). 
+Volg deze procedure om parameters voor e-mailmeldingen van Cloud App Security wordt verzonden naar beheerders instellen aanvragende waarschuwingen en meldingen te verzenden naar eindgebruikers over schendingen waarbij zij betrokken zijn, zijn. Zie voor informatie over de IP-adres voor Cloud App Security e-server die u moet de goedgekeurde IP-adressen in uw service tegen ongewenste e-mail [vereisten](network-requirements.md). 
+
+
+1. Klik in de menubalk op het instellingentandwiel ![Instellingenpictogram](./media/settings-icon.png "Instellingenpictogram") en selecteer **instellingen**, en selecteer vervolgens de **e-mailinstellingen** tabblad.  
+
+2. **Van e-mailadres**: het e-mailaccount dat u wilt gebruiken om de melding te verzenden.  
+   
+   **Van weergavenaam**: de naam die u wilt weergeven in het veld **Van** van het e-mailbericht.  
   
-![e-mailinstellingen, menu](./media/mail-setting-menu.png "e-mailinstellingen, menu")  
-  
-Configureer het volgende:  
-  
-1.  **Van e-mailadres**: het e-mailaccount dat u wilt gebruiken om de melding te verzenden.  
-  
-     **Van weergavenaam**: de naam die u wilt weergeven in het veld **Van** van het e-mailbericht.  
-  
-     **E-mailadres voor beantwoording**: het e-mailaccount dat moet worden gebruikt voor antwoorden op het bericht.  
+   **E-mailadres voor beantwoording**: het e-mailaccount dat moet worden gebruikt voor antwoorden op het bericht.  
   
      ![e-mailinstellingen, configuratie](./media/mail-settings-config.png "e-mailinstellingen, configuratie")  
 
@@ -41,7 +39,7 @@ Configureer het volgende:
   
 2.  U kunt een HTML-bestand gebruiken voor het aanpassen en **ontwerpen van de e-mailberichten** die vanuit het systeem worden verzonden. Het HTML-bestand dat wordt gebruikt voor de sjabloon moet het volgende omvatten:  
   
-    -   Alle sjabloon-CSS moet inline in de sjabloon zitten.  
+    -   Alle sjabloon CSS-bestanden moeten inline in de sjabloon.  
   
     -   De sjabloon moet drie niet-bewerkbare tijdelijke aanduidingen hebben:  
   
