@@ -43,6 +43,7 @@
 ### [Uw bestanden beveiligen met beheerquarantaine](use-case-admin-quarantine.md)
 ## Ontdekken
 ### [Werken met gedetecteerde apps](discovered-apps.md)
+#### [Aangepaste apps toevoegen aan Cloud Discovery](cloud-discovery-custom-apps.md)
 #### [Gedetecteerde app-filters en -query's](discovered-app-queries.md)
 ### [Werken met de risicoscore](risk-score.md)
 ## [Onderzoeken](investigate.md)
