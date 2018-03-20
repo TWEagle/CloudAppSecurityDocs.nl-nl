@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/7/2018
+ms.date: 3/18/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: bbf54f66-4ce2-428c-afc8-b5a64277014f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d05b1151383526ff37821c7d15abbd9b0f4f4f41
-ms.sourcegitcommit: 9de7ed2224aeed049fc2a87e52307988f8837eeb
+ms.openlocfilehash: f066e17f8b4f2e54a65abb5c58095c0917e4e985
+ms.sourcegitcommit: a074880eed43cf6e5ae95807640e99655b24d9be
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/19/2018
 ---
 #  <a name="IPtagsandRanges"></a>Werken met IP-bereiken en -tags
 
@@ -26,16 +26,7 @@ Elke groep met IP-adresbereiken kan worden ingedeeld op basis van een vooraf ged
   
 IPv4 en IPv6 worden ondersteund.  
   
-Cloud App Security is vooraf geconfigureerd met ingebouwde tags voor de volgende IP-adressen: 
-- Native client
-- Verouderd besturingssysteem
-- Beheerde apparaten
-- Anonieme proxy
-- Botnet (wanneer een activiteit is uitgevoerd door een botnet, ontvangt u een koppeling voor meer informatie over de specifieke botnet)
-- Tor
-- Compatibel apparaat
-- Geverifieerd apparaat
-- Imiteren
+Cloud App Security is vooraf geconfigureerd met een ingebouwde IP-adresbereiken voor populaire cloud-providers zoals Azure en Office 365. Daarnaast hebben we ingebouwde tags toepassen op basis van Microsoft dreigingen waaronder anonieme proxy, Botnet en Tor. U ziet de volledige lijst in de vervolgkeuzelijst op de pagina bereiken van IP-adres.
 
 Raadpleeg de ID in de Cloud App Security API-documentatie voor het gebruik van deze ingebouwde tags als onderdeel van een zoekopdracht. 
 

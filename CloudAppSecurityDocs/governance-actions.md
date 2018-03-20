@@ -13,15 +13,19 @@ ms.technology:
 ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a010bdab8d58ca3454ab3a47d181fe999e3bee54
-ms.sourcegitcommit: 9de7ed2224aeed049fc2a87e52307988f8837eeb
+ms.openlocfilehash: 8339081e7600faf417a35ff4a4318b60d84eece1
+ms.sourcegitcommit: a074880eed43cf6e5ae95807640e99655b24d9be
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="governing-connected-apps"></a>Verbonden apps beheren
 Met governance kunt u beheren wat gebruikers doen, in realtime en in verschillende apps. Voor verbonden apps kunt u beheeracties toepassen op bestanden of activiteiten.
 Beheeracties zijn geïntegreerde acties die u rechtstreeks vanuit Cloud App Security kunt uitvoeren op bestanden of activiteiten om te beheren wat uw gebruikers doen, in realtime en in verschillende apps. 
+
+> [!NOTE]
+> Wanneer de Cloud App Security probeert uit te voeren van een beheeractie op een bestand, maar mislukt omdat het bestand is vergrendeld, er wordt automatisch opnieuw geprobeerd de beheeractie. 
+
 
 ### <a name="file-governance-actions"></a>Beheeracties voor bestanden  
 

@@ -13,14 +13,19 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 08a798bb20830afcbdb498c2ac72787873f72fab
-ms.sourcegitcommit: 9de7ed2224aeed049fc2a87e52307988f8837eeb
+ms.openlocfilehash: 887745913039d7e94930bdf8b30000bdfeea90ff
+ms.sourcegitcommit: a074880eed43cf6e5ae95807640e99655b24d9be
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Wat is er nieuw is bij de Microsoft Cloud App Security
 
+## <a name="cloud-app-security-release-119"></a>Cloud App Security-release 119
+18 maart 2018 uitgebracht
+
+-   De pagina bereiken van IP-adres bevat een ingebouwde IP-adressen die zijn gedetecteerd door Cloud App Security. Dit omvat IP-adressen voor geïdentificeerde cloudservices, zoals Azure en Office 365, evenals de feed dreigingen die automatisch verrijkt IP-adressen met informatie over bekende riskante IP-adressen. 
+-   Wanneer de Cloud App Security probeert uit te voeren van een beheeractie op een bestand, maar mislukt omdat het bestand is vergrendeld, er wordt nu automatisch opnieuw geprobeerd de beheeractie. 
 
 ## <a name="cloud-app-security-release-118"></a>Cloud App Security-release 118
 4 maart 2018 uitgebracht
