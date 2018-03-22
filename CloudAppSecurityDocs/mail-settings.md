@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/3/2018
+ms.date: 3/21/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 8402cdc9-4969-4150-b567-ccc9d75e5370
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: de4e7025f046f15e0aa36f2cf45d17a3502a0644
-ms.sourcegitcommit: 9de7ed2224aeed049fc2a87e52307988f8837eeb
+ms.openlocfilehash: 1c15a5ca97ecf130d8202975d6ddcba1e1d69d0e
+ms.sourcegitcommit: 716699286f8ebb33327eac28ca9b7bf9742daf32
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/22/2018
 ---
 ##  <a name="mailsettings"></a> Voorkeuren voor e mailmeldingen instellen  
 
@@ -29,7 +29,9 @@ Volg deze procedure om parameters voor e-mailmeldingen van Cloud App Security wo
 2. **Van e-mailadres**: het e-mailaccount dat u wilt gebruiken om de melding te verzenden.  
    
    **Van weergavenaam**: de naam die u wilt weergeven in het veld **Van** van het e-mailbericht.  
-  
+   > [!NOTE]
+   > Unicode-tekens worden ondersteund in de weergegeven naam volgens [rfc822 protocol](http://www.rfc-editor.org/rfc/rfc822.txt).
+
    **E-mailadres voor beantwoording**: het e-mailaccount dat moet worden gebruikt voor antwoorden op het bericht.  
   
      ![e-mailinstellingen, configuratie](./media/mail-settings-config.png "e-mailinstellingen, configuratie")  

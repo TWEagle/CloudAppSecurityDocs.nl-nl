@@ -13,17 +13,21 @@ ms.technology:
 ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b1bc4f7455736f57cf4bb43d8c7d7d020e749f7c
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: c14ba598a593dd8711151eb58e0eab75d0ea8791
+ms.sourcegitcommit: 716699286f8ebb33327eac28ca9b7bf9742daf32
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="connect-apps"></a>Apps koppelen 
 App-connectors maken gebruik van de API's van app-providers. Hierdoor zijn de apps waarmee u verbinding maakt, beter zichtbaar en controleerbaar voor Cloud App Security.  
   
 Cloud App Security maakt gebruik van de API's die door de cloudprovider worden verstrekt; elke service heeft een eigen framework en API-beperkingen. Cloud App Security heeft de services gebruikt om het gebruik van de API's te optimaliseren en om de beste prestaties te leveren. Rekening houdend met de andere beperkingen die de services opleggen aan de API's (zoals beperking, API-limieten, dynamisch verschuiven van API-tijdsvensters, enzovoort), maken de Cloud App Security-engines gebruik van de toegestane capaciteit. Bepaalde bewerkingen, zoals het scannen van alle bestanden in de tenant vereisen een grote hoeveelheid API's en worden daarom verdeeld over een langere periode. Ga ervan uit dat sommige beleidsregels gedurende enkele uren tot dagen worden uitgevoerd.  
   
+## <a name="multi-instance-support"></a>Ondersteuning voor meerdere exemplaren
+
+Cloud App Security ondersteunt meerdere exemplaren van dezelfde verbonden app. Als er meerdere exemplaren van bijvoorbeeld Salesforce (één voor verkoop, één voor marketing) kunt u zich ze beide verbindt met Cloud App Security en ze te beheren vanuit dezelfde console om gedetailleerde beleidsregels en nadere analyse te maken. Deze ondersteuning geldt alleen voor verbonden API apps, niet gedetecteerd Cloud-apps of Proxy verbonden apps.
+
 ## <a name="how-it-works"></a>Hoe het werkt  
 Cloud App Security wordt geïmplementeerd met systeembeheerdersbevoegdheden voor volledige toegang tot alle objecten in uw omgeving.  
   
