@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 3/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: eac0b192-98d7-4939-9a07-1d4a7f8c39c3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f9addebb97bc57b14c5c666b73a0d0d8e21a23ff
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: dbbab2b59c8e44433e3895fc63fefff562a44a29
+ms.sourcegitcommit: 716699286f8ebb33327eac28ca9b7bf9742daf32
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="automatically-apply-azure-information-protection-classification-labels"></a>Azure Information Protection classificatielabels automatisch worden toegepast  
 
@@ -86,8 +86,8 @@ Stel een beleid dat u in de bestanden die zijn opgeslagen in uw account vak cred
 4. U kunt klikken op de overeenkomst om te zien welke bestanden zijn beveiligd. De overeenkomst zelf wordt gemaskeerd ter bescherming van gevoelige gegevens. 
 
 >[!NOTE]
->Cloud App Security ondersteunt momenteel automatische toepassing van Azure Information Protection labels op de Box, SharePoint en OneDrive voor bedrijven.
-
+> - Cloud App Security ondersteunt momenteel automatische toepassing van Azure Information Protection labels op de Box, SharePoint en OneDrive voor bedrijven.
+> - Wanneer een document wordt aangeduid met behulp van Cloud App Security, worden de visuele markeringen worden niet onmiddellijk toegepast maar worden toegepast wanneer dat document wordt geopend in een Office-app en het document de eerste keer wordt opgeslagen. Zie voor meer informatie [hoe u een label configureren voor visuele markeringen voor Azure Information Protection](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-markings#when-visual-markings-are-applied).
 
  ## <a name="see-also"></a>Zie ook  
 [Dagelijkse activiteiten ter bescherming van uw cloudomgeving](daily-activities-to-protect-your-cloud-environment.md)   

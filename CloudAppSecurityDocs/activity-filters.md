@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b2880e9cb1569f018f0e9234e2ff75ec872f5470
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: b628b06e5e5c26ec153d7a4b1a9ef9483c15618a
+ms.sourcegitcommit: 716699286f8ebb33327eac28ca9b7bf9742daf32
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="activities"></a>Activiteiten
 Cloud App Security maakt alle activiteiten van uw verbonden apps voor u zichtbaar. Nadat u Cloud App Security hebt verbonden met een app met behulp van de App-connector, scant Cloud App Security alle activiteiten die hebben plaatsgevonden, waarbij de retroactieve scantijd per app verschilt. Daarna wordt Cloud App Security voortdurend bijgewerkt met nieuwe activiteiten. 
@@ -30,11 +30,6 @@ U kunt het **activiteitenlogboek** filteren om te zoeken naar specifieke activit
 U kunt bijvoorbeeld met het **activiteitenlogboek** zoeken naar gebruikers in uw organisatie die gebruikmaken van besturingssystemen of browsers die verouderd zijn. Dat doet u als volgt: nadat u een app hebt verbonden met Cloud App Security op de pagina **Activiteitenlogboek**, gebruikt u het geavanceerde filter en selecteert u **User agent tag** (Tag gebruikersagent). Selecteer vervolgens **Verouderde browser** of **Verouderd besturingssysteem**.
 
  ![Voorbeeld van activiteit verouderde browser](media/activity-example-outdated.png)
-
-Als u wilt controleren of er buiten uw organisatie toegang wordt verkregen tot **vertrouwelijke** bestanden, stelt u het filter **Activiteitobject** in om te zoeken op **Classificatielabel** en selecteert u het label **Vertrouwelijk**. Stel het filter **IP-adres** zo in dat wordt gezocht naar **Categorie** en sluit de IP-adressen van uw kantoor uit (IP-categorieën kunnen worden geconfigureerd in het menu **Instellingen**). U kunt klikken op **Nieuw beleid op basis van zoekbewerking** om een activiteitsbeleid te maken op basis van de filters die u hebt gedefinieerd, en automatisch de gebruikers op de hoogte te brengen.
-
- ![Voorbeeld van vertrouwelijke bestanden activiteit extern](media/activity-example-ip.png)
-
  
 Met het basisfilter kunt u snel aan de slag met het filteren van uw activiteiten.
 
