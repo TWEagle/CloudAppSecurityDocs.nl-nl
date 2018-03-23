@@ -41,6 +41,7 @@
 ### [Beveiligen van uw organisatie tegen ransomware](use-case-ransomware.md)
 ### [Downloads van gevoelige informatie blokkeren](use-case-proxy-block-session-aad.md)
 ### [Uw bestanden beveiligen met beheerquarantaine](use-case-admin-quarantine.md)
+### [Automatisch Azure Information Protection-labels toepassen](use-case-information-protection.md)
 ## Ontdekken
 ### [Werken met gedetecteerde apps](discovered-apps.md)
 #### [Aangepaste apps toevoegen aan Cloud Discovery](cloud-discovery-custom-apps.md)
