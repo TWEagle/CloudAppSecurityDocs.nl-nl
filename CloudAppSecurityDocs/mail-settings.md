@@ -1,23 +1,23 @@
 ---
 title: Voorkeuren voor e mailmeldingen instellen | Microsoft Docs
 description: Dit artikel bevat informatie over het aanpassen van de e-mailmeldingen die worden verzonden door Cloud App Security.
-keywords: 
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/21/2018
+ms.date: 3/26/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 8402cdc9-4969-4150-b567-ccc9d75e5370
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 1c15a5ca97ecf130d8202975d6ddcba1e1d69d0e
-ms.sourcegitcommit: 716699286f8ebb33327eac28ca9b7bf9742daf32
+ms.openlocfilehash: 96f3b317a453053ceb55a304c6f1481e5c371def
+ms.sourcegitcommit: 1d5d46beb200cf1eed0ef46806effa93eac1a224
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 03/28/2018
 ---
 ##  <a name="mailsettings"></a> Voorkeuren voor e mailmeldingen instellen  
 
@@ -30,7 +30,7 @@ Volg deze procedure om parameters voor e-mailmeldingen van Cloud App Security wo
    
    **Van weergavenaam**: de naam die u wilt weergeven in het veld **Van** van het e-mailbericht.  
    > [!NOTE]
-   > Unicode-tekens worden ondersteund in de weergegeven naam volgens [rfc822 protocol](http://www.rfc-editor.org/rfc/rfc822.txt).
+   > Unicode-tekens worden ondersteund in de weergavenaam en het e-mailadres volgens de [standaard rfc822](http://www.rfc-editor.org/rfc/rfc822.txt).
 
    **E-mailadres voor beantwoording**: het e-mailaccount dat moet worden gebruikt voor antwoorden op het bericht.  
   
