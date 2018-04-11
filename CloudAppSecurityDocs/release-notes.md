@@ -1,23 +1,23 @@
 ---
 title: Wat is er nieuw met Cloud App Security | Microsoft Docs
 description: Dit onderwerp wordt regelmatig bijgewerkt, zodat u weet wat er nieuw is in de meest recente versie van Cloud App Security.
-keywords: 
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 3/7/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 887745913039d7e94930bdf8b30000bdfeea90ff
-ms.sourcegitcommit: a074880eed43cf6e5ae95807640e99655b24d9be
+ms.openlocfilehash: a6db87ce60e719886fcdb4f10b1308cc3d8f0423
+ms.sourcegitcommit: 3c66f12aa31ba211235787ee6f233138ea5f8a75
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Wat is er nieuw is bij de Microsoft Cloud App Security
 
@@ -64,11 +64,11 @@ ms.lasthandoff: 03/19/2018
 ## <a name="cloud-app-security-release-115"></a>Cloud App Security-release 115
 21 januari 2018 uitgebracht
 
--   Deze versie biedt een verbeterde ervaring bij het selecteren van specifieke mappen in de beleidsregels voor bestanden. U kunt nu eenvoudig weergeven en selecteren meerdere mappen in een beleid op te nemen. 
--   In de **gedetecteerde apps** pagina: 
-   - De functie Labels bulksgewijs kunt u aangepaste labels (in aanvulling op erkende en niet-toegestane tags) toepassen. 
-   - Wanneer u **een IP-adressen genereren**, of **een gebruikers-rapport genereren** de geëxporteerde rapporten omvatten nu de informatie over het verkeer van erkende is of niet-toegestane apps. 
--   U kunt nu een nieuwe API-App-connector van het team van Microsoft Cloud App Security rechtstreeks in de portal aanvragen bij de **verbinding maken met een app** pagina. 
+- Deze versie biedt een verbeterde ervaring bij het selecteren van specifieke mappen in de beleidsregels voor bestanden. U kunt nu eenvoudig weergeven en selecteren meerdere mappen in een beleid op te nemen. 
+- In de **gedetecteerde apps** pagina: 
+  - De functie Labels bulksgewijs kunt u aangepaste labels (in aanvulling op erkende en niet-toegestane tags) toepassen. 
+  - Wanneer u **een IP-adressen genereren**, of **een gebruikers-rapport genereren** de geëxporteerde rapporten omvatten nu de informatie over het verkeer van erkende is of niet-toegestane apps. 
+- U kunt nu een nieuwe API-App-connector van het team van Microsoft Cloud App Security rechtstreeks in de portal aanvragen bij de **verbinding maken met een app** pagina. 
 
 
 ## <a name="cloud-app-security-release-114"></a>Cloud App Security-release 114

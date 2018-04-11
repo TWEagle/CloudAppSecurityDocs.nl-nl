@@ -1,23 +1,23 @@
 ---
 title: Archiveren van afgelopen updates in de Cloud App Security | Microsoft Docs
 description: Dit onderwerp is een archief dat wijzigingen in eerdere versies van Cloud App Security beschrijft.
-keywords: 
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 3/7/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 185c3a46-ede8-4d58-b232-111807845c8f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: eccb23c10641517090c9fead2231eb5ebceb2000
-ms.sourcegitcommit: 9de7ed2224aeed049fc2a87e52307988f8837eeb
+ms.openlocfilehash: 17fa764c351ff8b5762570d4e5d26ae8f12fffff
+ms.sourcegitcommit: 3c66f12aa31ba211235787ee6f233138ea5f8a75
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="past-release-archive-of-microsoft-cloud-app-security"></a>Verleden release-archief van de Microsoft Cloud App Security
 
@@ -173,16 +173,16 @@ Uitgebrachte September/oktober 2017
 
 #### <a name="new-features"></a>Nieuwe functies
 
--   U kunt nu gebruikers verplichten om opnieuw aan te melden voor alle Office 365 en Azure AD-apps als een snelle en doeltreffende herstel voor de gebruiker met verdachte activiteitswaarschuwingen en accounts waarmee is geknoeid. U vindt de nieuwe governance in de beleidsinstellingen en de waarschuwing's, naast de optie onderbreken.
--   U kunt nu filteren op **imitatie roltoewijzing toevoegen** activiteiten in het gebeurtenissenlogboek. Deze activiteit kunt u detecteren wanneer een beheerder heeft verleend een **toepassing imitatie** rol aan een gebruiker of systeem-account, met de cmdlet **nieuw ManagementRoleAssignment**. Deze functie kan de imitatie kunt u bewerkingen uitvoeren met behulp van de machtigingen die zijn gekoppeld aan de geïmiteerde account, in plaats van de machtigingen die zijn gekoppeld aan de imitatie-account.
-Cloud Discovery verbeteringen:
--   Cloud Discovery-gegevens kunnen nu worden uitgebreid met gegevens van Azure Active Directory-gebruikersnaam. Wanneer u deze functie inschakelt, wordt de gebruikersnaam in de logboeken van de discovery-verkeer ontvangen overeenkomt en vervangen door de Azure AD-gebruikersnaam de volgende nieuwe functies ingeschakeld:
+- U kunt nu gebruikers verplichten om opnieuw aan te melden voor alle Office 365 en Azure AD-apps als een snelle en doeltreffende herstel voor de gebruiker met verdachte activiteitswaarschuwingen en accounts waarmee is geknoeid. U vindt de nieuwe governance in de beleidsinstellingen en de waarschuwing's, naast de optie onderbreken.
+- U kunt nu filteren op **imitatie roltoewijzing toevoegen** activiteiten in het gebeurtenissenlogboek. Deze activiteit kunt u detecteren wanneer een beheerder heeft verleend een **toepassing imitatie** rol aan een gebruiker of systeem-account, met de cmdlet **nieuw ManagementRoleAssignment**. Deze functie kan de imitatie kunt u bewerkingen uitvoeren met behulp van de machtigingen die zijn gekoppeld aan de geïmiteerde account, in plaats van de machtigingen die zijn gekoppeld aan de imitatie-account.
+  Cloud Discovery verbeteringen:
+- Cloud Discovery-gegevens kunnen nu worden uitgebreid met gegevens van Azure Active Directory-gebruikersnaam. Wanneer u deze functie inschakelt, wordt de gebruikersnaam in de logboeken van de discovery-verkeer ontvangen overeenkomt en vervangen door de Azure AD-gebruikersnaam de volgende nieuwe functies ingeschakeld:
   - Shadow IT-gebruik door Azure Active Directory-gebruiker, kunt u onderzoeken.
   - U kunt het gebruik van de app gedetecteerde cloud correleren met de activiteiten API verzameld.
   - Vervolgens kunt u aangepaste logboeken op basis van Azure AD-gebruikersgroepen maken. Bijvoorbeeld, een rapport Shadow IT voor een specifieke marketingafdeling.
--   Er zijn verbeteringen aangebracht in de syslog Juniper parser. Het ondersteunt nu de welf en sd-syslog-indelingen.
--   Er zijn verbeteringen aangebracht in de parser Palo Alto voor betere toepassingsdetectie.
--   Om te controleren dat Logboeken zijn wordt geüpload, kunt u nu de status van uw logboekverzamelaars in de Cloud App Security-portal weergegeven. 
+- Er zijn verbeteringen aangebracht in de syslog Juniper parser. Het ondersteunt nu de welf en sd-syslog-indelingen.
+- Er zijn verbeteringen aangebracht in de parser Palo Alto voor betere toepassingsdetectie.
+- Om te controleren dat Logboeken zijn wordt geüpload, kunt u nu de status van uw logboekverzamelaars in de Cloud App Security-portal weergegeven. 
 
 #### <a name="general-improvements"></a>Algemene verbeteringen:
 -   Ingebouwde IP-Adreslabels en aangepaste IP-tags zijn nu beschouwd als hiërarchisch met aangepaste IP-tags voorrang heeft op de ingebouwde IP-tags. Bijvoorbeeld, als een IP-adres wordt het gelabeld als **riskant** op basis van dreigingen, maar er is een aangepaste IP-code die wordt geïdentificeerd als **zakelijk** aangepaste categorie en labels voorrang.
@@ -343,8 +343,8 @@ Uitgebracht op 22 januari 2017
 -   Beschrijvingen van activiteiten zijn verbeterd voor meer duidelijkheid en consistentie. Voor elke activiteit is er nu een feedbackknop. Als er iets onduidelijk is of als u een vraag hebt, kunt u het ons laten weten. 
  
 **Verbeteringen**  
--   Er is een nieuwe beheeractie voor Office 365 toegevoegd waarmee u alle externe gebruikers van een bestand kunt verwijderen. Hierdoor kunt u bijvoorbeeld beleidsregels implementeren die **externe shares verwijderen uit bestanden met de classificatie Alleen intern**.
--   Verbeterde identificatie van externe gebruikers in SharePoint Online. Bij het filteren van de groep 'externe gebruikers' wordt het systeemaccount app@sharepoint niet weergegeven.
+- Er is een nieuwe beheeractie voor Office 365 toegevoegd waarmee u alle externe gebruikers van een bestand kunt verwijderen. Hierdoor kunt u bijvoorbeeld beleidsregels implementeren die **externe shares verwijderen uit bestanden met de classificatie Alleen intern**.
+- Verbeterde identificatie van externe gebruikers in SharePoint Online. Wanneer u filters voor de groep 'externe gebruikers' app@"sharepoint" system-account, worden niet weergegeven.
 
 
 
@@ -427,11 +427,11 @@ Uitgebracht: 13 november 2016
 -   Cloud App Security biedt nu ondersteuning voor Microsoft Azure Information Protection, met verbeterde integratie en automatische inrichting. U kunt uw bestanden filteren en bestandsbeleidsregels instellen met behulp van veilige classificaties van tags en vervolgens het classificatielabel instellen dat u wilt weergeven. Daarnaast geven de labels aan of de classificatie is ingesteld door iemand in uw organisatie of door personen van een andere tenant (extern). U kunt ook beleidsregels voor activiteiten instellen op basis van de Azure Information Protection-classificatielabels en automatisch scannen voor de classificatielabels in Office 365 inschakelen. Zie [Integratie van Azure Information Protection](azip-integration.md) voor meer informatie over hoe u kunt profiteren van deze geweldige nieuwe functie.
  
 **Verbeteringen**
--   Er zijn verbeteringen aangebracht in het activiteitenlogboek van Cloud App Security: 
-   -    Office 365-gebeurtenissen uit het beveiligings- en compliancecentrum zijn nu geïntegreerd met Cloud App Security en worden weergegeven in het **activiteitenlogboek**.
-   -    Alle activiteiten van Cloud App Security worden in het activiteitenlogboek van Cloud App Security geregistreerd als beheeractiviteit.
--   Als hulp bij het onderzoeken van waarschuwingen met betrekking tot bestanden kunt u nu voor elke waarschuwing die het resultaat is van een bestandsbeleid de lijst met activiteiten weergegeven die voor het overeenkomende bestand zijn uitgevoerd.
--   Het algoritme voor onmogelijke trajecten in de anomaliedetectie-engine is verbeterd en biedt nu betere ondersteuning voor kleine tenants. 
+- Er zijn verbeteringen aangebracht in het activiteitenlogboek van Cloud App Security: 
+  -    Office 365-gebeurtenissen uit het beveiligings- en compliancecentrum zijn nu geïntegreerd met Cloud App Security en worden weergegeven in het **activiteitenlogboek**.
+  -    Alle activiteiten van Cloud App Security worden in het activiteitenlogboek van Cloud App Security geregistreerd als beheeractiviteit.
+- Als hulp bij het onderzoeken van waarschuwingen met betrekking tot bestanden kunt u nu voor elke waarschuwing die het resultaat is van een bestandsbeleid de lijst met activiteiten weergegeven die voor het overeenkomende bestand zijn uitgevoerd.
+- Het algoritme voor onmogelijke trajecten in de anomaliedetectie-engine is verbeterd en biedt nu betere ondersteuning voor kleine tenants. 
  
 **Kleine verbeteringen**
 -   De **limiet voor het exporteren van activiteiten** is verhoogd naar 10.000. 

@@ -1,23 +1,23 @@
 ---
 title: Gebruik van cloud-apps beheren door beleidsregels te maken in Cloud App Security | Microsoft Docs
 description: In dit onderwerp vindt u informatie over hoe beleidsregels worden gebruikt en ingesteld om het gebruik van cloud-apps te beheren.
-keywords: 
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 1/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 14d10238-0f61-43e9-ab96-71534a27d3d4
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 89a71f9274d5005a93576dfc4ef6436870b9bd4b
-ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
+ms.openlocfilehash: 0173fd697c6219c9b6cf02e6d17e7a1d70840091
+ms.sourcegitcommit: 3c66f12aa31ba211235787ee6f233138ea5f8a75
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="control-cloud-apps-with-policies"></a>Cloud-apps beheren met beleidsregels
 
@@ -93,18 +93,18 @@ Beleidssjablonen helpen u de juiste filters en configuraties die nodig zijn voor
   
 Maken van een beleid van **beleidssjablonen**, voer de volgende stappen uit:  
   
-1.  Klik in de console op **Besturingselement** gevolgd door **Sjablonen**.  
+1. Klik in de console op **Besturingselement** gevolgd door **Sjablonen**.  
   
-     ![](./media/create-policy-from-template.png)  
+    ![](./media/create-policy-from-template.png)  
   
-2.  Klik op de **+** aan de rechterkant van de rij van de sjabloon die u wilt gebruiken. Een pagina voor het maken van beleid wordt geopend, met daarin de vooraf gedefinieerde configuratie van de sjabloon.  
+2. Klik op de **+** aan de rechterkant van de rij van de sjabloon die u wilt gebruiken. Een pagina voor het maken van beleid wordt geopend, met daarin de vooraf gedefinieerde configuratie van de sjabloon.  
   
-3.  Pas de sjabloon aan op uw op maat gemaakte beleid. Elke eigenschap en elk veld van dit nieuwe beleid dat op een sjabloon is gebaseerd, kan aan uw wensen worden aangepast.  
-> [!NOTE] 
->Wanneer u de beleidsfilters **bevat** wordt alleen gezocht naar volledige woorden die zijn gescheiden door komma's, punten, spaties of onderstrepingstekens bevatten. Bijvoorbeeld als u zoeken naar **malware** of **virus**, wordt virus_malware_file.exe gevonden maar malwarevirusfile.exe niet gevonden. Als u zoekt *malware.exe*, u alle bestanden met kwaadaardige software of exe vinden in de bestandsnaam, dat als u zoekt **"malware.exe"** (met aanhalingstekens) vindt u alleen bestanden die bevatten precies "malware.exe". 
-     **Is gelijk aan** wordt alleen gezocht naar de volledige tekenreeks, bijvoorbeeld als u zoeken naar *malware.exe* malware.exe gevonden maar malware.exe.txt niet gevonden.  
-4.  Nadat u het nieuwe beleid maakt op basis van een sjabloon, wordt een koppeling naar het nieuwe beleid weergegeven in de kolom **Gekoppelde beleidsregels** in de beleidssjabloontabel naast de sjabloon waarmee het beleid is gemaakt.   
-     U kunt vanuit elke sjabloon zoveel beleidsregels maken als u wilt en deze zullen allemaal gekoppeld zijn aan de oorspronkelijke sjabloon. Hierdoor kunt u alle gemaakte beleidsregels volgen met behulp van dezelfde sjabloon.  
+3. Pas de sjabloon aan op uw op maat gemaakte beleid. Elke eigenschap en elk veld van dit nieuwe beleid dat op een sjabloon is gebaseerd, kan aan uw wensen worden aangepast.  
+   > [!NOTE] 
+   >Wanneer u de beleidsfilters **bevat** wordt alleen gezocht naar volledige woorden die zijn gescheiden door komma's, punten, spaties of onderstrepingstekens bevatten. Bijvoorbeeld als u zoeken naar **malware** of **virus**, wordt virus_malware_file.exe gevonden maar malwarevirusfile.exe niet gevonden. Als u zoekt *malware.exe*, u alle bestanden met kwaadaardige software of exe vinden in de bestandsnaam, dat als u zoekt **"malware.exe"** (met aanhalingstekens) vindt u alleen bestanden die bevatten precies "malware.exe". 
+    **Is gelijk aan** wordt alleen gezocht naar de volledige tekenreeks, bijvoorbeeld als u zoeken naar *malware.exe* malware.exe gevonden maar malware.exe.txt niet gevonden.  
+4. Nadat u het nieuwe beleid maakt op basis van een sjabloon, wordt een koppeling naar het nieuwe beleid weergegeven in de kolom **Gekoppelde beleidsregels** in de beleidssjabloontabel naast de sjabloon waarmee het beleid is gemaakt.   
+    U kunt vanuit elke sjabloon zoveel beleidsregels maken als u wilt en deze zullen allemaal gekoppeld zijn aan de oorspronkelijke sjabloon. Hierdoor kunt u alle gemaakte beleidsregels volgen met behulp van dezelfde sjabloon.  
   
 U kunt ook **een beleid maken tijdens een onderzoek**. Als u **Activiteitenlogboek**, **Bestanden** of **Accounts** onderzoekt, en u zoekt verder naar iets specifieks, kunt u op elk gewenst moment een nieuw beleid maken op basis van de resultaten van uw onderzoek.  
   

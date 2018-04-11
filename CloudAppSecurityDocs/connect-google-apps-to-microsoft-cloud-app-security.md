@@ -1,23 +1,23 @@
 ---
 title: Verbinding maken tussen G Suite en Cloud App Security voor zichtbaarheid en gebruikscontrole | Microsoft Docs
 description: In dit onderwerp vindt u informatie over het maken van verbinding tussen G Suite en Cloud App Security via de API-connector.
-keywords: 
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 3/3/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: cf4f05f7605a15682141ae321bba3aad70d463fd
-ms.sourcegitcommit: c47fd92c71028ede8840e0766f20eb0ad2898e70
+ms.openlocfilehash: 370da665c2f5012f3f14b687a116560201de551a
+ms.sourcegitcommit: 3c66f12aa31ba211235787ee6f233138ea5f8a75
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>Verbinding maken tussen G Suite en Microsoft Cloud App Security
 In deze sectie vindt u instructies voor het maken van een verbinding tussen Cloud App Security en uw bestaande G Suite-account met behulp van de connector-API's.
@@ -25,109 +25,109 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
   
 ## <a name="configure-g-suite"></a>G Suite configureren  
   
-1.  Als een G Suite Super Admin, meld u aan bij <a href="https://cloud.google.com/console/project" target="_blank">https://cloud.google.com/console/project</a>.  
+1. Als een G Suite Super Admin, meld u aan bij <a href="https://cloud.google.com/console/project" target="_blank"> https://cloud.google.com/console/project </a>.  
   
-2.  Klik op **Create project** (Een project maken) om een nieuw project te starten.  
+2. Klik op **Create project** (Een project maken) om een nieuw project te starten.  
   
-     ![google1](./media/google1.png "google1")  
+    ![google1](./media/google1.png "google1")  
   
-3.  In de **nieuw project** scherm, Geef uw project als volgt:</br>
-    **Microsoft Cloud App Security** en klik op **maken**.  
-           ![google2](./media/google2.png "google2")  
+3. In de **nieuw project** scherm, Geef uw project als volgt:</br>
+   **Microsoft Cloud App Security** en klik op **maken**.  
+          ![google2](./media/google2.png "google2")  
   
-4.  Nadat het project is gemaakt, in de werkbalk klikt u op **Google Cloud Platform** en zorg ervoor dat het juiste project is geselecteerd in de vervolgkeuzelijst omlaag aan de bovenkant.
+4. Nadat het project is gemaakt, in de werkbalk klikt u op **Google Cloud Platform** en zorg ervoor dat het juiste project is geselecteerd in de vervolgkeuzelijst omlaag aan de bovenkant.
        
-       ![Google project](./media/googleverify-project.png "googleverify project")  
+      ![Google project](./media/googleverify-project.png "googleverify project")  
 
 5. Onder **API's** klikt u op **gaat u naar de API's overzicht**.  
   
      ![google3](./media/google3.png "google3")  
   
-6.  Schakel onder **API** alle vermelde API's uit.  
+6. Schakel onder **API** alle vermelde API's uit.  
       
-7.  Klik op **Library** (Bibliotheek) en schakel de volgende API's in (gebruik de zoekbalk als de API niet wordt vermeld in de lijst **Popular APIs** (Populaire API's)):  
+7. Klik op **Library** (Bibliotheek) en schakel de volgende API's in (gebruik de zoekbalk als de API niet wordt vermeld in de lijst **Popular APIs** (Populaire API's)):  
      
-    -   Admin SDK  
+   -   Admin SDK  
   
-    -   Audit API  
+   -   Audit API  
   
-    -   Google Drive API  
+   -   Google Drive API  
   
-    -   Google Apps Marketplace SDK  
+   -   Google Apps Marketplace SDK  
   
-    -   Gmail API  
+   -   Gmail API  
             
- ![google apis](./media/google4.png "google4")  
+   ![google apis](./media/google4.png "google4")  
   
    > [!NOTE]  
    >  Negeer de waarschuwing over **Credentials** (Referenties) voor nu.  
 
 8. Klik op inschakelen voor elke API.
      ![enable Google APPI](./media/google-api.png "google-api")  
-1. U moet beschikken over 5 **ingeschakeld API's**, zorg ervoor dat u andere API's uitschakelen:
+9. U moet beschikken over 5 **ingeschakeld API's**, zorg ervoor dat u andere API's uitschakelen:
   
      ![google enabled apis](./media/google5.png "google5")  
   
-9.  Klik op **referenties** en selecteer vervolgens de **OAuth toestemming scherm** tabblad.
+10. Klik op **referenties** en selecteer vervolgens de **OAuth toestemming scherm** tabblad.
   
-    -   In **productnaam weergegeven voor gebruikers**, type **Microsoft Cloud App Security**.  
+    - In **productnaam weergegeven voor gebruikers**, type **Microsoft Cloud App Security**.  
   
-    -   Alle andere velden zijn optioneel.  
+    - Alle andere velden zijn optioneel.  
   
-    -   Klik op **Opslaan**.  
+    - Klik op **Opslaan**.  
   
-     ![Google-Productnaam](./media/google6.png "google6")  
+      ![Google-Productnaam](./media/google6.png "google6")  
   
-10. In de **referenties** tabblad, klik op de pijl naast **referenties maken**.  
+11. In de **referenties** tabblad, klik op de pijl naast **referenties maken**.  
   
-     ![Google-referenties](./media/google7.png "google7")  
+     ![Google credentials](./media/google7.png "google7")  
 
-11. Selecteer **Service account key** (Serviceaccountsleutel).
+12. Selecteer **Service account key** (Serviceaccountsleutel).
 
-     ![Google-account servicesleutel](./media/google8.png "google8")  
+     ![Google service account key](./media/google8.png "google8")  
   
-12. Onder **maken service account key**, kies **nieuwe serviceaccount**, en typ een naam, bijvoorbeeld **serviceaccount 1**. Onder **rol**, kies **Project** en vervolgens **Editor**. Onder **sleuteltype**, kies **P12** en klik op **maken**. Een P12-certificaatbestand wordt opgeslagen op uw computer.
+13. Onder **maken service account key**, kies **nieuwe serviceaccount**, en typ een naam, bijvoorbeeld **serviceaccount 1**. Onder **rol**, kies **Project** en vervolgens **Editor**. Onder **sleuteltype**, kies **P12** en klik op **maken**. Een P12-certificaatbestand wordt opgeslagen op uw computer.
  
      ![Sleutel voor service-account maken in Google](./media/google9.png "google9")  
   
-13.  Kopieer de **Service-account-ID** toegewezen aan uw service - u hebt dit later nodig.    
+14. Kopieer de **Service-account-ID** toegewezen aan uw service - u hebt dit later nodig.    
         
-14. In het scherm **Credentials** (Referenties) klikt u aan de rechterkant op **Manage service accounts** (Serviceaccounts beheren).  
+15. In het scherm **Credentials** (Referenties) klikt u aan de rechterkant op **Manage service accounts** (Serviceaccounts beheren).  
      
     ![Referenties G Suite-serviceaccount](./media/google10.png "G Suite referenties-serviceaccount")  
   
-15. Klik op de drie punten rechts van het serviceaccount dat u hebt gemaakt en selecteer **bewerken**.  
+16. Klik op de drie punten rechts van het serviceaccount dat u hebt gemaakt en selecteer **bewerken**.  
   
      ![google edit](./media/google11.png "google edit")  
   
-16. Schakel het selectievakje **Enable G Suite Domain-wide Delegation** (Domeinbrede delegatie voor Google Apps inschakelen) in en klik op **Save** (Opslaan).  
+17. Schakel het selectievakje **Enable G Suite Domain-wide Delegation** (Domeinbrede delegatie voor Google Apps inschakelen) in en klik op **Save** (Opslaan).  
   
      ![Google-service-account-ID](./media/google12.png "google12")  
   
-17. Open het Google-menu door te klikken op de drie horizontale lijnen naast Google Cloud Platform in de titelbalk. Klik op **Google Cloud Platform** en klik vervolgens op de **API's en services** tabblad in de links-menu.  
+18. Open het Google-menu door te klikken op de drie horizontale lijnen naast Google Cloud Platform in de titelbalk. Klik op **Google Cloud Platform** en klik vervolgens op de **API's en services** tabblad in de links-menu.  
     
-18. In het Dashboard dat wordt geopend, bladert u omlaag naar de lijst met ingeschakelde API's en klik op **Google Drive API**.   
-       ![Selecteer Google Drive](./media/google14.png "google14")  
+19. In het Dashboard dat wordt geopend, bladert u omlaag naar de lijst met ingeschakelde API's en klik op **Google Drive API**.   
+       ![Select Google Drive](./media/google14.png "google14")  
 
-19. Klik op de **Drive UI Integration** tabblad en vult u de volgende informatie:
+20. Klik op de **Drive UI Integration** tabblad en vult u de volgende informatie:
 
-    -   **Toepassingsnaam**: Microsoft Cloud App Security.  
+    - **Toepassingsnaam**: Microsoft Cloud App Security.  
   
-    -   **Korte beschrijving en lange beschrijving** (optioneel): Microsoft Cloud App Security kunt u inzicht krijgen in cloudtoepassingen, zodat u kunt beheren, onderzoeken en beheren gebruik van cloudtoepassingen; bedrijfsgegevens kunt beveiligen; en detecteren verdachte activiteiten voor alle cloudtoepassingen.  
+    - **Korte beschrijving en lange beschrijving** (optioneel): Microsoft Cloud App Security kunt u inzicht krijgen in cloudtoepassingen, zodat u kunt beheren, onderzoeken en beheren gebruik van cloudtoepassingen; bedrijfsgegevens kunt beveiligen; en detecteren verdachte activiteiten voor alle cloudtoepassingen.  
   
-    -   Google vereist dat u ten minste één toepassingspictogram uploadt. Ga naar [https://go.microsoft.com/fwlink/?linkid=862826](https://go.microsoft.com/fwlink/?linkid=862826) een zipbestand met Cloud App Security pictogrammen te downloaden. Klik vervolgens onder **toepassingspictogram**, klikt u op **Selecteer** naast de 128 x 128 installatiekopie en sleep deze naar het pop-scherm. Klik op **Selecteer** naast de 32 x 32 installatiekopie en sleep deze naar het pop-scherm.  
+    - Google vereist dat u ten minste één toepassingspictogram uploadt. Ga naar [ https://go.microsoft.com/fwlink/?linkid=862826 ](https://go.microsoft.com/fwlink/?linkid=862826) een zipbestand met Cloud App Security pictogrammen te downloaden. Klik vervolgens onder **toepassingspictogram**, klikt u op **Selecteer** naast de 128 x 128 installatiekopie en sleep deze naar het pop-scherm. Klik op **Selecteer** naast de 32 x 32 installatiekopie en sleep deze naar het pop-scherm.  
   
-    -   Schuif omlaag en in de **station integratie** sectie, typ de volgende URL onder **URL openen:**  
+    - Schuif omlaag en in de **station integratie** sectie, typ de volgende URL onder **URL openen:**  
   
-         https://portal.cloudappsecurity.com/#/services/11770?tab=files  
+       https://portal.cloudappsecurity.com/#/services/11770?tab=files  
     
-       ![Edit Google Drive](./media/google15.png "google15")  
+      ![Edit Google Drive](./media/google15.png "google15")  
 
-20. Klik op **wijzigingen opslaan**.
+21. Klik op **wijzigingen opslaan**.
 
-20. Ga terug naar de **ingeschakeld API's** lijst. Klik op **Google Apps Marketplace SDK**. 
+22. Ga terug naar de **ingeschakeld API's** lijst. Klik op **Google Apps Marketplace SDK**. 
       
-21. Selecteer het tabblad **Configuration** (Configuratie). 
+23. Selecteer het tabblad **Configuration** (Configuratie). 
   
     -   Kopieer het **projectnummer (app-id)** dat bovenaan wordt weergegeven voor later gebruik.  
   
@@ -139,7 +139,7 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
   
     -   Configureren van de vier vereiste afbeeldingen onder **toepassingspictogrammen**.  
   
-         De afbeeldingen kunnen worden gevonden op: [https://go.microsoft.com/fwlink/?linkid=862826](https://go.microsoft.com/fwlink/?linkid=862826)  
+         De afbeeldingen kunnen worden gevonden op:  [https://go.microsoft.com/fwlink/?linkid=862826](https://go.microsoft.com/fwlink/?linkid=862826)  
   
     -   Vul de volgende **Support URLs** (URL’s voor ondersteuning) in:  
   
@@ -190,14 +190,14 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
     -   Onder **zichtbaarheid**, selecteer **mijn domein** (niet-openbare). 
     -   Klik op **Save Changes** (Wijzigingen opslaan).  
         ![Google zichtbaarheid](./media/google-visibility.png "google zichtbaarheid")  
-22. Ga naar [admin.google.com](https://admin.google.com/) en kies vervolgens **Security** (beveiliging). 
+24. Ga naar [admin.google.com](https://admin.google.com/) en kies vervolgens **Security** (beveiliging). 
    
       ![Google beveiliging](./media/googlesec.png "google-beveiliging")  
  
-23. Kies **API reference** (API-verwijzing).  
+25. Kies **API reference** (API-verwijzing).  
        ![google api enable](./media/googleapi.png "google api")  
       
-24. Selecteer **Enable API Access** (API-toegang inschakelen) en klik op **Save changes** (Wijzigingen opslaan).  
+26. Selecteer **Enable API Access** (API-toegang inschakelen) en klik op **Save changes** (Wijzigingen opslaan).  
   
     ![google api reference](./media/googleapiref.png "google8")  
 

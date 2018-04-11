@@ -1,23 +1,23 @@
 ---
 title: Informatie over de bestandsgegevens en filters die beschikbaar zijn in Cloud App Security | Microsoft Docs
 description: Dit naslagonderwerp bevat informatie over de bestandstypen en bestandsfilters die worden gebruikt in Cloud App Security.
-keywords: 
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 1/23/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 995bcacd450856fb9aa75a4c7d48596a7fbc168c
-ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
+ms.openlocfilehash: b5ba1be6cdda59eb81b0f682db4e881dcbe3b687
+ms.sourcegitcommit: 3c66f12aa31ba211235787ee6f233138ea5f8a75
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="files"></a>Bestanden
 
@@ -47,12 +47,12 @@ Met Cloud App Security kunt u elk bestandstype controleren op basis van meer dan
 Met de ingebouwde DLP-engines van Cloud App Security worden inhoudsinspecties uitgevoerd door tekst te extraheren uit algemene bestandstypen (PDF-, Office-, RTF-, HTML-, codebestanden, enzovoort).
 
 Hieronder volgt een lijst met de bestandsfilters die kunnen worden toegepast. De meeste filters bieden ondersteuning voor meerdere waarden en voor NOT (niet), zodat u over een zeer krachtig hulpprogramma beschikt voor het maken van een beleid.  
-> [!NOTE] 
+> [!NOTE]
 > Wanneer u de beleidsfilters voor bestanden gebruikt, zoekt **Bevat** alleen naar **volledige woorden** die zijn gescheiden door komma's, punten, spaties of onderstrepingstekens. 
 > - Spaties tussen woorden hebben hetzelfde resultaat als het gebruik van OR; als u bijvoorbeeld zoekt op **malware** **virus**, worden alle bestanden gevonden met malware of virus in de naam, dus zowel malware-virus.exe als virus.exe.  
 > - Als u wilt zoeken naar een tekenreeks, plaatst u de woorden tussen aanhalingstekens. Daarmee krijgt u hetzelfde resultaat als wanneer u AND zou gebruiken; als u bijvoorbeeld zoekt op **"malware"****"virus"**, wordt het bestand virus_malware_file.exe gevonden, maar niet malwarevirusfile.exe of malware.exe. Hiermee wordt echter naar de exacte tekenreeks gezocht. Als u zoekt naar **"malware virus"**, wordt **"virus"** of **"virus_malware"** niet gevonden.
-
->**Is gelijk aan** zoekt alleen naar de volledige tekenreeks. Als u bijvoorbeeld zoekt naar **malware.exe** wordt malware.exe wel gevonden maar malware.exe.txt niet. 
+> 
+> **Is gelijk aan** zoekt alleen naar de volledige tekenreeks. Als u bijvoorbeeld zoekt naar **malware.exe** wordt malware.exe wel gevonden maar malware.exe.txt niet. 
 
 -   Toegangsniveau – toegangsniveau delen; openbaar, extern, intern of privé.  Zie voor meer informatie over externe bestanden [algemene instellingen van de portal instellen](getting-started-with-cloud-app-security.md)
     - Interne zijn alle bestanden in de interne domeinen die u instelt in [algemene instellingen](General-setup.md). 

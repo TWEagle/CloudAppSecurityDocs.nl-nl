@@ -1,23 +1,23 @@
 ---
 title: Maken van Cloud App Security-beleid voor het toestaan en blokkeren van toegang | Microsoft Docs
 description: In dit onderwerp beschrijft de procedure voor het instellen van een Proxy voor Cloud App Security-beleid voor het toestaan en blokkeren van toegang tot apps die zijn verbonden via Azure AD.
-keywords: 
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 1/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 9095cff1-f8b0-44a7-b1df-a83e674abbc6
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 421dae3f71ca26f167dbb4a53a28a466baf8b2a6
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 3df8fad4c249852dff95cb40e2772b9cdc62b7da
+ms.sourcegitcommit: 3c66f12aa31ba211235787ee6f233138ea5f8a75
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="access-policies"></a>Beleidsregels voor toegang 
 
@@ -44,12 +44,12 @@ Azure Active Directory-beleid voor voorwaardelijke toegang en Cloud App Security
 
 1. Configureer een [beleid voor voorwaardelijke toegang van Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) met toewijzingen voor de gebruiker of groep van gebruikers en de SAML-app die u wilt beheren in met de Cloud App Security-proxy. 
 
-  > [!NOTE]
-  > Alleen apps die waren [geïmplementeerd met proxy](proxy-deployment-aad.md) worden beïnvloed door dit beleid.
+   > [!NOTE]
+   > Alleen apps die waren [geïmplementeerd met proxy](proxy-deployment-aad.md) worden beïnvloed door dit beleid.
 
 2. Gebruikers naar de Cloud App Security-proxy te routeren door het selecteren van de **beperkingen afgedwongen proxy gebruiken** in de **sessie** blade.
 
- ![Voorwaardelijke toegang voor proxy-beperkingen voor Azure AD](./media/proxy-deploy-restrictions-aad.png)
+   ![Voorwaardelijke toegang voor proxy-beperkingen voor Azure AD](./media/proxy-deploy-restrictions-aad.png)
 
 ## <a name="create-a-cloud-app-security-access-policy"></a>Maak een Cloud App Security-beleid 
 
@@ -58,11 +58,11 @@ Volg deze procedure voor het maken van een nieuw beleid voor toegang:
 1. Selecteer in de portal **besturingselement** gevolgd door **beleid**.
 2. In de **beleid** pagina, klikt u op **beleid maken** en selecteer **toegangsbeleid**.  
 
- ![Toegangsbeleid maken](./media/access-policy-menu.png)
+   ![Toegangsbeleid maken](./media/access-policy-menu.png)
 
 3. In de **toegangsbeleid** venster Wijs een naam voor het beleid, zoals *toegang tot niet-beheerde apparaten geblokkeerd voor*.
 
- ![Nieuw-beleid](./media/access-policy-screen.png)
+   ![Nieuw-beleid](./media/access-policy-screen.png)
 
 4. Onder **activiteitbron** in de **activiteiten die overeenkomen met alle van de volgende** sectie, selecteert u extra activiteitfilters om toe te passen aan het beleid. Waaronder de volgende opties: 
      

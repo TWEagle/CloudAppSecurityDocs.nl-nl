@@ -1,23 +1,23 @@
 ---
 title: Cloud App Security netwerkvereisten | Microsoft Docs
 description: Dit onderwerp beschrijft de IP-adressen en poorten die u wilt openen om te werken met Cloud App Security.
-keywords: 
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 1/30/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 939e5c13f786adff59db189b1e54cc414f61c1b5
-ms.sourcegitcommit: 8d137c4ee27819cde6fb966d71b7809818347e5f
+ms.openlocfilehash: 784d98dff011139e00177696211fe4f315f43aa6
+ms.sourcegitcommit: 3c66f12aa31ba211235787ee6f233138ea5f8a75
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="network-requirements"></a>Netwerkvereisten
 
@@ -44,15 +44,16 @@ Voor toegang tot de Cloud App Security-portal, voegt u **uitgaande poort 443** v
 
 
 > [!div class="mx-tableFixed"]
-|Datacenter|IP-adressen|DNS-naam|
-|----|----|----|
-|ONS|13.80.125.22<br></br>52.183.75.62<br></br>13.91.91.243|portal.cloudappsecurity.com<br></br>\*.portal.cloudappsecurity.com <br></br>\*.us.portal.cloudappsecurity.com|
-|US2|13.80.125.22<br></br>52.183.75.62<br></br>52.184.165.82|portal.cloudappsecurity.com<br></br>\*.portal.cloudappsecurity.com <br></br>\*.us2.portal.cloudappsecurity.com|
-|EU|13.80.125.22<br></br>52.183.75.62<br></br>52.174.56.180|portal.cloudappsecurity.com<br></br>\*.portal.cloudappsecurity.com <br></br>\*.eu.portal.cloudappsecurity.com|
-
-
->[!NOTE]
->In plaats van een jokerteken (\*) kunt u de URL van uw specifieke tenant openen, bijvoorbeeld op basis van de bovenstaande schermafbeelding kunt u openen: mod244533.us.portal.cloudappsecurity.com
+> 
+> |Datacenter|IP-adressen|DNS-naam|
+> |----|----|----|
+> |ONS|13.80.125.22<br></br>52.183.75.62<br></br>13.91.91.243|portal.cloudappsecurity.com<br></br>\*.portal.cloudappsecurity.com <br></br>\*.us.portal.cloudappsecurity.com|
+> |US2|13.80.125.22<br></br>52.183.75.62<br></br>52.184.165.82|portal.cloudappsecurity.com<br></br>\*.portal.cloudappsecurity.com <br></br>\*.us2.portal.cloudappsecurity.com|
+> |EU|13.80.125.22<br></br>52.183.75.62<br></br>52.174.56.180|portal.cloudappsecurity.com<br></br>\*.portal.cloudappsecurity.com <br></br>\*.eu.portal.cloudappsecurity.com|
+> 
+> 
+> [!NOTE]
+> In plaats van een jokerteken (\*) kunt u de URL van uw specifieke tenant openen, bijvoorbeeld op basis van de bovenstaande schermafbeelding kunt u openen: mod244533.us.portal.cloudappsecurity.com
 
 ## <a name="siem-agent-connection"></a>Verbinding van SIEM-agent
 
@@ -60,11 +61,12 @@ Toevoegen zodat Cloud App Security verbinding maken met uw SIEM **uitgaande poor
 
 
 > [!div class="mx-tableFixed"]
-|Datacenter|IP-adressen|  
-|----|----|
-|ONS|13.91.91.243|
-|US2|52.184.165.82|
-|EU|52.174.56.180|
+> 
+> |Datacenter|IP-adressen|  
+> |----|----|
+> |ONS|13.91.91.243|
+> |US2|52.184.165.82|
+> |EU|52.174.56.180|
 
 ## <a name="app-connector"></a>App-connector
 
@@ -77,12 +79,13 @@ Als u wilt verbinding maken met apps van derden, schakelt u Cloud App Security v
 
 
 > [!div class="mx-tableFixed"]
-|Datacenter|IP-adressen|  
-|----|----|
-|ONS|13.91.91.243 <br></br> 104.209.35.177 <br></br> 13.91.98.185 <br></br> 40.118.211.172 <br></br> 13.93.216.68 <br></br> 13.91.61.249 <br></br> 13.93.233.42 <br></br> 13.64.196.27 <br></br> 13.64.198.97 <br></br> 13.64.199.41 <br></br> 13.64.198.19|
-|US2|52.184.165.82<br></br> 40.84.4.93 <br></br> 40.84.4.119 <br></br> 40.84.2.83 |
-|EU|52.174.56.180<br></br>13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
- 
+> 
+> |Datacenter|IP-adressen|  
+> |----|----|
+> |ONS|13.91.91.243 <br></br> 104.209.35.177 <br></br> 13.91.98.185 <br></br> 40.118.211.172 <br></br> 13.93.216.68 <br></br> 13.91.61.249 <br></br> 13.93.233.42 <br></br> 13.64.196.27 <br></br> 13.64.198.97 <br></br> 13.64.199.41 <br></br> 13.64.198.19|
+> |US2|52.184.165.82<br></br> 40.84.4.93 <br></br> 40.84.4.119 <br></br> 40.84.2.83 |
+> |EU|52.174.56.180<br></br>13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
+
 
 ## <a name="third-party-dlp-integration"></a>DLP-integratie van derden
 
@@ -100,12 +103,13 @@ Open uw firewall DMZ kan deze IP-adressen met een dynamische bronpoortnummer of 
 Als u wilt verbinding maken met apps van derden en integreren met externe DLP-oplossingen, inschakelen Cloud App Security verbinding worden gemaakt vanaf deze IP-adressen:
 
 > [!div class="mx-tableFixed"]
-|Datacenter|IP-adressen|  
-|----|----|
-|ONS|13.91.91.243 <br></br> 104.209.35.177 <br></br> 13.91.98.185 <br></br> 40.118.211.172 <br></br> 13.93.216.68 <br></br> 13.91.61.249 <br></br> 13.93.233.42 <br></br> 13.64.196.27 <br></br> 13.64.198.97 <br></br> 13.64.199.41 <br></br> 13.64.198.19|
-|US2|52.184.165.82<br></br> 40.84.4.93 <br></br> 40.84.4.119 <br></br> 40.84.2.83 |
-|EU|52.174.56.180<br></br>13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
- 
+> 
+> |Datacenter|IP-adressen|  
+> |----|----|
+> |ONS|13.91.91.243 <br></br> 104.209.35.177 <br></br> 13.91.98.185 <br></br> 40.118.211.172 <br></br> 13.93.216.68 <br></br> 13.91.61.249 <br></br> 13.93.233.42 <br></br> 13.64.196.27 <br></br> 13.64.198.97 <br></br> 13.64.199.41 <br></br> 13.64.198.19|
+> |US2|52.184.165.82<br></br> 40.84.4.93 <br></br> 40.84.4.119 <br></br> 40.84.2.83 |
+> |EU|52.174.56.180<br></br>13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
+
 ## <a name="email-server"></a>E-mailserver
 
 Het IP-adres van de Cloud App Security-specifieke e-mailadres is: 
@@ -113,7 +117,7 @@ Het IP-adres van de Cloud App Security-specifieke e-mailadres is:
 198.2.134.139 (mail1.cloudappsecurity.com)
 
 Zorg ervoor dat aan de lijst met geaccepteerde dit IP-adres met uw service tegen ongewenste e-mail waarmee meldingen worden verzonden.
-    
+
 ## <a name="log-collector"></a>Logboekverzamelaar 
 
 Cloud Discovery-functies met een logboekverzamelaar inschakelen en de Shadow IT detecteren in uw organisatie, is het nodig zijn voor het openen van het volgende:
@@ -121,12 +125,13 @@ Cloud Discovery-functies met een logboekverzamelaar inschakelen en de Shadow IT 
 - Toestaan dat de logboekverzamelaar binnenkomend FTP- en Syslog-verkeer ontvangen.
 - De logboekverzamelaar initiëren uitgaand verkeer naar de portal (bijvoorbeeld contoso.cloudappsecurity.com) op poort 443 toestaan.
 - De logboekverzamelaar initiëren uitgaand verkeer naar Azure blob storage op poort 80 en 443 toestaan:
-   
-    |Datacenter|URL|
-    |----|----|
-    |ONS|https://adaprodconsole.blob.core.windows.net/|
-    |US2|https://prod03use2console1.blob.core.windows.net/|
-    |EU|https://prod02euwconsole1.blob.core.windows.net/|
+
+
+  | Datacenter |                        URL                        |
+  |-------------|---------------------------------------------------|
+  |     ONS      |   https://adaprodconsole.blob.core.windows.net/   |
+  |     US2     | https://prod03use2console1.blob.core.windows.net/ |
+  |     EU      | https://prod02euwconsole1.blob.core.windows.net/  |
 
 > [!NOTE]
 > - Als uw firewall vereist dat een lijst met statische IP-adressen toegang en biedt geen ondersteuning voor whitelisting op basis van de URL, staan de logboekverzamelaar initiëren uitgaand verkeer naar de [Microsoft Azure datacenter IP-adresbereiken](https://www.microsoft.com/download/details.aspx?id=41653) op poort 443.
@@ -138,6 +143,5 @@ Cloud Discovery-functies met een logboekverzamelaar inschakelen en de Shadow IT 
 [Dagelijkse activiteiten ter bescherming van uw cloudomgeving](daily-activities-to-protect-your-cloud-environment.md)   
 
 [Premier-klanten kunnen Cloud App Security ook rechtstreeks vanuit Premier Portal kiezen.](https://premier.microsoft.com/)  
-  
 
-   
+

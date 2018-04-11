@@ -1,23 +1,23 @@
 ---
 title: Het oplossen van de implementatie van Cloud Discovery Docker | Microsoft Docs
 description: In dit onderwerp beschrijft het proces voor het wijzigen van de configuratie voor de Cloud App Security Cloud Discovery-docker.
-keywords: 
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 1/15/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 776e834f-3c20-4d5f-9fab-4c5b975edb06
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b994661f0f875db100a0aa2eb293b88e637b89cb
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 593a5a9ad40a11345ad5d741336dc60250f8a385
+ms.sourcegitcommit: 3c66f12aa31ba211235787ee6f233138ea5f8a75
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="troubleshooting-the-cloud-app-security-cloud-discovery-docker"></a>Cloud App Security Cloud Discovery Docker probleemoplossing
 
@@ -40,22 +40,22 @@ ms.lasthandoff: 01/16/2018
 
 Volg deze procedure voor het aanpassen van het certificaatbestand dat u voor beveiligde verbindingen met de docker Cloud Discovery gebruiken.
 
-1.  Een FTP-client openen en verbinding maken met de logboekverzamelaar.
+1. Een FTP-client openen en verbinding maken met de logboekverzamelaar.
 
-  ![Verbinding maken met de FTP-client](./media/ftp-connect.png)
+   ![Verbinding maken met de FTP-client](./media/ftp-connect.png)
 
-2.  Navigeer naar de `ssl_update` directory.
-3.  Uploaden van certificaatbestanden voor nieuwe naar de `ssl_update` directory (de namen zijn verplicht).
+2. Navigeer naar de `ssl_update` directory.
+3. Uploaden van certificaatbestanden voor nieuwe naar de `ssl_update` directory (de namen zijn verplicht).
 
-    ![FTP-wachtwoord wijzigen](./media/new-certs.png)
+   ![FTP-wachtwoord wijzigen](./media/new-certs.png)
 
-    1.  Voor FTP: Slechts één bestand vereist is, met de sleutel en certificaatgegevens gegevens in die volgorde, met de naam **pure ftpd.pem**.
+   1.  Voor FTP: Slechts één bestand vereist is, met de sleutel en certificaatgegevens gegevens in die volgorde, met de naam **pure ftpd.pem**.
     
-    2.  Voor Syslog: Drie bestanden zijn vereist: **ca.pem**, **server key.pem** en **server cert.pem**. Als een van de bestanden ontbreekt, zal de update niet plaatsvinden.
+   2.  Voor Syslog: Drie bestanden zijn vereist: **ca.pem**, **server key.pem** en **server cert.pem**. Als een van de bestanden ontbreekt, zal de update niet plaatsvinden.
 
-4.  In een terminal uitvoeren: `docker exec -t <collector name> update_certs`. Dit moet een vergelijkbare uitvoer naar die zichtbaar zijn in het volgende scherm produceren.
+4. In een terminal uitvoeren: `docker exec -t <collector name> update_certs`. Dit moet een vergelijkbare uitvoer naar die zichtbaar zijn in het volgende scherm produceren.
 
-    ![FTP-wachtwoord wijzigen](./media/update-certs.png)
+   ![FTP-wachtwoord wijzigen](./media/update-certs.png)
 
 ## <a name="see-also"></a>Zie ook
 [Cloud Discovery implementeren](set-up-cloud-discovery.md)

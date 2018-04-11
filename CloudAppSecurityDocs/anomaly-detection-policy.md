@@ -1,23 +1,23 @@
 ---
 title: Beleidsregels voor anomaliedetectie maken in Cloud App Security | Microsoft Docs
 description: In dit onderwerp vindt u een beschrijving van beleidsregels voor anomaliedetectie en naslaginformatie over de bouwstenen van een beleid voor anomaliedetectie.
-keywords: 
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 2/5/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: ab9bc377-d2f5-4f4c-a419-f1728a15d1c7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9ac466a721a9e5eef13d868d2eae2ce1c2df58c8
-ms.sourcegitcommit: 8bfb8236b83f7423e73fe449d662935c084ff844
+ms.openlocfilehash: 61fc81896742213a616f132a6c8e74f6789be434
+ms.sourcegitcommit: 3c66f12aa31ba211235787ee6f233138ea5f8a75
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="get-instantaneous-behavioral-analytics-and-anomaly-detection"></a>Onmiddellijk gebruikersgedrag analytics en afwijkingsdetectie detectie ophalen
 
@@ -82,14 +82,14 @@ U kunt de diverse waarschuwingen geactiveerd door de nieuwe beleidsregels voor a
 
 1. In de **activiteitenlogboek**, kunt u een activiteit om de lade activiteit weer te openen. Klik op **gebruiker** om het tabblad gebruiker inzichten weer te geven. Dit omvat informatie, zoals het aantal waarschuwingen, activiteiten, en wanneer ze verbinding hebt gemaakt uit, wat belangrijk is in een onderzoek is. 
 
- ![afwijkingsdetectie detectie alert1](./media/anomaly-alert-user1.png)
- ![afwijkingsdetectie detectie alert1](./media/anomaly-alert-user2.png)
+   ![afwijkingsdetectie detectie alert1](./media/anomaly-alert-user1.png)
+   ![afwijkingsdetectie detectie alert1](./media/anomaly-alert-user2.png)
 
  
 2. Hiermee kunt u om te begrijpen wat de verdachte activiteiten zijn dat wordt uitgevoerd door de gebruiker en krijgen diepere vertrouwen over de vraag of de account is geknoeid. Bijvoorbeeld, een waarschuwing op meerdere mislukte aanmeldingen inderdaad verdachte worden en kan duiden op mogelijke beveiligingsaanval echter het kan ook worden veroorzaakt door een toepassing onjuiste configuratie, waardoor de waarschuwing onschadelijk echt positief zijn. Als er een waarschuwing voor meerdere mislukte aanmeldingen met extra verdachte activiteiten, klik is er echter een grotere kans dat het account is geknoeid. In het volgende voorbeeld kunt u zien dat de **meerdere mislukte aanmeldingspogingen** waarschuwing werd gevolgd door **activiteit van een TOR IP-adres** en **onmogelijke reis activiteit**, beide sterke indicatoren van inbreuk (IOCs) zelf. Als dit niet genoeg verdachte, dan u zien kunt dat wordt uitgevoerd door dezelfde gebruiker een **massaal downloaden activiteit**, dit is vaak een indicator van de aanvaller uitvoeren exfiltration van gegevens. 
 
-  ![afwijkingsdetectie detectie alert1](./media/anomaly-alert-user3.png)
-  ![afwijkingsdetectie detectie alert1](./media/anomaly-alert-user4.png)
+   ![afwijkingsdetectie detectie alert1](./media/anomaly-alert-user3.png)
+   ![afwijkingsdetectie detectie alert1](./media/anomaly-alert-user4.png)
 
  
 

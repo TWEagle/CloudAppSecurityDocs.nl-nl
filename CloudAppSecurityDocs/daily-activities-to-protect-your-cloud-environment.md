@@ -1,23 +1,23 @@
 ---
 title: Werken met het dashboard van Cloud App Security | Microsoft Docs
 description: Dit artikel bevat basisinformatie over het gebruik van het dashboard van Cloud App Security.
-keywords: 
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 1/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: a835fa24-15c5-4bbb-a25a-688444040f1f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 23962681e54706002322edeab3166d1a09e12f2f
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 4a0bd2c655852fb06afedade9492c311d6a6ee0d
+ms.sourcegitcommit: 3c66f12aa31ba211235787ee6f233138ea5f8a75
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="working-with-the-dashboard"></a>Werken met het dashboard
 Als u Cloud App Security hebt opgestart, moet u de gegevensstromen configureren, de apps goedkeuren die personen mogen gebruiken en beleidsregels instellen om uw cloudomgeving te bewaken. Vervolgens kunt u Cloud App Security gebruiken om uw cloud te beveiligen en de risico's te beheren.  

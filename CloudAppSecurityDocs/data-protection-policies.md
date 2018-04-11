@@ -1,23 +1,23 @@
 ---
 title: Beleidregels maken voor het controleren en beveiligen van bestanden in uw cloud-apps | Microsoft Docs
 description: In dit onderwerp vindt u een beschrijving van de procedure voor het instellen van een gegevensbeleid om de gegevens en bestanden met betrekking tot het gebruik van cloud-apps in uw organisatie te beheren en te controleren.
-keywords: 
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 3/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: ac53fbd6-4d31-4bce-b2bc-9dc65ad83b3e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 63024ea9395c6f765928076a8d6eb9861fa35238
-ms.sourcegitcommit: 2f1ccff60194573325afa01f1634eea373c829b6
+ms.openlocfilehash: 6288a1df5a0b99f7d6afc54fee7fb37bc6c2129c
+ms.sourcegitcommit: 3c66f12aa31ba211235787ee6f233138ea5f8a75
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="file-policies"></a>Beleidsregels voor bestanden  
 Met Beleidsregels voor bestanden kunt u een breed scala aan geautomatiseerde processen controleren waarbij u gebruikmaakt van de API’s van de cloudprovider. Beleidsregels kunnen worden ingesteld om te bieden continue scans voor naleving, juridische eDiscovery-taken, DLP voor gevoelige inhoud openbaar, gedeeld en veel meer gebruiksvoorbeelden.  <br></br>
@@ -59,35 +59,35 @@ Hier volgen enkele voorbeelden van beleidsregels voor bestanden die kunnen worde
   
 Voer de volgende procedure uit om een nieuw bestandsbeleid te maken:  
   
-1.  Klik in de console op **Beheer** gevolgd door **Beleidsregels**.  
+1. Klik in de console op **Beheer** gevolgd door **Beleidsregels**.  
   
-2.  Klik op **Beleid maken** en selecteer **Bestandsbeleid**.  
+2. Klik op **Beleid maken** en selecteer **Bestandsbeleid**.  
   
-3.  Geef uw beleid een naam en beschrijving, wat u indien gewenst kunt baseren op een sjabloon. Voor meer informatie over beleidssjablonen, bekijk [Cloud-apps beheren met beleidsregels](control-cloud-apps-with-policies.md).  
+3. Geef uw beleid een naam en beschrijving, wat u indien gewenst kunt baseren op een sjabloon. Voor meer informatie over beleidssjablonen, bekijk [Cloud-apps beheren met beleidsregels](control-cloud-apps-with-policies.md).  
   
-3. Geef een **ernstniveau van beleid** op voor uw beleid. Als u Cloud App Security meldingen verzendt op overeenkomt met beleid voor een specifiek beleid ernstniveau hebt ingesteld, wordt dit gebruikt om te bepalen of dit beleid komt overeen met een melding geactiveerd.
+4. Geef een **ernstniveau van beleid** op voor uw beleid. Als u Cloud App Security meldingen verzendt op overeenkomt met beleid voor een specifiek beleid ernstniveau hebt ingesteld, wordt dit gebruikt om te bepalen of dit beleid komt overeen met een melding geactiveerd.
 
-4.  Binnen **Categorie** koppelt u het beleid aan het meest geschikte type risico. Dit veld is alleen informatief en hiermee kunt u later zoeken naar specifieke beleidsregels en waarschuwingen, op basis van het type risico.  Het risico is mogelijk al vooraf geselecteerd volgens de categorie die u hebt gekozen om het beleid te maken. Beleidsregels voor bestanden zijn standaard ingesteld op DLP.  
+5. Binnen **Categorie** koppelt u het beleid aan het meest geschikte type risico. Dit veld is alleen informatief en hiermee kunt u later zoeken naar specifieke beleidsregels en waarschuwingen, op basis van het type risico.  Het risico is mogelijk al vooraf geselecteerd volgens de categorie die u hebt gekozen om het beleid te maken. Beleidsregels voor bestanden zijn standaard ingesteld op DLP.  
   
-5.  Om in te stellen welke gedetecteerde apps dit beleid geactiveerd **maken van een filter voor de bestanden die dit beleid wordt toegepast op**. Verfijn de beleidsfilters totdat u de meest nauwkeurige set bestanden hebt bereikt waarop u dit beleid wilt toepassen. Wees zo strikt mogelijk om valse positieven te voorkomen dat. Als u bijvoorbeeld openbare machtigingen wilt verwijderen moet u het filter **Openbaar** toevoegen, als u een externe gebruiker wilt verwijderen gebruikt u het filter Extern enzovoort.  
-> [!NOTE] 
-> Wanneer u de beleidsfilters **bevat** wordt alleen gezocht naar volledige woorden die zijn gescheiden door komma's, punten, spaties of onderstrepingstekens bevatten. Bijvoorbeeld als u zoeken naar **malware** of **virus**, wordt virus_malware_file.exe gevonden maar malwarevirusfile.exe niet gevonden. Als u zoekt **malware.exe**, en u alle bestanden met kwaadaardige software of exe in de bestandsnaam, vinden dat als u zoekt **"malware.exe"** (met aanhalingstekens) vindt u alleen bestanden die bevatten precies "malware.exe". **Is gelijk aan** wordt alleen gezocht naar de volledige tekenreeks, bijvoorbeeld als u zoeken naar **malware.exe** malware.exe gevonden maar malware.exe.txt niet gevonden.  
-6.   Selecteer **geselecteerde mappen** of **alle bestanden uitgezonderd geselecteerde mappen** onder het eerste filter **Toepassen op** voor Box, SharePoint, Dropbox, OneDrive. Hier kunt u uw bestandsbeleid doorvoeren voor alle bestanden in de app of in specifieke mappen. U wordt omgeleid voor aanmelding bij de cloud-app en voeg vervolgens de relevante mappen.  
+6. Om in te stellen welke gedetecteerde apps dit beleid geactiveerd **maken van een filter voor de bestanden die dit beleid wordt toegepast op**. Verfijn de beleidsfilters totdat u de meest nauwkeurige set bestanden hebt bereikt waarop u dit beleid wilt toepassen. Wees zo strikt mogelijk om valse positieven te voorkomen dat. Als u bijvoorbeeld openbare machtigingen wilt verwijderen moet u het filter **Openbaar** toevoegen, als u een externe gebruiker wilt verwijderen gebruikt u het filter Extern enzovoort.  
+   > [!NOTE] 
+   > Wanneer u de beleidsfilters **bevat** wordt alleen gezocht naar volledige woorden die zijn gescheiden door komma's, punten, spaties of onderstrepingstekens bevatten. Bijvoorbeeld als u zoeken naar **malware** of **virus**, wordt virus_malware_file.exe gevonden maar malwarevirusfile.exe niet gevonden. Als u zoekt **malware.exe**, en u alle bestanden met kwaadaardige software of exe in de bestandsnaam, vinden dat als u zoekt **"malware.exe"** (met aanhalingstekens) vindt u alleen bestanden die bevatten precies "malware.exe". **Is gelijk aan** wordt alleen gezocht naar de volledige tekenreeks, bijvoorbeeld als u zoeken naar **malware.exe** malware.exe gevonden maar malware.exe.txt niet gevonden.  
+7. Selecteer **geselecteerde mappen** of **alle bestanden uitgezonderd geselecteerde mappen** onder het eerste filter **Toepassen op** voor Box, SharePoint, Dropbox, OneDrive. Hier kunt u uw bestandsbeleid doorvoeren voor alle bestanden in de app of in specifieke mappen. U wordt omgeleid voor aanmelding bij de cloud-app en voeg vervolgens de relevante mappen.  
 
-6. Onder het tweede filter **Toepassen op** selecteert u **alle bestandsbeheerders**, **bestandsbeheerders van geselecteerde gebruikersgroepen** of **alle bestandsbeheerders uitgezonderd geselecteerde groepen**, en selecteert u de relevante gebruikersgroepen om te bepalen welke gebruikers en groepen moeten worden opgenomen in het beleid.
+8. Onder het tweede filter **Toepassen op** selecteert u **alle bestandsbeheerders**, **bestandsbeheerders van geselecteerde gebruikersgroepen** of **alle bestandsbeheerders uitgezonderd geselecteerde groepen**, en selecteert u de relevante gebruikersgroepen om te bepalen welke gebruikers en groepen moeten worden opgenomen in het beleid.
   
-7.  Selecteer de **Methode voor inhoudscontrole**. Met de ingebouwde DLP kunt u bestanden filteren op de inhoud ervan. Als u bestanden wilt scannen op de inhoud, selecteert u vervolgens **Ingebouwde DLP**. Zodra inhoudscontrole is ingeschakeld, kunt u vooraf ingestelde expressies gebruiken of zoeken naar andere aangepaste expressies als een subtekenreeks of als een [reguliere expressie](working-with-the-regex-engine.md) van uzelf.  <br></br>
+9. Selecteer de **Methode voor inhoudscontrole**. Met de ingebouwde DLP kunt u bestanden filteren op de inhoud ervan. Als u bestanden wilt scannen op de inhoud, selecteert u vervolgens **Ingebouwde DLP**. Zodra inhoudscontrole is ingeschakeld, kunt u vooraf ingestelde expressies gebruiken of zoeken naar andere aangepaste expressies als een subtekenreeks of als een [reguliere expressie](working-with-the-regex-engine.md) van uzelf.  <br></br>
 
-    Bovendien kunt u een reguliere expressie opgeven als u een bestand wilt uitsluiten van de resultaten. Dit is zeer nuttig als u een standaard voor trefwoorden met de binnenste classificatie hebt die u wilt uitsluiten van het beleid. <br></br> U kunt bepalen wat het minimumaantal schendingen van inhoud is dat moet worden bereikt voordat het bestand wordt beschouwd als een schending. U kunt bijvoorbeeld 10 kiezen als u waarschuwingen wilt ontvangen voor bestanden waarin ten minste 10 creditcardnummers worden gevonden.  <br></br>
-    Wanneer inhoud wordt vergeleken met de geselecteerde expressie, wordt de schendende tekst vervangen door 'X' tekens. Standaard worden schendingen gemaskeerd en weergegeven in de context dat 100 tekens voor en na de schending. Getallen in de context van de expressie worden vervangen door #-tekens en worden nooit opgeslagen in Cloud App Security. U kunt de optie voor **Ontmaskert u de laatste vier tekens van een schending** om te maskeren, de laatste vier tekens van de schending zelf. U hoeft in te stellen welke gegevenstypen van de reguliere expressie zoekopdrachten: de naam van inhoud, metagegevens en/of bestand. Standaard zoekt de inhoud en de metagegevens. U moet ten minste één gegevenstype voor de zoekopdracht selecteren of de reguliere expressie kan niet werken en het beleid kan niet worden gemaakt. 
+   Bovendien kunt u een reguliere expressie opgeven als u een bestand wilt uitsluiten van de resultaten. Dit is zeer nuttig als u een standaard voor trefwoorden met de binnenste classificatie hebt die u wilt uitsluiten van het beleid. <br></br> U kunt bepalen wat het minimumaantal schendingen van inhoud is dat moet worden bereikt voordat het bestand wordt beschouwd als een schending. U kunt bijvoorbeeld 10 kiezen als u waarschuwingen wilt ontvangen voor bestanden waarin ten minste 10 creditcardnummers worden gevonden.  <br></br>
+   Wanneer inhoud wordt vergeleken met de geselecteerde expressie, wordt de schendende tekst vervangen door 'X' tekens. Standaard worden schendingen gemaskeerd en weergegeven in de context dat 100 tekens voor en na de schending. Getallen in de context van de expressie worden vervangen door #-tekens en worden nooit opgeslagen in Cloud App Security. U kunt de optie voor **Ontmaskert u de laatste vier tekens van een schending** om te maskeren, de laatste vier tekens van de schending zelf. U hoeft in te stellen welke gegevenstypen van de reguliere expressie zoekopdrachten: de naam van inhoud, metagegevens en/of bestand. Standaard zoekt de inhoud en de metagegevens. U moet ten minste één gegevenstype voor de zoekopdracht selecteren of de reguliere expressie kan niet werken en het beleid kan niet worden gemaakt. 
   
-8.  Kies de **beheer**acties die in Cloud App Security moeten worden uitgevoerd wanneer een overeenkomst wordt gedetecteerd.  
+10. Kies de **beheer**acties die in Cloud App Security moeten worden uitgevoerd wanneer een overeenkomst wordt gedetecteerd.  
   
-9. Als u het beleid hebt gemaakt, vindt u dit op het tabblad **Bestandsbeleid**. U kunt altijd een beleid bewerken, de filters kalibreren of de geautomatiseerde acties wijzigen. Het beleid wordt automatisch ingeschakeld tijdens het maken en start het scannen van uw cloud-bestanden direct.  Let goed op bij het instellen van beheeracties, want ze kunnen leiden tot onherstelbaar verlies van toegangsmachtigingen tot uw bestanden. We bevelen aan om de filters te verfijnen tot de precieze bestanden waarbij actie moet worden ondernomen. Gebruik hiervoor meerdere zoekvelden. Hoe fijner de filters, hoe beter. Als hulp kunt u de knop **Bewerken en voorbeeld van resultaten bekijken** in de sectie Filters gebruiken.  
+11. Als u het beleid hebt gemaakt, vindt u dit op het tabblad **Bestandsbeleid**. U kunt altijd een beleid bewerken, de filters kalibreren of de geautomatiseerde acties wijzigen. Het beleid wordt automatisch ingeschakeld tijdens het maken en start het scannen van uw cloud-bestanden direct.  Let goed op bij het instellen van beheeracties, want ze kunnen leiden tot onherstelbaar verlies van toegangsmachtigingen tot uw bestanden. We bevelen aan om de filters te verfijnen tot de precieze bestanden waarbij actie moet worden ondernomen. Gebruik hiervoor meerdere zoekvelden. Hoe fijner de filters, hoe beter. Als hulp kunt u de knop **Bewerken en voorbeeld van resultaten bekijken** in de sectie Filters gebruiken.  
   
-   ![bestandsbeleid bewerken en voorbeeld van resultaten](./media/file-policy-edit-and-preview-results.png "bestandsbeleid bewerken en voorbeeld van resultaten")  
+    ![bestandsbeleid bewerken en voorbeeld van resultaten](./media/file-policy-edit-and-preview-results.png "bestandsbeleid bewerken en voorbeeld van resultaten")  
   
-10. Als u overeenkomsten voor een bestandsbeleid (bestanden waarvan wordt vermoed dat ze het beleid schenden) wilt weergeven, klikt u op **Controle** en vervolgens op **Beleidsregels**. Filter de resultaten met het filter **Type** bovenaan, zodat alleen de bestandsbeleidsregels worden weergegeven. Klik op een beleid voor meer informatie over de overeenkomsten voor elk beleid. Hiermee wordt de bestanden met actuele overeenkomsten voor het beleid weergegeven. Klik op de **geschiedenis** tabblad een historisch overzicht terug naar maximaal zes maanden van bestanden die overeenkomen met het beleid.     
+12. Als u overeenkomsten voor een bestandsbeleid (bestanden waarvan wordt vermoed dat ze het beleid schenden) wilt weergeven, klikt u op **Controle** en vervolgens op **Beleidsregels**. Filter de resultaten met het filter **Type** bovenaan, zodat alleen de bestandsbeleidsregels worden weergegeven. Klik op een beleid voor meer informatie over de overeenkomsten voor elk beleid. Hiermee wordt de bestanden met actuele overeenkomsten voor het beleid weergegeven. Klik op de **geschiedenis** tabblad een historisch overzicht terug naar maximaal zes maanden van bestanden die overeenkomen met het beleid.     
   
 ## <a name="file-policy-reference"></a>Verwijzing naar het bestandsbeleid  
 In deze sectie vindt u naslaginformatie over beleidsregels, met een uitleg van elk beleidstype en de velden die voor elk beleid kunnen worden geconfigureerd. 

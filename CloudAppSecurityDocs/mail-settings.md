@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 8402cdc9-4969-4150-b567-ccc9d75e5370
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 96f3b317a453053ceb55a304c6f1481e5c371def
-ms.sourcegitcommit: 1d5d46beb200cf1eed0ef46806effa93eac1a224
+ms.openlocfilehash: ea2108c5c9b46e939be6ed31f5becefd7552bcad
+ms.sourcegitcommit: 3c66f12aa31ba211235787ee6f233138ea5f8a75
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/08/2018
 ---
 ##  <a name="mailsettings"></a> Voorkeuren voor e mailmeldingen instellen  
 
@@ -36,24 +36,24 @@ Volg deze procedure om parameters voor e-mailmeldingen van Cloud App Security wo
   
      ![e-mailinstellingen, configuratie](./media/mail-settings-config.png "e-mailinstellingen, configuratie")  
 
-  >[!NOTE]
-  >Wijzigen van de **van e-mailadres** veld aan een domein van uw eigen, raadpleegt u de instructies [hier](https://mandrill.zendesk.com/hc/articles/205582277-How-do-I-add-DNS-records-for-my-sending-domains-).
+   >[!NOTE]
+   >Wijzigen van de **van e-mailadres** veld aan een domein van uw eigen, raadpleegt u de instructies [hier](https://mandrill.zendesk.com/hc/articles/205582277-How-do-I-add-DNS-records-for-my-sending-domains-).
   
-2.  U kunt een HTML-bestand gebruiken voor het aanpassen en **ontwerpen van de e-mailberichten** die vanuit het systeem worden verzonden. Het HTML-bestand dat wordt gebruikt voor de sjabloon moet het volgende omvatten:  
+3. U kunt een HTML-bestand gebruiken voor het aanpassen en **ontwerpen van de e-mailberichten** die vanuit het systeem worden verzonden. Het HTML-bestand dat wordt gebruikt voor de sjabloon moet het volgende omvatten:  
   
-    -   Alle sjabloon CSS-bestanden moeten inline in de sjabloon.  
+   -   Alle sjabloon CSS-bestanden moeten inline in de sjabloon.  
   
-    -   De sjabloon moet drie niet-bewerkbare tijdelijke aanduidingen hebben:  
+   -   De sjabloon moet drie niet-bewerkbare tijdelijke aanduidingen hebben:  
   
-         %%logo%% - een URL naar uw bedrijfslogo, dat is geüpload naar de pagina met algemene instellingen.  
+        %%logo%% - een URL naar uw bedrijfslogo, dat is geüpload naar de pagina met algemene instellingen.  
   
-         %%title%% - een tijdelijke aanduiding voor de titel van het e‑mailbericht, zoals ingesteld door het beleid.  
+        %%title%% - een tijdelijke aanduiding voor de titel van het e‑mailbericht, zoals ingesteld door het beleid.  
 
-         %%content%% - een tijdelijke aanduiding voor de inhoud die wordt opgenomen voor eindgebruikers, zoals ingesteld door het beleid.  
+        %%content%% - een tijdelijke aanduiding voor de inhoud die wordt opgenomen voor eindgebruikers, zoals ingesteld door het beleid.  
      
-3.  Klik op **Een sjabloon uploaden...** en selecteer het bestand dat u hebt gemaakt. 
+4. Klik op **Een sjabloon uploaden...** en selecteer het bestand dat u hebt gemaakt. 
 
-4. Klik vervolgens op **Een test-e-mail verzenden** om een test-e‑email te verzenden naar uzelf met een voorbeeld van de sjabloon die u hebt gemaakt. Het e-mailbericht wordt verzonden naar het account waarmee u zich hebt aangemeld bij de portal. In de test-e-mail kunt u de metagegevensvelden, de sjabloon, het onderwerp van de e-mail, de titel in de hoofdtekst van de e-mail en de inhoud zien.  Hier volgt een voorbeeld e-mailsjabloon: 
+5. Klik vervolgens op **Een test-e-mail verzenden** om een test-e‑email te verzenden naar uzelf met een voorbeeld van de sjabloon die u hebt gemaakt. Het e-mailbericht wordt verzonden naar het account waarmee u zich hebt aangemeld bij de portal. In de test-e-mail kunt u de metagegevensvelden, de sjabloon, het onderwerp van de e-mail, de titel in de hoofdtekst van de e-mail en de inhoud zien.  Hier volgt een voorbeeld e-mailsjabloon: 
 
 
 

@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a2ee6fc6e54daa84414565dbb7a61fa2e169a7a0
-ms.sourcegitcommit: 1a445f6c5cbfbeb3adbbaff85909c35de949918c
+ms.openlocfilehash: 2aaa4068e81b3bff5715128b64d09fd8c94f2e53
+ms.sourcegitcommit: 3c66f12aa31ba211235787ee6f233138ea5f8a75
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="docker-on-ubuntu-and-rhel-on-premises"></a>Docker op Ubuntu en RHEL on-premises
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 03/22/2018
 
 -   RAM: 4 GB
 
--   Uw firewall ingesteld zoals beschreven in [vereisten](network-requirements#log-collector)
+-   Uw firewall ingesteld zoals beschreven in [vereisten](network-requirements.md#log-collector)
 
 
 ## <a name="log-collector-performance"></a>Prestaties logboekverzamelaar
@@ -47,49 +47,49 @@ De logboekverzamelaar kan een logboekcapaciteit van maximaal 50 GB per uur aan. 
 
 ### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>Stap 1 - Webportalconfiguratie: gegevensbronnen definiëren en deze koppelen aan een logboekverzamelaar
 
-1.  Ga naar de pagina met instellingen voor automatisch uploaden:  <br></br>Klik in de Cloud App Security-portal op het Instellingenpictogram ![Instellingenpictogram](./media/settings-icon.png) gevolgd door **Logboekverzamelaars**.
+1. Ga naar de pagina met instellingen voor automatisch uploaden:  <br></br>Klik in de Cloud App Security-portal op het Instellingenpictogram ![Instellingenpictogram](./media/settings-icon.png) gevolgd door **Logboekverzamelaars**.
 
-2.  Maak voor elke firewall of proxy waaruit u logboeken wilt uploaden een overeenkomende gegevensbron aan:
+2. Maak voor elke firewall of proxy waaruit u logboeken wilt uploaden een overeenkomende gegevensbron aan:
 
-    ![ubuntu1](./media/ubuntu1.png)
+   ![ubuntu1](./media/ubuntu1.png)
 
-    a. Klik op **Gegevensbron toevoegen**.
+   a. Klik op **Gegevensbron toevoegen**.
 
-    b. Geef uw proxy of firewall een **Naam**.
+   b. Geef uw proxy of firewall een **Naam**.
 
-    c. Selecteer het apparaat in de lijst **Bron**. Als u selecteert **aangepaste logboekindeling** om te werken met een netwerkapparaat die niet specifiek wordt vermeld, Zie [werken met de aangepaste log parser](custom-log-parser.md) voor configuratie-instructies.
+   c. Selecteer het apparaat in de lijst **Bron**. Als u selecteert **aangepaste logboekindeling** om te werken met een netwerkapparaat die niet specifiek wordt vermeld, Zie [werken met de aangepaste log parser](custom-log-parser.md) voor configuratie-instructies.
 
-    d. Vergelijk uw logboek met het voorbeeld van de verwachte logboekindeling. Als de bestandsindeling van uw logboek niet met dit voorbeeld overeenkomt, moet u uw gegevensbron toevoegen onder **Overig**.
+   d. Vergelijk uw logboek met het voorbeeld van de verwachte logboekindeling. Als de bestandsindeling van uw logboek niet met dit voorbeeld overeenkomt, moet u uw gegevensbron toevoegen onder **Overig**.
 
-    e. Instellen de **type ontvanger** naar elk **FTP**, **FTPS**, **Syslog – UDP**, of **Syslog – TCP**, of **Syslog – TLS**.
+   e. Instellen de **type ontvanger** naar elk **FTP**, **FTPS**, **Syslog – UDP**, of **Syslog – TCP**, of **Syslog – TLS**.
     
-     >[!NOTE]
-     >Integratie met veilige overdrachtprotocollen (FTPS en Syslog-TLS) vaak aanvullende instellingen of uw firewall/de proxy is vereist.
+    >[!NOTE]
+    >Integratie met veilige overdrachtprotocollen (FTPS en Syslog-TLS) vaak aanvullende instellingen of uw firewall/de proxy is vereist.
 
-    f. Herhaal dit proces voor elke firewall en proxy waarvan het logboek kan worden gebruikt om verkeer op uw netwerk te detecteren.
+   f. Herhaal dit proces voor elke firewall en proxy waarvan het logboek kan worden gebruikt om verkeer op uw netwerk te detecteren.
 
-3.  Ga naar het tabblad **Logboekverzamelaars** bovenaan.
+3. Ga naar het tabblad **Logboekverzamelaars** bovenaan.
 
-    a. Klik op **Logboekverzamelaar toevoegen**.
+   a. Klik op **Logboekverzamelaar toevoegen**.
 
-    b. Geef de logboekverzamelaar een **Naam**.
+   b. Geef de logboekverzamelaar een **Naam**.
 
-    c. Voer de **Host-IP-adres** van de computer die u gebruiken wilt voor het implementeren van de Docker. 
+   c. Voer de **Host-IP-adres** van de computer die u gebruiken wilt voor het implementeren van de Docker. 
        
-       > [!NOTE]
-       > Het IP-adres van de host kan worden vervangen door de naam van de machine, als er een DNS-server (of gelijkwaardige) die de naam van de host wordt opgelost.
+      > [!NOTE]
+      > Het IP-adres van de host kan worden vervangen door de naam van de machine, als er een DNS-server (of gelijkwaardige) die de naam van de host wordt opgelost.
 
-    d. Selecteer alle **gegevensbronnen** die u wilt verbinding maken met de collector en klikt u op **Update** om op te slaan van het configuratie-Zie de volgende implementatiestappen.
+   d. Selecteer alle **gegevensbronnen** die u wilt verbinding maken met de collector en klikt u op **Update** om op te slaan van het configuratie-Zie de volgende implementatiestappen.
 
-    ![ubuntu2](./media/ubuntu2.png)
+   ![ubuntu2](./media/ubuntu2.png)
 
-     >  [!NOTE]
-     > - Eén logboekverzamelaar kan meerdere gegevensbronnen verwerken.
-     > - Kopieer de inhoud van het scherm. U hebt deze informatie nodig tijdens het configureren van de logboekverzamelaar voor de communicatie met Cloud App Security. Als u Syslog hebt geselecteerd, wordt ook informatie weergegeven over de poort waarop de Syslog-listener luistert.
+   > [!NOTE]
+   > - Eén logboekverzamelaar kan meerdere gegevensbronnen verwerken.
+   > - Kopieer de inhoud van het scherm. U hebt deze informatie nodig tijdens het configureren van de logboekverzamelaar voor de communicatie met Cloud App Security. Als u Syslog hebt geselecteerd, wordt ook informatie weergegeven over de poort waarop de Syslog-listener luistert.
 
-4.  Meer informatie over de implementatie wordt weergegeven. **Kopiëren** de opdracht uitvoeren in het dialoogvenster. U kunt de kopiëren naar Klembord-pictogram ![kopiëren naar Klembord-pictogram](./media/copy-icon.png).
+4. Meer informatie over de implementatie wordt weergegeven. **Kopiëren** de opdracht uitvoeren in het dialoogvenster. U kunt de kopiëren naar Klembord-pictogram ![kopiëren naar Klembord-pictogram](./media/copy-icon.png).
 
-6.  **Exporteren** configuratie van de verwachte gegevensbron. Deze configuratie wordt beschreven hoe u de geëxporteerde activiteitenlogboeken moet instellen in uw apparaten.
+5. **Exporteren** configuratie van de verwachte gegevensbron. Deze configuratie wordt beschreven hoe u de geëxporteerde activiteitenlogboeken moet instellen in uw apparaten.
 
    ![Logboekverzamelaar maken](./media/windows7.png)
 
@@ -98,33 +98,33 @@ De logboekverzamelaar kan een logboekcapaciteit van maximaal 50 GB per uur aan. 
 > [!NOTE]
 > De volgende stappen beschrijven de implementatie in Ubuntu. De implementatiestappen voor andere platforms zijn enigszins anders.
 
-1.  Open een terminal op uw Ubuntu-machine.
+1. Open een terminal op uw Ubuntu-machine.
 
-2.  Wijzig in de hoofdmap bevoegdheden met de opdracht: `sudo -i`
+2. Wijzig in de hoofdmap bevoegdheden met de opdracht: `sudo -i`
 
 3. Voer de volgende twee opdrachten voor het overslaan van een proxyserver in uw netwerk:
         
         export http_proxy='<IP>:<PORT>' (e.g. 168.192.1.1:8888)
         export https_proxy='<IP>:<PORT>'
 
-3.  Als u akkoord gaan met de [softwarelicentievoorwaarden](https://go.microsoft.com/fwlink/?linkid=862492), verwijderen van oude versies en Docker CE installeren met de volgende opdracht:
+4. Als u akkoord gaan met de [softwarelicentievoorwaarden](https://go.microsoft.com/fwlink/?linkid=862492), verwijderen van oude versies en Docker CE installeren met de volgende opdracht:
 
-    `curl -o /tmp/MCASInstallDocker.sh
-    https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh
-    && chmod +x /tmp/MCASInstallDocker.sh; /tmp/MCASInstallDocker.sh`
+   `curl -o /tmp/MCASInstallDocker.sh
+   https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh
+   && chmod +x /tmp/MCASInstallDocker.sh; /tmp/MCASInstallDocker.sh`
 
-     > [!NOTE] 
-     > Als deze opdracht is mislukt om uw proxycertificaat te valideren, voert u de opdracht met behulp van `curl -k` aan het begin.
+    > [!NOTE] 
+    > Als deze opdracht is mislukt om uw proxycertificaat te valideren, voert u de opdracht met behulp van `curl -k` aan het begin.
     
-    ![ubuntu5](./media/ubuntu5.png)
+   ![ubuntu5](./media/ubuntu5.png)
 
-4.  De collector-installatiekopie op de host machine implementeren door het importeren van configuratie van de collector. Dit doen met het kopiëren van de opdracht uitvoeren in de portal is gegenereerd. Als u nodig hebt voor het configureren van een proxy toevoegen van de proxy-IP-adres en poort-nummer. Bijvoorbeeld, als uw proxy-gegevens 192.168.10.1:8080 zijn, is uw bijgewerkte opdracht uitvoeren:
+5. De collector-installatiekopie op de host machine implementeren door het importeren van configuratie van de collector. Dit doen met het kopiëren van de opdracht uitvoeren in de portal is gegenereerd. Als u nodig hebt voor het configureren van een proxy toevoegen van de proxy-IP-adres en poort-nummer. Bijvoorbeeld, als uw proxy-gegevens 192.168.10.1:8080 zijn, is uw bijgewerkte opdracht uitvoeren:
 
-            (echo 6f19225ea69cf5f178139551986d3d797c92a5a43bef46469fcc997aec2ccc6f) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.2.2.2'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=tenant2.eu1-rs.adallom.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
+           (echo 6f19225ea69cf5f178139551986d3d797c92a5a43bef46469fcc997aec2ccc6f) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.2.2.2'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=tenant2.eu1-rs.adallom.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
 
    ![Logboekverzamelaar maken](./media/windows7.png)
 
-5.  Controleer of de collector correct wordt uitgevoerd met de volgende opdracht: `docker logs \<collector_name\>`
+6. Controleer of de collector correct wordt uitgevoerd met de volgende opdracht: `docker logs \<collector_name\>`
 
 U ziet het bericht: **is voltooid!**
 

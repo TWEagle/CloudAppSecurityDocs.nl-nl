@@ -1,23 +1,23 @@
 ---
 title: Werken met waarschuwingen in Cloud App Security | Microsoft Docs
 description: In dit onderwerp vindt u een lijst met alle waarschuwingen en de bijbehorende beschrijvingen.
-keywords: 
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 1/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: f118a3bf-1663-46ba-884f-b1b03a84ab66
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d160d0dd0ac1103fb84788c632f3569c5109a1a6
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: a93a10a266008ecff895f384630b873de22ccbb8
+ms.sourcegitcommit: 3c66f12aa31ba211235787ee6f233138ea5f8a75
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="alerts"></a>Waarschuwingen
 Ga als volgt te werk als u waarschuwingen wilt weergeven:

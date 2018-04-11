@@ -1,26 +1,26 @@
 ---
 title: Integratie van SIEM met Cloud App Security | Microsoft Docs
 description: Dit onderwerp bevat informatie over de integratie van uw SIEM met Cloud App Security.
-keywords: 
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 2/5/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3c75bc2fe08a969f9a3f63cfff913f4c6f462f8c
-ms.sourcegitcommit: 8bfb8236b83f7423e73fe449d662935c084ff844
+ms.openlocfilehash: 796b775842e6661cdd409dba5a32ec0071e214cc
+ms.sourcegitcommit: 3c66f12aa31ba211235787ee6f233138ea5f8a75
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="siem-integration"></a>Integratie van SIEM
-    
+
 Nu kunt u Cloud App Security integreren met uw SIEM-server om in te schakelen gecentraliseerde bewaking van waarschuwingen en activiteiten van verbonden apps. Als nieuwe activiteiten en gebeurtenissen worden ondersteund door verbonden apps, wordt inzicht in deze vervolgens in de Cloud App Security uitgerold. Door de integratie met een SIEM-service kunt u uw cloudtoepassingen beter beveiligen terwijl uw gebruikelijke beveiligingswerkstroom blijft behouden, beveiligingsprocedures worden geautomatiseerd en gebeurtenissen in de cloud en on-premises aan elkaar worden gekoppeld. De Cloud App Security SIEM-agent wordt uitgevoerd op uw server. De agent haalt waarschuwingen en activiteiten op uit Cloud App Security en verzendt deze naar de SIEM-server.
 
 Wanneer u uw SIEM voor het eerst integreert met Cloud App Security, worden activiteiten en waarschuwingen van de laatste twee dagen doorgestuurd naar de SIEM, plus alle activiteiten en waarschuwingen (op basis van het filter dat u selecteert) die daarna volgen. Als u deze functie voor een langere periode uitschakelt en de functie vervolgens weer inschakelt, worden bovendien waarschuwingen en activiteiten van de laatste twee dagen doorgestuurd en vervolgens alle waarschuwingen en activiteiten die daarna volgen.
@@ -58,22 +58,26 @@ De integratie met uw SIEM vindt in drie stappen plaats:
 
 2. Klik op het plusteken om start de **toevoegen SIEM-agent** wizard.
 3. Klik in de wizard op **Start Wizard**.   
-4. Vul in de wizard een naam in, **selecteer uw SIEM-indeling** en stel **geavanceerde instellingen** in die relevant zijn voor deze indeling. Klik op **Volgende**.
+4. Vul in de wizard een naam in, **selecteer uw SIEM-indeling** en stel **geavanceerde instellingen** in die relevant zijn voor deze indeling. 
+   Klik op **Volgende**.
 
    ![Algemene SIEM-instellingen](./media/siem1.png)
 
 5. Typ het IP-adres of de hostnaam van de **externe Syslog-host** en het **Syslog-poortnummer**. Selecteer TCP of UDP als het externe Syslog-protocol.
-Vraag indien nodig uw beveiligingsbeheerder om deze informatie.
-Klik op **Volgende**.
+   Vraag indien nodig uw beveiligingsbeheerder om deze informatie.
+   Klik op **Volgende**.
 
-  ![Instellingen van extern Syslog](./media/siem2.png)
+   ![Instellingen van extern Syslog](./media/siem2.png)
 
-6. Selecteer welke gegevenstypen, **waarschuwingen** en **activiteiten** u wilt exporteren naar uw SIEM-server. Gebruik de schuifregelaar om deze in en uit te schakelen. Standaard is alles geselecteerd. U kunt de vervolgkeuzelijst **Toepassen op** gebruiken om filters zo in te stellen dat alleen bepaalde waarschuwingen en activiteiten naar uw SIEM-server worden verzonden.
-U kunt op **Resultaten bewerken en bekijken** klikken om te controleren of het filter goed werkt. Klik op **Volgende**. 
+6. Selecteer welke gegevenstypen, **waarschuwingen** en **activiteiten** u wilt exporteren naar uw SIEM-server. 
+   Gebruik de schuifregelaar om deze in en uit te schakelen. Standaard is alles geselecteerd. U kunt de vervolgkeuzelijst **Toepassen op** gebruiken om filters zo in te stellen dat alleen bepaalde waarschuwingen en activiteiten naar uw SIEM-server worden verzonden.
+   U kunt op **Resultaten bewerken en bekijken** klikken om te controleren of het filter goed werkt. 
+   Klik op **Volgende**. 
 
-  ![Instellingen voor gegevenstypen](./media/siem3.png)
+   ![Instellingen voor gegevenstypen](./media/siem3.png)
 
-7. Kopieer het token en bewaar het voor later. Nadat u op Voltooien hebt geklikt en de wizard hebt afgesloten, wordt de SIEM-pagina opnieuw weergegeven en ziet u in de tabel de SIEM-agent die u hebt toegevoegd. Er wordt nu weergegeven dat deze is **gemaakt** totdat deze later wordt verbonden.
+7. Kopieer het token en bewaar het voor later. 
+   Nadat u op Voltooien hebt geklikt en de wizard hebt afgesloten, wordt de SIEM-pagina opnieuw weergegeven en ziet u in de tabel de SIEM-agent die u hebt toegevoegd. Er wordt nu weergegeven dat deze is **gemaakt** totdat deze later wordt verbonden.
 
 > [!NOTE]
 > Een token dat u maakt is gebonden aan de beheerder die het hebt gemaakt. Dit betekent dat als de gebruiker met beheerdersrechten is verwijderd uit de Cloud App security, het token wordt niet langer geldig.
@@ -84,7 +88,7 @@ U kunt op **Resultaten bewerken en bekijken** klikken om te controleren of het f
 1. In de [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=838596), na het accepteren van de [softwarelicentievoorwaarden](https://go.microsoft.com/fwlink/?linkid=862491), moet het ZIP-bestand downloaden en uitpakken van het.
 
 2. Voer het uitgepakte bestand op uw server:
-    
+
         java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN
 
 > [!NOTE]
@@ -92,7 +96,7 @@ U kunt op **Resultaten bewerken en bekijken** klikken om te controleren of het f
 > - Parameters vierkante haakjes [] zijn optioneel en moeten alleen worden gebruikt als relevant.
 > - Het is raadzaam de JAR tijdens het opstarten van de server uitgevoerd.
 >   - Windows: Als een geplande taak uitvoeren en zorg ervoor dat u configureert u de taak voor **uitvoeren of de gebruiker is aangemeld of niet** en of u schakelt de **de taak stoppen als deze wordt uitgevoerd logner dan** selectievakje.
->   - Linux: Voeg de opdracht uitvoeren met een  **&**  naar het bestand rc.local. Bijvoorbeeld: `java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN &`
+>   - Linux: Voeg de opdracht uitvoeren met een **&** naar het bestand rc.local. Bijvoorbeeld: `java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN &`
 
 Hierbij worden de volgende variabelen gebruikt:
 - MAPNAAM is het pad naar de map die u wilt gebruiken voor lokale agent-logboeken voor foutopsporing.
@@ -114,7 +118,6 @@ Het volgende zijn voorbeeld activiteitenlogboeken verzonden naar uw SIEM:
 2017-11-27T20:41:20.000Z CEF:0|MCAS|SIEM_Agent|0.112.49|EVENT_CATEGORY_DELETE_USER|Delete user|0|externalId=1511815287798_bcf60601-ecef-4207-beda-3d2b8d87d383 rt=1511815280000 start=1511815280000 end=1511815280000 msg=Delete user: user 233490c0db360300906ff34ebf9619ef suser=admin@contoso.com destinationServiceName=ServiceNow dvc= requestClientApplication= cs1Label=portalURL cs1=https://contoso.portal.cloudappsecurity.com/#/audits?activity.id\=eq(1511815287798_bcf60601-ecef-4207-beda-3d2b8d87d383,) cs2Label=uniqueServiceAppIds cs2=APPID_SERVICENOW cs3Label=targetObjects cs3=,233490c0db360300906ff34ebf9619ef,,admin@contoso.com,admin@contoso.com,admin@contoso.com cs4Label=policyIDs cs4= c6a1Label="Device IPv6 Address" c6a1=
 
 2017-11-28T19:24:55.000Z LAB-EUW-ARCTEST CEF:0|MCAS|SIEM_Agent|0.112.68|EVENT_CATEGORY_DELETE_OBJECT|Delete object|0|externalId=1511897117617_5be018ee-f676-4473-a9b5-5982527409be rt=1511897095000 start=1511897095000 end=1511897095000 msg=Delete object: ServiceNow Object b1709c40db360300906ff34ebf961923 suser=admin@contoso.com destinationServiceName=ServiceNow dvc= requestClientApplication= cs1Label=portalURL cs1=https://contoso.portal.cloudappsecurity.com/#/audits?activity.id\=eq(1511897117617_5be018ee-f676-4473-a9b5-5982527409be,) cs2Label=uniqueServiceAppIds cs2=APPID_SERVICENOW cs3Label=targetObjects cs3=,,admin@contoso.com,admin@contoso.com,admin@contoso.com cs4Label=policyIDs cs4= c6a1Label="Device IPv6 Address" c6a1=
-
 ```
 Evenals de volgende waarschuwingen logfile voorbeeld:
 ```
@@ -129,37 +132,34 @@ Evenals de volgende waarschuwingen logfile voorbeeld:
 2017-07-16T09:17:46.290Z CEF:0|MCAS|SIEM_Agent|0.102.17|ALERT_CABINET_EVENT_MATCH_AUDIT|test-activity-policy4|3|externalId=596b30200c204203a33a4765 start=1500196666290 end=1500196666290 msg=Activity policy ''test-activity-policy4'' was triggered by ''admin@contoso.com'' suser=admin@contoso.com destinationServiceName=Microsoft Exchange Online cn1Label=riskScore cn1= cs1Label=portalURL cs1=https://cloud-app-security.com/#/alerts/596b30200c204203a33a4765 cs2Label=uniqueServiceAppIds cs2=APPID_OUTLOOK cs3Label=relatedAudits cs3=1500196587034_a8673602-7e95-46d6-a1fe-c156c4709c5d cs4Label=policyIDs cs4=
 
 2017-07-16T09:41:04.369Z CEF:0|MCAS|SIEM_Agent|0.102.17|ALERT_CABINET_EVENT_MATCH_AUDIT|test-activity-policy2|3|externalId=596b34b10c204203a33a5240 start=1500198064369 end=1500198064369 msg=Activity policy ''test-activity-policy2'' was triggered by ''user2@test15-adallom.com'' suser=user2@test15-adallom.com destinationServiceName=Google cn1Label=riskScore cn1= cs1Label=portalURL cs1=https://cloud-app-security.com/#/alerts/596b34b10c204203a33a5240 cs2Label=uniqueServiceAppIds cs2=APPID_33626 cs3Label=relatedAudits cs3=1500197996117_fd71f265-1e46-4f04-b372-2e32ec874cd3 cs4Label=policyIDs cs4=
-
 ```
 #### <a name="sample-cloud-app-security-alerts-in-cef-format"></a>Voorbeeld Cloud App Security waarschuwingen in CEF-indeling
 
 
-|Van toepassing op|De naam van de CEF-veld|Description|
-|----|-----|----|
-|Activiteiten /-waarschuwingen|Start| Activiteit of waarschuwing tijdstempel|
-|Activiteiten /-waarschuwingen|Einde|Activiteit of waarschuwing tijdstempel|
-|Activiteiten /-waarschuwingen|RT|Activiteit of waarschuwing tijdstempel|
-|Activiteiten /-waarschuwingen|bericht |Activiteit of waarschuwing beschrijving zoals weergegeven in de portal|
-|Activiteiten /-waarschuwingen|suser| Activiteit of waarschuwing onderwerp gebruiker|
-|Activiteiten /-waarschuwingen|destinationServiceName| Activiteit of waarschuwing app, bijvoorbeeld Office 365, Sharepoint, vak die afkomstig zijn.|
-|Activiteiten /-waarschuwingen|cs<X>Label|Elk label moet een andere betekenis, maar deze bijvoorbeeld targetObjects in het label zelf wordt uitgelegd.|
-|Activiteiten /-waarschuwingen|cs<X>|De informatie die overeenkomt met het label (de doelgebruiker van de activiteit of een waarschuwing aan de hand van het label voorbeeld).|
-|Activiteiten|EVENT_CATEGORY_* |Categorie op hoog niveau van de activiteit|
-|Activiteiten|<ACTION> |Het activiteitstype, zoals weergegeven in de portal|
-|Activiteiten|externalId| Gebeurtenis-id|
-|Activiteiten|dvc| IP-adres van het clientapparaat.|
-|Activiteiten|requestClientApplication|Gebruikersagent van het clientapparaat.|
-|Waarschuwingen|<alert type>|Bijvoorbeeld 'ALERT_CABINET_EVENT_MATCH_AUDIT'|
-|Waarschuwingen|<name>|De naam van de overeenkomende beleid|
-|Waarschuwingen|externalId|Waarschuwing-ID|
-
-
+|   Van toepassing op   |      De naam van de CEF-veld      |                                                   Description                                                   |
+|-------------------|--------------------------|-----------------------------------------------------------------------------------------------------------------|
+| Activiteiten /-waarschuwingen |          Start           |                                           Activiteit of waarschuwing tijdstempel                                           |
+| Activiteiten /-waarschuwingen |           Einde            |                                           Activiteit of waarschuwing tijdstempel                                           |
+| Activiteiten /-waarschuwingen |            rt            |                                           Activiteit of waarschuwing tijdstempel                                           |
+| Activiteiten /-waarschuwingen |           msg            |                              Activiteit of waarschuwing beschrijving zoals weergegeven in de portal                               |
+| Activiteiten /-waarschuwingen |          suser           |                                         Activiteit of waarschuwing onderwerp gebruiker                                          |
+| Activiteiten /-waarschuwingen |  destinationServiceName  |                  Activiteit of waarschuwing app, bijvoorbeeld Office 365, Sharepoint, vak die afkomstig zijn.                   |
+| Activiteiten /-waarschuwingen |        cs<X>Label        |        Elk label moet een andere betekenis, maar deze bijvoorbeeld targetObjects in het label zelf wordt uitgelegd.        |
+| Activiteiten /-waarschuwingen |          cs<X>           | De informatie die overeenkomt met het label (de doelgebruiker van de activiteit of een waarschuwing aan de hand van het label voorbeeld). |
+|    Activiteiten     |     EVENT_CATEGORY_*     |                                       Categorie op hoog niveau van de activiteit                                       |
+|    Activiteiten     |         <ACTION>         |                                  Het activiteitstype, zoals weergegeven in de portal                                  |
+|    Activiteiten     |        externalId        |                                                    Gebeurtenis-id                                                     |
+|    Activiteiten     |           dvc            |                                             IP-adres van het clientapparaat.                                             |
+|    Activiteiten     | requestClientApplication |                                         Gebruikersagent van het clientapparaat.                                         |
+|      Waarschuwingen       |       <alert type>       |                                  Bijvoorbeeld 'ALERT_CABINET_EVENT_MATCH_AUDIT'                                  |
+|      Waarschuwingen       |          <name>          |                                             De naam van de overeenkomende beleid                                             |
+|      Waarschuwingen       |        externalId        |                                                    Waarschuwing-ID                                                     |
 
 ### <a name="step-3-validate-that-the-siem-agent-is-working"></a>Stap 3: Valideren dat de SIEM-agent werkt
 
 1. Controleer of de SIEM-agent in de Cloud App Security-portal niet de status **Verbindingsfout** of **Verbroken** heeft en of er geen agentmeldingen zijn. Deze wordt weergegeven als **Verbindingsfout** als de verbinding meer dan twee uur niet beschikbaar is en als **Verbroken** als de verbinding gedurende meer dan 12 uur niet beschikbaar is.
  ![SIEM verbroken](./media/siem-not-connected.png)
- 
+
    In plaats daarvan de status moet worden verbonden, zoals hier: ![SIEM verbonden](./media/siem-connected.png)
 
 2. Zorg ervoor dat u in uw Syslog/SIEM-server activiteiten en waarschuwingen ziet die afkomstig zijn van Cloud App Security.
@@ -191,5 +191,4 @@ De SIEM-agent is één eindpunt die ondersteuning biedt voor herstel van maximaa
 [Het oplossen van problemen van SIEM-integratie](troubleshooting-siem.md)   
 
 [Premier-klanten kunnen Cloud App Security ook rechtstreeks vanuit Premier Portal kiezen.](https://premier.microsoft.com/)  
-  
-  
+

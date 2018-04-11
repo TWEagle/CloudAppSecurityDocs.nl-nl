@@ -1,23 +1,23 @@
 ---
 title: Automatisch uploaden van logboeken configureren voor doorlopende rapporten in Cloud App Security | Microsoft Docs
 description: In dit onderwerp vindt u informatie over het uploaden van logboeken om automatische Cloud Discovery-rapporten te maken.
-keywords: 
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 1/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 56252b8d4bd7d69719b9ceb6fb05a9e8030f8ffd
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 4b6fc8843523f187260a3b22d1c89825ee223674
+ms.sourcegitcommit: 3c66f12aa31ba211235787ee6f233138ea5f8a75
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance---deprecated"></a>Logboek automatisch uploaden voor continue rapporten configureren op een virtueel apparaat - afgeschaft
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 01/16/2018
 - Schijfruimte: 250 GB
 - CPU: 2
 - RAM: 4 GB 
-- Uw firewall ingesteld zoals beschreven in [vereisten](network-requirements#log-collector)
+- Uw firewall ingesteld zoals beschreven in [vereisten](network-requirements.md#log-collector)
 
 
 ## <a name="log-collector-performance"></a>Prestaties logboekverzamelaar
@@ -43,70 +43,70 @@ De logboekverzamelaar heeft een ingebouwd beveiligingsmechanisme dat de snelheid
   
 ### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>Stap 1 - Webportalconfiguratie: gegevensbronnen definiëren en deze koppelen aan een logboekverzamelaar  
   
-1.  Ga naar de pagina met instellingen voor automatisch uploaden:  
-    Klik in de Cloud App Security-portal op het Instellingenpictogram ![Instellingenpictogram](./media/settings-icon.png "Instellingenpictogram"), gevolgd door **Logboekverzamelaars**.  
+1. Ga naar de pagina met instellingen voor automatisch uploaden:  
+   Klik in de Cloud App Security-portal op het Instellingenpictogram ![Instellingenpictogram](./media/settings-icon.png "Instellingenpictogram"), gevolgd door **Logboekverzamelaars**.  
   
-3.  Maak voor elke firewall of proxy waaruit u logboeken wilt uploaden een overeenkomende gegevensbron aan:  
+2. Maak voor elke firewall of proxy waaruit u logboeken wilt uploaden een overeenkomende gegevensbron aan:  
   
-    a.  Klik op **Gegevensbron toevoegen**.  
+   a.  Klik op **Gegevensbron toevoegen**.  
   
-    b.  Geef uw proxy of firewall een **Naam**.  
+   b.  Geef uw proxy of firewall een **Naam**.  
   
-    c.  Selecteer het apparaat in de lijst **Bron**. Als u selecteert **aangepaste logboekindeling** om te werken met een netwerkapparaat die niet wordt vermeld, Zie [werken met de aangepaste log parser](custom-log-parser.md) voor configuratie-instructies.
+   c.  Selecteer het apparaat in de lijst **Bron**. Als u selecteert **aangepaste logboekindeling** om te werken met een netwerkapparaat die niet wordt vermeld, Zie [werken met de aangepaste log parser](custom-log-parser.md) voor configuratie-instructies.
   
-    d.  Vergelijk uw logboek met het voorbeeld van de verwachte logboekindeling. Als de bestandsindeling van uw logboek niet met dit voorbeeld overeenkomt, moet u uw gegevensbron toevoegen onder **Overig**.  
+   d.  Vergelijk uw logboek met het voorbeeld van de verwachte logboekindeling. Als de bestandsindeling van uw logboek niet met dit voorbeeld overeenkomt, moet u uw gegevensbron toevoegen onder **Overig**.  
   
-    e.  Stel het **Type ontvanger** in op **FTP** of **Syslog**. Kies **UDP** of **TCP** voor **Syslog**.  
+   e.  Stel het **Type ontvanger** in op **FTP** of **Syslog**. Kies **UDP** of **TCP** voor **Syslog**.  
   
-    f.  Herhaal dit proces voor elke firewall en proxy waarvan het logboek kan worden gebruikt om verkeer op uw netwerk te detecteren.  
+   f.  Herhaal dit proces voor elke firewall en proxy waarvan het logboek kan worden gebruikt om verkeer op uw netwerk te detecteren.  
   
-4.  Ga naar het tabblad **Logboekverzamelaars** bovenaan.  
+3. Ga naar het tabblad **Logboekverzamelaars** bovenaan.  
   
-    a.  Klik op **Logboekverzamelaar toevoegen**.  
+   a.  Klik op **Logboekverzamelaar toevoegen**.  
   
-    b.  Geef de logboekverzamelaar een **Naam**.  
+   b.  Geef de logboekverzamelaar een **Naam**.  
   
-    c.  Selecteer alle **gegevensbronnen** die u aan de verzamelaar wilt koppelen en klik op **Bijwerken** om de configuratie op te slaan en een toegangstoken te genereren.  
-![detectiegegevensbronnen](./media/discovery-data-sources.png)
+   c.  Selecteer alle **gegevensbronnen** die u aan de verzamelaar wilt koppelen en klik op **Bijwerken** om de configuratie op te slaan en een toegangstoken te genereren.  
+   ![detectiegegevensbronnen](./media/discovery-data-sources.png)
   
-  > [!NOTE] 
-  > - Eén logboekverzamelaar kan meerdere gegevensbronnen verwerken.
-  > - Kopieer de inhoud van het scherm omdat deze wordt gebruikt bij het configureren van de Logboekverzamelaar om te communiceren met Cloud App Security. Als u Syslog hebt geselecteerd, bevat deze informatie informatie over de poort die de Syslog-listener luistert op.
-4.  Als u akkoord gaan met de [licentievoorwaarden voor eindgebruikers](https://go.microsoft.com/fwlink/?linkid=862492), **downloaden** een nieuwe virtuele machine van een logboek-collector door te klikken op de Hyper-V- of VMWare. Vervolgens Decomprimeer het bestand met het wachtwoord die u hebt ontvangen in de portal.  
+   > [!NOTE] 
+   > - Eén logboekverzamelaar kan meerdere gegevensbronnen verwerken.
+   > - Kopieer de inhoud van het scherm omdat deze wordt gebruikt bij het configureren van de Logboekverzamelaar om te communiceren met Cloud App Security. Als u Syslog hebt geselecteerd, bevat deze informatie informatie over de poort die de Syslog-listener luistert op.
+4. Als u akkoord gaan met de [licentievoorwaarden voor eindgebruikers](https://go.microsoft.com/fwlink/?linkid=862492), **downloaden** een nieuwe virtuele machine van een logboek-collector door te klikken op de Hyper-V- of VMWare. Vervolgens Decomprimeer het bestand met het wachtwoord die u hebt ontvangen in de portal.  
   
 ### <a name="step-2--on-premises-deployment-of-the-virtual-machine-and-network-configuration"></a>Stap 2 - On-premises implementatie van de virtuele machine en de netwerkconfiguratie   
 
 > [!NOTE] 
 > De volgende stappen beschrijven de implementatie in Hyper-V. De implementatiestappen voor de VM-hypervisor zijn iets anders.  
 
-1.  Open Hyper-V-beheer.  
+1. Open Hyper-V-beheer.  
   
-2.  Selecteer **Nieuw** en vervolgens **Virtuele machine** en klik dan op **Volgende**.  
- ![detectie van Hyper-V virtuele machine](./media/discovery-hyperv-virtual-machine.png "detectie Hyper-V virtuele machine")  
+2. Selecteer **Nieuw** en vervolgens **Virtuele machine** en klik dan op **Volgende**.  
+   ![detectie van Hyper-V virtuele machine](./media/discovery-hyperv-virtual-machine.png "detectie Hyper-V virtuele machine")  
   
-3.  Geef een **naam** voor de nieuwe virtuele machine op, bijvoorbeeld CloudAppSecurityLogCollector01. Klik vervolgens op **Volgende**.  
+3. Geef een **naam** voor de nieuwe virtuele machine op, bijvoorbeeld CloudAppSecurityLogCollector01. Klik vervolgens op **Volgende**.  
   
-4.  Selecteer **Generatie 1** en klik op **Volgende**.  
+4. Selecteer **Generatie 1** en klik op **Volgende**.  
   
-5.  Wijzig het **Opstartgeheugen** naar **4096 MB**.  
+5. Wijzig het **Opstartgeheugen** naar **4096 MB**.  
         
 6. Vink **Dynamisch geheugen gebruiken** aan voor deze virtuele machine en klik op **Volgende**.  
   
-7.  Kies de **Verbinding** voor het netwerk, indien beschikbaar, en klik op **Volgende**.  
+7. Kies de **Verbinding** voor het netwerk, indien beschikbaar, en klik op **Volgende**.  
   
-8.  Kies **gebruik een bestaande virtuele harde schijf** en selecteer de **.vhd** -bestand dat is opgenomen in het Zip-bestand dat u hebt gedownload.  
+8. Kies **gebruik een bestaande virtuele harde schijf** en selecteer de **.vhd** -bestand dat is opgenomen in het Zip-bestand dat u hebt gedownload.  
   
-9.  Klik op **Volgende** en klik vervolgens op **Voltooien**.  
-    De machine is toegevoegd aan uw Hyper-V-omgeving.  
+9. Klik op **Volgende** en klik vervolgens op **Voltooien**.  
+   De machine is toegevoegd aan uw Hyper-V-omgeving.  
   
-9. Klik op de machine in de tabel **Virtuele machines** en klik op **Start**.   
+10. Klik op de machine in de tabel **Virtuele machines** en klik op **Start**.   
   
-10. Maak verbinding met de virtuele machine voor de logboekverzamelaar om te zien of hieraan een DHCP-adres is toegewezen. Hiervoor klikt u op de virtuele machine en selecteert u **Verbinden**. Als het goed is, wordt de aanmeldingsprompt weergegeven. Als u een IP-adres ziet, kunt u verbinding maken met de virtuele machine met behulp van een terminal-/SSH-hulpprogramma.  Als u een IP-adres niet ziet, meld u aan met de hulpprogramma's voor Hyper-V/VMWare connection met de referenties die u hebt gekopieerd naar beneden wanneer u de Logboekverzamelaar eerder hebt gemaakt. U kunt het wachtwoord wijzigen en u kunt de virtuele machine configureren met het netwerkconfiguratiehulpprogramma door de volgende opdracht uit te voeren:
-```
-sudo network_config
-```
-> [!NOTE]
-> De virtuele machine is vooraf geconfigureerd voor het ophalen van een IP-adres via een DHCP-server. Als u configureren wilt, een statisch IP-adres, standaardgateway, hostnaam, DNS-servers en NTPS, kunt u de **network_config** hulpprogramma of wijzigingen handmatig uitvoeren.
+11. Maak verbinding met de virtuele machine voor de logboekverzamelaar om te zien of hieraan een DHCP-adres is toegewezen. Hiervoor klikt u op de virtuele machine en selecteert u **Verbinden**. Als het goed is, wordt de aanmeldingsprompt weergegeven. Als u een IP-adres ziet, kunt u verbinding maken met de virtuele machine met behulp van een terminal-/SSH-hulpprogramma.  Als u een IP-adres niet ziet, meld u aan met de hulpprogramma's voor Hyper-V/VMWare connection met de referenties die u hebt gekopieerd naar beneden wanneer u de Logboekverzamelaar eerder hebt gemaakt. U kunt het wachtwoord wijzigen en u kunt de virtuele machine configureren met het netwerkconfiguratiehulpprogramma door de volgende opdracht uit te voeren:
+    ```
+    sudo network_config
+    ```
+    > [!NOTE]
+    > De virtuele machine is vooraf geconfigureerd voor het ophalen van een IP-adres via een DHCP-server. Als u configureren wilt, een statisch IP-adres, standaardgateway, hostnaam, DNS-servers en NTPS, kunt u de **network_config** hulpprogramma of wijzigingen handmatig uitvoeren.
 
 
 Uw logboekverzamelaar is nu verbonden met uw netwerk en kan de Cloud App Security-portal bereiken.  
@@ -165,6 +165,3 @@ Nadat u hebt gecontroleerd dat de logboeken worden naar de Cloud App Security wo
 [Werken met Cloud Discovery-gegevens](working-with-cloud-discovery-data.md)   
 
 [Premier-klanten kunnen Cloud App Security ook rechtstreeks vanuit Premier Portal kiezen.](https://premier.microsoft.com/)  
-    
-      
-  

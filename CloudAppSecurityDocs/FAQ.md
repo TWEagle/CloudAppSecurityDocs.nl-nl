@@ -1,23 +1,23 @@
 ---
 title: Veelgestelde vragen over Cloud App Security | Microsoft Docs
 description: Dit artikel bevat veelgestelde vragen over Cloud App Security en de bijbehorende antwoorden.
-keywords: 
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 1/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 081c2cf4-2750-4546-9490-4b65e87ae48c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: acc80f823431f5f903412b8e984683a3e8f62d34
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 6320b759c66b47bbcd2bc10fd3417d27aee3ff96
+ms.sourcegitcommit: 3c66f12aa31ba211235787ee6f233138ea5f8a75
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="frequently-asked-questions"></a>Veelgestelde vragen
 

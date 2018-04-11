@@ -1,23 +1,23 @@
 ---
 title: Werken met Cloud App Security gedetecteerde app-filters en query's | Microsoft Docs
 description: Dit onderwerp bevat een lijst met Cloud App Security gedetecteerde app-filters en query's en wordt uitgelegd hoe u ermee.
-keywords: 
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 1/3/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1a2d3aeb-4e28-4c73-804b-95e862b08e43
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ea1b0b150f1028e8a8d4edac32aa6d8a4f59b564
-ms.sourcegitcommit: bbf4a2715d1ea3fd21c1a1b87c7f5a2947d2ca68
+ms.openlocfilehash: a38e5a7d7e4f32d4d29bc571c5c02872904d751e
+ms.sourcegitcommit: 3c66f12aa31ba211235787ee6f233138ea5f8a75
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="discovered-app-filters-and-queries"></a>Gedetecteerde app-filters en query 's
 
@@ -64,11 +64,11 @@ Een eenvoudiger onderzoek zelfs kunt u nu aangepaste query's maken en opslaan vo
 
 3. In de **opslaan query** pop-up naam van uw query.
 
- ![Nieuwe query](./media/new-query.png)
+   ![Nieuwe query](./media/new-query.png)
 
 4. Gebruik deze query opnieuw in de toekomst onder **query's**, schuif omlaag naar **opgeslagen query's** en selecteert u uw query. 
 
- ![query openen](./media/open-query.png)
+   ![open query](./media/open-query.png)
 
 
 Cloud App Security kunt u met **voorgestelde query's** en kunt u aangepaste query's die u vaak gebruikt opslaan. Voorgestelde query's bieden u aanbevolen mogelijkheden van onderzoek die uw gedetecteerde apps filteren met behulp van de volgende optionele voorgestelde query's:

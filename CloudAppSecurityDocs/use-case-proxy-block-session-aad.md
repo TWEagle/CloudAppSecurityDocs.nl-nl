@@ -1,23 +1,23 @@
 ---
 title: Het blokkeren van gevoelige gegevens voor niet-beheerde apparaten met behulp van Cloud App Security proxy worden gedownload | Microsoft Docs
 description: Dit onderwerp beschrijft het scenario voor het beveiligen van uw organisatie tegen downloads van gevoelige gegevens door niet-beheerde devicesusing Azure AD-proxymogelijkheden.
-keywords: 
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 1/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 06238ebc-2088-4372-9412-96cceaf3b145
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: fd3d2abe04206926ec86f05a21f3bc0ecbe13728
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 96a28a84cd97f63e9c7a0df09b28bdbf323ca34a
+ms.sourcegitcommit: 3c66f12aa31ba211235787ee6f233138ea5f8a75
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="blocking-downloads-of-sensitive-information-using-the-microsoft-cloud-app-security-proxy"></a>Downloads van gevoelige gegevens via de Microsoft Cloud App Security-proxy worden geblokkeerd
 
@@ -46,7 +46,7 @@ Cloud App Security sessie beleidsregels kunt u de sessie op basis van apparaatst
 1. Maak een Azure AD-beleid voor voorwaardelijke toegang met toegewezen gebruikers- en app.
 2. Selecteer **beperkingen afgedwongen proxy gebruiken** onder sessie besturingselementen in het beleid voor voorwaardelijke toegang.   
 
- ![Voorwaardelijke toegang van Azure AD](./media/proxy-deploy-restrictions-aad.png)
+   ![Voorwaardelijke toegang van Azure AD](./media/proxy-deploy-restrictions-aad.png)
 
 Na het voltooien van deze taak gaat u verder met de Cloud App Security-portal en maak een beleid voor sessies kunt bewaken en beheren van downloaden van bestanden in de sessie.
 
@@ -56,29 +56,29 @@ Na het voltooien van deze taak gaat u verder met de Cloud App Security-portal en
 
 2. In de **beleid** pagina, klikt u op **beleid maken** gevolgd door **sessie beleid**.
  
- ![Sessie-beleid maken](./media/create-session-policy.png)
+   ![Sessie-beleid maken](./media/create-session-policy.png)
 
-2. In de **sessie beleid maken** pagina, Geef uw beleid een naam en beschrijving. Bijvoorbeeld: **blok downloadt van Salesforce voor onbeheerde apparaten**.
+3. In de **sessie beleid maken** pagina, Geef uw beleid een naam en beschrijving. Bijvoorbeeld: **blok downloadt van Salesforce voor onbeheerde apparaten**.
 
-3. Wijs een **beleid ernst** en **categorie**.
+4. Wijs een **beleid ernst** en **categorie**.
 
- ![Beleid voor nieuwe sessie](./media/new-session-policy.png)
+   ![Beleid voor nieuwe sessie](./media/new-session-policy.png)
 
-4. Onder **sessie besturingselementtype**, selecteer **alle activiteiten bewaken en beheren van het downloaden van bestand**. Dit biedt u de mogelijkheid voor het bewaken van alles wat die gebruikers doen binnen een Salesforce-sessie en geeft u tot blok beheren en beveiligen van downloads in realtime.
+5. Onder **sessie besturingselementtype**, selecteer **alle activiteiten bewaken en beheren van het downloaden van bestand**. Dit biedt u de mogelijkheid voor het bewaken van alles wat die gebruikers doen binnen een Salesforce-sessie en geeft u tot blok beheren en beveiligen van downloads in realtime.
 
- ![sessie-beleidstype besturingselement](./media/session-policy-control-type.png)
+   ![sessie-beleidstype besturingselement](./media/session-policy-control-type.png)
 
-5.  onder **activiteitbron** in de **activiteiten die overeenkomen met alle van de volgende** sectie, selecteer het filter: 
+6. onder **activiteitbron** in de **activiteiten die overeenkomen met alle van de volgende** sectie, selecteer het filter: 
     
-    - **Apparaat-tag**: Selecteer **is niet gelijk aan** en selecteer vervolgens **compatibele**, **verbonden met het domein**, of **geldig clientcertificaat**, afhankelijk van de methode voor het identificeren van beheerde apparaten in uw organisatie gebruikt. 
+   - **Apparaat-tag**: Selecteer **is niet gelijk aan** en selecteer vervolgens **compatibele**, **verbonden met het domein**, of **geldig clientcertificaat**, afhankelijk van de methode voor het identificeren van beheerde apparaten in uw organisatie gebruikt. 
     
-    - **App**: Selecteer de app die u beheren wilt.  
+   - **App**: Selecteer de app die u beheren wilt.  
 
-    - **Gebruikers**: Selecteer de gebruikers die u wilt bewaken.  
+   - **Gebruikers**: Selecteer de gebruikers die u wilt bewaken.  
     
 7. U kunt ook als u wilt blokkeren de downloads voor de locaties die geen deel uitmaken van uw bedrijfsnetwerk onder **activiteitbron** in de **activiteiten die overeenkomen met alle van de volgende** sectie, stelt u de de volgende filters: 
 
-  - **IP-adres** of **locatie**: U kunt een van deze twee parameters niet-zakelijk of onbekende locaties, waaruit een gebruiker probeert te krijgen tot gevoelige gegevens te identificeren.
+   - **IP-adres** of **locatie**: U kunt een van deze twee parameters niet-zakelijk of onbekende locaties, waaruit een gebruiker probeert te krijgen tot gevoelige gegevens te identificeren.
 
      > [!NOTE]
      > Als u wilt blokkeren downloads van zowel onbeheerde apparaten en niet-zakelijk locaties, hebt u twee sessie beleidsregels, die ingesteld maken de **activiteitbron** met behulp van de locatie en een stelt de **activiteit bron** op niet-beheerde apparaten.
@@ -87,28 +87,28 @@ Na het voltooien van deze taak gaat u verder met de Cloud App Security-portal en
    
    - **Gebruikers**: Selecteer de gebruikers die u wilt bewaken.  
 
-6. Onder **activiteitbron** in de **bestanden die overeenkomen met alle van de volgende** sectie, stelt u de volgende filters: 
+8. Onder **activiteitbron** in de **bestanden die overeenkomen met alle van de volgende** sectie, stelt u de volgende filters: 
    
-    - **Classificatielabels**: als u classificatielabels voor Azure Information Protection en de bestanden op basis van een specifiek label van de Azure Information Protection-classificatie wilt filteren.
+   - **Classificatielabels**: als u classificatielabels voor Azure Information Protection en de bestanden op basis van een specifiek label van de Azure Information Protection-classificatie wilt filteren.
    
-    - Selecteer **bestandsnaam** of **bestandstype** om toe te passen op basis van deze beperkingen.
+   - Selecteer **bestandsnaam** of **bestandstype** om toe te passen op basis van deze beperkingen.
  
      ![sessie beleid bestandsfilters](./media/session-policy-file-filters.png)
 
-7. Schakel **inhoudscontrole** inschakelen van de interne DLP om te scannen bestanden voor een gevoelige inhoud. 
+9. Schakel **inhoudscontrole** inschakelen van de interne DLP om te scannen bestanden voor een gevoelige inhoud. 
 
- ![sessie beleid inhoudscontrole](./media/session-policy-content-inspection.png)
+   ![sessie beleid inhoudscontrole](./media/session-policy-content-inspection.png)
 
-8. Onder **acties**, selecteer **blok**. De blokkeringsbericht die uw gebruikers krijgen wanneer ze worden niet downloaden van bestanden aanpassen.  
+10. Onder **acties**, selecteer **blok**. De blokkeringsbericht die uw gebruikers krijgen wanneer ze worden niet downloaden van bestanden aanpassen.  
 
- ![acties voor sessie-beleid](./media/session-policy-actions.png)
+    ![acties voor sessie-beleid](./media/session-policy-actions.png)
 
-9. Stel de waarschuwingen die u wilt ontvangen wanneer het beleid wordt vergeleken. U kunt een limiet kunt instellen, zodat u niet te veel waarschuwingen ontvangt, en u kunt aangeven of de waarschuwingen krijgt als een e-mailbericht of SMS-bericht.
+11. Stel de waarschuwingen die u wilt ontvangen wanneer het beleid wordt vergeleken. U kunt een limiet kunt instellen, zodat u niet te veel waarschuwingen ontvangt, en u kunt aangeven of de waarschuwingen krijgt als een e-mailbericht of SMS-bericht.
 
- ![sessie beleid waarschuwingen](./media/session-policy-alert.png)
+    ![sessie beleid waarschuwingen](./media/session-policy-alert.png)
 
 
-10. Klik op **Maken**  
+12. Klik op **Maken**  
  
 
 ## <a name="validate-your-policy"></a>Valideren van het beleid 
@@ -117,11 +117,11 @@ Na het voltooien van deze taak gaat u verder met de Cloud App Security-portal en
 
 2. Het bestand moet worden geblokkeerd en u ontvangt het bericht dat u onder ingesteld **aanpassen blok berichten**. 
 
-  ![blok downloadbericht](./media/block-download-message.png)
+   ![blok downloadbericht](./media/block-download-message.png)
 
 3. Klik in de Cloud App Security-portal op **besturingselement** gevolgd door **beleid**, en klik vervolgens op het beleid dat u hebt gemaakt om het rapport beleid weer te geven. Een sessie beleid overeenkomst moet binnenkort worden weergegeven. 
  
-  ![rapport van beleid](./media/session-policy-report.png)
+   ![rapport van beleid](./media/session-policy-report.png)
 
 4. In het rapport beleid kunt u zien welke aanmeldingen indien omgeleid naar de proxy voor het beheer van sessies en welke bestanden zijn gedownload of worden geblokkeerd van de bewaakte sessies.
 
