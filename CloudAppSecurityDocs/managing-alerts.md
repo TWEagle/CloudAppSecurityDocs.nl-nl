@@ -1,67 +1,67 @@
 ---
 title: Waarschuwingen beheren die zijn geactiveerd in de portal van Cloud App Security | Microsoft Docs
 description: Dit artikel bevat informatie over het werken met waarschuwingen die zijn geactiveerd in de portal van Cloud App Security.
-keywords: 
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 1/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1b1dbcc6-472f-43ea-af59-2aa926e3e5a9
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a674379eea455c1a7f384c56f1c3a6013f8aac6e
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: f23c1e3118e9666eb4ddc2846dfbf3f528084d55
+ms.sourcegitcommit: 3c66f12aa31ba211235787ee6f233138ea5f8a75
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/08/2018
 ---
 ## <a name="manage-your-alerts"></a>De waarschuwingen beheren  
 Waarschuwingen zijn het uitgangspunt van waaruit u meer inzicht in uw cloudomgeving krijgt. Mogelijk wilt u nieuwe beleidsregels maken naar aanleiding van uw bevindingen. U ziet bijvoorbeeld dat een beheerder is aangemeld vanuit Groenland en er heeft zich nog nooit iemand aangemeld vanuit Groenland binnen uw organisatie. U kunt een beleid maken waarmee een beheerdersaccount automatisch tijdelijk wordt ingetrokken als dit wordt gebruikt voor aanmelding vanaf die locatie.  
 
 Het is een goed idee alle waarschuwingen te bekijken en ze als hulpmiddel te gebruiken om uw beleid aan te passen. Als een onschuldige gebeurtenis wordt beschouwd als een schending van het bestaande beleid, moet u uw beleid verfijnen zodat u minder onnodige waarschuwingen ontvangt.  
 
-1.   Klik onder **Waarschuwingen openen** op **Alle waarschuwingen bekijken**.  
+1. Klik onder **Waarschuwingen openen** op **Alle waarschuwingen bekijken**.  
 
-     Dit gedeelte van het dashboard biedt volledige zichtbaarheid van alle verdachte activiteiten of schendingen van de ingestelde beleidsregels. Vervolgens kunt u hiermee de beveiliging verbeteren die u voor uw cloudomgeving hebt gedefinieerd.  
+   Dit gedeelte van het dashboard biedt volledige zichtbaarheid van alle verdachte activiteiten of schendingen van de ingestelde beleidsregels. Vervolgens kunt u hiermee de beveiliging verbeteren die u voor uw cloudomgeving hebt gedefinieerd.  
 
-     ![Waarschuwingen](./media/alerts.png "waarschuwingen")  
+   ![Waarschuwingen](./media/alerts.png "waarschuwingen")  
 
-2.   Bij elke waarschuwing dient u de aard van de schending te onderzoeken en de vereiste actie te bepalen.  
+2. Bij elke waarschuwing dient u de aard van de schending te onderzoeken en de vereiste actie te bepalen.  
 
-     U kunt de waarschuwingen filteren op type waarschuwing of ernst, zodat u de belangrijkste het eerst kunt verwerken.  
+   U kunt de waarschuwingen filteren op type waarschuwing of ernst, zodat u de belangrijkste het eerst kunt verwerken.  
 
-     Selecteer een specifieke waarschuwing. Afhankelijk van het type waarschuwing krijgt u verschillende acties te zien die kunnen worden uitgevoerd voordat de waarschuwing wordt opgelost.  
+   Selecteer een specifieke waarschuwing. Afhankelijk van het type waarschuwing krijgt u verschillende acties te zien die kunnen worden uitgevoerd voordat de waarschuwing wordt opgelost.  
 
-     U heeft te maken met drie soorten schendingen wanneer u waarschuwingen onderzoekt:  
+   U heeft te maken met drie soorten schendingen wanneer u waarschuwingen onderzoekt:  
 
-    #### <a name="serious-violations"></a>Ernstige schendingen
-     Voor ernstige schendingen is onmiddellijke actie nodig.
+   #### <a name="serious-violations"></a>Ernstige schendingen
+   Voor ernstige schendingen is onmiddellijke actie nodig.
 
-         Examples:  
+       Examples:  
 
-         For a suspicious activity alert, you might want to suspend the account until the user changes their password.  
+       For a suspicious activity alert, you might want to suspend the account until the user changes their password.  
 
-         For a data leak you might want to restrict permissions or quarantine the file.  
+       For a data leak you might want to restrict permissions or quarantine the file.  
 
-         If a new app is discovered, you might want to block access to the service on your proxy or firewall.  
+       If a new app is discovered, you might want to block access to the service on your proxy or firewall.  
 
-    #### <a name="questionable-violations"></a>Verdachte schendingen
-    Verdachte schendingen moeten verder worden onderzocht.  
+   #### <a name="questionable-violations"></a>Verdachte schendingen
+   Verdachte schendingen moeten verder worden onderzocht.  
 
-         You can contact the  user or the user's manager about the nature of the activity.  
+       You can contact the  user or the user's manager about the nature of the activity.  
 
-         Leave the activity open until you have more information.  
+       Leave the activity open until you have more information.  
 
- #### <a name="authorized-violations-or-anomalous-behavior"></a>Geautoriseerde schendingen of afwijkend gedrag
- Geautoriseerde schendingen of afwijkend gedrag kunnen het resultaat zijn van legitiem gebruik.  
+   #### <a name="authorized-violations-or-anomalous-behavior"></a>Geautoriseerde schendingen of afwijkend gedrag
+   Geautoriseerde schendingen of afwijkend gedrag kunnen het resultaat zijn van legitiem gebruik.  
 
-         Dismiss the alert.  
+       Dismiss the alert.  
 
-3.   Markeer de waarschuwing als opgelost wanneer u klaar bent.  
+3. Markeer de waarschuwing als opgelost wanneer u klaar bent.  
 
 De volgende tabel geeft een lijst van de typen waarschuwingen die kunnen worden geactiveerd en de aanbevolen manier om ze op te lossen.  
 

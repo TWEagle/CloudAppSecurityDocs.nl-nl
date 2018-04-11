@@ -1,23 +1,23 @@
 ---
 title: Verbinding maken tussen Salesforce en Microsoft Cloud App Security voor zichtbaarheid en gebruikscontrole | Microsoft Docs
 description: In dit onderwerp vindt u informatie over het maken van verbinding tussen Salesforce en Cloud App Security via de API-connector.
-keywords: 
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 1/15/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 776d7589-acdb-4cb6-99a0-3be2f7b6aab2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 81072ab5e45d7a97c8daf89db3c029ee53632f00
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 8e7fd2eeff851e4d78a33e5fc09759c1b032dc3d
+ms.sourcegitcommit: 3c66f12aa31ba211235787ee6f233138ea5f8a75
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="connect-salesforce-to-microsoft-cloud-app-security"></a>Verbinding maken tussen Salesforce en Microsoft Cloud App Security
 In deze sectie vindt u instructies voor het maken van een verbinding tussen Cloud App Security en uw bestaande Salesforce-account met behulp van de connector-API voor de app.  
@@ -50,7 +50,7 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
     -   Zorg ervoor dat u hebt de volgende selectievakjes ingeschakeld:   
         - **API ingeschakeld**
         - **Alle gegevens weergeven** 
-        - **Salesforce CRM-inhoud beheren**
+        - **Manage Salesforce CRM Content**
         - **Gebruikers beheren**
         
         Als deze niet zijn geselecteerd, moet u mogelijk contact opnemen met Salesforce wilt toevoegen aan uw account.  

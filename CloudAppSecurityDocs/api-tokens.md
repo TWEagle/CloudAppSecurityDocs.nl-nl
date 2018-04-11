@@ -1,23 +1,23 @@
 ---
 title: Token management API in de Cloud App Security | Microsoft Docs
 description: In dit onderwerp bevat informatie over API-tokens te genereren voor Cloud App Security.
-keywords: 
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 1/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4f5e6b1e-6b2c-4358-98f0-945e2993d5fe
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a7ae478fcd85bdb16a1783886f274a8ab81462bb
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 143d31f9679c772a519cd87a541994e6429e3cfb
+ms.sourcegitcommit: 3c66f12aa31ba211235787ee6f233138ea5f8a75
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="api-tokens"></a>API-tokens
     
@@ -40,18 +40,18 @@ Het tabblad API-tokens kunt u helpen bij het beheren van de API-tokens van uw te
 1. Op de **instellingen** selecteert u **Security extensions** en vervolgens **API tokens**.
 
 2. Klik op het plusteken **nieuw token genereren** en geef een naam voor het token in de toekomst te identificeren en op **volgende**.
-![Cloud App Security genereert API-token](./media/api-token-gen.png)
+   ![Cloud App Security genereert API-token](./media/api-token-gen.png)
 
 3. Kopieer de token waarde en sla het ergens voor herstel - als je het kwijtraakt moet u het token te genereren. Het token heeft de bevoegdheden van de gebruiker die deze is uitgegeven. Een lezer van de beveiliging kan niet bijvoorbeeld uitgeven van een token dat gegevens kunt wijzigen.
 
 4. U kunt de tokens filteren op status: actief of inactief gegenereerde. 
 
-  - Gegenereerd zijn tokens die nooit zijn gebruikt. 
-  - Actieve zijn tokens die zijn gegenereerd en in de afgelopen zeven dagen zijn gebruikt. 
-  - Niet-actief zijn gebruikt, maar er is geen activiteit in de afgelopen zeven dagen.
+   - Gegenereerd zijn tokens die nooit zijn gebruikt. 
+   - Actieve zijn tokens die zijn gegenereerd en in de afgelopen zeven dagen zijn gebruikt. 
+   - Niet-actief zijn gebruikt, maar er is geen activiteit in de afgelopen zeven dagen.
 5. Nadat u een nieuw token genereren, krijgt u een nieuwe URL op voor toegang tot de Cloud App Security-portal. 
 
- ![Cloud App Security-API-token](./media/generate-api-token.png)
+   ![Cloud App Security-API-token](./media/generate-api-token.png)
 
 De algemene portal URL blijft werken, maar is aanzienlijk langzamer dan de aangepaste URL voorzien van uw token. Als u de URL op elk gewenst moment vergeet, kunt u deze bekijken door te gaan naar de **?** pictogram in het menu en selecteer **over**.
 

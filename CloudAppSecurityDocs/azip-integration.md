@@ -1,23 +1,23 @@
 ---
 title: Azure Information Protection integreren met Cloud App Security | Microsoft Docs
 description: Dit artikel bevat informatie over hoe u de labels van Azure Information Protection kunt gebruiken in Cloud App Security, voor meer controle over het gebruik van cloud-apps binnen uw organisatie.
-keywords: 
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 3/3/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 92182731b6ee80c24aa2f3d7836415b2dfa4da2c
-ms.sourcegitcommit: c5533d66b8e037d6221c48bdbad81574f25f2817
+ms.openlocfilehash: b321b2a7f446a71705c8891c903475ef8276fe10
+ms.sourcegitcommit: 3c66f12aa31ba211235787ee6f233138ea5f8a75
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="azure-information-protection-integration"></a>Integratie van Azure Information Protection
 
@@ -90,17 +90,17 @@ Als u wilt dat deze extern ingestelde labels worden genegeerd, gaat u in de Clou
 
 1. Van de **bestanden** pagina, selecteert u het bestand dat u wilt beveiligen en klik op de drie punten aan het einde van de rij van het bestand en kies **toepassen classificatie label**.
 
- ![Beveilig-app](./media/protect-app.png)
+   ![Beveilig-app](./media/protect-app.png)
   
-  >[!NOTE]
-  > Cloud App Security kunt Azure Information Protection toepassen op bestanden die maximaal 50 MB zijn.  
+   >[!NOTE]
+   > Cloud App Security kunt Azure Information Protection toepassen op bestanden die maximaal 50 MB zijn.  
 
 2. U wordt gevraagd om een van de classificatielabels van uw organisatie op het bestand wilt toepassen en klik op **toepassen**. 
-![beveiliging classificatie label](./media/protect-template.png)
+   ![beveiliging classificatie label](./media/protect-template.png)
 
 3. Nadat u kiest een classificatie-label en klik op toepassen, Cloud App Security wordt het label voor de classificatie van toepassing op het oorspronkelijke bestand.
 
-5. U kunt ook classificatielabels verwijderen door het kiezen van de **classificatie-label verwijderen** optie. 
+4. U kunt ook classificatielabels verwijderen door het kiezen van de **classificatie-label verwijderen** optie. 
 
 
 Zie voor meer informatie over hoe Cloud App Security en Azure Information Protection samen [beveiligen van gegevens tegen fouten van de gebruiker](https://docs.microsoft.com/enterprise-mobility-security/solutions/protect-data-user-mistake).
@@ -111,9 +111,9 @@ U kunt automatisch classificatielabels toepassen op bestanden door het maken van
 
 Volg deze instructies voor het bestandsbeleid maken:
 
-1.  Maak een bestandsbeleid.
-2.  Stel het beleid met inbegrip van het type bestand dat u wilt detecteren, bijvoorbeeld alle bestanden waar **toegangsniveau** is niet gelijk aan **intern** en waar de **eigenaar OE** gelijk is aan uw Finance team. 
-3.  Onder beheeracties voor de relevante app **toepassen van een label classificatie** en selecteer vervolgens het labeltype.
+1. Maak een bestandsbeleid.
+2. Stel het beleid met inbegrip van het type bestand dat u wilt detecteren, bijvoorbeeld alle bestanden waar **toegangsniveau** is niet gelijk aan **intern** en waar de **eigenaar OE** gelijk is aan uw Finance team. 
+3. Onder beheeracties voor de relevante app **toepassen van een label classificatie** en selecteer vervolgens het labeltype.
 
    ![Label worden toegepast](./media/aip-gov-action.png)
 

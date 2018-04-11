@@ -1,23 +1,23 @@
 ---
 title: Gebruikersgroepen importeren uit verbonden apps | Microsoft Docs
 description: Dit onderwerp bevat instructies voor het importeren van uw gebruikersgroepen in Cloud App Security.
-keywords: 
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 1/15/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 87b831ef-5977-4df8-bed3-3ee54a8adbb5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: dd1263d164751133e8c50e13b003c68f43926b8d
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: d14e52e835ecb36cb1671651e6cb2671e3bfd1f0
+ms.sourcegitcommit: 3c66f12aa31ba211235787ee6f233138ea5f8a75
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="import-user-groups"></a>Gebruikersgroepen importeren
 
@@ -39,12 +39,12 @@ Typische scenario's die gebruikmaken van geïmporteerde gebruikersgroepen zijn: 
 1. Klik in de menubalk op het pictogram Instellingen ![pictogram instellingen](./media/settings-icon.png "pictogram instellingen") en selecteer **Gebruikersgroepen**.
 2. Klik op **Gebruikersgroep importeren**.
 
-  ![Gebruikersgroepen importeren](./media/user-groups-add.png)
+   ![Gebruikersgroepen importeren](./media/user-groups-add.png)
 
 3. Selecteer de app waaruit u de gebruikersgroep wilt importeren. De lijst met apps is afhankelijk van welke App-connectors u hebt geïmplementeerd.
 4. Selecteer de te importeren groep. De lijst met beschikbare groepen is een lijst met alle bestaande gebruikersgroepen in de app zelf. Als u een nieuwe groep wilt toevoegen, moet u dat rechtstreeks in de app zelf doen, en de groep selecteren wanneer die hier wordt weergegeven.
-4. Afhankelijk van de grootte van de groep kan het importeren een uur duren. U kunt de optie selecteren om te worden geïnformeerd via e-mail als de importbewerking voltooid is.
-5. Klik op **importeren**. Nadat u een groep hebt geïmporteerd, worden de leden van de groep door Cloud App Security automatisch gesynchroniseerd, net als Active Directory Connect.
+5. Afhankelijk van de grootte van de groep kan het importeren een uur duren. U kunt de optie selecteren om te worden geïnformeerd via e-mail als de importbewerking voltooid is.
+6. Klik op **importeren**. Nadat u een groep hebt geïmporteerd, worden de leden van de groep door Cloud App Security automatisch gesynchroniseerd, net als Active Directory Connect.
 7. Nadat de importbewerking is voltooid, kunt u in de pagina **Gebruikersgroepen** klikken op een specifieke groep om een lijst van alle leden van de groep weer te geven. U kunt ook op elk lid van de groep klikken om verder in te zoomen op de details van een specifiek account en zien welke apps er worden gebruikt en een overzicht van het account weergeven met grafieken van de gebruiker en zijn/haar activiteit.
 
 Door groepen te importeren kunt u deze groepen als filters selecteren als u het **Activiteitenlogboek** onderzoekt en bij het maken van beleid. 

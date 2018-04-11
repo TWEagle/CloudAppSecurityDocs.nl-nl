@@ -1,23 +1,23 @@
 ---
 title: Implementeer Cloud App Security voor inzicht in cloud-app-gebruik en controle | Microsoft-documenten
 description: In dit onderwerp vindt u een overzicht van de taken die u moet uitvoeren om aan de slag te gaan met Cloud App Security.
-keywords: 
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 3/3/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e33f277a9576ab1855cf5700584d7ddbb7dfac6c
-ms.sourcegitcommit: c47fd92c71028ede8840e0766f20eb0ad2898e70
+ms.openlocfilehash: 4adc4007d36f0b430184af6c27513f9fd677dbf7
+ms.sourcegitcommit: 3c66f12aa31ba211235787ee6f233138ea5f8a75
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="deploy-cloud-app-security"></a>Cloud App Security implementeren
 Met Cloud App Security kunt u profiteren van de voordelen van cloudtoepassingen, terwijl u de controle houdt over uw bedrijfsbronnen. Dit gebeurt door de zichtbaarheid van de activiteit van de cloud en de beveiliging van bedrijfsgegevens te verbeteren. In dit onderwerp wordt u stapsgewijs begeleid door de stappen voor het instellen en gebruiken van Cloud App Security.  
@@ -44,7 +44,7 @@ Uw organisatie moet beschikken over een licentie om Cloud App Security te kunnen
 
 ## <a name="to-access-the-portal"></a>Toegang krijgen tot de portal
 
-Als u de Cloud App Security-portal wilt openen, gaat u naar [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com).  
+Voor toegang tot de Cloud App Security-portal, gaat u naar [ https://portal.cloudappsecurity.com ](https://portal.cloudappsecurity.com).  
   
 U kunt de portal ook openen via het **Office 365-beheercentrum** door te klikken op het pictogram van de beheercentrums ![pictogram van O365-beheercentrums](./media/o365-admin-centers-icon.png "pictogram van O365-beheercentrums") gevolgd door **Cloud App Security**.  
   
@@ -139,7 +139,7 @@ Aanbevolen taak: belangrijke instellingen configureren
 3. Voer de **details**, **locatie**, **tags** en **categorie** van het IP-bereik in.
 4. Kies **Maken**.
 
- U kunt nu IP-tags gebruiken wanneer u beleidsregels maakt, en wanneer u filteren en continue rapporten maken.
+   U kunt nu IP-tags gebruiken wanneer u beleidsregels maakt, en wanneer u filteren en continue rapporten maken.
 
 **Continue rapporten maken**
 

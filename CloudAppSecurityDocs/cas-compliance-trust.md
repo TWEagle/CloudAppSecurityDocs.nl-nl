@@ -1,23 +1,23 @@
 ---
 title: Cloud App Security naleving, beveiliging, privacy, vertrouwen | Microsoft Docs
 description: Dit onderwerp beschrijft de Cloud App Security naleving aanbieding, Vertrouwenscentrum, privacy en beveiliging van gegevens.
-keywords: 
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 2/27/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: e456940a-88f1-4767-ae3d-4a57548f4179
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: efa135ed66891e4af5f685405b742fb9f1d5667e
-ms.sourcegitcommit: 85d90d51e9e265d077f38b0188bcfdab2ce63ed1
+ms.openlocfilehash: 72dd197f87388add7d964b9ab89e521c800caf7f
+ms.sourcegitcommit: 3c66f12aa31ba211235787ee6f233138ea5f8a75
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="microsoft-cloud-app-security-compliance-trust-data-security-and-privacy"></a>Microsoft Cloud App Security naleving, vertrouwen, gegevensbeveiliging en privacy
 
@@ -52,7 +52,7 @@ Microsoft Cloud App Security voldoet aan veel internationale en branchespecifiek
 |![logo SOC](./media/soc-logo.png)|SOC 3|Microsoft-cloudservices voldoen aan de normen Service organisatie besturingselementen voor operationele beveiliging.|
 |![logo g-cloud](./media/g-cloud.png)|VK G-Cloud|De commerciële domeinen-Service vernieuwd de Microsoft cloud services-indeling moet Government Cloud v6.|
 
-Voor meer informatie gaat u naar [Microsoft naleving aanbiedingen] (https://go.microsoft.com/fwlink/?linkid=842039) en selecteer Cloud App Security.  
+Ga voor meer informatie naar [aanbiedingen van Microsoft-naleving](https://go.microsoft.com/fwlink/?linkid=842039) en selecteert u Cloud App Security.  
 
 ## <a name="privacy"></a>Privacy
 

@@ -1,23 +1,23 @@
 ---
 title: Verbinding maken tussen AWS en Cloud App Security voor zichtbaarheid en gebruikscontrole | Microsoft Docs
 description: In dit onderwerp vindt u informatie over het maken van verbinding tussen de AWS-app en Cloud App Security via de API-connector.
-keywords: 
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 1/15/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: a6b4c745-cd5c-4458-819c-80cbe8b25f29
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 06844dfc86947bff1baaf3234b3c2949b57ff49a
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 07b1a5aab50f5a0eb40a56b0f27d1b1c40ae2f0b
+ms.sourcegitcommit: 3c66f12aa31ba211235787ee6f233138ea5f8a75
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="connect-aws-to-microsoft-cloud-app-security"></a>Verbinding maken tussen AWS en Microsoft Cloud App Security
 In deze sectie vindt u instructies voor het maken van een verbinding tussen Cloud App Security en uw bestaande Amazon Web Services-account met behulp van de connector-API's.  
@@ -30,7 +30,7 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
   
 2.  Klik op het tabblad **Gebruikers** en klik vervolgens op **Gebruiker toevoegen**.  
   
-     ![AWS users](./media/aws-users.png "AWS users")      
+     ![AWS gebruikers](./media/aws-users.png "AWS-gebruikers")      
   
 4.  In de **Details** stap, typt u een nieuwe gebruikersnaam voor Cloud App Security. Zorg ervoor dat onder **toegangstype** u **toegang op programmeerniveau** en klik op **volgende machtigingen**.  
 
@@ -38,7 +38,7 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
 
 5. Klik op het tabblad JSON:
 
-     ![AWS JSON](./media/aws-json.png "AWS JSON-tabblad")
+     ![AWS JSON](./media/aws-json.png "AWS JSON tab")
 
 6. Plak het volgende script in het opgegeven gebied:
 
@@ -64,7 +64,7 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
   
     ```  
 
-     ![AWS code](./media/aws-code.png "AWS code")
+     ![AWS-code](./media/aws-code.png "AWS-code")
     
 6. Klik op **beleid bekijken**.
 

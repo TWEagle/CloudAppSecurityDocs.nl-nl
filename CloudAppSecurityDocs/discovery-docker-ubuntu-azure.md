@@ -1,23 +1,23 @@
 ---
 title: Automatisch uploaden van logboeken configureren voor doorlopende rapporten | Microsoft Docs
 description: In dit onderwerp beschrijft het proces automatisch logboekgegevens uploaden voor continue rapporten configureren in de Cloud App Security met behulp van een Docker op Ubuntu in Azure.
-keywords: 
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 1/15/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 03ace8d5bf61ed623ad90b3717c4d35b767498a3
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 282a026ffb67f1a4ccf72effc789fd63ad79ee71
+ms.sourcegitcommit: 3c66f12aa31ba211235787ee6f233138ea5f8a75
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>Stel omhoog en configuratie op Ubuntu
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 01/16/2018
 
 -   RAM: 4 GB
 
--   Uw firewall ingesteld zoals beschreven in [vereisten](network-requirements#log-collector)
+-   Uw firewall ingesteld zoals beschreven in [vereisten](network-requirements.md#log-collector)
 
 ## <a name="log-collector-performance"></a>Prestaties logboekverzamelaar
 
@@ -46,48 +46,48 @@ De logboekverzamelaar kan een logboekcapaciteit van maximaal 50 GB per uur aan. 
 
 ### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>Stap 1 - Webportalconfiguratie: gegevensbronnen definiëren en deze koppelen aan een logboekverzamelaar
 
-1.  Ga naar de pagina met instellingen voor automatisch uploaden:  <br></br>Klik in de Cloud App Security-portal op het Instellingenpictogram ![Instellingenpictogram](./media/settings-icon.png) gevolgd door **Logboekverzamelaars**.
+1. Ga naar de pagina met instellingen voor automatisch uploaden:  <br></br>Klik in de Cloud App Security-portal op het Instellingenpictogram ![Instellingenpictogram](./media/settings-icon.png) gevolgd door **Logboekverzamelaars**.
 
-2.  Maak voor elke firewall of proxy waaruit u logboeken wilt uploaden een overeenkomende gegevensbron aan:
+2. Maak voor elke firewall of proxy waaruit u logboeken wilt uploaden een overeenkomende gegevensbron aan:
 
-    ![ubuntu1](./media/ubuntu1.png)
+   ![ubuntu1](./media/ubuntu1.png)
 
-    a. Klik op **Gegevensbron toevoegen**.
+   a. Klik op **Gegevensbron toevoegen**.
 
-    b. Geef uw proxy of firewall een **Naam**.
+   b. Geef uw proxy of firewall een **Naam**.
 
-    c. Selecteer het apparaat in de lijst **Bron**. Als u selecteert **aangepaste logboekindeling** om te werken met een netwerkapparaat die niet specifiek wordt vermeld, Zie [werken met de aangepaste log parser](custom-log-parser.md) voor configuratie-instructies.
+   c. Selecteer het apparaat in de lijst **Bron**. Als u selecteert **aangepaste logboekindeling** om te werken met een netwerkapparaat die niet specifiek wordt vermeld, Zie [werken met de aangepaste log parser](custom-log-parser.md) voor configuratie-instructies.
 
-    d. Vergelijk uw logboek met het voorbeeld van de verwachte logboekindeling. Als de bestandsindeling van uw logboek niet met dit voorbeeld overeenkomt, moet u uw gegevensbron toevoegen onder **Overig**.
+   d. Vergelijk uw logboek met het voorbeeld van de verwachte logboekindeling. Als de bestandsindeling van uw logboek niet met dit voorbeeld overeenkomt, moet u uw gegevensbron toevoegen onder **Overig**.
 
-    e. Instellen de **type ontvanger** naar elk **FTP**, **FTPS**, **Syslog – UDP**, of **Syslog – TCP**, of **Syslog – TLS**.
-    >[!NOTE]
-    >Integratie met veilige overdrachtprotocollen (FTPS en Syslog-TLS) vaak aanvullende instellingen of uw firewall/de proxy is vereist.
+   e. Instellen de **type ontvanger** naar elk **FTP**, **FTPS**, **Syslog – UDP**, of **Syslog – TCP**, of **Syslog – TLS**.
+   >[!NOTE]
+   >Integratie met veilige overdrachtprotocollen (FTPS en Syslog-TLS) vaak aanvullende instellingen of uw firewall/de proxy is vereist.
 
-    f. Herhaal dit proces voor elke firewall en proxy waarvan het logboek kan worden gebruikt om verkeer op uw netwerk te detecteren.
+   f. Herhaal dit proces voor elke firewall en proxy waarvan het logboek kan worden gebruikt om verkeer op uw netwerk te detecteren.
 
-3.  Ga naar het tabblad **Logboekverzamelaars** bovenaan.
+3. Ga naar het tabblad **Logboekverzamelaars** bovenaan.
 
-    a. Klik op **Logboekverzamelaar toevoegen**.
+   a. Klik op **Logboekverzamelaar toevoegen**.
 
-    b. Geef de logboekverzamelaar een **Naam**.
+   b. Geef de logboekverzamelaar een **Naam**.
 
-    c. Voer de **Host-IP-adres** van de computer die u gebruiken wilt voor het implementeren van de Docker. 
+   c. Voer de **Host-IP-adres** van de computer die u gebruiken wilt voor het implementeren van de Docker. 
 
-     > [!NOTE]
-     > Het IP-adres van de host kan worden vervangen door de naam van de machine, als er een DNS-server (of gelijkwaardige) die de naam van de host wordt opgelost.
+    > [!NOTE]
+    > Het IP-adres van de host kan worden vervangen door de naam van de machine, als er een DNS-server (of gelijkwaardige) die de naam van de host wordt opgelost.
 
-    d. Selecteer alle **gegevensbronnen** die u wilt verbinding maken met de collector en klikt u op **Update** om op te slaan van het configuratie-Zie de volgende implementatiestappen.
+   d. Selecteer alle **gegevensbronnen** die u wilt verbinding maken met de collector en klikt u op **Update** om op te slaan van het configuratie-Zie de volgende implementatiestappen.
 
-    ![ubuntu2](./media/ubuntu2.png)
+   ![ubuntu2](./media/ubuntu2.png)
 
-    >  [!NOTE]
-    > - Eén logboekverzamelaar kan meerdere gegevensbronnen verwerken.
-    >- Kopieer de inhoud van het scherm. U hebt deze informatie nodig tijdens het configureren van de logboekverzamelaar voor de communicatie met Cloud App Security. Als u Syslog hebt geselecteerd, wordt ook informatie weergegeven over de poort waarop de Syslog-listener luistert.
+   > [!NOTE]
+   > - Eén logboekverzamelaar kan meerdere gegevensbronnen verwerken.
+   > - Kopieer de inhoud van het scherm. U hebt deze informatie nodig tijdens het configureren van de logboekverzamelaar voor de communicatie met Cloud App Security. Als u Syslog hebt geselecteerd, wordt ook informatie weergegeven over de poort waarop de Syslog-listener luistert.
 
-4.  Meer informatie over de implementatie wordt weergegeven. **Kopiëren** de opdracht uitvoeren in het dialoogvenster. U kunt de kopiëren naar Klembord-pictogram ![kopiëren naar Klembord-pictogram](./media/copy-icon.png).
+4. Meer informatie over de implementatie wordt weergegeven. **Kopiëren** de opdracht uitvoeren in het dialoogvenster. U kunt de kopiëren naar Klembord-pictogram ![kopiëren naar Klembord-pictogram](./media/copy-icon.png).
 
-6.  **Exporteren** configuratie van de verwachte gegevensbron. Deze configuratie wordt beschreven hoe u de geëxporteerde activiteitenlogboeken moet instellen in uw apparaten.
+5. **Exporteren** configuratie van de verwachte gegevensbron. Deze configuratie wordt beschreven hoe u de geëxporteerde activiteitenlogboeken moet instellen in uw apparaten.
 
    ![Logboekverzamelaar maken](./media/windows7.png)
 
@@ -97,34 +97,34 @@ De logboekverzamelaar kan een logboekcapaciteit van maximaal 50 GB per uur aan. 
 > De volgende stappen beschrijven de implementatie in Ubuntu. De implementatiestappen voor andere platforms zijn enigszins anders.
 
 
-1.  Maak een nieuwe Ubuntu-machine in uw Azure-omgeving. 
-2.  Nadat de computer is, opent u de poorten die door:
-    1.  Ga in de weergave van de machine naar **Networking** Selecteer de relevante interface door dubbele erop te klikken.
-    2.  Ga naar **netwerkbeveiligingsgroep** en selecteer de relevante netwerkbeveiligingsgroep.
-    3.  Ga naar **inkomende beveiligingsregels** en klik op **toevoegen**,
+1. Maak een nieuwe Ubuntu-machine in uw Azure-omgeving. 
+2. Nadat de computer is, opent u de poorten die door:
+   1. Ga in de weergave van de machine naar **Networking** Selecteer de relevante interface door dubbele erop te klikken.
+   2. Ga naar **netwerkbeveiligingsgroep** en selecteer de relevante netwerkbeveiligingsgroep.
+   3. Ga naar **inkomende beveiligingsregels** en klik op **toevoegen**,
       
       ![Ubuntu Azure](./media/ubuntu-azure.png)
     
-    4. De volgende regels toevoegen (in **Geavanceerd** modus):
+   4. De volgende regels toevoegen (in **Geavanceerd** modus):
 
-    |Naam|Poortbereik van doel|Protocol|Bron|Bestemming|
-    |----|----|----|----|----|
-    |caslogcollector_ftp|21|TCP|< subnet uw toestel IP-adres >|Alle|
-    |caslogcollector_ftp_passive|20000-20099|TCP|< subnet uw toestel IP-adres >|Alle|
-    |caslogcollector_syslogs_tcp|601-700|TCP|< subnet uw toestel IP-adres >|Alle|
-    |caslogcollector_syslogs_udp|514-600|UDP|< subnet uw toestel IP-adres >|Alle|
+   |Naam|Poortbereik van doel|Protocol|Bron|Bestemming|
+   |----|----|----|----|----|
+   |caslogcollector_ftp|21|TCP|< subnet uw toestel IP-adres >|Alle|
+   |caslogcollector_ftp_passive|20000-20099|TCP|< subnet uw toestel IP-adres >|Alle|
+   |caslogcollector_syslogs_tcp|601-700|TCP|< subnet uw toestel IP-adres >|Alle|
+   |caslogcollector_syslogs_udp|514-600|UDP|< subnet uw toestel IP-adres >|Alle|
       
-     ![Ubuntu Azure regels](./media/inbound-rule.png)
+    ![Ubuntu Azure regels](./media/inbound-rule.png)
 
-3.  Ga terug naar de machine en klik op **Connect** openen van een terminal op de machine.
+3. Ga terug naar de machine en klik op **Connect** openen van een terminal op de machine.
 
-4.  Wijzig in de hoofdmap bevoegdheden met `sudo -i`.
+4. Wijzig in de hoofdmap bevoegdheden met `sudo -i`.
 
-5.  Als u akkoord gaan met de [softwarelicentievoorwaarden](https://go.microsoft.com/fwlink/?linkid=862492), verwijderen van oude versies en Docker CE installeren met de volgende opdracht:
+5. Als u akkoord gaan met de [softwarelicentievoorwaarden](https://go.microsoft.com/fwlink/?linkid=862492), verwijderen van oude versies en Docker CE installeren met de volgende opdracht:
         
-        curl -o /tmp/MCASInstallDocker.sh https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh && chmod +x /tmp/MCASInstallDocker.sh; /tmp/MCASInstallDocker.sh
+       curl -o /tmp/MCASInstallDocker.sh https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh && chmod +x /tmp/MCASInstallDocker.sh; /tmp/MCASInstallDocker.sh
 
-      ![Ubuntu Azure-opdracht](./media/ubuntu-azure-command.png)
+     ![Ubuntu Azure-opdracht](./media/ubuntu-azure-command.png)
 
 6. In de Cloud App Security-portal in de **maken nieuwe logboekverzamelaar** venster de opdracht voor het importeren van de configuratie van de collector op de host machine kopiëren:
 

@@ -1,23 +1,23 @@
 ---
 title: Cloud App Security externe DLP-integratie via beveiligde ICAP | Microsoft Docs
 description: Dit onderwerp bevat de stappen die nodig zijn voor het configureren van de verbinding ICAP in de Cloud App Security en stunnel setup opnieuw uit.
-keywords: 
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 1/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 9656f6c6-7dd4-4c4c-a0eb-f22afce78071
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6d0de456770d06967db07bb0d145908405196968
-ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
+ms.openlocfilehash: 81d00eb930b965f98fad11dc4804da8ac98bffcd
+ms.sourcegitcommit: 3c66f12aa31ba211235787ee6f233138ea5f8a75
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="external-dlp-integration"></a>Externe DLP-integratie
 
@@ -72,7 +72,7 @@ Raadpleeg de [stunnel website](https://www.stunnel.org/index.html) voor meer inf
 #### <a name="install-stunnel-on-windows"></a>Stunnel op Windows installeren
 
 1. [Download de meest recente installatie van Windows Server](https://www.stunnel.org/downloads.html) (dit moet werken op een recente versie van Windows Server).
-(standaardinstallatie)
+   (standaardinstallatie)
 
 2. Tijdens de installatie, maak een nieuw zelfondertekend certificaat geen, u een certificaat in een later stadium.
 
@@ -80,34 +80,34 @@ Raadpleeg de [stunnel website](https://www.stunnel.org/index.html) voor meer inf
 
 4. Maak een certificaat met een van de volgende manieren:
 
-   -    De beheerserver van uw certificaat gebruiken voor het maken van een SSL-certificaat op uw server ICAP en de sleutels vervolgens naar de server die u hebt voorbereid voor de installatie stunnel kopiëren.
-   -    Of op de server stunnel, kunt u de volgende OpenSSL-opdrachten gebruiken om een persoonlijke sleutel en een zelfondertekend certificaat te genereren. Vervang deze variabelen:
-       -    **Key.PEM** met de naam van uw persoonlijke sleutel
-       -    **CERT.PEM** met de naam van uw certificaat
-       -    **stunnel sleutel** met de naam van de zojuist gemaakte sleutel
+   - De beheerserver van uw certificaat gebruiken voor het maken van een SSL-certificaat op uw server ICAP en de sleutels vervolgens naar de server die u hebt voorbereid voor de installatie stunnel kopiëren.
+   - Of op de server stunnel, kunt u de volgende OpenSSL-opdrachten gebruiken om een persoonlijke sleutel en een zelfondertekend certificaat te genereren. Vervang deze variabelen:
+     -    **Key.PEM** met de naam van uw persoonlijke sleutel
+     -    **CERT.PEM** met de naam van uw certificaat
+     -    **stunnel sleutel** met de naam van de zojuist gemaakte sleutel
 
 5. Open de configuratiemap onder uw installatiepad stunnel. Dit is standaard: c:\Program bestanden (x86) \stunnel\config\
-6. Voer de opdrachtregel met administratorbevoegdheden:`..\bin\openssl.exe genrsa -out key.pem 2048 `
+6. Voer de opdrachtregel met administratorbevoegdheden:     `..\bin\openssl.exe genrsa -out key.pem 2048 `
       
      ` ..\bin\openssl.exe  req -new -x509 -config ".\openssl.cnf" -key key.pem -out .\cert.pem -days 1095`
 
-8. Samenvoegen van de cert.pem en key.pem en deze opslaan op het bestand:`type cert.pem key.pem >> stunnel-key.pem`
+7. Samenvoegen van de cert.pem en key.pem en deze opslaan op het bestand: `type cert.pem key.pem >> stunnel-key.pem`
 
-9. [Downloaden van de openbare sleutel](https://adaprodconsole.blob.core.windows.net/icap/publicCert.pem) en sla deze op deze locatie **C:\Program Files (x86)\stunnel\config\MCASca.pem**.
+8. [Downloaden van de openbare sleutel](https://adaprodconsole.blob.core.windows.net/icap/publicCert.pem) en sla deze op deze locatie **C:\Program Files (x86)\stunnel\config\MCASca.pem**.
 
-10. Voeg de volgende regels om te openen van de poort in de Windows firewall:
+9. Voeg de volgende regels om te openen van de poort in de Windows firewall:
 
-        rem Open TCP Port 11344 inbound and outbound
-        netsh advfirewall firewall add rule name="Secure ICAP TCP Port 11344" dir=in action=allow protocol=TCP localport=11344
-        netsh advfirewall firewall add rule name="Secure ICAP TCP Port 11344" dir=out action=allow protocol=TCP localport=11344
+       rem Open TCP Port 11344 inbound and outbound
+       netsh advfirewall firewall add rule name="Secure ICAP TCP Port 11344" dir=in action=allow protocol=TCP localport=11344
+       netsh advfirewall firewall add rule name="Secure ICAP TCP Port 11344" dir=out action=allow protocol=TCP localport=11344
 
-11. Voer: `c:\Program Files (x86)\stunnel\bin\stunnel.exe` om de toepassing stunnel te openen. 
+10. Voer: `c:\Program Files (x86)\stunnel\bin\stunnel.exe` om de toepassing stunnel te openen. 
 
-12. Klik op **configuratie** en vervolgens **bewerken configuratie**.
+11. Klik op **configuratie** en vervolgens **bewerken configuratie**.
 
-   ![Windows Server-configuratie bewerken](./media/stunnel-windows.png)
+    ![Windows Server-configuratie bewerken](./media/stunnel-windows.png)
  
-13. Open het bestand en plak de volgende regels in de configuratie van server, waarbij **DLP Server-IP** het IP-adres van uw server ICAP **stunnel sleutel** is de sleutel die u in de vorige stap hebt gemaakt en **MCASCAfile** is het openbare certificaat van de Cloud App Security stunnel-client. Bovendien Verwijder eventuele van de voorbeeldtekst die is geïmplementeerd (in het voorbeeld Gmail tekst wordt weergegeven) en kopieer de volgende tekst in het bestand:
+12. Open het bestand en plak de volgende regels in de configuratie van server, waarbij **DLP Server-IP** het IP-adres van uw server ICAP **stunnel sleutel** is de sleutel die u in de vorige stap hebt gemaakt en **MCASCAfile** is het openbare certificaat van de Cloud App Security stunnel-client. Bovendien Verwijder eventuele van de voorbeeldtekst die is geïmplementeerd (in het voorbeeld Gmail tekst wordt weergegeven) en kopieer de volgende tekst in het bestand:
 
         [microsoft-Cloud App Security]
         accept = 0.0.0.0:11344
@@ -116,9 +116,9 @@ Raadpleeg de [stunnel website](https://www.stunnel.org/index.html) voor meer inf
         CAfile = C:\Program Files (x86)\stunnel\config\**MCASCAfile**.pem
         TIMEOUTclose = 0
         client = no
-12. Sla het bestand en klik vervolgens op **opnieuw laden configuratie**.
+13. Sla het bestand en klik vervolgens op **opnieuw laden configuratie**.
 
-13. Voer het volgende als u wilt valideren dat alles werkt zoals verwacht, vanaf een opdrachtprompt:`netstat -nao  | findstr 11344`
+14. Voer het volgende als u wilt valideren dat alles werkt zoals verwacht, vanaf een opdrachtprompt: `netstat -nao  | findstr 11344`
  
 
 #### <a name="install-stunnel-on-ubuntu"></a>Stunnel op Ubuntu installeren
@@ -235,7 +235,7 @@ Als het proces nog steeds niet wordt uitgevoerd, raadpleegt u de [stunnel docume
 7. Nu aan de verkeer omleiden naar deze externe DLP-server bij het maken van een **Bestandsbeleid**onder **methode voor inhoudscontrole**, selecteert u de verbinding die u hebt gemaakt. Lees meer over [maken van een bestandsbeleid](data-protection-policies.md).
 
 
-## Bijlage A: ForcePoint ICAP server setup<a name="forcepoint"></a>
+## Bijlage A: ForcePoint ICAP server setup <a name="forcepoint"></a>
 
 In ForcePoint, stelt u uw apparaat met de volgende stappen:
 
@@ -252,7 +252,7 @@ In ForcePoint, stelt u uw apparaat met de volgende stappen:
     ![ICAP blokkeren](./media/icap-blocking.png)
  
 
-## Bijlage B: Symantec Implementatiehandleiding<a name="symantec"></a>
+## Bijlage B: Symantec Implementatiehandleiding <a name="symantec"></a>
 
 De ondersteunde versies van Symantec DLP zijn 11 en hoger. 
 
@@ -260,23 +260,25 @@ Zoals eerder vermeld, implementeert u een detectie-server in de dezelfde Azure-d
  
 ### <a name="detection-server-installation"></a>Detectie-serverinstallatie 
 De detectie-server die wordt gebruikt door Cloud App Security is een standaard netwerk te voorkomen dat voor de webserver. Er zijn verschillende configuratieopties die moeten worden gewijzigd:
-1.  Schakel **proefmodus**:
-    1. Onder **System** > **Servers en detectoren**, klikt u op het doel ICAP. 
+1. Schakel **proefmodus**:
+   1. Onder **System** > **Servers en detectoren**, klikt u op het doel ICAP. 
     
       ![ICAP doel](./media/icap-target.png)
     
-    2. Klik op **Configureren**. 
+   2. Klik op **Configureren**. 
     
       ![ICAP doel configureren](./media/configure-icap-target.png)
     
-    3. Schakel **proefmodus**.
+   3. Schakel **proefmodus**.
     
       ![proefmodus uitschakelen](./media/icap-disable-trial-mode.png)
     
 2. Onder **ICAP** > **Antwoordfiltering**, wijzig de **negeren antwoorden die kleiner zijn dan** waarde in 1.
 
-3. En voeg toe ' application / * ' aan de lijst met **inhoudstype inspecteren**.
+
+3. En voeg toe ' application /<em>' aan de lijst met **inhoudstype inspecteren</em>*.
      ![type inhoud controleren](./media/icap-inspect-content-type.png)
+
 4. Klik op **Opslaan**
 
 

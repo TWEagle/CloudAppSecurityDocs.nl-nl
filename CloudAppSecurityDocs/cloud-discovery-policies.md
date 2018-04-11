@@ -1,23 +1,23 @@
 ---
 title: Beleidsregels voor Cloud Discovery-apps maken in Cloud App Security | Microsoft Docs
 description: In dit onderwerp vindt u informatie over het werken met beleidsregels voor Cloud Discovery.
-keywords: 
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 1/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 45446111-ed1a-4699-9df5-840cc6664a6b
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0f2a08facca3c932d5ee8890e295041dcc4e63d4
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 055929af068e07430f011e254e0c16dd8101907c
+ms.sourcegitcommit: 3c66f12aa31ba211235787ee6f233138ea5f8a75
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="cloud-discovery-policies"></a>Beleidsregels voor Cloud Discovery
     

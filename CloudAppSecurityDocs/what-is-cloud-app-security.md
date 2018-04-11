@@ -1,23 +1,23 @@
 ---
 title: Wat is Cloud App Security? | Microsoft Docs
 description: In dit onderwerp wordt Cloud App Security en de werking ervan beschreven.
-keywords: 
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 1/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a5b663fc96400902854d7c6901885a3220ca4c3c
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 9423eb3fa0a41b127d332b35048f0986dd76537d
+ms.sourcegitcommit: 3c66f12aa31ba211235787ee6f233138ea5f8a75
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="what-is-cloud-app-security"></a>Wat is Cloud App Security?
 
@@ -50,7 +50,7 @@ Met Cloud App Security wordt zichtbaarheid met uw cloud geïntegreerd door:
 
 ### <a name="data-retention--compliance"></a>Gegevensretentie & naleving
 
-Cloud App Security is officieel gecertificeerd met Microsoft Naleving voor modelcIausules van de EU, ISO, HIPAA, CSA STAR en meer. Ga naar [Microsoft Compliance Offerings (Aanbiedingen voor Microsoft Naleving, Engelstalig)] (https://go.microsoft.com/fwlink/?linkid=842039) en selecteer Cloud App Security voor de volledige lijst met certificaten.  
+Cloud App Security is officieel gecertificeerd met Microsoft Naleving voor modelcIausules van de EU, ISO, HIPAA, CSA STAR en meer. Om te zien van de volledige lijst met certificaten gaat u naar [aanbiedingen van Microsoft-naleving](https://go.microsoft.com/fwlink/?linkid=842039) en selecteert u Cloud App Security.  
 
 Wanneer Cloud App Security inhoudsinspectie uitvoert, wordt gegevensprivacy afgedwongen. De bestandsinhoud wordt niet opgeslagen in de Cloud App Security-database; alleen de metagegevens van de bestandsrecords en eventuele schendingen die zijn gedetecteerd, worden opgeslagen in de Cloud App Security-database. Zie ons [privacybeleid](http://go.microsoft.com/fwlink/?LinkId=512132) en het [Vertrouwenscentrum van Microsoft](https://www.microsoft.com/TrustCenter/Privacy/You-are-in-control-of-your-data) voor meer informatie over het bewaren van gegevens.
 In Cloud App Security worden gegevens als volgt bewaard: 

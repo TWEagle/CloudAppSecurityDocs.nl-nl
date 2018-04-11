@@ -1,23 +1,23 @@
 ---
 title: Inzicht in de velden van de ingebouwde rapporten in Cloud App Security | Microsoft Docs
 description: In dit onderwerp vindt u een lijst met ingebouwde rapporten en de manier waarop deze worden gebruikt.
-keywords: 
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 1/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.app: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 588b3639-f748-45a6-bc4b-a6ee47c1865e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 56b29da76a14e95b2ec3b31083013befb9ce8f21
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 8793c7f60b3c18b2330552f9d300b557c1347e6d
+ms.sourcegitcommit: 3c66f12aa31ba211235787ee6f233138ea5f8a75
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="built-in-report-reference"></a>Naslaginformatie ingebouwde rapporten
 

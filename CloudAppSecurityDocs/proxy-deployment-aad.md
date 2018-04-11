@@ -1,23 +1,23 @@
 ---
 title: De Proxy Cloud App Security voor Azure AD-apps implementeren | Microsoft Docs
 description: Dit onderwerp bevat informatie over het implementeren van de Microsoft Cloud App Security-Proxy voor Azure AD-apps.
-keywords: 
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 1/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 2490c5e5-e723-4fc2-a5e0-d0a3a7d01fc2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 8825f83de2bb7b7cb2ff236f0bffeeaeddf4c7f6
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: e85a5265cd89eaf909fb187450fded6b33e1ea72
+ms.sourcegitcommit: 3c66f12aa31ba211235787ee6f233138ea5f8a75
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="deploy-proxy-for-azure-ad-apps"></a>Proxy voor Azure AD-apps implementeren
 
@@ -33,52 +33,52 @@ Volg deze stappen voor het configureren van Azure AD-apps worden beheerd door de
 
 1. Maak een Azure AD testbeleid voor voorwaardelijke toegang.
 
-    1. In Azure Active Directory, onder **beveiliging**, klikt u op **voorwaardelijke toegang**.
+   1. In Azure Active Directory, onder **beveiliging**, klikt u op **voorwaardelijke toegang**.
 
-     ![Voorwaardelijke toegang van Azure AD](./media/aad-conditional-access.png)
+      ![Voorwaardelijke toegang van Azure AD](./media/aad-conditional-access.png)
 
-    2. Klik op **nieuw beleid** en maak een nieuw beleid om ervoor te zorgen dat onder **sessie** u **beperkingen afgedwongen proxy gebruiken**.
+   2. Klik op **nieuw beleid** en maak een nieuw beleid om ervoor te zorgen dat onder **sessie** u **beperkingen afgedwongen proxy gebruiken**.
 
-     ![Voorwaardelijke toegang van Azure AD](./media/proxy-deploy-restrictions-aad.png)
+      ![Voorwaardelijke toegang van Azure AD](./media/proxy-deploy-restrictions-aad.png)
 
-    3. In het beleid testen onder **gebruikers**, een testgebruiker of de gebruiker die kan worden gebruikt voor een eerste aanmelding toewijzen.
+   3. In het beleid testen onder **gebruikers**, een testgebruiker of de gebruiker die kan worden gebruikt voor een eerste aanmelding toewijzen.
     
-    4. In het beleid testen onder **Cloud-app**, de apps die u wilt toewijzen aan besturingselement met de proxy. 
+   4. In het beleid testen onder **Cloud-app**, de apps die u wilt toewijzen aan besturingselement met de proxy. 
 
-     > [!NOTE]
-     >Zorg ervoor dat apps die worden ondersteund door de proxy te kiezen. De proxy ondersteunt apps die zijn geconfigureerd met SAML eenmalige aanmelding in Azure AD. Office 365-toepassingen zijn bijvoorbeeld niet geconfigureerd met SAML zodat ze worden momenteel niet ondersteund.
+      > [!NOTE]
+      >Zorg ervoor dat apps die worden ondersteund door de proxy te kiezen. De proxy ondersteunt apps die zijn geconfigureerd met SAML eenmalige aanmelding in Azure AD. Office 365-toepassingen zijn bijvoorbeeld niet geconfigureerd met SAML zodat ze worden momenteel niet ondersteund.
 
 
-2.  Nadat u het beleid hebt gemaakt, moet u zich aanmelden bij elke app die is geconfigureerd in het beleid aan een gebruiker die is geconfigureerd in het beleid. Zorg ervoor dat eerst afmelding van bestaande sessies.
+2. Nadat u het beleid hebt gemaakt, moet u zich aanmelden bij elke app die is geconfigureerd in het beleid aan een gebruiker die is geconfigureerd in het beleid. Zorg ervoor dat eerst afmelding van bestaande sessies.
 
-3.  In de Cloud App Security-portal, gaat u naar het instellingentandwiel en kies **Proxy**. 
+3. In de Cloud App Security-portal, gaat u naar het instellingentandwiel en kies **Proxy**. 
     
-      ![proxy-menu](./media/proxy-menu.png)
+     ![proxy-menu](./media/proxy-menu.png)
 
-4.  U ziet een bericht laten weten dat nieuwe Azure AD-apps zijn gedetecteerd door de proxy. Klik op de **weergeven van nieuwe apps** koppeling.
+4. U ziet een bericht laten weten dat nieuwe Azure AD-apps zijn gedetecteerd door de proxy. Klik op de **weergeven van nieuwe apps** koppeling.
 
- ![proxy weergave nieuwe apps](./media/proxy-view-new-apps.png)
+   ![proxy weergave nieuwe apps](./media/proxy-view-new-apps.png)
 
-5.  In het dialoogvenster dat wordt geopend, ziet u alle apps die u in de vorige stap hebt aangemeld. Voor elke app klikt u op de + Meld u aan en klik vervolgens op **toevoegen**.
+5. In het dialoogvenster dat wordt geopend, ziet u alle apps die u in de vorige stap hebt aangemeld. Voor elke app klikt u op de + Meld u aan en klik vervolgens op **toevoegen**.
 
- ![nieuwe proxy-apps](./media/proxy-new-app.png)
+   ![nieuwe proxy-apps](./media/proxy-new-app.png)
 
- > [!NOTE]
- > Als een app niet wordt weergegeven in de catalogus met Cloud App Security-Apps, verschijnt in het dialoogvenster onder onbekend apps samen met de aanmeldings-URL. Wanneer te klikken op het plusteken om deze apps is het mogelijk om aan te raden de app toe te voegen aan de catalogus. Nadat de app in de catalogus is, voert u de stappen voor het implementeren van de app. 
+   > [!NOTE]
+   > Als een app niet wordt weergegeven in de catalogus met Cloud App Security-Apps, verschijnt in het dialoogvenster onder onbekend apps samen met de aanmeldings-URL. Wanneer te klikken op het plusteken om deze apps is het mogelijk om aan te raden de app toe te voegen aan de catalogus. Nadat de app in de catalogus is, voert u de stappen voor het implementeren van de app. 
 
-6.  Bekijk in de tabel proxy-apps de **beschikbare besturingselementen** kolom en controleer of zowel de voorwaardelijke toegang van Azure AD als de sessie-besturingselement worden weergegeven. <br></br>Als Sessiecontrole niet voor een app wordt weergegeven, betekent dit dat het is nog niet beschikbaar voor die specifieke app en u ziet de **aanvragen Sessiecontrole** in plaats daarvan koppelt. Klik op het in een dialoogvenster te openen en aanvragen van het voorbereiden van de app om te bepalen van de sessie. Tijdens de periode van de openbare preview Proxy worden het voorbereidingsproces samen met u uitgevoerd door het team van Cloud App Security.
+6. Bekijk in de tabel proxy-apps de **beschikbare besturingselementen** kolom en controleer of zowel de voorwaardelijke toegang van Azure AD als de sessie-besturingselement worden weergegeven. <br></br>Als Sessiecontrole niet voor een app wordt weergegeven, betekent dit dat het is nog niet beschikbaar voor die specifieke app en u ziet de **aanvragen Sessiecontrole** in plaats daarvan koppelt. Klik op het in een dialoogvenster te openen en aanvragen van het voorbereiden van de app om te bepalen van de sessie. Tijdens de periode van de openbare preview Proxy worden het voorbereidingsproces samen met u uitgevoerd door het team van Cloud App Security.
   
- ![beheer van de aanvraag-sessies](./media/request-session-control.png)
+   ![beheer van de aanvraag-sessies](./media/request-session-control.png)
 
 7. Optionele - apparaten met behulp van clientcertificaten identificeren:
 
-      1. Ga naar het instellingentandwiel en kies **apparaat identificatie**.
+   1. Ga naar het instellingentandwiel en kies **apparaat identificatie**.
 
-      2. Een basiscertificaat uploaden.
+   2. Een basiscertificaat uploaden.
 
-        ![Apparaat-id](./media/device-identification.png)
+      ![Apparaat-id](./media/device-identification.png)
  
-       Nadat het certificaat is geüpload, kunt u toegang tot beleid en de sessie beleidsregels maken op basis van **apparaat tag** gelijk is aan of niet gelijk aan **geldig clientcertificaat**.
+      Nadat het certificaat is geüpload, kunt u toegang tot beleid en de sessie beleidsregels maken op basis van **apparaat tag** gelijk is aan of niet gelijk aan **geldig clientcertificaat**.
  
       > [!NOTE]
       >Een certificaat wordt alleen worden aangevraagd van een gebruiker als de sessie overeenkomt met een beleid dat het certificaat geldig client filter gebruikt. 
@@ -87,16 +87,16 @@ Volg deze stappen voor het configureren van Azure AD-apps worden beheerd door de
 
 1. Eerste logboek buiten eventuele bestaande sessies. Vervolgens probeert aan te melden elke app die is geïmplementeerd, gebruik van een gebruiker die overeenkomt met het beleid dat is geconfigureerd in Azure AD. 
 
-2.  In de Cloud App Security-portal onder **onderzoeken**, selecteer **activiteitenlogboek**, en zorg ervoor dat de aanmeldings-activiteiten zijn vastgelegd voor elke app.
+2. In de Cloud App Security-portal onder **onderzoeken**, selecteer **activiteitenlogboek**, en zorg ervoor dat de aanmeldings-activiteiten zijn vastgelegd voor elke app.
 
-3.  U kunt filteren door te klikken op **Geavanceerd**, en vervolgens filteren met behulp van **bron gelijk is aan voorwaardelijke toegang van Azure Active Directory**.
+3. U kunt filteren door te klikken op **Geavanceerd**, en vervolgens filteren met behulp van **bron gelijk is aan voorwaardelijke toegang van Azure Active Directory**.
 
-     ![Filteren met behulp van voorwaardelijke toegang van Azure AD](./media/sso-logon.png)
+    ![Filteren met behulp van voorwaardelijke toegang van Azure AD](./media/sso-logon.png)
 
-3. Het is raadzaam dat u zich bij de mobiele en bureaublad-apps op beheerde en onbeheerde apparaten aanmeldt om ervoor te zorgen dat de activiteiten goed worden vastgelegd in het gebeurtenissenlogboek.<br></br>
-Om te bevestigen dat de activiteit goed wordt vastgelegd, klikt u op een logboekbestand voor eenmalige aanmelding op activiteit zodat Hiermee opent u de sectie van de activiteit en zorg ervoor dat de **label van de gebruikersagent** correct weergeeft of het apparaat een native client is (wat betekent dat ofwel een mobiele of bureaubladtoepassingen app) of het apparaat is een beheerd apparaat (compatibel zijn, domein lid of een geldig clientcertificaat).
+4. Het is raadzaam dat u zich bij de mobiele en bureaublad-apps op beheerde en onbeheerde apparaten aanmeldt om ervoor te zorgen dat de activiteiten goed worden vastgelegd in het gebeurtenissenlogboek.<br></br>
+   Om te bevestigen dat de activiteit goed wordt vastgelegd, klikt u op een logboekbestand voor eenmalige aanmelding op activiteit zodat Hiermee opent u de sectie van de activiteit en zorg ervoor dat de **label van de gebruikersagent** correct weergeeft of het apparaat een native client is (wat betekent dat ofwel een mobiele of bureaubladtoepassingen app) of het apparaat is een beheerd apparaat (compatibel zijn, domein lid of een geldig clientcertificaat).
  
- ![label van de gebruikersagent testen](./media/domain-joined.png)
+   ![label van de gebruikersagent testen](./media/domain-joined.png)
 
 
 U bent nu klaar om te maken [toegangsbeleid](access-policy-aad.md) en [sessie beleid](session-policy-aad.md) om uw proxy-apps te beheren.

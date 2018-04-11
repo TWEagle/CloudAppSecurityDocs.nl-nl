@@ -1,23 +1,23 @@
 ---
 title: Werken met gedetecteerde apps in de Cloud App Security | Microsoft Docs
 description: In dit onderwerp beschrijft het proces voor het opsporen en oplossen van problemen met risicovolle cloud discovery-apps in de Cloud App Security.
-keywords: 
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 3/5/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 276af05cd289496c277a5ab0709e7fca3453d469
-ms.sourcegitcommit: c47fd92c71028ede8840e0766f20eb0ad2898e70
+ms.openlocfilehash: 80e51cc4b32d0d35351f998f5faeb34076e3f45d
+ms.sourcegitcommit: 3c66f12aa31ba211235787ee6f233138ea5f8a75
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="working-with-discovered-apps"></a>Werken met gedetecteerde apps
 
@@ -56,7 +56,7 @@ Cloud discovery kan u zelfs diepere Duik in de cloud-gebruik van uw organisatie 
      
 U kunt bijvoorbeeld onderscheid maken tussen verschillende SharePoint-sites.
 
-Dit wordt alleen ondersteund in firewalls en proxy's die doel-URL gegevens bevatten. Zie de lijst met ondersteunde apparaten in [firewalls en proxy's ondersteund](set-up-cloud-discovery#supported-firewalls-and-proxies).
+Dit wordt alleen ondersteund in firewalls en proxy's die doel-URL gegevens bevatten. Zie de lijst met ondersteunde apparaten in [firewalls en proxy's ondersteund](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
 
  ![subdomein informatie](./media/discovery-domains.png) 
 
@@ -113,15 +113,15 @@ Er zijn een aantal redenen waarom u uw Cloud Discovery- gegevens zou willen verw
   
 Cloud Discovery-gegevens verwijderen:  
   
-1.  Selecteer in de portal onder het pictogram Instellingen **Instellingen voor Cloud Discovery**.  
+1. Selecteer in de portal onder het pictogram Instellingen **Instellingen voor Cloud Discovery**.  
   
-2.  Klik op het tabblad **Gegevens verwijderen**.  
+2. Klik op het tabblad **Gegevens verwijderen**.  
   
-     Het is belangrijk om er zeker van te zijn dat u gegevens wilt verwijderen voordat u doorgaat; deze actie kan niet ongedaan worden gemaakt en hiermee worden **alle** Cloud Discovery-gegevens in het systeem verwijderd.  
+    Het is belangrijk om er zeker van te zijn dat u gegevens wilt verwijderen voordat u doorgaat; deze actie kan niet ongedaan worden gemaakt en hiermee worden **alle** Cloud Discovery-gegevens in het systeem verwijderd.  
   
-3.  Klik op de knop **Verwijderen**.  
+3. Klik op de knop **Verwijderen**.  
   
-     ![gegevens verwijderen](./media/delete-data.png "gegevens verwijderen")  
+    ![gegevens verwijderen](./media/delete-data.png "gegevens verwijderen")  
   
    > [!NOTE]  
    >  De verwijdering duurt een paar minuten en is niet direct.  

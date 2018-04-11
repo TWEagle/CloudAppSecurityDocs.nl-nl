@@ -1,23 +1,23 @@
 ---
 title: Sessie beleidsregels maken om te diep meer inzicht verkrijgen in sessie gebruikersactiviteiten en blokkeren downloads | Microsoft Docs
 description: Dit onderwerp beschrijft de procedure voor het instellen van een beleid voor Cloud App Security Proxy sessies grondige meer inzicht verkrijgen in sessie gebruikersactiviteiten en het blok downloadt.
-keywords: 
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 1/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 745df28a-654c-4abf-9c90-203841169f90
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 06ae1763918d44512ff52ad25ca0c0f77bcab3e9
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 680d763b4f45ca1a4c495e4bf6f565ab296fa6cb
+ms.sourcegitcommit: 3c66f12aa31ba211235787ee6f233138ea5f8a75
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="session-policies"></a>Sessie-beleid 
 
@@ -43,81 +43,81 @@ Azure Active Directory-beleid voor voorwaardelijke toegang en Cloud App Security
 
 1. Configureer een [beleid voor voorwaardelijke toegang van Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) met toewijzingen voor de gebruiker of groep van gebruikers en de SAML-app die u wilt beheren in met de Cloud App Security-proxy. 
 
-  > [!NOTE]
-  > Alleen apps die waren [geïmplementeerd met proxy](proxy-deployment-aad.md) worden beïnvloed door dit beleid.
+   > [!NOTE]
+   > Alleen apps die waren [geïmplementeerd met proxy](proxy-deployment-aad.md) worden beïnvloed door dit beleid.
 
 2. Gebruikers naar de Cloud App Security-proxy te routeren door het selecteren van de **beperkingen afgedwongen proxy gebruiken** in de **sessie** blade.
 
- ![Voorwaardelijke toegang voor proxy-beperkingen voor Azure AD](./media/proxy-deploy-restrictions-aad.png)
+   ![Voorwaardelijke toegang voor proxy-beperkingen voor Azure AD](./media/proxy-deploy-restrictions-aad.png)
 
 ## <a name="create-a-cloud-app-security-session-policy"></a>Maak een beleid van de sessie Cloud App Security 
 
 Volg deze procedure voor het maken van een nieuwe sessie beleid:
 
 1. Selecteer in de portal **besturingselement** gevolgd door **beleid**.
-3. In de **beleid** pagina, klikt u op **beleid maken** en selecteer **sessie beleid**.  
+2. In de **beleid** pagina, klikt u op **beleid maken** en selecteer **sessie beleid**.  
 
- ![Sessie-beleid maken](./media/create-session-policy.png)
+   ![Sessie-beleid maken](./media/create-session-policy.png)
 
-4. In de **sessie beleid** venster Wijs een naam voor het beleid, zoals *blok downloaden van gevoelige documenten in het vak voor Marketing gebruikers*.
+3. In de **sessie beleid** venster Wijs een naam voor het beleid, zoals *blok downloaden van gevoelige documenten in het vak voor Marketing gebruikers*.
 
- ![Beleid voor nieuwe sessie](./media/new-session-policy.png)
+   ![Beleid voor nieuwe sessie](./media/new-session-policy.png)
 
-5. In de **sessie besturingselementtype** veld: 
+4. In de **sessie besturingselementtype** veld: 
 
-    1. Selecteer **bewaken van alle activiteiten** als u alleen wilt bewaken van activiteiten door gebruikers.
+   1. Selecteer **bewaken van alle activiteiten** als u alleen wilt bewaken van activiteiten door gebruikers.
 
-    2. Selecteer **bewaken van alle activiteiten & downloaden van bestanden beheren** als u wilt controleren van gebruikersactiviteiten en extra acties zoals blok uitvoeren of downloads mogelijk voor gebruikers te beveiligen.
+   2. Selecteer **bewaken van alle activiteiten & downloaden van bestanden beheren** als u wilt controleren van gebruikersactiviteiten en extra acties zoals blok uitvoeren of downloads mogelijk voor gebruikers te beveiligen.
 
-    ![sessie-beleidstype besturingselement](./media/session-policy-control-type.png)
+      ![sessie-beleidstype besturingselement](./media/session-policy-control-type.png)
 
-6. Onder **activiteitbron** in de **activiteiten die overeenkomen met alle van de volgende** sectie, selecteert u extra activiteitfilters om toe te passen aan het beleid. Waaronder de volgende opties: 
+5. Onder **activiteitbron** in de **activiteiten die overeenkomen met alle van de volgende** sectie, selecteert u extra activiteitfilters om toe te passen aan het beleid. Waaronder de volgende opties: 
 
-     - **Apparaat labels**: dit filter gebruiken om niet-beheerde apparaten te identificeren.
+   - **Apparaat labels**: dit filter gebruiken om niet-beheerde apparaten te identificeren.
 
-     - **Locatie**: dit filter gebruiken om te identificeren onbekende (en dus risicovolle)-locaties. 
+   - **Locatie**: dit filter gebruiken om te identificeren onbekende (en dus risicovolle)-locaties. 
 
-     - **IP-adres**: Gebruik dit om te filteren per IP-adressen of gebruik eerder toegewezen IP-Adreslabels. 
+   - **IP-adres**: Gebruik dit om te filteren per IP-adressen of gebruik eerder toegewezen IP-Adreslabels. 
 
-     - **Label van de gebruikersagent**: dit filter gebruiken om in te schakelen de heuristiek mobiele en bureaublad-apps identificeren. Dit filter kan worden ingesteld op gelijk is aan of is niet gelijk aan **Native client** en vergelijken met uw mobiele en bureaublad-apps voor elke cloud-app moet worden getest.
+   - **Label van de gebruikersagent**: dit filter gebruiken om in te schakelen de heuristiek mobiele en bureaublad-apps identificeren. Dit filter kan worden ingesteld op gelijk is aan of is niet gelijk aan **Native client** en vergelijken met uw mobiele en bureaublad-apps voor elke cloud-app moet worden getest.
          
-         ![ondersteuning voor native client](./media/user-agent-tag.png)
+       ![ondersteuning voor native client](./media/user-agent-tag.png)
 
-       >[!NOTE]
-       >Sessie-beleid ondersteunt niet mobiele en bureaublad-apps. Zorg ervoor dat sessie-beleidsregels om te zien dat ze geen invloed op mobiele en bureaublad-app-functionaliteit testen. Indien nodig, sluit u mobiele en bureaublad-apps uit de sessie beleidsregels.
+     >[!NOTE]
+     >Sessie-beleid ondersteunt niet mobiele en bureaublad-apps. Zorg ervoor dat sessie-beleidsregels om te zien dat ze geen invloed op mobiele en bureaublad-app-functionaliteit testen. Indien nodig, sluit u mobiele en bureaublad-apps uit de sessie beleidsregels.
 
      ![sessie-beleidsbron activiteit](./media/session-policy-activity-filters.png)
 
-7. Als u de optie voor het geselecteerd **bewaken van alle activiteiten & downloaden van bestanden beheren**:
+6. Als u de optie voor het geselecteerd **bewaken van alle activiteiten & downloaden van bestanden beheren**:
 
-    1. Onder **activiteitbron** in de **bestanden die overeenkomen met alle van de volgende** sectie, selecteert u extra bestandsfilters toepassen op het beleid. Waaronder de volgende opties:
+   1. Onder **activiteitbron** in de **bestanden die overeenkomen met alle van de volgende** sectie, selecteert u extra bestandsfilters toepassen op het beleid. Waaronder de volgende opties:
 
-        - **Classificatie label** -dit filter gebruiken als uw organisatie Azure Information Protection gebruikt en uw gegevens beveiligd is door de classificatielabels. Hier vervolgens mogelijk voor het filteren van bestanden op basis van de classificatie-label die u toegepast. Zie voor meer informatie over integratie tussen Cloud App Security en Azure Information Protection [integratie van Azure Information Protection](azip-integration.md).
+      - **Classificatie label** -dit filter gebruiken als uw organisatie Azure Information Protection gebruikt en uw gegevens beveiligd is door de classificatielabels. Hier vervolgens mogelijk voor het filteren van bestanden op basis van de classificatie-label die u toegepast. Zie voor meer informatie over integratie tussen Cloud App Security en Azure Information Protection [integratie van Azure Information Protection](azip-integration.md).
 
-        - **Bestandsnaam** -dit filter gebruiken voor het beleid toepassen op specifieke bestanden.
+      - **Bestandsnaam** -dit filter gebruiken voor het beleid toepassen op specifieke bestanden.
 
-        - **Bestandstype** -dit filter gebruiken voor het beleid toepassen op specifieke bestandstypen, bijvoorbeeld blok downloaden voor alle xls-bestanden.
+      - **Bestandstype** -dit filter gebruiken voor het beleid toepassen op specifieke bestandstypen, bijvoorbeeld blok downloaden voor alle xls-bestanden.
 
-         ![sessie beleid bestandsfilters](./media/session-policy-file-filters.png)
+        ![sessie beleid bestandsfilters](./media/session-policy-file-filters.png)
 
         
-    2. In de **inhoudscontrole** sectie instellen of u wilt de DLP-engine documenten scannen en bestandsservers inhoud inschakelen.
+   2. In de **inhoudscontrole** sectie instellen of u wilt de DLP-engine documenten scannen en bestandsservers inhoud inschakelen.
  
-     ![sessie beleid inhoudscontrole](./media/session-policy-content-inspection.png)
+      ![sessie beleid inhoudscontrole](./media/session-policy-content-inspection.png)
 
-    3. Onder **acties**, selecteer een van de volgende: 
+   3. Onder **acties**, selecteer een van de volgende: 
 
-        - **Toestaan dat**: Stel deze actie voor toestaan van expliciet downloaden volgens de door u ingestelde beleidsfilters.
+      - **Toestaan dat**: Stel deze actie voor toestaan van expliciet downloaden volgens de door u ingestelde beleidsfilters.
 
-        - **Blok**: Stel deze actie om te downloaden volgens de door u ingestelde beleidsfilters expliciet te blokkeren. Zie voor meer informatie [de werking van blok downloaden](#block-download).
+      - **Blok**: Stel deze actie om te downloaden volgens de door u ingestelde beleidsfilters expliciet te blokkeren. Zie voor meer informatie [de werking van blok downloaden](#block-download).
 
-        - **Beveiligen**: als uw organisatie Azure Information Protection gebruikt, kunt u instellen een **actie** toepassen van een label classificatie instellen in Azure Information Protection op het bestand. Zie voor meer informatie [hoe beveiligen downloaden works](#protect-download).
+      - **Beveiligen**: als uw organisatie Azure Information Protection gebruikt, kunt u instellen een **actie** toepassen van een label classificatie instellen in Azure Information Protection op het bestand. Zie voor meer informatie [hoe beveiligen downloaden works](#protect-download).
 
-         ![acties voor sessie-beleid](./media/session-policy-actions.png)
+        ![acties voor sessie-beleid](./media/session-policy-actions.png)
 
-10. U kunt **maken van een waarschuwing voor elke overeenkomende gebeurtenis met de ernst van het beleid** en stel een limiet voor de waarschuwing en selecteer of u wilt dat de waarschuwing als een e-mailbericht, een SMS-bericht of beide.
+7. U kunt **maken van een waarschuwing voor elke overeenkomende gebeurtenis met de ernst van het beleid** en stel een limiet voor de waarschuwing en selecteer of u wilt dat de waarschuwing als een e-mailbericht, een SMS-bericht of beide.
 
-    ![Waarschuwing voor sessie-beleid](./media/session-policy-alert.png)
+   ![Waarschuwing voor sessie-beleid](./media/session-policy-alert.png)
 
 
 ## <a name="how-session-monitoring-works"></a>Hoe sessiebewaking werkt
@@ -153,11 +153,11 @@ Voor het downloaden van het geëxporteerde logboek:
 2. Selecteer in de tabel het relevante rapport uit de lijst met **Proxy verkeerslogboeken** en klik op downloaden ![knop downloaden](./media/download-button.png). 
 
 
-## Hoe blok works downloaden<a name="block-download"></a>
+## Hoe blok works downloaden <a name="block-download"></a>
 
 Wanneer **blok** is ingesteld als de **actie** u wilt uitvoeren in de Cloud App Security proxy sessie beleid, de proxy voorkomen dat een gebruiker een bestand in overeenstemming met filters voor bestanden met het beleid downloaden. Een gebeurtenis downloaden wordt herkend door de proxy voor elke SAML-app en wanneer een gebruiker deze gebeurtenis begint, de proxy is opgetreden in realtime te voorkomen dat het wordt uitgevoerd. Wanneer het signaal ontvangen dat een gebruiker een download heeft gestart, de proxy retourneert een **downloaden beperkt** bericht aan de gebruiker en het gedownloade bestand met een tekstbestand met een aangepast bericht voor de gebruiker die kan worden vervangen geconfigureerd via beleid voor de proxy-sessies.  
 
-## Het beveiligen van downloaden werkt<a name="protect-download"></a>
+## Het beveiligen van downloaden werkt <a name="protect-download"></a>
 
 Wanneer **beveiligen** is ingesteld als de **actie** om te worden uitgevoerd in de Cloud App Security proxy sessie beleid, de proxy wordt afgedwongen de labels en volgende beveiliging van een bestand in overeenstemming met het beleid bestand filters. Labels zijn geconfigureerd in de Azure Information Protection-console in Azure en **beveiligen** moet worden geselecteerd in het label voor het label als een optie in de Cloud App Security-beleid wordt weergegeven. Als een label is ingeschakeld en een bestand wordt gedownload, die voldoet aan de criteria van de Cloud App Security-beleid, wordt de naam en de bijbehorende beveiliging (met machtigingen) toegepast op het bestand tijdens het downloaden. Het oorspronkelijke bestand blijft-is in de cloud-app wanneer het gedownloade bestand is nu worden beveiligd. Gebruikers die proberen toegang tot het bestand moeten voldoen aan de machtigingsvereisten bepaald door de beveiliging kan worden toegepast.  
  

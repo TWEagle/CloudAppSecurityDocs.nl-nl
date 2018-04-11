@@ -1,23 +1,23 @@
 ---
 title: Werken met de risicoscore | Microsoft Docs
 description: Dit onderwerp bevat instructies voor het gebruiken en aanpassen van de app-risicoscore van Cloud App Security.
-keywords: 
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 1/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 9cb3594e-5007-48be-9b4f-e1d23355d86e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: fbb7d6bef14cb70766fdfbbc8ec958c557ee29df
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: a4d0e34875f4e4d820e74c1d0f0b2fa335910db1
+ms.sourcegitcommit: 3c66f12aa31ba211235787ee6f233138ea5f8a75
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="working-with-the-risk-score"></a>Werken met de risicoscore  
 
@@ -60,11 +60,11 @@ Als u een nieuwe app in uw omgeving die door Cloud App Security, een nieuwe risi
 **Een nieuwe app voorstellen:**
 1. Aan de bovenkant van de **gedetecteerde apps** pagina, klikt u op de drie puntjes en selecteer vervolgens **nieuwe app voorstellen**. 
 
-  ![Een app cloud App Security voorstellen](./media/suggest-new-app.png)
+   ![Een app cloud App Security voorstellen](./media/suggest-new-app.png)
 
 2. In de **suggesties nieuwe cloud-app** pop-up vullen in informatie over de nieuwe app, inclusief de naam en het domein van de app. 
 
-  ![Een app pop en Cloud App Security voorstellen](./media/suggest-new-app-popup.png)
+   ![Een app pop en Cloud App Security voorstellen](./media/suggest-new-app-popup.png)
 
 3. We raden u aan als u het vakje voor Cloud App Security analisten contact met u als u meer informatie over de app is vereist en zodat u kan worden bijgewerkt wanneer de analyse is voltooid.
 
@@ -72,11 +72,11 @@ Als u een nieuwe app in uw omgeving die door Cloud App Security, een nieuwe risi
 
 1. In de **Cloud-Appcatalogus** pagina in de app-rij die u wilt bijwerken, klik op de drie punten aan het einde van de rij en selecteer **score update aanvragen**.
 
-  ![Score update aanvragen](./media/request-score-update.png)
+   ![Score update aanvragen](./media/request-score-update.png)
 
 2. In de **raden een verbetering** pop-up selecteren of u wilt aanvragen van een update score raden een nieuwe risicofactor of update app-gegevens.
 
-  ![voorstellen en verbetering en Cloud App Security](./media/suggest-improvement-popup.png)
+   ![voorstellen en verbetering en Cloud App Security](./media/suggest-improvement-popup.png)
 
 3. We raden u aan als u het vakje voor Cloud App Security analisten contact met u als u meer informatie over de app is vereist en zodat u kan worden bijgewerkt wanneer de analyse is voltooid.
  
@@ -96,13 +96,13 @@ Elke categorie bevat veel specifieke eigenschappen. Volgens ons score-algoritme 
   
 Het is belangrijk dat u even de tijd neemt om de standaardgewichten van de scoreconfiguratie van Cloud Discovery te bekijken en wijzigen. Standaard krijgen alle geëvalueerde parameters een gelijk gewicht. Als bepaalde parameters meer of minder belangrijk voor uw organisatie zijn, is het belangrijk dat u ze als volgt wijzigt:  
   
-1.  Selecteer in de portal onder het pictogram Instellingen **Instellingen voor Cloud Discovery**.  
+1. Selecteer in de portal onder het pictogram Instellingen **Instellingen voor Cloud Discovery**.  
   
-2.  Verschuif de knop **Belang** onder **Metrische gegevens voor de score configureren** om het gewicht van het veld of de risicocategorie te wijzigen naar **Genegeerd**, **Laag**, **Gemiddeld**, **Hoog** of **Zeer hoog**.  
+2. Verschuif de knop **Belang** onder **Metrische gegevens voor de score configureren** om het gewicht van het veld of de risicocategorie te wijzigen naar **Genegeerd**, **Laag**, **Gemiddeld**, **Hoog** of **Zeer hoog**.  
   
-3.  Daarnaast kunt u instellen of bepaalde waarden niet beschikbaar voor of niet van toepassing op de scoreberekening zijn. Wanneer ze zijn opgenomen, dragen n.v.t.-waarden negatief bij aan de berekende score.  
+3. Daarnaast kunt u instellen of bepaalde waarden niet beschikbaar voor of niet van toepassing op de scoreberekening zijn. Wanneer ze zijn opgenomen, dragen n.v.t.-waarden negatief bij aan de berekende score.  
   
-  ![score](./media/score.png "score")  
+   ![score](./media/score.png "score")  
 
 Alle informatie die nodig is om te begrijpen hoe onze risicoscores worden samengesteld, is beschikbaar in de Cloud App Security-portal.
 Gebruik de knop 'i' aan de rechterkant van elke veldnaam in het profiel van de app voor een beter begrip van het gewicht van een risicofactor in een specifieke risicocategorie. Dit biedt informatie over hoe Cloud App Security precies een specifieke risicofactor bepaalt. De score is de waarde van de risicofactor op een schaal van 1-10 + het gewicht in de risicocategorie:

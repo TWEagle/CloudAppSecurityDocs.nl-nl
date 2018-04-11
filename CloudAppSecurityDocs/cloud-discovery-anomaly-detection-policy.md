@@ -1,23 +1,23 @@
 ---
 title: Beleid voor anomaliedetectie voor Cloud Discovery maken in Cloud App Security | Microsoft Docs
 description: In dit onderwerp vindt u informatie over hoe u in Cloud Discovery met beleidsregels voor anomaliedetectie kunt werken.
-keywords: 
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 1/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: eaf73af0-7610-4903-b656-8d90b1d2b18c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 408b136764fd5e16f47772fb73ff6588d9b5bc8e
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 5491f56d8164cbd69b66a647016667739ad5cc06
+ms.sourcegitcommit: 3c66f12aa31ba211235787ee6f233138ea5f8a75
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="cloud-discovery-anomaly-detection-policy"></a>Beleid voor afwijkingsdetectie voor Cloud Discovery
 Dit artikel bevat een verwijzing naar meer informatie over beleidsregels en geeft uitleg over elk beleidstype en de velden die kunnen worden geconfigureerd voor elk beleid.  
@@ -33,7 +33,8 @@ Voor elk beleid moet u de volgende parameters instellen:
  
 2. Geef een **beleidsnaam** en **beschrijving** op.  
 
-3. Maak een filter voor de apps die u wilt controleren, door op **Filter toevoegen** te klikken. U kunt een specifieke app, een app selecteren **categorie**, of filteren op **naam**, ** domein, en **risicofactor**, en klik op **opslaan**.
+3. Maak een filter voor de apps die u wilt controleren, door op <strong>Filter toevoegen</strong> te klikken. 
+   U kunt een specifieke app, een app selecteren <strong>categorie</strong>, of filteren op <strong>naam</strong>, <strong>domein, en ** risicofactor</strong>, en klik op <strong>opslaan</strong>.
 
 4. Stel onder **Toepassen op** in hoe het gebruik moet worden gefilterd. Het gebruik dat wordt bewaakt kan op twee manieren worden gefilterd:  
   

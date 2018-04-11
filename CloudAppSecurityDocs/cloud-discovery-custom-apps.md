@@ -1,23 +1,23 @@
 ---
 title: Aangepaste apps toevoegen aan Cloud Discovery in de Cloud App Security | Microsoft Docs
 description: Dit onderwerp bevat informatie over het toevoegen van aangepaste apps aan Cloud Discovery in de Cloud App Security Shadow IT bewaken.
-keywords: 
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 2/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 98b0d841-b33d-4ae9-b48b-d9ee77785eaa
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d8ccd44e3c488b9adb0d4cd9df96b29b6bcc3e2d
-ms.sourcegitcommit: 85d90d51e9e265d077f38b0188bcfdab2ce63ed1
+ms.openlocfilehash: fd484e86f9caf4b9fd5a27f0f6c3f3f0f622488f
+ms.sourcegitcommit: 3c66f12aa31ba211235787ee6f233138ea5f8a75
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="add-custom-apps-to-cloud-discovery"></a>Aangepaste apps toevoegen aan Cloud Discovery
     
@@ -29,20 +29,20 @@ Door een nieuwe aangepaste cloud-app toe te voegen Cloud App Security kan overee
 
 Een nieuwe aangepaste cloud-app toevoegen:
 
-1.  Klik in de Cloud App Security-portal op **Discover** en vervolgens **Cloud Discovery-dashboard**. 
+1. Klik in de Cloud App Security-portal op **Discover** en vervolgens **Cloud Discovery-dashboard**. 
   
- ![cloud discovery-dashboard menu](./media/cloud-discovery-dashboard-menu.png)
+   ![cloud discovery-dashboard menu](./media/cloud-discovery-dashboard-menu.png)
 
-2.  Klik op de 3 punten in de rechterbovenhoek, en selecteer vervolgens **nieuwe aangepaste app toevoegen**. 
+2. Klik op de 3 punten in de rechterbovenhoek, en selecteer vervolgens **nieuwe aangepaste app toevoegen**. 
 
- ![menu aangepaste app toevoegen](./media/add-custom-app-menu.png)
+   ![menu aangepaste app toevoegen](./media/add-custom-app-menu.png)
 
-3.  Vul de velden voor het definiëren van de nieuwe record voor de app die wordt weergegeven in de catalogus met Cloud-App en in de Cloud Discovery nadat deze is gedetecteerd in de logboeken van uw firewall.
+3. Vul de velden voor het definiëren van de nieuwe record voor de app die wordt weergegeven in de catalogus met Cloud-App en in de Cloud Discovery nadat deze is gedetecteerd in de logboeken van uw firewall.
 
-  ![aangepaste app](./media/add-custom-app.png)
+   ![aangepaste app](./media/add-custom-app.png)
 
 4. Onder **domeinen**, vult u de unieke domeinen die worden gebruikt bij het openen van de aangepaste app. Deze domeinen worden gebruikt om overeen met de logboekberichten verkeer naar deze app. Als de gegevensbron die u gebruikt geen informatie over app-URL bevat, zorg ervoor dat u de **IPv4** en **IPv6** adresvelden.
-4.  Het is raadzaam opmerkingen waarmee u kunt het bijhouden van wijzigingen voor deze record toevoegen.
+5. Het is raadzaam opmerkingen waarmee u kunt het bijhouden van wijzigingen voor deze record toevoegen.
 
 Nadat de app is gemaakt, is het voor u beschikbaar zijn in de catalogus met Cloud-App.
 

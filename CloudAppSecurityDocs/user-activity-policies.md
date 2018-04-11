@@ -1,23 +1,23 @@
 ---
 title: Beleidsregels voor het beheren van activiteiten maken in Cloud App Security | Microsoft Docs
 description: In dit onderwerp vindt u instructies voor het maken van en werken met beleidsregels voor activiteit.
-keywords: 
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 1/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 99d5fd37-d922-4269-b557-86d7f84180eb
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0e771330feb92833e77c0699d33851d7d52d82ef
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 13818f498052c1e67205b632ebdde80141d00f13
+ms.sourcegitcommit: 3c66f12aa31ba211235787ee6f233138ea5f8a75
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="activity-policies"></a>Activiteitbeleid
 Beleidsregels voor activiteiten zorgen ervoor dat u een breed scala aan geautomatiseerde processen kunt controleren waarbij u gebruikmaakt van de API’s van de app-provider. Met dit beleid kunt u specifieke activiteiten volgen die worden uitgevoerd door verschillende gebruikers of onverwacht hoge frequenties van een bepaald type activiteit volgen.  
@@ -68,15 +68,15 @@ In deze sectie vindt u naslaginformatie over beleidsregels, met een uitleg van e
 Een **activiteitenbeleid** is een op API’s gebaseerd beleid waarmee u de cloudactiviteiten van uw organisatie kunt controleren, waarbij rekening wordt gehouden met meer dan twintig filters voor bestanden met metagegevens (inclusief apparaattype en locatie). Op basis van de beleidsresultaten kunnen meldingen worden gegenereerd en kunnen gebruikers worden geblokkeerd vanuit de cloud-app.   
 Elk beleid bestaat uit de volgende onderdelen:  
   
--   Activiteitfilters – hiermee kunt u zeer gedetailleerde voorwaarden op basis van metagegevens maken.  
+- Activiteitfilters – hiermee kunt u zeer gedetailleerde voorwaarden op basis van metagegevens maken.  
   
--   Activiteit overeenkomstig de parameters – hiermee kunt u een drempel instellen voor het aantal keren dat een activiteit wordt herhaald voordat de activiteit wordt beschouwd als overeenkomstig het beleid.  Geef aan hoe vaak een activiteit moet worden herhaald voordat het overeenkomt met het beleid, bijvoorbeeld het instellen van een beleid om te waarschuwen wanneer een gebruiker tien mislukte aanmeldpogingen uitvoert binnen twee minuten.  **Activiteit overeenkomstig de parameters** vindt standaard een overeenkomst voor elke activiteit die voldoet aan alle activiteitfilters.   
-Met behulp van **Herhaalde activiteit** kunt u het aantal herhaalde activiteiten instellen, alsmede de periode waarin de activiteiten worden geteld. U kunt zelfs opgeven dat alle activiteiten moeten worden uitgevoerd door dezelfde gebruiker en in dezelfde cloud-app.  
+- Activiteit overeenkomstig de parameters – hiermee kunt u een drempel instellen voor het aantal keren dat een activiteit wordt herhaald voordat de activiteit wordt beschouwd als overeenkomstig het beleid.  Geef aan hoe vaak een activiteit moet worden herhaald voordat het overeenkomt met het beleid, bijvoorbeeld het instellen van een beleid om te waarschuwen wanneer een gebruiker tien mislukte aanmeldpogingen uitvoert binnen twee minuten.  **Activiteit overeenkomstig de parameters** vindt standaard een overeenkomst voor elke activiteit die voldoet aan alle activiteitfilters.   
+  Met behulp van **Herhaalde activiteit** kunt u het aantal herhaalde activiteiten instellen, alsmede de periode waarin de activiteiten worden geteld. U kunt zelfs opgeven dat alle activiteiten moeten worden uitgevoerd door dezelfde gebruiker en in dezelfde cloud-app.  
   
   
--   Acties – het beleid bevat een reeks beheeracties die automatisch kunnen worden toegepast wanneer schendingen worden gedetecteerd.  
-## <a name="see-also"></a>Zie ook  
-[Beleidsregels voor gegevensbescherming](data-protection-policies.md)   
+- Acties – het beleid bevat een reeks beheeracties die automatisch kunnen worden toegepast wanneer schendingen worden gedetecteerd.  
+  ## <a name="see-also"></a>Zie ook  
+  [Beleidsregels voor gegevensbescherming](data-protection-policies.md)   
 
 [Premier-klanten kunnen Cloud App Security ook rechtstreeks vanuit Premier Portal kiezen.](https://premier.microsoft.com/)  
   

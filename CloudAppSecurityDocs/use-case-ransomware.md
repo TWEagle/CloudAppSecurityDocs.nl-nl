@@ -1,23 +1,23 @@
 ---
 title: Overzicht van scenario voor beveiliging tegen bedreigingen | Microsoft Docs
 description: In dit onderwerp wordt een scenario beschreven voor beveiliging van uw organisatie tegen bedreigingen in uw cloudomgeving.
-keywords: 
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 1/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 7a06a243-9ec2-4a11-8db2-bc065cdfef64
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4bb90d94fdab3725c853a772df1c484260a6c5ec
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: da7db14dc4ae7df175bb6bf3db05d29d0d29d6b0
+ms.sourcegitcommit: 3c66f12aa31ba211235787ee6f233138ea5f8a75
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="protecting-your-organization-from-ransomware"></a>Uw organisatie beschermen tegen ransomware
 
@@ -73,8 +73,8 @@ Nadat u het hebt gevalideerd en het beleid op uw wensen hebt afgestemd, verwijde
 
 2. Om te voorkomen dat toekomstige aanvallen, instellen van het beleid automatische beheeracties uitvoeren. Bijvoorbeeld in SharePoint en OneDrive u kunt het beleid instellen op automatisch **onderbreken gebruiker**.
 
- ## <a name="see-also"></a>Zie ook  
-[Dagelijkse activiteiten ter bescherming van uw cloudomgeving](daily-activities-to-protect-your-cloud-environment.md)   
+   ## <a name="see-also"></a>Zie ook  
+   [Dagelijkse activiteiten ter bescherming van uw cloudomgeving](daily-activities-to-protect-your-cloud-environment.md)   
 
 [Premier-klanten kunnen Cloud App Security ook rechtstreeks vanuit Premier Portal kiezen.](https://premier.microsoft.com/)  
   

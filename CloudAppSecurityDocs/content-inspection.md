@@ -1,23 +1,23 @@
 ---
 title: Hoe Cloud App Security inhoudsinspectie uitvoert | Microsoft Docs
 description: In dit artikel wordt het proces beschreven dat in Cloud App Security wordt gevolgd wanneer DLP-inhoudsinspectie op gegevens in de cloud wordt uitgevoerd.
-keywords: 
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 1/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 2401adbc-0011-4938-9e3a-a4c719a2f619
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 755db0fc6e61b974daec549a8ffbdfcf119ceaae
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 2d39e534fb769cea7b539592d738e211ba8ab104
+ms.sourcegitcommit: 3c66f12aa31ba211235787ee6f233138ea5f8a75
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="content-inspection"></a>Inhoudsinspectie
 In dit artikel wordt het proces beschreven dat in Cloud App Security wordt gevolgd wanneer DLP-inhoudsinspectie op gegevens in de cloud wordt uitgevoerd. 

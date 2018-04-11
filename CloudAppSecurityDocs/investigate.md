@@ -1,23 +1,23 @@
 ---
 title: Risicovolle cloud-apps en verdachte activiteiten onderzoeken met Cloud App Security | Microsoft Docs
 description: In dit onderwerp vindt u een overzicht van het proces voor het onderzoeken van waarschuwingen, problemen en verdachte activiteiten met Cloud App Security.
-keywords: 
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 1/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: a9b00c2a-2f71-499e-8f57-67e560daedc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e0d61fcd3147b25b84c7e5071ba8e7a02bc05f67
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: bc4fbb14924e02eea1288f0ef92a184ea8cc0e14
+ms.sourcegitcommit: 3c66f12aa31ba211235787ee6f233138ea5f8a75
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="investigate"></a>Onderzoeken
 Nadat Cloud App Security wordt uitgevoerd in uw cloudomgeving, hebt u eerst een fase nodig waarin u leert en onderzoekt hoe u de hulpprogramma's van Cloud App Security kunt gebruiken om meer inzicht te krijgen in wat er in uw cloudomgeving gebeurt. Vervolgens kunt u op basis van uw specifieke omgeving en hoe deze wordt gebruikt bepalen welke vereisten nodig zijn om uw organisatie te beschermen tegen risico's.
