@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/3/2018
+ms.date: 4/10/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 370da665c2f5012f3f14b687a116560201de551a
-ms.sourcegitcommit: 3c66f12aa31ba211235787ee6f233138ea5f8a75
+ms.openlocfilehash: 9dba7289b83397ae68224b56332baf1a59abe704
+ms.sourcegitcommit: d9b65152d06b9924231b296ffe565689b44ab93e
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>Verbinding maken tussen G Suite en Microsoft Cloud App Security
 In deze sectie vindt u instructies voor het maken van een verbinding tussen Cloud App Security en uw bestaande G Suite-account met behulp van de connector-API's.
@@ -53,7 +53,7 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
   
    -   Google Drive API  
   
-   -   Google Apps Marketplace SDK  
+   -   Google Apps Marketplace API  
   
    -   Gmail API  
             
@@ -80,11 +80,11 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
   
 11. In de **referenties** tabblad, klik op de pijl naast **referenties maken**.  
   
-     ![Google credentials](./media/google7.png "google7")  
+     ![Google-referenties](./media/google7.png "google7")  
 
 12. Selecteer **Service account key** (Serviceaccountsleutel).
 
-     ![Google service account key](./media/google8.png "google8")  
+     ![Google-account servicesleutel](./media/google8.png "google8")  
   
 13. Onder **maken service account key**, kies **nieuwe serviceaccount**, en typ een naam, bijvoorbeeld **serviceaccount 1**. Onder **rol**, kies **Project** en vervolgens **Editor**. Onder **sleuteltype**, kies **P12** en klik op **maken**. Een P12-certificaatbestand wordt opgeslagen op uw computer.
  
@@ -107,7 +107,7 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
 18. Open het Google-menu door te klikken op de drie horizontale lijnen naast Google Cloud Platform in de titelbalk. Klik op **Google Cloud Platform** en klik vervolgens op de **API's en services** tabblad in de links-menu.  
     
 19. In het Dashboard dat wordt geopend, bladert u omlaag naar de lijst met ingeschakelde API's en klik op **Google Drive API**.   
-       ![Select Google Drive](./media/google14.png "google14")  
+       ![Selecteer Google Drive](./media/google14.png "google14")  
 
 20. Klik op de **Drive UI Integration** tabblad en vult u de volgende informatie:
 
@@ -125,7 +125,7 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
 
 21. Klik op **wijzigingen opslaan**.
 
-22. Ga terug naar de **ingeschakeld API's** lijst. Klik op **Google Apps Marketplace SDK**. 
+22. Ga terug naar de **ingeschakeld API's** lijst. Klik op **Apps Marketplace SDK**. 
       
 23. Selecteer het tabblad **Configuration** (Configuratie). 
   
@@ -195,7 +195,7 @@ In deze sectie vindt u instructies voor het maken van een verbinding tussen Clou
       ![Google beveiliging](./media/googlesec.png "google-beveiliging")  
  
 25. Kies **API reference** (API-verwijzing).  
-       ![google api enable](./media/googleapi.png "google api")  
+       ![Google api inschakelen](./media/googleapi.png "google api")  
       
 26. Selecteer **Enable API Access** (API-toegang inschakelen) en klik op **Save changes** (Wijzigingen opslaan).  
   
