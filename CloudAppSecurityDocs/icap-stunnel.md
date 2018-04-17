@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 9656f6c6-7dd4-4c4c-a0eb-f22afce78071
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 81d00eb930b965f98fad11dc4804da8ac98bffcd
-ms.sourcegitcommit: 3c66f12aa31ba211235787ee6f233138ea5f8a75
+ms.openlocfilehash: 2e27bc333a5fa193c42d6e61fd6517cdfbdcf1f2
+ms.sourcegitcommit: d9b65152d06b9924231b296ffe565689b44ab93e
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="external-dlp-integration"></a>Externe DLP-integratie
 
@@ -276,7 +276,7 @@ De detectie-server die wordt gebruikt door Cloud App Security is een standaard n
 2. Onder **ICAP** > **Antwoordfiltering**, wijzig de **negeren antwoorden die kleiner zijn dan** waarde in 1.
 
 
-3. En voeg toe ' application /<em>' aan de lijst met **inhoudstype inspecteren</em>*.
+3. En voeg toe ' application /<em>' aan de lijst met **inhoudstype inspecteren</em>**.
      ![type inhoud controleren](./media/icap-inspect-content-type.png)
 
 4. Klik op **Opslaan**
