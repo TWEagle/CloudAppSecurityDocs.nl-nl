@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/7/2018
+ms.date: 4/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,13 +13,21 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a6db87ce60e719886fcdb4f10b1308cc3d8f0423
-ms.sourcegitcommit: 3c66f12aa31ba211235787ee6f233138ea5f8a75
+ms.openlocfilehash: 9f76d43ab9bda33632502ea2acd7491d8ec7b32a
+ms.sourcegitcommit: d9b65152d06b9924231b296ffe565689b44ab93e
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Wat is er nieuw is bij de Microsoft Cloud App Security
+
+## <a name="cloud-app-security-release-120"></a>Cloud App Security-release 120
+8 April 2018 uitgebracht
+
+-   Voor Office 365 en Azure AD zijn we nu geleidelijk rolt de mogelijkheid voor het detecteren van interne toepassingen als gebruiker account activiteiten uitgevoerd door de Office 365 en Azure AD-toepassingen (intern en extern). Hiermee kunt u beleid maken dat u ontvangt een melding als een toepassing onverwachte en onbevoegde activiteiten wordt uitgevoerd. 
+-   Bij het exporteren van een lijst met app-machtigingen aan csv, aanvullende velden, zoals uitgever, zijn machtigingen niveau en community Gebruik opgenomen om te helpen bij het proces voor naleving en onderzoek.
+-   De verbonden app is verbeterd zodat interne serviceactiviteiten niet langer registreren als dat is uitgevoerd door 'Gast' en niet langer ServiceNow activeren fout-positieve waarschuwingen. Deze activiteiten worden nu weergegeven als N.V.T. zoals andere verbonden apps.
+
 
 ## <a name="cloud-app-security-release-119"></a>Cloud App Security-release 119
 18 maart 2018 uitgebracht
